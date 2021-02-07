@@ -1,3 +1,1 @@
-ACCESS_KEY = ""
-SECRET_KEY = ""
-ACCOUNT_ID = ""  # spot
+from project.demos.key import *
