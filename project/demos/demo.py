@@ -1,6 +1,6 @@
 import datetime
 from project.demos._hbg_anyCall import HbgAnyCall
-
+from project.demos.config import *
 
 def API_v2_account_repayment(access_key, secret_key,):
     return HbgAnyCall().callApiMethod(
@@ -587,9 +587,9 @@ def demo_Api(access_key, secret_key):
     hbgAnyCall.print_json(response)
 
 if __name__ == '__main__':
-    access_key = ""
-    secret_key = ""
-    account_id = ""  # spot
+    access_key = ACCESS_KEY
+    secret_key = SECRET_KEY
+    account_id = ACCOUNT_ID  # spot
     hbgAnyCall = HbgAnyCall()
     try:
         # demo_01()
