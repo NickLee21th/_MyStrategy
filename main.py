@@ -9,9 +9,9 @@ if __name__ == '__main__':
     account_id = ACCOUNT_ID  # spot
     hbgAnyCall = HbgAnyCall()
     try:
-        # demo_01()
+        demo_01()
         # demo_02()
-        demo_03()
+        # demo_03()
         # demo_Api(access_key, secret_key)
     except Exception as ex:
         print("Exception in main")
