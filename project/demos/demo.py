@@ -2,6 +2,8 @@ import datetime
 from project.demos._hbg_anyCall import HbgAnyCall
 from project.demos.config import *
 
+hbgAnyCall = HbgAnyCall()
+
 def API_v2_account_repayment(access_key, secret_key,):
     return HbgAnyCall().callApiMethod(
         access_key=access_key, secret_key=secret_key,
@@ -580,25 +582,27 @@ def demo_03():
         period="1min",
         size=20
     )
+    hbgAnyCall = HbgAnyCall()
     hbgAnyCall.print_json(response)
 
 def demo_Api(access_key, secret_key):
     response = API_v2_account_repayment(access_key, secret_key)
+    hbgAnyCall = HbgAnyCall()
     hbgAnyCall.print_json(response)
 
-if __name__ == '__main__':
-    access_key = ACCESS_KEY
-    secret_key = SECRET_KEY
-    account_id = ACCOUNT_ID  # spot
-    hbgAnyCall = HbgAnyCall()
-    try:
-        # demo_01()
-        # demo_02()
-        demo_03()
-        # demo_Api(access_key, secret_key)
-    except Exception as ex:
-        print("Exception in main")
-        hbgAnyCall.log_print(ex, ignore=False)
+# if __name__ == '__main__':
+#     access_key = ACCESS_KEY
+#     secret_key = SECRET_KEY
+#     account_id = ACCOUNT_ID  # spot
+#     hbgAnyCall = HbgAnyCall()
+#     try:
+#         # demo_01()
+#         # demo_02()
+#         demo_03()
+#         # demo_Api(access_key, secret_key)
+#     except Exception as ex:
+#         print("Exception in main")
+#         hbgAnyCall.log_print(ex, ignore=False)
 
 
         # 下单
