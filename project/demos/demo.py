@@ -173,8 +173,8 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
 
-# 基于K线的计算
-def calculate_base_on_KLine(
+# 获取基础币种，3倍多，3倍空的历史数据
+def get_ALL_symbol_trend_data(
         symbol_base="btcusdt",
         symbol_l="btc3lusdt",
         symbol_s="btc3susdt",
@@ -203,6 +203,26 @@ def calculate_base_on_KLine(
         period=period, size=size
     )
     assert trend_3s_list
+    return trend_base_list, trend_3l_list, trend_3s_list
+
+# 基于K线的计算
+def calculate_base_on_KLine(
+        symbol_base="btcusdt",
+        symbol_l="btc3lusdt",
+        symbol_s="btc3susdt",
+        period="1min",
+        size=2000,
+    ):
+    trend_base_list, trend_3l_list, trend_3s_list \
+        = get_ALL_symbol_trend_data(
+        symbol_base=symbol_base,
+        symbol_l=symbol_l,
+        symbol_s=symbol_s,
+        period=period,
+        size=size,
+    )
+    earn_value_ALL_A = 0
+    earn_value_ALL_B = 0
     try:
         calculate_trend_data(
             trend_base_list=trend_base_list,
@@ -224,10 +244,24 @@ def calculate_base_on_KLine(
         hbgAnyCall.log_print("%s: earn_value_D_A = %s" % (symbol_base, earn_value_D_A), ignore=False)
         earn_value_ALL_A = plan_A(symbol_base, 1, size, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_ALL_A = %s" % (symbol_base, earn_value_ALL_A), ignore=False)
+        hbgAnyCall.log_print("。。。%s: ALL_A + ALL_B = %s" % (symbol_base, earn_value_ALL_A+earn_value_ALL_B), ignore=False)
+        print("****************************************************************************")
+        calculate_trend_data(
+            trend_base_list=trend_base_list,
+            trend_3l_list=trend_3l_list,
+            trend_3s_list=trend_3s_list,
+            symbol_base=symbol_base,
+            start_point=500,
+            end_point=0,
+        )
+        earn_value_C_B_2 = plan_B(symbol_base, 1, int(size / 4), trend_base_list, trend_3l_list, trend_3s_list)
+        hbgAnyCall.log_print("%s: earn_value_C_B_2 = %s" % (symbol_base, earn_value_C_B_2), ignore=False)
+        earn_value_D_A_2 = plan_A(symbol_base, 1, int(size / 4), trend_base_list, trend_3l_list, trend_3s_list)
+        hbgAnyCall.log_print("%s: earn_value_D_A_2 = %s" % (symbol_base, earn_value_D_A_2), ignore=False)
     except Exception as ex:
         print("Exception in calculate_base_on_KLine")
         print(ex)
-        return
+    return earn_value_ALL_A, earn_value_ALL_B
 
 
 def plan_A(
@@ -504,14 +538,9 @@ def calculate_trend_data(
         hbgAnyCall.log_print("%s: B_greater_than_A = %s" % (symbol_base, B_greater_than_A), ignore=False)
         hbgAnyCall.log_print("%s: B_greater_than_A_sum_value = %s" % (symbol_base, B_greater_than_A_sum_value),
                              ignore=False)
-        invest_direction \
-            = judge_invest_direction(
-            step_range,
-            count_A_earn, count_B_earn,
-            A_greater_than_B, A_greater_than_B_sum_value,
-            B_greater_than_A, B_greater_than_A_sum_value
-        )
-        return invest_direction
+        return count_A_earn, count_B_earn, \
+               A_greater_than_B, A_greater_than_B_sum_value, \
+               B_greater_than_A, B_greater_than_A_sum_value
     except Exception as ex:
         print("Exception in calculate_trend_data")
         print(ex)
@@ -520,16 +549,38 @@ def calculate_trend_data(
 
 # 依据历史趋势判定下一步的投资计划
 def judge_invest_direction(
-        step_range,
+        trend_base_list,
+        trend_3l_list,
+        trend_3s_list,
+        symbol_base="btc",
+        start_point=1500,
+        end_point=1000,
+):
+    (
         count_A_earn, count_B_earn,
         A_greater_than_B, A_greater_than_B_sum_value,
         B_greater_than_A, B_greater_than_A_sum_value
-):
+    ) = \
+        calculate_trend_data(
+            trend_base_list=trend_base_list,
+            trend_3l_list=trend_3l_list,
+            trend_3s_list=trend_3s_list,
+            symbol_base=symbol_base,
+            start_point=start_point,
+            end_point=end_point,
+    )
+    step_range = int(start_point) - int(end_point)
     invest_direction = "no_plan"
+    if count_B_earn > 0 and count_B_earn > count_A_earn and count_B_earn > (step_range * 0.8):
+        invest_direction = "planB"
+    elif count_A_earn > 0 and count_A_earn > count_B_earn and count_A_earn > (step_range * 0.8):
+        invest_direction = "planA"
     return invest_direction
 
 
 def demo_01():
+    Total_earn_value_ALL_A = 0.0
+    Total_earn_value_ALL_B = 0.0
     for etp in (
             "btc", "eth",
             "link", "eos",
@@ -538,13 +589,20 @@ def demo_01():
             "bsv", "fil",
     ):
         print("==========================================================")
-        calculate_base_on_KLine(
+        period = "5min"  # 1min, 5min, 15min, 30min
+        print("period = %s" % period)
+        earn_value_ALL_A, earn_value_ALL_B = calculate_base_on_KLine(
             symbol_base=(etp+"usdt"),
             symbol_l=(etp+"3lusdt"),
             symbol_s=(etp+"3susdt"),
-            period="5min",  # 1min, 5min, 15min, 30min
+            period=period,  # 1min, 5min, 15min, 30min
             size=2000,
         )
+        Total_earn_value_ALL_A += earn_value_ALL_A
+        Total_earn_value_ALL_B += earn_value_ALL_B
+    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+    print("Total_earn_value_ALL_A = %s " % Total_earn_value_ALL_A)
+    print("Total_earn_value_ALL_B = %s " % Total_earn_value_ALL_B)
 
 
 def demo_02():
@@ -589,6 +647,41 @@ def demo_Api(access_key, secret_key):
     response = API_v2_account_repayment(access_key, secret_key)
     hbgAnyCall = HbgAnyCall()
     hbgAnyCall.print_json(response)
+
+def main_demo():
+    etp = "btc"
+    period = "5min"  # 1min, 5min, 15min, 30min
+    size = 2000
+    trend_base_list, trend_3l_list, trend_3s_list \
+        = get_ALL_symbol_trend_data(
+        symbol_base=(etp + "usdt"),
+        symbol_l=(etp + "3lusdt"),
+        symbol_s=(etp + "3susdt"),
+        period=period,  # 1min, 5min, 15min, 30min
+        size=size,
+    )
+    print("OK -step 1")
+    invest_direction_list = []
+    for i in range(int(size/2)-1, -1, -1):
+        print("i = %s" % i)
+        invest_direction = judge_invest_direction(
+            trend_base_list=trend_base_list,
+            trend_3l_list=trend_3l_list,
+            trend_3s_list=trend_3s_list,
+            symbol_base=(etp + "usdt"),
+            start_point=i+500,
+            end_point=i,
+        )
+        print("invest_direction = %s" % invest_direction)
+        invest_direction_list.append(invest_direction)
+    print(invest_direction_list)
+    # show_symbol_trend_data(
+    #     symbol_base=(etp + "usdt"),
+    #     trend_base_list=trend_base_list,
+    #     trend_3l_list=trend_3l_list,
+    #     trend_3s_list=trend_3s_list
+    # )
+
 
 # if __name__ == '__main__':
 #     access_key = ACCESS_KEY
