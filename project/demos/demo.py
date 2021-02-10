@@ -764,7 +764,7 @@ def main_demo():
             demo_print("OK -step 1")
             invest_direction_list = []
             for i in range(int(size/2)-1, -1, -1):
-                # demo_print("\n\ni = %s" % i)
+                demo_print("OK -step 1-%s" % i)
                 invest_direction = judge_invest_direction(
                     trend_base_list=trend_base_list,
                     trend_3l_list=trend_3l_list,
