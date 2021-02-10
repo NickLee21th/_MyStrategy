@@ -730,7 +730,7 @@ def main_demo():
             )
             # print("invest_direction = %s" % invest_direction)
             invest_direction_list.append(invest_direction)
-        print(invest_direction_list)
+        # print(invest_direction_list)
         # print("OK -step 2")
         earn_value = deduce_earn(
             symbol_base=(etp + "usdt"),
