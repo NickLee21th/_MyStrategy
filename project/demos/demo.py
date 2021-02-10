@@ -640,7 +640,7 @@ def deduce_earn(
     except Exception as ex:
         print("Exception in deduce_earn")
         print(ex)
-    print("\n%s .... earn_value = %s" % (symbol_base, earn_value))
+    print("%s .... earn_value = %s" % (symbol_base, earn_value))
     print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
     return earn_value
 
@@ -749,6 +749,7 @@ def main_demo():
             # print("invest_direction = %s" % invest_direction)
             invest_direction_list.append(invest_direction)
         # print(invest_direction_list)
+        print("\n")
         show_invest_direction(invest_direction_list)
         # print("OK -step 2")
         earn_value = deduce_earn(
