@@ -743,13 +743,13 @@ def main_demo():
     ALL_earn_value = 0.0
     for etp in (
             "btc", "eth",
-            # "link", "eos",
-            # "bch", "ltc",
-            # "zec", "xrp",
-            # "bsv", "fil",
+            "link", "eos",
+            "bch", "ltc",
+            "zec", "xrp",
+            "bsv", "fil",
     ):
         period = "5min"  # 1min, 5min, 15min, 30min
-        size = 20
+        size = 2000
         step_range = int(size/4)
         trend_base_list, trend_3l_list, trend_3s_list \
             = get_ALL_symbol_trend_data(
