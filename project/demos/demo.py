@@ -579,6 +579,24 @@ def judge_invest_direction(
     return invest_direction
 
 
+def show_invest_direction(invest_direction_list):
+    invest_direction = ""
+    count_num = 0
+    for item in invest_direction_list:
+        if item == invest_direction:
+            count_num += 1
+        else:
+            if invest_direction != "":
+                print("%s: %s" % (invest_direction, count_num))
+                count_num = 1
+                invest_direction = item
+            else:
+                invest_direction = item
+                count_num += 1
+    print("%s: %s" % (invest_direction, count_num))
+    return True
+
+
 def deduce_earn(
         symbol_base,
         invest_direction_list, start_point, end_point,
@@ -731,6 +749,7 @@ def main_demo():
             # print("invest_direction = %s" % invest_direction)
             invest_direction_list.append(invest_direction)
         # print(invest_direction_list)
+        show_invest_direction(invest_direction_list)
         # print("OK -step 2")
         earn_value = deduce_earn(
             symbol_base=(etp + "usdt"),
