@@ -699,10 +699,10 @@ def demo_Api(access_key, secret_key):
 def main_demo():
     ALL_earn_value = 0.0
     for etp in (
-            # "btc", "eth",
-            # "link", "eos",
-            # "bch", "ltc",
-            # "zec", "xrp",
+            "btc", "eth",
+            "link", "eos",
+            "bch", "ltc",
+            "zec", "xrp",
             "bsv", "fil",
     ):
         period = "5min"  # 1min, 5min, 15min, 30min
