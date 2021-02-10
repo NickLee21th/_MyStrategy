@@ -749,6 +749,7 @@ def main_demo():
                 "zec", "xrp",
                 "bsv", "fil",
         ):
+            demo_print(etp)
             period = "5min"  # 1min, 5min, 15min, 30min
             size = 2000
             step_range = int(size/4)
@@ -760,7 +761,7 @@ def main_demo():
                 period=period,  # 1min, 5min, 15min, 30min
                 size=size,
             )
-            # demo_print("OK -step 1")
+            demo_print("OK -step 1")
             invest_direction_list = []
             for i in range(int(size/2)-1, -1, -1):
                 # demo_print("\n\ni = %s" % i)
