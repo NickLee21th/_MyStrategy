@@ -528,16 +528,17 @@ def calculate_trend_data(
             if earn_value_B > 0 and earn_value_B > earn_value_A:
                 B_greater_than_A += 1
                 B_greater_than_A_sum_value += (earn_value_B - earn_value_A)
-        hbgAnyCall.log_print("\nsymbol_base = %s" % symbol_base, ignore=False)
-        hbgAnyCall.log_print("step_range = %s" % step_range, ignore=False)
-        hbgAnyCall.log_print("count_A_earn = %s" % count_A_earn, ignore=False)
-        hbgAnyCall.log_print("count_B_earn = %s" % count_B_earn, ignore=False)
-        hbgAnyCall.log_print("%s: A_greater_than_B = %s" % (symbol_base, A_greater_than_B), ignore=False)
+        ignore = True
+        hbgAnyCall.log_print("\nsymbol_base = %s" % symbol_base, ignore=ignore)
+        hbgAnyCall.log_print("step_range = %s" % step_range, ignore=ignore)
+        hbgAnyCall.log_print("count_A_earn = %s" % count_A_earn, ignore=ignore)
+        hbgAnyCall.log_print("count_B_earn = %s" % count_B_earn, ignore=ignore)
+        hbgAnyCall.log_print("%s: A_greater_than_B = %s" % (symbol_base, A_greater_than_B), ignore=ignore)
         hbgAnyCall.log_print("%s: A_greater_than_B_sum_value = %s" % (symbol_base, A_greater_than_B_sum_value),
-                             ignore=False)
-        hbgAnyCall.log_print("%s: B_greater_than_A = %s" % (symbol_base, B_greater_than_A), ignore=False)
+                             ignore=ignore)
+        hbgAnyCall.log_print("%s: B_greater_than_A = %s" % (symbol_base, B_greater_than_A), ignore=ignore)
         hbgAnyCall.log_print("%s: B_greater_than_A_sum_value = %s" % (symbol_base, B_greater_than_A_sum_value),
-                             ignore=False)
+                             ignore=ignore)
         return count_A_earn, count_B_earn, \
                A_greater_than_B, A_greater_than_B_sum_value, \
                B_greater_than_A, B_greater_than_A_sum_value
@@ -621,7 +622,7 @@ def deduce_earn(
     except Exception as ex:
         print("Exception in deduce_earn")
         print(ex)
-    print("%s .... earn_value = %s" % (symbol_base, earn_value))
+    print("\n%s .... earn_value = %s" % (symbol_base, earn_value))
     print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
     return True
 
@@ -714,10 +715,10 @@ def main_demo():
             period=period,  # 1min, 5min, 15min, 30min
             size=size,
         )
-        print("OK -step 1")
+        # print("OK -step 1")
         invest_direction_list = []
         for i in range(int(size/2)-1, -1, -1):
-            print("\n\ni = %s" % i)
+            # print("\n\ni = %s" % i)
             invest_direction = judge_invest_direction(
                 trend_base_list=trend_base_list,
                 trend_3l_list=trend_3l_list,
@@ -726,10 +727,10 @@ def main_demo():
                 start_point=i+step_range,
                 end_point=i,
             )
-            print("invest_direction = %s" % invest_direction)
+            # print("invest_direction = %s" % invest_direction)
             invest_direction_list.append(invest_direction)
-        print(invest_direction_list)
-        print("OK -step 2")
+        # print(invest_direction_list)
+        # print("OK -step 2")
         deduce_earn(
             symbol_base=(etp + "usdt"),
             invest_direction_list=invest_direction_list,
