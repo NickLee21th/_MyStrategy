@@ -624,7 +624,7 @@ def deduce_earn(
         print(ex)
     print("\n%s .... earn_value = %s" % (symbol_base, earn_value))
     print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
-    return True
+    return earn_value
 
 def demo_01():
     Total_earn_value_ALL_A = 0.0
@@ -697,11 +697,12 @@ def demo_Api(access_key, secret_key):
     hbgAnyCall.print_json(response)
 
 def main_demo():
+    ALL_earn_value = 0.0
     for etp in (
-            "btc", "eth",
-            "link", "eos",
-            "bch", "ltc",
-            "zec", "xrp",
+            # "btc", "eth",
+            # "link", "eos",
+            # "bch", "ltc",
+            # "zec", "xrp",
             "bsv", "fil",
     ):
         period = "5min"  # 1min, 5min, 15min, 30min
@@ -731,7 +732,7 @@ def main_demo():
             invest_direction_list.append(invest_direction)
         # print(invest_direction_list)
         # print("OK -step 2")
-        deduce_earn(
+        earn_value = deduce_earn(
             symbol_base=(etp + "usdt"),
             invest_direction_list=invest_direction_list,
             start_point=int(size/2)-1,
@@ -740,6 +741,9 @@ def main_demo():
             trend_3l_list=trend_3l_list,
             trend_3s_list=trend_3s_list,
         )
+        ALL_earn_value += earn_value
+    print("=========================================")
+    print("ALL_earn_value= %s " % ALL_earn_value)
 
 
 # if __name__ == '__main__':
