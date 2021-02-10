@@ -749,7 +749,7 @@ def main_demo():
                 "zec", "xrp",
                 "bsv", "fil",
         ):
-            print("\n" % etp)
+            print("\n %s" % etp)
             period = "5min"  # 1min, 5min, 15min, 30min
             size = 2000
             step_range = int(size/4)
