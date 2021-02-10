@@ -696,49 +696,49 @@ def demo_Api(access_key, secret_key):
     hbgAnyCall.print_json(response)
 
 def main_demo():
-    etp = "btc"
-    period = "5min"  # 1min, 5min, 15min, 30min
-    size = 2000
-    step_range = int(size/4)
-    trend_base_list, trend_3l_list, trend_3s_list \
-        = get_ALL_symbol_trend_data(
-        symbol_base=(etp + "usdt"),
-        symbol_l=(etp + "3lusdt"),
-        symbol_s=(etp + "3susdt"),
-        period=period,  # 1min, 5min, 15min, 30min
-        size=size,
-    )
-    print("OK -step 1")
-    invest_direction_list = []
-    for i in range(int(size/2)-1, -1, -1):
-        print("\n\ni = %s" % i)
-        invest_direction = judge_invest_direction(
+    for etp in (
+            "btc", "eth",
+            "link", "eos",
+            "bch", "ltc",
+            "zec", "xrp",
+            "bsv", "fil",
+    ):
+        period = "5min"  # 1min, 5min, 15min, 30min
+        size = 2000
+        step_range = int(size/4)
+        trend_base_list, trend_3l_list, trend_3s_list \
+            = get_ALL_symbol_trend_data(
+            symbol_base=(etp + "usdt"),
+            symbol_l=(etp + "3lusdt"),
+            symbol_s=(etp + "3susdt"),
+            period=period,  # 1min, 5min, 15min, 30min
+            size=size,
+        )
+        print("OK -step 1")
+        invest_direction_list = []
+        for i in range(int(size/2)-1, -1, -1):
+            print("\n\ni = %s" % i)
+            invest_direction = judge_invest_direction(
+                trend_base_list=trend_base_list,
+                trend_3l_list=trend_3l_list,
+                trend_3s_list=trend_3s_list,
+                symbol_base=(etp + "usdt"),
+                start_point=i+step_range,
+                end_point=i,
+            )
+            print("invest_direction = %s" % invest_direction)
+            invest_direction_list.append(invest_direction)
+        print(invest_direction_list)
+        print("OK -step 2")
+        deduce_earn(
+            symbol_base=(etp + "usdt"),
+            invest_direction_list=invest_direction_list,
+            start_point=int(size/2)-1,
+            end_point=0,
             trend_base_list=trend_base_list,
             trend_3l_list=trend_3l_list,
             trend_3s_list=trend_3s_list,
-            symbol_base=(etp + "usdt"),
-            start_point=i+step_range,
-            end_point=i,
         )
-        print("invest_direction = %s" % invest_direction)
-        invest_direction_list.append(invest_direction)
-    print(invest_direction_list)
-    print("OK -step 2")
-    deduce_earn(
-        symbol_base=(etp + "usdt"),
-        invest_direction_list=invest_direction_list,
-        start_point=int(size/2)-1,
-        end_point=0,
-        trend_base_list=trend_base_list,
-        trend_3l_list=trend_3l_list,
-        trend_3s_list=trend_3s_list,
-    )
-    # show_symbol_trend_data(
-    #     symbol_base=(etp + "usdt"),
-    #     trend_base_list=trend_base_list,
-    #     trend_3l_list=trend_3l_list,
-    #     trend_3s_list=trend_3s_list
-    # )
 
 
 # if __name__ == '__main__':
