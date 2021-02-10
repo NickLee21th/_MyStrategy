@@ -1,8 +1,33 @@
 import datetime
 from project.demos._hbg_anyCall import HbgAnyCall
 from project.demos.config import *
+import logging
+
+# logging.basicConfig(filename='demo_logger.log', level=logging.INFO)
+logger = logging.getLogger(__name__)
+logger.setLevel(level=logging.INFO)
+handler = logging.FileHandler("demo.log")
+handler.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
+# logger.info("Start print log")
+# logger.debug("Do something")
+# logger.warning("Something maybe fail.")
+# logger.info("Finish")
 
 hbgAnyCall = HbgAnyCall()
+
+def demo_print(log, ignore=False, end=None):
+    if ignore:
+        log = None
+    if log is not None:
+        logger.info(str(log))
+        if end is not None:
+            print(str(log), end=end)
+        else:
+            print(str(log))
 
 def API_v2_account_repayment(access_key, secret_key,):
     return HbgAnyCall().callApiMethod(
@@ -245,7 +270,7 @@ def calculate_base_on_KLine(
         earn_value_ALL_A = plan_A(symbol_base, size, 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_ALL_A = %s" % (symbol_base, earn_value_ALL_A), ignore=False)
         hbgAnyCall.log_print("。。。%s: ALL_A + ALL_B = %s" % (symbol_base, earn_value_ALL_A+earn_value_ALL_B), ignore=False)
-        print("****************************************************************************")
+        demo_print("****************************************************************************")
         calculate_trend_data(
             trend_base_list=trend_base_list,
             trend_3l_list=trend_3l_list,
@@ -259,8 +284,8 @@ def calculate_base_on_KLine(
         earn_value_D_A_2 = plan_A(symbol_base, int(size / 4), 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_D_A_2 = %s" % (symbol_base, earn_value_D_A_2), ignore=False)
     except Exception as ex:
-        print("Exception in calculate_base_on_KLine")
-        print(ex)
+        demo_print("Exception in calculate_base_on_KLine")
+        demo_print(ex)
     return earn_value_ALL_A, earn_value_ALL_B
 
 
@@ -295,8 +320,8 @@ def plan_A(
                         earn_value = earn_value + abs(trend_3l_list[i]["change_rate"]) * earn
                 pre_trend = trend_base_list[i]["trend"]
     except Exception as ex:
-        print("Exception in plan_A")
-        print(ex)
+        demo_print("Exception in plan_A")
+        demo_print(ex)
     hbgAnyCall.log_print("%s .... earn_value = %s" % (symbol_base, earn_value))
     hbgAnyCall.log_print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
     return earn_value
@@ -332,8 +357,8 @@ def plan_B(
                         earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
                 pre_trend = trend_base_list[i]["trend"]
     except Exception as ex:
-        print("Exception in plan_B")
-        print(ex)
+        demo_print("Exception in plan_B")
+        demo_print(ex)
     hbgAnyCall.log_print("%s .... earn_value = %s" % (symbol_base, earn_value))
     hbgAnyCall.log_print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
     return earn_value
@@ -367,12 +392,12 @@ def get_symbol_trend_data(symbol, period, size):
                 trend_symbol_list.append(trend_symbol_item)
             return trend_symbol_list
         else:
-            print("Failed in get_symbol_trend_data! ")
-            print("symbol=%s period=%s size=%s" % (symbol, period, size))
+            demo_print("Failed in get_symbol_trend_data! ")
+            demo_print("symbol=%s period=%s size=%s" % (symbol, period, size))
             return False
     except Exception as ex:
-        print("Exception in get_symbol_trend_data!")
-        print(ex)
+        demo_print("Exception in get_symbol_trend_data!")
+        demo_print(ex)
         return False
 
 
@@ -393,87 +418,87 @@ def show_symbol_trend_data(
     earn_B_value = 0
     for i in range(list_size-1, -1, -1):
         # 时间
-        print(timeStamp_to_datetime(trend_base_list[i]["dt"]), end="")
-        print(" ", end="")
+        demo_print(timeStamp_to_datetime(trend_base_list[i]["dt"]), end="")
+        demo_print(" ", end="")
         # 趋势
         if trend_base_list[i]["trend"] >= 0:
-            print(" ", end="")
-        print(trend_base_list[i]["trend"], end="")
-        print(" ", end="")
+            demo_print(" ", end="")
+        demo_print(trend_base_list[i]["trend"], end="")
+        demo_print(" ", end="")
         if trend_3l_list[i]["trend"] >= 0:
-            print(" ", end="")
-        print(trend_3l_list[i]["trend"], end="")
-        print(" ", end="")
+            demo_print(" ", end="")
+        demo_print(trend_3l_list[i]["trend"], end="")
+        demo_print(" ", end="")
         if trend_3s_list[i]["trend"] >= 0:
-            print(" ", end="")
-        print(trend_3s_list[i]["trend"], end="")
-        print(" ", end="")
+            demo_print(" ", end="")
+        demo_print(trend_3s_list[i]["trend"], end="")
+        demo_print(" ", end="")
         # 幅度
         int_len = 3
         precision = 8
         if trend_base_list[i]["change_rate"] >= 0:
             int_len = 2
-            print(" ", end="")
-        print(round(trend_base_list[i]["change_rate"], precision), end="")
+            demo_print(" ", end="")
+        demo_print(round(trend_base_list[i]["change_rate"], precision), end="")
         len_data = len(str(round(trend_base_list[i]["change_rate"], precision)))
         if len_data < precision+int_len:
             for ii in range(len_data, precision+int_len):
-                print(" ", end="")
+                demo_print(" ", end="")
         elif len_data > precision+int_len:
             if trend_base_list[i]["change_rate"] < 0:
                 for ii in range(precision+int_len, len_data-1):
-                    print(" ", end="")
+                    demo_print(" ", end="")
             else:
                 for ii in range(precision+int_len, len_data):
-                    print(" ", end="")
-        print(" ", end="")
+                    demo_print(" ", end="")
+        demo_print(" ", end="")
         int_len = 3
         if trend_3l_list[i]["change_rate"] >= 0:
             int_len = 2
-            print(" ", end="")
-        print(round(trend_3l_list[i]["change_rate"], precision), end="")
+            demo_print(" ", end="")
+        demo_print(round(trend_3l_list[i]["change_rate"], precision), end="")
         len_data = len(str(round(trend_3l_list[i]["change_rate"], precision)))
         if len_data < precision+int_len:
             for ii in range(len_data, precision+int_len):
-                print(" ", end="")
+                demo_print(" ", end="")
         elif len_data > precision+int_len:
             if trend_3l_list[i]["change_rate"] < 0:
                 for ii in range(precision+int_len, len_data-1):
-                    print(" ", end="")
+                    demo_print(" ", end="")
             else:
                 for ii in range(precision+int_len, len_data):
-                    print(" ", end="")
-        print(" ", end="")
+                    demo_print(" ", end="")
+        demo_print(" ", end="")
         int_len = 3
         if trend_3s_list[i]["change_rate"] >= 0:
             int_len = 2
-            print(" ", end="")
-        print(round(trend_3s_list[i]["change_rate"], precision), end="")
+            demo_print(" ", end="")
+        demo_print(round(trend_3s_list[i]["change_rate"], precision), end="")
         len_data = len(str(round(trend_3s_list[i]["change_rate"], precision)))
         if len_data < precision+int_len:
             for ii in range(len_data, precision+int_len):
-                print(" ", end="")
+                demo_print(" ", end="")
         elif len_data > precision+int_len:
             if trend_3s_list[i]["change_rate"] < 0:
                 for ii in range(precision+int_len, len_data-1):
-                    print(" ", end="")
+                    demo_print(" ", end="")
             else:
                 for ii in range(precision+int_len, len_data):
-                    print(" ", end="")
+                    demo_print(" ", end="")
         if i == list_size-1:
-            print("  0", end="")
+            demo_print("  0", end="")
             pre_base_trend = trend_base_list[i]["trend"]
         elif trend_base_list[i]["trend"] == 0:
-            print("  0", end="")
+            demo_print("  0", end="")
         else:
             earn_A = 0
             earn_B = 0
             if pre_base_trend == trend_base_list[i]["trend"]:
-                print("  1 -1", end="")
+                demo_print("  1 -1", end="")
                 earn_A = 1
                 earn_B = -1
             else:
-                print(" -1  1", end="")
+                demo_print(" -1  1", end="")
                 earn_A = -1
                 earn_B = 1
             earn_A_value += earn_A
@@ -485,12 +510,12 @@ def show_symbol_trend_data(
                 plan_A_value = plan_A_value + abs(trend_3s_list[i]["change_rate"]) * earn_A
                 plan_B_value = plan_B_value + abs(trend_3l_list[i]["change_rate"]) * earn_B
             pre_base_trend = trend_base_list[i]["trend"]
-        print("  end")
-    print("symbol_base = %s" % symbol_base)
-    print("earn_A_value = %s" % earn_A_value)
-    print("earn_B_value = %s" % earn_B_value)
-    print("plan_A_value = %s" % plan_A_value)
-    print("plan_B_value = %s" % plan_B_value)
+        demo_print("  end")
+    demo_print("symbol_base = %s" % symbol_base)
+    demo_print("earn_A_value = %s" % earn_A_value)
+    demo_print("earn_B_value = %s" % earn_B_value)
+    demo_print("plan_A_value = %s" % plan_A_value)
+    demo_print("plan_B_value = %s" % plan_B_value)
     return False
 
 
@@ -543,8 +568,8 @@ def calculate_trend_data(
                A_greater_than_B, A_greater_than_B_sum_value, \
                B_greater_than_A, B_greater_than_A_sum_value
     except Exception as ex:
-        print("Exception in calculate_trend_data")
-        print(ex)
+        demo_print("Exception in calculate_trend_data")
+        demo_print(ex)
         return False
 
 
@@ -587,13 +612,13 @@ def show_invest_direction(invest_direction_list):
             count_num += 1
         else:
             if invest_direction != "":
-                print("%s: %s" % (invest_direction, count_num))
+                demo_print("%s: %s" % (invest_direction, count_num))
                 count_num = 1
                 invest_direction = item
             else:
                 invest_direction = item
                 count_num += 1
-    print("%s: %s" % (invest_direction, count_num))
+    demo_print("%s: %s" % (invest_direction, count_num))
     return True
 
 
@@ -610,7 +635,7 @@ def deduce_earn(
     earn = 0
     try:
         for i in range(start_point, end_point-1, -1):
-            # print("%s %s" % (start_point-i, invest_direction_list[start_point-i]))
+            # demo_print("%s %s" % (start_point-i, invest_direction_list[start_point-i]))
             if invest_direction_list[start_point-i] == "no_plan":
                 pre_trend = trend_base_list[i]["trend"]
                 continue
@@ -638,10 +663,10 @@ def deduce_earn(
                     earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
             pre_trend = trend_base_list[i]["trend"]
     except Exception as ex:
-        print("Exception in deduce_earn")
-        print(ex)
-    print("%s .... earn_value = %s" % (symbol_base, earn_value))
-    print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
+        demo_print("Exception in deduce_earn")
+        demo_print(ex)
+    demo_print("%s .... earn_value = %s" % (symbol_base, earn_value))
+    demo_print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
     return earn_value
 
 def demo_01():
@@ -654,9 +679,9 @@ def demo_01():
             "zec", "xrp",
             "bsv", "fil",
     ):
-        print("==========================================================")
+        demo_print("==========================================================")
         period = "5min"  # 1min, 5min, 15min, 30min
-        print("period = %s" % period)
+        demo_print("period = %s" % period)
         earn_value_ALL_A, earn_value_ALL_B = calculate_base_on_KLine(
             symbol_base=(etp+"usdt"),
             symbol_l=(etp+"3lusdt"),
@@ -666,9 +691,9 @@ def demo_01():
         )
         Total_earn_value_ALL_A += earn_value_ALL_A
         Total_earn_value_ALL_B += earn_value_ALL_B
-    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-    print("Total_earn_value_ALL_A = %s " % Total_earn_value_ALL_A)
-    print("Total_earn_value_ALL_B = %s " % Total_earn_value_ALL_B)
+    demo_print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+    demo_print("Total_earn_value_ALL_A = %s " % Total_earn_value_ALL_A)
+    demo_print("Total_earn_value_ALL_B = %s " % Total_earn_value_ALL_B)
 
 
 def demo_02():
@@ -718,13 +743,13 @@ def main_demo():
     ALL_earn_value = 0.0
     for etp in (
             "btc", "eth",
-            "link", "eos",
-            "bch", "ltc",
-            "zec", "xrp",
-            "bsv", "fil",
+            # "link", "eos",
+            # "bch", "ltc",
+            # "zec", "xrp",
+            # "bsv", "fil",
     ):
         period = "5min"  # 1min, 5min, 15min, 30min
-        size = 2000
+        size = 20
         step_range = int(size/4)
         trend_base_list, trend_3l_list, trend_3s_list \
             = get_ALL_symbol_trend_data(
@@ -734,10 +759,10 @@ def main_demo():
             period=period,  # 1min, 5min, 15min, 30min
             size=size,
         )
-        # print("OK -step 1")
+        # demo_print("OK -step 1")
         invest_direction_list = []
         for i in range(int(size/2)-1, -1, -1):
-            # print("\n\ni = %s" % i)
+            # demo_print("\n\ni = %s" % i)
             invest_direction = judge_invest_direction(
                 trend_base_list=trend_base_list,
                 trend_3l_list=trend_3l_list,
@@ -746,12 +771,12 @@ def main_demo():
                 start_point=i+step_range,
                 end_point=i,
             )
-            # print("invest_direction = %s" % invest_direction)
+            # demo_print("invest_direction = %s" % invest_direction)
             invest_direction_list.append(invest_direction)
-        # print(invest_direction_list)
-        print("\n")
+        # demo_print(invest_direction_list)
+        demo_print("\n")
         show_invest_direction(invest_direction_list)
-        # print("OK -step 2")
+        # demo_print("OK -step 2")
         earn_value = deduce_earn(
             symbol_base=(etp + "usdt"),
             invest_direction_list=invest_direction_list,
@@ -762,8 +787,8 @@ def main_demo():
             trend_3s_list=trend_3s_list,
         )
         ALL_earn_value += earn_value
-    print("=========================================")
-    print("ALL_earn_value= %s " % ALL_earn_value)
+    demo_print("=========================================")
+    demo_print("ALL_earn_value= %s " % ALL_earn_value)
 
 
 # if __name__ == '__main__':
@@ -777,7 +802,7 @@ def main_demo():
 #         demo_03()
 #         # demo_Api(access_key, secret_key)
 #     except Exception as ex:
-#         print("Exception in main")
+#         demo_print("Exception in main")
 #         hbgAnyCall.log_print(ex, ignore=False)
 
 
