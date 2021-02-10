@@ -232,17 +232,17 @@ def calculate_base_on_KLine(
             start_point=1500,
             end_point=1000,
         )
-        earn_value_Half_B = plan_B(symbol_base, int(size / 2), size, trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_Half_B = plan_B(symbol_base, size, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_Half_B = %s" % (symbol_base, earn_value_Half_B), ignore=False)
-        earn_value_C_B = plan_B(symbol_base, 1, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_C_B = plan_B(symbol_base, int(size / 2), 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_C_B = %s" % (symbol_base, earn_value_C_B), ignore=False)
-        earn_value_ALL_B = plan_B(symbol_base, 1, size, trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_ALL_B = plan_B(symbol_base, size, 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_ALL_B = %s" % (symbol_base, earn_value_ALL_B), ignore=False)
-        earn_value_Half_A = plan_A(symbol_base, int(size / 2), size, trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_Half_A = plan_A(symbol_base, size, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_Half_A = %s" % (symbol_base, earn_value_Half_A), ignore=False)
-        earn_value_D_A = plan_A(symbol_base, 1, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_D_A = plan_A(symbol_base, int(size / 2), 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_D_A = %s" % (symbol_base, earn_value_D_A), ignore=False)
-        earn_value_ALL_A = plan_A(symbol_base, 1, size, trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_ALL_A = plan_A(symbol_base, size, 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_ALL_A = %s" % (symbol_base, earn_value_ALL_A), ignore=False)
         hbgAnyCall.log_print("。。。%s: ALL_A + ALL_B = %s" % (symbol_base, earn_value_ALL_A+earn_value_ALL_B), ignore=False)
         print("****************************************************************************")
@@ -254,9 +254,9 @@ def calculate_base_on_KLine(
             start_point=500,
             end_point=0,
         )
-        earn_value_C_B_2 = plan_B(symbol_base, 1, int(size / 4), trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_C_B_2 = plan_B(symbol_base, int(size / 4), 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_C_B_2 = %s" % (symbol_base, earn_value_C_B_2), ignore=False)
-        earn_value_D_A_2 = plan_A(symbol_base, 1, int(size / 4), trend_base_list, trend_3l_list, trend_3s_list)
+        earn_value_D_A_2 = plan_A(symbol_base, int(size / 4), 1, trend_base_list, trend_3l_list, trend_3s_list)
         hbgAnyCall.log_print("%s: earn_value_D_A_2 = %s" % (symbol_base, earn_value_D_A_2), ignore=False)
     except Exception as ex:
         print("Exception in calculate_base_on_KLine")
@@ -268,12 +268,12 @@ def plan_A(
         symbol_base, start, end,
         trend_base_list, trend_3l_list, trend_3s_list
 ):
-    assert start < end
+    assert start > end
     pre_trend = ""
     earn_value = 0.0
     no_change_count = 0
     try:
-        for i in range(start, end):
+        for i in range(start, end, -1):
             # hbgAnyCall.log_print(timeStamp_to_datetime(trend_base_list[i]["dt"]))
             if i == start:
                 earn = 0
@@ -306,12 +306,12 @@ def plan_B(
         symbol_base, start, end,
         trend_base_list, trend_3l_list, trend_3s_list
 ):
-    assert start < end
+    assert start > end
     pre_trend = ""
     earn_value = 0.0
     no_change_count = 0
     try:
-        for i in range(start, end):
+        for i in range(start, end, -1):
             if i == start:
                 earn = 0
                 if trend_base_list[i]["trend"] == 0:  # 平
@@ -513,10 +513,10 @@ def calculate_trend_data(
         step_range = start_point - end_point
         for size_i in range(start_point, end_point, -1):
             earn_value_A \
-                = plan_A(symbol_base, size_i, size_i + step_range,
+                = plan_A(symbol_base, size_i + step_range, size_i,
                          trend_base_list, trend_3l_list, trend_3s_list)
             earn_value_B \
-                = plan_B(symbol_base, size_i, size_i + step_range,
+                = plan_B(symbol_base, size_i + step_range, size_i,
                          trend_base_list, trend_3l_list, trend_3s_list)
             if earn_value_A > 0:
                 count_A_earn += 1
@@ -577,6 +577,53 @@ def judge_invest_direction(
         invest_direction = "planA"
     return invest_direction
 
+
+def deduce_earn(
+        symbol_base,
+        invest_direction_list, start_point, end_point,
+        trend_base_list, trend_3l_list, trend_3s_list
+):
+    start = start_point
+    end = end_point - 1
+    pre_trend = ""
+    earn_value = 0.0
+    no_change_count = 0
+    earn = 0
+    try:
+        for i in range(start_point, end_point-1, -1):
+            # print("%s %s" % (start_point-i, invest_direction_list[start_point-i]))
+            if invest_direction_list[start_point-i] == "no_plan":
+                pre_trend = trend_base_list[i]["trend"]
+                continue
+            if trend_base_list[i]["trend"] == 0:  # 平
+                no_change_count = no_change_count + 1
+                continue
+            if pre_trend == "":
+                pre_trend = trend_base_list[i]["trend"]
+                continue
+            if invest_direction_list[start_point - i] == "planA":
+                earn = -1.0
+                if pre_trend == trend_base_list[i]["trend"]:
+                    earn = 1.0
+                if pre_trend == -1:  # 跌
+                    earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
+                elif pre_trend == 1:  # 涨
+                    earn_value = earn_value + abs(trend_3l_list[i]["change_rate"]) * earn
+            elif invest_direction_list[start_point - i] == "planB":
+                earn = 1.0
+                if pre_trend == trend_base_list[i]["trend"]:
+                    earn = -1.0
+                if pre_trend == -1:  # 跌
+                    earn_value = earn_value + abs(trend_3l_list[i]["change_rate"]) * earn
+                elif pre_trend == 1:  # 涨
+                    earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
+            pre_trend = trend_base_list[i]["trend"]
+    except Exception as ex:
+        print("Exception in deduce_earn")
+        print(ex)
+    print("%s .... earn_value = %s" % (symbol_base, earn_value))
+    print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
+    return True
 
 def demo_01():
     Total_earn_value_ALL_A = 0.0
@@ -652,6 +699,7 @@ def main_demo():
     etp = "btc"
     period = "5min"  # 1min, 5min, 15min, 30min
     size = 2000
+    step_range = int(size/4)
     trend_base_list, trend_3l_list, trend_3s_list \
         = get_ALL_symbol_trend_data(
         symbol_base=(etp + "usdt"),
@@ -669,12 +717,22 @@ def main_demo():
             trend_3l_list=trend_3l_list,
             trend_3s_list=trend_3s_list,
             symbol_base=(etp + "usdt"),
-            start_point=i+500,
+            start_point=i+step_range,
             end_point=i,
         )
         print("invest_direction = %s" % invest_direction)
         invest_direction_list.append(invest_direction)
     print(invest_direction_list)
+    print("OK -step 2")
+    deduce_earn(
+        symbol_base=(etp + "usdt"),
+        invest_direction_list=invest_direction_list,
+        start_point=int(size/2)-1,
+        end_point=0,
+        trend_base_list=trend_base_list,
+        trend_3l_list=trend_3l_list,
+        trend_3s_list=trend_3s_list,
+    )
     # show_symbol_trend_data(
     #     symbol_base=(etp + "usdt"),
     #     trend_base_list=trend_base_list,
