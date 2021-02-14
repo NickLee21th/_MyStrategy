@@ -15,32 +15,65 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
         dt_format = "%Y-%m-%d-%H-%M-%S"
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
-def long_time_task(etp):
+def long_time_task(etp, dt_stamp):
+    print("etp=%s, dt_stamp=%s" % (etp, dt_stamp))
     print('Run task %s (%s)...' % (etp, os.getpid()))
     start = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (start= %s)...' % (etp, start))
-    cmd = 'python3 schedule_job.py %s' % etp
+    cmd = 'python3 schedule_job.py %s %s' % (etp, dt_stamp)
     os.system(cmd)
     end = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (end= %s)...' % (etp, end))
 
 
-def multi_process():
+def multi_process(dt_stamp):
     print('Parent process %s.' % os.getpid())
     process_pool_size = 10
     p = Pool(process_pool_size)
     for etp in (
-            "btc",
-            "eth", "link",
+            "btc", "eth",
+            "link",
             "eos", "bch", "ltc",
             "zec", "xrp",
             "bsv", "fil",
     ):
-        p.apply_async(long_time_task, args={etp})
+        p.apply_async(long_time_task, args=(etp, dt_stamp))
     print('Waiting for all subprocesses done...')
     p.close()
     p.join()
     print('All subprocesses done.')
+
+def calculate_total(dt_stamp):
+    earn_value_total = 0.0
+    total_file_path = "demo_Total_Earn.log"
+    file_handle = open(total_file_path, "a")
+    try:
+        for etp in (
+                "btc",
+                "eth", "link",
+                "eos", "bch", "ltc",
+                "zec", "xrp",
+                "bsv", "fil",
+        ):
+            file_path = "demo_%s_%s.log" % (etp, dt_stamp)
+            file = open(file_path, 'r')
+            for line in file.readlines():
+                earn_value_str = "earn_value = "
+                index_find = line.find(earn_value_str)
+                if index_find > 0:
+                    earn_value = line[index_find + len(earn_value_str):]
+                    earn_value_total += float(earn_value)
+                    print("%s earn_value = %s" % (etp, earn_value))
+                    print("%s earn_value = %s" % (etp, earn_value), file=file_handle)
+                    break
+        print("========================================", file=file_handle)
+        print("========================================")
+        print("%s  earn_value_total = %s" % (dt_stamp, earn_value_total), file=file_handle)
+        print("%s  earn_value_total = %s" % (dt_stamp, earn_value_total))
+    except Exception as ex:
+        print("Exception in calculate_total")
+        print("ex = %s" % ex)
+    file_handle.close()
 
 def consumer():
     r = ''
@@ -69,6 +102,7 @@ def fiber_mode(name):
     produce(c)
     print('fiber %s FINISH' % name)
 
-
 if __name__=='__main__':
-    multi_process()
+    dt_stamp = timeStamp_to_datetime(int(time.time()))
+    multi_process(dt_stamp)
+    calculate_total(dt_stamp)

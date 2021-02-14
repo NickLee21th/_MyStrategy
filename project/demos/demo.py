@@ -4,14 +4,27 @@ from project.demos.config import *
 import logging
 import time
 
+
 class DemoStrategy:
     etp = ""
+    dt_stamp = ""
     demo_logger = None
+    data_dict = {}
+
+    def get_from_data_dict(self, index_i):
+        OK = False
+        earn_value_A = ""
+        earn_value_B = ""
+        if index_i in self.data_dict.keys():
+            earn_value_A = self.data_dict[index_i]["earn_value_A"]
+            earn_value_B = self.data_dict[index_i]["earn_value_B"]
+            OK = True
+        return OK, earn_value_A, earn_value_B
 
     def logger_init(self):
         logger = logging.getLogger(self.etp)
         logger.setLevel(level=logging.INFO)
-        dt_value = timeStamp_to_datetime(int(time.time()))
+        dt_value = self.dt_stamp
         handler = logging.FileHandler("demo_%s_%s.log" % (self.etp, dt_value))
         handler.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -33,7 +46,6 @@ class DemoStrategy:
         self.logger_init()
         self.demo_print("I'm %s" % self.etp)
         try:
-            ALL_earn_value = 0.0
             period = "5min"  # 1min, 5min, 15min, 30min
             size = 2000
             step_range = int(size / 4)
@@ -72,9 +84,7 @@ class DemoStrategy:
                 trend_3l_list=trend_3l_list,
                 trend_3s_list=trend_3s_list,
             )
-            # ALL_earn_value += earn_value
             self.demo_print("=========================================")
-            # self.demo_print("ALL_earn_value= %s " % ALL_earn_value)
         except Exception as ex:
             self.demo_print("Exception in demon_main")
             self.demo_print("ex = %s" % ex)
@@ -272,13 +282,20 @@ class DemoStrategy:
             A_greater_than_B_sum_value = 0
             B_greater_than_A_sum_value = 0
             step_range = start_point - end_point
-            for size_i in range(start_point, end_point, -1):
-                earn_value_A \
-                    = plan_A(symbol_base, size_i + step_range, size_i,
-                             trend_base_list, trend_3l_list, trend_3s_list)
-                earn_value_B \
-                    = plan_B(symbol_base, size_i + step_range, size_i,
-                             trend_base_list, trend_3l_list, trend_3s_list)
+            for index_i in range(start_point, end_point, -1):
+                OK, earn_value_A, earn_value_B \
+                    = self.get_from_data_dict(index_i)
+                if not OK:
+                    earn_value_A \
+                        = plan_A(symbol_base, index_i + step_range, index_i,
+                                 trend_base_list, trend_3l_list, trend_3s_list)
+                    earn_value_B \
+                        = plan_B(symbol_base, index_i + step_range, index_i,
+                                 trend_base_list, trend_3l_list, trend_3s_list)
+                    self.data_dict[index_i] = {
+                        "earn_value_A": earn_value_A,
+                        "earn_value_B": earn_value_B
+                    }
                 if earn_value_A > 0:
                     count_A_earn += 1
                 if earn_value_B > 0:

@@ -12,9 +12,13 @@ if __name__ == '__main__':
     account_id = ACCOUNT_ID  # spot
     argvs = sys.argv
     try:
-        if len(argvs) > 1:
+        if len(argvs) > 2:
             demo = DemoStrategy()
+            print("argvs[1]=%s" % argvs[1])
+            print("argvs[2]=%s" % argvs[2])
             demo.etp = argvs[1]
+            demo.dt_stamp = argvs[2]
             demo.demon_main()
     except Exception as ex:
         print("Exception in main, etp = %s" % argvs[1])
+        print("ex=%s" % ex)
