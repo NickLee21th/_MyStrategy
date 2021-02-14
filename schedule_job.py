@@ -14,8 +14,6 @@ if __name__ == '__main__':
     try:
         if len(argvs) > 2:
             demo = DemoStrategy()
-            print("argvs[1]=%s" % argvs[1])
-            print("argvs[2]=%s" % argvs[2])
             demo.etp = argvs[1]
             demo.dt_stamp = argvs[2]
             demo.demon_main()

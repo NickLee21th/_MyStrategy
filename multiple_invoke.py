@@ -16,7 +16,6 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
 def long_time_task(etp, dt_stamp):
-    print("etp=%s, dt_stamp=%s" % (etp, dt_stamp))
     print('Run task %s (%s)...' % (etp, os.getpid()))
     start = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (start= %s)...' % (etp, start))
@@ -70,6 +69,8 @@ def calculate_total(dt_stamp):
         print("========================================")
         print("%s  earn_value_total = %s" % (dt_stamp, earn_value_total), file=file_handle)
         print("%s  earn_value_total = %s" % (dt_stamp, earn_value_total))
+        print("========================================", file=file_handle)
+        print("========================================")
     except Exception as ex:
         print("Exception in calculate_total")
         print("ex = %s" % ex)
