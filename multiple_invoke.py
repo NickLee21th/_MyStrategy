@@ -48,13 +48,13 @@ def calculate_total(dt_stamp):
     file_handle = open(total_file_path, "a")
     try:
         for etp in (
-                "btc",
-                "eth", "link",
-                "eos", "bch", "ltc",
-                "zec", "xrp",
-                "bsv", "fil",
+                "btc", "eth", 
+                # "link",
+                # "eos", "bch", "ltc",
+                # "zec", "xrp",
+                # "bsv", "fil",
         ):
-            file_path = "demo_%s_%s.log" % (etp, dt_stamp)
+            file_path = "demo_log/demo_%s_%s.log" % (etp, dt_stamp)
             file = open(file_path, 'r')
             for line in file.readlines():
                 earn_value_str = "earn_value = "
