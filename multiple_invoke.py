@@ -48,7 +48,7 @@ def calculate_total(dt_stamp):
     file_handle = open(total_file_path, "a")
     try:
         for etp in (
-                "btc", "eth", 
+                "btc", "eth",
                 "link",
                 "eos", "bch", "ltc",
                 "zec", "xrp",
@@ -106,7 +106,7 @@ def fiber_mode(name):
 if __name__=='__main__':
     count = 0
     # while True:
-    while count < 3:
+    while count < 1000:
         time_stamp = int(time.time())
         dt_stamp = timeStamp_to_datetime(time_stamp)
         multi_process(dt_stamp)
