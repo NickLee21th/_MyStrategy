@@ -69,8 +69,8 @@ def calculate_total(dt_stamp):
         print("========================================")
         print("%s  earn_value_total = %s" % (dt_stamp, earn_value_total), file=file_handle)
         print("%s  earn_value_total = %s" % (dt_stamp, earn_value_total))
-        print("========================================", file=file_handle)
-        print("========================================")
+        print("========================================\n", file=file_handle)
+        print("========================================\n")
     except Exception as ex:
         print("Exception in calculate_total")
         print("ex = %s" % ex)
@@ -104,6 +104,15 @@ def fiber_mode(name):
     print('fiber %s FINISH' % name)
 
 if __name__=='__main__':
-    dt_stamp = timeStamp_to_datetime(int(time.time()))
-    multi_process(dt_stamp)
-    calculate_total(dt_stamp)
+    count = 0
+    # while True:
+    while count < 3:
+        time_stamp = int(time.time())
+        dt_stamp = timeStamp_to_datetime(time_stamp)
+        multi_process(dt_stamp)
+        calculate_total(dt_stamp)
+        time_stamp_end = int(time.time())
+        sleep_time = 60*5 - (time_stamp_end - time_stamp)
+        print("sleep %s seconds ....." % sleep_time)
+        time.sleep(sleep_time)
+        count += 1
