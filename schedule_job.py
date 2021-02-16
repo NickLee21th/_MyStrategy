@@ -16,7 +16,10 @@ if __name__ == '__main__':
             demo = DemoStrategy()
             demo.etp = argvs[1]
             demo.dt_stamp = argvs[2]
-            demo.demon_main()
+            demo.access_key = access_key
+            demo.secret_key = secret_key
+            demo.account_id = account_id
+            demo.demon_action()
     except Exception as ex:
         print("Exception in main, etp = %s" % argvs[1])
         print("ex=%s" % ex)

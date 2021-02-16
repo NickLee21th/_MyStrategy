@@ -6,6 +6,16 @@ import time
 
 
 class DemoStrategy:
+    BASE_INVEST = 20
+    current_balance = BASE_INVEST
+    once_invest = BASE_INVEST / 2
+    last_symbol = ""
+    last_currency = ""
+    last_amount = 0.0
+    earning_ratio = 0.0
+    access_key = ACCESS_KEY
+    secret_key = SECRET_KEY
+    account_id = ACCOUNT_ID  # spot
     etp = ""
     dt_stamp = ""
     demo_logger = None
@@ -21,11 +31,13 @@ class DemoStrategy:
             OK = True
         return OK, earn_value_A, earn_value_B
 
-    def logger_init(self):
+    def logger_init(self,
+                    log_file_template="demo_log/demo_%s_%s.log"
+                    ):
         logger = logging.getLogger(self.etp)
         logger.setLevel(level=logging.INFO)
         dt_value = self.dt_stamp
-        handler = logging.FileHandler("demo_log/demo_%s_%s.log" % (self.etp, dt_value))
+        handler = logging.FileHandler(log_file_template % (self.etp, dt_value))
         handler.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
@@ -42,7 +54,177 @@ class DemoStrategy:
             else:
                 print(str(log))
 
-    def demon_main(self):
+    # 市价买入指定币种
+    def buy_market(self, symbol=""):
+        if symbol == "":
+            return False
+        ret = False
+        retry_count = 0
+        response = None
+        while ret is False and retry_count < 10:
+            response = Post_order_place(
+                access_key=self.access_key,
+                secret_key=self.secret_key,
+                account_id=self.account_id,
+                symbol=symbol,
+                type_value="buy-market",
+                amount=10,
+            )
+            if response is not None:
+                status = response["status"]
+                if status == "ok":
+                    ret = True
+                else:
+                    ret = False
+                    retry_count += 1
+                    time.sleep(2)
+                    continue
+            else:
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        return response
+
+    # 市价卖出指定币种
+    def sell_market(self, symbol="", amount=0):
+        if symbol == "" or amount <= 0:
+            return False
+        ret = False
+        retry_count = 0
+        response = None
+        while ret is False and retry_count < 10:
+            response = Post_order_place(
+                access_key=self.access_key,
+                secret_key=self.secret_key,
+                account_id=self.account_id,
+                symbol=symbol,
+                type_value="sell-market",
+                amount=amount,
+            )
+            if response is not None:
+                status = response["status"]
+                if status == "ok":
+                    ret = True
+                else:
+                    ret = False
+                    retry_count += 1
+                    time.sleep(2)
+                    continue
+            else:
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        return response
+
+    # 行动器
+
+    # 行动
+    def demon_action(self):
+        self.logger_init(log_file_template="demo_action_log/action_%s_%s.txt")
+        self.demo_print("I'm %s in demo_action" % self.etp)
+        count = 0
+        while count < 1000:
+            time_stamp = int(time.time())
+            self.do_action()
+            time_stamp_end = int(time.time())
+            sleep_time = 60 * 5 - (time_stamp_end - time_stamp)
+            print("sleep %s seconds ....." % sleep_time)
+            time.sleep(sleep_time)
+            count += 1
+
+    # 行动器
+    def do_action(self):
+        try:
+            period = "5min"  # 1min, 5min, 15min, 30min
+            size = 2000
+            step_range = int(size / 2)
+            cur_ts = 1000
+            last_ts = 0
+            trend_base_list = None
+            trend_3l_list = None
+            trend_3s_list = None
+            while (cur_ts-last_ts) > (60*5):
+                trend_base_list, trend_3l_list, trend_3s_list \
+                    = self.get_ALL_symbol_trend_data(
+                    symbol_base=(self.etp + "usdt"),
+                    symbol_l=(self.etp + "3lusdt"),
+                    symbol_s=(self.etp + "3susdt"),
+                    period=period,  # 1min, 5min, 15min, 30min
+                    size=size,
+                )
+                last_ts = trend_base_list[0]["dt"]
+                self.demo_print("last_ts = %s  %s " % (last_ts, timeStamp_to_datetime(last_ts)))
+                cur_ts = int(time.time())
+                self.demo_print("cur_ts = %s  %s " % (cur_ts, timeStamp_to_datetime(cur_ts)))
+            print("OK -step 1")
+            last_ts, last_trend, invest_direction = self.judge_invest_direction(
+                trend_base_list=trend_base_list,
+                trend_3l_list=trend_3l_list,
+                trend_3s_list=trend_3s_list,
+                symbol_base=(self.etp + "usdt"),
+                start_point=step_range-1,
+                end_point=-1,
+            )
+            self.demo_print("last_ts = %s  %s " % (last_ts, timeStamp_to_datetime(last_ts)))
+            cur_ts = int(time.time())
+            self.demo_print("cur_ts = %s  %s " % (cur_ts, timeStamp_to_datetime(cur_ts)))
+            self.demo_print("(cur_ts-last_ts) = %s" % (cur_ts-last_ts))
+            assert (60*5) < (cur_ts-last_ts)
+            new_cur_ts = int(time.time())
+            self.demo_print("new_cur_ts = %s  %s " % (new_cur_ts, timeStamp_to_datetime(new_cur_ts)))
+            # 获取交易对价格
+            symbol = ""
+            currency = ""
+            if last_trend == 1:
+                self.demo_print("last_trend = 涨")
+                symbol = self.etp + "3lusdt"
+                currency = self.etp + "3l"
+            elif last_trend == -1:
+                self.demo_print("last_trend = 跌")
+                symbol = self.etp + "3susdt"
+                currency = self.etp + "3s"
+            else:
+                self.demo_print("last_trend = 平")
+            self.demo_print("invest_direction = %s" % invest_direction)
+            cur_price = "0.0"
+            ts = 1
+            if symbol != "":
+                ts, cur_price = get_current_price(
+                    symbol=symbol,
+                )
+                ts = int(ts/1000)
+                self.demo_print("symbol = %s,  cur_price = %s" % (symbol, cur_price))
+                self.demo_print("ts = %s  %s " % (ts, timeStamp_to_datetime(ts)))
+                if self.last_symbol == "":
+                    self.demo_print("current_balance = %s  %s"
+                               % (self.current_balance, timeStamp_to_datetime(ts)))
+                    self.last_symbol = symbol
+                    self.last_currency = currency
+                    self.last_amount = self.once_invest / cur_price
+                    self.current_balance -= self.once_invest
+                else:
+                    sell_ts, sell_cur_price = get_current_price(
+                        symbol=self.last_symbol,
+                    )
+                    sell_ts = int(sell_ts/1000)
+                    self.current_balance += sell_cur_price * self.last_amount
+                    self.demo_print("current_balance = %s  %s"
+                               % (self.current_balance, timeStamp_to_datetime(sell_ts)))
+                    self.earning_ratio = (self.current_balance-self.BASE_INVEST) / self.BASE_INVEST
+                    self.demo_print("收益率 = %s" % self.earning_ratio)
+                    self.last_symbol = symbol
+                    self.last_currency = currency
+                    self.last_amount = self.once_invest / cur_price
+                    self.current_balance -= self.once_invest
+            self.demo_print("=========================================")
+        except Exception as ex:
+            self.demo_print("Exception in demon_action")
+            self.demo_print("ex = %s" % ex)
+
+    # 预言机
+    def demon_prediction(self):
         self.logger_init()
         self.demo_print("I'm %s" % self.etp)
         try:
@@ -61,7 +243,7 @@ class DemoStrategy:
             invest_direction_list = []
             for i in range(int(size / 2) - 1, -1, -1):
                 print("%s -step 1-%s" % (self.etp, i))
-                invest_direction = self.judge_invest_direction(
+                _, _, invest_direction = self.judge_invest_direction(
                     trend_base_list=trend_base_list,
                     trend_3l_list=trend_3l_list,
                     trend_3s_list=trend_3s_list,
@@ -86,7 +268,7 @@ class DemoStrategy:
             )
             self.demo_print("=========================================")
         except Exception as ex:
-            self.demo_print("Exception in demon_main")
+            self.demo_print("Exception in demon_prediction")
             self.demo_print("ex = %s" % ex)
 
     def deduce_earn(
@@ -208,11 +390,18 @@ class DemoStrategy:
             if k_line_res is not None and k_line_res["status"] == "ok":
                 res_data = k_line_res["data"]
                 for item in res_data:
+                    last_ts = item["id"]
+                    cur_ts = int(time.time())
+                    delta = cur_ts-last_ts
+                    finished = True
+                    if delta < (60*5):
+                        finished = False
                     trend_symbol_item = {
                         "dt": item["id"],
                         "symbol": symbol,
                         "open": item["open"],
                         "close": item["close"],
+                        "finished": finished
                     }
                     trend = 0  # 平
                     change_rate = (item["close"] - item["open"]) / item["open"]
@@ -257,12 +446,19 @@ class DemoStrategy:
                 end_point=end_point,
         )
         step_range = int(start_point) - int(end_point)
+        if trend_base_list[0]["finished"]:
+            index = 0
+        else:
+            index = 1
+            assert trend_base_list[1]["finished"]
+        last_trend = trend_base_list[index]["trend"]
+        last_ts = trend_base_list[index]["dt"]
         invest_direction = "no_plan"
         if count_B_earn > 0 and count_B_earn > count_A_earn and count_B_earn > (step_range * 0.8):
             invest_direction = "planB"
         elif count_A_earn > 0 and count_A_earn > count_B_earn and count_A_earn > (step_range * 0.8):
             invest_direction = "planA"
-        return invest_direction
+        return last_ts, last_trend, invest_direction
 
     # 计算指定时长内的趋势数据
     def calculate_trend_data(
@@ -361,6 +557,57 @@ def API_v2_account_repayment(access_key, secret_key,):
         },
     )
 
+
+# 返回当前交易对的最新的交易价格
+def get_current_price(symbol="btcusdt"):
+    current_price = 0.0
+    ts = 0
+    ret = False
+    retry_count = 0
+    while ret is False and retry_count < 10:
+        response = Get_market_trade(
+            symbol=symbol,
+        )
+        if response is not None:
+            status = response["status"]
+            ts = response["ts"]
+            if status == "ok":
+                tick = response["tick"]
+                data = tick["data"]
+                ret = True
+                bFind = False
+                for data_item in data:
+                    current_price = data_item["price"]
+                    bFind = True
+                    break
+                if not bFind:
+                    print("Failed to get current price, symbol=%s" % symbol)
+            else:
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        else:
+            ret = False
+            retry_count += 1
+            time.sleep(2)
+            continue
+    return ts, current_price
+
+
+# 返回指定交易对最新的一个交易记录。
+def Get_market_trade(symbol="btcusdt"):
+    params = {
+        "symbol": symbol,
+    }
+    return HbgAnyCall().callWebMethod(
+        host_path="https://api.huobi.pro",
+        interface_path="/market/trade",
+        method_type="GET",
+        headers=None,
+        params=params
+    )
+
 # 返回历史K线数据。K线周期以新加坡时间为基准开始计算，例如日K线的起始周期为新加坡时间0时至新加坡时间次日0时。
 # 当前 REST API 不支持自定义时间区间，如需要历史固定时间范围的数据，请参考 Websocket API 中的 K 线接口。
 # 获取 hb10 净值时， symbol 请填写 “hb10”。
@@ -456,18 +703,37 @@ def get_currency_balance(
                     # interest: 待还借贷利息, lock: 锁仓, bank: 储蓄
 ):
     balance_value = "-1"
-    response = Get_accounts_balance(
-        access_key=access_key, secret_key=secret_key,
-        account_id=account_id
-    )
-    status = response["status"]
-    if status == "ok":
-        data = response["data"]
-        balance_list = data["list"]
-        for balance_item in balance_list:
-            if balance_item["currency"] == currency and balance_item["type"] == type_value:
-                balance_value = balance_item["balance"]
-                break
+    ret = False
+    retry_count = 0
+    while ret is False and retry_count < 10:
+        response = Get_accounts_balance(
+            access_key=access_key, secret_key=secret_key,
+            account_id=account_id
+        )
+        if response is not None:
+            status = response["status"]
+            if status == "ok":
+                data = response["data"]
+                balance_list = data["list"]
+                ret = True
+                bFind = False
+                for balance_item in balance_list:
+                    if balance_item["currency"] == currency and balance_item["type"] == type_value:
+                        balance_value = balance_item["balance"]
+                        bFind = True
+                        break
+                if not bFind:
+                    print("Failed to get the balance, currency=%s, type_value=%s" % (currency, type_value))
+            else:
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        else:
+            ret = False
+            retry_count += 1
+            time.sleep(2)
+            continue
     return balance_value
 
 
@@ -797,43 +1063,9 @@ def demo_01():
     demo_print("Total_earn_value_ALL_B = %s " % Total_earn_value_ALL_B)
 
 
-def demo_02():
-    etp = "btc"
-    # etp = "bch"
-    # etp = "ltc"
-    period = "5min"
-    size = 2000
-    trend_base_list = get_symbol_trend_data(
-        symbol=(etp + "usdt"),
-        period=period,  # 1min, 5min, 15min, 30min
-        size=size,
-    )
-    trend_3l_list = get_symbol_trend_data(
-        symbol=(etp + "3lusdt"),
-        period=period,  # 1min, 5min, 15min, 30min
-        size=size,
-    )
-    trend_3s_list = get_symbol_trend_data(
-        symbol=(etp + "3susdt"),
-        period=period,  # 1min, 5min, 15min, 30min
-        size=size,
-    )
-    show_symbol_trend_data(
-        symbol_base=(etp + "usdt"),
-        trend_base_list=trend_base_list,
-        trend_3l_list=trend_3l_list,
-        trend_3s_list=trend_3s_list
-    )
-
 def demo_03():
-    # 获取 K 线
-    response = Get_kline_data(
-        symbol="eth3lusdt",
-        period="1min",
-        size=20
-    )
-    hbgAnyCall = HbgAnyCall()
-    hbgAnyCall.print_json(response)
+    response = Get_market_trade(symbol="btc3lusdt")
+    print(response)
 
 def demo_Api(access_key, secret_key):
     response = API_v2_account_repayment(access_key, secret_key)
@@ -841,6 +1073,33 @@ def demo_Api(access_key, secret_key):
     hbgAnyCall.print_json(response)
 
 
+# def demo_02():
+#     etp = "btc"
+#     # etp = "bch"
+#     # etp = "ltc"
+#     period = "5min"
+#     size = 2000
+#     trend_base_list = get_symbol_trend_data(
+#         symbol=(etp + "usdt"),
+#         period=period,  # 1min, 5min, 15min, 30min
+#         size=size,
+#     )
+#     trend_3l_list = get_symbol_trend_data(
+#         symbol=(etp + "3lusdt"),
+#         period=period,  # 1min, 5min, 15min, 30min
+#         size=size,
+#     )
+#     trend_3s_list = get_symbol_trend_data(
+#         symbol=(etp + "3susdt"),
+#         period=period,  # 1min, 5min, 15min, 30min
+#         size=size,
+#     )
+#     show_symbol_trend_data(
+#         symbol_base=(etp + "usdt"),
+#         trend_base_list=trend_base_list,
+#         trend_3l_list=trend_3l_list,
+#         trend_3s_list=trend_3s_list
+#     )
 
 # if __name__ == '__main__':
 #     access_key = ACCESS_KEY
