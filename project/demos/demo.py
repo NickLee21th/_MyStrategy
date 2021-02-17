@@ -126,12 +126,17 @@ class DemoStrategy:
         self.demo_print("I'm %s in demo_action" % self.etp)
         count = 0
         while count < 1000:
-            time_stamp = int(time.time())
+            time_stamp_start = int(time.time())
             self.do_action()
             time_stamp_end = int(time.time())
-            sleep_time = 60 * 5 - (time_stamp_end - time_stamp)
-            print("sleep %s seconds ....." % sleep_time)
-            time.sleep(sleep_time)
+            sleep_time = 60 * 5 - (time_stamp_end - time_stamp_start)
+            if sleep_time > 0:
+                print("sleep %s seconds ....." % sleep_time)
+                time.sleep(sleep_time)
+            else:
+                print("Waiting time more than 5 minutes! ")
+                print("time_stamp_start = %s   time_stamp_end = %s " %
+                      (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
             count += 1
 
     # 行动器
