@@ -178,15 +178,15 @@ class DemoStrategy:
             symbol = ""
             currency = ""
             if last_trend == 1:
-                self.demo_print("last_trend = 涨")
+                self.demo_print("last_trend = up")
                 symbol = self.etp + "3lusdt"
                 currency = self.etp + "3l"
             elif last_trend == -1:
-                self.demo_print("last_trend = 跌")
+                self.demo_print("last_trend = down")
                 symbol = self.etp + "3susdt"
                 currency = self.etp + "3s"
             else:
-                self.demo_print("last_trend = 平")
+                self.demo_print("last_trend = nothing")
             self.demo_print("invest_direction = %s" % invest_direction)
             cur_price = "0.0"
             ts = 1
@@ -212,8 +212,8 @@ class DemoStrategy:
                     self.current_balance += sell_cur_price * self.last_amount
                     self.demo_print("current_balance = %s  %s"
                                % (self.current_balance, timeStamp_to_datetime(sell_ts)))
-                    self.earning_ratio = (self.current_balance-self.BASE_INVEST) / self.BASE_INVEST
-                    self.demo_print("收益率 = %s" % self.earning_ratio)
+                    self.earning_ratio = (self.current_balance-self.once_invest) / self.once_invest
+                    self.demo_print("earning_ratio = %s%%" % (self.earning_ratio*100.0))
                     self.last_symbol = symbol
                     self.last_currency = currency
                     self.last_amount = self.once_invest / cur_price
