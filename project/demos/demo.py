@@ -7,7 +7,7 @@ import time
 
 class DemoStrategy:
     BASE_INVEST = 20
-    current_balance = BASE_INVEST
+    current_balance = BASE_INVEST / 2
     once_invest = BASE_INVEST / 2
     last_symbol = "Nothing"
     last_currency = "Nothing"
