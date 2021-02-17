@@ -211,6 +211,9 @@ class DemoStrategy:
                         symbol=self.last_symbol,
                     )
                     sell_ts = int(sell_ts/1000)
+                    self.demo_print("last_symbol = %s,  sell_cur_price = %s" % (self.last_symbol, sell_cur_price))
+                    self.demo_print("sell_ts = %s  %s " % (sell_ts, timeStamp_to_datetime(sell_ts)))
+                    self.demo_print("sell_cur_price * self.last_amount = %s" % (sell_cur_price * self.last_amount))
                     self.current_balance += sell_cur_price * self.last_amount
                     self.demo_print("current_balance = %s  %s"
                                % (self.current_balance, timeStamp_to_datetime(sell_ts)))
@@ -226,6 +229,9 @@ class DemoStrategy:
                         symbol=self.last_symbol,
                     )
                     sell_ts = int(sell_ts/1000)
+                    self.demo_print("last_symbol = %s,  sell_cur_price = %s" % (self.last_symbol, sell_cur_price))
+                    self.demo_print("sell_ts = %s  %s " % (sell_ts, timeStamp_to_datetime(sell_ts)))
+                    self.demo_print("sell_cur_price * self.last_amount = %s" % (sell_cur_price * self.last_amount))
                     self.current_balance += sell_cur_price * self.last_amount
                     self.demo_print("current_balance = %s  %s"
                                % (self.current_balance, timeStamp_to_datetime(sell_ts)))
