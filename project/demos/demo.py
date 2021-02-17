@@ -9,8 +9,8 @@ class DemoStrategy:
     BASE_INVEST = 20
     current_balance = BASE_INVEST
     once_invest = BASE_INVEST / 2
-    last_symbol = ""
-    last_currency = ""
+    last_symbol = "Nothing"
+    last_currency = "Nothing"
     last_amount = 0.0
     earning_ratio = 0.0
     access_key = ACCESS_KEY
@@ -187,17 +187,19 @@ class DemoStrategy:
                 currency = self.etp + "3s"
             else:
                 self.demo_print("last_trend = nothing")
+                symbol = "Nothing"
+                currency = "Nothing"
             self.demo_print("invest_direction = %s" % invest_direction)
             cur_price = "0.0"
             ts = 1
-            if symbol != "":
+            if symbol != "Nothing":
                 ts, cur_price = get_current_price(
                     symbol=symbol,
                 )
                 ts = int(ts/1000)
                 self.demo_print("symbol = %s,  cur_price = %s" % (symbol, cur_price))
                 self.demo_print("ts = %s  %s " % (ts, timeStamp_to_datetime(ts)))
-                if self.last_symbol == "":
+                if self.last_symbol == "Nothing":
                     self.demo_print("current_balance = %s  %s"
                                % (self.current_balance, timeStamp_to_datetime(ts)))
                     self.last_symbol = symbol
@@ -218,6 +220,20 @@ class DemoStrategy:
                     self.last_currency = currency
                     self.last_amount = self.once_invest / cur_price
                     self.current_balance -= self.once_invest
+            else:
+                if self.last_symbol != "Nothing":
+                    sell_ts, sell_cur_price = get_current_price(
+                        symbol=self.last_symbol,
+                    )
+                    sell_ts = int(sell_ts/1000)
+                    self.current_balance += sell_cur_price * self.last_amount
+                    self.demo_print("current_balance = %s  %s"
+                               % (self.current_balance, timeStamp_to_datetime(sell_ts)))
+                    self.earning_ratio = (self.current_balance-self.once_invest) / self.once_invest
+                    self.demo_print("earning_ratio = %s%%" % (self.earning_ratio*100.0))
+                    self.last_symbol = "Nothing"
+                    self.last_currency = "Nothing"
+                    self.last_amount = 0.0
             self.demo_print("=========================================")
         except Exception as ex:
             self.demo_print("Exception in demon_action")
