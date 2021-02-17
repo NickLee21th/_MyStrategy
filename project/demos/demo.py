@@ -131,6 +131,8 @@ class DemoStrategy:
             time_stamp_end = int(time.time())
             sleep_time = 60 * 5 - (time_stamp_end - time_stamp_start)
             if sleep_time > 0:
+                print("time_stamp_start = %s   time_stamp_end = %s " %
+                      (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
                 print("sleep %s seconds ....." % sleep_time)
                 time.sleep(sleep_time)
             else:
