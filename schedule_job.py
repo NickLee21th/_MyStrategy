@@ -20,6 +20,7 @@ if __name__ == '__main__':
             demo.secret_key = secret_key
             demo.account_id = account_id
             demo.demon_action()
+            # demo.demon_prediction()
     except Exception as ex:
         print("Exception in main, etp = %s" % argvs[1])
         print("ex=%s" % ex)

@@ -24,7 +24,8 @@ if __name__ == '__main__':
         demo = DemoStrategy()
         demo.etp = "btc"
         demo.dt_stamp = dt_stamp
-        demo.demon_action()
+        # demo.demon_action()
+        demo.demon_prediction()
 
         # demo_01()
         # demo_02()

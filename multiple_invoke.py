@@ -107,15 +107,17 @@ if __name__=='__main__':
     time_stamp = int(time.time())
     dt_stamp = timeStamp_to_datetime(time_stamp)
     multi_process(dt_stamp)
+    calculate_total(dt_stamp)
     # count = 0
-    # # while True:
+    # while True:
     # while count < 1000:
     #     time_stamp = int(time.time())
     #     dt_stamp = timeStamp_to_datetime(time_stamp)
     #     multi_process(dt_stamp)
-    #     # calculate_total(dt_stamp)
+    #     calculate_total(dt_stamp)
     #     time_stamp_end = int(time.time())
     #     sleep_time = 60*5 - (time_stamp_end - time_stamp)
-    #     print("sleep %s seconds ....." % sleep_time)
-    #     time.sleep(sleep_time)
+    #     if sleep_time > 0:
+    #         print("sleep %s seconds ....." % sleep_time)
+    #         time.sleep(sleep_time)
     #     count += 1

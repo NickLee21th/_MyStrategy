@@ -145,7 +145,7 @@ class DemoStrategy:
     def do_action(self):
         try:
             period = "5min"  # 1min, 5min, 15min, 30min
-            size = 2000
+            size = 1000  # 2000
             step_range = int(size / 2)
             cur_ts = 1000
             last_ts = 0
@@ -268,10 +268,10 @@ class DemoStrategy:
                 period=period,  # 1min, 5min, 15min, 30min
                 size=size,
             )
-            print("OK -step 1")
+            # print("OK -step 1")
             invest_direction_list = []
             for i in range(int(size / 2) - 1, -1, -1):
-                print("%s -step 1-%s" % (self.etp, i))
+                # print("%s -step 1-%s" % (self.etp, i))
                 _, _, invest_direction = self.judge_invest_direction(
                     trend_base_list=trend_base_list,
                     trend_3l_list=trend_3l_list,
