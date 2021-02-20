@@ -104,11 +104,13 @@ def fiber_mode(name):
     print('fiber %s FINISH' % name)
 
 if __name__=='__main__':
+    count = 0
+
     time_stamp = int(time.time())
     dt_stamp = timeStamp_to_datetime(time_stamp)
     multi_process(dt_stamp)
     calculate_total(dt_stamp)
-    # count = 0
+
     # while True:
     # while count < 1000:
     #     time_stamp = int(time.time())
