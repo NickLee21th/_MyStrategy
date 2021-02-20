@@ -109,7 +109,6 @@ if __name__=='__main__':
     time_stamp = int(time.time())
     dt_stamp = timeStamp_to_datetime(time_stamp)
     multi_process(dt_stamp)
-    calculate_total(dt_stamp)
 
     # while True:
     # while count < 1000:
