@@ -5,7 +5,8 @@ import time
 from multiprocessing import Pool
 import subprocess
 import os, time, random
-import unittest
+from project.demos.config import *
+from project.demos.demo import *
 
 current_path = os.path.dirname(os.path.abspath(__file__))
 
@@ -15,12 +16,30 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
         dt_format = "%Y-%m-%d-%H-%M-%S"
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
+def schedule_job(etp, dt_stamp,):
+    access_key = ACCESS_KEY
+    secret_key = SECRET_KEY
+    account_id = ACCOUNT_ID  # spot
+    try:
+        demo = DemoStrategy()
+        demo.etp = etp
+        demo.dt_stamp = dt_stamp
+        demo.access_key = access_key
+        demo.secret_key = secret_key
+        demo.account_id = account_id
+        demo.demon_action()
+        # demo.demon_prediction()
+    except Exception as ex:
+        print("Exception in main, etp = %s" % argvs[1])
+        print("ex=%s" % ex)
+
 def long_time_task(etp, dt_stamp):
     print('Run task %s (%s)...' % (etp, os.getpid()))
     start = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (start= %s)...' % (etp, start))
-    cmd = 'python3 schedule_job.py %s %s' % (etp, dt_stamp)
-    os.system(cmd)
+    # cmd = 'python3 schedule_job.py %s %s' % (etp, dt_stamp)
+    # os.system(cmd)
+    schedule_job(etp=etp, dt_stamp=dt_stamp)
     end = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (end= %s)...' % (etp, end))
 

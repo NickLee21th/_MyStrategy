@@ -54,6 +54,85 @@ class DemoStrategy:
             else:
                 print(str(log))
 
+    def plan_A(self,
+            symbol_base, start, end,
+            trend_base_list, trend_3l_list, trend_3s_list
+    ):
+        assert start > end
+        pre_trend = ""
+        earn_value = 0.0
+        no_change_count = 0
+        try:
+            for i in range(start, end, -1):
+                # hbgAnyCall.log_print(timeStamp_to_datetime(trend_base_list[i]["dt"]))
+                if i == start:
+                    earn = 0
+                    if trend_base_list[i]["trend"] == 0:  # 平
+                        no_change_count = no_change_count + 1
+                        continue
+                    pre_trend = trend_base_list[i]["trend"]
+                else:
+                    if trend_base_list[i]["trend"] == 0:  # 平
+                        no_change_count = no_change_count + 1
+                        continue
+                    if pre_trend != "":
+                        earn = -1.0
+                        if pre_trend == trend_base_list[i]["trend"]:
+                            earn = 1.0
+                        if pre_trend == -1:  # 跌
+                            earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
+                        elif pre_trend == 1:  # 涨
+                            earn_value = earn_value + abs(trend_3l_list[i]["change_rate"]) * earn
+                    pre_trend = trend_base_list[i]["trend"]
+        except Exception as ex:
+            self.demo_print("Exception in plan_A")
+            self.demo_print("symbol_base=%s, start=%s, end=%s, "
+                            "len(trend_base_list)=%s, len(trend_3l_list)=%s, len(trend_3s_list)=%s"
+                            % (symbol_base, start, end, len(trend_base_list), len(trend_3l_list), len(trend_3s_list)))
+            self.demo_print(ex)
+        # hbgAnyCall.log_print("%s .... earn_value = %s" % (symbol_base, earn_value))
+        # hbgAnyCall.log_print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
+        return earn_value
+
+    def plan_B(self,
+            symbol_base, start, end,
+            trend_base_list, trend_3l_list, trend_3s_list
+    ):
+        assert start > end
+        pre_trend = ""
+        earn_value = 0.0
+        no_change_count = 0
+        try:
+            for i in range(start, end, -1):
+                if i == start:
+                    earn = 0
+                    if trend_base_list[i]["trend"] == 0:  # 平
+                        no_change_count = no_change_count + 1
+                        continue
+                    pre_trend = trend_base_list[i]["trend"]
+                else:
+                    if trend_base_list[i]["trend"] == 0:  # 平
+                        no_change_count = no_change_count + 1
+                        continue
+                    if pre_trend != "":
+                        earn = 1.0
+                        if pre_trend == trend_base_list[i]["trend"]:
+                            earn = -1.0
+                        if pre_trend == -1:  # 跌
+                            earn_value = earn_value + abs(trend_3l_list[i]["change_rate"]) * earn
+                        elif pre_trend == 1:  # 涨
+                            earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
+                    pre_trend = trend_base_list[i]["trend"]
+        except Exception as ex:
+            self.demo_print("Exception in plan_B")
+            self.demo_print("symbol_base=%s, start=%s, end=%s, "
+                            "len(trend_base_list)=%s, len(trend_3l_list)=%s, len(trend_3s_list)=%s"
+                            % (symbol_base, start, end, len(trend_base_list), len(trend_3l_list), len(trend_3s_list)))
+            self.demo_print(ex)
+        # hbgAnyCall.log_print("%s .... earn_value = %s" % (symbol_base, earn_value))
+        # hbgAnyCall.log_print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
+        return earn_value
+
     # 市价买入指定币种
     def buy_market(self, symbol=""):
         if symbol == "":
@@ -141,11 +220,41 @@ class DemoStrategy:
                       (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
             count += 1
 
+    # 市价卖出上一次持有的杠杆代币
+    def sell_last_hold_lever_coins(self):
+        if self.last_symbol != "Nothing":
+            ts_sell, sell_cur_price = get_current_price(symbol=self.last_symbol, )
+            ts_sell = int(ts_sell / 1000)
+            self.demo_print("SELL LAST COIN")
+            self.demo_print("last_symbol:%s, last_currency:%s, last_amount:%s, sell_cur_price:%s" %
+                            (self.last_symbol, self.last_currency, self.last_amount, sell_cur_price))
+            self.demo_print("sell_cur_price * last_amount = %s" % (sell_cur_price * self.last_amount))
+            self.current_balance += sell_cur_price * self.last_amount
+            self.demo_print("current_balance = %s  sell_ts:%s"
+                            % (self.current_balance, timeStamp_to_datetime(ts_sell)))
+            self.earning_ratio = (self.current_balance - self.once_invest) / self.once_invest
+            self.demo_print("earning_ratio = %s%%" % (self.earning_ratio * 100.0))
+            self.last_symbol = "Nothing"
+            self.last_currency = "Nothing"
+            self.last_amount = 0.0
+
+    # 市价买入新的杠杆代币
+    def buy_lever_coins(self, symbol, currency, cur_price, ts):
+        self.demo_print("current_balance = %s" % self.current_balance)
+        self.demo_print("BUY NEW COINS")
+        self.demo_print("symbol:%s, currency:%s, cur_price:%s, amount=%s, ts:%s"
+                        % (symbol, currency, cur_price, (self.once_invest / cur_price),
+                           timeStamp_to_datetime(int(ts/1000))))
+        self.current_balance -= self.once_invest
+        self.last_symbol = symbol
+        self.last_currency = currency
+        self.last_amount = self.once_invest / cur_price
+
     # 行动器
     def do_action(self):
         try:
             period = "5min"  # 1min, 5min, 15min, 30min
-            size = 1000  # 2000
+            size = 300  # 1000  # 2000
             step_range = int(size / 2)
             cur_ts = 1000
             last_ts = 0
@@ -162,10 +271,10 @@ class DemoStrategy:
                     size=size,
                 )
                 last_ts = trend_base_list[0]["dt"]
-                self.demo_print("last_ts = %s  %s " % (last_ts, timeStamp_to_datetime(last_ts)))
+                # self.demo_print("last_ts = %s  %s " % (last_ts, timeStamp_to_datetime(last_ts)))
                 cur_ts = int(time.time())
-                self.demo_print("cur_ts = %s  %s " % (cur_ts, timeStamp_to_datetime(cur_ts)))
-            print("OK -step 1")
+                # self.demo_print("cur_ts = %s  %s " % (cur_ts, timeStamp_to_datetime(cur_ts)))
+            print("OK -step 1 - get_ALL_symbol_trend_data")
             last_ts, last_trend, invest_direction = self.judge_invest_direction(
                 trend_base_list=trend_base_list,
                 trend_3l_list=trend_3l_list,
@@ -174,79 +283,49 @@ class DemoStrategy:
                 start_point=step_range-1,
                 end_point=-1,
             )
-            self.demo_print("last_ts = %s  %s " % (last_ts, timeStamp_to_datetime(last_ts)))
             cur_ts = int(time.time())
-            self.demo_print("cur_ts = %s  %s " % (cur_ts, timeStamp_to_datetime(cur_ts)))
-            self.demo_print("(cur_ts-last_ts) = %s" % (cur_ts-last_ts))
             assert (60*5) < (cur_ts-last_ts)
-            new_cur_ts = int(time.time())
-            self.demo_print("new_cur_ts = %s  %s " % (new_cur_ts, timeStamp_to_datetime(new_cur_ts)))
-            # 获取交易对价格
-            symbol = ""
-            currency = ""
-            if last_trend == 1:
-                self.demo_print("last_trend = up")
-                symbol = self.etp + "3lusdt"
-                currency = self.etp + "3l"
-            elif last_trend == -1:
-                self.demo_print("last_trend = down")
-                symbol = self.etp + "3susdt"
-                currency = self.etp + "3s"
-            else:
-                self.demo_print("last_trend = nothing")
-                symbol = "Nothing"
-                currency = "Nothing"
-            self.demo_print("invest_direction = %s" % invest_direction)
-            cur_price = "0.0"
-            ts = 1
-            if symbol != "Nothing":
-                ts, cur_price = get_current_price(
-                    symbol=symbol,
-                )
-                ts = int(ts/1000)
-                self.demo_print("symbol = %s,  cur_price = %s" % (symbol, cur_price))
-                self.demo_print("ts = %s  %s " % (ts, timeStamp_to_datetime(ts)))
-                if self.last_symbol == "Nothing":
-                    self.demo_print("current_balance = %s  %s"
-                               % (self.current_balance, timeStamp_to_datetime(ts)))
-                    self.last_symbol = symbol
-                    self.last_currency = currency
-                    self.last_amount = self.once_invest / cur_price
-                    self.current_balance -= self.once_invest
-                else:
-                    sell_ts, sell_cur_price = get_current_price(
-                        symbol=self.last_symbol,
-                    )
-                    sell_ts = int(sell_ts/1000)
-                    self.demo_print("last_symbol = %s,  sell_cur_price = %s" % (self.last_symbol, sell_cur_price))
-                    self.demo_print("sell_ts = %s  %s " % (sell_ts, timeStamp_to_datetime(sell_ts)))
-                    self.demo_print("sell_cur_price * self.last_amount = %s" % (sell_cur_price * self.last_amount))
-                    self.current_balance += sell_cur_price * self.last_amount
-                    self.demo_print("current_balance = %s  %s"
-                               % (self.current_balance, timeStamp_to_datetime(sell_ts)))
-                    self.earning_ratio = (self.current_balance-self.once_invest) / self.once_invest
-                    self.demo_print("earning_ratio = %s%%" % (self.earning_ratio*100.0))
-                    self.last_symbol = symbol
-                    self.last_currency = currency
-                    self.last_amount = self.once_invest / cur_price
-                    self.current_balance -= self.once_invest
-            else:
-                if self.last_symbol != "Nothing":
-                    sell_ts, sell_cur_price = get_current_price(
-                        symbol=self.last_symbol,
-                    )
-                    sell_ts = int(sell_ts/1000)
-                    self.demo_print("last_symbol = %s,  sell_cur_price = %s" % (self.last_symbol, sell_cur_price))
-                    self.demo_print("sell_ts = %s  %s " % (sell_ts, timeStamp_to_datetime(sell_ts)))
-                    self.demo_print("sell_cur_price * self.last_amount = %s" % (sell_cur_price * self.last_amount))
-                    self.current_balance += sell_cur_price * self.last_amount
-                    self.demo_print("current_balance = %s  %s"
-                               % (self.current_balance, timeStamp_to_datetime(sell_ts)))
-                    self.earning_ratio = (self.current_balance-self.once_invest) / self.once_invest
-                    self.demo_print("earning_ratio = %s%%" % (self.earning_ratio*100.0))
-                    self.last_symbol = "Nothing"
-                    self.last_currency = "Nothing"
-                    self.last_amount = 0.0
+            print("OK -step 2 - judge_invest_direction")
+            # 根据 invest_direction 获取交易对价格
+            self.demo_print("invest_direction = %s   last_trend = %s" % (invest_direction, last_trend))
+            symbol_l = self.etp + "3lusdt"
+            currency_l = self.etp + "3l"
+            cur_price_l = 0.0
+            ts_l = 1
+            symbol_s = self.etp + "3susdt"
+            currency_s = self.etp + "3s"
+            cur_price_s = 0.0
+            ts_s = 1
+            if invest_direction == "planA":  # 顺势
+                if last_trend == 1:  # 涨
+                    ts_l, cur_price_l = get_current_price(symbol=symbol_l)
+                    ts_l = int(ts_l/1000)
+                    # 卖出上一次持有的代币
+                    self.sell_last_hold_lever_coins()
+                    # 市价买入新的杠杆代币
+                    self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
+                elif last_trend == -1:  # 跌
+                    ts_s, cur_price_s = get_current_price(symbol=symbol_s)
+                    # 卖出上一次持有的代币
+                    self.sell_last_hold_lever_coins()
+                    # 市价买入新的杠杆代币
+                    self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
+            elif invest_direction == "planB":  # 逆势
+                if last_trend == 1:  # 涨
+                    ts_s, cur_price_s = get_current_price(symbol=symbol_s)
+                    # 卖出上一次持有的代币
+                    self.sell_last_hold_lever_coins()
+                    # 市价买入新的杠杆代币
+                    self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
+                elif last_trend == -1:  # 跌
+                    ts_l, cur_price_l = get_current_price(symbol=symbol_l)
+                    # 卖出上一次持有的代币
+                    self.sell_last_hold_lever_coins()
+                    # 市价买入新的杠杆代币
+                    self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
+            else:  # invest_direction == "no_plan"
+                # 卖出上一次持有的代币
+                self.sell_last_hold_lever_coins()
             self.demo_print("=========================================")
         except Exception as ex:
             self.demo_print("Exception in demon_action")
@@ -381,6 +460,8 @@ class DemoStrategy:
             period=period, size=size
         )
         assert trend_base_list
+        # self.demo_print("%s  %s" % (symbol_base, len(trend_base_list)))
+        assert size == len(trend_base_list)
         # 3l
         symbol = symbol_l
         trend_3l_list = self.get_symbol_trend_data(
@@ -388,6 +469,8 @@ class DemoStrategy:
             period=period, size=size
         )
         assert trend_3l_list
+        # self.demo_print("%s  %s" % (symbol_l, len(trend_3l_list)))
+        assert size == len(trend_3l_list)
         # 3s
         symbol = symbol_s
         trend_3s_list = self.get_symbol_trend_data(
@@ -395,6 +478,8 @@ class DemoStrategy:
             period=period, size=size
         )
         assert trend_3s_list
+        # self.demo_print("%s  %s" % (symbol_s, len(trend_3s_list)))
+        assert size == len(trend_3s_list)
         return trend_base_list, trend_3l_list, trend_3s_list
 
     # 获取交易对的K线信息，整理后返回。
@@ -512,10 +597,10 @@ class DemoStrategy:
                     = self.get_from_data_dict(index_i)
                 if not OK:
                     earn_value_A \
-                        = plan_A(symbol_base, index_i + step_range, index_i,
+                        = self.plan_A(symbol_base, index_i + step_range, index_i,
                                  trend_base_list, trend_3l_list, trend_3s_list)
                     earn_value_B \
-                        = plan_B(symbol_base, index_i + step_range, index_i,
+                        = self.plan_B(symbol_base, index_i + step_range, index_i,
                                  trend_base_list, trend_3l_list, trend_3s_list)
                     self.data_dict[index_i] = {
                         "earn_value_A": earn_value_A,
@@ -811,139 +896,6 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
 
-# 基于K线的计算
-def calculate_base_on_KLine(
-        symbol_base="btcusdt",
-        symbol_l="btc3lusdt",
-        symbol_s="btc3susdt",
-        period="1min",
-        size=2000,
-    ):
-    trend_base_list, trend_3l_list, trend_3s_list \
-        = get_ALL_symbol_trend_data(
-        symbol_base=symbol_base,
-        symbol_l=symbol_l,
-        symbol_s=symbol_s,
-        period=period,
-        size=size,
-    )
-    earn_value_ALL_A = 0
-    earn_value_ALL_B = 0
-    try:
-        calculate_trend_data(
-            trend_base_list=trend_base_list,
-            trend_3l_list=trend_3l_list,
-            trend_3s_list=trend_3s_list,
-            symbol_base=symbol_base,
-            start_point=1500,
-            end_point=1000,
-        )
-        earn_value_Half_B = plan_B(symbol_base, size, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_Half_B = %s" % (symbol_base, earn_value_Half_B), ignore=False)
-        earn_value_C_B = plan_B(symbol_base, int(size / 2), 1, trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_C_B = %s" % (symbol_base, earn_value_C_B), ignore=False)
-        earn_value_ALL_B = plan_B(symbol_base, size, 1, trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_ALL_B = %s" % (symbol_base, earn_value_ALL_B), ignore=False)
-        earn_value_Half_A = plan_A(symbol_base, size, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_Half_A = %s" % (symbol_base, earn_value_Half_A), ignore=False)
-        earn_value_D_A = plan_A(symbol_base, int(size / 2), 1, trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_D_A = %s" % (symbol_base, earn_value_D_A), ignore=False)
-        earn_value_ALL_A = plan_A(symbol_base, size, 1, trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_ALL_A = %s" % (symbol_base, earn_value_ALL_A), ignore=False)
-        hbgAnyCall.log_print("。。。%s: ALL_A + ALL_B = %s" % (symbol_base, earn_value_ALL_A+earn_value_ALL_B), ignore=False)
-        demo_print("****************************************************************************")
-        calculate_trend_data(
-            trend_base_list=trend_base_list,
-            trend_3l_list=trend_3l_list,
-            trend_3s_list=trend_3s_list,
-            symbol_base=symbol_base,
-            start_point=500,
-            end_point=0,
-        )
-        earn_value_C_B_2 = plan_B(symbol_base, int(size / 4), 1, trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_C_B_2 = %s" % (symbol_base, earn_value_C_B_2), ignore=False)
-        earn_value_D_A_2 = plan_A(symbol_base, int(size / 4), 1, trend_base_list, trend_3l_list, trend_3s_list)
-        hbgAnyCall.log_print("%s: earn_value_D_A_2 = %s" % (symbol_base, earn_value_D_A_2), ignore=False)
-    except Exception as ex:
-        demo_print("Exception in calculate_base_on_KLine")
-        demo_print(ex)
-    return earn_value_ALL_A, earn_value_ALL_B
-
-
-def plan_A(
-
-        symbol_base, start, end,
-        trend_base_list, trend_3l_list, trend_3s_list
-):
-    assert start > end
-    pre_trend = ""
-    earn_value = 0.0
-    no_change_count = 0
-    try:
-        for i in range(start, end, -1):
-            # hbgAnyCall.log_print(timeStamp_to_datetime(trend_base_list[i]["dt"]))
-            if i == start:
-                earn = 0
-                if trend_base_list[i]["trend"] == 0:  # 平
-                    no_change_count = no_change_count + 1
-                    continue
-                pre_trend = trend_base_list[i]["trend"]
-            else:
-                if trend_base_list[i]["trend"] == 0:  # 平
-                    no_change_count = no_change_count + 1
-                    continue
-                if pre_trend != "":
-                    earn = -1.0
-                    if pre_trend == trend_base_list[i]["trend"]:
-                        earn = 1.0
-                    if pre_trend == -1:  # 跌
-                        earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
-                    elif pre_trend == 1:  # 涨
-                        earn_value = earn_value + abs(trend_3l_list[i]["change_rate"]) * earn
-                pre_trend = trend_base_list[i]["trend"]
-    except Exception as ex:
-        demo_print("Exception in plan_A")
-        demo_print(ex)
-    hbgAnyCall.log_print("%s .... earn_value = %s" % (symbol_base, earn_value))
-    hbgAnyCall.log_print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
-    return earn_value
-
-
-def plan_B(
-        symbol_base, start, end,
-        trend_base_list, trend_3l_list, trend_3s_list
-):
-    assert start > end
-    pre_trend = ""
-    earn_value = 0.0
-    no_change_count = 0
-    try:
-        for i in range(start, end, -1):
-            if i == start:
-                earn = 0
-                if trend_base_list[i]["trend"] == 0:  # 平
-                    no_change_count = no_change_count + 1
-                    continue
-                pre_trend = trend_base_list[i]["trend"]
-            else:
-                if trend_base_list[i]["trend"] == 0:  # 平
-                    no_change_count = no_change_count + 1
-                    continue
-                if pre_trend != "":
-                    earn = 1.0
-                    if pre_trend == trend_base_list[i]["trend"]:
-                        earn = -1.0
-                    if pre_trend == -1:  # 跌
-                        earn_value = earn_value + abs(trend_3l_list[i]["change_rate"]) * earn
-                    elif pre_trend == 1:  # 涨
-                        earn_value = earn_value + abs(trend_3s_list[i]["change_rate"]) * earn
-                pre_trend = trend_base_list[i]["trend"]
-    except Exception as ex:
-        demo_print("Exception in plan_B")
-        demo_print(ex)
-    hbgAnyCall.log_print("%s .... earn_value = %s" % (symbol_base, earn_value))
-    hbgAnyCall.log_print("%s .... no_change_count = %s" % (symbol_base, no_change_count))
-    return earn_value
 
 # 显示交易对的K线信息的对比
 def show_symbol_trend_data(
@@ -1195,3 +1147,61 @@ def demo_Api(access_key, secret_key):
         #         round(trend_3s_list[i]["change_rate"]*100.0, 4)
         #     )
         # )
+
+# 基于K线的计算
+# def calculate_base_on_KLine(
+#         symbol_base="btcusdt",
+#         symbol_l="btc3lusdt",
+#         symbol_s="btc3susdt",
+#         period="1min",
+#         size=2000,
+#     ):
+#     trend_base_list, trend_3l_list, trend_3s_list \
+#         = get_ALL_symbol_trend_data(
+#         symbol_base=symbol_base,
+#         symbol_l=symbol_l,
+#         symbol_s=symbol_s,
+#         period=period,
+#         size=size,
+#     )
+#     earn_value_ALL_A = 0
+#     earn_value_ALL_B = 0
+#     try:
+#         calculate_trend_data(
+#             trend_base_list=trend_base_list,
+#             trend_3l_list=trend_3l_list,
+#             trend_3s_list=trend_3s_list,
+#             symbol_base=symbol_base,
+#             start_point=1500,
+#             end_point=1000,
+#         )
+#         earn_value_Half_B = plan_B(symbol_base, size, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_Half_B = %s" % (symbol_base, earn_value_Half_B), ignore=False)
+#         earn_value_C_B = plan_B(symbol_base, int(size / 2), 1, trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_C_B = %s" % (symbol_base, earn_value_C_B), ignore=False)
+#         earn_value_ALL_B = plan_B(symbol_base, size, 1, trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_ALL_B = %s" % (symbol_base, earn_value_ALL_B), ignore=False)
+#         earn_value_Half_A = plan_A(symbol_base, size, int(size / 2), trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_Half_A = %s" % (symbol_base, earn_value_Half_A), ignore=False)
+#         earn_value_D_A = plan_A(symbol_base, int(size / 2), 1, trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_D_A = %s" % (symbol_base, earn_value_D_A), ignore=False)
+#         earn_value_ALL_A = plan_A(symbol_base, size, 1, trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_ALL_A = %s" % (symbol_base, earn_value_ALL_A), ignore=False)
+#         hbgAnyCall.log_print("。。。%s: ALL_A + ALL_B = %s" % (symbol_base, earn_value_ALL_A+earn_value_ALL_B), ignore=False)
+#         demo_print("****************************************************************************")
+#         calculate_trend_data(
+#             trend_base_list=trend_base_list,
+#             trend_3l_list=trend_3l_list,
+#             trend_3s_list=trend_3s_list,
+#             symbol_base=symbol_base,
+#             start_point=500,
+#             end_point=0,
+#         )
+#         earn_value_C_B_2 = plan_B(symbol_base, int(size / 4), 1, trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_C_B_2 = %s" % (symbol_base, earn_value_C_B_2), ignore=False)
+#         earn_value_D_A_2 = plan_A(symbol_base, int(size / 4), 1, trend_base_list, trend_3l_list, trend_3s_list)
+#         hbgAnyCall.log_print("%s: earn_value_D_A_2 = %s" % (symbol_base, earn_value_D_A_2), ignore=False)
+#     except Exception as ex:
+#         demo_print("Exception in calculate_base_on_KLine")
+#         demo_print(ex)
+#     return earn_value_ALL_A, earn_value_ALL_B
