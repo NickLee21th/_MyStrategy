@@ -254,7 +254,7 @@ class DemoStrategy:
     def do_action(self):
         try:
             period = "5min"  # 1min, 5min, 15min, 30min
-            size = 300  # 1000  # 2000
+            size = 500  # 1000  # 2000
             step_range = int(size / 2)
             cur_ts = 1000
             last_ts = 0
@@ -299,7 +299,6 @@ class DemoStrategy:
             if invest_direction == "planA":  # 顺势
                 if last_trend == 1:  # 涨
                     ts_l, cur_price_l = get_current_price(symbol=symbol_l)
-                    ts_l = int(ts_l/1000)
                     # 卖出上一次持有的代币
                     self.sell_last_hold_lever_coins()
                     # 市价买入新的杠杆代币
