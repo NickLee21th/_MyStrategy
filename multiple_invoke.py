@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 import datetime
 import time
-from multiprocessing import Pool
+import multiprocessing
+from multiprocessing import Pool, Manager
 import subprocess
 import os, time, random
 from project.demos.config import *
@@ -16,12 +17,13 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
         dt_format = "%Y-%m-%d-%H-%M-%S"
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
-def schedule_job(etp, dt_stamp,):
+def schedule_job(etp, dt_stamp,queue=None):
     access_key = ACCESS_KEY
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
     try:
         demo = DemoStrategy()
+        demo.queue = queue
         demo.etp = etp
         demo.dt_stamp = dt_stamp
         demo.access_key = access_key
@@ -33,20 +35,21 @@ def schedule_job(etp, dt_stamp,):
         print("Exception in main, etp = %s" % argvs[1])
         print("ex=%s" % ex)
 
-def long_time_task(etp, dt_stamp):
+def long_time_task(etp, dt_stamp, queue):
     print('Run task %s (%s)...' % (etp, os.getpid()))
     start = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (start= %s)...' % (etp, start))
     # cmd = 'python3 schedule_job.py %s %s' % (etp, dt_stamp)
     # os.system(cmd)
-    schedule_job(etp=etp, dt_stamp=dt_stamp)
+    schedule_job(etp=etp, dt_stamp=dt_stamp, queue=queue)
     end = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (end= %s)...' % (etp, end))
 
 
 def multi_process(dt_stamp):
     print('Parent process %s.' % os.getpid())
-    process_pool_size = 10
+    process_pool_size = 11
+    queue = Manager().Queue(process_pool_size * 2)
     p = Pool(process_pool_size)
     for etp in (
             "btc", "eth",
@@ -55,7 +58,7 @@ def multi_process(dt_stamp):
             "zec", "xrp",
             "bsv", "fil",
     ):
-        p.apply_async(long_time_task, args=(etp, dt_stamp))
+        p.apply_async(long_time_task, args=(etp, dt_stamp, queue))
     print('Waiting for all subprocesses done...')
     p.close()
     p.join()
