@@ -264,7 +264,7 @@ class DemoStrategy:
     def do_action(self):
         try:
             period = "5min"  # 1min, 5min, 15min, 30min
-            size = 600  # 1000  # 2000
+            size = 1000  # 1000  # 2000
             step_range = int(size / 2)
             cur_ts = 1000
             last_ts = 0
@@ -578,7 +578,7 @@ class DemoStrategy:
         last_ts = trend_base_list[index]["dt"]
         invest_direction = "no_plan"
         if count_B_earn > 0 and count_B_earn > count_A_earn and count_B_earn > (step_range * 0.8):
-            invest_direction = "planB"
+            invest_direction = "no_plan"  # "planB"
         elif count_A_earn > 0 and count_A_earn > count_B_earn and count_A_earn > (step_range * 0.8):
             invest_direction = "planA"
         return last_ts, last_trend, invest_direction
