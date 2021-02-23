@@ -240,13 +240,13 @@ class DemoStrategy:
             self.last_symbol = "Nothing"
             self.last_currency = "Nothing"
             self.last_amount = 0.0
-            self.demo_print("SEND QUEUE INFO - START")
-            queue_info = {
-                'symbol': self.etp + "usdt",
-                'earning_ratio': self.earning_ratio
-            }
-            self.queue.put(queue_info)
-            self.demo_print("SEND QUEUE INFO - FINISH")
+            # self.demo_print("SEND QUEUE INFO - START")
+            # queue_info = {
+            #     'symbol': self.etp + "usdt",
+            #     'earning_ratio': self.earning_ratio
+            # }
+            # self.queue.put(queue_info)
+            # self.demo_print("SEND QUEUE INFO - FINISH")
 
     # 市价买入新的杠杆代币
     def buy_lever_coins(self, symbol, currency, cur_price, ts):
