@@ -40,7 +40,7 @@ class DemoStrategy:
         logger = logging.getLogger(self.etp)
         logger.setLevel(level=logging.INFO)
         dt_value = self.dt_stamp
-        handler = logging.FileHandler(log_file_template % (self.etp, dt_value))
+        handler = logging.FileHandler(log_file_template % (dt_value, self.etp))
         handler.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
