@@ -6,6 +6,9 @@ import time
 import multiprocessing
 from multiprocessing import Pool, Manager
 
+TIME_PERIOD = "5min"  # 1min, 5min, 15min, 30min
+TIME_PERIOD_VALUE = 5
+SIZE = 300
 
 class DemoStrategy:
     BASE_INVEST = 20
@@ -211,14 +214,14 @@ class DemoStrategy:
             time_stamp_start = int(time.time())
             self.do_action()
             time_stamp_end = int(time.time())
-            sleep_time = 60 * 5 - (time_stamp_end - time_stamp_start)
+            sleep_time = 60 * TIME_PERIOD_VALUE - (time_stamp_end - time_stamp_start)
             if sleep_time > 0:
                 print("time_stamp_start = %s   time_stamp_end = %s " %
                       (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
                 print("sleep %s seconds ....." % sleep_time)
                 time.sleep(sleep_time)
             else:
-                print("Waiting time more than 5 minutes! ")
+                print("Waiting time more than %s minutes! "  % TIME_PERIOD_VALUE)
                 print("time_stamp_start = %s   time_stamp_end = %s " %
                       (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
             count += 1
@@ -263,21 +266,21 @@ class DemoStrategy:
     # 行动器
     def do_action(self):
         try:
-            period = "5min"  # 1min, 5min, 15min, 30min
-            size = 1000  # 1000  # 2000
+            period = TIME_PERIOD
+            size = SIZE
             step_range = int(size / 2)
             cur_ts = 1000
             last_ts = 0
             trend_base_list = None
             trend_3l_list = None
             trend_3s_list = None
-            while (cur_ts-last_ts) > (60*5):
+            while (cur_ts-last_ts) > (60*TIME_PERIOD_VALUE):
                 trend_base_list, trend_3l_list, trend_3s_list \
                     = self.get_ALL_symbol_trend_data(
                     symbol_base=(self.etp + "usdt"),
                     symbol_l=(self.etp + "3lusdt"),
                     symbol_s=(self.etp + "3susdt"),
-                    period=period,  # 1min, 5min, 15min, 30min
+                    period=period,
                     size=size,
                 )
                 last_ts = trend_base_list[0]["dt"]
@@ -294,7 +297,7 @@ class DemoStrategy:
                 end_point=-1,
             )
             cur_ts = int(time.time())
-            assert (60*5) < (cur_ts-last_ts)
+            assert (60*TIME_PERIOD_VALUE) < (cur_ts-last_ts)
             print("OK -step 2 - judge_invest_direction")
             # 根据 invest_direction 获取交易对价格
             self.demo_print("invest_direction = %s   last_trend = %s" % (invest_direction, last_trend))
@@ -353,7 +356,7 @@ class DemoStrategy:
                 symbol_base=(self.etp + "usdt"),
                 symbol_l=(self.etp + "3lusdt"),
                 symbol_s=(self.etp + "3susdt"),
-                period=period,  # 1min, 5min, 15min, 30min
+                period=period,
                 size=size,
             )
             # print("OK -step 1")
@@ -517,7 +520,7 @@ class DemoStrategy:
                     cur_ts = int(time.time())
                     delta = cur_ts-last_ts
                     finished = True
-                    if delta < (60*5):
+                    if delta < (60*TIME_PERIOD_VALUE):
                         finished = False
                     trend_symbol_item = {
                         "dt": item["id"],
@@ -1043,7 +1046,7 @@ def demo_01():
             symbol_base=(etp+"usdt"),
             symbol_l=(etp+"3lusdt"),
             symbol_s=(etp+"3susdt"),
-            period=period,  # 1min, 5min, 15min, 30min
+            period=period,
             size=2000,
         )
         Total_earn_value_ALL_A += earn_value_ALL_A
@@ -1067,21 +1070,21 @@ def demo_Api(access_key, secret_key):
 #     etp = "btc"
 #     # etp = "bch"
 #     # etp = "ltc"
-#     period = "5min"
+#     period = "5min"  # 1min, 5min, 15min, 30min
 #     size = 2000
 #     trend_base_list = get_symbol_trend_data(
 #         symbol=(etp + "usdt"),
-#         period=period,  # 1min, 5min, 15min, 30min
+#         period=period,
 #         size=size,
 #     )
 #     trend_3l_list = get_symbol_trend_data(
 #         symbol=(etp + "3lusdt"),
-#         period=period,  # 1min, 5min, 15min, 30min
+#         period=period,
 #         size=size,
 #     )
 #     trend_3s_list = get_symbol_trend_data(
 #         symbol=(etp + "3susdt"),
-#         period=period,  # 1min, 5min, 15min, 30min
+#         period=period,
 #         size=size,
 #     )
 #     show_symbol_trend_data(
