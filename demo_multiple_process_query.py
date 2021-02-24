@@ -42,6 +42,10 @@ class Summary(multiprocessing.Process):
                 print('IN Summary, cur pid:', self.process_num,)
                 queue_item = self.queue.get()
                 print("IN Summary, queue_item: \n%s" % queue_item)
+                print(queue_item["id"])
+                data = open("temp_collextion.txt", 'a')
+                print(queue_item, file=data)
+                data.close()
             else:
                 print('IN Summary, cur pid:', self.process_num, ' queue: is empty')
                 count += 1

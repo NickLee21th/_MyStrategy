@@ -26,6 +26,7 @@ class DemoStrategy:
     demo_logger = None
     data_dict = {}
     queue = None
+    demo_action_launch_time = int(time.time())
 
     def get_from_data_dict(self, index_i):
         OK = False
@@ -38,12 +39,14 @@ class DemoStrategy:
         return OK, earn_value_A, earn_value_B
 
     def logger_init(self,
-                    log_file_template="demo_log/demo_%s_%s.log"
+                    log_folder_name="demo_log",
+                    log_file_template="/demo_%s_%s.log"
                     ):
         logger = logging.getLogger(self.etp)
         logger.setLevel(level=logging.INFO)
         dt_value = self.dt_stamp
-        handler = logging.FileHandler(log_file_template % (dt_value, self.etp))
+        log_file_name = log_file_template % (dt_value, self.etp)
+        handler = logging.FileHandler(log_folder_name+log_file_name)
         handler.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
@@ -203,22 +206,22 @@ class DemoStrategy:
                 continue
         return response
 
-    # 行动器
-
     # 行动
-    def demon_action(self):
-        self.logger_init(log_file_template="demo_action_log/action_%s_%s.txt")
+    def demon_action(self, log_folder_name="demo_action_log"):
+        self.logger_init(log_folder_name=log_folder_name, log_file_template="/action_%s_%s.txt")
         self.demo_print("I'm %s in demo_action" % self.etp)
+        self.demo_action_launch_time = int(time.time())
         count = 0
         while count < 1000:
             time_stamp_start = int(time.time())
+            self.data_dict = {}
             self.do_action()
             time_stamp_end = int(time.time())
             sleep_time = 60 * TIME_PERIOD_VALUE - (time_stamp_end - time_stamp_start)
             if sleep_time > 0:
                 print("time_stamp_start = %s   time_stamp_end = %s " %
                       (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
-                print("sleep %s seconds ....." % sleep_time)
+                self.demo_print("sleep %s seconds ....." % sleep_time)
                 time.sleep(sleep_time)
             else:
                 print("Waiting time more than %s minutes! "  % TIME_PERIOD_VALUE)
@@ -226,30 +229,48 @@ class DemoStrategy:
                       (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
             count += 1
 
+    def get_duration(self, seconds, format="%d:%02d:%02d"):
+        m, s = divmod(seconds, 60)
+        h, m = divmod(m, 60)
+        return "%d:%02d:%02d" % (h, m, s)
+
     # 市价卖出上一次持有的杠杆代币
     def sell_last_hold_lever_coins(self):
         if self.last_symbol != "Nothing":
             ts_sell, sell_cur_price = get_current_price(symbol=self.last_symbol, )
             ts_sell = int(ts_sell / 1000)
             self.demo_print("SELL LAST COIN")
+            running_duration = self.get_duration(ts_sell - self.demo_action_launch_time)
+            self.demo_print("demo_action_running_duration: %s" % running_duration)
             self.demo_print("last_symbol:%s, last_currency:%s, last_amount:%s, sell_cur_price:%s" %
                             (self.last_symbol, self.last_currency, self.last_amount, sell_cur_price))
             self.demo_print("sell_cur_price * last_amount = %s" % (sell_cur_price * self.last_amount))
             self.current_balance += sell_cur_price * self.last_amount
-            self.demo_print("current_balance = %s  sell_ts:%s"
-                            % (self.current_balance, timeStamp_to_datetime(ts_sell)))
+            self.demo_print("current_balance = %s  sell_ts:%s  demo_action_launch_time: %s"
+                            % (self.current_balance, timeStamp_to_datetime(ts_sell),
+                               timeStamp_to_datetime(self.demo_action_launch_time)))
             self.earning_ratio = (self.current_balance - self.once_invest) / self.once_invest
             self.demo_print("earning_ratio = %s%%" % (self.earning_ratio * 100.0))
             self.last_symbol = "Nothing"
             self.last_currency = "Nothing"
             self.last_amount = 0.0
-            # self.demo_print("SEND QUEUE INFO - START")
-            # queue_info = {
-            #     'symbol': self.etp + "usdt",
-            #     'earning_ratio': self.earning_ratio
-            # }
-            # self.queue.put(queue_info)
-            # self.demo_print("SEND QUEUE INFO - FINISH")
+            queue_info = {
+                'do_action': True,
+                'ts': timeStamp_to_datetime(int(time.time())),
+                'symbol': self.etp + "usdt",
+                'earning_ratio': self.earning_ratio,
+                'current_balance': self.current_balance
+            }
+        else:
+            queue_info = {
+                'do_action': False,
+            }
+        self.demo_print("SEND QUEUE INFO - START")
+        if self.queue.full():
+            self.demo_print("THE QUEUE IS FULL!")
+        else:
+            self.queue.put(queue_info)
+            self.demo_print("SEND QUEUE INFO - FINISH")
 
     # 市价买入新的杠杆代币
     def buy_lever_coins(self, symbol, currency, cur_price, ts):
@@ -584,6 +605,8 @@ class DemoStrategy:
             invest_direction = "planB"
         elif count_A_earn > 0 and count_A_earn > count_B_earn and count_A_earn > (step_range * 0.8):
             invest_direction = "planA"
+        self.demo_print("count_A_earn = %s , count_B_earn = %s , invest_direction = %s , threshold_value=%s"
+                        % (count_A_earn, count_B_earn, invest_direction, step_range*0.8))
         return last_ts, last_trend, invest_direction
 
     # 计算指定时长内的趋势数据

@@ -6,6 +6,7 @@ import multiprocessing
 from multiprocessing import Pool, Manager
 import subprocess
 import os, time, random
+import sys
 from project.demos.config import *
 from project.demos.demo import *
 
@@ -17,7 +18,7 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
         dt_format = "%Y-%m-%d-%H-%M-%S"
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
-def schedule_job(etp, dt_stamp,queue=None):
+def schedule_job(etp, dt_stamp,queue=None,log_folder_name=None):
     access_key = ACCESS_KEY
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
@@ -29,36 +30,65 @@ def schedule_job(etp, dt_stamp,queue=None):
         demo.access_key = access_key
         demo.secret_key = secret_key
         demo.account_id = account_id
-        demo.demon_action()
+        demo.demon_action(log_folder_name)
         # demo.demon_prediction()
     except Exception as ex:
-        print("Exception in main, etp = %s" % argvs[1])
+        print("Exception in schedule_job, etp = %s" % etp)
         print("ex=%s" % ex)
 
-def long_time_task(etp, dt_stamp, queue):
+def collection_job(queue=None, log_folder_name=None):
+    try:
+        count = 0
+        while True and count < 6*30:
+            if queue.empty() is False:
+                count = 0
+                queue_item = queue.get()
+                if queue_item['do_action']:
+                    file_name = log_folder_name + "_collextion.txt"
+                    data = open(file_name, 'a')
+                    try:
+                        print(queue_item, file=data)
+                    except Exception as ex:
+                        print("Exception when print queue_item")
+                        print("ex=%s" % ex)
+                    data.close()
+            else:
+                count += 1
+            time.sleep(10)
+    except Exception as ex:
+        print("Exception in collection_job")
+        print("ex=%s" % ex)
+
+def long_time_task(etp, dt_stamp, queue, log_folder_name):
     print('Run task %s (%s)...' % (etp, os.getpid()))
     start = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (start= %s)...' % (etp, start))
     # cmd = 'python3 schedule_job.py %s %s' % (etp, dt_stamp)
     # os.system(cmd)
-    schedule_job(etp=etp, dt_stamp=dt_stamp, queue=queue)
+    schedule_job(etp=etp, dt_stamp=dt_stamp, queue=queue,log_folder_name=log_folder_name)
     end = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (end= %s)...' % (etp, end))
 
+def long_time_task_2(queue, log_folder_name):
+    print('Run COLLECTION task  (%s)...' % os.getpid())
+    start = timeStamp_to_datetime(int(time.time()))
+    print('Run COLLECTION task (start= %s)...' % start)
+    collection_job(queue=queue,log_folder_name=log_folder_name)
+    end = timeStamp_to_datetime(int(time.time()))
+    print('Run COLLECTION task (end= %s)...' % end)
 
-def multi_process(dt_stamp):
+def multi_process(dt_stamp, log_folder_name):
     print('Parent process %s.' % os.getpid())
     process_pool_size = 11
     queue = Manager().Queue(process_pool_size * 2)
     p = Pool(process_pool_size)
     for etp in (
-            "btc", "eth",
-            "link",
+            "btc", "eth", "link",
             "eos", "bch", "ltc",
-            "zec", "xrp",
-            "bsv", "fil",
+            "zec", "xrp", "bsv", "fil",
     ):
-        p.apply_async(long_time_task, args=(etp, dt_stamp, queue))
+        p.apply_async(long_time_task, args=(etp, dt_stamp, queue, log_folder_name))
+    p.apply_async(long_time_task_2, args=(queue, log_folder_name))
     print('Waiting for all subprocesses done...')
     p.close()
     p.join()
@@ -130,7 +160,13 @@ if __name__=='__main__':
 
     time_stamp = int(time.time())
     dt_stamp = timeStamp_to_datetime(time_stamp)
-    multi_process(dt_stamp)
+    log_folder_name = "demo_action_log"
+    argvs = sys.argv
+    if len(argvs) > 1:
+        log_folder_name = argvs[1]
+    cmd = 'mkdir %s' % log_folder_name
+    os.system(cmd)
+    multi_process(dt_stamp, log_folder_name)
 
     # while True:
     # while count < 1000:
