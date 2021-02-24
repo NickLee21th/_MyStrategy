@@ -241,7 +241,7 @@ class DemoStrategy:
             ts_sell = int(ts_sell / 1000)
             self.demo_print("SELL LAST COIN")
             running_duration = self.get_duration(ts_sell - self.demo_action_launch_time)
-            self.demo_print("demo_action_running_duration: %s" % running_duration)
+
             self.demo_print("last_symbol:%s, last_currency:%s, last_amount:%s, sell_cur_price:%s" %
                             (self.last_symbol, self.last_currency, self.last_amount, sell_cur_price))
             self.demo_print("sell_cur_price * last_amount = %s" % (sell_cur_price * self.last_amount))
@@ -250,6 +250,7 @@ class DemoStrategy:
                             % (self.current_balance, timeStamp_to_datetime(ts_sell),
                                timeStamp_to_datetime(self.demo_action_launch_time)))
             self.earning_ratio = (self.current_balance - self.once_invest) / self.once_invest
+            self.demo_print("demo_action_running_duration: %s" % running_duration)
             self.demo_print("earning_ratio = %s%%" % (self.earning_ratio * 100.0))
             self.last_symbol = "Nothing"
             self.last_currency = "Nothing"
@@ -259,7 +260,8 @@ class DemoStrategy:
                 'ts': timeStamp_to_datetime(int(time.time())),
                 'symbol': self.etp + "usdt",
                 'earning_ratio': self.earning_ratio,
-                'current_balance': self.current_balance
+                'current_balance': self.current_balance,
+                'demo_action_running_duration': running_duration,
             }
         else:
             queue_info = {
