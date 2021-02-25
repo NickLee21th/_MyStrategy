@@ -264,8 +264,15 @@ class DemoStrategy:
                 'demo_action_running_duration': running_duration,
             }
         else:
+            cur_time = int(time.time())
+            running_duration = self.get_duration(cur_time - self.demo_action_launch_time)
             queue_info = {
                 'do_action': False,
+                'ts': timeStamp_to_datetime(cur_time),
+                'symbol': self.etp + "usdt",
+                'earning_ratio': self.earning_ratio,
+                'current_balance': self.current_balance,
+                'demo_action_running_duration': running_duration,
             }
         self.demo_print("SEND QUEUE INFO - START")
         if self.queue.full():

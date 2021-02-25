@@ -43,15 +43,15 @@ def collection_job(queue=None, log_folder_name=None):
             if queue.empty() is False:
                 count = 0
                 queue_item = queue.get()
-                if queue_item['do_action']:
-                    file_name = log_folder_name + "_collextion.txt"
-                    data = open(file_name, 'a')
-                    try:
-                        print(queue_item, file=data)
-                    except Exception as ex:
-                        print("Exception when print queue_item")
-                        print("ex=%s" % ex)
-                    data.close()
+                # if queue_item['do_action']:
+                file_name = log_folder_name + "_collextion.txt"
+                data = open(file_name, 'a')
+                try:
+                    print(queue_item, file=data)
+                except Exception as ex:
+                    print("Exception when print queue_item")
+                    print("ex=%s" % ex)
+                data.close()
             else:
                 count += 1
             time.sleep(10)
