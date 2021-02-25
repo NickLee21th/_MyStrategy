@@ -155,6 +155,7 @@ def fiber_mode(name):
     produce(c)
     print('fiber %s FINISH' % name)
 
+# nohup python3 multiple_invoke.py run_action_02_log >output_02 2>&1 &
 if __name__=='__main__':
     count = 0
 
