@@ -39,6 +39,8 @@ def schedule_job(etp, dt_stamp,queue=None,log_folder_name=None):
 def collection_job(queue=None, log_folder_name=None):
     try:
         count = 0
+        earn_all = {}
+        count_EARN_ALL = 0
         while True and count < 6*30:
             if queue.empty() is False:
                 count = 0
@@ -48,6 +50,38 @@ def collection_job(queue=None, log_folder_name=None):
                 data = open(file_name, 'a')
                 try:
                     print(queue_item, file=data)
+                    print("collection_job step -001")
+                    key = queue_item["demo_action_running_duration"][:-3]
+                    print("collection_job step -002")
+                    if key in earn_all.keys():
+                        print("collection_job step -003")
+                        symbol = queue_item["symbol"]
+                        print("collection_job step -004")
+                        earning_ratio = queue_item["earning_ratio"]
+                        print("collection_job step -005")
+                        earn_all[key][symbol] = earning_ratio
+                        print("collection_job step -006")
+                        earn_all[key]["EARN_ALL"] += earning_ratio
+                        print("collection_job step -007")
+                        count_EARN_ALL += 1
+                        print("count_EARN_ALL = %s" % count_EARN_ALL)
+                        if count_EARN_ALL == 10:
+                            print("collection_job step -008")
+                            count_EARN_ALL = 0
+                            print("===================================================", file=data)
+                            print({
+                                "RUN_TIME": key,
+                                "EARN_ALL": earn_all[key]["EARN_ALL"],
+                            }, file=data)
+                            print("===================================================", file=data)
+                            print("collection_job step -009")
+                    else:
+                        print("collection_job step -101")
+                        count_EARN_ALL += 1
+                        print("count_EARN_ALL = %s" % count_EARN_ALL)
+                        earn_all[key] = {
+                            "EARN_ALL": queue_item["earning_ratio"],
+                        }
                 except Exception as ex:
                     print("Exception when print queue_item")
                     print("ex=%s" % ex)
