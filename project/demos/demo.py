@@ -8,7 +8,8 @@ from multiprocessing import Pool, Manager
 
 TIME_PERIOD = "5min"  # 1min, 5min, 15min, 30min
 TIME_PERIOD_VALUE = 5
-SIZE = 300
+SIZE = 1000  # 20  # 300
+STOP_LOST_RATE = 0.0  # 止损
 
 class DemoStrategy:
     BASE_INVEST = 20
@@ -18,6 +19,11 @@ class DemoStrategy:
     last_currency = "Nothing"
     last_amount = 0.0
     earning_ratio = 0.0
+    stop_actual_invest = True
+    actual_balance = current_balance
+    actual_last_symbol = "Nothing"
+    actual_last_currency = "Nothing"
+    actual_last_amount = 0.0
     access_key = ACCESS_KEY
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
@@ -215,7 +221,7 @@ class DemoStrategy:
         while count < 1000:
             time_stamp_start = int(time.time())
             self.data_dict = {}
-            self.do_action()
+            self.do_action(count)
             time_stamp_end = int(time.time())
             sleep_time = 60 * TIME_PERIOD_VALUE - (time_stamp_end - time_stamp_start)
             if sleep_time > 0:
@@ -235,13 +241,12 @@ class DemoStrategy:
         return "%d:%02d:%02d" % (h, m, s)
 
     # 市价卖出上一次持有的杠杆代币
-    def sell_last_hold_lever_coins(self):
+    def sell_last_hold_lever_coins(self, action_index):
         if self.last_symbol != "Nothing":
             ts_sell, sell_cur_price = get_current_price(symbol=self.last_symbol, )
             ts_sell = int(ts_sell / 1000)
             self.demo_print("SELL LAST COIN")
             running_duration = self.get_duration(ts_sell - self.demo_action_launch_time)
-
             self.demo_print("last_symbol:%s, last_currency:%s, last_amount:%s, sell_cur_price:%s" %
                             (self.last_symbol, self.last_currency, self.last_amount, sell_cur_price))
             self.demo_print("sell_cur_price * last_amount = %s" % (sell_cur_price * self.last_amount))
@@ -250,28 +255,58 @@ class DemoStrategy:
                             % (self.current_balance, timeStamp_to_datetime(ts_sell),
                                timeStamp_to_datetime(self.demo_action_launch_time)))
             self.earning_ratio = (self.current_balance - self.once_invest) / self.once_invest
+
             self.demo_print("demo_action_running_duration: %s" % running_duration)
             self.demo_print("earning_ratio = %s%%" % (self.earning_ratio * 100.0))
             self.last_symbol = "Nothing"
             self.last_currency = "Nothing"
             self.last_amount = 0.0
+            # Actual sell
+            if self.actual_last_symbol != "Nothing":
+                self.demo_print("***** ACTUAL SELL LAST COIN *****")
+                ts_actual_sell, actual_sell_cur_price = get_current_price(symbol=self.actual_last_symbol, )
+                ts_actual_sell = int(ts_actual_sell / 1000)
+                self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_cur_price:%s" %
+                                (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_cur_price))
+                self.demo_print("actual_sell_cur_price * actual_last_amount = %s" % (actual_sell_cur_price * self.actual_last_amount))
+                self.actual_balance += actual_sell_cur_price * self.actual_last_amount
+                self.demo_print("actual_balance =  %s" % (self.actual_balance))
+                self.actual_last_symbol = "Nothing"
+                self.actual_last_currency = "Nothing"
+                self.actual_last_amount = 0.0
+            # update stop_actual_invest
+            if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
+                self.stop_actual_invest = True
+            else:
+                self.stop_actual_invest = False
+            # queue_info
             queue_info = {
+                'action_index': self.get_duration(action_index * TIME_PERIOD_VALUE*60),
                 'do_action': True,
                 'ts': timeStamp_to_datetime(int(time.time())),
                 'symbol': self.etp + "usdt",
                 'earning_ratio': self.earning_ratio,
                 'current_balance': self.current_balance,
+                'actual_balance': self.actual_balance,
+                'stop_actual_invest': self.stop_actual_invest,
                 'demo_action_running_duration': running_duration,
             }
         else:
+            if self.actual_last_symbol != "Nothing":
+                self.demo_print("ERROR!! actual_last_symbol SHOULD BE Nothing!")
+                self.demo_print("actual_last_symbol = %s" % self.actual_last_symbol)
+                assert self.actual_last_symbol == "Nothing"
             cur_time = int(time.time())
             running_duration = self.get_duration(cur_time - self.demo_action_launch_time)
             queue_info = {
+                'action_index': self.get_duration(action_index * TIME_PERIOD_VALUE*60),
                 'do_action': False,
                 'ts': timeStamp_to_datetime(cur_time),
                 'symbol': self.etp + "usdt",
                 'earning_ratio': self.earning_ratio,
                 'current_balance': self.current_balance,
+                'actual_balance': self.actual_balance,
+                'stop_actual_invest': self.stop_actual_invest,
                 'demo_action_running_duration': running_duration,
             }
         self.demo_print("SEND QUEUE INFO - START")
@@ -289,12 +324,18 @@ class DemoStrategy:
                         % (symbol, currency, cur_price, (self.once_invest / cur_price),
                            timeStamp_to_datetime(int(ts/1000))))
         self.current_balance -= self.once_invest
+        if self.stop_actual_invest is False:
+            self.demo_print("ACTUAL - BUY NEW COINS")
+            self.actual_balance -= self.once_invest
+            self.actual_last_symbol = symbol
+            self.actual_last_currency = currency
+            self.actual_last_amount = self.once_invest / cur_price
         self.last_symbol = symbol
         self.last_currency = currency
         self.last_amount = self.once_invest / cur_price
 
     # 行动器
-    def do_action(self):
+    def do_action(self, action_index):
         try:
             period = TIME_PERIOD
             size = SIZE
@@ -343,31 +384,31 @@ class DemoStrategy:
                 if last_trend == 1:  # 涨
                     ts_l, cur_price_l = get_current_price(symbol=symbol_l)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins()
+                    self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
                 elif last_trend == -1:  # 跌
                     ts_s, cur_price_s = get_current_price(symbol=symbol_s)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins()
+                    self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
             elif invest_direction == "planB":  # 逆势
                 if last_trend == 1:  # 涨
                     ts_s, cur_price_s = get_current_price(symbol=symbol_s)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins()
+                    self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
                 elif last_trend == -1:  # 跌
                     ts_l, cur_price_l = get_current_price(symbol=symbol_l)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins()
+                    self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
             else:  # invest_direction == "no_plan"
                 # 卖出上一次持有的代币
-                self.sell_last_hold_lever_coins()
+                self.sell_last_hold_lever_coins(action_index)
             self.demo_print("=========================================")
         except Exception as ex:
             self.demo_print("Exception in demon_action")
@@ -379,7 +420,7 @@ class DemoStrategy:
         self.demo_print("I'm %s" % self.etp)
         try:
             period = "5min"  # 1min, 5min, 15min, 30min
-            size = 2000
+            size = 1000  # 2000
             step_range = int(size / 4)
             trend_base_list, trend_3l_list, trend_3s_list \
                 = self.get_ALL_symbol_trend_data(
@@ -389,7 +430,7 @@ class DemoStrategy:
                 period=period,
                 size=size,
             )
-            # print("OK -step 1")
+            self.demo_print("%s  judge_invest_direction START" % self.etp)
             invest_direction_list = []
             for i in range(int(size / 2) - 1, -1, -1):
                 # print("%s -step 1-%s" % (self.etp, i))
@@ -406,7 +447,7 @@ class DemoStrategy:
             # demo_print(invest_direction_list)
             self.demo_print("\n")
             self.show_invest_direction(invest_direction_list)
-            # demo_print("OK -step 2")
+            self.demo_print("%s  judge_invest_direction FINISH" % self.etp)
             earn_value = self.deduce_earn(
                 symbol_base=(self.etp + "usdt"),
                 invest_direction_list=invest_direction_list,
@@ -494,7 +535,7 @@ class DemoStrategy:
             period="1min",
             size=2000,
     ):
-        hbgAnyCall = HbgAnyCall()
+        self.demo_print("%s  get_ALL_symbol_trend_data START" % self.etp)
         # base
         symbol = symbol_base
         trend_base_list = self.get_symbol_trend_data(
@@ -502,7 +543,7 @@ class DemoStrategy:
             period=period, size=size
         )
         assert trend_base_list
-        # self.demo_print("%s  %s" % (symbol_base, len(trend_base_list)))
+        self.demo_print("%s  %s" % (symbol_base, len(trend_base_list)))
         assert size == len(trend_base_list)
         # 3l
         symbol = symbol_l
@@ -511,7 +552,7 @@ class DemoStrategy:
             period=period, size=size
         )
         assert trend_3l_list
-        # self.demo_print("%s  %s" % (symbol_l, len(trend_3l_list)))
+        self.demo_print("%s  %s" % (symbol_l, len(trend_3l_list)))
         assert size == len(trend_3l_list)
         # 3s
         symbol = symbol_s
@@ -520,8 +561,9 @@ class DemoStrategy:
             period=period, size=size
         )
         assert trend_3s_list
-        # self.demo_print("%s  %s" % (symbol_s, len(trend_3s_list)))
+        self.demo_print("%s  %s" % (symbol_s, len(trend_3s_list)))
         assert size == len(trend_3s_list)
+        self.demo_print("%s  get_ALL_symbol_trend_data FINISH" % self.etp)
         return trend_base_list, trend_3l_list, trend_3s_list
 
     # 获取交易对的K线信息，整理后返回。
@@ -531,12 +573,14 @@ class DemoStrategy:
             k_line_res = None
             ret = False
             retry_count = 0
-            while ret is False and retry_count < 10:
+            while ret is False and retry_count < 30:
                 k_line_res = Get_kline_data(
                     symbol=symbol,
                     period=period, size=size
                 )
                 if k_line_res is None or k_line_res["status"] != "ok":
+                    if k_line_res is not None:
+                        self.demo_print(k_line_res)
                     ret = False
                     retry_count += 1
                     time.sleep(2)
@@ -610,12 +654,13 @@ class DemoStrategy:
         last_trend = trend_base_list[index]["trend"]
         last_ts = trend_base_list[index]["dt"]
         invest_direction = "no_plan"
-        if count_B_earn > 0 and count_B_earn > count_A_earn and count_B_earn > (step_range * 0.8):
+        adjust_rate = 0.0  # 0.5
+        if count_B_earn > 0 and count_B_earn > count_A_earn and count_B_earn > (step_range * adjust_rate):
             invest_direction = "planB"
-        elif count_A_earn > 0 and count_A_earn > count_B_earn and count_A_earn > (step_range * 0.8):
+        elif count_A_earn > 0 and count_A_earn > count_B_earn and count_A_earn > (step_range * adjust_rate):
             invest_direction = "planA"
         self.demo_print("count_A_earn = %s , count_B_earn = %s , invest_direction = %s , threshold_value=%s"
-                        % (count_A_earn, count_B_earn, invest_direction, step_range*0.8))
+                        % (count_A_earn, count_B_earn, invest_direction, step_range*adjust_rate))
         return last_ts, last_trend, invest_direction
 
     # 计算指定时长内的趋势数据

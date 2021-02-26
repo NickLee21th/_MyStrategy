@@ -40,48 +40,46 @@ def collection_job(queue=None, log_folder_name=None):
     try:
         count = 0
         earn_all = {}
-        count_EARN_ALL = 0
         while True and count < 6*30:
             if queue.empty() is False:
                 count = 0
                 queue_item = queue.get()
-                # if queue_item['do_action']:
                 file_name = log_folder_name + "_collextion.txt"
                 data = open(file_name, 'a')
                 try:
                     print(queue_item, file=data)
-                    print("collection_job step -001")
-                    key = queue_item["demo_action_running_duration"][:-3]
-                    print("collection_job step -002")
+                    key = queue_item["action_index"]
                     if key in earn_all.keys():
-                        print("collection_job step -003")
                         symbol = queue_item["symbol"]
-                        print("collection_job step -004")
+                        earn_all[key][symbol] = queue_item
                         earning_ratio = queue_item["earning_ratio"]
-                        print("collection_job step -005")
-                        earn_all[key][symbol] = earning_ratio
-                        print("collection_job step -006")
-                        earn_all[key]["EARN_ALL"] += earning_ratio
-                        print("collection_job step -007")
-                        count_EARN_ALL += 1
-                        print("count_EARN_ALL = %s" % count_EARN_ALL)
-                        if count_EARN_ALL == 10:
-                            print("collection_job step -008")
-                            count_EARN_ALL = 0
+                        earn_all[key]["earning_ratio_ALL"] += earning_ratio
+                        current_balance = queue_item["current_balance"]
+                        earn_all[key]["current_balance_ALL"] += current_balance
+                        actual_balance = queue_item["actual_balance"]
+                        earn_all[key]["actual_balance_ALL"] += actual_balance
+                        earn_all[key][queue_item["symbol"] + "_stop_actual_invest"] \
+                            = queue_item["stop_actual_invest"]
+                        earn_all[key]['count'] += 1
+                        print("earn_all[%s]['count']  = %s" % (key, earn_all[key]['count']))
+                        if earn_all[key]['count'] >= 10:
                             print("===================================================", file=data)
                             print({
                                 "RUN_TIME": key,
-                                "EARN_ALL": earn_all[key]["EARN_ALL"],
+                                "earn_all": earn_all[key],
                             }, file=data)
                             print("===================================================", file=data)
-                            print("collection_job step -009")
                     else:
-                        print("collection_job step -101")
-                        count_EARN_ALL += 1
-                        print("count_EARN_ALL = %s" % count_EARN_ALL)
                         earn_all[key] = {
-                            "EARN_ALL": queue_item["earning_ratio"],
+                            "count": 1,
+                            "earning_ratio_ALL": queue_item["earning_ratio"],
+                            "current_balance_ALL": queue_item["current_balance"],
+                            queue_item["symbol"]+"_stop_actual_invest": queue_item["stop_actual_invest"],
+                            "actual_balance_ALL": queue_item["actual_balance"],
                         }
+                        symbol = queue_item["symbol"]
+                        earn_all[key][symbol] = queue_item
+                        print("earn_all[%s]['count']  = %s" % (key, earn_all[key]['count']))
                 except Exception as ex:
                     print("Exception when print queue_item")
                     print("ex=%s" % ex)
@@ -126,7 +124,23 @@ def multi_process(dt_stamp, log_folder_name):
     print('Waiting for all subprocesses done...')
     p.close()
     p.join()
-    print('All subprocesses done.')
+    print('All subprocesses done.\n')
+
+def multi_process_predict(dt_stamp, log_folder_name):
+    print('Parent process %s.' % os.getpid())
+    process_pool_size = 11
+    queue = Manager().Queue(process_pool_size * 2)
+    p = Pool(process_pool_size)
+    for etp in (
+            "btc", "eth", "link",
+            "eos", "bch", "ltc",
+            "zec", "xrp", "bsv", "fil",
+    ):
+        p.apply_async(long_time_task, args=(etp, dt_stamp, queue, log_folder_name))
+    print('Waiting for all subprocesses done...')
+    p.close()
+    p.join()
+    print('All subprocesses done.\n')
 
 def calculate_total(dt_stamp):
     earn_value_total = 0.0
@@ -140,7 +154,7 @@ def calculate_total(dt_stamp):
                 "zec", "xrp",
                 "bsv", "fil",
         ):
-            file_path = "demo_log/demo_%s_%s.log" % (etp, dt_stamp)
+            file_path = "demo_log/demo_%s_%s.log" % (dt_stamp, etp)
             file = open(file_path, 'r')
             for line in file.readlines():
                 earn_value_str = "earn_value = "
@@ -189,12 +203,12 @@ def fiber_mode(name):
     produce(c)
     print('fiber %s FINISH' % name)
 
-# nohup python3 multiple_invoke.py run_action_02_log >output_02 2>&1 &
+# nohup python3 multiple_invoke.py run_action_02_25_log >output_02 2>&1 &
 if __name__=='__main__':
     count = 0
-
     time_stamp = int(time.time())
     dt_stamp = timeStamp_to_datetime(time_stamp)
+
     log_folder_name = "demo_action_log"
     argvs = sys.argv
     if len(argvs) > 1:
@@ -204,14 +218,15 @@ if __name__=='__main__':
     multi_process(dt_stamp, log_folder_name)
 
     # while True:
-    # while count < 1000:
+
+    # while count < 1:  # 1000:
     #     time_stamp = int(time.time())
     #     dt_stamp = timeStamp_to_datetime(time_stamp)
-    #     multi_process(dt_stamp)
+    #     multi_process_predict(dt_stamp, "")
     #     calculate_total(dt_stamp)
     #     time_stamp_end = int(time.time())
     #     sleep_time = 60*5 - (time_stamp_end - time_stamp)
     #     if sleep_time > 0:
     #         print("sleep %s seconds ....." % sleep_time)
-    #         time.sleep(sleep_time)
+    #         # time.sleep(sleep_time)
     #     count += 1
