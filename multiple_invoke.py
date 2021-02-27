@@ -47,7 +47,6 @@ def collection_job(queue=None, log_folder_name=None):
                 file_name = log_folder_name + "_collextion.txt"
                 data = open(file_name, 'a')
                 try:
-                    print(queue_item, file=data)
                     key = queue_item["action_index"]
                     if key in earn_all.keys():
                         symbol = queue_item["symbol"]
