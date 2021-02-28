@@ -27,6 +27,8 @@ class DemoStrategy:
     access_key = ACCESS_KEY
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
+    s_access_key = S_ACCESS_KEY
+    s_secret_key = S_SECRET_KEY
     etp = ""
     dt_stamp = ""
     demo_logger = None
@@ -149,76 +151,152 @@ class DemoStrategy:
         return earn_value
 
     # 市价买入指定币种
-    def buy_market(self, symbol=""):
+    def buy_market(self, symbol="", amount=10.0):
         if symbol == "":
-            return False
+            return False, None
         ret = False
         retry_count = 0
         response = None
-        while ret is False and retry_count < 10:
-            response = Post_order_place(
-                access_key=self.access_key,
-                secret_key=self.secret_key,
-                account_id=self.account_id,
-                symbol=symbol,
-                type_value="buy-market",
-                amount=10,
-            )
-            if response is not None:
-                status = response["status"]
-                if status == "ok":
-                    ret = True
+        while ret is False and retry_count < 30:
+            try:
+                response = Post_order_place(
+                    access_key=self.s_access_key,
+                    secret_key=self.s_secret_key,
+                    account_id=self.account_id,
+                    symbol=symbol,
+                    type_value="buy-market",
+                    amount=amount,
+                )
+                if response is not None:
+                    status = response["status"]
+                    if status == "ok":
+                        ret = True
+                        break
+                    else:
+                        ret = False
+                        retry_count += 1
+                        time.sleep(2)
+                        continue
                 else:
                     ret = False
                     retry_count += 1
                     time.sleep(2)
                     continue
-            else:
+            except Exception as ex:
+                self.demo_print("Exception in buy_market")
+                self.demo_print("symbol = %s , ex = %s" % (symbol, ex))
                 ret = False
                 retry_count += 1
                 time.sleep(2)
                 continue
-        return response
+        return ret, response
 
     # 市价卖出指定币种
     def sell_market(self, symbol="", amount=0):
         if symbol == "" or amount <= 0:
-            return False
+            return False, None
         ret = False
         retry_count = 0
         response = None
-        while ret is False and retry_count < 10:
-            response = Post_order_place(
-                access_key=self.access_key,
-                secret_key=self.secret_key,
-                account_id=self.account_id,
-                symbol=symbol,
-                type_value="sell-market",
-                amount=amount,
-            )
-            if response is not None:
-                status = response["status"]
-                if status == "ok":
-                    ret = True
+        while ret is False and retry_count < 30:
+            try:
+                response = Post_order_place(
+                    access_key=self.s_access_key,
+                    secret_key=self.s_secret_key,
+                    account_id=self.account_id,
+                    symbol=symbol,
+                    type_value="sell-market",
+                    amount=amount,
+                )
+                if response is not None:
+                    status = response["status"]
+                    if status == "ok":
+                        ret = True
+                        break
+                    else:
+                        ret = False
+                        retry_count += 1
+                        time.sleep(2)
+                        continue
                 else:
                     ret = False
                     retry_count += 1
                     time.sleep(2)
                     continue
-            else:
+            except Exception as ex:
+                self.demo_print("Exception in sell_market")
+                self.demo_print("SELL symbol = %s, amount = %s, ex = %s"
+                                % (symbol, amount, ex))
                 ret = False
                 retry_count += 1
                 time.sleep(2)
                 continue
-        return response
+        return ret, response
 
+    # 获取指定币种的当前可用余额
+    def get_currency_balance(
+            self,
+            access_key, secret_key,
+            account_id,
+            currency,  # 币种名称
+            type_value  # trade: 交易余额，frozen: 冻结余额, loan: 待还借贷本金,
+            # interest: 待还借贷利息, lock: 锁仓, bank: 储蓄
+    ):
+        balance_value = "-1"
+        ret = False
+        retry_count = 0
+        while ret is False and retry_count < 10:
+            try:
+                response = Get_accounts_balance(
+                    access_key=access_key, secret_key=secret_key,
+                    account_id=account_id
+                )
+                if response is not None:
+                    status = response["status"]
+                    if status == "ok":
+                        data = response["data"]
+                        balance_list = data["list"]
+                        ret = True
+                        bFind = False
+                        for balance_item in balance_list:
+                            if balance_item["currency"] == currency and balance_item["type"] == type_value:
+                                balance_value = balance_item["balance"]
+                                bFind = True
+                                break
+                        if not bFind:
+                            self.demo_print("Failed to get the balance, currency=%s, type_value=%s"
+                                            % (currency, type_value))
+                            ret = False
+                            retry_count += 1
+                            time.sleep(2)
+                            continue
+                    else:
+                        ret = False
+                        retry_count += 1
+                        time.sleep(2)
+                        continue
+                else:
+                    ret = False
+                    retry_count += 1
+                    time.sleep(2)
+                    continue
+            except Exception as ex:
+                self.demo_print("Exception in get_currency_balance")
+                self.demo_print("currency=%s, type_value=%s, ex = %s"
+                                % (currency, type_value, ex))
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        return ret, balance_value
     # 行动
     def demon_action(self, log_folder_name="demo_action_log"):
         self.logger_init(log_folder_name=log_folder_name, log_file_template="/action_%s_%s.txt")
         self.demo_print("I'm %s in demo_action" % self.etp)
         self.demo_action_launch_time = int(time.time())
         count = 0
-        while count < 1000:
+        Max_Count = 2  # 1000
+        while count < Max_Count:
             time_stamp_start = int(time.time())
             self.data_dict = {}
             self.do_action(count)
@@ -264,16 +342,20 @@ class DemoStrategy:
             # Actual sell
             if self.actual_last_symbol != "Nothing":
                 self.demo_print("***** ACTUAL SELL LAST COIN *****")
-                ts_actual_sell, actual_sell_cur_price = get_current_price(symbol=self.actual_last_symbol, )
-                ts_actual_sell = int(ts_actual_sell / 1000)
-                self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_cur_price:%s" %
-                                (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_cur_price))
-                self.demo_print("actual_sell_cur_price * actual_last_amount = %s" % (actual_sell_cur_price * self.actual_last_amount))
-                self.actual_balance += actual_sell_cur_price * self.actual_last_amount
-                self.demo_print("actual_balance =  %s" % (self.actual_balance))
-                self.actual_last_symbol = "Nothing"
-                self.actual_last_currency = "Nothing"
-                self.actual_last_amount = 0.0
+                self.actual_sell_market_level_coins(
+                    symbol=self.actual_last_symbol,
+                    amount=self.actual_last_amount
+                )
+                # ts_actual_sell, actual_sell_cur_price = get_current_price(symbol=self.actual_last_symbol, )
+                # ts_actual_sell = int(ts_actual_sell / 1000)
+                # self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_cur_price:%s" %
+                #                 (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_cur_price))
+                # self.demo_print("actual_sell_cur_price * actual_last_amount = %s" % (actual_sell_cur_price * self.actual_last_amount))
+                # self.actual_balance += actual_sell_cur_price * self.actual_last_amount
+                # self.demo_print("actual_balance =  %s" % (self.actual_balance))
+                # self.actual_last_symbol = "Nothing"
+                # self.actual_last_currency = "Nothing"
+                # self.actual_last_amount = 0.0
             # update stop_actual_invest
             if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
                 self.stop_actual_invest = True
@@ -326,13 +408,160 @@ class DemoStrategy:
         self.current_balance -= self.once_invest
         if self.stop_actual_invest is False:
             self.demo_print("ACTUAL - BUY NEW COINS")
-            self.actual_balance -= self.once_invest
-            self.actual_last_symbol = symbol
-            self.actual_last_currency = currency
-            self.actual_last_amount = self.once_invest / cur_price
+            self.actual_buy_market_level_coins(symbol, currency)
+            # self.actual_balance -= self.once_invest
+            # self.actual_last_symbol = symbol
+            # self.actual_last_currency = currency
+            # self.actual_last_amount = self.once_invest / cur_price
         self.last_symbol = symbol
         self.last_currency = currency
         self.last_amount = self.once_invest / cur_price
+
+    def get_actual_buy_market_amount(self, order_id=""):
+        if order_id == "":
+            return -1
+        actual_buy_market_amount = -1
+        ret = False
+        retry_count = 0
+        while ret is False and retry_count < 30:
+            try:
+                response = Get_orders_details(
+                    access_key=self.access_key,
+                    secret_key=self.secret_key,
+                    order_id=order_id,
+                )
+                if response is not None:
+                    status = response["status"]
+                    if status == "ok":
+                        data = response["data"]
+                        state = data["state"]
+                        if state != "filled":
+                            ret = False
+                            retry_count += 1
+                            time.sleep(2)
+                            continue
+                        else:
+                            ret = True
+                            field_amount = float(data["field-amount"])
+                            field_fees = float(data["field-fees"])
+                            actual_buy_market_amount = field_amount - field_fees
+                            self.demo_print("IN get_actual_buy_market_amount")
+                            self.demo_print("order_id=%s, field_amount=%s, field_fees=%s, actual_buy_market_amount=%s"
+                                            % (order_id, field_amount, field_fees, actual_buy_market_amount))
+                            break
+                    else:
+                        ret = False
+                        retry_count += 1
+                        time.sleep(2)
+                        continue
+                else:
+                    ret = False
+                    retry_count += 1
+                    time.sleep(2)
+                    continue
+            except Exception as ex:
+                self.demo_print("Exception in get_actual_buy_market_amount")
+                self.demo_print("order_id = %s" % order_id)
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        return ret, actual_buy_market_amount
+
+    def actual_buy_market_level_coins(self, symbol, currency):
+        amount = self.once_invest
+        ret, response = self.buy_market(symbol, amount)
+        if ret is True:
+            actual_buy_market_amount = -1
+            try:
+                order_id = response["data"]
+                ret, actual_buy_market_amount = self.get_actual_buy_market_amount(order_id)
+            except Exception as ex:
+                self.demo_print("Exception in get actual buy market amount! ")
+            if ret is True and float(actual_buy_market_amount) > 0.0:
+                self.actual_balance -= self.once_invest
+                self.actual_last_symbol = symbol
+                self.actual_last_currency = currency
+                self.actual_last_amount = float(actual_buy_market_amount)
+        else:
+            self.demo_print("FAILED to BUY NEW COINS indeed!")
+            self.demo_print("symbol=%s, ts=%s" % (symbol, timeStamp_to_datetime(int(time.time()))))
+            if response is not None:
+                self.demo_print("response = %s" % response)
+        return ret
+
+    def get_actual_sell_market_cash(self, order_id=""):
+        if order_id == "":
+            return -1
+        actual_sell_market_cash = -1
+        ret = False
+        retry_count = 0
+        while ret is False and retry_count < 30:
+            try:
+                response = Get_orders_details(
+                    access_key=self.access_key,
+                    secret_key=self.secret_key,
+                    order_id=order_id,
+                )
+                if response is not None:
+                    status = response["status"]
+                    if status == "ok":
+                        data = response["data"]
+                        state = data["state"]
+                        if state != "filled":
+                            ret = False
+                            retry_count += 1
+                            time.sleep(2)
+                            continue
+                        else:
+                            ret = True
+                            field_cash_amount = float(data["field-cash-amount"])
+                            field_fees = float(data["field-fees"])
+                            actual_sell_market_cash = field_cash_amount - field_fees
+                            self.demo_print("IN get_actual_sell_market_cash")
+                            self.demo_print("order_id=%s, field_cash_amount=%s, field_fees=%s, actual_buy_market_amount=%s"
+                                            % (order_id, field_cash_amount, field_fees, actual_sell_market_cash))
+                            break
+                    else:
+                        ret = False
+                        retry_count += 1
+                        time.sleep(2)
+                        continue
+                else:
+                    ret = False
+                    retry_count += 1
+                    time.sleep(2)
+                    continue
+            except Exception as ex:
+                self.demo_print("Exception in get_actual_buy_market_amount")
+                self.demo_print("order_id = %s" % order_id)
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        return ret, actual_sell_market_cash
+
+    def actual_sell_market_level_coins(self, symbol, amount):
+        ret, response = self.sell_market(symbol, amount)
+        if ret is True:
+            actual_sell_market_cash = 0.0
+            try:
+                order_id = response["data"]
+                ret, actual_sell_market_cash = self.get_actual_sell_market_cash(order_id)
+            except Exception as ex:
+                self.demo_print("Exception in get actual sell market amount! ")
+                ret = False
+            if ret is True:
+                self.actual_balance += actual_sell_market_cash
+                self.actual_last_symbol = "Nothing"
+                self.actual_last_currency = "Nothing"
+                self.actual_last_amount = 0.0
+        else:
+            self.demo_print("FAILED to SELL HOLD COINS indeed!")
+            self.demo_print("symbol=%s, ts=%s" % (symbol, timeStamp_to_datetime(int(time.time()))))
+            if response is not None:
+                self.demo_print("response = %s" % response)
+        return ret
 
     # 行动器
     def do_action(self, action_index):
@@ -896,49 +1125,26 @@ def Get_accounts_balance(
         params=params
     )
 
-
-# 获取指定币种的当前可用余额
-def get_currency_balance(
+# 查询订单详情
+# API Key 权限：读取
+# 限频值（NEW）：50次/2s
+# 此接口返回指定订单的最新状态和详情。通过API创建的订单，撤销超过2小时后无法查询。
+def Get_orders_details(
         access_key, secret_key,
-        account_id,
-        currency,   # 币种名称
-        type_value  # trade: 交易余额，frozen: 冻结余额, loan: 待还借贷本金,
-                    # interest: 待还借贷利息, lock: 锁仓, bank: 储蓄
+        order_id,  # 订单ID，填在path中
 ):
-    balance_value = "-1"
-    ret = False
-    retry_count = 0
-    while ret is False and retry_count < 10:
-        response = Get_accounts_balance(
-            access_key=access_key, secret_key=secret_key,
-            account_id=account_id
-        )
-        if response is not None:
-            status = response["status"]
-            if status == "ok":
-                data = response["data"]
-                balance_list = data["list"]
-                ret = True
-                bFind = False
-                for balance_item in balance_list:
-                    if balance_item["currency"] == currency and balance_item["type"] == type_value:
-                        balance_value = balance_item["balance"]
-                        bFind = True
-                        break
-                if not bFind:
-                    print("Failed to get the balance, currency=%s, type_value=%s" % (currency, type_value))
-            else:
-                ret = False
-                retry_count += 1
-                time.sleep(2)
-                continue
-        else:
-            ret = False
-            retry_count += 1
-            time.sleep(2)
-            continue
-    return balance_value
-
+    params = {
+        "order-id": order_id,  # 填在 path 中，取值参考 GET /v1/account/accounts
+    }
+    interface_path = "/v1/order/orders/%s" % order_id
+    return HbgAnyCall().callApiMethod(
+        access_key=access_key, secret_key=secret_key,
+        host_path="https://api.huobi.pro",
+        interface_path=interface_path,
+        method_type="GET",
+        headers=None,
+        params=params
+    )
 
 # 返回指定订单的成交明细
 def Get_orders_matchresults(
@@ -1134,8 +1340,30 @@ def demo_01():
 
 
 def demo_03():
-    response = Get_market_trade(symbol="btc3lusdt")
+    # response = Get_market_trade(symbol="btc3lusdt")
+    time_stamp = int(time.time())
+    dt_stamp = timeStamp_to_datetime(time_stamp)
+    demo = DemoStrategy()
+    # ret, response = \
+    #     demo.actual_buy_market_level_coins("bch3susdt", "bch3s")
+    # print(response)
+    response = Get_orders_details(
+        access_key=demo.access_key,
+        secret_key=demo.secret_key,
+        order_id="221672635169587"
+    )
     print(response)
+
+    response = Get_orders_matchresults(
+        access_key=demo.access_key,
+        secret_key=demo.secret_key,
+        order_id="221672635169587"
+    )
+    print(response)
+
+    # buy
+    # sell
+    # print(response)
 
 def demo_Api(access_key, secret_key):
     response = API_v2_account_repayment(access_key, secret_key)
@@ -1199,7 +1427,7 @@ def demo_Api(access_key, secret_key):
         # hbgAnyCall.print_json(response)
         # 获取指定币种的账户余额
         # currency = "btc3l"
-        # balance = get_currency_balance(
+        # balance = Get_currency_balance(
         #     access_key=access_key, secret_key=secret_key,
         #     account_id=account_id,
         #     currency=currency,

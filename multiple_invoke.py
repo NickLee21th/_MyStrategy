@@ -12,6 +12,20 @@ from project.demos.demo import *
 
 current_path = os.path.dirname(os.path.abspath(__file__))
 
+ETP_LIST = (
+            "btc",
+            "eth",
+            "link",
+            "eos",
+            "bch",
+            "ltc",
+            "zec",
+            "xrp",
+            "bsv",
+            "fil",
+    )
+LENGTH_ETP_LIST = len(ETP_LIST)
+
 # UNIX时间戳 转换为 datetime  显示
 def timeStamp_to_datetime(timeStamp, dt_format=None):
     if dt_format is None:
@@ -27,9 +41,9 @@ def schedule_job(etp, dt_stamp,queue=None,log_folder_name=None):
         demo.queue = queue
         demo.etp = etp
         demo.dt_stamp = dt_stamp
-        demo.access_key = access_key
-        demo.secret_key = secret_key
-        demo.account_id = account_id
+        # demo.access_key = access_key
+        # demo.secret_key = secret_key
+        # demo.account_id = account_id
         demo.demon_action(log_folder_name)
         # demo.demon_prediction()
     except Exception as ex:
@@ -61,7 +75,9 @@ def collection_job(queue=None, log_folder_name=None):
                             = queue_item["stop_actual_invest"]
                         earn_all[key]['count'] += 1
                         print("earn_all[%s]['count']  = %s" % (key, earn_all[key]['count']))
-                        if earn_all[key]['count'] >= 10:
+                        print("LENGTH_ETP_LIST")
+                        print("LENGTH_ETP_LIST=%s" % LENGTH_ETP_LIST)
+                        if earn_all[key]['count'] >= LENGTH_ETP_LIST:
                             print("===================================================", file=data)
                             print({
                                 "RUN_TIME": key,
@@ -113,11 +129,7 @@ def multi_process(dt_stamp, log_folder_name):
     process_pool_size = 11
     queue = Manager().Queue(process_pool_size * 2)
     p = Pool(process_pool_size)
-    for etp in (
-            "btc", "eth", "link",
-            "eos", "bch", "ltc",
-            "zec", "xrp", "bsv", "fil",
-    ):
+    for etp in ETP_LIST:
         p.apply_async(long_time_task, args=(etp, dt_stamp, queue, log_folder_name))
     p.apply_async(long_time_task_2, args=(queue, log_folder_name))
     print('Waiting for all subprocesses done...')
@@ -130,11 +142,7 @@ def multi_process_predict(dt_stamp, log_folder_name):
     process_pool_size = 11
     queue = Manager().Queue(process_pool_size * 2)
     p = Pool(process_pool_size)
-    for etp in (
-            "btc", "eth", "link",
-            "eos", "bch", "ltc",
-            "zec", "xrp", "bsv", "fil",
-    ):
+    for etp in ETP_LIST:
         p.apply_async(long_time_task, args=(etp, dt_stamp, queue, log_folder_name))
     print('Waiting for all subprocesses done...')
     p.close()
@@ -146,13 +154,7 @@ def calculate_total(dt_stamp):
     total_file_path = "demo_Total_Earn.log"
     file_handle = open(total_file_path, "a")
     try:
-        for etp in (
-                "btc", "eth",
-                "link",
-                "eos", "bch", "ltc",
-                "zec", "xrp",
-                "bsv", "fil",
-        ):
+        for etp in ETP_LIST:
             file_path = "demo_log/demo_%s_%s.log" % (dt_stamp, etp)
             file = open(file_path, 'r')
             for line in file.readlines():
