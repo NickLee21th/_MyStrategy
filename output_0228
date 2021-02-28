@@ -1,0 +1,511 @@
+nohup: ignoring input
+Parent process 17129.
+Run task zec (17146)...
+Run task zec (start= 2021-02-28-13-04-34)...
+I'm zec in demo_action
+zec  get_ALL_symbol_trend_data START
+zecusdt  1000
+zec3lusdt  1000
+zec3susdt  1000
+zec  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 461 , count_B_earn = 36 , invest_direction = planA , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:zec3lusdt, currency:zec3l, cur_price:1.3096, amount=7.6359193646915084, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+zec  get_ALL_symbol_trend_data START
+zecusdt  1000
+zec3lusdt  1000
+zec3susdt  1000
+zec  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 462 , count_B_earn = 35 , invest_direction = planA , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SELL LAST COIN
+last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.6359193646915084, sell_cur_price:1.3079
+sell_cur_price * last_amount = 9.987018937080025
+current_balance = 9.987018937080025  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = -0.12981062919974917%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.987018937080025
+BUY NEW COINS
+symbol:zec3susdt, currency:zec3s, cur_price:0.09211, amount=108.56584518510476, ts:2021-02-28 13:09:35
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task zec (end= 2021-02-28-13-14-34)...
+Run task fil (17149)...
+Run task fil (start= 2021-02-28-13-04-34)...
+I'm fil in demo_action
+fil  get_ALL_symbol_trend_data START
+filusdt  1000
+fil3lusdt  1000
+fil3susdt  1000
+fil  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 316 , count_B_earn = 385 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:fil3lusdt, currency:fil3l, cur_price:4.8261, amount=2.072066471892418, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+fil  get_ALL_symbol_trend_data START
+filusdt  1000
+fil3lusdt  1000
+fil3susdt  1000
+fil  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 317 , count_B_earn = 384 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SELL LAST COIN
+last_symbol:fil3lusdt, last_currency:fil3l, last_amount:2.072066471892418, sell_cur_price:4.9107
+sell_cur_price * last_amount = 10.175296823522098
+current_balance = 10.175296823522098  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = 1.7529682352209797%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.175296823522098
+BUY NEW COINS
+symbol:fil3susdt, currency:fil3s, cur_price:0.5239, amount=19.08761213972132, ts:2021-02-28 13:09:35
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task fil (end= 2021-02-28-13-14-34)...
+Run task eth (17139)...
+Run task eth (start= 2021-02-28-13-04-34)...
+I'm eth in demo_action
+eth  get_ALL_symbol_trend_data START
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 163 , count_B_earn = 403 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.010645, amount=939.4081728511038, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+eth  get_ALL_symbol_trend_data START
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 162 , count_B_earn = 404 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:939.4081728511038, sell_cur_price:0.010581
+sell_cur_price * last_amount = 9.93987787693753
+current_balance = 9.93987787693753  sell_ts:2021-02-28 13:09:35  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:01
+earning_ratio = -0.6012212306247022%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.93987787693753
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:25.0074, amount=0.3998816350360293, ts:2021-02-28 13:09:35
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:35 
+sleep 299 seconds .....
+Run task eth (end= 2021-02-28-13-14-34)...
+Run task xrp (17147)...
+Run task xrp (start= 2021-02-28-13-04-34)...
+I'm xrp in demo_action
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  1000
+xrp3lusdt  1000
+xrp3susdt  1000
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 5 , count_B_earn = 494 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4844, amount=20.64409578860446, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  1000
+xrp3lusdt  1000
+xrp3susdt  1000
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 5 , count_B_earn = 494 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.64409578860446, sell_cur_price:0.4851
+sell_cur_price * last_amount = 10.014450867052023
+current_balance = 10.014450867052023  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = 0.14450867052023142%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.014450867052023
+BUY NEW COINS
+symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4851, amount=20.614306328592043, ts:2021-02-28 13:09:36
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task xrp (end= 2021-02-28-13-14-34)...
+Run task btc (17138)...
+Run task btc (start= 2021-02-28-13-04-34)...
+I'm btc in demo_action
+btc  get_ALL_symbol_trend_data START
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 34 , count_B_earn = 493 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:205.5794, amount=0.0486430060599457, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+btc  get_ALL_symbol_trend_data START
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 34 , count_B_earn = 493 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.0486430060599457, sell_cur_price:207.6234
+sell_cur_price * last_amount = 10.09942630438653
+current_balance = 10.09942630438653  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = 0.9942630438652955%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.09942630438653
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:207.6234, amount=0.048164127935483185, ts:2021-02-28 13:09:36
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task btc (end= 2021-02-28-13-14-34)...
+Run task bch (17140)...
+Run task bch (start= 2021-02-28-13-04-34)...
+I'm bch in demo_action
+bch  get_ALL_symbol_trend_data START
+bchusdt  1000
+bch3lusdt  1000
+bch3susdt  1000
+bch  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:bch3lusdt, currency:bch3l, cur_price:6.5495, amount=1.5268341094740057, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+bch  get_ALL_symbol_trend_data START
+bchusdt  1000
+bch3lusdt  1000
+bch3susdt  1000
+bch  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:bch3lusdt, last_currency:bch3l, last_amount:1.5268341094740057, sell_cur_price:6.6144
+sell_cur_price * last_amount = 10.099091533704863
+current_balance = 10.099091533704863  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = 0.9909153370486302%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.099091533704863
+BUY NEW COINS
+symbol:bch3lusdt, currency:bch3l, cur_price:6.6144, amount=1.5118529269472667, ts:2021-02-28 13:09:36
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task bch (end= 2021-02-28-13-14-34)...
+Run task ltc (17142)...
+Run task ltc (start= 2021-02-28-13-04-34)...
+I'm ltc in demo_action
+ltc  get_ALL_symbol_trend_data START
+ltcusdt  1000
+ltc3lusdt  1000
+ltc3susdt  1000
+ltc  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:ltc3lusdt, currency:ltc3l, cur_price:24.1217, amount=0.41456447928628576, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+ltc  get_ALL_symbol_trend_data START
+ltcusdt  1000
+ltc3lusdt  1000
+ltc3susdt  1000
+ltc  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:ltc3lusdt, last_currency:ltc3l, last_amount:0.41456447928628576, sell_cur_price:24.4093
+sell_cur_price * last_amount = 10.119228744242736
+current_balance = 10.119228744242736  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = 1.1922874424273644%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.119228744242736
+BUY NEW COINS
+symbol:ltc3lusdt, currency:ltc3l, cur_price:24.4093, amount=0.4096799170807848, ts:2021-02-28 13:09:36
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task ltc (end= 2021-02-28-13-14-34)...
+Run task link (17141)...
+Run task link (start= 2021-02-28-13-04-34)...
+I'm link in demo_action
+link  get_ALL_symbol_trend_data START
+linkusdt  1000
+link3lusdt  1000
+link3susdt  1000
+link  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 3 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:link3susdt, currency:link3s, cur_price:0.002411, amount=4147.65657403567, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+link  get_ALL_symbol_trend_data START
+linkusdt  1000
+link3lusdt  1000
+link3susdt  1000
+link  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 3 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:link3susdt, last_currency:link3s, last_amount:4147.65657403567, sell_cur_price:0.002398
+sell_cur_price * last_amount = 9.946080464537536
+current_balance = 9.946080464537536  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = -0.539195354624642%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.946080464537536
+BUY NEW COINS
+symbol:link3lusdt, currency:link3l, cur_price:3.5542, amount=2.8135726745821845, ts:2021-02-28 13:09:36
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task link (end= 2021-02-28-13-14-34)...
+Run task bsv (17144)...
+Run task bsv (start= 2021-02-28-13-04-34)...
+I'm bsv in demo_action
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  1000
+bsv3lusdt  1000
+bsv3susdt  1000
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:bsv3susdt, currency:bsv3s, cur_price:0.132378, amount=75.54125307830607, ts:2021-02-28 13:04:36
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:36 
+sleep 298 seconds .....
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  1000
+bsv3lusdt  1000
+bsv3susdt  1000
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 500 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:bsv3susdt, last_currency:bsv3s, last_amount:75.54125307830607, sell_cur_price:0.133324
+sell_cur_price * last_amount = 10.071462025412078
+current_balance = 10.071462025412078  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = 0.7146202541207813%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.071462025412078
+BUY NEW COINS
+symbol:bsv3lusdt, currency:bsv3l, cur_price:0.7562, amount=13.22401481089659, ts:2021-02-28 13:09:36
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task bsv (end= 2021-02-28-13-14-34)...
+Run task eos (17145)...
+Run task eos (start= 2021-02-28-13-04-34)...
+I'm eos in demo_action
+eos  get_ALL_symbol_trend_data START
+eosusdt  1000
+eos3lusdt  1000
+eos3susdt  1000
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 486 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:eos3lusdt, currency:eos3l, cur_price:2.4602, amount=4.064710186163727, ts:2021-02-28 13:04:35
+=========================================
+time_stamp_start = 2021-02-28 13:04:34   time_stamp_end = 2021-02-28 13:04:35 
+sleep 299 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  1000
+eos3lusdt  1000
+eos3susdt  1000
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 0 , count_B_earn = 486 , invest_direction = planB , threshold_value=0.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:eos3lusdt, last_currency:eos3l, last_amount:4.064710186163727, sell_cur_price:2.4993
+sell_cur_price * last_amount = 10.158930168279003
+current_balance = 10.158930168279003  sell_ts:2021-02-28 13:09:36  demo_action_launch_time: 2021-02-28 13:04:34
+demo_action_running_duration: 0:05:02
+earning_ratio = 1.5893016827900297%
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.158930168279003
+BUY NEW COINS
+symbol:eos3lusdt, currency:eos3l, cur_price:2.4993, amount=4.001120313687832, ts:2021-02-28 13:09:36
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-02-28 13:09:34   time_stamp_end = 2021-02-28 13:09:36 
+sleep 298 seconds .....
+Run task eos (end= 2021-02-28-13-14-34)...
+Run COLLECTION task  (17148)...
+Run COLLECTION task (start= 2021-02-28-13-04-34)...
+earn_all[0:00:00]['count']  = 1
+earn_all[0:00:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 1
+earn_all[0:05:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+Run COLLECTION task (end= 2021-02-28-13-41-26)...
+Waiting for all subprocesses done...
+All subprocesses done.
+
