@@ -360,7 +360,10 @@ class DemoStrategy:
             if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
                 self.stop_actual_invest = True
             else:
-                self.stop_actual_invest = False
+                if (sell_cur_price * self.last_amount) < self.once_invest:  # 触发止损
+                    self.stop_actual_invest = True
+                else:
+                    self.stop_actual_invest = False
             # queue_info
             queue_info = {
                 'action_index': self.get_duration(action_index * TIME_PERIOD_VALUE*60),
