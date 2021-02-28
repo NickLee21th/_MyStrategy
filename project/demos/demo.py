@@ -886,7 +886,7 @@ class DemoStrategy:
         last_trend = trend_base_list[index]["trend"]
         last_ts = trend_base_list[index]["dt"]
         invest_direction = "no_plan"
-        adjust_rate = 0.0  # 0.5
+        adjust_rate = 0.8  # 0.0  # 0.5
         if count_B_earn > 0 and count_B_earn > count_A_earn and count_B_earn > (step_range * adjust_rate):
             invest_direction = "planB"
         elif count_A_earn > 0 and count_A_earn > count_B_earn and count_A_earn > (step_range * adjust_rate):
