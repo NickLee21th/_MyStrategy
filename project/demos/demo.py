@@ -333,7 +333,6 @@ class DemoStrategy:
                             % (self.current_balance, timeStamp_to_datetime(ts_sell),
                                timeStamp_to_datetime(self.demo_action_launch_time)))
             self.earning_ratio = (self.current_balance - self.once_invest) / self.once_invest
-
             self.demo_print("demo_action_running_duration: %s" % running_duration)
             self.demo_print("earning_ratio = %s%%" % (self.earning_ratio * 100.0))
             self.last_symbol = "Nothing"
@@ -342,20 +341,21 @@ class DemoStrategy:
             # Actual sell
             if self.actual_last_symbol != "Nothing":
                 self.demo_print("***** ACTUAL SELL LAST COIN *****")
-                self.actual_sell_market_level_coins(
-                    symbol=self.actual_last_symbol,
-                    amount=self.actual_last_amount
-                )
-                # ts_actual_sell, actual_sell_cur_price = get_current_price(symbol=self.actual_last_symbol, )
-                # ts_actual_sell = int(ts_actual_sell / 1000)
-                # self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_cur_price:%s" %
-                #                 (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_cur_price))
-                # self.demo_print("actual_sell_cur_price * actual_last_amount = %s" % (actual_sell_cur_price * self.actual_last_amount))
-                # self.actual_balance += actual_sell_cur_price * self.actual_last_amount
-                # self.demo_print("actual_balance =  %s" % (self.actual_balance))
-                # self.actual_last_symbol = "Nothing"
-                # self.actual_last_currency = "Nothing"
-                # self.actual_last_amount = 0.0
+                # self.actual_sell_market_level_coins(
+                #     symbol=self.actual_last_symbol,
+                #     amount=self.actual_last_amount
+                # )
+                ts_actual_sell, actual_sell_cur_price = get_current_price(symbol=self.actual_last_symbol, )
+                ts_actual_sell = int(ts_actual_sell / 1000)
+                self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_cur_price:%s" %
+                                (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_cur_price))
+                self.demo_print("actual_sell_cur_price * actual_last_amount = %s" % (actual_sell_cur_price * self.actual_last_amount))
+                self.actual_balance += actual_sell_cur_price * self.actual_last_amount
+                self.demo_print("actual_balance=%s, ts_actual_sell=%s"
+                                % (self.actual_balance, timeStamp_to_datetime(ts_actual_sell)))
+                self.actual_last_symbol = "Nothing"
+                self.actual_last_currency = "Nothing"
+                self.actual_last_amount = 0.0
             # update stop_actual_invest
             if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
                 self.stop_actual_invest = True
@@ -408,11 +408,11 @@ class DemoStrategy:
         self.current_balance -= self.once_invest
         if self.stop_actual_invest is False:
             self.demo_print("ACTUAL - BUY NEW COINS")
-            self.actual_buy_market_level_coins(symbol, currency)
-            # self.actual_balance -= self.once_invest
-            # self.actual_last_symbol = symbol
-            # self.actual_last_currency = currency
-            # self.actual_last_amount = self.once_invest / cur_price
+            # self.actual_buy_market_level_coins(symbol, currency)
+            self.actual_balance -= self.once_invest
+            self.actual_last_symbol = symbol
+            self.actual_last_currency = currency
+            self.actual_last_amount = self.once_invest / cur_price
         self.last_symbol = symbol
         self.last_currency = currency
         self.last_amount = self.once_invest / cur_price
