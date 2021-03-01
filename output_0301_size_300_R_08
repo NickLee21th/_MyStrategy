@@ -1,0 +1,927 @@
+nohup: ignoring input
+log_folder_name: run_action_03_01_size_300_R_08_log
+history_size: 300
+threshold_value_adjust_rate: 300
+Parent process 1226.
+Run task bsv (1243)...
+Run task bsv (start= 2021-03-01-10-30-55)...
+I'm bsv in demo_action
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  300
+bsv3lusdt  300
+bsv3susdt  300
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 6 , count_B_earn = 150 , invest_direction = planB , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:bsv3lusdt, currency:bsv3l, cur_price:0.7806, amount=12.810658467845247, ts:2021-03-01 10:30:55
+=========================================
+time_stamp_start = 2021-03-01 10:30:55   time_stamp_end = 2021-03-01 10:30:55 
+sleep 300 seconds .....
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  300
+bsv3lusdt  300
+bsv3susdt  300
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 6 , count_B_earn = 150 , invest_direction = planB , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SELL LAST COIN
+last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:12.810658467845247, sell_cur_price:0.7822
+sell_cur_price * last_amount = 10.020497053548553
+current_balance = 10.020497053548553  sell_ts:2021-03-01 10:35:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:05:01
+earning_ratio = 0.20497053548552913%
+***** update stop_actual_invest  *****
+last_sell_cash=10.020497053548553
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.020497053548553
+BUY NEW COINS
+symbol:bsv3susdt, currency:bsv3s, cur_price:0.120912, amount=82.70477702792112, ts:2021-03-01 10:35:56
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-03-01 10:35:55   time_stamp_end = 2021-03-01 10:35:56 
+sleep 299 seconds .....
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  300
+bsv3lusdt  300
+bsv3susdt  300
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 6 , count_B_earn = 150 , invest_direction = planB , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:bsv3susdt, last_currency:bsv3s, last_amount:82.70477702792112, sell_cur_price:0.1216
+sell_cur_price * last_amount = 10.056900886595209
+current_balance = 10.077397940143761  sell_ts:2021-03-01 10:40:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:10:01
+earning_ratio = 0.7739794014376145%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:bsv3susdt, actual_last_currency:bsv3s, actual_last_amount:82.70477702792112, actual_sell_cur_price:0.1216
+actual_sell_cur_price * actual_last_amount = 10.056900886595209
+actual_balance=10.056900886595209, ts_actual_sell=2021-03-01 10:40:56
+***** update stop_actual_invest  *****
+last_sell_cash=10.056900886595209
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.077397940143761
+BUY NEW COINS
+symbol:bsv3lusdt, currency:bsv3l, cur_price:0.7816, amount=12.7942681678608, ts:2021-03-01 10:40:56
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-03-01 10:40:55   time_stamp_end = 2021-03-01 10:40:56 
+sleep 299 seconds .....
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  300
+bsv3lusdt  300
+bsv3susdt  300
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 6 , count_B_earn = 150 , invest_direction = planB , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SELL LAST COIN
+last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:12.7942681678608, sell_cur_price:0.7901
+sell_cur_price * last_amount = 10.108751279426818
+current_balance = 10.186149219570579  sell_ts:2021-03-01 10:45:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:15:01
+earning_ratio = 1.8614921957057895%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:bsv3lusdt, actual_last_currency:bsv3l, actual_last_amount:12.7942681678608, actual_sell_cur_price:0.7901
+actual_sell_cur_price * actual_last_amount = 10.108751279426818
+actual_balance=10.165652166022026, ts_actual_sell=2021-03-01 10:45:56
+***** update stop_actual_invest  *****
+last_sell_cash=10.108751279426818
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.186149219570579
+BUY NEW COINS
+symbol:bsv3susdt, currency:bsv3s, cur_price:0.12, amount=83.33333333333334, ts:2021-03-01 10:45:56
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-03-01 10:45:55   time_stamp_end = 2021-03-01 10:45:56 
+sleep 299 seconds .....
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  300
+bsv3lusdt  300
+bsv3susdt  300
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 6 , count_B_earn = 150 , invest_direction = planB , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = -1
+SELL LAST COIN
+last_symbol:bsv3susdt, last_currency:bsv3s, last_amount:83.33333333333334, sell_cur_price:0.120091
+sell_cur_price * last_amount = 10.007583333333335
+current_balance = 10.193732552903914  sell_ts:2021-03-01 10:50:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:20:01
+earning_ratio = 1.9373255290391356%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:bsv3susdt, actual_last_currency:bsv3s, actual_last_amount:83.33333333333334, actual_sell_cur_price:0.120091
+actual_sell_cur_price * actual_last_amount = 10.007583333333335
+actual_balance=10.17323549935536, ts_actual_sell=2021-03-01 10:50:56
+***** update stop_actual_invest  *****
+last_sell_cash=10.007583333333335
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.193732552903914
+BUY NEW COINS
+symbol:bsv3lusdt, currency:bsv3l, cur_price:0.7891, amount=12.672665061462425, ts:2021-03-01 10:50:56
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-03-01 10:50:55   time_stamp_end = 2021-03-01 10:50:56 
+sleep 299 seconds .....
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  300
+bsv3lusdt  300
+bsv3susdt  300
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 6 , count_B_earn = 150 , invest_direction = planB , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SELL LAST COIN
+last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:12.672665061462425, sell_cur_price:0.7946
+sell_cur_price * last_amount = 10.069699657838042
+current_balance = 10.263432210741955  sell_ts:2021-03-01 10:55:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:25:01
+earning_ratio = 2.6343221074195533%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:bsv3lusdt, actual_last_currency:bsv3l, actual_last_amount:12.672665061462425, actual_sell_cur_price:0.7946
+actual_sell_cur_price * actual_last_amount = 10.069699657838042
+actual_balance=10.242935157193402, ts_actual_sell=2021-03-01 10:55:56
+***** update stop_actual_invest  *****
+last_sell_cash=10.069699657838042
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.263432210741955
+BUY NEW COINS
+symbol:bsv3susdt, currency:bsv3s, cur_price:0.119618, amount=83.59945827551037, ts:2021-03-01 10:55:56
+ACTUAL - BUY NEW COINS
+=========================================
+time_stamp_start = 2021-03-01 10:55:55   time_stamp_end = 2021-03-01 10:55:56 
+sleep 299 seconds .....
+bsv  get_ALL_symbol_trend_data START
+bsvusdt  300
+bsv3lusdt  300
+bsv3susdt  300
+bsv  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 6 , count_B_earn = 150 , invest_direction = planB , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planB   last_trend = 1
+SELL LAST COIN
+last_symbol:bsv3susdt, last_currency:bsv3s, last_amount:83.59945827551037, sell_cur_price:0.118929
+sell_cur_price * last_amount = 9.942399973248174
+current_balance = 10.205832183990129  sell_ts:2021-03-01 11:00:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:30:01
+earning_ratio = 2.0583218399012893%
+***** ACTUAL SELL LAST COIN *****Run task xrp (1244)...
+Run task xrp (start= 2021-03-01-10-30-55)...
+I'm xrp in demo_action
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 131 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:xrp3susdt, currency:xrp3s, cur_price:1.522e-05, amount=657030.223390276, ts:2021-03-01 10:30:55
+=========================================
+time_stamp_start = 2021-03-01 10:30:55   time_stamp_end = 2021-03-01 10:30:55 
+sleep 300 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 131 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:657030.223390276, sell_cur_price:1.505e-05
+sell_cur_price * last_amount = 9.888304862023654
+current_balance = 9.888304862023654  sell_ts:2021-03-01 10:35:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:05:01
+earning_ratio = -1.11695137976346%
+***** update stop_actual_invest  *****
+last_sell_cash=9.888304862023654
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.888304862023654
+BUY NEW COINS
+symbol:xrp3lusdt, currency:xrp3l, cur_price:0.5165, amount=19.36108422071636, ts:2021-03-01 10:35:56
+=========================================
+time_stamp_start = 2021-03-01 10:35:55   time_stamp_end = 2021-03-01 10:35:56 
+sleep 299 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 131 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SELL LAST COIN
+last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:19.36108422071636, sell_cur_price:0.518
+sell_cur_price * last_amount = 10.029041626331075
+current_balance = 9.91734648835473  sell_ts:2021-03-01 10:40:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:10:01
+earning_ratio = -0.8265351164527068%
+***** update stop_actual_invest  *****
+last_sell_cash=10.029041626331075
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.91734648835473
+BUY NEW COINS
+symbol:xrp3susdt, currency:xrp3s, cur_price:1.5e-05, amount=666666.6666666666, ts:2021-03-01 10:40:56
+=========================================
+time_stamp_start = 2021-03-01 10:40:55   time_stamp_end = 2021-03-01 10:40:56 
+sleep 299 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:666666.6666666666, sell_cur_price:1.48e-05
+sell_cur_price * last_amount = 9.866666666666667
+current_balance = 9.784013155021396  sell_ts:2021-03-01 10:45:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:15:01
+earning_ratio = -2.1598684497860354%
+***** update stop_actual_invest  *****
+last_sell_cash=9.866666666666667
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.784013155021396
+BUY NEW COINS
+symbol:xrp3lusdt, currency:xrp3l, cur_price:0.5224, amount=19.142419601837673, ts:2021-03-01 10:45:56
+=========================================
+time_stamp_start = 2021-03-01 10:45:55   time_stamp_end = 2021-03-01 10:45:56 
+sleep 299 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:19.142419601837673, sell_cur_price:0.5259
+sell_cur_price * last_amount = 10.066998468606434
+current_balance = 9.85101162362783  sell_ts:2021-03-01 10:50:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:20:01
+earning_ratio = -1.4898837637217%
+***** update stop_actual_invest  *****
+last_sell_cash=10.066998468606434
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.85101162362783
+BUY NEW COINS
+symbol:xrp3lusdt, currency:xrp3l, cur_price:0.5259, amount=19.015021867275145, ts:2021-03-01 10:50:56
+=========================================
+time_stamp_start = 2021-03-01 10:50:55   time_stamp_end = 2021-03-01 10:50:56 
+sleep 299 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:19.015021867275145, sell_cur_price:0.5278
+sell_cur_price * last_amount = 10.036128541547823
+current_balance = 9.887140165175653  sell_ts:2021-03-01 10:55:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:25:01
+earning_ratio = -1.128598348243468%
+***** update stop_actual_invest  *****
+last_sell_cash=10.036128541547823
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.887140165175653
+BUY NEW COINS
+symbol:xrp3lusdt, currency:xrp3l, cur_price:0.5278, amount=18.9465706707086, ts:2021-03-01 10:55:56
+=========================================
+time_stamp_start = 2021-03-01 10:55:55   time_stamp_end = 2021-03-01 10:55:56 
+sleep 299 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SELL LAST COIN
+last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:18.9465706707086, sell_cur_price:0.5263
+sell_cur_price * last_amount = 9.971580143993936
+current_balance = 9.85872030916959  sell_ts:2021-03-01 11:00:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:30:01
+earning_ratio = -1.4127969083041059%
+***** update stop_actual_invest  *****
+last_sell_cash=9.971580143993936
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.85872030916959
+BUY NEW COINS
+symbol:xrp3susdt, currency:xrp3s, cur_price:1.465e-05, amount=682593.8566552901, ts:2021-03-01 11:00:55
+=========================================
+time_stamp_start = 2021-03-01 11:00:55   time_stamp_end = 2021-03-01 11:00:56 
+sleep 299 seconds .....
+xrp  get_ALL_symbol_trend_data START
+xrpusdt  300
+xrp3lusdt  300
+xrp3susdt  300
+xrp  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 131 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SELL LAST COIN
+last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:682593.8566552901, sell_cur_price:1.481e-05
+sell_cur_price * last_amount = 10.109215017064846
+current_balance = 9.967935326234436  sell_ts:2021-03-01 11:05:55  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:35:00
+earning_ratio = -0.3206467376556432%
+***** update stop_actual_invest  *****
+last_sell_cash=10.109215017064846
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.967935326234436
+BUY NEW COINS
+symbol:xrp3susdt, currency:xrp3s, cur_price:1.481e-05, amount=675219.446320054, ts:2021-03-01 11:05:55Run task eos (1236)...
+Run task eos (start= 2021-03-01-10-30-55)...
+I'm eos in demo_action
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 10.0
+BUY NEW COINS
+symbol:eos3susdt, currency:eos3s, cur_price:0.126869, amount=78.82146150753927, ts:2021-03-01 10:30:55
+=========================================
+time_stamp_start = 2021-03-01 10:30:55   time_stamp_end = 2021-03-01 10:30:55 
+sleep 300 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:eos3susdt, last_currency:eos3s, last_amount:78.82146150753927, sell_cur_price:0.125799
+sell_cur_price * last_amount = 9.915661036186933
+current_balance = 9.915661036186933  sell_ts:2021-03-01 10:35:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:05:01
+earning_ratio = -0.8433896381306738%
+***** update stop_actual_invest  *****
+last_sell_cash=9.915661036186933
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.915661036186933
+BUY NEW COINS
+symbol:eos3lusdt, currency:eos3l, cur_price:2.6032, amount=3.8414259373079283, ts:2021-03-01 10:35:56
+=========================================
+time_stamp_start = 2021-03-01 10:35:55   time_stamp_end = 2021-03-01 10:35:56 
+sleep 299 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SELL LAST COIN
+last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.8414259373079283, sell_cur_price:2.6086
+sell_cur_price * last_amount = 10.020743700061463
+current_balance = 9.936404736248395  sell_ts:2021-03-01 10:40:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:10:01
+earning_ratio = -0.6359526375160485%
+***** update stop_actual_invest  *****
+last_sell_cash=10.020743700061463
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.936404736248395
+BUY NEW COINS
+symbol:eos3susdt, currency:eos3s, cur_price:0.126199, amount=79.2399305858208, ts:2021-03-01 10:40:56
+=========================================
+time_stamp_start = 2021-03-01 10:40:55   time_stamp_end = 2021-03-01 10:40:56 
+sleep 299 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:eos3susdt, last_currency:eos3s, last_amount:79.2399305858208, sell_cur_price:0.1238
+sell_cur_price * last_amount = 9.809903406524615
+current_balance = 9.74630814277301  sell_ts:2021-03-01 10:45:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:15:01
+earning_ratio = -2.5369185722698973%
+***** update stop_actual_invest  *****
+last_sell_cash=9.809903406524615
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.74630814277301
+BUY NEW COINS
+symbol:eos3lusdt, currency:eos3l, cur_price:2.6468, amount=3.77814719661478, ts:2021-03-01 10:45:56
+=========================================
+time_stamp_start = 2021-03-01 10:45:55   time_stamp_end = 2021-03-01 10:45:56 
+sleep 299 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SELL LAST COIN
+last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.77814719661478, sell_cur_price:2.65
+sell_cur_price * last_amount = 10.012090071029167
+current_balance = 9.758398213802177  sell_ts:2021-03-01 10:50:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:20:01
+earning_ratio = -2.4160178619782258%
+***** update stop_actual_invest  *****
+last_sell_cash=10.012090071029167
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.758398213802177
+BUY NEW COINS
+symbol:eos3susdt, currency:eos3s, cur_price:0.123704, amount=80.8381297290306, ts:2021-03-01 10:50:56
+=========================================
+time_stamp_start = 2021-03-01 10:50:55   time_stamp_end = 2021-03-01 10:50:56 
+sleep 299 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:eos3susdt, last_currency:eos3s, last_amount:80.8381297290306, sell_cur_price:0.121311
+sell_cur_price * last_amount = 9.806554355558431
+current_balance = 9.564952569360608  sell_ts:2021-03-01 10:55:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:25:01
+earning_ratio = -4.350474306393917%
+***** update stop_actual_invest  *****
+last_sell_cash=9.806554355558431
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.564952569360608
+BUY NEW COINS
+symbol:eos3lusdt, currency:eos3l, cur_price:2.68, amount=3.731343283582089, ts:2021-03-01 10:55:56
+=========================================
+time_stamp_start = 2021-03-01 10:55:55   time_stamp_end = 2021-03-01 10:55:56 
+sleep 299 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = 1
+SELL LAST COIN
+last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.731343283582089, sell_cur_price:2.6766
+sell_cur_price * last_amount = 9.98731343283582
+current_balance = 9.55226600219643  sell_ts:2021-03-01 11:00:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:30:01
+earning_ratio = -4.477339978035708%
+***** update stop_actual_invest  *****
+last_sell_cash=9.98731343283582
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.55226600219643
+BUY NEW COINS
+symbol:eos3lusdt, currency:eos3l, cur_price:2.6766, amount=3.7360830904879325, ts:2021-03-01 11:00:56
+=========================================
+time_stamp_start = 2021-03-01 11:00:55   time_stamp_end = 2021-03-01 11:00:56 
+sleep 299 seconds .....
+eos  get_ALL_symbol_trend_data START
+eosusdt  300
+eos3lusdt  300
+eos3susdt  300
+eos  get_ALL_symbol_trend_data FINISH
+OK -step 1 - get_ALL_symbol_trend_data
+count_A_earn = 150 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+OK -step 2 - judge_invest_direction
+invest_direction = planA   last_trend = -1
+SELL LAST COIN
+last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.7360830904879325, sell_cur_price:2.6527
+sell_cur_price * last_amount = 9.910707614137339
+current_balance = 9.462973616333768  sell_ts:2021-03-01 11:05:56  demo_action_launch_time: 2021-03-01 10:30:55
+demo_action_running_duration: 0:35:01
+earning_ratio = -5.370263836662321%
+***** update stop_actual_invest  *****
+last_sell_cash=9.910707614137339
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+current_balance = 9.462973616333768
+BUY NEW COINS
+symbol:eos3susdt, currency:eos3s, cur_price:0.123195, amount=81.172125492106, ts:2021-03-01 11:05:55Run COLLECTION task  (1246)...
+Run COLLECTION task (start= 2021-03-01-10-30-55)...
+earn_all[0:00:00]['count']  = 1
+earn_all[0:00:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:00:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 1
+earn_all[0:05:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:05:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 1
+earn_all[0:10:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:10:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 1
+earn_all[0:15:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:15:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 1
+earn_all[0:20:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:20:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 1
+earn_all[0:25:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:25:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 1
+earn_all[0:30:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:30:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 1
+earn_all[0:35:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:35:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 1
+earn_all[0:40:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:40:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 1
+earn_all[0:45:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:45:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 1
+earn_all[0:50:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:50:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 1
+earn_all[0:55:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 8
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 9
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[0:55:00]['count']  = 10
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[1:00:00]['count']  = 1
+earn_all[1:00:00]['count']  = 2
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[1:00:00]['count']  = 3
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[1:00:00]['count']  = 4
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[1:00:00]['count']  = 5
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[1:00:00]['count']  = 6
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[1:00:00]['count']  = 7
+LENGTH_ETP_LIST
+LENGTH_ETP_LIST=10
+earn_all[1:00:00]['count']  = 8
+LENGTH_ETP_LIST

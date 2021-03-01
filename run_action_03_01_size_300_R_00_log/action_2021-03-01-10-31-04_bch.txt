@@ -1,0 +1,295 @@
+2021-03-01 10:31:04,875 - bch - INFO - I'm bch in demo_action
+2021-03-01 10:31:04,875 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 10:31:05,146 - bch - INFO - bchusdt  300
+2021-03-01 10:31:05,346 - bch - INFO - bch3lusdt  300
+2021-03-01 10:31:05,537 - bch - INFO - bch3susdt  300
+2021-03-01 10:31:05,537 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:31:05,605 - bch - INFO - count_A_earn = 36 , count_B_earn = 23 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:31:05,605 - bch - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 10:31:05,722 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 10:31:05,723 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:31:05,723 - bch - INFO - current_balance = 10.0
+2021-03-01 10:31:05,723 - bch - INFO - BUY NEW COINS
+2021-03-01 10:31:05,723 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.022165, amount=451.16174148432214, ts:2021-03-01 10:31:05
+2021-03-01 10:31:05,723 - bch - INFO - =========================================
+2021-03-01 10:31:05,724 - bch - INFO - sleep 299 seconds .....
+2021-03-01 10:36:04,748 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 10:36:04,869 - bch - INFO - bchusdt  300
+2021-03-01 10:36:05,064 - bch - INFO - bch3lusdt  300
+2021-03-01 10:36:05,179 - bch - INFO - bch3susdt  300
+2021-03-01 10:36:05,179 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:36:05,201 - bch - INFO - count_A_earn = 36 , count_B_earn = 24 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:36:05,201 - bch - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 10:36:05,481 - bch - INFO - SELL LAST COIN
+2021-03-01 10:36:05,481 - bch - INFO - last_symbol:bch3susdt, last_currency:bch3s, last_amount:451.16174148432214, sell_cur_price:0.022457
+2021-03-01 10:36:05,481 - bch - INFO - sell_cur_price * last_amount = 10.131739228513423
+2021-03-01 10:36:05,481 - bch - INFO - current_balance = 10.131739228513423  sell_ts:2021-03-01 10:36:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:36:05,481 - bch - INFO - demo_action_running_duration: 0:05:01
+2021-03-01 10:36:05,481 - bch - INFO - earning_ratio = 1.317392285134229%
+2021-03-01 10:36:05,481 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:36:05,481 - bch - INFO - last_sell_cash=10.131739228513423
+2021-03-01 10:36:05,481 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 10:36:05,482 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:36:05,482 - bch - INFO - current_balance = 10.131739228513423
+2021-03-01 10:36:05,482 - bch - INFO - BUY NEW COINS
+2021-03-01 10:36:05,482 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.022457, amount=445.2954535334194, ts:2021-03-01 10:36:05
+2021-03-01 10:36:05,482 - bch - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:36:05,482 - bch - INFO - =========================================
+2021-03-01 10:36:05,482 - bch - INFO - sleep 299 seconds .....
+2021-03-01 10:41:04,552 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 10:41:04,801 - bch - INFO - bchusdt  300
+2021-03-01 10:41:05,024 - bch - INFO - bch3lusdt  300
+2021-03-01 10:41:05,221 - bch - INFO - bch3susdt  300
+2021-03-01 10:41:05,221 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:41:05,251 - bch - INFO - count_A_earn = 36 , count_B_earn = 26 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:41:05,251 - bch - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 10:41:05,492 - bch - INFO - SELL LAST COIN
+2021-03-01 10:41:05,492 - bch - INFO - last_symbol:bch3susdt, last_currency:bch3s, last_amount:445.2954535334194, sell_cur_price:0.022054
+2021-03-01 10:41:05,492 - bch - INFO - sell_cur_price * last_amount = 9.82054593222603
+2021-03-01 10:41:05,492 - bch - INFO - current_balance = 9.952285160739454  sell_ts:2021-03-01 10:41:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:41:05,492 - bch - INFO - demo_action_running_duration: 0:10:01
+2021-03-01 10:41:05,492 - bch - INFO - earning_ratio = -0.47714839260546427%
+2021-03-01 10:41:05,492 - bch - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 10:41:05,616 - bch - INFO - actual_last_symbol:bch3susdt, actual_last_currency:bch3s, actual_last_amount:445.2954535334194, actual_sell_cur_price:0.022054
+2021-03-01 10:41:05,616 - bch - INFO - actual_sell_cur_price * actual_last_amount = 9.82054593222603
+2021-03-01 10:41:05,616 - bch - INFO - actual_balance=9.82054593222603, ts_actual_sell=2021-03-01 10:41:05
+2021-03-01 10:41:05,616 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:41:05,616 - bch - INFO - last_sell_cash=9.82054593222603
+2021-03-01 10:41:05,617 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 10:41:05,617 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:41:05,617 - bch - INFO - current_balance = 9.952285160739454
+2021-03-01 10:41:05,617 - bch - INFO - BUY NEW COINS
+2021-03-01 10:41:05,617 - bch - INFO - symbol:bch3lusdt, currency:bch3l, cur_price:7.5675, amount=1.3214403700033037, ts:2021-03-01 10:41:05
+2021-03-01 10:41:05,617 - bch - INFO - =========================================
+2021-03-01 10:41:05,618 - bch - INFO - sleep 299 seconds .....
+2021-03-01 10:46:04,629 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 10:46:04,832 - bch - INFO - bchusdt  300
+2021-03-01 10:46:05,013 - bch - INFO - bch3lusdt  300
+2021-03-01 10:46:05,213 - bch - INFO - bch3susdt  300
+2021-03-01 10:46:05,213 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:46:05,238 - bch - INFO - count_A_earn = 36 , count_B_earn = 26 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:46:05,238 - bch - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 10:46:05,462 - bch - INFO - SELL LAST COIN
+2021-03-01 10:46:05,462 - bch - INFO - last_symbol:bch3lusdt, last_currency:bch3l, last_amount:1.3214403700033037, sell_cur_price:7.6752
+2021-03-01 10:46:05,462 - bch - INFO - sell_cur_price * last_amount = 10.142319127849357
+2021-03-01 10:46:05,463 - bch - INFO - current_balance = 10.09460428858881  sell_ts:2021-03-01 10:46:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:46:05,463 - bch - INFO - demo_action_running_duration: 0:15:01
+2021-03-01 10:46:05,463 - bch - INFO - earning_ratio = 0.9460428858881009%
+2021-03-01 10:46:05,463 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:46:05,463 - bch - INFO - last_sell_cash=10.142319127849357
+2021-03-01 10:46:05,463 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 10:46:05,463 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:46:05,463 - bch - INFO - current_balance = 10.09460428858881
+2021-03-01 10:46:05,463 - bch - INFO - BUY NEW COINS
+2021-03-01 10:46:05,463 - bch - INFO - symbol:bch3lusdt, currency:bch3l, cur_price:7.6752, amount=1.302897644361059, ts:2021-03-01 10:46:05
+2021-03-01 10:46:05,464 - bch - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:46:05,464 - bch - INFO - =========================================
+2021-03-01 10:46:05,464 - bch - INFO - sleep 299 seconds .....
+2021-03-01 10:51:04,486 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 10:51:04,680 - bch - INFO - bchusdt  300
+2021-03-01 10:51:04,878 - bch - INFO - bch3lusdt  300
+2021-03-01 10:51:05,111 - bch - INFO - bch3susdt  300
+2021-03-01 10:51:05,111 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:51:05,130 - bch - INFO - count_A_earn = 36 , count_B_earn = 27 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:51:05,130 - bch - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 10:51:05,360 - bch - INFO - SELL LAST COIN
+2021-03-01 10:51:05,360 - bch - INFO - last_symbol:bch3lusdt, last_currency:bch3l, last_amount:1.302897644361059, sell_cur_price:7.6047
+2021-03-01 10:51:05,360 - bch - INFO - sell_cur_price * last_amount = 9.908145716072545
+2021-03-01 10:51:05,360 - bch - INFO - current_balance = 10.002750004661355  sell_ts:2021-03-01 10:51:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:51:05,360 - bch - INFO - demo_action_running_duration: 0:20:01
+2021-03-01 10:51:05,360 - bch - INFO - earning_ratio = 0.027500046613546655%
+2021-03-01 10:51:05,360 - bch - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 10:51:05,472 - bch - INFO - actual_last_symbol:bch3lusdt, actual_last_currency:bch3l, actual_last_amount:1.302897644361059, actual_sell_cur_price:7.6047
+2021-03-01 10:51:05,472 - bch - INFO - actual_sell_cur_price * actual_last_amount = 9.908145716072545
+2021-03-01 10:51:05,472 - bch - INFO - actual_balance=9.728691648298575, ts_actual_sell=2021-03-01 10:51:05
+2021-03-01 10:51:05,472 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:51:05,472 - bch - INFO - last_sell_cash=9.908145716072545
+2021-03-01 10:51:05,472 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 10:51:05,473 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:51:05,473 - bch - INFO - current_balance = 10.002750004661355
+2021-03-01 10:51:05,473 - bch - INFO - BUY NEW COINS
+2021-03-01 10:51:05,473 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.022021, amount=454.1119840152582, ts:2021-03-01 10:51:05
+2021-03-01 10:51:05,473 - bch - INFO - =========================================
+2021-03-01 10:51:05,473 - bch - INFO - sleep 299 seconds .....
+2021-03-01 10:56:04,527 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 10:56:04,719 - bch - INFO - bchusdt  300
+2021-03-01 10:56:04,938 - bch - INFO - bch3lusdt  300
+2021-03-01 10:56:05,078 - bch - INFO - bch3susdt  300
+2021-03-01 10:56:05,078 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:56:05,102 - bch - INFO - count_A_earn = 36 , count_B_earn = 29 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:56:05,102 - bch - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 10:56:05,565 - bch - INFO - SELL LAST COIN
+2021-03-01 10:56:05,565 - bch - INFO - last_symbol:bch3susdt, last_currency:bch3s, last_amount:454.1119840152582, sell_cur_price:0.021735
+2021-03-01 10:56:05,565 - bch - INFO - sell_cur_price * last_amount = 9.870123972571637
+2021-03-01 10:56:05,565 - bch - INFO - current_balance = 9.872873977232992  sell_ts:2021-03-01 10:56:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:56:05,565 - bch - INFO - demo_action_running_duration: 0:25:01
+2021-03-01 10:56:05,565 - bch - INFO - earning_ratio = -1.2712602276700835%
+2021-03-01 10:56:05,565 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:56:05,565 - bch - INFO - last_sell_cash=9.870123972571637
+2021-03-01 10:56:05,565 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 10:56:05,566 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:56:05,566 - bch - INFO - current_balance = 9.872873977232992
+2021-03-01 10:56:05,566 - bch - INFO - BUY NEW COINS
+2021-03-01 10:56:05,566 - bch - INFO - symbol:bch3lusdt, currency:bch3l, cur_price:7.6325, amount=1.3101867016049786, ts:2021-03-01 10:56:05
+2021-03-01 10:56:05,566 - bch - INFO - =========================================
+2021-03-01 10:56:05,566 - bch - INFO - sleep 299 seconds .....
+2021-03-01 11:01:04,615 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 11:01:04,847 - bch - INFO - bchusdt  300
+2021-03-01 11:01:05,052 - bch - INFO - bch3lusdt  300
+2021-03-01 11:01:05,256 - bch - INFO - bch3susdt  300
+2021-03-01 11:01:05,257 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:01:05,292 - bch - INFO - count_A_earn = 36 , count_B_earn = 30 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:01:05,292 - bch - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 11:01:05,531 - bch - INFO - SELL LAST COIN
+2021-03-01 11:01:05,531 - bch - INFO - last_symbol:bch3lusdt, last_currency:bch3l, last_amount:1.3101867016049786, sell_cur_price:7.6587
+2021-03-01 11:01:05,531 - bch - INFO - sell_cur_price * last_amount = 10.03432689158205
+2021-03-01 11:01:05,531 - bch - INFO - current_balance = 9.90720086881504  sell_ts:2021-03-01 11:01:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:01:05,532 - bch - INFO - demo_action_running_duration: 0:30:01
+2021-03-01 11:01:05,532 - bch - INFO - earning_ratio = -0.9279913118495918%
+2021-03-01 11:01:05,532 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:01:05,532 - bch - INFO - last_sell_cash=10.03432689158205
+2021-03-01 11:01:05,532 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 11:01:05,532 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:01:05,532 - bch - INFO - current_balance = 9.90720086881504
+2021-03-01 11:01:05,532 - bch - INFO - BUY NEW COINS
+2021-03-01 11:01:05,532 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.021507, amount=464.96489515041617, ts:2021-03-01 11:01:05
+2021-03-01 11:01:05,532 - bch - INFO - =========================================
+2021-03-01 11:01:05,533 - bch - INFO - sleep 299 seconds .....
+2021-03-01 11:06:04,633 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 11:06:04,831 - bch - INFO - bchusdt  300
+2021-03-01 11:06:04,955 - bch - INFO - bch3lusdt  300
+2021-03-01 11:06:05,150 - bch - INFO - bch3susdt  300
+2021-03-01 11:06:05,150 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:06:05,168 - bch - INFO - count_A_earn = 36 , count_B_earn = 28 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:06:05,168 - bch - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 11:06:05,382 - bch - INFO - SELL LAST COIN
+2021-03-01 11:06:05,383 - bch - INFO - last_symbol:bch3susdt, last_currency:bch3s, last_amount:464.96489515041617, sell_cur_price:0.0219
+2021-03-01 11:06:05,383 - bch - INFO - sell_cur_price * last_amount = 10.182731203794114
+2021-03-01 11:06:05,383 - bch - INFO - current_balance = 10.089932072609155  sell_ts:2021-03-01 11:06:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:06:05,383 - bch - INFO - demo_action_running_duration: 0:35:01
+2021-03-01 11:06:05,383 - bch - INFO - earning_ratio = 0.8993207260915524%
+2021-03-01 11:06:05,383 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:06:05,383 - bch - INFO - last_sell_cash=10.182731203794114
+2021-03-01 11:06:05,383 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 11:06:05,383 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:06:05,384 - bch - INFO - current_balance = 10.089932072609155
+2021-03-01 11:06:05,384 - bch - INFO - BUY NEW COINS
+2021-03-01 11:06:05,384 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.0219, amount=456.62100456621005, ts:2021-03-01 11:06:05
+2021-03-01 11:06:05,384 - bch - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 11:06:05,384 - bch - INFO - =========================================
+2021-03-01 11:06:05,384 - bch - INFO - sleep 299 seconds .....
+2021-03-01 11:11:04,391 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 11:11:04,576 - bch - INFO - bchusdt  300
+2021-03-01 11:11:04,784 - bch - INFO - bch3lusdt  300
+2021-03-01 11:11:05,004 - bch - INFO - bch3susdt  300
+2021-03-01 11:11:05,004 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:11:05,032 - bch - INFO - count_A_earn = 36 , count_B_earn = 28 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:11:05,033 - bch - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 11:11:05,287 - bch - INFO - SELL LAST COIN
+2021-03-01 11:11:05,288 - bch - INFO - last_symbol:bch3susdt, last_currency:bch3s, last_amount:456.62100456621005, sell_cur_price:0.0215
+2021-03-01 11:11:05,288 - bch - INFO - sell_cur_price * last_amount = 9.817351598173515
+2021-03-01 11:11:05,288 - bch - INFO - current_balance = 9.90728367078267  sell_ts:2021-03-01 11:11:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:11:05,288 - bch - INFO - demo_action_running_duration: 0:40:01
+2021-03-01 11:11:05,288 - bch - INFO - earning_ratio = -0.9271632921733007%
+2021-03-01 11:11:05,288 - bch - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 11:11:05,416 - bch - INFO - actual_last_symbol:bch3susdt, actual_last_currency:bch3s, actual_last_amount:456.62100456621005, actual_sell_cur_price:0.0215
+2021-03-01 11:11:05,416 - bch - INFO - actual_sell_cur_price * actual_last_amount = 9.817351598173515
+2021-03-01 11:11:05,416 - bch - INFO - actual_balance=9.54604324647209, ts_actual_sell=2021-03-01 11:11:05
+2021-03-01 11:11:05,416 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:11:05,416 - bch - INFO - last_sell_cash=9.817351598173515
+2021-03-01 11:11:05,416 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 11:11:05,417 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:11:05,417 - bch - INFO - current_balance = 9.90728367078267
+2021-03-01 11:11:05,417 - bch - INFO - BUY NEW COINS
+2021-03-01 11:11:05,417 - bch - INFO - symbol:bch3lusdt, currency:bch3l, cur_price:7.6719, amount=1.303458074271041, ts:2021-03-01 11:11:05
+2021-03-01 11:11:05,417 - bch - INFO - =========================================
+2021-03-01 11:11:05,417 - bch - INFO - sleep 299 seconds .....
+2021-03-01 11:16:04,462 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 11:16:04,648 - bch - INFO - bchusdt  300
+2021-03-01 11:16:04,865 - bch - INFO - bch3lusdt  300
+2021-03-01 11:16:04,980 - bch - INFO - bch3susdt  300
+2021-03-01 11:16:04,981 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:16:05,006 - bch - INFO - count_A_earn = 36 , count_B_earn = 28 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:16:05,006 - bch - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 11:16:05,286 - bch - INFO - SELL LAST COIN
+2021-03-01 11:16:05,286 - bch - INFO - last_symbol:bch3lusdt, last_currency:bch3l, last_amount:1.303458074271041, sell_cur_price:7.6418
+2021-03-01 11:16:05,286 - bch - INFO - sell_cur_price * last_amount = 9.960765911964442
+2021-03-01 11:16:05,286 - bch - INFO - current_balance = 9.868049582747112  sell_ts:2021-03-01 11:16:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:16:05,286 - bch - INFO - demo_action_running_duration: 0:45:01
+2021-03-01 11:16:05,286 - bch - INFO - earning_ratio = -1.3195041725288803%
+2021-03-01 11:16:05,286 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:16:05,286 - bch - INFO - last_sell_cash=9.960765911964442
+2021-03-01 11:16:05,286 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 11:16:05,287 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:16:05,287 - bch - INFO - current_balance = 9.868049582747112
+2021-03-01 11:16:05,287 - bch - INFO - BUY NEW COINS
+2021-03-01 11:16:05,287 - bch - INFO - symbol:bch3lusdt, currency:bch3l, cur_price:7.6418, amount=1.3085922164934962, ts:2021-03-01 11:16:05
+2021-03-01 11:16:05,287 - bch - INFO - =========================================
+2021-03-01 11:16:05,287 - bch - INFO - sleep 299 seconds .....
+2021-03-01 11:21:04,333 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 11:21:04,452 - bch - INFO - bchusdt  300
+2021-03-01 11:21:04,643 - bch - INFO - bch3lusdt  300
+2021-03-01 11:21:04,793 - bch - INFO - bch3susdt  300
+2021-03-01 11:21:04,793 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:21:04,811 - bch - INFO - count_A_earn = 36 , count_B_earn = 28 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:21:04,811 - bch - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 11:21:05,050 - bch - INFO - SELL LAST COIN
+2021-03-01 11:21:05,050 - bch - INFO - last_symbol:bch3lusdt, last_currency:bch3l, last_amount:1.3085922164934962, sell_cur_price:7.7158
+2021-03-01 11:21:05,050 - bch - INFO - sell_cur_price * last_amount = 10.096835824020518
+2021-03-01 11:21:05,050 - bch - INFO - current_balance = 9.96488540676763  sell_ts:2021-03-01 11:21:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:21:05,050 - bch - INFO - demo_action_running_duration: 0:50:01
+2021-03-01 11:21:05,050 - bch - INFO - earning_ratio = -0.35114593232369984%
+2021-03-01 11:21:05,050 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:21:05,050 - bch - INFO - last_sell_cash=10.096835824020518
+2021-03-01 11:21:05,050 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 11:21:05,051 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:21:05,051 - bch - INFO - current_balance = 9.96488540676763
+2021-03-01 11:21:05,051 - bch - INFO - BUY NEW COINS
+2021-03-01 11:21:05,051 - bch - INFO - symbol:bch3lusdt, currency:bch3l, cur_price:7.7158, amount=1.2960418880738225, ts:2021-03-01 11:21:04
+2021-03-01 11:21:05,051 - bch - INFO - =========================================
+2021-03-01 11:21:05,052 - bch - INFO - sleep 299 seconds .....
+2021-03-01 11:26:04,103 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 11:26:04,215 - bch - INFO - bchusdt  300
+2021-03-01 11:26:04,402 - bch - INFO - bch3lusdt  300
+2021-03-01 11:26:04,603 - bch - INFO - bch3susdt  300
+2021-03-01 11:26:04,603 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:26:04,622 - bch - INFO - count_A_earn = 36 , count_B_earn = 29 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:26:04,622 - bch - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 11:26:04,844 - bch - INFO - SELL LAST COIN
+2021-03-01 11:26:04,844 - bch - INFO - last_symbol:bch3lusdt, last_currency:bch3l, last_amount:1.2960418880738225, sell_cur_price:7.6564
+2021-03-01 11:26:04,844 - bch - INFO - sell_cur_price * last_amount = 9.923015111848414
+2021-03-01 11:26:04,844 - bch - INFO - current_balance = 9.887900518616044  sell_ts:2021-03-01 11:26:04  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:26:04,844 - bch - INFO - demo_action_running_duration: 0:55:00
+2021-03-01 11:26:04,844 - bch - INFO - earning_ratio = -1.1209948138395553%
+2021-03-01 11:26:04,844 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:26:04,844 - bch - INFO - last_sell_cash=9.923015111848414
+2021-03-01 11:26:04,844 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 11:26:04,845 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:26:04,845 - bch - INFO - current_balance = 9.887900518616044
+2021-03-01 11:26:04,845 - bch - INFO - BUY NEW COINS
+2021-03-01 11:26:04,845 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.021599, amount=462.9843974258067, ts:2021-03-01 11:26:04
+2021-03-01 11:26:04,845 - bch - INFO - =========================================
+2021-03-01 11:26:04,845 - bch - INFO - sleep 300 seconds .....
+2021-03-01 11:31:04,851 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-01 11:31:05,058 - bch - INFO - bchusdt  300
+2021-03-01 11:31:05,244 - bch - INFO - bch3lusdt  300
+2021-03-01 11:31:05,453 - bch - INFO - bch3susdt  300
+2021-03-01 11:31:05,454 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:31:05,480 - bch - INFO - count_A_earn = 36 , count_B_earn = 28 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:31:05,481 - bch - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 11:31:05,710 - bch - INFO - SELL LAST COIN
+2021-03-01 11:31:05,710 - bch - INFO - last_symbol:bch3susdt, last_currency:bch3s, last_amount:462.9843974258067, sell_cur_price:0.022044
+2021-03-01 11:31:05,710 - bch - INFO - sell_cur_price * last_amount = 10.206028056854484
+2021-03-01 11:31:05,710 - bch - INFO - current_balance = 10.093928575470528  sell_ts:2021-03-01 11:31:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:31:05,710 - bch - INFO - demo_action_running_duration: 1:00:01
+2021-03-01 11:31:05,710 - bch - INFO - earning_ratio = 0.9392857547052814%
+2021-03-01 11:31:05,710 - bch - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:31:05,710 - bch - INFO - last_sell_cash=10.206028056854484
+2021-03-01 11:31:05,710 - bch - INFO - SEND QUEUE INFO - START
+2021-03-01 11:31:05,711 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:31:05,711 - bch - INFO - current_balance = 10.093928575470528
+2021-03-01 11:31:05,711 - bch - INFO - BUY NEW COINS
+2021-03-01 11:31:05,711 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.022044, amount=453.63817818907637, ts:2021-03-01 11:31:05
+2021-03-01 11:31:05,711 - bch - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 11:31:05,711 - bch - INFO - =========================================
+2021-03-01 11:31:05,711 - bch - INFO - sleep 299 seconds .....

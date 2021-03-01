@@ -1,0 +1,289 @@
+2021-03-01 10:30:43,951 - zec - INFO - I'm zec in demo_action
+2021-03-01 10:30:43,951 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 10:30:44,193 - zec - INFO - zecusdt  1000
+2021-03-01 10:30:44,461 - zec - INFO - zec3lusdt  1000
+2021-03-01 10:30:44,739 - zec - INFO - zec3susdt  1000
+2021-03-01 10:30:44,740 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:30:45,738 - zec - INFO - count_A_earn = 306 , count_B_earn = 34 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:30:45,738 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 10:30:45,915 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 10:30:45,924 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:30:45,924 - zec - INFO - current_balance = 10.0
+2021-03-01 10:30:45,924 - zec - INFO - BUY NEW COINS
+2021-03-01 10:30:45,924 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.3037, amount=7.670476336580501, ts:2021-03-01 10:30:45
+2021-03-01 10:30:45,924 - zec - INFO - =========================================
+2021-03-01 10:30:45,925 - zec - INFO - sleep 298 seconds .....
+2021-03-01 10:35:44,023 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 10:35:44,363 - zec - INFO - zecusdt  1000
+2021-03-01 10:35:44,680 - zec - INFO - zec3lusdt  1000
+2021-03-01 10:35:44,999 - zec - INFO - zec3susdt  1000
+2021-03-01 10:35:44,999 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:35:45,396 - zec - INFO - count_A_earn = 305 , count_B_earn = 35 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:35:45,396 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 10:35:45,610 - zec - INFO - SELL LAST COIN
+2021-03-01 10:35:45,610 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.670476336580501, sell_cur_price:1.33
+2021-03-01 10:35:45,610 - zec - INFO - sell_cur_price * last_amount = 10.201733527652067
+2021-03-01 10:35:45,610 - zec - INFO - current_balance = 10.201733527652067  sell_ts:2021-03-01 10:35:45  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 10:35:45,610 - zec - INFO - demo_action_running_duration: 0:05:02
+2021-03-01 10:35:45,610 - zec - INFO - earning_ratio = 2.0173352765206687%
+2021-03-01 10:35:45,610 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:35:45,610 - zec - INFO - last_sell_cash=10.201733527652067
+2021-03-01 10:35:45,610 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 10:35:45,611 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:35:45,611 - zec - INFO - current_balance = 10.201733527652067
+2021-03-01 10:35:45,611 - zec - INFO - BUY NEW COINS
+2021-03-01 10:35:45,611 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.33, amount=7.518796992481203, ts:2021-03-01 10:35:45
+2021-03-01 10:35:45,611 - zec - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:35:45,611 - zec - INFO - =========================================
+2021-03-01 10:35:45,612 - zec - INFO - sleep 299 seconds .....
+2021-03-01 10:40:44,711 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 10:40:44,996 - zec - INFO - zecusdt  1000
+2021-03-01 10:40:45,283 - zec - INFO - zec3lusdt  1000
+2021-03-01 10:40:45,548 - zec - INFO - zec3susdt  1000
+2021-03-01 10:40:45,548 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:40:45,843 - zec - INFO - count_A_earn = 304 , count_B_earn = 36 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:40:45,843 - zec - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 10:40:46,099 - zec - INFO - SELL LAST COIN
+2021-03-01 10:40:46,099 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.518796992481203, sell_cur_price:1.3193
+2021-03-01 10:40:46,099 - zec - INFO - sell_cur_price * last_amount = 9.919548872180451
+2021-03-01 10:40:46,099 - zec - INFO - current_balance = 10.121282399832518  sell_ts:2021-03-01 10:40:46  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 10:40:46,099 - zec - INFO - demo_action_running_duration: 0:10:03
+2021-03-01 10:40:46,099 - zec - INFO - earning_ratio = 1.212823998325181%
+2021-03-01 10:40:46,099 - zec - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 10:40:46,214 - zec - INFO - actual_last_symbol:zec3lusdt, actual_last_currency:zec3l, actual_last_amount:7.518796992481203, actual_sell_cur_price:1.3193
+2021-03-01 10:40:46,215 - zec - INFO - actual_sell_cur_price * actual_last_amount = 9.919548872180451
+2021-03-01 10:40:46,215 - zec - INFO - actual_balance=9.919548872180451, ts_actual_sell=2021-03-01 10:40:46
+2021-03-01 10:40:46,215 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:40:46,215 - zec - INFO - last_sell_cash=9.919548872180451
+2021-03-01 10:40:46,215 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 10:40:46,215 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:40:46,215 - zec - INFO - current_balance = 10.121282399832518
+2021-03-01 10:40:46,216 - zec - INFO - BUY NEW COINS
+2021-03-01 10:40:46,216 - zec - INFO - symbol:zec3susdt, currency:zec3s, cur_price:0.078184, amount=127.90340734677171, ts:2021-03-01 10:40:45
+2021-03-01 10:40:46,216 - zec - INFO - =========================================
+2021-03-01 10:40:46,216 - zec - INFO - sleep 298 seconds .....
+2021-03-01 10:45:44,315 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 10:45:44,523 - zec - INFO - zecusdt  1000
+2021-03-01 10:45:44,818 - zec - INFO - zec3lusdt  1000
+2021-03-01 10:45:45,117 - zec - INFO - zec3susdt  1000
+2021-03-01 10:45:45,117 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:45:45,355 - zec - INFO - count_A_earn = 303 , count_B_earn = 37 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:45:45,355 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 10:45:45,591 - zec - INFO - SELL LAST COIN
+2021-03-01 10:45:45,591 - zec - INFO - last_symbol:zec3susdt, last_currency:zec3s, last_amount:127.90340734677171, sell_cur_price:0.07725
+2021-03-01 10:45:45,591 - zec - INFO - sell_cur_price * last_amount = 9.880538217538115
+2021-03-01 10:45:45,591 - zec - INFO - current_balance = 10.001820617370633  sell_ts:2021-03-01 10:45:45  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 10:45:45,592 - zec - INFO - demo_action_running_duration: 0:15:02
+2021-03-01 10:45:45,592 - zec - INFO - earning_ratio = 0.01820617370633215%
+2021-03-01 10:45:45,592 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:45:45,592 - zec - INFO - last_sell_cash=9.880538217538115
+2021-03-01 10:45:45,592 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 10:45:45,592 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:45:45,592 - zec - INFO - current_balance = 10.001820617370633
+2021-03-01 10:45:45,592 - zec - INFO - BUY NEW COINS
+2021-03-01 10:45:45,592 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.3309, amount=7.5137125253587795, ts:2021-03-01 10:45:45
+2021-03-01 10:45:45,592 - zec - INFO - =========================================
+2021-03-01 10:45:45,593 - zec - INFO - sleep 299 seconds .....
+2021-03-01 10:50:44,691 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 10:50:44,995 - zec - INFO - zecusdt  1000
+2021-03-01 10:50:45,354 - zec - INFO - zec3lusdt  1000
+2021-03-01 10:50:45,708 - zec - INFO - zec3susdt  1000
+2021-03-01 10:50:45,708 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:50:45,936 - zec - INFO - count_A_earn = 302 , count_B_earn = 38 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:50:45,936 - zec - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 10:50:46,173 - zec - INFO - SELL LAST COIN
+2021-03-01 10:50:46,173 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.5137125253587795, sell_cur_price:1.3237
+2021-03-01 10:50:46,173 - zec - INFO - sell_cur_price * last_amount = 9.945901269817417
+2021-03-01 10:50:46,173 - zec - INFO - current_balance = 9.94772188718805  sell_ts:2021-03-01 10:50:46  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 10:50:46,173 - zec - INFO - demo_action_running_duration: 0:20:03
+2021-03-01 10:50:46,173 - zec - INFO - earning_ratio = -0.5227811281194938%
+2021-03-01 10:50:46,173 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:50:46,173 - zec - INFO - last_sell_cash=9.945901269817417
+2021-03-01 10:50:46,173 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 10:50:46,174 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:50:46,174 - zec - INFO - current_balance = 9.94772188718805
+2021-03-01 10:50:46,174 - zec - INFO - BUY NEW COINS
+2021-03-01 10:50:46,174 - zec - INFO - symbol:zec3susdt, currency:zec3s, cur_price:0.078042, amount=128.1361318264524, ts:2021-03-01 10:50:46
+2021-03-01 10:50:46,174 - zec - INFO - =========================================
+2021-03-01 10:50:46,175 - zec - INFO - sleep 298 seconds .....
+2021-03-01 10:55:44,275 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 10:55:44,623 - zec - INFO - zecusdt  1000
+2021-03-01 10:55:44,941 - zec - INFO - zec3lusdt  1000
+2021-03-01 10:55:45,235 - zec - INFO - zec3susdt  1000
+2021-03-01 10:55:45,236 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:55:45,495 - zec - INFO - count_A_earn = 301 , count_B_earn = 39 , invest_direction = planA , threshold_value=0.0
+2021-03-01 10:55:45,495 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 10:55:45,710 - zec - INFO - SELL LAST COIN
+2021-03-01 10:55:45,711 - zec - INFO - last_symbol:zec3susdt, last_currency:zec3s, last_amount:128.1361318264524, sell_cur_price:0.077671
+2021-03-01 10:55:45,711 - zec - INFO - sell_cur_price * last_amount = 9.952461495092386
+2021-03-01 10:55:45,711 - zec - INFO - current_balance = 9.900183382280437  sell_ts:2021-03-01 10:55:45  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 10:55:45,711 - zec - INFO - demo_action_running_duration: 0:25:02
+2021-03-01 10:55:45,711 - zec - INFO - earning_ratio = -0.9981661771956317%
+2021-03-01 10:55:45,711 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:55:45,711 - zec - INFO - last_sell_cash=9.952461495092386
+2021-03-01 10:55:45,711 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 10:55:45,711 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:55:45,711 - zec - INFO - current_balance = 9.900183382280437
+2021-03-01 10:55:45,712 - zec - INFO - BUY NEW COINS
+2021-03-01 10:55:45,712 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.3293, amount=7.522756337922215, ts:2021-03-01 10:55:45
+2021-03-01 10:55:45,712 - zec - INFO - =========================================
+2021-03-01 10:55:45,712 - zec - INFO - sleep 299 seconds .....
+2021-03-01 11:00:44,811 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 11:00:45,116 - zec - INFO - zecusdt  1000
+2021-03-01 11:00:45,408 - zec - INFO - zec3lusdt  1000
+2021-03-01 11:00:45,706 - zec - INFO - zec3susdt  1000
+2021-03-01 11:00:45,706 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:00:45,935 - zec - INFO - count_A_earn = 300 , count_B_earn = 40 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:00:45,936 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 11:00:46,158 - zec - INFO - SELL LAST COIN
+2021-03-01 11:00:46,158 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.522756337922215, sell_cur_price:1.3371
+2021-03-01 11:00:46,158 - zec - INFO - sell_cur_price * last_amount = 10.058677499435793
+2021-03-01 11:00:46,159 - zec - INFO - current_balance = 9.95886088171623  sell_ts:2021-03-01 11:00:46  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 11:00:46,159 - zec - INFO - demo_action_running_duration: 0:30:03
+2021-03-01 11:00:46,159 - zec - INFO - earning_ratio = -0.4113911828376971%
+2021-03-01 11:00:46,159 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:00:46,159 - zec - INFO - last_sell_cash=10.058677499435793
+2021-03-01 11:00:46,159 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 11:00:46,159 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:00:46,159 - zec - INFO - current_balance = 9.95886088171623
+2021-03-01 11:00:46,160 - zec - INFO - BUY NEW COINS
+2021-03-01 11:00:46,160 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.3371, amount=7.47887218607434, ts:2021-03-01 11:00:46
+2021-03-01 11:00:46,160 - zec - INFO - =========================================
+2021-03-01 11:00:46,160 - zec - INFO - sleep 298 seconds .....
+2021-03-01 11:05:44,259 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 11:05:44,612 - zec - INFO - zecusdt  1000
+2021-03-01 11:05:44,922 - zec - INFO - zec3lusdt  1000
+2021-03-01 11:05:45,217 - zec - INFO - zec3susdt  1000
+2021-03-01 11:05:45,217 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:05:45,500 - zec - INFO - count_A_earn = 299 , count_B_earn = 41 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:05:45,500 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 11:05:45,714 - zec - INFO - SELL LAST COIN
+2021-03-01 11:05:45,714 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.47887218607434, sell_cur_price:1.3494
+2021-03-01 11:05:45,715 - zec - INFO - sell_cur_price * last_amount = 10.091990127888714
+2021-03-01 11:05:45,715 - zec - INFO - current_balance = 10.050851009604944  sell_ts:2021-03-01 11:05:45  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 11:05:45,715 - zec - INFO - demo_action_running_duration: 0:35:02
+2021-03-01 11:05:45,715 - zec - INFO - earning_ratio = 0.5085100960494415%
+2021-03-01 11:05:45,715 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:05:45,715 - zec - INFO - last_sell_cash=10.091990127888714
+2021-03-01 11:05:45,715 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 11:05:45,715 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:05:45,715 - zec - INFO - current_balance = 10.050851009604944
+2021-03-01 11:05:45,716 - zec - INFO - BUY NEW COINS
+2021-03-01 11:05:45,716 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.3494, amount=7.41070105231955, ts:2021-03-01 11:05:45
+2021-03-01 11:05:45,716 - zec - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 11:05:45,716 - zec - INFO - =========================================
+2021-03-01 11:05:45,716 - zec - INFO - sleep 299 seconds .....
+2021-03-01 11:10:44,815 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 11:10:45,179 - zec - INFO - zecusdt  1000
+2021-03-01 11:10:45,408 - zec - INFO - zec3lusdt  1000
+2021-03-01 11:10:45,818 - zec - INFO - zec3susdt  1000
+2021-03-01 11:10:45,819 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:10:46,047 - zec - INFO - count_A_earn = 298 , count_B_earn = 42 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:10:46,047 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 11:10:46,663 - zec - INFO - SELL LAST COIN
+2021-03-01 11:10:46,663 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.41070105231955, sell_cur_price:1.3404
+2021-03-01 11:10:46,663 - zec - INFO - sell_cur_price * last_amount = 9.933303690529126
+2021-03-01 11:10:46,663 - zec - INFO - current_balance = 9.98415470013407  sell_ts:2021-03-01 11:10:46  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 11:10:46,663 - zec - INFO - demo_action_running_duration: 0:40:03
+2021-03-01 11:10:46,663 - zec - INFO - earning_ratio = -0.15845299865929974%
+2021-03-01 11:10:46,663 - zec - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 11:10:46,775 - zec - INFO - actual_last_symbol:zec3lusdt, actual_last_currency:zec3l, actual_last_amount:7.41070105231955, actual_sell_cur_price:1.3404
+2021-03-01 11:10:46,775 - zec - INFO - actual_sell_cur_price * actual_last_amount = 9.933303690529126
+2021-03-01 11:10:46,775 - zec - INFO - actual_balance=9.852852562709577, ts_actual_sell=2021-03-01 11:10:46
+2021-03-01 11:10:46,775 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:10:46,775 - zec - INFO - last_sell_cash=9.933303690529126
+2021-03-01 11:10:46,775 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 11:10:46,776 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:10:46,776 - zec - INFO - current_balance = 9.98415470013407
+2021-03-01 11:10:46,776 - zec - INFO - BUY NEW COINS
+2021-03-01 11:10:46,776 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.3404, amount=7.460459564309161, ts:2021-03-01 11:10:46
+2021-03-01 11:10:46,776 - zec - INFO - =========================================
+2021-03-01 11:10:46,777 - zec - INFO - sleep 298 seconds .....
+2021-03-01 11:15:44,875 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 11:15:45,147 - zec - INFO - zecusdt  1000
+2021-03-01 11:15:45,442 - zec - INFO - zec3lusdt  1000
+2021-03-01 11:15:45,710 - zec - INFO - zec3susdt  1000
+2021-03-01 11:15:45,710 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:15:46,186 - zec - INFO - count_A_earn = 297 , count_B_earn = 43 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:15:46,187 - zec - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 11:15:46,422 - zec - INFO - SELL LAST COIN
+2021-03-01 11:15:46,422 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.460459564309161, sell_cur_price:1.3328
+2021-03-01 11:15:46,422 - zec - INFO - sell_cur_price * last_amount = 9.94330050731125
+2021-03-01 11:15:46,423 - zec - INFO - current_balance = 9.92745520744532  sell_ts:2021-03-01 11:15:46  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 11:15:46,423 - zec - INFO - demo_action_running_duration: 0:45:03
+2021-03-01 11:15:46,423 - zec - INFO - earning_ratio = -0.7254479255468027%
+2021-03-01 11:15:46,423 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:15:46,423 - zec - INFO - last_sell_cash=9.94330050731125
+2021-03-01 11:15:46,423 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 11:15:46,423 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:15:46,423 - zec - INFO - current_balance = 9.92745520744532
+2021-03-01 11:15:46,423 - zec - INFO - BUY NEW COINS
+2021-03-01 11:15:46,423 - zec - INFO - symbol:zec3susdt, currency:zec3s, cur_price:0.077462, amount=129.0955565309442, ts:2021-03-01 11:15:46
+2021-03-01 11:15:46,423 - zec - INFO - =========================================
+2021-03-01 11:15:46,424 - zec - INFO - sleep 298 seconds .....
+2021-03-01 11:20:44,523 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 11:20:44,746 - zec - INFO - zecusdt  1000
+2021-03-01 11:20:45,361 - zec - INFO - zec3lusdt  1000
+2021-03-01 11:20:45,637 - zec - INFO - zec3susdt  1000
+2021-03-01 11:20:45,637 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:20:45,862 - zec - INFO - count_A_earn = 296 , count_B_earn = 44 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:20:45,862 - zec - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 11:20:46,090 - zec - INFO - SELL LAST COIN
+2021-03-01 11:20:46,090 - zec - INFO - last_symbol:zec3susdt, last_currency:zec3s, last_amount:129.0955565309442, sell_cur_price:0.07509
+2021-03-01 11:20:46,090 - zec - INFO - sell_cur_price * last_amount = 9.693785339908601
+2021-03-01 11:20:46,090 - zec - INFO - current_balance = 9.62124054735392  sell_ts:2021-03-01 11:20:46  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 11:20:46,090 - zec - INFO - demo_action_running_duration: 0:50:03
+2021-03-01 11:20:46,090 - zec - INFO - earning_ratio = -3.7875945264607935%
+2021-03-01 11:20:46,090 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:20:46,090 - zec - INFO - last_sell_cash=9.693785339908601
+2021-03-01 11:20:46,091 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 11:20:46,091 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:20:46,091 - zec - INFO - current_balance = 9.62124054735392
+2021-03-01 11:20:46,091 - zec - INFO - BUY NEW COINS
+2021-03-01 11:20:46,091 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:1.3517, amount=7.39809129244655, ts:2021-03-01 11:20:45
+2021-03-01 11:20:46,091 - zec - INFO - =========================================
+2021-03-01 11:20:46,092 - zec - INFO - sleep 298 seconds .....
+2021-03-01 11:25:44,191 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 11:25:44,457 - zec - INFO - zecusdt  1000
+2021-03-01 11:25:44,802 - zec - INFO - zec3lusdt  1000
+2021-03-01 11:25:45,074 - zec - INFO - zec3susdt  1000
+2021-03-01 11:25:45,074 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:25:45,303 - zec - INFO - count_A_earn = 295 , count_B_earn = 45 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:25:45,304 - zec - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 11:25:45,553 - zec - INFO - SELL LAST COIN
+2021-03-01 11:25:45,553 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:7.39809129244655, sell_cur_price:1.3465
+2021-03-01 11:25:45,553 - zec - INFO - sell_cur_price * last_amount = 9.96152992527928
+2021-03-01 11:25:45,553 - zec - INFO - current_balance = 9.5827704726332  sell_ts:2021-03-01 11:25:45  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 11:25:45,553 - zec - INFO - demo_action_running_duration: 0:55:02
+2021-03-01 11:25:45,553 - zec - INFO - earning_ratio = -4.172295273667999%
+2021-03-01 11:25:45,553 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:25:45,553 - zec - INFO - last_sell_cash=9.96152992527928
+2021-03-01 11:25:45,554 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 11:25:45,554 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:25:45,554 - zec - INFO - current_balance = 9.5827704726332
+2021-03-01 11:25:45,554 - zec - INFO - BUY NEW COINS
+2021-03-01 11:25:45,554 - zec - INFO - symbol:zec3susdt, currency:zec3s, cur_price:0.075434, amount=132.56621682530422, ts:2021-03-01 11:25:45
+2021-03-01 11:25:45,554 - zec - INFO - =========================================
+2021-03-01 11:25:45,555 - zec - INFO - sleep 299 seconds .....
+2021-03-01 11:30:44,647 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-01 11:30:44,932 - zec - INFO - zecusdt  1000
+2021-03-01 11:30:45,226 - zec - INFO - zec3lusdt  1000
+2021-03-01 11:30:45,487 - zec - INFO - zec3susdt  1000
+2021-03-01 11:30:45,487 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:30:45,748 - zec - INFO - count_A_earn = 294 , count_B_earn = 46 , invest_direction = planA , threshold_value=0.0
+2021-03-01 11:30:45,748 - zec - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 11:30:45,968 - zec - INFO - SELL LAST COIN
+2021-03-01 11:30:45,968 - zec - INFO - last_symbol:zec3susdt, last_currency:zec3s, last_amount:132.56621682530422, sell_cur_price:0.078237
+2021-03-01 11:30:45,969 - zec - INFO - sell_cur_price * last_amount = 10.371583105761326
+2021-03-01 11:30:45,969 - zec - INFO - current_balance = 9.954353578394526  sell_ts:2021-03-01 11:30:45  demo_action_launch_time: 2021-03-01 10:30:43
+2021-03-01 11:30:45,969 - zec - INFO - demo_action_running_duration: 1:00:02
+2021-03-01 11:30:45,969 - zec - INFO - earning_ratio = -0.4564642160547372%
+2021-03-01 11:30:45,969 - zec - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:30:45,969 - zec - INFO - last_sell_cash=10.371583105761326
+2021-03-01 11:30:45,969 - zec - INFO - SEND QUEUE INFO - START
+2021-03-01 11:30:45,969 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:30:45,969 - zec - INFO - current_balance = 9.954353578394526
+2021-03-01 11:30:45,969 - zec - INFO - BUY NEW COINS
+2021-03-01 11:30:45,970 - zec - INFO - symbol:zec3susdt, currency:zec3s, cur_price:0.078237, amount=127.81676189015427, ts:2021-03-01 11:30:45
+2021-03-01 11:30:45,970 - zec - INFO - =========================================
+2021-03-01 11:30:45,970 - zec - INFO - sleep 299 seconds .....

@@ -1,0 +1,324 @@
+2021-03-01 10:31:04,863 - link - INFO - I'm link in demo_action
+2021-03-01 10:31:04,863 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 10:31:05,035 - link - INFO - linkusdt  300
+2021-03-01 10:31:05,221 - link - INFO - link3lusdt  300
+2021-03-01 10:31:05,415 - link - INFO - link3susdt  300
+2021-03-01 10:31:05,415 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:31:05,434 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 10:31:05,434 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 10:31:05,541 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 10:31:05,559 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:31:05,559 - link - INFO - current_balance = 10.0
+2021-03-01 10:31:05,560 - link - INFO - BUY NEW COINS
+2021-03-01 10:31:05,560 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.445, amount=2.249718785151856, ts:2021-03-01 10:31:05
+2021-03-01 10:31:05,560 - link - INFO - =========================================
+2021-03-01 10:31:05,560 - link - INFO - sleep 299 seconds .....
+2021-03-01 10:36:04,629 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 10:36:04,858 - link - INFO - linkusdt  300
+2021-03-01 10:36:05,057 - link - INFO - link3lusdt  300
+2021-03-01 10:36:05,242 - link - INFO - link3susdt  300
+2021-03-01 10:36:05,242 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:36:05,279 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 10:36:05,280 - link - INFO - invest_direction = planB   last_trend = 1
+2021-03-01 10:36:05,565 - link - INFO - SELL LAST COIN
+2021-03-01 10:36:05,565 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.249718785151856, sell_cur_price:4.4914
+2021-03-01 10:36:05,565 - link - INFO - sell_cur_price * last_amount = 10.104386951631046
+2021-03-01 10:36:05,565 - link - INFO - current_balance = 10.104386951631046  sell_ts:2021-03-01 10:36:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:36:05,565 - link - INFO - demo_action_running_duration: 0:05:01
+2021-03-01 10:36:05,566 - link - INFO - earning_ratio = 1.0438695163104583%
+2021-03-01 10:36:05,566 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:36:05,566 - link - INFO - last_sell_cash=10.104386951631046
+2021-03-01 10:36:05,566 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 10:36:05,566 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:36:05,566 - link - INFO - current_balance = 10.104386951631046
+2021-03-01 10:36:05,566 - link - INFO - BUY NEW COINS
+2021-03-01 10:36:05,566 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001541, amount=6489.292667099286, ts:2021-03-01 10:36:05
+2021-03-01 10:36:05,566 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:36:05,566 - link - INFO - =========================================
+2021-03-01 10:36:05,567 - link - INFO - sleep 299 seconds .....
+2021-03-01 10:41:04,635 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 10:41:04,861 - link - INFO - linkusdt  300
+2021-03-01 10:41:05,066 - link - INFO - link3lusdt  300
+2021-03-01 10:41:05,215 - link - INFO - link3susdt  300
+2021-03-01 10:41:05,215 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:41:05,249 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 10:41:05,250 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 10:41:05,475 - link - INFO - SELL LAST COIN
+2021-03-01 10:41:05,475 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:6489.292667099286, sell_cur_price:0.001555
+2021-03-01 10:41:05,475 - link - INFO - sell_cur_price * last_amount = 10.09085009733939
+2021-03-01 10:41:05,475 - link - INFO - current_balance = 10.195237048970435  sell_ts:2021-03-01 10:41:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:41:05,475 - link - INFO - demo_action_running_duration: 0:10:01
+2021-03-01 10:41:05,475 - link - INFO - earning_ratio = 1.9523704897043537%
+2021-03-01 10:41:05,475 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 10:41:05,634 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:6489.292667099286, actual_sell_cur_price:0.001555
+2021-03-01 10:41:05,634 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.09085009733939
+2021-03-01 10:41:05,634 - link - INFO - actual_balance=10.09085009733939, ts_actual_sell=2021-03-01 10:41:05
+2021-03-01 10:41:05,634 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:41:05,635 - link - INFO - last_sell_cash=10.09085009733939
+2021-03-01 10:41:05,635 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 10:41:05,635 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:41:05,635 - link - INFO - current_balance = 10.195237048970435
+2021-03-01 10:41:05,635 - link - INFO - BUY NEW COINS
+2021-03-01 10:41:05,635 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.4695, amount=2.2373867322966774, ts:2021-03-01 10:41:05
+2021-03-01 10:41:05,635 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:41:05,635 - link - INFO - =========================================
+2021-03-01 10:41:05,636 - link - INFO - sleep 299 seconds .....
+2021-03-01 10:46:04,643 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 10:46:04,830 - link - INFO - linkusdt  300
+2021-03-01 10:46:04,971 - link - INFO - link3lusdt  300
+2021-03-01 10:46:05,165 - link - INFO - link3susdt  300
+2021-03-01 10:46:05,165 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:46:05,187 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 10:46:05,187 - link - INFO - invest_direction = planB   last_trend = 1
+2021-03-01 10:46:05,431 - link - INFO - SELL LAST COIN
+2021-03-01 10:46:05,431 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.2373867322966774, sell_cur_price:4.533
+2021-03-01 10:46:05,431 - link - INFO - sell_cur_price * last_amount = 10.142074057500839
+2021-03-01 10:46:05,431 - link - INFO - current_balance = 10.337311106471274  sell_ts:2021-03-01 10:46:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:46:05,431 - link - INFO - demo_action_running_duration: 0:15:01
+2021-03-01 10:46:05,432 - link - INFO - earning_ratio = 3.3731110647127416%
+2021-03-01 10:46:05,432 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 10:46:05,550 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.2373867322966774, actual_sell_cur_price:4.533
+2021-03-01 10:46:05,550 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.142074057500839
+2021-03-01 10:46:05,550 - link - INFO - actual_balance=10.232924154840228, ts_actual_sell=2021-03-01 10:46:05
+2021-03-01 10:46:05,550 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:46:05,550 - link - INFO - last_sell_cash=10.142074057500839
+2021-03-01 10:46:05,550 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 10:46:05,551 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:46:05,551 - link - INFO - current_balance = 10.337311106471274
+2021-03-01 10:46:05,551 - link - INFO - BUY NEW COINS
+2021-03-01 10:46:05,551 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001518, amount=6587.615283267457, ts:2021-03-01 10:46:05
+2021-03-01 10:46:05,551 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:46:05,551 - link - INFO - =========================================
+2021-03-01 10:46:05,551 - link - INFO - sleep 299 seconds .....
+2021-03-01 10:51:04,651 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 10:51:04,848 - link - INFO - linkusdt  300
+2021-03-01 10:51:05,120 - link - INFO - link3lusdt  300
+2021-03-01 10:51:05,312 - link - INFO - link3susdt  300
+2021-03-01 10:51:05,312 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:51:05,331 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 10:51:05,331 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 10:51:05,555 - link - INFO - SELL LAST COIN
+2021-03-01 10:51:05,556 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:6587.615283267457, sell_cur_price:0.001524
+2021-03-01 10:51:05,556 - link - INFO - sell_cur_price * last_amount = 10.039525691699604
+2021-03-01 10:51:05,556 - link - INFO - current_balance = 10.376836798170878  sell_ts:2021-03-01 10:51:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:51:05,556 - link - INFO - demo_action_running_duration: 0:20:01
+2021-03-01 10:51:05,556 - link - INFO - earning_ratio = 3.768367981708778%
+2021-03-01 10:51:05,556 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 10:51:05,677 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:6587.615283267457, actual_sell_cur_price:0.001524
+2021-03-01 10:51:05,677 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.039525691699604
+2021-03-01 10:51:05,677 - link - INFO - actual_balance=10.272449846539832, ts_actual_sell=2021-03-01 10:51:05
+2021-03-01 10:51:05,677 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:51:05,677 - link - INFO - last_sell_cash=10.039525691699604
+2021-03-01 10:51:05,678 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 10:51:05,678 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:51:05,678 - link - INFO - current_balance = 10.376836798170878
+2021-03-01 10:51:05,678 - link - INFO - BUY NEW COINS
+2021-03-01 10:51:05,678 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.5185, amount=2.213123824277968, ts:2021-03-01 10:51:05
+2021-03-01 10:51:05,678 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:51:05,678 - link - INFO - =========================================
+2021-03-01 10:51:05,679 - link - INFO - sleep 299 seconds .....
+2021-03-01 10:56:04,779 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 10:56:04,993 - link - INFO - linkusdt  300
+2021-03-01 10:56:05,191 - link - INFO - link3lusdt  300
+2021-03-01 10:56:05,313 - link - INFO - link3susdt  300
+2021-03-01 10:56:05,314 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 10:56:05,333 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 10:56:05,333 - link - INFO - invest_direction = planB   last_trend = 1
+2021-03-01 10:56:05,558 - link - INFO - SELL LAST COIN
+2021-03-01 10:56:05,559 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.213123824277968, sell_cur_price:4.5372
+2021-03-01 10:56:05,559 - link - INFO - sell_cur_price * last_amount = 10.041385415513997
+2021-03-01 10:56:05,559 - link - INFO - current_balance = 10.418222213684874  sell_ts:2021-03-01 10:56:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 10:56:05,559 - link - INFO - demo_action_running_duration: 0:25:01
+2021-03-01 10:56:05,559 - link - INFO - earning_ratio = 4.182222136848743%
+2021-03-01 10:56:05,559 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 10:56:05,680 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.213123824277968, actual_sell_cur_price:4.5372
+2021-03-01 10:56:05,680 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.041385415513997
+2021-03-01 10:56:05,680 - link - INFO - actual_balance=10.313835262053829, ts_actual_sell=2021-03-01 10:56:05
+2021-03-01 10:56:05,680 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 10:56:05,680 - link - INFO - last_sell_cash=10.041385415513997
+2021-03-01 10:56:05,680 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 10:56:05,681 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 10:56:05,681 - link - INFO - current_balance = 10.418222213684874
+2021-03-01 10:56:05,681 - link - INFO - BUY NEW COINS
+2021-03-01 10:56:05,681 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001521, amount=6574.621959237344, ts:2021-03-01 10:56:05
+2021-03-01 10:56:05,681 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 10:56:05,681 - link - INFO - =========================================
+2021-03-01 10:56:05,681 - link - INFO - sleep 299 seconds .....
+2021-03-01 11:01:04,704 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 11:01:04,906 - link - INFO - linkusdt  300
+2021-03-01 11:01:05,028 - link - INFO - link3lusdt  300
+2021-03-01 11:01:05,239 - link - INFO - link3susdt  300
+2021-03-01 11:01:05,239 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:01:05,267 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 11:01:05,267 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 11:01:05,560 - link - INFO - SELL LAST COIN
+2021-03-01 11:01:05,560 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:6574.621959237344, sell_cur_price:0.001517
+2021-03-01 11:01:05,560 - link - INFO - sell_cur_price * last_amount = 9.97370151216305
+2021-03-01 11:01:05,560 - link - INFO - current_balance = 10.391923725847924  sell_ts:2021-03-01 11:01:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:01:05,560 - link - INFO - demo_action_running_duration: 0:30:01
+2021-03-01 11:01:05,561 - link - INFO - earning_ratio = 3.9192372584792428%
+2021-03-01 11:01:05,561 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 11:01:05,666 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:6574.621959237344, actual_sell_cur_price:0.001517
+2021-03-01 11:01:05,666 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.97370151216305
+2021-03-01 11:01:05,666 - link - INFO - actual_balance=10.287536774216878, ts_actual_sell=2021-03-01 11:01:05
+2021-03-01 11:01:05,666 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:01:05,666 - link - INFO - last_sell_cash=9.97370151216305
+2021-03-01 11:01:05,666 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 11:01:05,667 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:01:05,667 - link - INFO - current_balance = 10.391923725847924
+2021-03-01 11:01:05,667 - link - INFO - BUY NEW COINS
+2021-03-01 11:01:05,667 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.5344, amount=2.2053634438955543, ts:2021-03-01 11:01:05
+2021-03-01 11:01:05,667 - link - INFO - =========================================
+2021-03-01 11:01:05,667 - link - INFO - sleep 299 seconds .....
+2021-03-01 11:06:04,745 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 11:06:04,941 - link - INFO - linkusdt  300
+2021-03-01 11:06:05,132 - link - INFO - link3lusdt  300
+2021-03-01 11:06:05,322 - link - INFO - link3susdt  300
+2021-03-01 11:06:05,322 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:06:05,341 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 11:06:05,341 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 11:06:05,562 - link - INFO - SELL LAST COIN
+2021-03-01 11:06:05,562 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.2053634438955543, sell_cur_price:4.4356
+2021-03-01 11:06:05,562 - link - INFO - sell_cur_price * last_amount = 9.782110091743121
+2021-03-01 11:06:05,562 - link - INFO - current_balance = 10.174033817591045  sell_ts:2021-03-01 11:06:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:06:05,562 - link - INFO - demo_action_running_duration: 0:35:01
+2021-03-01 11:06:05,563 - link - INFO - earning_ratio = 1.7403381759104517%
+2021-03-01 11:06:05,563 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:06:05,563 - link - INFO - last_sell_cash=9.782110091743121
+2021-03-01 11:06:05,563 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 11:06:05,563 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:06:05,563 - link - INFO - current_balance = 10.174033817591045
+2021-03-01 11:06:05,563 - link - INFO - BUY NEW COINS
+2021-03-01 11:06:05,563 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.4356, amount=2.2544864279917034, ts:2021-03-01 11:06:05
+2021-03-01 11:06:05,563 - link - INFO - =========================================
+2021-03-01 11:06:05,564 - link - INFO - sleep 299 seconds .....
+2021-03-01 11:11:04,664 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 11:11:04,866 - link - INFO - linkusdt  300
+2021-03-01 11:11:05,094 - link - INFO - link3lusdt  300
+2021-03-01 11:11:05,299 - link - INFO - link3susdt  300
+2021-03-01 11:11:05,299 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:11:05,318 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 11:11:05,318 - link - INFO - invest_direction = planB   last_trend = 1
+2021-03-01 11:11:05,560 - link - INFO - SELL LAST COIN
+2021-03-01 11:11:05,561 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.2544864279917034, sell_cur_price:4.457
+2021-03-01 11:11:05,561 - link - INFO - sell_cur_price * last_amount = 10.048246009559021
+2021-03-01 11:11:05,561 - link - INFO - current_balance = 10.222279827150066  sell_ts:2021-03-01 11:11:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:11:05,561 - link - INFO - demo_action_running_duration: 0:40:01
+2021-03-01 11:11:05,561 - link - INFO - earning_ratio = 2.222798271500661%
+2021-03-01 11:11:05,561 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:11:05,561 - link - INFO - last_sell_cash=10.048246009559021
+2021-03-01 11:11:05,561 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 11:11:05,562 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:11:05,562 - link - INFO - current_balance = 10.222279827150066
+2021-03-01 11:11:05,562 - link - INFO - BUY NEW COINS
+2021-03-01 11:11:05,562 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001554, amount=6435.006435006435, ts:2021-03-01 11:11:05
+2021-03-01 11:11:05,562 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 11:11:05,562 - link - INFO - =========================================
+2021-03-01 11:11:05,562 - link - INFO - sleep 299 seconds .....
+2021-03-01 11:16:04,633 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 11:16:04,768 - link - INFO - linkusdt  300
+2021-03-01 11:16:04,974 - link - INFO - link3lusdt  300
+2021-03-01 11:16:05,181 - link - INFO - link3susdt  300
+2021-03-01 11:16:05,181 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:16:05,200 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 11:16:05,200 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 11:16:05,749 - link - INFO - SELL LAST COIN
+2021-03-01 11:16:05,750 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:6435.006435006435, sell_cur_price:0.001574
+2021-03-01 11:16:05,750 - link - INFO - sell_cur_price * last_amount = 10.12870012870013
+2021-03-01 11:16:05,750 - link - INFO - current_balance = 10.350979955850196  sell_ts:2021-03-01 11:16:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:16:05,750 - link - INFO - demo_action_running_duration: 0:45:01
+2021-03-01 11:16:05,750 - link - INFO - earning_ratio = 3.5097995585019603%
+2021-03-01 11:16:05,750 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 11:16:05,863 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:6435.006435006435, actual_sell_cur_price:0.001574
+2021-03-01 11:16:05,863 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.12870012870013
+2021-03-01 11:16:05,864 - link - INFO - actual_balance=10.416236902917008, ts_actual_sell=2021-03-01 11:16:05
+2021-03-01 11:16:05,864 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:16:05,864 - link - INFO - last_sell_cash=10.12870012870013
+2021-03-01 11:16:05,864 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 11:16:05,864 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:16:05,864 - link - INFO - current_balance = 10.350979955850196
+2021-03-01 11:16:05,864 - link - INFO - BUY NEW COINS
+2021-03-01 11:16:05,864 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.42, amount=2.262443438914027, ts:2021-03-01 11:16:05
+2021-03-01 11:16:05,864 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 11:16:05,864 - link - INFO - =========================================
+2021-03-01 11:16:05,865 - link - INFO - sleep 299 seconds .....
+2021-03-01 11:21:04,867 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 11:21:05,060 - link - INFO - linkusdt  300
+2021-03-01 11:21:05,244 - link - INFO - link3lusdt  300
+2021-03-01 11:21:05,356 - link - INFO - link3susdt  300
+2021-03-01 11:21:05,356 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:21:05,375 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 11:21:05,375 - link - INFO - invest_direction = planB   last_trend = 1
+2021-03-01 11:21:05,600 - link - INFO - SELL LAST COIN
+2021-03-01 11:21:05,600 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.262443438914027, sell_cur_price:4.4732
+2021-03-01 11:21:05,600 - link - INFO - sell_cur_price * last_amount = 10.120361990950226
+2021-03-01 11:21:05,600 - link - INFO - current_balance = 10.471341946800422  sell_ts:2021-03-01 11:21:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:21:05,600 - link - INFO - demo_action_running_duration: 0:50:01
+2021-03-01 11:21:05,600 - link - INFO - earning_ratio = 4.7134194680042185%
+2021-03-01 11:21:05,600 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 11:21:05,720 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.262443438914027, actual_sell_cur_price:4.4732
+2021-03-01 11:21:05,720 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.120361990950226
+2021-03-01 11:21:05,721 - link - INFO - actual_balance=10.536598893867234, ts_actual_sell=2021-03-01 11:21:05
+2021-03-01 11:21:05,721 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:21:05,721 - link - INFO - last_sell_cash=10.120361990950226
+2021-03-01 11:21:05,721 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 11:21:05,721 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:21:05,721 - link - INFO - current_balance = 10.471341946800422
+2021-03-01 11:21:05,721 - link - INFO - BUY NEW COINS
+2021-03-01 11:21:05,721 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001545, amount=6472.491909385113, ts:2021-03-01 11:21:05
+2021-03-01 11:21:05,722 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 11:21:05,722 - link - INFO - =========================================
+2021-03-01 11:21:05,722 - link - INFO - sleep 299 seconds .....
+2021-03-01 11:26:04,775 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 11:26:04,894 - link - INFO - linkusdt  300
+2021-03-01 11:26:05,088 - link - INFO - link3lusdt  300
+2021-03-01 11:26:05,271 - link - INFO - link3susdt  300
+2021-03-01 11:26:05,271 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:26:05,289 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 11:26:05,290 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 11:26:05,569 - link - INFO - SELL LAST COIN
+2021-03-01 11:26:05,569 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:6472.491909385113, sell_cur_price:0.001565
+2021-03-01 11:26:05,569 - link - INFO - sell_cur_price * last_amount = 10.129449838187702
+2021-03-01 11:26:05,569 - link - INFO - current_balance = 10.600791784988123  sell_ts:2021-03-01 11:26:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:26:05,569 - link - INFO - demo_action_running_duration: 0:55:01
+2021-03-01 11:26:05,569 - link - INFO - earning_ratio = 6.007917849881235%
+2021-03-01 11:26:05,569 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 11:26:05,687 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:6472.491909385113, actual_sell_cur_price:0.001565
+2021-03-01 11:26:05,687 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.129449838187702
+2021-03-01 11:26:05,687 - link - INFO - actual_balance=10.666048732054936, ts_actual_sell=2021-03-01 11:26:05
+2021-03-01 11:26:05,687 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:26:05,687 - link - INFO - last_sell_cash=10.129449838187702
+2021-03-01 11:26:05,687 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 11:26:05,688 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:26:05,688 - link - INFO - current_balance = 10.600791784988123
+2021-03-01 11:26:05,688 - link - INFO - BUY NEW COINS
+2021-03-01 11:26:05,688 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.4254, amount=2.259682740543228, ts:2021-03-01 11:26:05
+2021-03-01 11:26:05,688 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 11:26:05,688 - link - INFO - =========================================
+2021-03-01 11:26:05,688 - link - INFO - sleep 299 seconds .....
+2021-03-01 11:31:04,787 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-01 11:31:05,007 - link - INFO - linkusdt  300
+2021-03-01 11:31:05,250 - link - INFO - link3lusdt  300
+2021-03-01 11:31:05,442 - link - INFO - link3susdt  300
+2021-03-01 11:31:05,442 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-01 11:31:05,461 - link - INFO - count_A_earn = 23 , count_B_earn = 104 , invest_direction = planB , threshold_value=0.0
+2021-03-01 11:31:05,461 - link - INFO - invest_direction = planB   last_trend = -1
+2021-03-01 11:31:05,687 - link - INFO - SELL LAST COIN
+2021-03-01 11:31:05,688 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.259682740543228, sell_cur_price:4.3705
+2021-03-01 11:31:05,688 - link - INFO - sell_cur_price * last_amount = 9.875943417544176
+2021-03-01 11:31:05,688 - link - INFO - current_balance = 10.4767352025323  sell_ts:2021-03-01 11:31:05  demo_action_launch_time: 2021-03-01 10:31:04
+2021-03-01 11:31:05,688 - link - INFO - demo_action_running_duration: 1:00:01
+2021-03-01 11:31:05,688 - link - INFO - earning_ratio = 4.7673520253229995%
+2021-03-01 11:31:05,688 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 11:31:05,812 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.259682740543228, actual_sell_cur_price:4.3705
+2021-03-01 11:31:05,812 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.875943417544176
+2021-03-01 11:31:05,812 - link - INFO - actual_balance=10.541992149599112, ts_actual_sell=2021-03-01 11:31:05
+2021-03-01 11:31:05,812 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-01 11:31:05,812 - link - INFO - last_sell_cash=9.875943417544176
+2021-03-01 11:31:05,812 - link - INFO - SEND QUEUE INFO - START
+2021-03-01 11:31:05,813 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 11:31:05,813 - link - INFO - current_balance = 10.4767352025323
+2021-03-01 11:31:05,813 - link - INFO - BUY NEW COINS
+2021-03-01 11:31:05,813 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.3705, amount=2.2880677268047136, ts:2021-03-01 11:31:05
+2021-03-01 11:31:05,813 - link - INFO - =========================================
+2021-03-01 11:31:05,813 - link - INFO - sleep 299 seconds .....
