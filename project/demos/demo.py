@@ -570,7 +570,7 @@ class DemoStrategy:
     def do_action(self, action_index):
         try:
             period = TIME_PERIOD
-            size = self.history_size
+            size = int(self.history_size)
             step_range = int(size / 2)
             cur_ts = 1000
             last_ts = 0
@@ -643,7 +643,7 @@ class DemoStrategy:
                 self.sell_last_hold_lever_coins(action_index)
             self.demo_print("=========================================")
         except Exception as ex:
-            self.demo_print("Exception in demon_action")
+            self.demo_print("Exception in do_action")
             self.demo_print("ex = %s" % ex)
 
     # 预言机

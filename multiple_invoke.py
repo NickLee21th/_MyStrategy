@@ -41,7 +41,7 @@ def schedule_job(etp, dt_stamp,queue=None,log_folder_name=None, history_size=Non
         demo.queue = queue
         demo.etp = etp
         demo.dt_stamp = dt_stamp
-        demo.history_size = history_size
+        demo.history_size = int(history_size)
         demo.demon_action(log_folder_name)
         # demo.demon_prediction()
     except Exception as ex:
