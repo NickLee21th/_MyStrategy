@@ -1,0 +1,418 @@
+2021-03-01 06:08:40,627 - fil - INFO - I'm fil in demo_action
+2021-03-01 06:08:40,627 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:08:40,818 - fil - INFO - filusdt  300
+2021-03-01 06:08:41,139 - fil - INFO - fil3lusdt  300
+2021-03-01 06:08:41,331 - fil - INFO - fil3susdt  300
+2021-03-01 06:08:41,331 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:08:41,350 - fil - INFO - count_A_earn = 140 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:08:41,350 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:08:41,460 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:08:41,461 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:08:41,461 - fil - INFO - current_balance = 10.0
+2021-03-01 06:08:41,461 - fil - INFO - BUY NEW COINS
+2021-03-01 06:08:41,462 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5317, amount=18.80759826970096, ts:2021-03-01 06:08:41
+2021-03-01 06:08:41,462 - fil - INFO - =========================================
+2021-03-01 06:08:41,462 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:13:40,561 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:13:40,781 - fil - INFO - filusdt  300
+2021-03-01 06:13:40,973 - fil - INFO - fil3lusdt  300
+2021-03-01 06:13:41,116 - fil - INFO - fil3susdt  300
+2021-03-01 06:13:41,116 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:13:41,135 - fil - INFO - count_A_earn = 140 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:13:41,136 - fil - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 06:13:41,356 - fil - INFO - SELL LAST COIN
+2021-03-01 06:13:41,356 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.80759826970096, sell_cur_price:0.5317
+2021-03-01 06:13:41,356 - fil - INFO - sell_cur_price * last_amount = 10.0
+2021-03-01 06:13:41,356 - fil - INFO - current_balance = 10.0  sell_ts:2021-03-01 06:13:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:13:41,356 - fil - INFO - demo_action_running_duration: 0:05:01
+2021-03-01 06:13:41,356 - fil - INFO - earning_ratio = 0.0%
+2021-03-01 06:13:41,356 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:13:41,356 - fil - INFO - last_sell_cash=10.0
+2021-03-01 06:13:41,356 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:13:41,357 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:13:41,357 - fil - INFO - current_balance = 10.0
+2021-03-01 06:13:41,357 - fil - INFO - BUY NEW COINS
+2021-03-01 06:13:41,357 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:4.7353, amount=2.1117986188837032, ts:2021-03-01 06:13:41
+2021-03-01 06:13:41,357 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:13:41,357 - fil - INFO - =========================================
+2021-03-01 06:13:41,357 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:18:40,457 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:18:40,640 - fil - INFO - filusdt  300
+2021-03-01 06:18:40,826 - fil - INFO - fil3lusdt  300
+2021-03-01 06:18:41,008 - fil - INFO - fil3susdt  300
+2021-03-01 06:18:41,008 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:18:41,031 - fil - INFO - count_A_earn = 140 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:18:41,031 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:18:41,296 - fil - INFO - SELL LAST COIN
+2021-03-01 06:18:41,297 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:2.1117986188837032, sell_cur_price:4.76
+2021-03-01 06:18:41,297 - fil - INFO - sell_cur_price * last_amount = 10.052161425886426
+2021-03-01 06:18:41,297 - fil - INFO - current_balance = 10.052161425886426  sell_ts:2021-03-01 06:18:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:18:41,297 - fil - INFO - demo_action_running_duration: 0:10:01
+2021-03-01 06:18:41,297 - fil - INFO - earning_ratio = 0.5216142588642647%
+2021-03-01 06:18:41,297 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:18:41,420 - fil - INFO - actual_last_symbol:fil3lusdt, actual_last_currency:fil3l, actual_last_amount:2.1117986188837032, actual_sell_cur_price:4.76
+2021-03-01 06:18:41,420 - fil - INFO - actual_sell_cur_price * actual_last_amount = 10.052161425886426
+2021-03-01 06:18:41,420 - fil - INFO - actual_balance=10.052161425886426, ts_actual_sell=2021-03-01 06:18:41
+2021-03-01 06:18:41,421 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:18:41,421 - fil - INFO - last_sell_cash=10.052161425886426
+2021-03-01 06:18:41,421 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:18:41,421 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:18:41,421 - fil - INFO - current_balance = 10.052161425886426
+2021-03-01 06:18:41,421 - fil - INFO - BUY NEW COINS
+2021-03-01 06:18:41,421 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5274, amount=18.96094046264695, ts:2021-03-01 06:18:41
+2021-03-01 06:18:41,421 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:18:41,421 - fil - INFO - =========================================
+2021-03-01 06:18:41,422 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:23:40,522 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:23:40,710 - fil - INFO - filusdt  300
+2021-03-01 06:23:40,909 - fil - INFO - fil3lusdt  300
+2021-03-01 06:23:41,104 - fil - INFO - fil3susdt  300
+2021-03-01 06:23:41,104 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:23:41,123 - fil - INFO - count_A_earn = 139 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:23:41,123 - fil - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 06:23:41,348 - fil - INFO - SELL LAST COIN
+2021-03-01 06:23:41,348 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.96094046264695, sell_cur_price:0.5294
+2021-03-01 06:23:41,348 - fil - INFO - sell_cur_price * last_amount = 10.037921880925294
+2021-03-01 06:23:41,348 - fil - INFO - current_balance = 10.09008330681172  sell_ts:2021-03-01 06:23:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:23:41,348 - fil - INFO - demo_action_running_duration: 0:15:01
+2021-03-01 06:23:41,348 - fil - INFO - earning_ratio = 0.9008330681172082%
+2021-03-01 06:23:41,348 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:23:41,452 - fil - INFO - actual_last_symbol:fil3susdt, actual_last_currency:fil3s, actual_last_amount:18.96094046264695, actual_sell_cur_price:0.5294
+2021-03-01 06:23:41,452 - fil - INFO - actual_sell_cur_price * actual_last_amount = 10.037921880925294
+2021-03-01 06:23:41,452 - fil - INFO - actual_balance=10.09008330681172, ts_actual_sell=2021-03-01 06:23:41
+2021-03-01 06:23:41,452 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:23:41,452 - fil - INFO - last_sell_cash=10.037921880925294
+2021-03-01 06:23:41,452 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:23:41,452 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:23:41,452 - fil - INFO - current_balance = 10.09008330681172
+2021-03-01 06:23:41,452 - fil - INFO - BUY NEW COINS
+2021-03-01 06:23:41,453 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:4.7447, amount=2.107614812316901, ts:2021-03-01 06:23:41
+2021-03-01 06:23:41,453 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:23:41,453 - fil - INFO - =========================================
+2021-03-01 06:23:41,453 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:28:40,549 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:28:40,744 - fil - INFO - filusdt  300
+2021-03-01 06:28:40,929 - fil - INFO - fil3lusdt  300
+2021-03-01 06:28:41,120 - fil - INFO - fil3susdt  300
+2021-03-01 06:28:41,120 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:28:41,139 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:28:41,139 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:28:41,355 - fil - INFO - SELL LAST COIN
+2021-03-01 06:28:41,355 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:2.107614812316901, sell_cur_price:4.73
+2021-03-01 06:28:41,355 - fil - INFO - sell_cur_price * last_amount = 9.969018062258943
+2021-03-01 06:28:41,355 - fil - INFO - current_balance = 10.059101369070664  sell_ts:2021-03-01 06:28:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:28:41,355 - fil - INFO - demo_action_running_duration: 0:20:01
+2021-03-01 06:28:41,355 - fil - INFO - earning_ratio = 0.5910136907066388%
+2021-03-01 06:28:41,355 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:28:41,475 - fil - INFO - actual_last_symbol:fil3lusdt, actual_last_currency:fil3l, actual_last_amount:2.107614812316901, actual_sell_cur_price:4.73
+2021-03-01 06:28:41,475 - fil - INFO - actual_sell_cur_price * actual_last_amount = 9.969018062258943
+2021-03-01 06:28:41,475 - fil - INFO - actual_balance=10.059101369070664, ts_actual_sell=2021-03-01 06:28:41
+2021-03-01 06:28:41,475 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:28:41,475 - fil - INFO - last_sell_cash=9.969018062258943
+2021-03-01 06:28:41,475 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:28:41,476 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:28:41,476 - fil - INFO - current_balance = 10.059101369070664
+2021-03-01 06:28:41,476 - fil - INFO - BUY NEW COINS
+2021-03-01 06:28:41,476 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5315, amount=18.814675446848543, ts:2021-03-01 06:28:41
+2021-03-01 06:28:41,476 - fil - INFO - =========================================
+2021-03-01 06:28:41,476 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:33:40,549 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:33:40,737 - fil - INFO - filusdt  300
+2021-03-01 06:33:40,853 - fil - INFO - fil3lusdt  300
+2021-03-01 06:33:40,973 - fil - INFO - fil3susdt  300
+2021-03-01 06:33:40,973 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:33:40,991 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:33:40,992 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:33:41,218 - fil - INFO - SELL LAST COIN
+2021-03-01 06:33:41,218 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.814675446848543, sell_cur_price:0.5296
+2021-03-01 06:33:41,218 - fil - INFO - sell_cur_price * last_amount = 9.964252116650988
+2021-03-01 06:33:41,218 - fil - INFO - current_balance = 10.023353485721652  sell_ts:2021-03-01 06:33:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:33:41,218 - fil - INFO - demo_action_running_duration: 0:25:01
+2021-03-01 06:33:41,218 - fil - INFO - earning_ratio = 0.2335348572165152%
+2021-03-01 06:33:41,218 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:33:41,218 - fil - INFO - last_sell_cash=9.964252116650988
+2021-03-01 06:33:41,218 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:33:41,225 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:33:41,225 - fil - INFO - current_balance = 10.023353485721652
+2021-03-01 06:33:41,226 - fil - INFO - BUY NEW COINS
+2021-03-01 06:33:41,226 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5296, amount=18.882175226586103, ts:2021-03-01 06:33:41
+2021-03-01 06:33:41,226 - fil - INFO - =========================================
+2021-03-01 06:33:41,226 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:38:40,326 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:38:40,516 - fil - INFO - filusdt  300
+2021-03-01 06:38:40,708 - fil - INFO - fil3lusdt  300
+2021-03-01 06:38:40,886 - fil - INFO - fil3susdt  300
+2021-03-01 06:38:40,886 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:38:40,904 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:38:40,905 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:38:41,141 - fil - INFO - SELL LAST COIN
+2021-03-01 06:38:41,141 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.882175226586103, sell_cur_price:0.5344
+2021-03-01 06:38:41,141 - fil - INFO - sell_cur_price * last_amount = 10.090634441087612
+2021-03-01 06:38:41,141 - fil - INFO - current_balance = 10.113987926809264  sell_ts:2021-03-01 06:38:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:38:41,141 - fil - INFO - demo_action_running_duration: 0:30:01
+2021-03-01 06:38:41,141 - fil - INFO - earning_ratio = 1.1398792680926384%
+2021-03-01 06:38:41,141 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:38:41,141 - fil - INFO - last_sell_cash=10.090634441087612
+2021-03-01 06:38:41,141 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:38:41,142 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:38:41,142 - fil - INFO - current_balance = 10.113987926809264
+2021-03-01 06:38:41,142 - fil - INFO - BUY NEW COINS
+2021-03-01 06:38:41,142 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5344, amount=18.7125748502994, ts:2021-03-01 06:38:40
+2021-03-01 06:38:41,142 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:38:41,142 - fil - INFO - =========================================
+2021-03-01 06:38:41,142 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:43:40,243 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:43:40,358 - fil - INFO - filusdt  300
+2021-03-01 06:43:40,478 - fil - INFO - fil3lusdt  300
+2021-03-01 06:43:40,663 - fil - INFO - fil3susdt  300
+2021-03-01 06:43:40,663 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:43:40,681 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:43:40,681 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:43:40,925 - fil - INFO - SELL LAST COIN
+2021-03-01 06:43:40,925 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.7125748502994, sell_cur_price:0.5376
+2021-03-01 06:43:40,925 - fil - INFO - sell_cur_price * last_amount = 10.059880239520957
+2021-03-01 06:43:40,925 - fil - INFO - current_balance = 10.173868166330221  sell_ts:2021-03-01 06:43:40  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:43:40,925 - fil - INFO - demo_action_running_duration: 0:35:00
+2021-03-01 06:43:40,925 - fil - INFO - earning_ratio = 1.7386816633022126%
+2021-03-01 06:43:40,925 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:43:41,054 - fil - INFO - actual_last_symbol:fil3susdt, actual_last_currency:fil3s, actual_last_amount:18.7125748502994, actual_sell_cur_price:0.5376
+2021-03-01 06:43:41,054 - fil - INFO - actual_sell_cur_price * actual_last_amount = 10.059880239520957
+2021-03-01 06:43:41,054 - fil - INFO - actual_balance=10.118981608591621, ts_actual_sell=2021-03-01 06:43:41
+2021-03-01 06:43:41,054 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:43:41,054 - fil - INFO - last_sell_cash=10.059880239520957
+2021-03-01 06:43:41,054 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:43:41,055 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:43:41,055 - fil - INFO - current_balance = 10.173868166330221
+2021-03-01 06:43:41,055 - fil - INFO - BUY NEW COINS
+2021-03-01 06:43:41,055 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5376, amount=18.601190476190478, ts:2021-03-01 06:43:40
+2021-03-01 06:43:41,055 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:43:41,055 - fil - INFO - =========================================
+2021-03-01 06:43:41,055 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:48:40,082 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:48:40,269 - fil - INFO - filusdt  300
+2021-03-01 06:48:40,476 - fil - INFO - fil3lusdt  300
+2021-03-01 06:48:40,668 - fil - INFO - fil3susdt  300
+2021-03-01 06:48:40,668 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:48:40,686 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:48:40,687 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:48:40,933 - fil - INFO - SELL LAST COIN
+2021-03-01 06:48:40,933 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.601190476190478, sell_cur_price:0.539
+2021-03-01 06:48:40,933 - fil - INFO - sell_cur_price * last_amount = 10.026041666666668
+2021-03-01 06:48:40,933 - fil - INFO - current_balance = 10.19990983299689  sell_ts:2021-03-01 06:48:40  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:48:40,933 - fil - INFO - demo_action_running_duration: 0:40:00
+2021-03-01 06:48:40,933 - fil - INFO - earning_ratio = 1.9990983299688914%
+2021-03-01 06:48:40,933 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:48:41,044 - fil - INFO - actual_last_symbol:fil3susdt, actual_last_currency:fil3s, actual_last_amount:18.601190476190478, actual_sell_cur_price:0.539
+2021-03-01 06:48:41,044 - fil - INFO - actual_sell_cur_price * actual_last_amount = 10.026041666666668
+2021-03-01 06:48:41,044 - fil - INFO - actual_balance=10.14502327525829, ts_actual_sell=2021-03-01 06:48:40
+2021-03-01 06:48:41,045 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:48:41,045 - fil - INFO - last_sell_cash=10.026041666666668
+2021-03-01 06:48:41,045 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:48:41,045 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:48:41,045 - fil - INFO - current_balance = 10.19990983299689
+2021-03-01 06:48:41,045 - fil - INFO - BUY NEW COINS
+2021-03-01 06:48:41,045 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.539, amount=18.552875695732837, ts:2021-03-01 06:48:40
+2021-03-01 06:48:41,045 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:48:41,045 - fil - INFO - =========================================
+2021-03-01 06:48:41,046 - fil - INFO - sleep 299 seconds .....
+2021-03-01 06:53:40,049 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:53:40,183 - fil - INFO - filusdt  300
+2021-03-01 06:53:40,311 - fil - INFO - fil3lusdt  300
+2021-03-01 06:53:40,464 - fil - INFO - fil3susdt  300
+2021-03-01 06:53:40,464 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:53:40,482 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:53:40,482 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:53:40,747 - fil - INFO - SELL LAST COIN
+2021-03-01 06:53:40,747 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.552875695732837, sell_cur_price:0.538
+2021-03-01 06:53:40,747 - fil - INFO - sell_cur_price * last_amount = 9.981447124304268
+2021-03-01 06:53:40,747 - fil - INFO - current_balance = 10.181356957301157  sell_ts:2021-03-01 06:53:40  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:53:40,747 - fil - INFO - demo_action_running_duration: 0:45:00
+2021-03-01 06:53:40,747 - fil - INFO - earning_ratio = 1.8135695730115662%
+2021-03-01 06:53:40,747 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:53:40,880 - fil - INFO - actual_last_symbol:fil3susdt, actual_last_currency:fil3s, actual_last_amount:18.552875695732837, actual_sell_cur_price:0.538
+2021-03-01 06:53:40,880 - fil - INFO - actual_sell_cur_price * actual_last_amount = 9.981447124304268
+2021-03-01 06:53:40,880 - fil - INFO - actual_balance=10.126470399562557, ts_actual_sell=2021-03-01 06:53:40
+2021-03-01 06:53:40,880 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:53:40,880 - fil - INFO - last_sell_cash=9.981447124304268
+2021-03-01 06:53:40,880 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:53:40,881 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:53:40,881 - fil - INFO - current_balance = 10.181356957301157
+2021-03-01 06:53:40,881 - fil - INFO - BUY NEW COINS
+2021-03-01 06:53:40,881 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.538, amount=18.587360594795538, ts:2021-03-01 06:53:40
+2021-03-01 06:53:40,881 - fil - INFO - =========================================
+2021-03-01 06:53:40,881 - fil - INFO - sleep 300 seconds .....
+2021-03-01 06:58:40,945 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 06:58:41,143 - fil - INFO - filusdt  300
+2021-03-01 06:58:41,337 - fil - INFO - fil3lusdt  300
+2021-03-01 06:58:41,527 - fil - INFO - fil3susdt  300
+2021-03-01 06:58:41,527 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:58:41,546 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:58:41,546 - fil - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 06:58:41,786 - fil - INFO - SELL LAST COIN
+2021-03-01 06:58:41,786 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.587360594795538, sell_cur_price:0.538
+2021-03-01 06:58:41,786 - fil - INFO - sell_cur_price * last_amount = 10.0
+2021-03-01 06:58:41,787 - fil - INFO - current_balance = 10.181356957301157  sell_ts:2021-03-01 06:58:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:58:41,787 - fil - INFO - demo_action_running_duration: 0:50:01
+2021-03-01 06:58:41,787 - fil - INFO - earning_ratio = 1.8135695730115662%
+2021-03-01 06:58:41,787 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:58:41,787 - fil - INFO - last_sell_cash=10.0
+2021-03-01 06:58:41,787 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 06:58:41,787 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:58:41,787 - fil - INFO - current_balance = 10.181356957301157
+2021-03-01 06:58:41,787 - fil - INFO - BUY NEW COINS
+2021-03-01 06:58:41,787 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:4.6836, amount=2.1351097446408747, ts:2021-03-01 06:58:41
+2021-03-01 06:58:41,787 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:58:41,787 - fil - INFO - =========================================
+2021-03-01 06:58:41,788 - fil - INFO - sleep 299 seconds .....
+2021-03-01 07:03:40,805 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 07:03:41,006 - fil - INFO - filusdt  300
+2021-03-01 07:03:41,132 - fil - INFO - fil3lusdt  300
+2021-03-01 07:03:41,319 - fil - INFO - fil3susdt  300
+2021-03-01 07:03:41,319 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:03:41,338 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:03:41,338 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 07:03:41,579 - fil - INFO - SELL LAST COIN
+2021-03-01 07:03:41,579 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:2.1351097446408747, sell_cur_price:4.7306
+2021-03-01 07:03:41,579 - fil - INFO - sell_cur_price * last_amount = 10.100350157998122
+2021-03-01 07:03:41,579 - fil - INFO - current_balance = 10.281707115299278  sell_ts:2021-03-01 07:03:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:03:41,579 - fil - INFO - demo_action_running_duration: 0:55:01
+2021-03-01 07:03:41,579 - fil - INFO - earning_ratio = 2.817071152992785%
+2021-03-01 07:03:41,579 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:03:41,702 - fil - INFO - actual_last_symbol:fil3lusdt, actual_last_currency:fil3l, actual_last_amount:2.1351097446408747, actual_sell_cur_price:4.7306
+2021-03-01 07:03:41,702 - fil - INFO - actual_sell_cur_price * actual_last_amount = 10.100350157998122
+2021-03-01 07:03:41,703 - fil - INFO - actual_balance=10.226820557560679, ts_actual_sell=2021-03-01 07:03:41
+2021-03-01 07:03:41,703 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:03:41,703 - fil - INFO - last_sell_cash=10.100350157998122
+2021-03-01 07:03:41,703 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 07:03:41,703 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:03:41,703 - fil - INFO - current_balance = 10.281707115299278
+2021-03-01 07:03:41,703 - fil - INFO - BUY NEW COINS
+2021-03-01 07:03:41,703 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5308, amount=18.839487565938203, ts:2021-03-01 07:03:41
+2021-03-01 07:03:41,704 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:03:41,704 - fil - INFO - =========================================
+2021-03-01 07:03:41,704 - fil - INFO - sleep 299 seconds .....
+2021-03-01 07:08:40,753 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 07:08:40,870 - fil - INFO - filusdt  300
+2021-03-01 07:08:41,062 - fil - INFO - fil3lusdt  300
+2021-03-01 07:08:41,245 - fil - INFO - fil3susdt  300
+2021-03-01 07:08:41,245 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:08:41,264 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:08:41,264 - fil - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:08:41,495 - fil - INFO - SELL LAST COIN
+2021-03-01 07:08:41,495 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.839487565938203, sell_cur_price:0.5367
+2021-03-01 07:08:41,495 - fil - INFO - sell_cur_price * last_amount = 10.111152976639033
+2021-03-01 07:08:41,495 - fil - INFO - current_balance = 10.392860091938312  sell_ts:2021-03-01 07:08:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:08:41,495 - fil - INFO - demo_action_running_duration: 1:00:01
+2021-03-01 07:08:41,495 - fil - INFO - earning_ratio = 3.9286009193831184%
+2021-03-01 07:08:41,495 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:08:41,608 - fil - INFO - actual_last_symbol:fil3susdt, actual_last_currency:fil3s, actual_last_amount:18.839487565938203, actual_sell_cur_price:0.5367
+2021-03-01 07:08:41,608 - fil - INFO - actual_sell_cur_price * actual_last_amount = 10.111152976639033
+2021-03-01 07:08:41,608 - fil - INFO - actual_balance=10.337973534199712, ts_actual_sell=2021-03-01 07:08:41
+2021-03-01 07:08:41,608 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:08:41,608 - fil - INFO - last_sell_cash=10.111152976639033
+2021-03-01 07:08:41,608 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 07:08:41,608 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:08:41,609 - fil - INFO - current_balance = 10.392860091938312
+2021-03-01 07:08:41,609 - fil - INFO - BUY NEW COINS
+2021-03-01 07:08:41,609 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:4.6896, amount=2.1323780279767997, ts:2021-03-01 07:08:41
+2021-03-01 07:08:41,609 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:08:41,609 - fil - INFO - =========================================
+2021-03-01 07:08:41,609 - fil - INFO - sleep 299 seconds .....
+2021-03-01 07:13:40,682 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 07:13:40,882 - fil - INFO - filusdt  300
+2021-03-01 07:13:41,078 - fil - INFO - fil3lusdt  300
+2021-03-01 07:13:41,307 - fil - INFO - fil3susdt  300
+2021-03-01 07:13:41,307 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:13:41,326 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:13:41,326 - fil - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 07:13:41,562 - fil - INFO - SELL LAST COIN
+2021-03-01 07:13:41,562 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:2.1323780279767997, sell_cur_price:4.6749
+2021-03-01 07:13:41,562 - fil - INFO - sell_cur_price * last_amount = 9.96865404298874
+2021-03-01 07:13:41,562 - fil - INFO - current_balance = 10.361514134927052  sell_ts:2021-03-01 07:13:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:13:41,562 - fil - INFO - demo_action_running_duration: 1:05:01
+2021-03-01 07:13:41,562 - fil - INFO - earning_ratio = 3.615141349270523%
+2021-03-01 07:13:41,562 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:13:41,680 - fil - INFO - actual_last_symbol:fil3lusdt, actual_last_currency:fil3l, actual_last_amount:2.1323780279767997, actual_sell_cur_price:4.6749
+2021-03-01 07:13:41,680 - fil - INFO - actual_sell_cur_price * actual_last_amount = 9.96865404298874
+2021-03-01 07:13:41,681 - fil - INFO - actual_balance=10.306627577188452, ts_actual_sell=2021-03-01 07:13:41
+2021-03-01 07:13:41,681 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:13:41,681 - fil - INFO - last_sell_cash=9.96865404298874
+2021-03-01 07:13:41,681 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 07:13:41,681 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:13:41,681 - fil - INFO - current_balance = 10.361514134927052
+2021-03-01 07:13:41,681 - fil - INFO - BUY NEW COINS
+2021-03-01 07:13:41,681 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.5383, amount=18.57700167193015, ts:2021-03-01 07:13:41
+2021-03-01 07:13:41,682 - fil - INFO - =========================================
+2021-03-01 07:13:41,682 - fil - INFO - sleep 299 seconds .....
+2021-03-01 07:18:40,729 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 07:18:40,937 - fil - INFO - filusdt  300
+2021-03-01 07:18:41,125 - fil - INFO - fil3lusdt  300
+2021-03-01 07:18:41,328 - fil - INFO - fil3susdt  300
+2021-03-01 07:18:41,328 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:18:41,346 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:18:41,346 - fil - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:18:41,568 - fil - INFO - SELL LAST COIN
+2021-03-01 07:18:41,568 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:18.57700167193015, sell_cur_price:0.534
+2021-03-01 07:18:41,568 - fil - INFO - sell_cur_price * last_amount = 9.920118892810702
+2021-03-01 07:18:41,568 - fil - INFO - current_balance = 10.281633027737755  sell_ts:2021-03-01 07:18:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:18:41,568 - fil - INFO - demo_action_running_duration: 1:10:01
+2021-03-01 07:18:41,568 - fil - INFO - earning_ratio = 2.8163302773775456%
+2021-03-01 07:18:41,568 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:18:41,568 - fil - INFO - last_sell_cash=9.920118892810702
+2021-03-01 07:18:41,568 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 07:18:41,569 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:18:41,569 - fil - INFO - current_balance = 10.281633027737755
+2021-03-01 07:18:41,569 - fil - INFO - BUY NEW COINS
+2021-03-01 07:18:41,569 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:4.703, amount=2.1263023601956195, ts:2021-03-01 07:18:41
+2021-03-01 07:18:41,569 - fil - INFO - =========================================
+2021-03-01 07:18:41,569 - fil - INFO - sleep 299 seconds .....
+2021-03-01 07:23:40,669 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 07:23:40,878 - fil - INFO - filusdt  300
+2021-03-01 07:23:41,066 - fil - INFO - fil3lusdt  300
+2021-03-01 07:23:41,195 - fil - INFO - fil3susdt  300
+2021-03-01 07:23:41,195 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:23:41,213 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:23:41,214 - fil - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:23:41,442 - fil - INFO - SELL LAST COIN
+2021-03-01 07:23:41,442 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:2.1263023601956195, sell_cur_price:4.7085
+2021-03-01 07:23:41,442 - fil - INFO - sell_cur_price * last_amount = 10.011694662981075
+2021-03-01 07:23:41,442 - fil - INFO - current_balance = 10.29332769071883  sell_ts:2021-03-01 07:23:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:23:41,442 - fil - INFO - demo_action_running_duration: 1:15:01
+2021-03-01 07:23:41,442 - fil - INFO - earning_ratio = 2.9332769071882936%
+2021-03-01 07:23:41,442 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:23:41,442 - fil - INFO - last_sell_cash=10.011694662981075
+2021-03-01 07:23:41,442 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 07:23:41,443 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:23:41,443 - fil - INFO - current_balance = 10.29332769071883
+2021-03-01 07:23:41,443 - fil - INFO - BUY NEW COINS
+2021-03-01 07:23:41,443 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:4.7085, amount=2.123818625889349, ts:2021-03-01 07:23:41
+2021-03-01 07:23:41,443 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:23:41,443 - fil - INFO - =========================================
+2021-03-01 07:23:41,443 - fil - INFO - sleep 299 seconds .....
+2021-03-01 07:28:40,462 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-01 07:28:40,596 - fil - INFO - filusdt  300
+2021-03-01 07:28:40,777 - fil - INFO - fil3lusdt  300
+2021-03-01 07:28:40,966 - fil - INFO - fil3susdt  300
+2021-03-01 07:28:40,967 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:28:40,985 - fil - INFO - count_A_earn = 138 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:28:40,985 - fil - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:28:41,230 - fil - INFO - SELL LAST COIN
+2021-03-01 07:28:41,230 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:2.123818625889349, sell_cur_price:4.7771
+2021-03-01 07:28:41,230 - fil - INFO - sell_cur_price * last_amount = 10.14569395773601
+2021-03-01 07:28:41,230 - fil - INFO - current_balance = 10.439021648454839  sell_ts:2021-03-01 07:28:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:28:41,230 - fil - INFO - demo_action_running_duration: 1:20:01
+2021-03-01 07:28:41,230 - fil - INFO - earning_ratio = 4.390216484548386%
+2021-03-01 07:28:41,230 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:28:41,360 - fil - INFO - actual_last_symbol:fil3lusdt, actual_last_currency:fil3l, actual_last_amount:2.123818625889349, actual_sell_cur_price:4.7771
+2021-03-01 07:28:41,360 - fil - INFO - actual_sell_cur_price * actual_last_amount = 10.14569395773601
+2021-03-01 07:28:41,360 - fil - INFO - actual_balance=10.452321534924462, ts_actual_sell=2021-03-01 07:28:41
+2021-03-01 07:28:41,360 - fil - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:28:41,360 - fil - INFO - last_sell_cash=10.14569395773601
+2021-03-01 07:28:41,360 - fil - INFO - SEND QUEUE INFO - START
+2021-03-01 07:28:41,361 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:28:41,361 - fil - INFO - current_balance = 10.439021648454839
+2021-03-01 07:28:41,361 - fil - INFO - BUY NEW COINS
+2021-03-01 07:28:41,361 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:4.7771, amount=2.093320215193318, ts:2021-03-01 07:28:41
+2021-03-01 07:28:41,361 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:28:41,361 - fil - INFO - =========================================
+2021-03-01 07:28:41,361 - fil - INFO - sleep 299 seconds .....

@@ -1,0 +1,423 @@
+2021-03-01 06:08:40,594 - xrp - INFO - I'm xrp in demo_action
+2021-03-01 06:08:40,594 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:08:40,829 - xrp - INFO - xrpusdt  300
+2021-03-01 06:08:41,019 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:08:41,134 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:08:41,134 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:08:41,178 - xrp - INFO - count_A_earn = 127 , count_B_earn = 1 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:08:41,179 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:08:41,313 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:08:41,314 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:08:41,314 - xrp - INFO - current_balance = 10.0
+2021-03-01 06:08:41,314 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:08:41,315 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.656e-05, amount=603864.7342995169, ts:2021-03-01 06:08:41
+2021-03-01 06:08:41,315 - xrp - INFO - =========================================
+2021-03-01 06:08:41,315 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:13:40,415 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:13:40,693 - xrp - INFO - xrpusdt  300
+2021-03-01 06:13:41,038 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:13:41,218 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:13:41,218 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:13:41,237 - xrp - INFO - count_A_earn = 128 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:13:41,237 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 06:13:41,487 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:13:41,487 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:603864.7342995169, sell_cur_price:1.662e-05
+2021-03-01 06:13:41,487 - xrp - INFO - sell_cur_price * last_amount = 10.03623188405797
+2021-03-01 06:13:41,487 - xrp - INFO - current_balance = 10.03623188405797  sell_ts:2021-03-01 06:13:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:13:41,487 - xrp - INFO - demo_action_running_duration: 0:05:01
+2021-03-01 06:13:41,487 - xrp - INFO - earning_ratio = 0.3623188405797073%
+2021-03-01 06:13:41,487 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:13:41,487 - xrp - INFO - last_sell_cash=10.03623188405797
+2021-03-01 06:13:41,487 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:13:41,488 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:13:41,488 - xrp - INFO - current_balance = 10.03623188405797
+2021-03-01 06:13:41,488 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:13:41,488 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4812, amount=20.781379883624272, ts:2021-03-01 06:13:41
+2021-03-01 06:13:41,488 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:13:41,488 - xrp - INFO - =========================================
+2021-03-01 06:13:41,488 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:18:40,574 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:18:40,768 - xrp - INFO - xrpusdt  300
+2021-03-01 06:18:40,951 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:18:41,139 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:18:41,139 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:18:41,158 - xrp - INFO - count_A_earn = 129 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:18:41,159 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:18:41,378 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:18:41,379 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.781379883624272, sell_cur_price:0.4873
+2021-03-01 06:18:41,379 - xrp - INFO - sell_cur_price * last_amount = 10.126766417290108
+2021-03-01 06:18:41,379 - xrp - INFO - current_balance = 10.162998301348079  sell_ts:2021-03-01 06:18:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:18:41,379 - xrp - INFO - demo_action_running_duration: 0:10:01
+2021-03-01 06:18:41,379 - xrp - INFO - earning_ratio = 1.6299830134807891%
+2021-03-01 06:18:41,379 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:18:41,507 - xrp - INFO - actual_last_symbol:xrp3lusdt, actual_last_currency:xrp3l, actual_last_amount:20.781379883624272, actual_sell_cur_price:0.4873
+2021-03-01 06:18:41,507 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 10.126766417290108
+2021-03-01 06:18:41,507 - xrp - INFO - actual_balance=10.126766417290108, ts_actual_sell=2021-03-01 06:18:41
+2021-03-01 06:18:41,507 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:18:41,507 - xrp - INFO - last_sell_cash=10.126766417290108
+2021-03-01 06:18:41,507 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:18:41,509 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:18:41,509 - xrp - INFO - current_balance = 10.162998301348079
+2021-03-01 06:18:41,509 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:18:41,509 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.636e-05, amount=611246.9437652812, ts:2021-03-01 06:18:41
+2021-03-01 06:18:41,510 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:18:41,510 - xrp - INFO - =========================================
+2021-03-01 06:18:41,510 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:23:40,569 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:23:40,716 - xrp - INFO - xrpusdt  300
+2021-03-01 06:23:40,900 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:23:41,095 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:23:41,096 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:23:41,119 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:23:41,119 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 06:23:41,384 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:23:41,384 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:611246.9437652812, sell_cur_price:1.637e-05
+2021-03-01 06:23:41,384 - xrp - INFO - sell_cur_price * last_amount = 10.006112469437655
+2021-03-01 06:23:41,385 - xrp - INFO - current_balance = 10.169110770785734  sell_ts:2021-03-01 06:23:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:23:41,385 - xrp - INFO - demo_action_running_duration: 0:15:01
+2021-03-01 06:23:41,385 - xrp - INFO - earning_ratio = 1.6911077078573378%
+2021-03-01 06:23:41,385 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:23:41,514 - xrp - INFO - actual_last_symbol:xrp3susdt, actual_last_currency:xrp3s, actual_last_amount:611246.9437652812, actual_sell_cur_price:1.637e-05
+2021-03-01 06:23:41,514 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 10.006112469437655
+2021-03-01 06:23:41,514 - xrp - INFO - actual_balance=10.132878886727763, ts_actual_sell=2021-03-01 06:23:41
+2021-03-01 06:23:41,514 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:23:41,515 - xrp - INFO - last_sell_cash=10.006112469437655
+2021-03-01 06:23:41,515 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:23:41,515 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:23:41,515 - xrp - INFO - current_balance = 10.169110770785734
+2021-03-01 06:23:41,515 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:23:41,515 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4863, amount=20.563438206868188, ts:2021-03-01 06:23:41
+2021-03-01 06:23:41,515 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:23:41,515 - xrp - INFO - =========================================
+2021-03-01 06:23:41,516 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:28:40,616 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:28:40,758 - xrp - INFO - xrpusdt  300
+2021-03-01 06:28:40,951 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:28:41,077 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:28:41,078 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:28:41,097 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:28:41,097 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:28:41,377 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:28:41,378 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.563438206868188, sell_cur_price:0.488
+2021-03-01 06:28:41,378 - xrp - INFO - sell_cur_price * last_amount = 10.034957844951675
+2021-03-01 06:28:41,378 - xrp - INFO - current_balance = 10.204068615737409  sell_ts:2021-03-01 06:28:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:28:41,378 - xrp - INFO - demo_action_running_duration: 0:20:01
+2021-03-01 06:28:41,378 - xrp - INFO - earning_ratio = 2.0406861573740898%
+2021-03-01 06:28:41,378 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:28:41,486 - xrp - INFO - actual_last_symbol:xrp3lusdt, actual_last_currency:xrp3l, actual_last_amount:20.563438206868188, actual_sell_cur_price:0.488
+2021-03-01 06:28:41,487 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 10.034957844951675
+2021-03-01 06:28:41,487 - xrp - INFO - actual_balance=10.167836731679438, ts_actual_sell=2021-03-01 06:28:41
+2021-03-01 06:28:41,487 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:28:41,487 - xrp - INFO - last_sell_cash=10.034957844951675
+2021-03-01 06:28:41,487 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:28:41,487 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:28:41,487 - xrp - INFO - current_balance = 10.204068615737409
+2021-03-01 06:28:41,487 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:28:41,487 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.634e-05, amount=611995.1040391678, ts:2021-03-01 06:28:41
+2021-03-01 06:28:41,488 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:28:41,488 - xrp - INFO - =========================================
+2021-03-01 06:28:41,488 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:33:40,588 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:33:40,788 - xrp - INFO - xrpusdt  300
+2021-03-01 06:33:40,996 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:33:41,115 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:33:41,115 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:33:41,134 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:33:41,134 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 06:33:41,466 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:33:41,466 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:611995.1040391678, sell_cur_price:1.637e-05
+2021-03-01 06:33:41,466 - xrp - INFO - sell_cur_price * last_amount = 10.018359853121177
+2021-03-01 06:33:41,466 - xrp - INFO - current_balance = 10.222428468858586  sell_ts:2021-03-01 06:33:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:33:41,466 - xrp - INFO - demo_action_running_duration: 0:25:01
+2021-03-01 06:33:41,466 - xrp - INFO - earning_ratio = 2.2242846885858647%
+2021-03-01 06:33:41,466 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:33:41,579 - xrp - INFO - actual_last_symbol:xrp3susdt, actual_last_currency:xrp3s, actual_last_amount:611995.1040391678, actual_sell_cur_price:1.637e-05
+2021-03-01 06:33:41,580 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 10.018359853121177
+2021-03-01 06:33:41,580 - xrp - INFO - actual_balance=10.186196584800616, ts_actual_sell=2021-03-01 06:33:41
+2021-03-01 06:33:41,580 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:33:41,580 - xrp - INFO - last_sell_cash=10.018359853121177
+2021-03-01 06:33:41,580 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:33:41,580 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:33:41,580 - xrp - INFO - current_balance = 10.222428468858586
+2021-03-01 06:33:41,580 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:33:41,580 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4878, amount=20.50020500205002, ts:2021-03-01 06:33:41
+2021-03-01 06:33:41,580 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:33:41,580 - xrp - INFO - =========================================
+2021-03-01 06:33:41,581 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:38:40,664 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:38:40,867 - xrp - INFO - xrpusdt  300
+2021-03-01 06:38:41,059 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:38:41,244 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:38:41,244 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:38:41,263 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:38:41,263 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:38:41,499 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:38:41,499 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.50020500205002, sell_cur_price:0.4804
+2021-03-01 06:38:41,499 - xrp - INFO - sell_cur_price * last_amount = 9.848298482984829
+2021-03-01 06:38:41,499 - xrp - INFO - current_balance = 10.070726951843415  sell_ts:2021-03-01 06:38:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:38:41,499 - xrp - INFO - demo_action_running_duration: 0:30:01
+2021-03-01 06:38:41,499 - xrp - INFO - earning_ratio = 0.7072695184341526%
+2021-03-01 06:38:41,499 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:38:41,607 - xrp - INFO - actual_last_symbol:xrp3lusdt, actual_last_currency:xrp3l, actual_last_amount:20.50020500205002, actual_sell_cur_price:0.4804
+2021-03-01 06:38:41,608 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 9.848298482984829
+2021-03-01 06:38:41,608 - xrp - INFO - actual_balance=10.034495067785445, ts_actual_sell=2021-03-01 06:38:41
+2021-03-01 06:38:41,608 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:38:41,608 - xrp - INFO - last_sell_cash=9.848298482984829
+2021-03-01 06:38:41,608 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:38:41,608 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:38:41,608 - xrp - INFO - current_balance = 10.070726951843415
+2021-03-01 06:38:41,608 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:38:41,608 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.666e-05, amount=600240.0960384153, ts:2021-03-01 06:38:41
+2021-03-01 06:38:41,608 - xrp - INFO - =========================================
+2021-03-01 06:38:41,609 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:43:40,625 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:43:40,743 - xrp - INFO - xrpusdt  300
+2021-03-01 06:43:40,947 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:43:41,134 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:43:41,135 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:43:41,153 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:43:41,153 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:43:41,460 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:43:41,460 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:600240.0960384153, sell_cur_price:1.673e-05
+2021-03-01 06:43:41,460 - xrp - INFO - sell_cur_price * last_amount = 10.042016806722689
+2021-03-01 06:43:41,460 - xrp - INFO - current_balance = 10.112743758566104  sell_ts:2021-03-01 06:43:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:43:41,460 - xrp - INFO - demo_action_running_duration: 0:35:01
+2021-03-01 06:43:41,460 - xrp - INFO - earning_ratio = 1.127437585661042%
+2021-03-01 06:43:41,460 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:43:41,460 - xrp - INFO - last_sell_cash=10.042016806722689
+2021-03-01 06:43:41,460 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:43:41,461 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:43:41,461 - xrp - INFO - current_balance = 10.112743758566104
+2021-03-01 06:43:41,461 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:43:41,461 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.673e-05, amount=597728.6312014345, ts:2021-03-01 06:43:41
+2021-03-01 06:43:41,461 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:43:41,461 - xrp - INFO - =========================================
+2021-03-01 06:43:41,461 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:48:40,549 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:48:40,738 - xrp - INFO - xrpusdt  300
+2021-03-01 06:48:40,955 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:48:41,157 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:48:41,157 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:48:41,176 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:48:41,176 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:48:41,463 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:48:41,464 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:597728.6312014345, sell_cur_price:1.682e-05
+2021-03-01 06:48:41,464 - xrp - INFO - sell_cur_price * last_amount = 10.05379557680813
+2021-03-01 06:48:41,464 - xrp - INFO - current_balance = 10.166539335374233  sell_ts:2021-03-01 06:48:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:48:41,464 - xrp - INFO - demo_action_running_duration: 0:40:01
+2021-03-01 06:48:41,464 - xrp - INFO - earning_ratio = 1.6653933537423349%
+2021-03-01 06:48:41,464 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:48:41,581 - xrp - INFO - actual_last_symbol:xrp3susdt, actual_last_currency:xrp3s, actual_last_amount:597728.6312014345, actual_sell_cur_price:1.682e-05
+2021-03-01 06:48:41,582 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 10.05379557680813
+2021-03-01 06:48:41,582 - xrp - INFO - actual_balance=10.088290644593574, ts_actual_sell=2021-03-01 06:48:41
+2021-03-01 06:48:41,582 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:48:41,582 - xrp - INFO - last_sell_cash=10.05379557680813
+2021-03-01 06:48:41,582 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:48:41,582 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:48:41,583 - xrp - INFO - current_balance = 10.166539335374233
+2021-03-01 06:48:41,583 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:48:41,583 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.682e-05, amount=594530.3210463733, ts:2021-03-01 06:48:41
+2021-03-01 06:48:41,583 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:48:41,583 - xrp - INFO - =========================================
+2021-03-01 06:48:41,583 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:53:40,637 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:53:40,948 - xrp - INFO - xrpusdt  300
+2021-03-01 06:53:41,075 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:53:41,227 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:53:41,227 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:53:41,246 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:53:41,246 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 06:53:41,547 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:53:41,547 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:594530.3210463733, sell_cur_price:1.675e-05
+2021-03-01 06:53:41,547 - xrp - INFO - sell_cur_price * last_amount = 9.958382877526754
+2021-03-01 06:53:41,547 - xrp - INFO - current_balance = 10.124922212900987  sell_ts:2021-03-01 06:53:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:53:41,547 - xrp - INFO - demo_action_running_duration: 0:45:01
+2021-03-01 06:53:41,547 - xrp - INFO - earning_ratio = 1.2492221290098726%
+2021-03-01 06:53:41,547 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 06:53:41,705 - xrp - INFO - actual_last_symbol:xrp3susdt, actual_last_currency:xrp3s, actual_last_amount:594530.3210463733, actual_sell_cur_price:1.675e-05
+2021-03-01 06:53:41,705 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 9.958382877526754
+2021-03-01 06:53:41,705 - xrp - INFO - actual_balance=10.046673522120328, ts_actual_sell=2021-03-01 06:53:41
+2021-03-01 06:53:41,705 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:53:41,706 - xrp - INFO - last_sell_cash=9.958382877526754
+2021-03-01 06:53:41,706 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:53:41,706 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:53:41,706 - xrp - INFO - current_balance = 10.124922212900987
+2021-03-01 06:53:41,706 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:53:41,706 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.675e-05, amount=597014.9253731343, ts:2021-03-01 06:53:41
+2021-03-01 06:53:41,706 - xrp - INFO - =========================================
+2021-03-01 06:53:41,706 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 06:58:40,805 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 06:58:40,932 - xrp - INFO - xrpusdt  300
+2021-03-01 06:58:41,122 - xrp - INFO - xrp3lusdt  300
+2021-03-01 06:58:41,317 - xrp - INFO - xrp3susdt  300
+2021-03-01 06:58:41,318 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 06:58:41,350 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 06:58:41,350 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 06:58:41,581 - xrp - INFO - SELL LAST COIN
+2021-03-01 06:58:41,581 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:597014.9253731343, sell_cur_price:1.676e-05
+2021-03-01 06:58:41,581 - xrp - INFO - sell_cur_price * last_amount = 10.00597014925373
+2021-03-01 06:58:41,581 - xrp - INFO - current_balance = 10.130892362154718  sell_ts:2021-03-01 06:58:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 06:58:41,581 - xrp - INFO - demo_action_running_duration: 0:50:01
+2021-03-01 06:58:41,581 - xrp - INFO - earning_ratio = 1.30892362154718%
+2021-03-01 06:58:41,581 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 06:58:41,581 - xrp - INFO - last_sell_cash=10.00597014925373
+2021-03-01 06:58:41,581 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 06:58:41,582 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 06:58:41,582 - xrp - INFO - current_balance = 10.130892362154718
+2021-03-01 06:58:41,582 - xrp - INFO - BUY NEW COINS
+2021-03-01 06:58:41,582 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.477, amount=20.964360587002098, ts:2021-03-01 06:58:41
+2021-03-01 06:58:41,582 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 06:58:41,582 - xrp - INFO - =========================================
+2021-03-01 06:58:41,582 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 07:03:40,633 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 07:03:40,828 - xrp - INFO - xrpusdt  300
+2021-03-01 07:03:41,021 - xrp - INFO - xrp3lusdt  300
+2021-03-01 07:03:41,211 - xrp - INFO - xrp3susdt  300
+2021-03-01 07:03:41,211 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:03:41,230 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:03:41,230 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:03:41,473 - xrp - INFO - SELL LAST COIN
+2021-03-01 07:03:41,473 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.964360587002098, sell_cur_price:0.484
+2021-03-01 07:03:41,473 - xrp - INFO - sell_cur_price * last_amount = 10.146750524109015
+2021-03-01 07:03:41,473 - xrp - INFO - current_balance = 10.277642886263733  sell_ts:2021-03-01 07:03:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:03:41,473 - xrp - INFO - demo_action_running_duration: 0:55:01
+2021-03-01 07:03:41,473 - xrp - INFO - earning_ratio = 2.776428862637328%
+2021-03-01 07:03:41,473 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:03:41,600 - xrp - INFO - actual_last_symbol:xrp3lusdt, actual_last_currency:xrp3l, actual_last_amount:20.964360587002098, actual_sell_cur_price:0.484
+2021-03-01 07:03:41,600 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 10.146750524109015
+2021-03-01 07:03:41,600 - xrp - INFO - actual_balance=10.193424046229342, ts_actual_sell=2021-03-01 07:03:41
+2021-03-01 07:03:41,600 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:03:41,600 - xrp - INFO - last_sell_cash=10.146750524109015
+2021-03-01 07:03:41,600 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 07:03:41,601 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:03:41,601 - xrp - INFO - current_balance = 10.277642886263733
+2021-03-01 07:03:41,601 - xrp - INFO - BUY NEW COINS
+2021-03-01 07:03:41,601 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.484, amount=20.66115702479339, ts:2021-03-01 07:03:41
+2021-03-01 07:03:41,601 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:03:41,601 - xrp - INFO - =========================================
+2021-03-01 07:03:41,601 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 07:08:40,657 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 07:08:40,905 - xrp - INFO - xrpusdt  300
+2021-03-01 07:08:41,022 - xrp - INFO - xrp3lusdt  300
+2021-03-01 07:08:41,201 - xrp - INFO - xrp3susdt  300
+2021-03-01 07:08:41,201 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:08:41,219 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:08:41,220 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:08:41,449 - xrp - INFO - SELL LAST COIN
+2021-03-01 07:08:41,449 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.66115702479339, sell_cur_price:0.4817
+2021-03-01 07:08:41,449 - xrp - INFO - sell_cur_price * last_amount = 9.952479338842977
+2021-03-01 07:08:41,449 - xrp - INFO - current_balance = 10.23012222510671  sell_ts:2021-03-01 07:08:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:08:41,449 - xrp - INFO - demo_action_running_duration: 1:00:01
+2021-03-01 07:08:41,449 - xrp - INFO - earning_ratio = 2.3012222510670988%
+2021-03-01 07:08:41,449 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:08:41,597 - xrp - INFO - actual_last_symbol:xrp3lusdt, actual_last_currency:xrp3l, actual_last_amount:20.66115702479339, actual_sell_cur_price:0.4817
+2021-03-01 07:08:41,598 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 9.952479338842977
+2021-03-01 07:08:41,598 - xrp - INFO - actual_balance=10.14590338507232, ts_actual_sell=2021-03-01 07:08:41
+2021-03-01 07:08:41,598 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:08:41,598 - xrp - INFO - last_sell_cash=9.952479338842977
+2021-03-01 07:08:41,598 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 07:08:41,598 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:08:41,598 - xrp - INFO - current_balance = 10.23012222510671
+2021-03-01 07:08:41,598 - xrp - INFO - BUY NEW COINS
+2021-03-01 07:08:41,599 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4817, amount=20.75980900975711, ts:2021-03-01 07:08:41
+2021-03-01 07:08:41,599 - xrp - INFO - =========================================
+2021-03-01 07:08:41,599 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 07:13:40,697 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 07:13:40,816 - xrp - INFO - xrpusdt  300
+2021-03-01 07:13:41,015 - xrp - INFO - xrp3lusdt  300
+2021-03-01 07:13:41,215 - xrp - INFO - xrp3susdt  300
+2021-03-01 07:13:41,216 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:13:41,234 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:13:41,234 - xrp - INFO - invest_direction = planA   last_trend = -1
+2021-03-01 07:13:41,477 - xrp - INFO - SELL LAST COIN
+2021-03-01 07:13:41,477 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.75980900975711, sell_cur_price:0.482
+2021-03-01 07:13:41,477 - xrp - INFO - sell_cur_price * last_amount = 10.006227942702926
+2021-03-01 07:13:41,478 - xrp - INFO - current_balance = 10.236350167809636  sell_ts:2021-03-01 07:13:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:13:41,478 - xrp - INFO - demo_action_running_duration: 1:05:01
+2021-03-01 07:13:41,478 - xrp - INFO - earning_ratio = 2.3635016780963625%
+2021-03-01 07:13:41,478 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:13:41,478 - xrp - INFO - last_sell_cash=10.006227942702926
+2021-03-01 07:13:41,478 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 07:13:41,478 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:13:41,478 - xrp - INFO - current_balance = 10.236350167809636
+2021-03-01 07:13:41,478 - xrp - INFO - BUY NEW COINS
+2021-03-01 07:13:41,478 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:1.66e-05, amount=602409.6385542168, ts:2021-03-01 07:13:41
+2021-03-01 07:13:41,478 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:13:41,478 - xrp - INFO - =========================================
+2021-03-01 07:13:41,479 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 07:18:40,497 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 07:18:40,688 - xrp - INFO - xrpusdt  300
+2021-03-01 07:18:40,928 - xrp - INFO - xrp3lusdt  300
+2021-03-01 07:18:41,120 - xrp - INFO - xrp3susdt  300
+2021-03-01 07:18:41,120 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:18:41,139 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:18:41,139 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:18:41,388 - xrp - INFO - SELL LAST COIN
+2021-03-01 07:18:41,388 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:602409.6385542168, sell_cur_price:1.645e-05
+2021-03-01 07:18:41,388 - xrp - INFO - sell_cur_price * last_amount = 9.909638554216867
+2021-03-01 07:18:41,388 - xrp - INFO - current_balance = 10.145988722026503  sell_ts:2021-03-01 07:18:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:18:41,388 - xrp - INFO - demo_action_running_duration: 1:10:01
+2021-03-01 07:18:41,388 - xrp - INFO - earning_ratio = 1.4598872202650348%
+2021-03-01 07:18:41,388 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:18:41,496 - xrp - INFO - actual_last_symbol:xrp3susdt, actual_last_currency:xrp3s, actual_last_amount:602409.6385542168, actual_sell_cur_price:1.645e-05
+2021-03-01 07:18:41,496 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 9.909638554216867
+2021-03-01 07:18:41,496 - xrp - INFO - actual_balance=10.055541939289187, ts_actual_sell=2021-03-01 07:18:41
+2021-03-01 07:18:41,496 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:18:41,496 - xrp - INFO - last_sell_cash=9.909638554216867
+2021-03-01 07:18:41,497 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 07:18:41,497 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:18:41,497 - xrp - INFO - current_balance = 10.145988722026503
+2021-03-01 07:18:41,497 - xrp - INFO - BUY NEW COINS
+2021-03-01 07:18:41,497 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4851, amount=20.614306328592043, ts:2021-03-01 07:18:41
+2021-03-01 07:18:41,497 - xrp - INFO - =========================================
+2021-03-01 07:18:41,497 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 07:23:40,505 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 07:23:40,696 - xrp - INFO - xrpusdt  300
+2021-03-01 07:23:40,897 - xrp - INFO - xrp3lusdt  300
+2021-03-01 07:23:41,113 - xrp - INFO - xrp3susdt  300
+2021-03-01 07:23:41,114 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:23:41,132 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:23:41,132 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:23:41,367 - xrp - INFO - SELL LAST COIN
+2021-03-01 07:23:41,367 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.614306328592043, sell_cur_price:0.4951
+2021-03-01 07:23:41,367 - xrp - INFO - sell_cur_price * last_amount = 10.20614306328592
+2021-03-01 07:23:41,367 - xrp - INFO - current_balance = 10.352131785312423  sell_ts:2021-03-01 07:23:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:23:41,368 - xrp - INFO - demo_action_running_duration: 1:15:01
+2021-03-01 07:23:41,368 - xrp - INFO - earning_ratio = 3.5213178531242306%
+2021-03-01 07:23:41,368 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:23:41,368 - xrp - INFO - last_sell_cash=10.20614306328592
+2021-03-01 07:23:41,368 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 07:23:41,368 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:23:41,368 - xrp - INFO - current_balance = 10.352131785312423
+2021-03-01 07:23:41,368 - xrp - INFO - BUY NEW COINS
+2021-03-01 07:23:41,368 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.4951, amount=20.197939810139367, ts:2021-03-01 07:23:41
+2021-03-01 07:23:41,368 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:23:41,368 - xrp - INFO - =========================================
+2021-03-01 07:23:41,369 - xrp - INFO - sleep 299 seconds .....
+2021-03-01 07:28:40,462 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-01 07:28:40,653 - xrp - INFO - xrpusdt  300
+2021-03-01 07:28:40,835 - xrp - INFO - xrp3lusdt  300
+2021-03-01 07:28:41,017 - xrp - INFO - xrp3susdt  300
+2021-03-01 07:28:41,018 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-01 07:28:41,036 - xrp - INFO - count_A_earn = 130 , count_B_earn = 0 , invest_direction = planA , threshold_value=120.0
+2021-03-01 07:28:41,036 - xrp - INFO - invest_direction = planA   last_trend = 1
+2021-03-01 07:28:41,297 - xrp - INFO - SELL LAST COIN
+2021-03-01 07:28:41,297 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:20.197939810139367, sell_cur_price:0.5073
+2021-03-01 07:28:41,297 - xrp - INFO - sell_cur_price * last_amount = 10.2464148656837
+2021-03-01 07:28:41,297 - xrp - INFO - current_balance = 10.598546650996123  sell_ts:2021-03-01 07:28:41  demo_action_launch_time: 2021-03-01 06:08:40
+2021-03-01 07:28:41,297 - xrp - INFO - demo_action_running_duration: 1:20:01
+2021-03-01 07:28:41,297 - xrp - INFO - earning_ratio = 5.985466509961235%
+2021-03-01 07:28:41,297 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-01 07:28:41,427 - xrp - INFO - actual_last_symbol:xrp3lusdt, actual_last_currency:xrp3l, actual_last_amount:20.197939810139367, actual_sell_cur_price:0.5073
+2021-03-01 07:28:41,427 - xrp - INFO - actual_sell_cur_price * actual_last_amount = 10.2464148656837
+2021-03-01 07:28:41,428 - xrp - INFO - actual_balance=10.301956804972887, ts_actual_sell=2021-03-01 07:28:41
+2021-03-01 07:28:41,428 - xrp - INFO - ***** update stop_actual_invest  *****
+2021-03-01 07:28:41,428 - xrp - INFO - last_sell_cash=10.2464148656837
+2021-03-01 07:28:41,428 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-01 07:28:41,428 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-01 07:28:41,428 - xrp - INFO - current_balance = 10.598546650996123
+2021-03-01 07:28:41,428 - xrp - INFO - BUY NEW COINS
+2021-03-01 07:28:41,428 - xrp - INFO - symbol:xrp3lusdt, currency:xrp3l, cur_price:0.5073, amount=19.712201852946976, ts:2021-03-01 07:28:41
+2021-03-01 07:28:41,428 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-01 07:28:41,428 - xrp - INFO - =========================================
+2021-03-01 07:28:41,429 - xrp - INFO - sleep 299 seconds .....
