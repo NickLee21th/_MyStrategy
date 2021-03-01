@@ -90,8 +90,8 @@ def collection_job(queue=None, log_folder_name=None):
                             "count": 1,
                             "earning_ratio_ALL": queue_item["earning_ratio"],
                             "current_balance_ALL": queue_item["current_balance"],
-                            queue_item["symbol"]+"_stop_actual_invest": queue_item["stop_actual_invest"],
                             "actual_balance_ALL": queue_item["actual_balance"],
+                            queue_item["symbol"]+"_stop_actual_invest": queue_item["stop_actual_invest"],
                         }
                         symbol = queue_item["symbol"]
                         earn_all[key][symbol] = queue_item
