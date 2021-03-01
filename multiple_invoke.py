@@ -33,7 +33,7 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
 def schedule_job(etp, dt_stamp,queue=None,
-                 log_folder_name=None, history_size=None
+                 log_folder_name=None, history_size=None,
                  threshold_value_adjust_rate=None):
     access_key = ACCESS_KEY
     secret_key = SECRET_KEY
