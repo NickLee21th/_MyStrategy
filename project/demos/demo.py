@@ -8,7 +8,6 @@ from multiprocessing import Pool, Manager
 
 TIME_PERIOD = "5min"  # 1min, 5min, 15min, 30min
 TIME_PERIOD_VALUE = 5
-SIZE = 1000  # 20  # 300
 STOP_LOST_RATE = 0.0  # 止损
 
 class DemoStrategy:
@@ -30,6 +29,7 @@ class DemoStrategy:
     s_access_key = S_ACCESS_KEY
     s_secret_key = S_SECRET_KEY
     etp = ""
+    history_size = 1000 # 20  # 300
     dt_stamp = ""
     demo_logger = None
     data_dict = {}
@@ -295,7 +295,7 @@ class DemoStrategy:
         self.demo_print("I'm %s in demo_action" % self.etp)
         self.demo_action_launch_time = int(time.time())
         count = 0
-        Max_Count = 2  # 1000
+        Max_Count = 1000
         while count < Max_Count:
             time_stamp_start = int(time.time())
             self.data_dict = {}
@@ -570,7 +570,7 @@ class DemoStrategy:
     def do_action(self, action_index):
         try:
             period = TIME_PERIOD
-            size = SIZE
+            size = self.history_size
             step_range = int(size / 2)
             cur_ts = 1000
             last_ts = 0

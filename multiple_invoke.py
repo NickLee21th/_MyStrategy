@@ -32,7 +32,7 @@ def timeStamp_to_datetime(timeStamp, dt_format=None):
         dt_format = "%Y-%m-%d-%H-%M-%S"
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
-def schedule_job(etp, dt_stamp,queue=None,log_folder_name=None):
+def schedule_job(etp, dt_stamp,queue=None,log_folder_name=None, history_size=None):
     access_key = ACCESS_KEY
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
@@ -41,9 +41,7 @@ def schedule_job(etp, dt_stamp,queue=None,log_folder_name=None):
         demo.queue = queue
         demo.etp = etp
         demo.dt_stamp = dt_stamp
-        # demo.access_key = access_key
-        # demo.secret_key = secret_key
-        # demo.account_id = account_id
+        demo.history_size = history_size
         demo.demon_action(log_folder_name)
         # demo.demon_prediction()
     except Exception as ex:
@@ -106,13 +104,14 @@ def collection_job(queue=None, log_folder_name=None):
         print("Exception in collection_job")
         print("ex=%s" % ex)
 
-def long_time_task(etp, dt_stamp, queue, log_folder_name):
+def long_time_task(etp, dt_stamp, queue, log_folder_name, history_size):
     print('Run task %s (%s)...' % (etp, os.getpid()))
     start = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (start= %s)...' % (etp, start))
     # cmd = 'python3 schedule_job.py %s %s' % (etp, dt_stamp)
     # os.system(cmd)
-    schedule_job(etp=etp, dt_stamp=dt_stamp, queue=queue,log_folder_name=log_folder_name)
+    schedule_job(etp=etp, dt_stamp=dt_stamp, queue=queue,
+                 log_folder_name=log_folder_name, history_size=history_size)
     end = timeStamp_to_datetime(int(time.time()))
     print('Run task %s (end= %s)...' % (etp, end))
 
@@ -124,13 +123,14 @@ def long_time_task_2(queue, log_folder_name):
     end = timeStamp_to_datetime(int(time.time()))
     print('Run COLLECTION task (end= %s)...' % end)
 
-def multi_process(dt_stamp, log_folder_name):
+def multi_process(dt_stamp, log_folder_name, history_size):
     print('Parent process %s.' % os.getpid())
     process_pool_size = 11
     queue = Manager().Queue(process_pool_size * 2)
     p = Pool(process_pool_size)
     for etp in ETP_LIST:
-        p.apply_async(long_time_task, args=(etp, dt_stamp, queue, log_folder_name))
+        p.apply_async(long_time_task,
+                      args=(etp, dt_stamp, queue, log_folder_name, history_size))
     p.apply_async(long_time_task_2, args=(queue, log_folder_name))
     print('Waiting for all subprocesses done...')
     p.close()
@@ -211,12 +211,17 @@ if __name__=='__main__':
     dt_stamp = timeStamp_to_datetime(time_stamp)
 
     log_folder_name = "demo_action_log"
+    history_size = 1000
     argvs = sys.argv
     if len(argvs) > 1:
         log_folder_name = argvs[1]
+    if len(argvs) > 2:
+        history_size = argvs[2]
+    print("log_folder_name: %s" % log_folder_name)
+    print("history_size: %s" % history_size)
     cmd = 'mkdir %s' % log_folder_name
     os.system(cmd)
-    multi_process(dt_stamp, log_folder_name)
+    multi_process(dt_stamp, log_folder_name, history_size)
 
     # while True:
 
