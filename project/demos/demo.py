@@ -328,8 +328,9 @@ class DemoStrategy:
             running_duration = self.get_duration(ts_sell - self.demo_action_launch_time)
             self.demo_print("last_symbol:%s, last_currency:%s, last_amount:%s, sell_cur_price:%s" %
                             (self.last_symbol, self.last_currency, self.last_amount, sell_cur_price))
-            self.demo_print("sell_cur_price * last_amount = %s" % (sell_cur_price * self.last_amount))
-            self.current_balance += sell_cur_price * self.last_amount
+            last_sell_cash = sell_cur_price * self.last_amount
+            self.demo_print("sell_cur_price * last_amount = %s" % last_sell_cash)
+            self.current_balance += last_sell_cash
             self.demo_print("current_balance = %s  sell_ts:%s  demo_action_launch_time: %s"
                             % (self.current_balance, timeStamp_to_datetime(ts_sell),
                                timeStamp_to_datetime(self.demo_action_launch_time)))
@@ -358,10 +359,12 @@ class DemoStrategy:
                 self.actual_last_currency = "Nothing"
                 self.actual_last_amount = 0.0
             # update stop_actual_invest
+            self.demo_print("***** update stop_actual_invest  *****")
+            self.demo_print("last_sell_cash=%s" % last_sell_cash)
             if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
                 self.stop_actual_invest = True
             else:
-                if (sell_cur_price * self.last_amount) < self.once_invest:  # 触发止损
+                if last_sell_cash < self.once_invest:  # 触发止损
                     self.stop_actual_invest = True
                 else:
                     self.stop_actual_invest = False
