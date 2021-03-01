@@ -1,0 +1,35 @@
+2021-02-28 14:17:02,266 - link - INFO - I'm link in demo_action
+2021-02-28 14:17:02,271 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-02-28 14:17:02,678 - link - INFO - linkusdt  1000
+2021-02-28 14:17:02,979 - link - INFO - link3lusdt  1000
+2021-02-28 14:17:03,350 - link - INFO - link3susdt  1000
+2021-02-28 14:17:03,350 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-02-28 14:17:03,824 - link - INFO - count_A_earn = 3 , count_B_earn = 500 , invest_direction = planB , threshold_value=400.0
+2021-02-28 14:17:03,824 - link - INFO - invest_direction = planB   last_trend = -1
+2021-02-28 14:17:04,010 - link - INFO - SEND QUEUE INFO - START
+2021-02-28 14:17:04,017 - link - INFO - SEND QUEUE INFO - FINISH
+2021-02-28 14:17:04,017 - link - INFO - current_balance = 10.0
+2021-02-28 14:17:04,017 - link - INFO - BUY NEW COINS
+2021-02-28 14:17:04,017 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:3.3673, amount=2.969738366049951, ts:2021-02-28 14:17:03
+2021-02-28 14:17:04,017 - link - INFO - =========================================
+2021-02-28 14:17:04,018 - link - INFO - sleep 298 seconds .....
+2021-02-28 14:22:02,118 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-02-28 14:22:02,522 - link - INFO - linkusdt  1000
+2021-02-28 14:22:02,818 - link - INFO - link3lusdt  1000
+2021-02-28 14:22:03,112 - link - INFO - link3susdt  1000
+2021-02-28 14:22:03,112 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-02-28 14:22:03,389 - link - INFO - count_A_earn = 3 , count_B_earn = 500 , invest_direction = planB , threshold_value=400.0
+2021-02-28 14:22:03,389 - link - INFO - invest_direction = planB   last_trend = 1
+2021-02-28 14:22:03,646 - link - INFO - SELL LAST COIN
+2021-02-28 14:22:03,646 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.969738366049951, sell_cur_price:3.3363
+2021-02-28 14:22:03,646 - link - INFO - sell_cur_price * last_amount = 9.90793811065245
+2021-02-28 14:22:03,646 - link - INFO - current_balance = 9.90793811065245  sell_ts:2021-02-28 14:22:03  demo_action_launch_time: 2021-02-28 14:17:02
+2021-02-28 14:22:03,646 - link - INFO - demo_action_running_duration: 0:05:01
+2021-02-28 14:22:03,646 - link - INFO - earning_ratio = -0.9206188934754954%
+2021-02-28 14:22:03,647 - link - INFO - SEND QUEUE INFO - START
+2021-02-28 14:22:03,649 - link - INFO - SEND QUEUE INFO - FINISH
+2021-02-28 14:22:03,649 - link - INFO - current_balance = 9.90793811065245
+2021-02-28 14:22:03,649 - link - INFO - BUY NEW COINS
+2021-02-28 14:22:03,649 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.002496, amount=4006.4102564102564, ts:2021-02-28 14:22:03
+2021-02-28 14:22:03,649 - link - INFO - =========================================
+2021-02-28 14:22:03,649 - link - INFO - sleep 299 seconds .....
