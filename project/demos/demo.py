@@ -840,11 +840,13 @@ class DemoStrategy:
                         "finished": finished
                     }
                     trend = 0  # 平
-                    change_rate = (item["close"] - item["open"]) / item["open"]
-                    if change_rate < 0:  # -0.0001:
+                    close_price = float(item["close"])
+                    open_price = float(item["open"])
+                    if close_price < open_price:
                         trend = -1  # 跌
-                    elif change_rate > 0:  # 0.0001:
+                    elif close_price > open_price:
                         trend = 1  # 涨
+                    change_rate = (close_price - open_price) / open_price
                     trend_symbol_item["change_rate"] = change_rate
                     trend_symbol_item["trend"] = trend
                     trend_symbol_list.append(trend_symbol_item)
@@ -888,6 +890,8 @@ class DemoStrategy:
             index = 1
             assert trend_base_list[1]["finished"]
         last_trend = trend_base_list[index]["trend"]
+        last_open = trend_base_list[index]["open"]
+        last_close = trend_base_list[index]["close"]
         last_ts = trend_base_list[index]["dt"]
         invest_direction = "no_plan"
         if count_B_earn > 0 and count_B_earn > count_A_earn \
@@ -896,9 +900,9 @@ class DemoStrategy:
         elif count_A_earn > 0 and count_A_earn > count_B_earn \
                 and count_A_earn > (step_range * self.threshold_value_adjust_rate):
             invest_direction = "planA"
-        self.demo_print("count_A_earn = %s , count_B_earn = %s , invest_direction = %s , threshold_value=%s"
-                        % (count_A_earn, count_B_earn, invest_direction,
-                           step_range*self.threshold_value_adjust_rate))
+        self.demo_print("count_A_earn = %s , count_B_earn = %s , threshold_value=%s"
+                        % (count_A_earn, count_B_earn, step_range*self.threshold_value_adjust_rate))
+        self.demo_print("last_open=%s, last_close=%s, invest_direction=%s" % (last_open, last_close, invest_direction))
         return last_ts, last_trend, invest_direction
 
     # 计算指定时长内的趋势数据
