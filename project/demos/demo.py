@@ -607,7 +607,8 @@ class DemoStrategy:
             assert (60*TIME_PERIOD_VALUE) < (cur_ts-last_ts)
             print("OK -step 2 - judge_invest_direction")
             # 根据 invest_direction 获取交易对价格
-            self.demo_print("invest_direction = %s   last_trend = %s" % (invest_direction, last_trend))
+            self.demo_print("invest_direction=%s, last_trend=%s, last_ts=%s"
+                            % (invest_direction, last_trend, timeStamp_to_datetime(last_ts)))
             symbol_l = self.etp + "3lusdt"
             currency_l = self.etp + "3l"
             cur_price_l = 0.0
