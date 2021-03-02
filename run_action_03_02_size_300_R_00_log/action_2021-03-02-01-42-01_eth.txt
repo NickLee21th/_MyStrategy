@@ -1,0 +1,953 @@
+2021-03-02 01:42:01,604 - eth - INFO - I'm eth in demo_action
+2021-03-02 01:42:01,605 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 01:42:01,825 - eth - INFO - ethusdt  300
+2021-03-02 01:42:02,018 - eth - INFO - eth3lusdt  300
+2021-03-02 01:42:02,142 - eth - INFO - eth3susdt  300
+2021-03-02 01:42:02,142 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 01:42:02,161 - eth - INFO - count_A_earn = 86 , count_B_earn = 17 , threshold_value=0.0
+2021-03-02 01:42:02,161 - eth - INFO - last_open=1555.0, last_close=1555.75, invest_direction=planA
+2021-03-02 01:42:02,161 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 01:42:02,275 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 01:42:02,292 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 01:42:02,292 - eth - INFO - current_balance = 10.0
+2021-03-02 01:42:02,292 - eth - INFO - BUY NEW COINS
+2021-03-02 01:42:02,292 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.7654, amount=0.2876423110333838, ts:2021-03-02 01:42:02
+2021-03-02 01:42:02,292 - eth - INFO - =========================================
+2021-03-02 01:42:02,292 - eth - INFO - sleep 299 seconds .....
+2021-03-02 01:47:01,392 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 01:47:01,574 - eth - INFO - ethusdt  300
+2021-03-02 01:47:01,767 - eth - INFO - eth3lusdt  300
+2021-03-02 01:47:01,884 - eth - INFO - eth3susdt  300
+2021-03-02 01:47:01,884 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 01:47:01,903 - eth - INFO - count_A_earn = 87 , count_B_earn = 16 , threshold_value=0.0
+2021-03-02 01:47:01,903 - eth - INFO - last_open=1555.75, last_close=1560.1, invest_direction=planA
+2021-03-02 01:47:01,903 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 01:47:02,155 - eth - INFO - SELL LAST COIN
+2021-03-02 01:47:02,155 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2876423110333838, sell_cur_price:34.8404
+2021-03-02 01:47:02,155 - eth - INFO - sell_cur_price * last_amount = 10.021573173327505
+2021-03-02 01:47:02,155 - eth - INFO - current_balance = 10.021573173327505  sell_ts:2021-03-02 01:47:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 01:47:02,155 - eth - INFO - demo_action_running_duration: 0:05:01
+2021-03-02 01:47:02,155 - eth - INFO - earning_ratio = 0.215731733275053%
+2021-03-02 01:47:02,155 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 01:47:02,156 - eth - INFO - last_sell_cash=10.021573173327505
+2021-03-02 01:47:02,156 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 01:47:02,156 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 01:47:02,156 - eth - INFO - current_balance = 10.021573173327505
+2021-03-02 01:47:02,156 - eth - INFO - BUY NEW COINS
+2021-03-02 01:47:02,156 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.8404, amount=0.28702311110090584, ts:2021-03-02 01:47:01
+2021-03-02 01:47:02,156 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 01:47:02,156 - eth - INFO - =========================================
+2021-03-02 01:47:02,157 - eth - INFO - sleep 299 seconds .....
+2021-03-02 01:52:01,239 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 01:52:01,429 - eth - INFO - ethusdt  300
+2021-03-02 01:52:01,618 - eth - INFO - eth3lusdt  300
+2021-03-02 01:52:01,813 - eth - INFO - eth3susdt  300
+2021-03-02 01:52:01,813 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 01:52:01,832 - eth - INFO - count_A_earn = 88 , count_B_earn = 15 , threshold_value=0.0
+2021-03-02 01:52:01,832 - eth - INFO - last_open=1560.09, last_close=1561.01, invest_direction=planA
+2021-03-02 01:52:01,832 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 01:52:02,099 - eth - INFO - SELL LAST COIN
+2021-03-02 01:52:02,100 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.28702311110090584, sell_cur_price:35.2
+2021-03-02 01:52:02,100 - eth - INFO - sell_cur_price * last_amount = 10.103213510751885
+2021-03-02 01:52:02,100 - eth - INFO - current_balance = 10.12478668407939  sell_ts:2021-03-02 01:52:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 01:52:02,100 - eth - INFO - demo_action_running_duration: 0:10:01
+2021-03-02 01:52:02,100 - eth - INFO - earning_ratio = 1.2478668407939075%
+2021-03-02 01:52:02,100 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 01:52:02,228 - eth - INFO - actual_last_symbol:eth3lusdt, actual_last_currency:eth3l, actual_last_amount:0.28702311110090584, actual_sell_cur_price:35.2
+2021-03-02 01:52:02,228 - eth - INFO - actual_sell_cur_price * actual_last_amount = 10.103213510751885
+2021-03-02 01:52:02,228 - eth - INFO - actual_balance=10.103213510751885, ts_actual_sell=2021-03-02 01:52:02
+2021-03-02 01:52:02,229 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 01:52:02,229 - eth - INFO - last_sell_cash=10.103213510751885
+2021-03-02 01:52:02,229 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 01:52:02,231 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 01:52:02,231 - eth - INFO - current_balance = 10.12478668407939
+2021-03-02 01:52:02,231 - eth - INFO - BUY NEW COINS
+2021-03-02 01:52:02,231 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.2, amount=0.28409090909090906, ts:2021-03-02 01:52:01
+2021-03-02 01:52:02,232 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 01:52:02,232 - eth - INFO - =========================================
+2021-03-02 01:52:02,232 - eth - INFO - sleep 299 seconds .....
+2021-03-02 01:57:01,323 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 01:57:01,452 - eth - INFO - ethusdt  300
+2021-03-02 01:57:01,635 - eth - INFO - eth3lusdt  300
+2021-03-02 01:57:01,826 - eth - INFO - eth3susdt  300
+2021-03-02 01:57:01,826 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 01:57:01,870 - eth - INFO - count_A_earn = 89 , count_B_earn = 14 , threshold_value=0.0
+2021-03-02 01:57:01,870 - eth - INFO - last_open=1561.01, last_close=1567.43, invest_direction=planA
+2021-03-02 01:57:01,870 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 01:57:02,110 - eth - INFO - SELL LAST COIN
+2021-03-02 01:57:02,110 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.28409090909090906, sell_cur_price:35.7257
+2021-03-02 01:57:02,110 - eth - INFO - sell_cur_price * last_amount = 10.14934659090909
+2021-03-02 01:57:02,110 - eth - INFO - current_balance = 10.27413327498848  sell_ts:2021-03-02 01:57:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 01:57:02,110 - eth - INFO - demo_action_running_duration: 0:15:01
+2021-03-02 01:57:02,110 - eth - INFO - earning_ratio = 2.7413327498848084%
+2021-03-02 01:57:02,110 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 01:57:02,219 - eth - INFO - actual_last_symbol:eth3lusdt, actual_last_currency:eth3l, actual_last_amount:0.28409090909090906, actual_sell_cur_price:35.7257
+2021-03-02 01:57:02,220 - eth - INFO - actual_sell_cur_price * actual_last_amount = 10.14934659090909
+2021-03-02 01:57:02,220 - eth - INFO - actual_balance=10.252560101660976, ts_actual_sell=2021-03-02 01:57:02
+2021-03-02 01:57:02,220 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 01:57:02,220 - eth - INFO - last_sell_cash=10.14934659090909
+2021-03-02 01:57:02,220 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 01:57:02,220 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 01:57:02,220 - eth - INFO - current_balance = 10.27413327498848
+2021-03-02 01:57:02,221 - eth - INFO - BUY NEW COINS
+2021-03-02 01:57:02,221 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.7257, amount=0.279910540591227, ts:2021-03-02 01:57:01
+2021-03-02 01:57:02,221 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 01:57:02,221 - eth - INFO - =========================================
+2021-03-02 01:57:02,221 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:02:01,223 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:02:01,430 - eth - INFO - ethusdt  300
+2021-03-02 02:02:01,644 - eth - INFO - eth3lusdt  300
+2021-03-02 02:02:01,842 - eth - INFO - eth3susdt  300
+2021-03-02 02:02:01,842 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:02:01,899 - eth - INFO - count_A_earn = 90 , count_B_earn = 13 , threshold_value=0.0
+2021-03-02 02:02:01,899 - eth - INFO - last_open=1567.44, last_close=1567.39, invest_direction=planA
+2021-03-02 02:02:01,899 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 02:02:02,132 - eth - INFO - SELL LAST COIN
+2021-03-02 02:02:02,132 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.279910540591227, sell_cur_price:35.2
+2021-03-02 02:02:02,132 - eth - INFO - sell_cur_price * last_amount = 9.852851028811191
+2021-03-02 02:02:02,132 - eth - INFO - current_balance = 10.126984303799672  sell_ts:2021-03-02 02:02:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:02:02,133 - eth - INFO - demo_action_running_duration: 0:20:01
+2021-03-02 02:02:02,133 - eth - INFO - earning_ratio = 1.2698430379967185%
+2021-03-02 02:02:02,133 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 02:02:02,271 - eth - INFO - actual_last_symbol:eth3lusdt, actual_last_currency:eth3l, actual_last_amount:0.279910540591227, actual_sell_cur_price:35.2
+2021-03-02 02:02:02,272 - eth - INFO - actual_sell_cur_price * actual_last_amount = 9.852851028811191
+2021-03-02 02:02:02,272 - eth - INFO - actual_balance=10.105411130472167, ts_actual_sell=2021-03-02 02:02:02
+2021-03-02 02:02:02,272 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:02:02,272 - eth - INFO - last_sell_cash=9.852851028811191
+2021-03-02 02:02:02,272 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:02:02,272 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:02:02,272 - eth - INFO - current_balance = 10.126984303799672
+2021-03-02 02:02:02,272 - eth - INFO - BUY NEW COINS
+2021-03-02 02:02:02,272 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.005945, amount=1682.0857863751053, ts:2021-03-02 02:02:01
+2021-03-02 02:02:02,272 - eth - INFO - =========================================
+2021-03-02 02:02:02,273 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:07:01,303 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:07:01,439 - eth - INFO - ethusdt  300
+2021-03-02 02:07:01,555 - eth - INFO - eth3lusdt  300
+2021-03-02 02:07:01,747 - eth - INFO - eth3susdt  300
+2021-03-02 02:07:01,747 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:07:01,767 - eth - INFO - count_A_earn = 91 , count_B_earn = 12 , threshold_value=0.0
+2021-03-02 02:07:01,768 - eth - INFO - last_open=1567.39, last_close=1555.06, invest_direction=planA
+2021-03-02 02:07:01,768 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 02:07:02,017 - eth - INFO - SELL LAST COIN
+2021-03-02 02:07:02,017 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1682.0857863751053, sell_cur_price:0.006085
+2021-03-02 02:07:02,017 - eth - INFO - sell_cur_price * last_amount = 10.235492010092516
+2021-03-02 02:07:02,017 - eth - INFO - current_balance = 10.362476313892188  sell_ts:2021-03-02 02:07:01  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:07:02,017 - eth - INFO - demo_action_running_duration: 0:25:00
+2021-03-02 02:07:02,017 - eth - INFO - earning_ratio = 3.6247631389218786%
+2021-03-02 02:07:02,017 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:07:02,018 - eth - INFO - last_sell_cash=10.235492010092516
+2021-03-02 02:07:02,018 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:07:02,018 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:07:02,018 - eth - INFO - current_balance = 10.362476313892188
+2021-03-02 02:07:02,019 - eth - INFO - BUY NEW COINS
+2021-03-02 02:07:02,019 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006085, amount=1643.3853738701725, ts:2021-03-02 02:07:01
+2021-03-02 02:07:02,019 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 02:07:02,019 - eth - INFO - =========================================
+2021-03-02 02:07:02,019 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:12:01,119 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:12:01,300 - eth - INFO - ethusdt  300
+2021-03-02 02:12:01,613 - eth - INFO - eth3lusdt  300
+2021-03-02 02:12:01,826 - eth - INFO - eth3susdt  300
+2021-03-02 02:12:01,826 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:12:01,845 - eth - INFO - count_A_earn = 92 , count_B_earn = 11 , threshold_value=0.0
+2021-03-02 02:12:01,845 - eth - INFO - last_open=1554.81, last_close=1564.58, invest_direction=planA
+2021-03-02 02:12:01,845 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 02:12:02,099 - eth - INFO - SELL LAST COIN
+2021-03-02 02:12:02,099 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1643.3853738701725, sell_cur_price:0.005951
+2021-03-02 02:12:02,099 - eth - INFO - sell_cur_price * last_amount = 9.779786359901395
+2021-03-02 02:12:02,100 - eth - INFO - current_balance = 10.142262673793583  sell_ts:2021-03-02 02:12:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:12:02,100 - eth - INFO - demo_action_running_duration: 0:30:01
+2021-03-02 02:12:02,100 - eth - INFO - earning_ratio = 1.4226267379358326%
+2021-03-02 02:12:02,100 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 02:12:02,234 - eth - INFO - actual_last_symbol:eth3susdt, actual_last_currency:eth3s, actual_last_amount:1643.3853738701725, actual_sell_cur_price:0.005951
+2021-03-02 02:12:02,235 - eth - INFO - actual_sell_cur_price * actual_last_amount = 9.779786359901395
+2021-03-02 02:12:02,235 - eth - INFO - actual_balance=9.885197490373562, ts_actual_sell=2021-03-02 02:12:02
+2021-03-02 02:12:02,235 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:12:02,235 - eth - INFO - last_sell_cash=9.779786359901395
+2021-03-02 02:12:02,235 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:12:02,235 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:12:02,235 - eth - INFO - current_balance = 10.142262673793583
+2021-03-02 02:12:02,235 - eth - INFO - BUY NEW COINS
+2021-03-02 02:12:02,235 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.0534, amount=0.2852790314206325, ts:2021-03-02 02:12:01
+2021-03-02 02:12:02,236 - eth - INFO - =========================================
+2021-03-02 02:12:02,236 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:17:01,335 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:17:01,528 - eth - INFO - ethusdt  300
+2021-03-02 02:17:01,738 - eth - INFO - eth3lusdt  300
+2021-03-02 02:17:01,953 - eth - INFO - eth3susdt  300
+2021-03-02 02:17:01,954 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:17:01,971 - eth - INFO - count_A_earn = 93 , count_B_earn = 10 , threshold_value=0.0
+2021-03-02 02:17:01,972 - eth - INFO - last_open=1564.19, last_close=1575.48, invest_direction=planA
+2021-03-02 02:17:01,972 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 02:17:02,210 - eth - INFO - SELL LAST COIN
+2021-03-02 02:17:02,211 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2852790314206325, sell_cur_price:35.4347
+2021-03-02 02:17:02,211 - eth - INFO - sell_cur_price * last_amount = 10.108776894680686
+2021-03-02 02:17:02,211 - eth - INFO - current_balance = 10.251039568474269  sell_ts:2021-03-02 02:17:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:17:02,211 - eth - INFO - demo_action_running_duration: 0:35:01
+2021-03-02 02:17:02,211 - eth - INFO - earning_ratio = 2.51039568474269%
+2021-03-02 02:17:02,211 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:17:02,211 - eth - INFO - last_sell_cash=10.108776894680686
+2021-03-02 02:17:02,211 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:17:02,211 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:17:02,211 - eth - INFO - current_balance = 10.251039568474269
+2021-03-02 02:17:02,211 - eth - INFO - BUY NEW COINS
+2021-03-02 02:17:02,212 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.4347, amount=0.2822092468681829, ts:2021-03-02 02:17:02
+2021-03-02 02:17:02,212 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 02:17:02,212 - eth - INFO - =========================================
+2021-03-02 02:17:02,212 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:22:01,271 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:22:01,392 - eth - INFO - ethusdt  300
+2021-03-02 02:22:01,594 - eth - INFO - eth3lusdt  300
+2021-03-02 02:22:01,781 - eth - INFO - eth3susdt  300
+2021-03-02 02:22:01,781 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:22:01,806 - eth - INFO - count_A_earn = 94 , count_B_earn = 9 , threshold_value=0.0
+2021-03-02 02:22:01,806 - eth - INFO - last_open=1575.42, last_close=1572.02, invest_direction=planA
+2021-03-02 02:22:01,806 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 02:22:02,073 - eth - INFO - SELL LAST COIN
+2021-03-02 02:22:02,073 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2822092468681829, sell_cur_price:35.2744
+2021-03-02 02:22:02,073 - eth - INFO - sell_cur_price * last_amount = 9.95476185772703
+2021-03-02 02:22:02,073 - eth - INFO - current_balance = 10.2058014262013  sell_ts:2021-03-02 02:22:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:22:02,073 - eth - INFO - demo_action_running_duration: 0:40:01
+2021-03-02 02:22:02,073 - eth - INFO - earning_ratio = 2.0580142620129926%
+2021-03-02 02:22:02,073 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 02:22:02,186 - eth - INFO - actual_last_symbol:eth3lusdt, actual_last_currency:eth3l, actual_last_amount:0.2822092468681829, actual_sell_cur_price:35.2744
+2021-03-02 02:22:02,186 - eth - INFO - actual_sell_cur_price * actual_last_amount = 9.95476185772703
+2021-03-02 02:22:02,186 - eth - INFO - actual_balance=9.839959348100592, ts_actual_sell=2021-03-02 02:22:02
+2021-03-02 02:22:02,186 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:22:02,186 - eth - INFO - last_sell_cash=9.95476185772703
+2021-03-02 02:22:02,186 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:22:02,187 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:22:02,187 - eth - INFO - current_balance = 10.2058014262013
+2021-03-02 02:22:02,187 - eth - INFO - BUY NEW COINS
+2021-03-02 02:22:02,187 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.005915, amount=1690.61707523246, ts:2021-03-02 02:22:01
+2021-03-02 02:22:02,187 - eth - INFO - =========================================
+2021-03-02 02:22:02,187 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:27:01,287 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:27:01,469 - eth - INFO - ethusdt  300
+2021-03-02 02:27:01,668 - eth - INFO - eth3lusdt  300
+2021-03-02 02:27:01,879 - eth - INFO - eth3susdt  300
+2021-03-02 02:27:01,880 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:27:01,898 - eth - INFO - count_A_earn = 95 , count_B_earn = 8 , threshold_value=0.0
+2021-03-02 02:27:01,898 - eth - INFO - last_open=1571.94, last_close=1569.02, invest_direction=planA
+2021-03-02 02:27:01,898 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 02:27:02,155 - eth - INFO - SELL LAST COIN
+2021-03-02 02:27:02,156 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1690.61707523246, sell_cur_price:0.00592
+2021-03-02 02:27:02,156 - eth - INFO - sell_cur_price * last_amount = 10.008453085376162
+2021-03-02 02:27:02,156 - eth - INFO - current_balance = 10.214254511577462  sell_ts:2021-03-02 02:27:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:27:02,156 - eth - INFO - demo_action_running_duration: 0:45:01
+2021-03-02 02:27:02,156 - eth - INFO - earning_ratio = 2.1425451157746167%
+2021-03-02 02:27:02,156 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:27:02,156 - eth - INFO - last_sell_cash=10.008453085376162
+2021-03-02 02:27:02,156 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:27:02,156 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:27:02,156 - eth - INFO - current_balance = 10.214254511577462
+2021-03-02 02:27:02,156 - eth - INFO - BUY NEW COINS
+2021-03-02 02:27:02,156 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.00592, amount=1689.1891891891892, ts:2021-03-02 02:27:01
+2021-03-02 02:27:02,156 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 02:27:02,157 - eth - INFO - =========================================
+2021-03-02 02:27:02,157 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:32:01,195 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:32:01,394 - eth - INFO - ethusdt  300
+2021-03-02 02:32:01,509 - eth - INFO - eth3lusdt  300
+2021-03-02 02:32:01,691 - eth - INFO - eth3susdt  300
+2021-03-02 02:32:01,691 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:32:01,709 - eth - INFO - count_A_earn = 96 , count_B_earn = 7 , threshold_value=0.0
+2021-03-02 02:32:01,710 - eth - INFO - last_open=1568.92, last_close=1567.4, invest_direction=planA
+2021-03-02 02:32:01,710 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 02:32:01,981 - eth - INFO - SELL LAST COIN
+2021-03-02 02:32:01,981 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1689.1891891891892, sell_cur_price:0.00583
+2021-03-02 02:32:01,981 - eth - INFO - sell_cur_price * last_amount = 9.847972972972974
+2021-03-02 02:32:01,981 - eth - INFO - current_balance = 10.062227484550435  sell_ts:2021-03-02 02:32:01  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:32:01,981 - eth - INFO - demo_action_running_duration: 0:50:00
+2021-03-02 02:32:01,981 - eth - INFO - earning_ratio = 0.6222748455043536%
+2021-03-02 02:32:01,981 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 02:32:02,123 - eth - INFO - actual_last_symbol:eth3susdt, actual_last_currency:eth3s, actual_last_amount:1689.1891891891892, actual_sell_cur_price:0.00583
+2021-03-02 02:32:02,123 - eth - INFO - actual_sell_cur_price * actual_last_amount = 9.847972972972974
+2021-03-02 02:32:02,123 - eth - INFO - actual_balance=9.687932321073566, ts_actual_sell=2021-03-02 02:32:02
+2021-03-02 02:32:02,123 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:32:02,123 - eth - INFO - last_sell_cash=9.847972972972974
+2021-03-02 02:32:02,123 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:32:02,124 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:32:02,124 - eth - INFO - current_balance = 10.062227484550435
+2021-03-02 02:32:02,124 - eth - INFO - BUY NEW COINS
+2021-03-02 02:32:02,124 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.00583, amount=1715.2658662092624, ts:2021-03-02 02:32:01
+2021-03-02 02:32:02,124 - eth - INFO - =========================================
+2021-03-02 02:32:02,124 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:37:01,127 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:37:01,338 - eth - INFO - ethusdt  300
+2021-03-02 02:37:01,525 - eth - INFO - eth3lusdt  300
+2021-03-02 02:37:01,716 - eth - INFO - eth3susdt  300
+2021-03-02 02:37:01,716 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:37:01,741 - eth - INFO - count_A_earn = 97 , count_B_earn = 6 , threshold_value=0.0
+2021-03-02 02:37:01,741 - eth - INFO - last_open=1567.47, last_close=1582.57, invest_direction=planA
+2021-03-02 02:37:01,741 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 02:37:01,980 - eth - INFO - SELL LAST COIN
+2021-03-02 02:37:01,981 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1715.2658662092624, sell_cur_price:0.00576
+2021-03-02 02:37:01,981 - eth - INFO - sell_cur_price * last_amount = 9.879931389365352
+2021-03-02 02:37:01,981 - eth - INFO - current_balance = 9.942158873915787  sell_ts:2021-03-02 02:37:01  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:37:01,981 - eth - INFO - demo_action_running_duration: 0:55:00
+2021-03-02 02:37:01,981 - eth - INFO - earning_ratio = -0.578411260842131%
+2021-03-02 02:37:01,981 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:37:01,981 - eth - INFO - last_sell_cash=9.879931389365352
+2021-03-02 02:37:01,981 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:37:01,981 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:37:01,982 - eth - INFO - current_balance = 9.942158873915787
+2021-03-02 02:37:01,982 - eth - INFO - BUY NEW COINS
+2021-03-02 02:37:01,982 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:36.1196, amount=0.2768579939977187, ts:2021-03-02 02:37:01
+2021-03-02 02:37:01,982 - eth - INFO - =========================================
+2021-03-02 02:37:01,982 - eth - INFO - sleep 300 seconds .....
+2021-03-02 02:42:02,079 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:42:02,274 - eth - INFO - ethusdt  300
+2021-03-02 02:42:02,455 - eth - INFO - eth3lusdt  300
+2021-03-02 02:42:02,570 - eth - INFO - eth3susdt  300
+2021-03-02 02:42:02,570 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:42:02,588 - eth - INFO - count_A_earn = 98 , count_B_earn = 5 , threshold_value=0.0
+2021-03-02 02:42:02,588 - eth - INFO - last_open=1582.58, last_close=1578.68, invest_direction=planA
+2021-03-02 02:42:02,588 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 02:42:02,851 - eth - INFO - SELL LAST COIN
+2021-03-02 02:42:02,851 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2768579939977187, sell_cur_price:36.054
+2021-03-02 02:42:02,852 - eth - INFO - sell_cur_price * last_amount = 9.981838115593751
+2021-03-02 02:42:02,852 - eth - INFO - current_balance = 9.923996989509538  sell_ts:2021-03-02 02:42:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:42:02,852 - eth - INFO - demo_action_running_duration: 1:00:01
+2021-03-02 02:42:02,852 - eth - INFO - earning_ratio = -0.7600301049046188%
+2021-03-02 02:42:02,852 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:42:02,852 - eth - INFO - last_sell_cash=9.981838115593751
+2021-03-02 02:42:02,852 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:42:02,852 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:42:02,852 - eth - INFO - current_balance = 9.923996989509538
+2021-03-02 02:42:02,853 - eth - INFO - BUY NEW COINS
+2021-03-02 02:42:02,853 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.00577, amount=1733.102253032929, ts:2021-03-02 02:42:02
+2021-03-02 02:42:02,853 - eth - INFO - =========================================
+2021-03-02 02:42:02,853 - eth - INFO - sleep 300 seconds .....
+2021-03-02 02:47:02,951 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:47:03,176 - eth - INFO - ethusdt  300
+2021-03-02 02:47:03,378 - eth - INFO - eth3lusdt  300
+2021-03-02 02:47:03,564 - eth - INFO - eth3susdt  300
+2021-03-02 02:47:03,564 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:47:03,582 - eth - INFO - count_A_earn = 99 , count_B_earn = 4 , threshold_value=0.0
+2021-03-02 02:47:03,582 - eth - INFO - last_open=1578.69, last_close=1579.85, invest_direction=planA
+2021-03-02 02:47:03,583 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 02:47:03,851 - eth - INFO - SELL LAST COIN
+2021-03-02 02:47:03,851 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1733.102253032929, sell_cur_price:0.005784
+2021-03-02 02:47:03,851 - eth - INFO - sell_cur_price * last_amount = 10.024263431542462
+2021-03-02 02:47:03,851 - eth - INFO - current_balance = 9.948260421052  sell_ts:2021-03-02 02:47:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:47:03,851 - eth - INFO - demo_action_running_duration: 1:05:02
+2021-03-02 02:47:03,851 - eth - INFO - earning_ratio = -0.5173957894800019%
+2021-03-02 02:47:03,851 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:47:03,851 - eth - INFO - last_sell_cash=10.024263431542462
+2021-03-02 02:47:03,851 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:47:03,852 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:47:03,852 - eth - INFO - current_balance = 9.948260421052
+2021-03-02 02:47:03,852 - eth - INFO - BUY NEW COINS
+2021-03-02 02:47:03,852 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.9159, amount=0.2784282170292266, ts:2021-03-02 02:47:03
+2021-03-02 02:47:03,852 - eth - INFO - =========================================
+2021-03-02 02:47:03,852 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:52:02,919 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:52:03,110 - eth - INFO - ethusdt  300
+2021-03-02 02:52:03,294 - eth - INFO - eth3lusdt  300
+2021-03-02 02:52:03,527 - eth - INFO - eth3susdt  300
+2021-03-02 02:52:03,528 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:52:03,546 - eth - INFO - count_A_earn = 100 , count_B_earn = 3 , threshold_value=0.0
+2021-03-02 02:52:03,546 - eth - INFO - last_open=1580.07, last_close=1583.26, invest_direction=planA
+2021-03-02 02:52:03,546 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 02:52:03,771 - eth - INFO - SELL LAST COIN
+2021-03-02 02:52:03,771 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2784282170292266, sell_cur_price:36.1614
+2021-03-02 02:52:03,771 - eth - INFO - sell_cur_price * last_amount = 10.068354127280674
+2021-03-02 02:52:03,771 - eth - INFO - current_balance = 10.016614548332674  sell_ts:2021-03-02 02:52:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:52:03,771 - eth - INFO - demo_action_running_duration: 1:10:02
+2021-03-02 02:52:03,772 - eth - INFO - earning_ratio = 0.16614548332674062%
+2021-03-02 02:52:03,772 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:52:03,772 - eth - INFO - last_sell_cash=10.068354127280674
+2021-03-02 02:52:03,772 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:52:03,772 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:52:03,772 - eth - INFO - current_balance = 10.016614548332674
+2021-03-02 02:52:03,772 - eth - INFO - BUY NEW COINS
+2021-03-02 02:52:03,772 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:36.1614, amount=0.27653796589733803, ts:2021-03-02 02:52:03
+2021-03-02 02:52:03,773 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 02:52:03,773 - eth - INFO - =========================================
+2021-03-02 02:52:03,773 - eth - INFO - sleep 299 seconds .....
+2021-03-02 02:57:02,807 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 02:57:02,997 - eth - INFO - ethusdt  300
+2021-03-02 02:57:03,120 - eth - INFO - eth3lusdt  300
+2021-03-02 02:57:03,316 - eth - INFO - eth3susdt  300
+2021-03-02 02:57:03,316 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 02:57:03,334 - eth - INFO - count_A_earn = 101 , count_B_earn = 2 , threshold_value=0.0
+2021-03-02 02:57:03,335 - eth - INFO - last_open=1583.27, last_close=1578.04, invest_direction=planA
+2021-03-02 02:57:03,335 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 02:57:03,552 - eth - INFO - SELL LAST COIN
+2021-03-02 02:57:03,552 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.27653796589733803, sell_cur_price:35.6432
+2021-03-02 02:57:03,552 - eth - INFO - sell_cur_price * last_amount = 9.856698026072
+2021-03-02 02:57:03,552 - eth - INFO - current_balance = 9.873312574404673  sell_ts:2021-03-02 02:57:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 02:57:03,552 - eth - INFO - demo_action_running_duration: 1:15:02
+2021-03-02 02:57:03,552 - eth - INFO - earning_ratio = -1.2668742559532653%
+2021-03-02 02:57:03,552 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 02:57:03,676 - eth - INFO - actual_last_symbol:eth3lusdt, actual_last_currency:eth3l, actual_last_amount:0.27653796589733803, actual_sell_cur_price:35.6432
+2021-03-02 02:57:03,677 - eth - INFO - actual_sell_cur_price * actual_last_amount = 9.856698026072
+2021-03-02 02:57:03,677 - eth - INFO - actual_balance=9.544630347145565, ts_actual_sell=2021-03-02 02:57:03
+2021-03-02 02:57:03,677 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 02:57:03,677 - eth - INFO - last_sell_cash=9.856698026072
+2021-03-02 02:57:03,677 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 02:57:03,677 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 02:57:03,677 - eth - INFO - current_balance = 9.873312574404673
+2021-03-02 02:57:03,678 - eth - INFO - BUY NEW COINS
+2021-03-02 02:57:03,678 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.005833, amount=1714.3836790673754, ts:2021-03-02 02:57:03
+2021-03-02 02:57:03,678 - eth - INFO - =========================================
+2021-03-02 02:57:03,678 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:02:02,755 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:02:02,939 - eth - INFO - ethusdt  300
+2021-03-02 03:02:03,144 - eth - INFO - eth3lusdt  300
+2021-03-02 03:02:03,333 - eth - INFO - eth3susdt  300
+2021-03-02 03:02:03,333 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:02:03,351 - eth - INFO - count_A_earn = 102 , count_B_earn = 2 , threshold_value=0.0
+2021-03-02 03:02:03,352 - eth - INFO - last_open=1578.45, last_close=1567.79, invest_direction=planA
+2021-03-02 03:02:03,352 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 03:02:03,600 - eth - INFO - SELL LAST COIN
+2021-03-02 03:02:03,600 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1714.3836790673754, sell_cur_price:0.005966
+2021-03-02 03:02:03,600 - eth - INFO - sell_cur_price * last_amount = 10.228013029315962
+2021-03-02 03:02:03,600 - eth - INFO - current_balance = 10.101325603720635  sell_ts:2021-03-02 03:02:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:02:03,601 - eth - INFO - demo_action_running_duration: 1:20:02
+2021-03-02 03:02:03,601 - eth - INFO - earning_ratio = 1.0132560372063537%
+2021-03-02 03:02:03,601 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:02:03,601 - eth - INFO - last_sell_cash=10.228013029315962
+2021-03-02 03:02:03,601 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:02:03,601 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:02:03,601 - eth - INFO - current_balance = 10.101325603720635
+2021-03-02 03:02:03,601 - eth - INFO - BUY NEW COINS
+2021-03-02 03:02:03,601 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.005966, amount=1676.1649346295676, ts:2021-03-02 03:02:03
+2021-03-02 03:02:03,601 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-02 03:02:03,601 - eth - INFO - =========================================
+2021-03-02 03:02:03,602 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:07:02,603 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:07:02,795 - eth - INFO - ethusdt  300
+2021-03-02 03:07:02,991 - eth - INFO - eth3lusdt  300
+2021-03-02 03:07:03,184 - eth - INFO - eth3susdt  300
+2021-03-02 03:07:03,184 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:07:03,202 - eth - INFO - count_A_earn = 103 , count_B_earn = 2 , threshold_value=0.0
+2021-03-02 03:07:03,203 - eth - INFO - last_open=1567.9, last_close=1562.17, invest_direction=planA
+2021-03-02 03:07:03,203 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 03:07:03,468 - eth - INFO - SELL LAST COIN
+2021-03-02 03:07:03,469 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1676.1649346295676, sell_cur_price:0.005902
+2021-03-02 03:07:03,469 - eth - INFO - sell_cur_price * last_amount = 9.892725444183709
+2021-03-02 03:07:03,469 - eth - INFO - current_balance = 9.994051047904344  sell_ts:2021-03-02 03:07:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:07:03,469 - eth - INFO - demo_action_running_duration: 1:25:02
+2021-03-02 03:07:03,469 - eth - INFO - earning_ratio = -0.05948952095655713%
+2021-03-02 03:07:03,469 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-02 03:07:03,600 - eth - INFO - actual_last_symbol:eth3susdt, actual_last_currency:eth3s, actual_last_amount:1676.1649346295676, actual_sell_cur_price:0.005902
+2021-03-02 03:07:03,600 - eth - INFO - actual_sell_cur_price * actual_last_amount = 9.892725444183709
+2021-03-02 03:07:03,600 - eth - INFO - actual_balance=9.437355791329274, ts_actual_sell=2021-03-02 03:07:03
+2021-03-02 03:07:03,601 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:07:03,601 - eth - INFO - last_sell_cash=9.892725444183709
+2021-03-02 03:07:03,601 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:07:03,601 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:07:03,601 - eth - INFO - current_balance = 9.994051047904344
+2021-03-02 03:07:03,601 - eth - INFO - BUY NEW COINS
+2021-03-02 03:07:03,601 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.005902, amount=1694.3409013893595, ts:2021-03-02 03:07:03
+2021-03-02 03:07:03,601 - eth - INFO - =========================================
+2021-03-02 03:07:03,602 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:12:02,647 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:12:02,843 - eth - INFO - ethusdt  300
+2021-03-02 03:12:03,029 - eth - INFO - eth3lusdt  300
+2021-03-02 03:12:03,150 - eth - INFO - eth3susdt  300
+2021-03-02 03:12:03,151 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:12:03,169 - eth - INFO - count_A_earn = 104 , count_B_earn = 2 , threshold_value=0.0
+2021-03-02 03:12:03,169 - eth - INFO - last_open=1562.17, last_close=1570.5, invest_direction=planA
+2021-03-02 03:12:03,169 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 03:12:03,423 - eth - INFO - SELL LAST COIN
+2021-03-02 03:12:03,423 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1694.3409013893595, sell_cur_price:0.005869
+2021-03-02 03:12:03,423 - eth - INFO - sell_cur_price * last_amount = 9.94408675025415
+2021-03-02 03:12:03,423 - eth - INFO - current_balance = 9.938137798158495  sell_ts:2021-03-02 03:12:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:12:03,423 - eth - INFO - demo_action_running_duration: 1:30:02
+2021-03-02 03:12:03,423 - eth - INFO - earning_ratio = -0.6186220184150493%
+2021-03-02 03:12:03,423 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:12:03,423 - eth - INFO - last_sell_cash=9.94408675025415
+2021-03-02 03:12:03,423 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:12:03,424 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:12:03,424 - eth - INFO - current_balance = 9.938137798158495
+2021-03-02 03:12:03,424 - eth - INFO - BUY NEW COINS
+2021-03-02 03:12:03,424 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.5, amount=0.28169014084507044, ts:2021-03-02 03:12:03
+2021-03-02 03:12:03,424 - eth - INFO - =========================================
+2021-03-02 03:12:03,424 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:17:02,523 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:17:02,650 - eth - INFO - ethusdt  300
+2021-03-02 03:17:02,986 - eth - INFO - eth3lusdt  300
+2021-03-02 03:17:03,290 - eth - INFO - eth3susdt  300
+2021-03-02 03:17:03,290 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:17:03,308 - eth - INFO - count_A_earn = 105 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:17:03,308 - eth - INFO - last_open=1570.5, last_close=1571.51, invest_direction=planA
+2021-03-02 03:17:03,309 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 03:17:03,546 - eth - INFO - SELL LAST COIN
+2021-03-02 03:17:03,546 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.28169014084507044, sell_cur_price:34.9647
+2021-03-02 03:17:03,546 - eth - INFO - sell_cur_price * last_amount = 9.849211267605634
+2021-03-02 03:17:03,546 - eth - INFO - current_balance = 9.787349065764129  sell_ts:2021-03-02 03:17:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:17:03,546 - eth - INFO - demo_action_running_duration: 1:35:02
+2021-03-02 03:17:03,546 - eth - INFO - earning_ratio = -2.126509342358709%
+2021-03-02 03:17:03,546 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:17:03,546 - eth - INFO - last_sell_cash=9.849211267605634
+2021-03-02 03:17:03,546 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:17:03,547 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:17:03,547 - eth - INFO - current_balance = 9.787349065764129
+2021-03-02 03:17:03,547 - eth - INFO - BUY NEW COINS
+2021-03-02 03:17:03,547 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.9647, amount=0.2860027399062483, ts:2021-03-02 03:17:03
+2021-03-02 03:17:03,547 - eth - INFO - =========================================
+2021-03-02 03:17:03,547 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:22:02,627 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:22:02,818 - eth - INFO - ethusdt  300
+2021-03-02 03:22:02,948 - eth - INFO - eth3lusdt  300
+2021-03-02 03:22:03,150 - eth - INFO - eth3susdt  300
+2021-03-02 03:22:03,150 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:22:03,168 - eth - INFO - count_A_earn = 106 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:22:03,168 - eth - INFO - last_open=1571.5, last_close=1559.0, invest_direction=planA
+2021-03-02 03:22:03,168 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 03:22:03,544 - eth - INFO - SELL LAST COIN
+2021-03-02 03:22:03,544 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2860027399062483, sell_cur_price:34.8119
+2021-03-02 03:22:03,544 - eth - INFO - sell_cur_price * last_amount = 9.956298781342326
+2021-03-02 03:22:03,544 - eth - INFO - current_balance = 9.743647847106455  sell_ts:2021-03-02 03:22:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:22:03,544 - eth - INFO - demo_action_running_duration: 1:40:02
+2021-03-02 03:22:03,544 - eth - INFO - earning_ratio = -2.5635215289354463%
+2021-03-02 03:22:03,544 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:22:03,544 - eth - INFO - last_sell_cash=9.956298781342326
+2021-03-02 03:22:03,544 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:22:03,545 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:22:03,545 - eth - INFO - current_balance = 9.743647847106455
+2021-03-02 03:22:03,545 - eth - INFO - BUY NEW COINS
+2021-03-02 03:22:03,545 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.005992, amount=1668.8918558077437, ts:2021-03-02 03:22:03
+2021-03-02 03:22:03,545 - eth - INFO - =========================================
+2021-03-02 03:22:03,545 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:27:02,635 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:27:02,823 - eth - INFO - ethusdt  300
+2021-03-02 03:27:03,017 - eth - INFO - eth3lusdt  300
+2021-03-02 03:27:03,201 - eth - INFO - eth3susdt  300
+2021-03-02 03:27:03,201 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:27:03,219 - eth - INFO - count_A_earn = 107 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:27:03,220 - eth - INFO - last_open=1559.31, last_close=1554.31, invest_direction=planA
+2021-03-02 03:27:03,220 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 03:27:03,474 - eth - INFO - SELL LAST COIN
+2021-03-02 03:27:03,474 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1668.8918558077437, sell_cur_price:0.006084
+2021-03-02 03:27:03,474 - eth - INFO - sell_cur_price * last_amount = 10.153538050734312
+2021-03-02 03:27:03,474 - eth - INFO - current_balance = 9.897185897840767  sell_ts:2021-03-02 03:27:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:27:03,474 - eth - INFO - demo_action_running_duration: 1:45:02
+2021-03-02 03:27:03,474 - eth - INFO - earning_ratio = -1.028141021592326%
+2021-03-02 03:27:03,474 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:27:03,474 - eth - INFO - last_sell_cash=10.153538050734312
+2021-03-02 03:27:03,475 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:27:03,475 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:27:03,475 - eth - INFO - current_balance = 9.897185897840767
+2021-03-02 03:27:03,475 - eth - INFO - BUY NEW COINS
+2021-03-02 03:27:03,475 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006084, amount=1643.655489809336, ts:2021-03-02 03:27:03
+2021-03-02 03:27:03,475 - eth - INFO - =========================================
+2021-03-02 03:27:03,476 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:32:02,575 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:32:02,768 - eth - INFO - ethusdt  300
+2021-03-02 03:32:02,961 - eth - INFO - eth3lusdt  300
+2021-03-02 03:32:03,156 - eth - INFO - eth3susdt  300
+2021-03-02 03:32:03,156 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:32:03,174 - eth - INFO - count_A_earn = 108 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:32:03,174 - eth - INFO - last_open=1554.3, last_close=1550.5, invest_direction=planA
+2021-03-02 03:32:03,174 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 03:32:03,408 - eth - INFO - SELL LAST COIN
+2021-03-02 03:32:03,408 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1643.655489809336, sell_cur_price:0.006132
+2021-03-02 03:32:03,408 - eth - INFO - sell_cur_price * last_amount = 10.078895463510849
+2021-03-02 03:32:03,408 - eth - INFO - current_balance = 9.976081361351616  sell_ts:2021-03-02 03:32:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:32:03,408 - eth - INFO - demo_action_running_duration: 1:50:02
+2021-03-02 03:32:03,408 - eth - INFO - earning_ratio = -0.23918638648384058%
+2021-03-02 03:32:03,408 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:32:03,408 - eth - INFO - last_sell_cash=10.078895463510849
+2021-03-02 03:32:03,408 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:32:03,409 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:32:03,409 - eth - INFO - current_balance = 9.976081361351616
+2021-03-02 03:32:03,409 - eth - INFO - BUY NEW COINS
+2021-03-02 03:32:03,409 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006132, amount=1630.7893020221786, ts:2021-03-02 03:32:03
+2021-03-02 03:32:03,409 - eth - INFO - =========================================
+2021-03-02 03:32:03,409 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:37:02,455 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:37:02,651 - eth - INFO - ethusdt  300
+2021-03-02 03:37:02,842 - eth - INFO - eth3lusdt  300
+2021-03-02 03:37:03,046 - eth - INFO - eth3susdt  300
+2021-03-02 03:37:03,046 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:37:03,064 - eth - INFO - count_A_earn = 109 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:37:03,064 - eth - INFO - last_open=1550.36, last_close=1557.54, invest_direction=planA
+2021-03-02 03:37:03,064 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 03:37:03,290 - eth - INFO - SELL LAST COIN
+2021-03-02 03:37:03,290 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1630.7893020221786, sell_cur_price:0.006071
+2021-03-02 03:37:03,290 - eth - INFO - sell_cur_price * last_amount = 9.900521852576647
+2021-03-02 03:37:03,290 - eth - INFO - current_balance = 9.876603213928263  sell_ts:2021-03-02 03:37:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:37:03,290 - eth - INFO - demo_action_running_duration: 1:55:02
+2021-03-02 03:37:03,290 - eth - INFO - earning_ratio = -1.233967860717371%
+2021-03-02 03:37:03,290 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:37:03,290 - eth - INFO - last_sell_cash=9.900521852576647
+2021-03-02 03:37:03,290 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:37:03,291 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:37:03,291 - eth - INFO - current_balance = 9.876603213928263
+2021-03-02 03:37:03,291 - eth - INFO - BUY NEW COINS
+2021-03-02 03:37:03,291 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.4895, amount=0.28994331608170604, ts:2021-03-02 03:37:03
+2021-03-02 03:37:03,291 - eth - INFO - =========================================
+2021-03-02 03:37:03,291 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:42:02,379 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:42:02,625 - eth - INFO - ethusdt  300
+2021-03-02 03:42:02,825 - eth - INFO - eth3lusdt  300
+2021-03-02 03:42:03,030 - eth - INFO - eth3susdt  300
+2021-03-02 03:42:03,030 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:42:03,050 - eth - INFO - count_A_earn = 110 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:42:03,050 - eth - INFO - last_open=1557.75, last_close=1555.0, invest_direction=planA
+2021-03-02 03:42:03,050 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 03:42:03,307 - eth - INFO - SELL LAST COIN
+2021-03-02 03:42:03,307 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.28994331608170604, sell_cur_price:34.2673
+2021-03-02 03:42:03,307 - eth - INFO - sell_cur_price * last_amount = 9.935574595166646
+2021-03-02 03:42:03,307 - eth - INFO - current_balance = 9.812177809094909  sell_ts:2021-03-02 03:42:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:42:03,307 - eth - INFO - demo_action_running_duration: 2:00:02
+2021-03-02 03:42:03,307 - eth - INFO - earning_ratio = -1.8782219090509145%
+2021-03-02 03:42:03,307 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:42:03,307 - eth - INFO - last_sell_cash=9.935574595166646
+2021-03-02 03:42:03,308 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:42:03,308 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:42:03,308 - eth - INFO - current_balance = 9.812177809094909
+2021-03-02 03:42:03,308 - eth - INFO - BUY NEW COINS
+2021-03-02 03:42:03,308 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.00611, amount=1636.6612111292961, ts:2021-03-02 03:42:03
+2021-03-02 03:42:03,308 - eth - INFO - =========================================
+2021-03-02 03:42:03,309 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:47:02,379 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:47:02,502 - eth - INFO - ethusdt  300
+2021-03-02 03:47:02,621 - eth - INFO - eth3lusdt  300
+2021-03-02 03:47:03,050 - eth - INFO - eth3susdt  300
+2021-03-02 03:47:03,050 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:47:03,069 - eth - INFO - count_A_earn = 111 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:47:03,069 - eth - INFO - last_open=1554.78, last_close=1549.99, invest_direction=planA
+2021-03-02 03:47:03,069 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 03:47:03,324 - eth - INFO - SELL LAST COIN
+2021-03-02 03:47:03,324 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1636.6612111292961, sell_cur_price:0.006151
+2021-03-02 03:47:03,324 - eth - INFO - sell_cur_price * last_amount = 10.067103109656301
+2021-03-02 03:47:03,324 - eth - INFO - current_balance = 9.87928091875121  sell_ts:2021-03-02 03:47:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:47:03,324 - eth - INFO - demo_action_running_duration: 2:05:02
+2021-03-02 03:47:03,324 - eth - INFO - earning_ratio = -1.2071908124879016%
+2021-03-02 03:47:03,324 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:47:03,325 - eth - INFO - last_sell_cash=10.067103109656301
+2021-03-02 03:47:03,325 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:47:03,325 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:47:03,325 - eth - INFO - current_balance = 9.87928091875121
+2021-03-02 03:47:03,325 - eth - INFO - BUY NEW COINS
+2021-03-02 03:47:03,325 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006151, amount=1625.7519102584945, ts:2021-03-02 03:47:03
+2021-03-02 03:47:03,325 - eth - INFO - =========================================
+2021-03-02 03:47:03,326 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:52:02,379 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:52:02,572 - eth - INFO - ethusdt  300
+2021-03-02 03:52:02,783 - eth - INFO - eth3lusdt  300
+2021-03-02 03:52:02,992 - eth - INFO - eth3susdt  300
+2021-03-02 03:52:02,992 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:52:03,010 - eth - INFO - count_A_earn = 112 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:52:03,011 - eth - INFO - last_open=1549.99, last_close=1555.94, invest_direction=planA
+2021-03-02 03:52:03,011 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 03:52:03,283 - eth - INFO - SELL LAST COIN
+2021-03-02 03:52:03,283 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1625.7519102584945, sell_cur_price:0.006
+2021-03-02 03:52:03,283 - eth - INFO - sell_cur_price * last_amount = 9.754511461550967
+2021-03-02 03:52:03,284 - eth - INFO - current_balance = 9.633792380302177  sell_ts:2021-03-02 03:52:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:52:03,284 - eth - INFO - demo_action_running_duration: 2:10:02
+2021-03-02 03:52:03,284 - eth - INFO - earning_ratio = -3.6620761969782296%
+2021-03-02 03:52:03,284 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:52:03,284 - eth - INFO - last_sell_cash=9.754511461550967
+2021-03-02 03:52:03,284 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:52:03,284 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:52:03,284 - eth - INFO - current_balance = 9.633792380302177
+2021-03-02 03:52:03,285 - eth - INFO - BUY NEW COINS
+2021-03-02 03:52:03,285 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.7633, amount=0.28765968708379236, ts:2021-03-02 03:52:03
+2021-03-02 03:52:03,285 - eth - INFO - =========================================
+2021-03-02 03:52:03,285 - eth - INFO - sleep 299 seconds .....
+2021-03-02 03:57:02,311 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 03:57:02,529 - eth - INFO - ethusdt  300
+2021-03-02 03:57:02,776 - eth - INFO - eth3lusdt  300
+2021-03-02 03:57:02,982 - eth - INFO - eth3susdt  300
+2021-03-02 03:57:02,982 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 03:57:03,000 - eth - INFO - count_A_earn = 113 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 03:57:03,000 - eth - INFO - last_open=1555.94, last_close=1558.53, invest_direction=planA
+2021-03-02 03:57:03,000 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 03:57:03,248 - eth - INFO - SELL LAST COIN
+2021-03-02 03:57:03,248 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.28765968708379236, sell_cur_price:34.4544
+2021-03-02 03:57:03,248 - eth - INFO - sell_cur_price * last_amount = 9.911141922659816
+2021-03-02 03:57:03,248 - eth - INFO - current_balance = 9.544934302961993  sell_ts:2021-03-02 03:57:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 03:57:03,249 - eth - INFO - demo_action_running_duration: 2:15:02
+2021-03-02 03:57:03,249 - eth - INFO - earning_ratio = -4.550656970380071%
+2021-03-02 03:57:03,249 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 03:57:03,249 - eth - INFO - last_sell_cash=9.911141922659816
+2021-03-02 03:57:03,249 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 03:57:03,249 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 03:57:03,249 - eth - INFO - current_balance = 9.544934302961993
+2021-03-02 03:57:03,249 - eth - INFO - BUY NEW COINS
+2021-03-02 03:57:03,249 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.4544, amount=0.290238692300548, ts:2021-03-02 03:57:03
+2021-03-02 03:57:03,249 - eth - INFO - =========================================
+2021-03-02 03:57:03,250 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:02:02,324 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:02:02,508 - eth - INFO - ethusdt  300
+2021-03-02 04:02:02,647 - eth - INFO - eth3lusdt  300
+2021-03-02 04:02:02,850 - eth - INFO - eth3susdt  300
+2021-03-02 04:02:02,851 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:02:02,869 - eth - INFO - count_A_earn = 114 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:02:02,869 - eth - INFO - last_open=1558.52, last_close=1555.45, invest_direction=planA
+2021-03-02 04:02:02,869 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 04:02:03,140 - eth - INFO - SELL LAST COIN
+2021-03-02 04:02:03,141 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.290238692300548, sell_cur_price:34.253
+2021-03-02 04:02:03,141 - eth - INFO - sell_cur_price * last_amount = 9.94154592737067
+2021-03-02 04:02:03,141 - eth - INFO - current_balance = 9.486480230332663  sell_ts:2021-03-02 04:02:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:02:03,141 - eth - INFO - demo_action_running_duration: 2:20:02
+2021-03-02 04:02:03,141 - eth - INFO - earning_ratio = -5.135197696673366%
+2021-03-02 04:02:03,141 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:02:03,141 - eth - INFO - last_sell_cash=9.94154592737067
+2021-03-02 04:02:03,141 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:02:03,142 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:02:03,142 - eth - INFO - current_balance = 9.486480230332663
+2021-03-02 04:02:03,142 - eth - INFO - BUY NEW COINS
+2021-03-02 04:02:03,142 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006113, amount=1635.8580075249467, ts:2021-03-02 04:02:02
+2021-03-02 04:02:03,142 - eth - INFO - =========================================
+2021-03-02 04:02:03,142 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:07:02,159 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:07:02,357 - eth - INFO - ethusdt  300
+2021-03-02 04:07:02,540 - eth - INFO - eth3lusdt  300
+2021-03-02 04:07:02,736 - eth - INFO - eth3susdt  300
+2021-03-02 04:07:02,736 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:07:02,754 - eth - INFO - count_A_earn = 115 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:07:02,755 - eth - INFO - last_open=1555.45, last_close=1564.91, invest_direction=planA
+2021-03-02 04:07:02,755 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 04:07:03,012 - eth - INFO - SELL LAST COIN
+2021-03-02 04:07:03,012 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1635.8580075249467, sell_cur_price:0.005979
+2021-03-02 04:07:03,012 - eth - INFO - sell_cur_price * last_amount = 9.780795026991656
+2021-03-02 04:07:03,012 - eth - INFO - current_balance = 9.26727525732432  sell_ts:2021-03-02 04:07:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:07:03,012 - eth - INFO - demo_action_running_duration: 2:25:01
+2021-03-02 04:07:03,012 - eth - INFO - earning_ratio = -7.327247426756803%
+2021-03-02 04:07:03,012 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:07:03,012 - eth - INFO - last_sell_cash=9.780795026991656
+2021-03-02 04:07:03,012 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:07:03,013 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:07:03,013 - eth - INFO - current_balance = 9.26727525732432
+2021-03-02 04:07:03,013 - eth - INFO - BUY NEW COINS
+2021-03-02 04:07:03,013 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.8408, amount=0.2870198158480861, ts:2021-03-02 04:07:02
+2021-03-02 04:07:03,013 - eth - INFO - =========================================
+2021-03-02 04:07:03,013 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:12:02,079 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:12:02,218 - eth - INFO - ethusdt  300
+2021-03-02 04:12:02,351 - eth - INFO - eth3lusdt  300
+2021-03-02 04:12:02,557 - eth - INFO - eth3susdt  300
+2021-03-02 04:12:02,558 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:12:02,576 - eth - INFO - count_A_earn = 116 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:12:02,576 - eth - INFO - last_open=1564.91, last_close=1563.33, invest_direction=planA
+2021-03-02 04:12:02,576 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 04:12:02,816 - eth - INFO - SELL LAST COIN
+2021-03-02 04:12:02,817 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2870198158480861, sell_cur_price:35.03
+2021-03-02 04:12:02,817 - eth - INFO - sell_cur_price * last_amount = 10.054304149158456
+2021-03-02 04:12:02,817 - eth - INFO - current_balance = 9.321579406482776  sell_ts:2021-03-02 04:12:02  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:12:02,817 - eth - INFO - demo_action_running_duration: 2:30:01
+2021-03-02 04:12:02,817 - eth - INFO - earning_ratio = -6.784205935172238%
+2021-03-02 04:12:02,817 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:12:02,817 - eth - INFO - last_sell_cash=10.054304149158456
+2021-03-02 04:12:02,817 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:12:02,817 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:12:02,818 - eth - INFO - current_balance = 9.321579406482776
+2021-03-02 04:12:02,818 - eth - INFO - BUY NEW COINS
+2021-03-02 04:12:02,818 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.00595, amount=1680.672268907563, ts:2021-03-02 04:12:02
+2021-03-02 04:12:02,818 - eth - INFO - =========================================
+2021-03-02 04:12:02,818 - eth - INFO - sleep 300 seconds .....
+2021-03-02 04:17:02,911 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:17:03,106 - eth - INFO - ethusdt  300
+2021-03-02 04:17:03,226 - eth - INFO - eth3lusdt  300
+2021-03-02 04:17:03,421 - eth - INFO - eth3susdt  300
+2021-03-02 04:17:03,421 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:17:03,440 - eth - INFO - count_A_earn = 117 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:17:03,440 - eth - INFO - last_open=1563.34, last_close=1563.3, invest_direction=planA
+2021-03-02 04:17:03,440 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 04:17:03,718 - eth - INFO - SELL LAST COIN
+2021-03-02 04:17:03,718 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1680.672268907563, sell_cur_price:0.006044
+2021-03-02 04:17:03,718 - eth - INFO - sell_cur_price * last_amount = 10.15798319327731
+2021-03-02 04:17:03,718 - eth - INFO - current_balance = 9.479562599760087  sell_ts:2021-03-02 04:17:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:17:03,718 - eth - INFO - demo_action_running_duration: 2:35:02
+2021-03-02 04:17:03,718 - eth - INFO - earning_ratio = -5.204374002399135%
+2021-03-02 04:17:03,719 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:17:03,719 - eth - INFO - last_sell_cash=10.15798319327731
+2021-03-02 04:17:03,719 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:17:03,719 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:17:03,719 - eth - INFO - current_balance = 9.479562599760087
+2021-03-02 04:17:03,719 - eth - INFO - BUY NEW COINS
+2021-03-02 04:17:03,719 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006044, amount=1654.5334215751159, ts:2021-03-02 04:17:03
+2021-03-02 04:17:03,719 - eth - INFO - =========================================
+2021-03-02 04:17:03,720 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:22:02,819 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:22:03,035 - eth - INFO - ethusdt  300
+2021-03-02 04:22:03,240 - eth - INFO - eth3lusdt  300
+2021-03-02 04:22:03,441 - eth - INFO - eth3susdt  300
+2021-03-02 04:22:03,441 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:22:03,460 - eth - INFO - count_A_earn = 118 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:22:03,460 - eth - INFO - last_open=1563.43, last_close=1556.59, invest_direction=planA
+2021-03-02 04:22:03,460 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 04:22:03,681 - eth - INFO - SELL LAST COIN
+2021-03-02 04:22:03,681 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1654.5334215751159, sell_cur_price:0.006042
+2021-03-02 04:22:03,681 - eth - INFO - sell_cur_price * last_amount = 9.996690933156849
+2021-03-02 04:22:03,681 - eth - INFO - current_balance = 9.476253532916935  sell_ts:2021-03-02 04:22:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:22:03,681 - eth - INFO - demo_action_running_duration: 2:40:02
+2021-03-02 04:22:03,681 - eth - INFO - earning_ratio = -5.237464670830647%
+2021-03-02 04:22:03,681 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:22:03,682 - eth - INFO - last_sell_cash=9.996690933156849
+2021-03-02 04:22:03,682 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:22:03,682 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:22:03,682 - eth - INFO - current_balance = 9.476253532916935
+2021-03-02 04:22:03,682 - eth - INFO - BUY NEW COINS
+2021-03-02 04:22:03,682 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006042, amount=1655.0810989738497, ts:2021-03-02 04:22:03
+2021-03-02 04:22:03,682 - eth - INFO - =========================================
+2021-03-02 04:22:03,682 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:27:02,754 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:27:02,959 - eth - INFO - ethusdt  300
+2021-03-02 04:27:03,155 - eth - INFO - eth3lusdt  300
+2021-03-02 04:27:03,276 - eth - INFO - eth3susdt  300
+2021-03-02 04:27:03,276 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:27:03,294 - eth - INFO - count_A_earn = 119 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:27:03,294 - eth - INFO - last_open=1556.83, last_close=1557.56, invest_direction=planA
+2021-03-02 04:27:03,294 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 04:27:03,517 - eth - INFO - SELL LAST COIN
+2021-03-02 04:27:03,517 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1655.0810989738497, sell_cur_price:0.006057
+2021-03-02 04:27:03,517 - eth - INFO - sell_cur_price * last_amount = 10.024826216484607
+2021-03-02 04:27:03,517 - eth - INFO - current_balance = 9.501079749401542  sell_ts:2021-03-02 04:27:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:27:03,517 - eth - INFO - demo_action_running_duration: 2:45:02
+2021-03-02 04:27:03,517 - eth - INFO - earning_ratio = -4.989202505984576%
+2021-03-02 04:27:03,518 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:27:03,518 - eth - INFO - last_sell_cash=10.024826216484607
+2021-03-02 04:27:03,518 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:27:03,518 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:27:03,518 - eth - INFO - current_balance = 9.501079749401542
+2021-03-02 04:27:03,518 - eth - INFO - BUY NEW COINS
+2021-03-02 04:27:03,518 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.5229, amount=0.28966280353041024, ts:2021-03-02 04:27:03
+2021-03-02 04:27:03,518 - eth - INFO - =========================================
+2021-03-02 04:27:03,519 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:32:02,619 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:32:02,821 - eth - INFO - ethusdt  300
+2021-03-02 04:32:03,031 - eth - INFO - eth3lusdt  300
+2021-03-02 04:32:03,222 - eth - INFO - eth3susdt  300
+2021-03-02 04:32:03,223 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:32:03,241 - eth - INFO - count_A_earn = 120 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:32:03,241 - eth - INFO - last_open=1557.56, last_close=1555.47, invest_direction=planA
+2021-03-02 04:32:03,241 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 04:32:03,491 - eth - INFO - SELL LAST COIN
+2021-03-02 04:32:03,492 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.28966280353041024, sell_cur_price:34.5213
+2021-03-02 04:32:03,492 - eth - INFO - sell_cur_price * last_amount = 9.99953653951435
+2021-03-02 04:32:03,492 - eth - INFO - current_balance = 9.500616288915893  sell_ts:2021-03-02 04:32:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:32:03,492 - eth - INFO - demo_action_running_duration: 2:50:02
+2021-03-02 04:32:03,492 - eth - INFO - earning_ratio = -4.993837110841071%
+2021-03-02 04:32:03,492 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:32:03,492 - eth - INFO - last_sell_cash=9.99953653951435
+2021-03-02 04:32:03,492 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:32:03,493 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:32:03,493 - eth - INFO - current_balance = 9.500616288915893
+2021-03-02 04:32:03,493 - eth - INFO - BUY NEW COINS
+2021-03-02 04:32:03,493 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.006054, amount=1651.8004625041294, ts:2021-03-02 04:32:03
+2021-03-02 04:32:03,493 - eth - INFO - =========================================
+2021-03-02 04:32:03,493 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:37:02,495 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:37:02,693 - eth - INFO - ethusdt  300
+2021-03-02 04:37:02,913 - eth - INFO - eth3lusdt  300
+2021-03-02 04:37:03,099 - eth - INFO - eth3susdt  300
+2021-03-02 04:37:03,099 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:37:03,117 - eth - INFO - count_A_earn = 121 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:37:03,117 - eth - INFO - last_open=1555.48, last_close=1559.64, invest_direction=planA
+2021-03-02 04:37:03,117 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 04:37:03,430 - eth - INFO - SELL LAST COIN
+2021-03-02 04:37:03,431 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1651.8004625041294, sell_cur_price:0.006013
+2021-03-02 04:37:03,431 - eth - INFO - sell_cur_price * last_amount = 9.93227618103733
+2021-03-02 04:37:03,431 - eth - INFO - current_balance = 9.432892469953224  sell_ts:2021-03-02 04:37:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:37:03,431 - eth - INFO - demo_action_running_duration: 2:55:02
+2021-03-02 04:37:03,431 - eth - INFO - earning_ratio = -5.671075300467763%
+2021-03-02 04:37:03,431 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:37:03,431 - eth - INFO - last_sell_cash=9.93227618103733
+2021-03-02 04:37:03,431 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:37:03,431 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:37:03,431 - eth - INFO - current_balance = 9.432892469953224
+2021-03-02 04:37:03,431 - eth - INFO - BUY NEW COINS
+2021-03-02 04:37:03,432 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.6643, amount=0.2884812328533967, ts:2021-03-02 04:37:03
+2021-03-02 04:37:03,432 - eth - INFO - =========================================
+2021-03-02 04:37:03,432 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:42:02,532 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:42:02,732 - eth - INFO - ethusdt  300
+2021-03-02 04:42:02,920 - eth - INFO - eth3lusdt  300
+2021-03-02 04:42:03,133 - eth - INFO - eth3susdt  300
+2021-03-02 04:42:03,133 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:42:03,151 - eth - INFO - count_A_earn = 122 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:42:03,152 - eth - INFO - last_open=1559.86, last_close=1567.59, invest_direction=planA
+2021-03-02 04:42:03,152 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 04:42:03,404 - eth - INFO - SELL LAST COIN
+2021-03-02 04:42:03,404 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2884812328533967, sell_cur_price:34.9299
+2021-03-02 04:42:03,404 - eth - INFO - sell_cur_price * last_amount = 10.076620615445863
+2021-03-02 04:42:03,404 - eth - INFO - current_balance = 9.509513085399087  sell_ts:2021-03-02 04:42:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:42:03,404 - eth - INFO - demo_action_running_duration: 3:00:02
+2021-03-02 04:42:03,404 - eth - INFO - earning_ratio = -4.90486914600913%
+2021-03-02 04:42:03,404 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:42:03,404 - eth - INFO - last_sell_cash=10.076620615445863
+2021-03-02 04:42:03,404 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:42:03,405 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:42:03,405 - eth - INFO - current_balance = 9.509513085399087
+2021-03-02 04:42:03,405 - eth - INFO - BUY NEW COINS
+2021-03-02 04:42:03,405 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:34.9299, amount=0.28628767903715724, ts:2021-03-02 04:42:03
+2021-03-02 04:42:03,405 - eth - INFO - =========================================
+2021-03-02 04:42:03,405 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:47:02,503 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:47:02,705 - eth - INFO - ethusdt  300
+2021-03-02 04:47:02,902 - eth - INFO - eth3lusdt  300
+2021-03-02 04:47:03,087 - eth - INFO - eth3susdt  300
+2021-03-02 04:47:03,087 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:47:03,105 - eth - INFO - count_A_earn = 123 , count_B_earn = 1 , threshold_value=0.0
+2021-03-02 04:47:03,105 - eth - INFO - last_open=1567.59, last_close=1569.97, invest_direction=planA
+2021-03-02 04:47:03,105 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 04:47:03,377 - eth - INFO - SELL LAST COIN
+2021-03-02 04:47:03,377 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.28628767903715724, sell_cur_price:35.2584
+2021-03-02 04:47:03,377 - eth - INFO - sell_cur_price * last_amount = 10.094045502563706
+2021-03-02 04:47:03,377 - eth - INFO - current_balance = 9.603558587962793  sell_ts:2021-03-02 04:47:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:47:03,377 - eth - INFO - demo_action_running_duration: 3:05:02
+2021-03-02 04:47:03,377 - eth - INFO - earning_ratio = -3.964414120372073%
+2021-03-02 04:47:03,377 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:47:03,378 - eth - INFO - last_sell_cash=10.094045502563706
+2021-03-02 04:47:03,378 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:47:03,378 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:47:03,378 - eth - INFO - current_balance = 9.603558587962793
+2021-03-02 04:47:03,378 - eth - INFO - BUY NEW COINS
+2021-03-02 04:47:03,378 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.2584, amount=0.2836203571347537, ts:2021-03-02 04:47:03
+2021-03-02 04:47:03,378 - eth - INFO - =========================================
+2021-03-02 04:47:03,378 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:52:02,475 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:52:02,683 - eth - INFO - ethusdt  300
+2021-03-02 04:52:02,825 - eth - INFO - eth3lusdt  300
+2021-03-02 04:52:03,223 - eth - INFO - eth3susdt  300
+2021-03-02 04:52:03,223 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:52:03,241 - eth - INFO - count_A_earn = 124 , count_B_earn = 0 , threshold_value=0.0
+2021-03-02 04:52:03,241 - eth - INFO - last_open=1569.96, last_close=1567.82, invest_direction=planA
+2021-03-02 04:52:03,241 - eth - INFO - invest_direction = planA   last_trend = -1
+2021-03-02 04:52:03,525 - eth - INFO - SELL LAST COIN
+2021-03-02 04:52:03,525 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2836203571347537, sell_cur_price:35.1029
+2021-03-02 04:52:03,525 - eth - INFO - sell_cur_price * last_amount = 9.955897034465545
+2021-03-02 04:52:03,525 - eth - INFO - current_balance = 9.559455622428338  sell_ts:2021-03-02 04:52:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:52:03,525 - eth - INFO - demo_action_running_duration: 3:10:02
+2021-03-02 04:52:03,525 - eth - INFO - earning_ratio = -4.40544377571662%
+2021-03-02 04:52:03,525 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:52:03,525 - eth - INFO - last_sell_cash=9.955897034465545
+2021-03-02 04:52:03,525 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:52:03,526 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:52:03,526 - eth - INFO - current_balance = 9.559455622428338
+2021-03-02 04:52:03,526 - eth - INFO - BUY NEW COINS
+2021-03-02 04:52:03,526 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.005943, amount=1682.6518593303044, ts:2021-03-02 04:52:03
+2021-03-02 04:52:03,526 - eth - INFO - =========================================
+2021-03-02 04:52:03,526 - eth - INFO - sleep 299 seconds .....
+2021-03-02 04:57:02,607 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-02 04:57:02,892 - eth - INFO - ethusdt  300
+2021-03-02 04:57:03,096 - eth - INFO - eth3lusdt  300
+2021-03-02 04:57:03,300 - eth - INFO - eth3susdt  300
+2021-03-02 04:57:03,300 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-02 04:57:03,318 - eth - INFO - count_A_earn = 125 , count_B_earn = 0 , threshold_value=0.0
+2021-03-02 04:57:03,318 - eth - INFO - last_open=1567.82, last_close=1573.1, invest_direction=planA
+2021-03-02 04:57:03,318 - eth - INFO - invest_direction = planA   last_trend = 1
+2021-03-02 04:57:03,556 - eth - INFO - SELL LAST COIN
+2021-03-02 04:57:03,556 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:1682.6518593303044, sell_cur_price:0.005881
+2021-03-02 04:57:03,556 - eth - INFO - sell_cur_price * last_amount = 9.89567558472152
+2021-03-02 04:57:03,556 - eth - INFO - current_balance = 9.455131207149858  sell_ts:2021-03-02 04:57:03  demo_action_launch_time: 2021-03-02 01:42:01
+2021-03-02 04:57:03,556 - eth - INFO - demo_action_running_duration: 3:15:02
+2021-03-02 04:57:03,556 - eth - INFO - earning_ratio = -5.448687928501421%
+2021-03-02 04:57:03,556 - eth - INFO - ***** update stop_actual_invest  *****
+2021-03-02 04:57:03,556 - eth - INFO - last_sell_cash=9.89567558472152
+2021-03-02 04:57:03,556 - eth - INFO - SEND QUEUE INFO - START
+2021-03-02 04:57:03,557 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-02 04:57:03,557 - eth - INFO - current_balance = 9.455131207149858
+2021-03-02 04:57:03,557 - eth - INFO - BUY NEW COINS
+2021-03-02 04:57:03,557 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:35.4, amount=0.2824858757062147, ts:2021-03-02 04:57:03
+2021-03-02 04:57:03,557 - eth - INFO - =========================================
+2021-03-02 04:57:03,557 - eth - INFO - sleep 299 seconds .....
