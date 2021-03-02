@@ -903,7 +903,8 @@ class DemoStrategy:
             invest_direction = "planA"
         self.demo_print("count_A_earn = %s , count_B_earn = %s , threshold_value=%s"
                         % (count_A_earn, count_B_earn, step_range*self.threshold_value_adjust_rate))
-        self.demo_print("last_open=%s, last_close=%s, invest_direction=%s" % (last_open, last_close, invest_direction))
+        self.demo_print("last_open=%s, last_close=%s, invest_direction=%s, last_ts=%s"
+                        % (last_open, last_close, invest_direction, timeStamp_to_datetime(last_ts)))
         return last_ts, last_trend, invest_direction
 
     # 计算指定时长内的趋势数据
