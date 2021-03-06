@@ -19,17 +19,17 @@ if __name__ == '__main__':
     account_id = ACCOUNT_ID  # spot
     # hbgAnyCall = HbgAnyCall()
     try:
-        #demo_03()
+        demo_06()
 
-        time_stamp = int(time.time())
-        dt_stamp = timeStamp_to_datetime(time_stamp)
-        queue = Manager().Queue(10)
-        demo = DemoStrategy()
-        demo.queue = queue
-        demo.etp = "bch"
-        demo.dt_stamp = dt_stamp
-        log_folder_name = "Demo_before_launch_01"
-        demo.demon_action(log_folder_name)
+        # time_stamp = int(time.time())
+        # dt_stamp = timeStamp_to_datetime(time_stamp)
+        # queue = Manager().Queue(10)
+        # demo = DemoStrategy()
+        # demo.queue = queue
+        # demo.etp = "bch"
+        # demo.dt_stamp = dt_stamp
+        # log_folder_name = "Demo_before_launch_01"
+        # demo.demon_action(log_folder_name)
 
         # demo.demon_prediction()
 

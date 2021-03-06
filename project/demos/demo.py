@@ -573,6 +573,12 @@ class DemoStrategy:
     # 行动器
     def do_action(self, action_index):
         try:
+            self.demo_print("do_action -sell_last_hold_lever_coins StartTime= %s"
+                            % timeStamp_to_datetime(int(time.time())))
+            # 卖出上一次持有的代币
+            self.sell_last_hold_lever_coins(action_index)
+            self.demo_print("do_action -sell_last_hold_lever_coins FinishTime= %s"
+                            % timeStamp_to_datetime(int(time.time())))
             period = TIME_PERIOD
             size = int(self.history_size)
             step_range = int(size / 2)
@@ -581,6 +587,8 @@ class DemoStrategy:
             trend_base_list = None
             trend_3l_list = None
             trend_3s_list = None
+            self.demo_print("do_action -get_ALL_symbol_trend_data StartTime= %s"
+                            % timeStamp_to_datetime(int(time.time())))
             while (cur_ts-last_ts) > (60*TIME_PERIOD_VALUE):
                 trend_base_list, trend_3l_list, trend_3s_list \
                     = self.get_ALL_symbol_trend_data(
@@ -594,7 +602,8 @@ class DemoStrategy:
                 # self.demo_print("last_ts = %s  %s " % (last_ts, timeStamp_to_datetime(last_ts)))
                 cur_ts = int(time.time())
                 # self.demo_print("cur_ts = %s  %s " % (cur_ts, timeStamp_to_datetime(cur_ts)))
-            print("OK -step 1 - get_ALL_symbol_trend_data")
+            self.demo_print("do_action -get_ALL_symbol_trend_data FinishTime= %s" % timeStamp_to_datetime(int(time.time())))
+            self.demo_print("do_action -judge_invest_direction StartTime= %s" % timeStamp_to_datetime(int(time.time())))
             last_ts, last_trend, invest_direction = self.judge_invest_direction(
                 trend_base_list=trend_base_list,
                 trend_3l_list=trend_3l_list,
@@ -603,9 +612,9 @@ class DemoStrategy:
                 start_point=step_range-1,
                 end_point=-1,
             )
+            self.demo_print("do_action -judge_invest_direction FinishTime= %s" % timeStamp_to_datetime(int(time.time())))
             cur_ts = int(time.time())
             assert (60*TIME_PERIOD_VALUE) < (cur_ts-last_ts)
-            print("OK -step 2 - judge_invest_direction")
             # 根据 invest_direction 获取交易对价格
             self.demo_print("invest_direction=%s, last_trend=%s, last_ts=%s"
                             % (invest_direction, last_trend, timeStamp_to_datetime(last_ts)))
@@ -617,35 +626,40 @@ class DemoStrategy:
             currency_s = self.etp + "3s"
             cur_price_s = 0.0
             ts_s = 1
+            self.demo_print("do_action -buy_lever_coins StartTime= %s"
+                            % timeStamp_to_datetime(int(time.time())))
             if invest_direction == "planA":  # 顺势
                 if last_trend == 1:  # 涨
                     ts_l, cur_price_l = get_current_price(symbol=symbol_l)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins(action_index)
+                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
                 elif last_trend == -1:  # 跌
                     ts_s, cur_price_s = get_current_price(symbol=symbol_s)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins(action_index)
+                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
             elif invest_direction == "planB":  # 逆势
                 if last_trend == 1:  # 涨
                     ts_s, cur_price_s = get_current_price(symbol=symbol_s)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins(action_index)
+                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
                 elif last_trend == -1:  # 跌
                     ts_l, cur_price_l = get_current_price(symbol=symbol_l)
                     # 卖出上一次持有的代币
-                    self.sell_last_hold_lever_coins(action_index)
+                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
             else:  # invest_direction == "no_plan"
                 # 卖出上一次持有的代币
-                self.sell_last_hold_lever_coins(action_index)
+                print("  ")
+                # self.sell_last_hold_lever_coins(action_index)
+            self.demo_print("do_action -buy_lever_coins FinishTime= %s"
+                            % timeStamp_to_datetime(int(time.time())))
             self.demo_print("=========================================")
         except Exception as ex:
             self.demo_print("Exception in do_action")
@@ -773,6 +787,7 @@ class DemoStrategy:
             size=2000,
     ):
         self.demo_print("%s  get_ALL_symbol_trend_data START" % self.etp)
+        self.demo_print("StartTime= %s" % timeStamp_to_datetime(int(time.time())))
         # base
         symbol = symbol_base
         trend_base_list = self.get_symbol_trend_data(
@@ -801,6 +816,7 @@ class DemoStrategy:
         self.demo_print("%s  %s" % (symbol_s, len(trend_3s_list)))
         assert size == len(trend_3s_list)
         self.demo_print("%s  get_ALL_symbol_trend_data FINISH" % self.etp)
+        self.demo_print("FinishTime= %s" % timeStamp_to_datetime(int(time.time())))
         return trend_base_list, trend_3l_list, trend_3s_list
 
     # 获取交易对的K线信息，整理后返回。
@@ -1352,6 +1368,26 @@ def demo_01():
     demo_print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
     demo_print("Total_earn_value_ALL_A = %s " % Total_earn_value_ALL_A)
     demo_print("Total_earn_value_ALL_B = %s " % Total_earn_value_ALL_B)
+
+def demo_06():
+    print(timeStamp_to_datetime(int(time.time())))
+    k_line_res = Get_kline_data(
+        symbol="btcusdt",
+        period="5min",
+        size=1000
+    )
+    k_line_res = Get_kline_data(
+        symbol="btc3lusdt",
+        period="5min",
+        size=1000
+    )
+    k_line_res = Get_kline_data(
+        symbol="btc3susdt",
+        period="5min",
+        size=1000
+    )
+    # print(k_line_res)
+    print(timeStamp_to_datetime(int(time.time())))
 
 
 def demo_03():
