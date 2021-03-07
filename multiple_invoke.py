@@ -15,14 +15,14 @@ current_path = os.path.dirname(os.path.abspath(__file__))
 ETP_LIST = (
             "btc",
             "eth",
-            # "link",
-            # "eos",
-            # "bch",
-            # "ltc",
-            # "zec",
-            # "xrp",
-            # "bsv",
-            # "fil",
+            "link",
+            "eos",
+            "bch",
+            "ltc",
+            "zec",
+            "xrp",
+            "bsv",
+            "fil",
     )
 LENGTH_ETP_LIST = len(ETP_LIST)
 
