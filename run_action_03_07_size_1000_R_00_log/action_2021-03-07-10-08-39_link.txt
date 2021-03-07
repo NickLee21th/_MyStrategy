@@ -24,3 +24,742 @@
 2021-03-07 10:08:42,088 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:08:42
 2021-03-07 10:08:42,088 - link - INFO - =========================================
 2021-03-07 10:08:42,089 - link - INFO - sleep 297 seconds .....
+2021-03-07 10:13:39,162 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:13:39
+2021-03-07 10:13:39,306 - link - INFO - SELL LAST COIN
+2021-03-07 10:13:39,306 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9823.182711198428, sell_cur_price:0.00102
+2021-03-07 10:13:39,306 - link - INFO - sell_cur_price * last_amount = 10.019646365422396
+2021-03-07 10:13:39,306 - link - INFO - current_balance = 10.019646365422396  sell_ts:2021-03-07 10:13:39  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:13:39,306 - link - INFO - demo_action_running_duration: 0:05:00
+2021-03-07 10:13:39,306 - link - INFO - earning_ratio = 0.19646365422396175%
+2021-03-07 10:13:39,306 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:13:39,306 - link - INFO - last_sell_cash=10.019646365422396
+2021-03-07 10:13:39,307 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:13:39,307 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:13:39,307 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:13:39
+2021-03-07 10:13:39,307 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:13:39
+2021-03-07 10:13:39,307 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:13:39,307 - link - INFO - StartTime= 2021-03-07 10:13:39
+2021-03-07 10:13:39,649 - link - INFO - linkusdt  1000
+2021-03-07 10:13:39,929 - link - INFO - link3lusdt  1000
+2021-03-07 10:13:40,238 - link - INFO - link3susdt  1000
+2021-03-07 10:13:40,238 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:13:40,238 - link - INFO - FinishTime= 2021-03-07 10:13:40
+2021-03-07 10:13:40,238 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:13:40
+2021-03-07 10:13:40,238 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:13:40
+2021-03-07 10:13:40,896 - link - INFO - count_A_earn = 336 , count_B_earn = 259 , threshold_value=0.0
+2021-03-07 10:13:40,897 - link - INFO - last_open=28.6892, last_close=28.7035, invest_direction=planA, last_ts=2021-03-07 10:05:00
+2021-03-07 10:13:40,897 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:13:40
+2021-03-07 10:13:40,897 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:05:00
+2021-03-07 10:13:40,897 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:13:40
+2021-03-07 10:13:41,035 - link - INFO - current_balance = 10.019646365422396
+2021-03-07 10:13:41,035 - link - INFO - BUY NEW COINS
+2021-03-07 10:13:41,035 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.9364, amount=2.0257677659833075, ts:2021-03-07 10:13:40
+2021-03-07 10:13:41,035 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 10:13:41,035 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:13:41
+2021-03-07 10:13:41,035 - link - INFO - =========================================
+2021-03-07 10:13:41,036 - link - INFO - sleep 298 seconds .....
+2021-03-07 10:18:39,088 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:18:39
+2021-03-07 10:18:39,197 - link - INFO - SELL LAST COIN
+2021-03-07 10:18:39,197 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.0257677659833075, sell_cur_price:4.9401
+2021-03-07 10:18:39,197 - link - INFO - sell_cur_price * last_amount = 10.007495340734138
+2021-03-07 10:18:39,197 - link - INFO - current_balance = 10.027141706156534  sell_ts:2021-03-07 10:18:39  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:18:39,197 - link - INFO - demo_action_running_duration: 0:10:00
+2021-03-07 10:18:39,197 - link - INFO - earning_ratio = 0.2714170615653444%
+2021-03-07 10:18:39,197 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 10:18:39,309 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.0257677659833075, actual_sell_cur_price:4.9401
+2021-03-07 10:18:39,309 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.007495340734138
+2021-03-07 10:18:39,309 - link - INFO - actual_balance=10.007495340734138, ts_actual_sell=2021-03-07 10:18:39
+2021-03-07 10:18:39,309 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:18:39,309 - link - INFO - last_sell_cash=10.007495340734138
+2021-03-07 10:18:39,309 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:18:39,309 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:18:39,310 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:18:39
+2021-03-07 10:18:39,310 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:18:39
+2021-03-07 10:18:39,310 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:18:39,310 - link - INFO - StartTime= 2021-03-07 10:18:39
+2021-03-07 10:18:39,579 - link - INFO - linkusdt  1000
+2021-03-07 10:18:39,844 - link - INFO - link3lusdt  1000
+2021-03-07 10:18:40,334 - link - INFO - link3susdt  1000
+2021-03-07 10:18:40,334 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:18:40,335 - link - INFO - FinishTime= 2021-03-07 10:18:40
+2021-03-07 10:18:40,335 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:18:40
+2021-03-07 10:18:40,335 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:18:40
+2021-03-07 10:18:40,618 - link - INFO - count_A_earn = 335 , count_B_earn = 260 , threshold_value=0.0
+2021-03-07 10:18:40,618 - link - INFO - last_open=28.7037, last_close=28.7358, invest_direction=planA, last_ts=2021-03-07 10:10:00
+2021-03-07 10:18:40,618 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:18:40
+2021-03-07 10:18:40,618 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:10:00
+2021-03-07 10:18:40,618 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:18:40
+2021-03-07 10:18:40,737 - link - INFO - current_balance = 10.027141706156534
+2021-03-07 10:18:40,738 - link - INFO - BUY NEW COINS
+2021-03-07 10:18:40,738 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.9401, amount=2.024250521244509, ts:2021-03-07 10:18:40
+2021-03-07 10:18:40,738 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 10:18:40,738 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:18:40
+2021-03-07 10:18:40,738 - link - INFO - =========================================
+2021-03-07 10:18:40,738 - link - INFO - sleep 299 seconds .....
+2021-03-07 10:23:39,751 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:23:39
+2021-03-07 10:23:39,877 - link - INFO - SELL LAST COIN
+2021-03-07 10:23:39,877 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.024250521244509, sell_cur_price:4.932
+2021-03-07 10:23:39,877 - link - INFO - sell_cur_price * last_amount = 9.98360357077792
+2021-03-07 10:23:39,877 - link - INFO - current_balance = 10.010745276934454  sell_ts:2021-03-07 10:23:39  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:23:39,877 - link - INFO - demo_action_running_duration: 0:15:00
+2021-03-07 10:23:39,877 - link - INFO - earning_ratio = 0.1074527693445404%
+2021-03-07 10:23:39,878 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 10:23:39,998 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.024250521244509, actual_sell_cur_price:4.932
+2021-03-07 10:23:39,998 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.98360357077792
+2021-03-07 10:23:39,998 - link - INFO - actual_balance=9.991098911512058, ts_actual_sell=2021-03-07 10:23:39
+2021-03-07 10:23:39,998 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:23:39,998 - link - INFO - last_sell_cash=9.98360357077792
+2021-03-07 10:23:39,998 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:23:39,999 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:23:39,999 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:23:39
+2021-03-07 10:23:39,999 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:23:39
+2021-03-07 10:23:39,999 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:23:39,999 - link - INFO - StartTime= 2021-03-07 10:23:39
+2021-03-07 10:23:40,243 - link - INFO - linkusdt  1000
+2021-03-07 10:23:40,532 - link - INFO - link3lusdt  1000
+2021-03-07 10:23:40,814 - link - INFO - link3susdt  1000
+2021-03-07 10:23:40,814 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:23:40,814 - link - INFO - FinishTime= 2021-03-07 10:23:40
+2021-03-07 10:23:40,814 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:23:40
+2021-03-07 10:23:40,814 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:23:40
+2021-03-07 10:23:41,328 - link - INFO - count_A_earn = 334 , count_B_earn = 261 , threshold_value=0.0
+2021-03-07 10:23:41,328 - link - INFO - last_open=28.7414, last_close=28.7016, invest_direction=planA, last_ts=2021-03-07 10:15:00
+2021-03-07 10:23:41,328 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:23:41
+2021-03-07 10:23:41,328 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:15:00
+2021-03-07 10:23:41,328 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:23:41
+2021-03-07 10:23:41,445 - link - INFO - current_balance = 10.010745276934454
+2021-03-07 10:23:41,446 - link - INFO - BUY NEW COINS
+2021-03-07 10:23:41,446 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001016, amount=9842.51968503937, ts:2021-03-07 10:23:41
+2021-03-07 10:23:41,446 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:23:41
+2021-03-07 10:23:41,446 - link - INFO - =========================================
+2021-03-07 10:23:41,446 - link - INFO - sleep 298 seconds .....
+2021-03-07 10:28:39,483 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:28:39
+2021-03-07 10:28:39,589 - link - INFO - SELL LAST COIN
+2021-03-07 10:28:39,589 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9842.51968503937, sell_cur_price:0.001015
+2021-03-07 10:28:39,589 - link - INFO - sell_cur_price * last_amount = 9.990157480314961
+2021-03-07 10:28:39,589 - link - INFO - current_balance = 10.000902757249415  sell_ts:2021-03-07 10:28:39  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:28:39,589 - link - INFO - demo_action_running_duration: 0:20:00
+2021-03-07 10:28:39,589 - link - INFO - earning_ratio = 0.009027572494151315%
+2021-03-07 10:28:39,589 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:28:39,589 - link - INFO - last_sell_cash=9.990157480314961
+2021-03-07 10:28:39,589 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:28:39,590 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:28:39,590 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:28:39
+2021-03-07 10:28:39,590 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:28:39
+2021-03-07 10:28:39,590 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:28:39,590 - link - INFO - StartTime= 2021-03-07 10:28:39
+2021-03-07 10:28:39,853 - link - INFO - linkusdt  1000
+2021-03-07 10:28:40,044 - link - INFO - link3lusdt  1000
+2021-03-07 10:28:40,385 - link - INFO - link3susdt  1000
+2021-03-07 10:28:40,385 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:28:40,385 - link - INFO - FinishTime= 2021-03-07 10:28:40
+2021-03-07 10:28:40,385 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:28:40
+2021-03-07 10:28:40,385 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:28:40
+2021-03-07 10:28:40,780 - link - INFO - count_A_earn = 333 , count_B_earn = 262 , threshold_value=0.0
+2021-03-07 10:28:40,780 - link - INFO - last_open=28.7028, last_close=28.7196, invest_direction=planA, last_ts=2021-03-07 10:20:00
+2021-03-07 10:28:40,780 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:28:40
+2021-03-07 10:28:40,780 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:20:00
+2021-03-07 10:28:40,780 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:28:40
+2021-03-07 10:28:40,900 - link - INFO - current_balance = 10.000902757249415
+2021-03-07 10:28:40,900 - link - INFO - BUY NEW COINS
+2021-03-07 10:28:40,900 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.9445, amount=2.0224491859642026, ts:2021-03-07 10:28:40
+2021-03-07 10:28:40,900 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:28:40
+2021-03-07 10:28:40,900 - link - INFO - =========================================
+2021-03-07 10:28:40,901 - link - INFO - sleep 299 seconds .....
+2021-03-07 10:33:39,919 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:33:39
+2021-03-07 10:33:40,026 - link - INFO - SELL LAST COIN
+2021-03-07 10:33:40,026 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.0224491859642026, sell_cur_price:4.8906
+2021-03-07 10:33:40,026 - link - INFO - sell_cur_price * last_amount = 9.89098998887653
+2021-03-07 10:33:40,026 - link - INFO - current_balance = 9.891892746125945  sell_ts:2021-03-07 10:33:39  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:33:40,026 - link - INFO - demo_action_running_duration: 0:25:00
+2021-03-07 10:33:40,026 - link - INFO - earning_ratio = -1.0810725387405462%
+2021-03-07 10:33:40,026 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:33:40,026 - link - INFO - last_sell_cash=9.89098998887653
+2021-03-07 10:33:40,026 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:33:40,026 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:33:40,026 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:33:40
+2021-03-07 10:33:40,027 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:33:40
+2021-03-07 10:33:40,027 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:33:40,027 - link - INFO - StartTime= 2021-03-07 10:33:40
+2021-03-07 10:33:40,360 - link - INFO - linkusdt  1000
+2021-03-07 10:33:40,643 - link - INFO - link3lusdt  1000
+2021-03-07 10:33:40,941 - link - INFO - link3susdt  1000
+2021-03-07 10:33:40,942 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:33:40,942 - link - INFO - FinishTime= 2021-03-07 10:33:40
+2021-03-07 10:33:40,942 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:33:40
+2021-03-07 10:33:40,942 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:33:40
+2021-03-07 10:33:41,334 - link - INFO - count_A_earn = 332 , count_B_earn = 263 , threshold_value=0.0
+2021-03-07 10:33:41,334 - link - INFO - last_open=28.7179, last_close=28.6928, invest_direction=planA, last_ts=2021-03-07 10:25:00
+2021-03-07 10:33:41,334 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:33:41
+2021-03-07 10:33:41,334 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:25:00
+2021-03-07 10:33:41,334 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:33:41
+2021-03-07 10:33:41,453 - link - INFO - current_balance = 9.891892746125945
+2021-03-07 10:33:41,453 - link - INFO - BUY NEW COINS
+2021-03-07 10:33:41,453 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001031, amount=9699.321047526673, ts:2021-03-07 10:33:41
+2021-03-07 10:33:41,453 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:33:41
+2021-03-07 10:33:41,453 - link - INFO - =========================================
+2021-03-07 10:33:41,454 - link - INFO - sleep 298 seconds .....
+2021-03-07 10:38:39,508 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:38:39
+2021-03-07 10:38:39,650 - link - INFO - SELL LAST COIN
+2021-03-07 10:38:39,650 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9699.321047526673, sell_cur_price:0.001034
+2021-03-07 10:38:39,650 - link - INFO - sell_cur_price * last_amount = 10.02909796314258
+2021-03-07 10:38:39,650 - link - INFO - current_balance = 9.920990709268525  sell_ts:2021-03-07 10:38:39  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:38:39,650 - link - INFO - demo_action_running_duration: 0:30:00
+2021-03-07 10:38:39,650 - link - INFO - earning_ratio = -0.7900929073147545%
+2021-03-07 10:38:39,650 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:38:39,650 - link - INFO - last_sell_cash=10.02909796314258
+2021-03-07 10:38:39,650 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:38:39,651 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:38:39,651 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:38:39
+2021-03-07 10:38:39,651 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:38:39
+2021-03-07 10:38:39,651 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:38:39,651 - link - INFO - StartTime= 2021-03-07 10:38:39
+2021-03-07 10:38:39,795 - link - INFO - linkusdt  1000
+2021-03-07 10:38:40,088 - link - INFO - link3lusdt  1000
+2021-03-07 10:38:40,358 - link - INFO - link3susdt  1000
+2021-03-07 10:38:40,358 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:38:40,358 - link - INFO - FinishTime= 2021-03-07 10:38:40
+2021-03-07 10:38:40,358 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:38:40
+2021-03-07 10:38:40,358 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:38:40
+2021-03-07 10:38:40,802 - link - INFO - count_A_earn = 331 , count_B_earn = 264 , threshold_value=0.0
+2021-03-07 10:38:40,802 - link - INFO - last_open=28.6887, last_close=28.5701, invest_direction=planA, last_ts=2021-03-07 10:30:00
+2021-03-07 10:38:40,802 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:38:40
+2021-03-07 10:38:40,802 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:30:00
+2021-03-07 10:38:40,802 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:38:40
+2021-03-07 10:38:40,954 - link - INFO - current_balance = 9.920990709268525
+2021-03-07 10:38:40,954 - link - INFO - BUY NEW COINS
+2021-03-07 10:38:40,954 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001034, amount=9671.179883945842, ts:2021-03-07 10:38:40
+2021-03-07 10:38:40,954 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:38:40
+2021-03-07 10:38:40,955 - link - INFO - =========================================
+2021-03-07 10:38:40,955 - link - INFO - sleep 299 seconds .....
+2021-03-07 10:43:40,015 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:43:40
+2021-03-07 10:43:40,173 - link - INFO - SELL LAST COIN
+2021-03-07 10:43:40,173 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9671.179883945842, sell_cur_price:0.001049
+2021-03-07 10:43:40,173 - link - INFO - sell_cur_price * last_amount = 10.145067698259188
+2021-03-07 10:43:40,173 - link - INFO - current_balance = 10.066058407527713  sell_ts:2021-03-07 10:43:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:43:40,173 - link - INFO - demo_action_running_duration: 0:35:01
+2021-03-07 10:43:40,173 - link - INFO - earning_ratio = 0.6605840752771286%
+2021-03-07 10:43:40,173 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:43:40,173 - link - INFO - last_sell_cash=10.145067698259188
+2021-03-07 10:43:40,174 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:43:40,187 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:43:40,187 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:43:40
+2021-03-07 10:43:40,187 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:43:40
+2021-03-07 10:43:40,187 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:43:40,187 - link - INFO - StartTime= 2021-03-07 10:43:40
+2021-03-07 10:43:40,480 - link - INFO - linkusdt  1000
+2021-03-07 10:43:40,779 - link - INFO - link3lusdt  1000
+2021-03-07 10:43:41,057 - link - INFO - link3susdt  1000
+2021-03-07 10:43:41,058 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:43:41,058 - link - INFO - FinishTime= 2021-03-07 10:43:41
+2021-03-07 10:43:41,058 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:43:41
+2021-03-07 10:43:41,058 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:43:41
+2021-03-07 10:43:41,272 - link - INFO - count_A_earn = 330 , count_B_earn = 265 , threshold_value=0.0
+2021-03-07 10:43:41,272 - link - INFO - last_open=28.5699, last_close=28.5763, invest_direction=planA, last_ts=2021-03-07 10:35:00
+2021-03-07 10:43:41,272 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:43:41
+2021-03-07 10:43:41,272 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:35:00
+2021-03-07 10:43:41,272 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:43:41
+2021-03-07 10:43:41,396 - link - INFO - current_balance = 10.066058407527713
+2021-03-07 10:43:41,396 - link - INFO - BUY NEW COINS
+2021-03-07 10:43:41,396 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.8343, amount=2.0685518068800035, ts:2021-03-07 10:43:41
+2021-03-07 10:43:41,396 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 10:43:41,396 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:43:41
+2021-03-07 10:43:41,396 - link - INFO - =========================================
+2021-03-07 10:43:41,397 - link - INFO - sleep 299 seconds .....
+2021-03-07 10:48:40,407 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:48:40
+2021-03-07 10:48:40,618 - link - INFO - SELL LAST COIN
+2021-03-07 10:48:40,619 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.0685518068800035, sell_cur_price:4.88
+2021-03-07 10:48:40,619 - link - INFO - sell_cur_price * last_amount = 10.094532817574416
+2021-03-07 10:48:40,619 - link - INFO - current_balance = 10.160591225102129  sell_ts:2021-03-07 10:48:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:48:40,619 - link - INFO - demo_action_running_duration: 0:40:01
+2021-03-07 10:48:40,619 - link - INFO - earning_ratio = 1.6059122510212909%
+2021-03-07 10:48:40,619 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 10:48:40,775 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.0685518068800035, actual_sell_cur_price:4.88
+2021-03-07 10:48:40,775 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.094532817574416
+2021-03-07 10:48:40,775 - link - INFO - actual_balance=10.085631729086474, ts_actual_sell=2021-03-07 10:48:40
+2021-03-07 10:48:40,775 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:48:40,775 - link - INFO - last_sell_cash=10.094532817574416
+2021-03-07 10:48:40,776 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:48:40,776 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:48:40,776 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:48:40
+2021-03-07 10:48:40,776 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:48:40
+2021-03-07 10:48:40,776 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:48:40,776 - link - INFO - StartTime= 2021-03-07 10:48:40
+2021-03-07 10:48:41,052 - link - INFO - linkusdt  1000
+2021-03-07 10:48:41,320 - link - INFO - link3lusdt  1000
+2021-03-07 10:48:41,618 - link - INFO - link3susdt  1000
+2021-03-07 10:48:41,618 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:48:41,618 - link - INFO - FinishTime= 2021-03-07 10:48:41
+2021-03-07 10:48:41,618 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:48:41
+2021-03-07 10:48:41,618 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:48:41
+2021-03-07 10:48:41,836 - link - INFO - count_A_earn = 329 , count_B_earn = 266 , threshold_value=0.0
+2021-03-07 10:48:41,836 - link - INFO - last_open=28.5797, last_close=28.5073, invest_direction=planA, last_ts=2021-03-07 10:40:00
+2021-03-07 10:48:41,836 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:48:41
+2021-03-07 10:48:41,836 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:40:00
+2021-03-07 10:48:41,836 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:48:41
+2021-03-07 10:48:42,028 - link - INFO - current_balance = 10.160591225102129
+2021-03-07 10:48:42,028 - link - INFO - BUY NEW COINS
+2021-03-07 10:48:42,028 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001036, amount=9652.509652509652, ts:2021-03-07 10:48:41
+2021-03-07 10:48:42,028 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 10:48:42,028 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:48:42
+2021-03-07 10:48:42,028 - link - INFO - =========================================
+2021-03-07 10:48:42,029 - link - INFO - sleep 298 seconds .....
+2021-03-07 10:53:40,127 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:53:40
+2021-03-07 10:53:40,257 - link - INFO - SELL LAST COIN
+2021-03-07 10:53:40,257 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9652.509652509652, sell_cur_price:0.001032
+2021-03-07 10:53:40,257 - link - INFO - sell_cur_price * last_amount = 9.96138996138996
+2021-03-07 10:53:40,257 - link - INFO - current_balance = 10.12198118649209  sell_ts:2021-03-07 10:53:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:53:40,257 - link - INFO - demo_action_running_duration: 0:45:01
+2021-03-07 10:53:40,257 - link - INFO - earning_ratio = 1.2198118649208922%
+2021-03-07 10:53:40,257 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 10:53:40,369 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:9652.509652509652, actual_sell_cur_price:0.001032
+2021-03-07 10:53:40,369 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.96138996138996
+2021-03-07 10:53:40,369 - link - INFO - actual_balance=10.047021690476434, ts_actual_sell=2021-03-07 10:53:40
+2021-03-07 10:53:40,369 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:53:40,369 - link - INFO - last_sell_cash=9.96138996138996
+2021-03-07 10:53:40,369 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:53:40,369 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:53:40,369 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:53:40
+2021-03-07 10:53:40,369 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:53:40
+2021-03-07 10:53:40,369 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:53:40,370 - link - INFO - StartTime= 2021-03-07 10:53:40
+2021-03-07 10:53:40,668 - link - INFO - linkusdt  1000
+2021-03-07 10:53:40,965 - link - INFO - link3lusdt  1000
+2021-03-07 10:53:41,159 - link - INFO - link3susdt  1000
+2021-03-07 10:53:41,159 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:53:41,160 - link - INFO - FinishTime= 2021-03-07 10:53:41
+2021-03-07 10:53:41,160 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:53:41
+2021-03-07 10:53:41,160 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:53:41
+2021-03-07 10:53:41,380 - link - INFO - count_A_earn = 328 , count_B_earn = 267 , threshold_value=0.0
+2021-03-07 10:53:41,380 - link - INFO - last_open=28.5059, last_close=28.5951, invest_direction=planA, last_ts=2021-03-07 10:45:00
+2021-03-07 10:53:41,380 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:53:41
+2021-03-07 10:53:41,380 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:45:00
+2021-03-07 10:53:41,380 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:53:41
+2021-03-07 10:53:41,494 - link - INFO - current_balance = 10.12198118649209
+2021-03-07 10:53:41,494 - link - INFO - BUY NEW COINS
+2021-03-07 10:53:41,494 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.8888, amount=2.045491736213386, ts:2021-03-07 10:53:41
+2021-03-07 10:53:41,494 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:53:41
+2021-03-07 10:53:41,494 - link - INFO - =========================================
+2021-03-07 10:53:41,495 - link - INFO - sleep 299 seconds .....
+2021-03-07 10:58:40,595 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:58:40
+2021-03-07 10:58:40,716 - link - INFO - SELL LAST COIN
+2021-03-07 10:58:40,716 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.045491736213386, sell_cur_price:4.8802
+2021-03-07 10:58:40,716 - link - INFO - sell_cur_price * last_amount = 9.982408771068567
+2021-03-07 10:58:40,716 - link - INFO - current_balance = 10.104389957560656  sell_ts:2021-03-07 10:58:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 10:58:40,716 - link - INFO - demo_action_running_duration: 0:50:01
+2021-03-07 10:58:40,716 - link - INFO - earning_ratio = 1.0438995756065594%
+2021-03-07 10:58:40,716 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 10:58:40,716 - link - INFO - last_sell_cash=9.982408771068567
+2021-03-07 10:58:40,716 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 10:58:40,717 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 10:58:40,717 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:58:40
+2021-03-07 10:58:40,717 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:58:40
+2021-03-07 10:58:40,717 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 10:58:40,717 - link - INFO - StartTime= 2021-03-07 10:58:40
+2021-03-07 10:58:41,124 - link - INFO - linkusdt  1000
+2021-03-07 10:58:41,486 - link - INFO - link3lusdt  1000
+2021-03-07 10:58:41,752 - link - INFO - link3susdt  1000
+2021-03-07 10:58:41,752 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 10:58:41,752 - link - INFO - FinishTime= 2021-03-07 10:58:41
+2021-03-07 10:58:41,752 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:58:41
+2021-03-07 10:58:41,752 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 10:58:41
+2021-03-07 10:58:41,966 - link - INFO - count_A_earn = 327 , count_B_earn = 268 , threshold_value=0.0
+2021-03-07 10:58:41,967 - link - INFO - last_open=28.5891, last_close=28.5854, invest_direction=planA, last_ts=2021-03-07 10:50:00
+2021-03-07 10:58:41,967 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 10:58:41
+2021-03-07 10:58:41,967 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:50:00
+2021-03-07 10:58:41,967 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 10:58:41
+2021-03-07 10:58:42,069 - link - INFO - current_balance = 10.104389957560656
+2021-03-07 10:58:42,069 - link - INFO - BUY NEW COINS
+2021-03-07 10:58:42,069 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001035, amount=9661.835748792271, ts:2021-03-07 10:58:42
+2021-03-07 10:58:42,069 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 10:58:42
+2021-03-07 10:58:42,069 - link - INFO - =========================================
+2021-03-07 10:58:42,070 - link - INFO - sleep 298 seconds .....
+2021-03-07 11:03:40,170 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:03:40
+2021-03-07 11:03:40,305 - link - INFO - SELL LAST COIN
+2021-03-07 11:03:40,305 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9661.835748792271, sell_cur_price:0.001037
+2021-03-07 11:03:40,306 - link - INFO - sell_cur_price * last_amount = 10.019323671497585
+2021-03-07 11:03:40,306 - link - INFO - current_balance = 10.12371362905824  sell_ts:2021-03-07 11:03:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:03:40,306 - link - INFO - demo_action_running_duration: 0:55:01
+2021-03-07 11:03:40,306 - link - INFO - earning_ratio = 1.2371362905824057%
+2021-03-07 11:03:40,306 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:03:40,306 - link - INFO - last_sell_cash=10.019323671497585
+2021-03-07 11:03:40,306 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:03:40,308 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:03:40,308 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:03:40
+2021-03-07 11:03:40,308 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:03:40
+2021-03-07 11:03:40,308 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:03:40,308 - link - INFO - StartTime= 2021-03-07 11:03:40
+2021-03-07 11:03:40,592 - link - INFO - linkusdt  1000
+2021-03-07 11:03:40,908 - link - INFO - link3lusdt  1000
+2021-03-07 11:03:41,252 - link - INFO - link3susdt  1000
+2021-03-07 11:03:41,252 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:03:41,252 - link - INFO - FinishTime= 2021-03-07 11:03:41
+2021-03-07 11:03:41,252 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:03:41
+2021-03-07 11:03:41,252 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:03:41
+2021-03-07 11:03:41,472 - link - INFO - count_A_earn = 326 , count_B_earn = 269 , threshold_value=0.0
+2021-03-07 11:03:41,473 - link - INFO - last_open=28.5951, last_close=28.6055, invest_direction=planA, last_ts=2021-03-07 10:55:00
+2021-03-07 11:03:41,473 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:03:41
+2021-03-07 11:03:41,473 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:55:00
+2021-03-07 11:03:41,473 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:03:41
+2021-03-07 11:03:41,592 - link - INFO - current_balance = 10.12371362905824
+2021-03-07 11:03:41,592 - link - INFO - BUY NEW COINS
+2021-03-07 11:03:41,592 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.8744, amount=2.051534547841786, ts:2021-03-07 11:03:41
+2021-03-07 11:03:41,592 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 11:03:41,592 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:03:41
+2021-03-07 11:03:41,592 - link - INFO - =========================================
+2021-03-07 11:03:41,593 - link - INFO - sleep 299 seconds .....
+2021-03-07 11:08:40,691 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:08:40
+2021-03-07 11:08:40,812 - link - INFO - SELL LAST COIN
+2021-03-07 11:08:40,812 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.051534547841786, sell_cur_price:4.8031
+2021-03-07 11:08:40,812 - link - INFO - sell_cur_price * last_amount = 9.85372558673888
+2021-03-07 11:08:40,813 - link - INFO - current_balance = 9.977439215797121  sell_ts:2021-03-07 11:08:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:08:40,813 - link - INFO - demo_action_running_duration: 1:00:01
+2021-03-07 11:08:40,813 - link - INFO - earning_ratio = -0.2256078420287899%
+2021-03-07 11:08:40,813 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 11:08:40,930 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.051534547841786, actual_sell_cur_price:4.8031
+2021-03-07 11:08:40,931 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.85372558673888
+2021-03-07 11:08:40,931 - link - INFO - actual_balance=9.900747277215315, ts_actual_sell=2021-03-07 11:08:40
+2021-03-07 11:08:40,931 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:08:40,931 - link - INFO - last_sell_cash=9.85372558673888
+2021-03-07 11:08:40,931 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:08:40,931 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:08:40,931 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:08:40
+2021-03-07 11:08:40,931 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:08:40
+2021-03-07 11:08:40,931 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:08:40,931 - link - INFO - StartTime= 2021-03-07 11:08:40
+2021-03-07 11:08:41,225 - link - INFO - linkusdt  1000
+2021-03-07 11:08:41,498 - link - INFO - link3lusdt  1000
+2021-03-07 11:08:41,758 - link - INFO - link3susdt  1000
+2021-03-07 11:08:41,758 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:08:41,758 - link - INFO - FinishTime= 2021-03-07 11:08:41
+2021-03-07 11:08:41,758 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:08:41
+2021-03-07 11:08:41,758 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:08:41
+2021-03-07 11:08:41,974 - link - INFO - count_A_earn = 325 , count_B_earn = 270 , threshold_value=0.0
+2021-03-07 11:08:41,974 - link - INFO - last_open=28.6122, last_close=28.5201, invest_direction=planA, last_ts=2021-03-07 11:00:00
+2021-03-07 11:08:41,974 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:08:41
+2021-03-07 11:08:41,975 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 11:00:00
+2021-03-07 11:08:41,975 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:08:41
+2021-03-07 11:08:42,101 - link - INFO - current_balance = 9.977439215797121
+2021-03-07 11:08:42,101 - link - INFO - BUY NEW COINS
+2021-03-07 11:08:42,101 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001057, amount=9460.73793755913, ts:2021-03-07 11:08:42
+2021-03-07 11:08:42,101 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:08:42
+2021-03-07 11:08:42,101 - link - INFO - =========================================
+2021-03-07 11:08:42,102 - link - INFO - sleep 298 seconds .....
+2021-03-07 11:13:40,103 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:13:40
+2021-03-07 11:13:40,221 - link - INFO - SELL LAST COIN
+2021-03-07 11:13:40,221 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9460.73793755913, sell_cur_price:0.00106
+2021-03-07 11:13:40,221 - link - INFO - sell_cur_price * last_amount = 10.028382213812677
+2021-03-07 11:13:40,221 - link - INFO - current_balance = 10.005821429609798  sell_ts:2021-03-07 11:13:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:13:40,221 - link - INFO - demo_action_running_duration: 1:05:01
+2021-03-07 11:13:40,222 - link - INFO - earning_ratio = 0.0582142960979759%
+2021-03-07 11:13:40,222 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:13:40,222 - link - INFO - last_sell_cash=10.028382213812677
+2021-03-07 11:13:40,222 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:13:40,222 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:13:40,222 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:13:40
+2021-03-07 11:13:40,222 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:13:40
+2021-03-07 11:13:40,222 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:13:40,222 - link - INFO - StartTime= 2021-03-07 11:13:40
+2021-03-07 11:13:40,578 - link - INFO - linkusdt  1000
+2021-03-07 11:13:40,858 - link - INFO - link3lusdt  1000
+2021-03-07 11:13:41,214 - link - INFO - link3susdt  1000
+2021-03-07 11:13:41,215 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:13:41,215 - link - INFO - FinishTime= 2021-03-07 11:13:41
+2021-03-07 11:13:41,215 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:13:41
+2021-03-07 11:13:41,215 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:13:41
+2021-03-07 11:13:41,443 - link - INFO - count_A_earn = 324 , count_B_earn = 271 , threshold_value=0.0
+2021-03-07 11:13:41,443 - link - INFO - last_open=28.5209, last_close=28.4492, invest_direction=planA, last_ts=2021-03-07 11:05:00
+2021-03-07 11:13:41,443 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:13:41
+2021-03-07 11:13:41,443 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 11:05:00
+2021-03-07 11:13:41,443 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:13:41
+2021-03-07 11:13:41,550 - link - INFO - current_balance = 10.005821429609798
+2021-03-07 11:13:41,551 - link - INFO - BUY NEW COINS
+2021-03-07 11:13:41,551 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.00106, amount=9433.962264150943, ts:2021-03-07 11:13:41
+2021-03-07 11:13:41,551 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 11:13:41,551 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:13:41
+2021-03-07 11:13:41,551 - link - INFO - =========================================
+2021-03-07 11:13:41,551 - link - INFO - sleep 299 seconds .....
+2021-03-07 11:18:40,651 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:18:40
+2021-03-07 11:18:40,770 - link - INFO - SELL LAST COIN
+2021-03-07 11:18:40,770 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9433.962264150943, sell_cur_price:0.001058
+2021-03-07 11:18:40,770 - link - INFO - sell_cur_price * last_amount = 9.981132075471697
+2021-03-07 11:18:40,770 - link - INFO - current_balance = 9.986953505081495  sell_ts:2021-03-07 11:18:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:18:40,771 - link - INFO - demo_action_running_duration: 1:10:01
+2021-03-07 11:18:40,771 - link - INFO - earning_ratio = -0.13046494918505402%
+2021-03-07 11:18:40,771 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 11:18:40,885 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:9433.962264150943, actual_sell_cur_price:0.001058
+2021-03-07 11:18:40,885 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.981132075471697
+2021-03-07 11:18:40,886 - link - INFO - actual_balance=9.881879352687012, ts_actual_sell=2021-03-07 11:18:40
+2021-03-07 11:18:40,886 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:18:40,886 - link - INFO - last_sell_cash=9.981132075471697
+2021-03-07 11:18:40,886 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:18:40,886 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:18:40,886 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:18:40
+2021-03-07 11:18:40,886 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:18:40
+2021-03-07 11:18:40,886 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:18:40,886 - link - INFO - StartTime= 2021-03-07 11:18:40
+2021-03-07 11:18:41,416 - link - INFO - linkusdt  1000
+2021-03-07 11:18:41,694 - link - INFO - link3lusdt  1000
+2021-03-07 11:18:41,961 - link - INFO - link3susdt  1000
+2021-03-07 11:18:41,961 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:18:41,961 - link - INFO - FinishTime= 2021-03-07 11:18:41
+2021-03-07 11:18:41,961 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:18:41
+2021-03-07 11:18:41,961 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:18:41
+2021-03-07 11:18:42,176 - link - INFO - count_A_earn = 323 , count_B_earn = 272 , threshold_value=0.0
+2021-03-07 11:18:42,176 - link - INFO - last_open=28.4525, last_close=28.4003, invest_direction=planA, last_ts=2021-03-07 11:10:00
+2021-03-07 11:18:42,176 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:18:42
+2021-03-07 11:18:42,176 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 11:10:00
+2021-03-07 11:18:42,176 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:18:42
+2021-03-07 11:18:42,285 - link - INFO - current_balance = 9.986953505081495
+2021-03-07 11:18:42,285 - link - INFO - BUY NEW COINS
+2021-03-07 11:18:42,285 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001058, amount=9451.79584120983, ts:2021-03-07 11:18:42
+2021-03-07 11:18:42,285 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:18:42
+2021-03-07 11:18:42,285 - link - INFO - =========================================
+2021-03-07 11:18:42,286 - link - INFO - sleep 298 seconds .....
+2021-03-07 11:23:40,383 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:23:40
+2021-03-07 11:23:40,491 - link - INFO - SELL LAST COIN
+2021-03-07 11:23:40,492 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9451.79584120983, sell_cur_price:0.00106
+2021-03-07 11:23:40,492 - link - INFO - sell_cur_price * last_amount = 10.01890359168242
+2021-03-07 11:23:40,492 - link - INFO - current_balance = 10.005857096763915  sell_ts:2021-03-07 11:23:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:23:40,492 - link - INFO - demo_action_running_duration: 1:15:01
+2021-03-07 11:23:40,492 - link - INFO - earning_ratio = 0.05857096763914882%
+2021-03-07 11:23:40,492 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:23:40,492 - link - INFO - last_sell_cash=10.01890359168242
+2021-03-07 11:23:40,492 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:23:40,492 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:23:40,493 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:23:40
+2021-03-07 11:23:40,493 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:23:40
+2021-03-07 11:23:40,493 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:23:40,493 - link - INFO - StartTime= 2021-03-07 11:23:40
+2021-03-07 11:23:40,864 - link - INFO - linkusdt  1000
+2021-03-07 11:23:41,136 - link - INFO - link3lusdt  1000
+2021-03-07 11:23:41,418 - link - INFO - link3susdt  1000
+2021-03-07 11:23:41,419 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:23:41,419 - link - INFO - FinishTime= 2021-03-07 11:23:41
+2021-03-07 11:23:41,419 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:23:41
+2021-03-07 11:23:41,419 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:23:41
+2021-03-07 11:23:41,648 - link - INFO - count_A_earn = 322 , count_B_earn = 273 , threshold_value=0.0
+2021-03-07 11:23:41,648 - link - INFO - last_open=28.4004, last_close=28.3577, invest_direction=planA, last_ts=2021-03-07 11:15:00
+2021-03-07 11:23:41,648 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:23:41
+2021-03-07 11:23:41,648 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 11:15:00
+2021-03-07 11:23:41,648 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:23:41
+2021-03-07 11:23:41,755 - link - INFO - current_balance = 10.005857096763915
+2021-03-07 11:23:41,756 - link - INFO - BUY NEW COINS
+2021-03-07 11:23:41,756 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.00106, amount=9433.962264150943, ts:2021-03-07 11:23:41
+2021-03-07 11:23:41,756 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 11:23:41,756 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:23:41
+2021-03-07 11:23:41,756 - link - INFO - =========================================
+2021-03-07 11:23:41,756 - link - INFO - sleep 299 seconds .....
+2021-03-07 11:28:40,855 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:28:40
+2021-03-07 11:28:40,980 - link - INFO - SELL LAST COIN
+2021-03-07 11:28:40,981 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9433.962264150943, sell_cur_price:0.001059
+2021-03-07 11:28:40,981 - link - INFO - sell_cur_price * last_amount = 9.99056603773585
+2021-03-07 11:28:40,981 - link - INFO - current_balance = 9.996423134499764  sell_ts:2021-03-07 11:28:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:28:40,981 - link - INFO - demo_action_running_duration: 1:20:01
+2021-03-07 11:28:40,981 - link - INFO - earning_ratio = -0.035768655002357264%
+2021-03-07 11:28:40,981 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 11:28:41,089 - link - INFO - actual_last_symbol:link3susdt, actual_last_currency:link3s, actual_last_amount:9433.962264150943, actual_sell_cur_price:0.001059
+2021-03-07 11:28:41,089 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.99056603773585
+2021-03-07 11:28:41,089 - link - INFO - actual_balance=9.872445390422861, ts_actual_sell=2021-03-07 11:28:41
+2021-03-07 11:28:41,089 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:28:41,089 - link - INFO - last_sell_cash=9.99056603773585
+2021-03-07 11:28:41,089 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:28:41,089 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:28:41,089 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:28:41
+2021-03-07 11:28:41,089 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:28:41
+2021-03-07 11:28:41,089 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:28:41,090 - link - INFO - StartTime= 2021-03-07 11:28:41
+2021-03-07 11:28:41,363 - link - INFO - linkusdt  1000
+2021-03-07 11:28:41,658 - link - INFO - link3lusdt  1000
+2021-03-07 11:28:41,931 - link - INFO - link3susdt  1000
+2021-03-07 11:28:41,931 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:28:41,931 - link - INFO - FinishTime= 2021-03-07 11:28:41
+2021-03-07 11:28:41,931 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:28:41
+2021-03-07 11:28:41,931 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:28:41
+2021-03-07 11:28:42,147 - link - INFO - count_A_earn = 321 , count_B_earn = 274 , threshold_value=0.0
+2021-03-07 11:28:42,147 - link - INFO - last_open=28.3572, last_close=28.3907, invest_direction=planA, last_ts=2021-03-07 11:20:00
+2021-03-07 11:28:42,147 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:28:42
+2021-03-07 11:28:42,147 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:20:00
+2021-03-07 11:28:42,147 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:28:42
+2021-03-07 11:28:42,249 - link - INFO - current_balance = 9.996423134499764
+2021-03-07 11:28:42,249 - link - INFO - BUY NEW COINS
+2021-03-07 11:28:42,249 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.7973, amount=2.084505867884018, ts:2021-03-07 11:28:42
+2021-03-07 11:28:42,249 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:28:42
+2021-03-07 11:28:42,249 - link - INFO - =========================================
+2021-03-07 11:28:42,250 - link - INFO - sleep 298 seconds .....
+2021-03-07 11:33:40,255 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:33:40
+2021-03-07 11:33:40,361 - link - INFO - SELL LAST COIN
+2021-03-07 11:33:40,361 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.084505867884018, sell_cur_price:4.8221
+2021-03-07 11:33:40,361 - link - INFO - sell_cur_price * last_amount = 10.051695745523523
+2021-03-07 11:33:40,361 - link - INFO - current_balance = 10.048118880023287  sell_ts:2021-03-07 11:33:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:33:40,361 - link - INFO - demo_action_running_duration: 1:25:01
+2021-03-07 11:33:40,361 - link - INFO - earning_ratio = 0.4811888002328679%
+2021-03-07 11:33:40,361 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:33:40,361 - link - INFO - last_sell_cash=10.051695745523523
+2021-03-07 11:33:40,361 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:33:40,362 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:33:40,362 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:33:40
+2021-03-07 11:33:40,362 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:33:40
+2021-03-07 11:33:40,362 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:33:40,362 - link - INFO - StartTime= 2021-03-07 11:33:40
+2021-03-07 11:33:40,907 - link - INFO - linkusdt  1000
+2021-03-07 11:33:41,226 - link - INFO - link3lusdt  1000
+2021-03-07 11:33:41,503 - link - INFO - link3susdt  1000
+2021-03-07 11:33:41,503 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:33:41,503 - link - INFO - FinishTime= 2021-03-07 11:33:41
+2021-03-07 11:33:41,503 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:33:41
+2021-03-07 11:33:41,504 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:33:41
+2021-03-07 11:33:41,718 - link - INFO - count_A_earn = 320 , count_B_earn = 275 , threshold_value=0.0
+2021-03-07 11:33:41,718 - link - INFO - last_open=28.3907, last_close=28.4147, invest_direction=planA, last_ts=2021-03-07 11:25:00
+2021-03-07 11:33:41,718 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:33:41
+2021-03-07 11:33:41,718 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:25:00
+2021-03-07 11:33:41,718 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:33:41
+2021-03-07 11:33:41,842 - link - INFO - current_balance = 10.048118880023287
+2021-03-07 11:33:41,842 - link - INFO - BUY NEW COINS
+2021-03-07 11:33:41,842 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.8221, amount=2.0737852802720806, ts:2021-03-07 11:33:41
+2021-03-07 11:33:41,842 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 11:33:41,842 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:33:41
+2021-03-07 11:33:41,842 - link - INFO - =========================================
+2021-03-07 11:33:41,843 - link - INFO - sleep 299 seconds .....
+2021-03-07 11:38:40,939 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:38:40
+2021-03-07 11:38:41,084 - link - INFO - SELL LAST COIN
+2021-03-07 11:38:41,084 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.0737852802720806, sell_cur_price:4.8742
+2021-03-07 11:38:41,084 - link - INFO - sell_cur_price * last_amount = 10.108044213102175
+2021-03-07 11:38:41,084 - link - INFO - current_balance = 10.156163093125462  sell_ts:2021-03-07 11:38:41  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:38:41,084 - link - INFO - demo_action_running_duration: 1:30:02
+2021-03-07 11:38:41,084 - link - INFO - earning_ratio = 1.5616309312546228%
+2021-03-07 11:38:41,084 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 11:38:41,191 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.0737852802720806, actual_sell_cur_price:4.8742
+2021-03-07 11:38:41,191 - link - INFO - actual_sell_cur_price * actual_last_amount = 10.108044213102175
+2021-03-07 11:38:41,191 - link - INFO - actual_balance=9.980489603525037, ts_actual_sell=2021-03-07 11:38:41
+2021-03-07 11:38:41,191 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:38:41,191 - link - INFO - last_sell_cash=10.108044213102175
+2021-03-07 11:38:41,191 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:38:41,191 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:38:41,192 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:38:41
+2021-03-07 11:38:41,192 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:38:41
+2021-03-07 11:38:41,192 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:38:41,192 - link - INFO - StartTime= 2021-03-07 11:38:41
+2021-03-07 11:38:41,474 - link - INFO - linkusdt  1000
+2021-03-07 11:38:41,742 - link - INFO - link3lusdt  1000
+2021-03-07 11:38:42,041 - link - INFO - link3susdt  1000
+2021-03-07 11:38:42,042 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:38:42,042 - link - INFO - FinishTime= 2021-03-07 11:38:42
+2021-03-07 11:38:42,042 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:38:42
+2021-03-07 11:38:42,042 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:38:42
+2021-03-07 11:38:42,267 - link - INFO - count_A_earn = 319 , count_B_earn = 276 , threshold_value=0.0
+2021-03-07 11:38:42,267 - link - INFO - last_open=28.4017, last_close=28.414, invest_direction=planA, last_ts=2021-03-07 11:30:00
+2021-03-07 11:38:42,267 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:38:42
+2021-03-07 11:38:42,267 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:30:00
+2021-03-07 11:38:42,267 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:38:42
+2021-03-07 11:38:42,387 - link - INFO - current_balance = 10.156163093125462
+2021-03-07 11:38:42,387 - link - INFO - BUY NEW COINS
+2021-03-07 11:38:42,387 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.8742, amount=2.051618727175742, ts:2021-03-07 11:38:42
+2021-03-07 11:38:42,387 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 11:38:42,387 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:38:42
+2021-03-07 11:38:42,387 - link - INFO - =========================================
+2021-03-07 11:38:42,388 - link - INFO - sleep 298 seconds .....
+2021-03-07 11:43:40,407 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:43:40
+2021-03-07 11:43:40,532 - link - INFO - SELL LAST COIN
+2021-03-07 11:43:40,532 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.051618727175742, sell_cur_price:4.8647
+2021-03-07 11:43:40,532 - link - INFO - sell_cur_price * last_amount = 9.980509622091832
+2021-03-07 11:43:40,532 - link - INFO - current_balance = 10.136672715217294  sell_ts:2021-03-07 11:43:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:43:40,532 - link - INFO - demo_action_running_duration: 1:35:01
+2021-03-07 11:43:40,532 - link - INFO - earning_ratio = 1.3667271521729418%
+2021-03-07 11:43:40,532 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-07 11:43:40,653 - link - INFO - actual_last_symbol:link3lusdt, actual_last_currency:link3l, actual_last_amount:2.051618727175742, actual_sell_cur_price:4.8647
+2021-03-07 11:43:40,653 - link - INFO - actual_sell_cur_price * actual_last_amount = 9.980509622091832
+2021-03-07 11:43:40,653 - link - INFO - actual_balance=9.960999225616868, ts_actual_sell=2021-03-07 11:43:40
+2021-03-07 11:43:40,653 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:43:40,653 - link - INFO - last_sell_cash=9.980509622091832
+2021-03-07 11:43:40,653 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:43:40,653 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:43:40,654 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:43:40
+2021-03-07 11:43:40,654 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:43:40
+2021-03-07 11:43:40,654 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:43:40,654 - link - INFO - StartTime= 2021-03-07 11:43:40
+2021-03-07 11:43:40,918 - link - INFO - linkusdt  1000
+2021-03-07 11:43:41,134 - link - INFO - link3lusdt  1000
+2021-03-07 11:43:41,527 - link - INFO - link3susdt  1000
+2021-03-07 11:43:41,527 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:43:41,527 - link - INFO - FinishTime= 2021-03-07 11:43:41
+2021-03-07 11:43:41,527 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:43:41
+2021-03-07 11:43:41,527 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:43:41
+2021-03-07 11:43:41,749 - link - INFO - count_A_earn = 318 , count_B_earn = 277 , threshold_value=0.0
+2021-03-07 11:43:41,749 - link - INFO - last_open=28.414, last_close=28.5274, invest_direction=planA, last_ts=2021-03-07 11:35:00
+2021-03-07 11:43:41,749 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:43:41
+2021-03-07 11:43:41,749 - link - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:35:00
+2021-03-07 11:43:41,749 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:43:41
+2021-03-07 11:43:41,868 - link - INFO - current_balance = 10.136672715217294
+2021-03-07 11:43:41,868 - link - INFO - BUY NEW COINS
+2021-03-07 11:43:41,868 - link - INFO - symbol:link3lusdt, currency:link3l, cur_price:4.8647, amount=2.0556252184101793, ts:2021-03-07 11:43:41
+2021-03-07 11:43:41,868 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:43:41
+2021-03-07 11:43:41,868 - link - INFO - =========================================
+2021-03-07 11:43:41,869 - link - INFO - sleep 299 seconds .....
+2021-03-07 11:48:40,969 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:48:40
+2021-03-07 11:48:41,092 - link - INFO - SELL LAST COIN
+2021-03-07 11:48:41,093 - link - INFO - last_symbol:link3lusdt, last_currency:link3l, last_amount:2.0556252184101793, sell_cur_price:4.8141
+2021-03-07 11:48:41,093 - link - INFO - sell_cur_price * last_amount = 9.895985363948444
+2021-03-07 11:48:41,093 - link - INFO - current_balance = 10.032658079165738  sell_ts:2021-03-07 11:48:41  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:48:41,093 - link - INFO - demo_action_running_duration: 1:40:02
+2021-03-07 11:48:41,093 - link - INFO - earning_ratio = 0.32658079165738485%
+2021-03-07 11:48:41,093 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:48:41,093 - link - INFO - last_sell_cash=9.895985363948444
+2021-03-07 11:48:41,093 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:48:41,093 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:48:41,094 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:48:41
+2021-03-07 11:48:41,094 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:48:41
+2021-03-07 11:48:41,094 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:48:41,094 - link - INFO - StartTime= 2021-03-07 11:48:41
+2021-03-07 11:48:41,363 - link - INFO - linkusdt  1000
+2021-03-07 11:48:41,634 - link - INFO - link3lusdt  1000
+2021-03-07 11:48:41,902 - link - INFO - link3susdt  1000
+2021-03-07 11:48:41,903 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:48:41,903 - link - INFO - FinishTime= 2021-03-07 11:48:41
+2021-03-07 11:48:41,903 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:48:41
+2021-03-07 11:48:41,903 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:48:41
+2021-03-07 11:48:42,126 - link - INFO - count_A_earn = 317 , count_B_earn = 278 , threshold_value=0.0
+2021-03-07 11:48:42,126 - link - INFO - last_open=28.5259, last_close=28.4934, invest_direction=planA, last_ts=2021-03-07 11:40:00
+2021-03-07 11:48:42,126 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:48:42
+2021-03-07 11:48:42,126 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 11:40:00
+2021-03-07 11:48:42,126 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:48:42
+2021-03-07 11:48:42,246 - link - INFO - current_balance = 10.032658079165738
+2021-03-07 11:48:42,246 - link - INFO - BUY NEW COINS
+2021-03-07 11:48:42,246 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.001059, amount=9442.870632672331, ts:2021-03-07 11:48:42
+2021-03-07 11:48:42,246 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:48:42
+2021-03-07 11:48:42,246 - link - INFO - =========================================
+2021-03-07 11:48:42,247 - link - INFO - sleep 298 seconds .....
+2021-03-07 11:53:40,347 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:53:40
+2021-03-07 11:53:40,473 - link - INFO - SELL LAST COIN
+2021-03-07 11:53:40,473 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:9442.870632672331, sell_cur_price:0.00106
+2021-03-07 11:53:40,473 - link - INFO - sell_cur_price * last_amount = 10.009442870632672
+2021-03-07 11:53:40,474 - link - INFO - current_balance = 10.04210094979841  sell_ts:2021-03-07 11:53:40  demo_action_launch_time: 2021-03-07 10:08:39
+2021-03-07 11:53:40,474 - link - INFO - demo_action_running_duration: 1:45:01
+2021-03-07 11:53:40,474 - link - INFO - earning_ratio = 0.42100949798410164%
+2021-03-07 11:53:40,474 - link - INFO - ***** update stop_actual_invest  *****
+2021-03-07 11:53:40,474 - link - INFO - last_sell_cash=10.009442870632672
+2021-03-07 11:53:40,474 - link - INFO - SEND QUEUE INFO - START
+2021-03-07 11:53:40,474 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-07 11:53:40,474 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:53:40
+2021-03-07 11:53:40,474 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:53:40
+2021-03-07 11:53:40,474 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-07 11:53:40,474 - link - INFO - StartTime= 2021-03-07 11:53:40
+2021-03-07 11:53:40,890 - link - INFO - linkusdt  1000
+2021-03-07 11:53:41,159 - link - INFO - link3lusdt  1000
+2021-03-07 11:53:41,426 - link - INFO - link3susdt  1000
+2021-03-07 11:53:41,426 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-07 11:53:41,426 - link - INFO - FinishTime= 2021-03-07 11:53:41
+2021-03-07 11:53:41,426 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:53:41
+2021-03-07 11:53:41,426 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-07 11:53:41
+2021-03-07 11:53:41,669 - link - INFO - count_A_earn = 316 , count_B_earn = 279 , threshold_value=0.0
+2021-03-07 11:53:41,669 - link - INFO - last_open=28.4934, last_close=28.3742, invest_direction=planA, last_ts=2021-03-07 11:45:00
+2021-03-07 11:53:41,669 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-07 11:53:41
+2021-03-07 11:53:41,669 - link - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-07 11:45:00
+2021-03-07 11:53:41,669 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-07 11:53:41
+2021-03-07 11:53:41,807 - link - INFO - current_balance = 10.04210094979841
+2021-03-07 11:53:41,807 - link - INFO - BUY NEW COINS
+2021-03-07 11:53:41,807 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.00106, amount=9433.962264150943, ts:2021-03-07 11:53:41
+2021-03-07 11:53:41,807 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-07 11:53:41,807 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-07 11:53:41
+2021-03-07 11:53:41,807 - link - INFO - =========================================
+2021-03-07 11:53:41,808 - link - INFO - sleep 299 seconds .....

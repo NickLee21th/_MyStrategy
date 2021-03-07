@@ -18442,3 +18442,1466 @@ symbol:eth3susdt, currency:eth3s, cur_price:0.004344, amount=2302.0257826887664,
 do_action -buy_lever_coins FinishTime= 2021-03-07 10:06:25
 =========================================
 time_stamp_start = 2021-03-07 10:06:24   time_stamp_end = 2021-03-07 10:06:25 
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 09:56:22
+=========================================
+time_stamp_start = 2021-03-07 09:56:21   time_stamp_end = 2021-03-07 09:56:22 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:01:21
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:3049.7102775236353, sell_cur_price:0.003307
+sell_cur_price * last_amount = 10.085391887770662
+current_balance = 10.253713425182593  sell_ts:2021-03-07 10:01:21  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:35:15
+earning_ratio = 2.5371342518259254%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3susdt, actual_last_currency:btc3s, actual_last_amount:3049.7102775236353, actual_sell_cur_price:0.003307
+actual_sell_cur_price * actual_last_amount = 10.085391887770662
+actual_balance=9.740131827373602, ts_actual_sell=2021-03-07 10:01:21
+***** update stop_actual_invest  *****
+last_sell_cash=10.085391887770662
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:01:21
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:01:21
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:01:21
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:01:22
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:01:22
+do_action -judge_invest_direction StartTime= 2021-03-07 10:01:22
+count_A_earn = 107 , count_B_earn = 411 , threshold_value=0.0
+last_open=50901.48, last_close=50939.07, invest_direction=planB, last_ts=2021-03-07 09:55:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:01:22
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 09:55:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:01:22
+current_balance = 10.253713425182593
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003308, amount=3022.974607013301, ts:2021-03-07 10:01:22
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:01:22
+=========================================
+time_stamp_start = 2021-03-07 10:01:21   time_stamp_end = 2021-03-07 10:01:22 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:06:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:3022.974607013301, sell_cur_price:0.003313
+sell_cur_price * last_amount = 10.015114873035067
+current_balance = 10.26882829821766  sell_ts:2021-03-07 10:06:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:40:16
+earning_ratio = 2.6882829821765952%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3susdt, actual_last_currency:btc3s, actual_last_amount:3022.974607013301, actual_sell_cur_price:0.003313
+actual_sell_cur_price * actual_last_amount = 10.015114873035067
+actual_balance=9.75524670040867, ts_actual_sell=2021-03-07 10:06:22
+***** update stop_actual_invest  *****
+last_sell_cash=10.015114873035067
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:06:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:06:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:06:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:06:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:06:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:06:23
+count_A_earn = 106 , count_B_earn = 412 , threshold_value=0.0
+last_open=50939.06, last_close=50812.44, invest_direction=planB, last_ts=2021-03-07 10:00:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:06:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:00:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:06:23
+current_balance = 10.26882829821766
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:280.7167, amount=0.03562310329239408, ts:2021-03-07 10:06:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:06:23
+=========================================
+time_stamp_start = 2021-03-07 10:06:22   time_stamp_end = 2021-03-07 10:06:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:11:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.03562310329239408, sell_cur_price:280.0434
+sell_cur_price * last_amount = 9.976014964553233
+current_balance = 10.244843262770893  sell_ts:2021-03-07 10:11:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:45:16
+earning_ratio = 2.4484326277089252%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3lusdt, actual_last_currency:btc3l, actual_last_amount:0.03562310329239408, actual_sell_cur_price:280.0434
+actual_sell_cur_price * actual_last_amount = 9.976014964553233
+actual_balance=9.731261664961902, ts_actual_sell=2021-03-07 10:11:22
+***** update stop_actual_invest  *****
+last_sell_cash=9.976014964553233
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:11:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:11:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:11:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:11:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:11:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:11:23
+count_A_earn = 105 , count_B_earn = 413 , threshold_value=0.0
+last_open=50812.44, last_close=50800.0, invest_direction=planB, last_ts=2021-03-07 10:05:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:11:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:05:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:11:23
+current_balance = 10.244843262770893
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:280.0434, amount=0.03570875085790274, ts:2021-03-07 10:11:24
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:11:24
+=========================================
+time_stamp_start = 2021-03-07 10:11:22   time_stamp_end = 2021-03-07 10:11:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:16:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.03570875085790274, sell_cur_price:280.294
+sell_cur_price * last_amount = 10.00894861296499
+current_balance = 10.253791875735882  sell_ts:2021-03-07 10:16:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:50:16
+earning_ratio = 2.537918757358817%
+***** update stop_actual_invest  *****
+last_sell_cash=10.00894861296499
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:16:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:16:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:16:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:16:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:16:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:16:23
+count_A_earn = 104 , count_B_earn = 414 , threshold_value=0.0
+last_open=50800.0, last_close=50887.52, invest_direction=planB, last_ts=2021-03-07 10:10:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:16:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 10:10:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:16:23
+current_balance = 10.253791875735882
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003318, amount=3013.863773357444, ts:2021-03-07 10:16:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:16:23
+=========================================
+time_stamp_start = 2021-03-07 10:16:22   time_stamp_end = 2021-03-07 10:16:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:21:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:3013.863773357444, sell_cur_price:0.003325
+sell_cur_price * last_amount = 10.021097046413502
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:11:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2302.0257826887664, sell_cur_price:0.004344
+sell_cur_price * last_amount = 10.0
+current_balance = 9.940180534609945  sell_ts:2021-03-07 10:11:25  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:45:19
+earning_ratio = -0.5981946539005456%
+***** update stop_actual_invest  *****
+last_sell_cash=10.0
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:11:25
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:11:25
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:11:25
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:11:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:11:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:11:25
+count_A_earn = 393 , count_B_earn = 117 , threshold_value=0.0
+last_open=1681.14, last_close=1680.16, invest_direction=planA, last_ts=2021-03-07 10:05:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:11:26
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:05:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:11:26
+current_balance = 9.940180534609945
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004344, amount=2302.0257826887664, ts:2021-03-07 10:11:26
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:11:26
+=========================================
+time_stamp_start = 2021-03-07 10:11:24   time_stamp_end = 2021-03-07 10:11:26 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:16:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2302.0257826887664, sell_cur_price:0.004319
+sell_cur_price * last_amount = 9.942449355432782
+current_balance = 9.882629890042727  sell_ts:2021-03-07 10:16:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:50:18
+earning_ratio = -1.1737010995727282%
+***** update stop_actual_invest  *****
+last_sell_cash=9.942449355432782
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:16:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:16:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:16:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:16:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:16:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:16:25
+count_A_earn = 392 , count_B_earn = 117 , threshold_value=0.0
+last_open=1680.17, last_close=1684.66, invest_direction=planA, last_ts=2021-03-07 10:10:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:16:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:10:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:16:25
+current_balance = 9.882629890042727
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:41.3281, amount=0.24196611990389105, ts:2021-03-07 10:16:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:16:25
+=========================================
+time_stamp_start = 2021-03-07 10:16:24   time_stamp_end = 2021-03-07 10:16:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:21:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.24196611990389105, sell_cur_price:41.3549
+sell_cur_price * last_amount = 10.006484692013425
+current_balance = 9.889114582056152  sell_ts:2021-03-07 10:21:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:55:18
+earning_ratio = -1.108854179438481%
+***** update stop_actual_invest  *****
+last_sell_cash=10.006484692013425
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:21:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:21:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:21:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:21:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:21:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:21:25
+count_A_earn = 391 , count_B_earn = 115 , threshold_value=0.0
+last_open=1684.65, last_close=1682.91, invest_direction=planA, last_ts=2021-03-07 10:15:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:21:25
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:15:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:21:25
+current_balance = 9.889114582056152
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004316, amount=2316.960148285449, ts:2021-03-07 10:21:26
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:21:26
+=========================================
+time_stamp_start = 2021-03-07 10:21:24   time_stamp_end = 2021-03-07 10:21:26 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:26:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2316.960148285449, sell_cur_price:0.004252
+sell_cur_price * last_amount = 9.85171455050973
+current_balance = 9.740829132565882  sell_ts:2021-03-07 10:26:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:00:18
+earning_ratio = -2.5917086743411843%
+***** update stop_actual_invest  *****
+last_sell_cash=9.85171455050973
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:26:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:26:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:26:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:26:24
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:26:24
+do_action -judge_invest_direction StartTime= 2021-03-07 10:26:24
+count_A_earn = 390 , count_B_earn = 117 , threshold_value=0.0
+last_open=1682.9, last_close=1685.0, invest_direction=planA, last_ts=2021-03-07 10:20:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:26:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:20:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:26:25
+current_balance = 9.740829132565882
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:41.7345, amount=0.23960991505828513, ts:2021-03-07 10:26:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:26:25
+=========================================
+time_stamp_start = 2021-03-07 10:26:24   time_stamp_end = 2021-03-07 10:26:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:31:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.23960991505828513, sell_cur_price:41.3337
+sell_cur_price * last_amount = 9.90396434604464
+current_balance = 9.644793478610522  sell_ts:2021-03-07 10:31:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:05:18
+earning_ratio = -3.5520652138947817%
+***** update stop_actual_invest  *****
+last_sell_cash=9.90396434604464
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:31:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:31:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:31:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:31:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:31:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:31:25
+count_A_earn = 392 , count_B_earn = 117 , threshold_value=0.0
+last_open=1684.99, last_close=1683.33, invest_direction=planA, last_ts=2021-03-07 10:25:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:31:25
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:25:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:31:25
+current_balance = 9.644793478610522
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004321, amount=2314.2791020597083, ts:2021-03-07 10:31:25
+current_balance = 10.274888922149383  sell_ts:2021-03-07 10:21:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 20:55:16
+earning_ratio = 2.748889221493833%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3susdt, actual_last_currency:btc3s, actual_last_amount:3013.863773357444, actual_sell_cur_price:0.003325
+actual_sell_cur_price * actual_last_amount = 10.021097046413502
+actual_balance=9.752358711375404, ts_actual_sell=2021-03-07 10:21:22
+***** update stop_actual_invest  *****
+last_sell_cash=10.021097046413502
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:21:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:21:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:21:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:21:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:21:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:21:23
+count_A_earn = 103 , count_B_earn = 415 , threshold_value=0.0
+last_open=50887.51, last_close=50801.54, invest_direction=planB, last_ts=2021-03-07 10:15:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:21:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:15:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:21:23
+current_balance = 10.274888922149383
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:280.2418, amount=0.0356834704886994, ts:2021-03-07 10:21:24
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:21:24
+=========================================
+time_stamp_start = 2021-03-07 10:21:22   time_stamp_end = 2021-03-07 10:21:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:26:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.0356834704886994, sell_cur_price:281.2774
+sell_cur_price * last_amount = 10.036953802038097
+current_balance = 10.31184272418748  sell_ts:2021-03-07 10:26:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:00:16
+earning_ratio = 3.1184272418748016%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3lusdt, actual_last_currency:btc3l, actual_last_amount:0.0356834704886994, actual_sell_cur_price:281.2774
+actual_sell_cur_price * actual_last_amount = 10.036953802038097
+actual_balance=9.7893125134135, ts_actual_sell=2021-03-07 10:26:22
+***** update stop_actual_invest  *****
+last_sell_cash=10.036953802038097
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:26:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:26:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:26:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:26:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:26:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:26:23
+count_A_earn = 102 , count_B_earn = 416 , threshold_value=0.0
+last_open=50801.53, last_close=50843.87, invest_direction=planB, last_ts=2021-03-07 10:20:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:26:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 10:20:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:26:23
+current_balance = 10.31184272418748
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.0033, amount=3030.3030303030305, ts:2021-03-07 10:26:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:26:23
+=========================================
+time_stamp_start = 2021-03-07 10:26:22   time_stamp_end = 2021-03-07 10:26:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:31:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:3030.3030303030305, sell_cur_price:0.00333
+sell_cur_price * last_amount = 10.090909090909092
+current_balance = 10.402751815096572  sell_ts:2021-03-07 10:31:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:05:16
+earning_ratio = 4.027518150965719%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3susdt, actual_last_currency:btc3s, actual_last_amount:3030.3030303030305, actual_sell_cur_price:0.00333
+actual_sell_cur_price * actual_last_amount = 10.090909090909092
+actual_balance=9.880221604322593, ts_actual_sell=2021-03-07 10:31:22
+***** update stop_actual_invest  *****
+last_sell_cash=10.090909090909092
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:31:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:31:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:31:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:31:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:31:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:31:23
+count_A_earn = 101 , count_B_earn = 417 , threshold_value=0.0
+last_open=50849.59, last_close=50707.88, invest_direction=planB, last_ts=2021-03-07 10:25:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:31:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:25:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:31:23
+current_balance = 10.402751815096572
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:279.3575, amount=0.035796425726891165, ts:2021-03-07 10:31:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:31:23
+=========================================
+time_stamp_start = 2021-03-07 10:31:22   time_stamp_end = 2021-03-07 10:31:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:36:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.035796425726891165, sell_cur_price:277.9553
+sell_cur_price * last_amount = 9.949806251845752
+current_balance = 10.352558066942324  sell_ts:2021-03-07 10:36:23  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:10:17
+earning_ratio = 3.525580669423238%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3lusdt, actual_last_currency:btc3l, actual_last_amount:0.035796425726891165, actual_sell_cur_price:277.9553
+actual_sell_cur_price * actual_last_amount = 9.949806251845752
+actual_balance=9.830027856168345, ts_actual_sell=2021-03-07 10:36:23
+***** update stop_actual_invest  *****
+last_sell_cash=9.949806251845752
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:36:23
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:36:23
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:36:23
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:36:24
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:36:24
+do_action -judge_invest_direction StartTime= 2021-03-07 10:36:24
+count_A_earn = 100 , count_B_earn = 418 , threshold_value=0.0
+last_open=50727.09, last_close=50620.49, invest_direction=planB, last_ts=2021-03-07 10:30:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:36:24
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:30:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:36:24
+current_balance = 10.352558066942324
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:277.9232, amount=0.03598116314147218, ts:2021-03-07 10:36:24
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:36:24
+=========================================
+time_stamp_start = 2021-03-07 10:36:22   time_stamp_end = 2021-03-07 10:36:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:41:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.03598116314147218, sell_cur_price:275.3601
+sell_cur_price * last_amount = 9.907776680752093
+current_balance = 10.260334747694417  sell_ts:2021-03-07 10:41:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:15:16
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:31:25
+=========================================
+time_stamp_start = 2021-03-07 10:31:24   time_stamp_end = 2021-03-07 10:31:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:36:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2314.2791020597083, sell_cur_price:0.004374
+sell_cur_price * last_amount = 10.122656792409165
+current_balance = 9.767450271019687  sell_ts:2021-03-07 10:36:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:10:18
+earning_ratio = -2.325497289803131%
+***** update stop_actual_invest  *****
+last_sell_cash=10.122656792409165
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:36:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:36:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:36:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:36:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:36:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:36:25
+count_A_earn = 389 , count_B_earn = 115 , threshold_value=0.0
+last_open=1683.32, last_close=1676.23, invest_direction=planA, last_ts=2021-03-07 10:30:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:36:25
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:30:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:36:25
+current_balance = 9.767450271019687
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004374, amount=2286.2368541380883, ts:2021-03-07 10:36:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:36:25
+=========================================
+time_stamp_start = 2021-03-07 10:36:24   time_stamp_end = 2021-03-07 10:36:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:41:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2286.2368541380883, sell_cur_price:0.004431
+sell_cur_price * last_amount = 10.13031550068587
+current_balance = 9.897765771705556  sell_ts:2021-03-07 10:41:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:15:18
+earning_ratio = -1.0223422829444395%
+***** update stop_actual_invest  *****
+last_sell_cash=10.13031550068587
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:41:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:41:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:41:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:41:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:41:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:41:25
+count_A_earn = 389 , count_B_earn = 115 , threshold_value=0.0
+last_open=1676.48, last_close=1674.69, invest_direction=planA, last_ts=2021-03-07 10:35:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:41:25
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:35:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:41:25
+current_balance = 9.897765771705556
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004433, amount=2255.8087074216105, ts:2021-03-07 10:41:26
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:41:26
+=========================================
+time_stamp_start = 2021-03-07 10:41:24   time_stamp_end = 2021-03-07 10:41:26 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:46:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2255.8087074216105, sell_cur_price:0.004412
+sell_cur_price * last_amount = 9.952628017144146
+current_balance = 9.850393788849702  sell_ts:2021-03-07 10:46:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:20:18
+earning_ratio = -1.496062111502976%
+***** update stop_actual_invest  *****
+last_sell_cash=9.952628017144146
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:46:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:46:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:46:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:46:24
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:46:24
+do_action -judge_invest_direction StartTime= 2021-03-07 10:46:24
+count_A_earn = 392 , count_B_earn = 117 , threshold_value=0.0
+last_open=1674.68, last_close=1670.04, invest_direction=planA, last_ts=2021-03-07 10:40:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:46:25
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:40:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:46:25
+current_balance = 9.850393788849702
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004411, amount=2267.0596236681026, ts:2021-03-07 10:46:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:46:25
+=========================================
+time_stamp_start = 2021-03-07 10:46:24   time_stamp_end = 2021-03-07 10:46:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:51:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2267.0596236681026, sell_cur_price:0.004401
+sell_cur_price * last_amount = 9.97732940376332
+current_balance = 9.827723192613023  sell_ts:2021-03-07 10:51:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:25:18
+earning_ratio = -1.7227680738697693%
+***** update stop_actual_invest  *****
+last_sell_cash=9.97732940376332
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:51:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:51:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:51:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:51:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:51:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:51:25
+count_A_earn = 392 , count_B_earn = 117 , threshold_value=0.0
+last_open=1670.04, last_close=1675.26, invest_direction=planA, last_ts=2021-03-07 10:45:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:51:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:45:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:51:25
+current_balance = 9.827723192613023
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:40.8306, amount=0.24491435345059834, ts:2021-03-07 10:51:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:51:25
+=========================================
+time_stamp_start = 2021-03-07 10:51:24   time_stamp_end = 2021-03-07 10:51:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:56:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.24491435345059834, sell_cur_price:40.7402
+sell_cur_price * last_amount = 9.977859742448066
+current_balance = 9.80558293506109  sell_ts:2021-03-07 10:56:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:30:18
+earning_ratio = -1.9441706493891078%
+***** update stop_actual_invest  *****
+last_sell_cash=9.977859742448066
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:56:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:56:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:56:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:56:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:56:25
+do_action -judge_invest_direction StartTime= 2021-03-07 10:56:25
+count_A_earn = 392 , count_B_earn = 116 , threshold_value=0.0
+last_open=1675.25, last_close=1674.13, invest_direction=planA, last_ts=2021-03-07 10:50:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:56:25
+earning_ratio = 2.603347476944169%
+***** update stop_actual_invest  *****
+last_sell_cash=9.907776680752093
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:41:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:41:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:41:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:41:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:41:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:41:23
+count_A_earn = 99 , count_B_earn = 419 , threshold_value=0.0
+last_open=50632.33, last_close=50603.98, invest_direction=planB, last_ts=2021-03-07 10:35:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:41:24
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:35:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:41:24
+current_balance = 10.260334747694417
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:275.3592, amount=0.03631620080244277, ts:2021-03-07 10:41:24
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:41:24
+=========================================
+time_stamp_start = 2021-03-07 10:41:22   time_stamp_end = 2021-03-07 10:41:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:46:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.03631620080244277, sell_cur_price:275.0952
+sell_cur_price * last_amount = 9.990412522988153
+current_balance = 10.25074727068257  sell_ts:2021-03-07 10:46:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:20:16
+earning_ratio = 2.507472706825702%
+***** update stop_actual_invest  *****
+last_sell_cash=9.990412522988153
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:46:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:46:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:46:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:46:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:46:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:46:23
+count_A_earn = 98 , count_B_earn = 420 , threshold_value=0.0
+last_open=50603.99, last_close=50492.89, invest_direction=planB, last_ts=2021-03-07 10:40:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:46:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:40:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:46:23
+current_balance = 10.25074727068257
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:275.0952, amount=0.0363510522902617, ts:2021-03-07 10:46:23
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:46:23
+=========================================
+time_stamp_start = 2021-03-07 10:46:22   time_stamp_end = 2021-03-07 10:46:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:51:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.0363510522902617, sell_cur_price:276.57
+sell_cur_price * last_amount = 10.053610531917677
+current_balance = 10.304357802600247  sell_ts:2021-03-07 10:51:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:25:16
+earning_ratio = 3.0435780260024714%
+***** update stop_actual_invest  *****
+last_sell_cash=10.053610531917677
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:51:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:51:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:51:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:51:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:51:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:51:23
+count_A_earn = 97 , count_B_earn = 421 , threshold_value=0.0
+last_open=50484.33, last_close=50666.96, invest_direction=planB, last_ts=2021-03-07 10:45:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:51:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 10:45:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:51:23
+current_balance = 10.304357802600247
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003368, amount=2969.121140142518, ts:2021-03-07 10:51:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:51:24
+=========================================
+time_stamp_start = 2021-03-07 10:51:22   time_stamp_end = 2021-03-07 10:51:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 10:56:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:2969.121140142518, sell_cur_price:0.003383
+sell_cur_price * last_amount = 10.04453681710214
+current_balance = 10.348894619702387  sell_ts:2021-03-07 10:56:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:30:16
+earning_ratio = 3.4889461970238678%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3susdt, actual_last_currency:btc3s, actual_last_amount:2969.121140142518, actual_sell_cur_price:0.003383
+actual_sell_cur_price * actual_last_amount = 10.04453681710214
+actual_balance=9.874564673270484, ts_actual_sell=2021-03-07 10:56:22
+***** update stop_actual_invest  *****
+last_sell_cash=10.04453681710214
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 10:56:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 10:56:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 10:56:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 10:56:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 10:56:23
+do_action -judge_invest_direction StartTime= 2021-03-07 10:56:23
+count_A_earn = 96 , count_B_earn = 422 , threshold_value=0.0
+last_open=50672.89, last_close=50594.07, invest_direction=planB, last_ts=2021-03-07 10:50:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 10:56:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 10:50:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:56:23
+current_balance = 10.348894619702387
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:276.1187, amount=0.036216308420979816, ts:2021-03-07 10:56:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:56:23
+=========================================
+time_stamp_start = 2021-03-07 10:56:22   time_stamp_end = 2021-03-07 10:56:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:01:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.036216308420979816, sell_cur_price:275.8939
+sell_cur_price * last_amount = 9.991858573866962
+current_balance = 10.340753193569348  sell_ts:2021-03-07 11:01:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:35:16
+earning_ratio = 3.407531935693484%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3lusdt, actual_last_currency:btc3l, actual_last_amount:0.036216308420979816, actual_sell_cur_price:275.8939
+actual_sell_cur_price * actual_last_amount = 9.991858573866962
+actual_balance=9.866423247137446, ts_actual_sell=2021-03-07 11:01:22
+***** update stop_actual_invest  *****
+last_sell_cash=9.991858573866962
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:01:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:01:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:01:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:01:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:01:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:01:23
+count_A_earn = 95 , count_B_earn = 423 , threshold_value=0.0
+last_open=50594.07, last_close=50609.8, invest_direction=planB, last_ts=2021-03-07 10:55:00
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 10:50:00
+do_action -buy_lever_coins StartTime= 2021-03-07 10:56:25
+current_balance = 9.80558293506109
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004409, amount=2268.0880018144703, ts:2021-03-07 10:56:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 10:56:25
+=========================================
+time_stamp_start = 2021-03-07 10:56:24   time_stamp_end = 2021-03-07 10:56:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:01:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2268.0880018144703, sell_cur_price:0.004435
+sell_cur_price * last_amount = 10.058970288047176
+current_balance = 9.864553223108265  sell_ts:2021-03-07 11:01:25  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:35:19
+earning_ratio = -1.354467768917349%
+***** update stop_actual_invest  *****
+last_sell_cash=10.058970288047176
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:01:25
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:01:25
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:01:25
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:01:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:01:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:01:25
+count_A_earn = 392 , count_B_earn = 116 , threshold_value=0.0
+last_open=1674.14, last_close=1674.9, invest_direction=planA, last_ts=2021-03-07 10:55:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:01:26
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 10:55:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:01:26
+current_balance = 9.864553223108265
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:40.6926, amount=0.24574492659599043, ts:2021-03-07 11:01:26
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:01:26
+=========================================
+time_stamp_start = 2021-03-07 11:01:24   time_stamp_end = 2021-03-07 11:01:26 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:06:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.24574492659599043, sell_cur_price:40.2216
+sell_cur_price * last_amount = 9.884254139573288
+current_balance = 9.748807362681553  sell_ts:2021-03-07 11:06:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:40:18
+earning_ratio = -2.5119263731844654%
+***** update stop_actual_invest  *****
+last_sell_cash=9.884254139573288
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:06:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:06:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:06:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:06:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:06:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:06:25
+count_A_earn = 389 , count_B_earn = 114 , threshold_value=0.0
+last_open=1674.89, last_close=1665.32, invest_direction=planA, last_ts=2021-03-07 11:00:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:06:25
+invest_direction=planA, last_trend=-1, last_ts=2021-03-07 11:00:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:06:25
+current_balance = 9.748807362681553
+BUY NEW COINS
+symbol:eth3susdt, currency:eth3s, cur_price:0.004503, amount=2220.741727737064, ts:2021-03-07 11:06:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:06:25
+=========================================
+time_stamp_start = 2021-03-07 11:06:24   time_stamp_end = 2021-03-07 11:06:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:11:24
+SELL LAST COIN
+last_symbol:eth3susdt, last_currency:eth3s, last_amount:2220.741727737064, sell_cur_price:0.004493
+sell_cur_price * last_amount = 9.977792582722628
+current_balance = 9.726599945404182  sell_ts:2021-03-07 11:11:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:45:18
+earning_ratio = -2.7340005459581818%
+***** update stop_actual_invest  *****
+last_sell_cash=9.977792582722628
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:11:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:11:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:11:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:11:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:11:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:11:25
+count_A_earn = 390 , count_B_earn = 116 , threshold_value=0.0
+last_open=1665.31, last_close=1665.68, invest_direction=planA, last_ts=2021-03-07 11:05:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:11:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:05:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:11:25
+current_balance = 9.726599945404182
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:40.3677, amount=0.24772280808666336, ts:2021-03-07 11:11:26
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:11:26
+=========================================
+time_stamp_start = 2021-03-07 11:11:24   time_stamp_end = 2021-03-07 11:11:26 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:16:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.24772280808666336, sell_cur_price:40.6262
+sell_cur_price * last_amount = 10.064036345890402
+current_balance = 9.790636291294584  sell_ts:2021-03-07 11:16:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:50:18
+earning_ratio = -2.0936370870541587%
+***** update stop_actual_invest  *****
+last_sell_cash=10.064036345890402
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:16:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:16:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:16:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:16:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:16:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:16:25
+count_A_earn = 388 , count_B_earn = 114 , threshold_value=0.0
+last_open=1665.78, last_close=1669.03, invest_direction=planA, last_ts=2021-03-07 11:10:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:16:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:10:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:16:25
+current_balance = 9.790636291294584
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:40.6262, amount=0.246146575362697, ts:2021-03-07 11:16:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:16:25
+=========================================
+time_stamp_start = 2021-03-07 11:16:24   time_stamp_end = 2021-03-07 11:16:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:21:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.246146575362697, sell_cur_price:40.5123
+sell_cur_price * last_amount = 9.97196390506619
+current_balance = 9.762600196360774  sell_ts:2021-03-07 11:21:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:55:18
+earning_ratio = -2.373998036392262%
+***** update stop_actual_invest  *****
+last_sell_cash=9.97196390506619
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:21:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:21:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:21:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:21:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:21:25
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:01:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 10:55:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:01:23
+current_balance = 10.340753193569348
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003396, amount=2944.6407538280328, ts:2021-03-07 11:01:23
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:01:23
+=========================================
+time_stamp_start = 2021-03-07 11:01:22   time_stamp_end = 2021-03-07 11:01:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:06:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:2944.6407538280328, sell_cur_price:0.003387
+sell_cur_price * last_amount = 9.973498233215546
+current_balance = 10.314251426784894  sell_ts:2021-03-07 11:06:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:40:16
+earning_ratio = 3.1425142678489415%
+***** update stop_actual_invest  *****
+last_sell_cash=9.973498233215546
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:06:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:06:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:06:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:06:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:06:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:06:23
+count_A_earn = 94 , count_B_earn = 424 , threshold_value=0.0
+last_open=50609.8, last_close=50526.04, invest_direction=planB, last_ts=2021-03-07 11:00:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:06:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 11:00:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:06:23
+current_balance = 10.314251426784894
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:276.3435, amount=0.03618684716666033, ts:2021-03-07 11:06:24
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:06:24
+=========================================
+time_stamp_start = 2021-03-07 11:06:22   time_stamp_end = 2021-03-07 11:06:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:11:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.03618684716666033, sell_cur_price:276.011
+sell_cur_price * last_amount = 9.987967873317086
+current_balance = 10.30221930010198  sell_ts:2021-03-07 11:11:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:45:16
+earning_ratio = 3.0221930010197973%
+***** update stop_actual_invest  *****
+last_sell_cash=9.987967873317086
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:11:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:11:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:11:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:11:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:11:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:11:23
+count_A_earn = 93 , count_B_earn = 425 , threshold_value=0.0
+last_open=50529.89, last_close=50550.0, invest_direction=planB, last_ts=2021-03-07 11:05:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:11:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 11:05:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:11:23
+current_balance = 10.30221930010198
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003383, amount=2955.9562518474727, ts:2021-03-07 11:11:23
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:11:23
+=========================================
+time_stamp_start = 2021-03-07 11:11:22   time_stamp_end = 2021-03-07 11:11:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:16:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:2955.9562518474727, sell_cur_price:0.003369
+sell_cur_price * last_amount = 9.958616612474136
+current_balance = 10.260835912576116  sell_ts:2021-03-07 11:16:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:50:16
+earning_ratio = 2.6083591257611616%
+***** update stop_actual_invest  *****
+last_sell_cash=9.958616612474136
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:16:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:16:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:16:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:16:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:16:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:16:23
+count_A_earn = 92 , count_B_earn = 426 , threshold_value=0.0
+last_open=50550.91, last_close=50599.24, invest_direction=planB, last_ts=2021-03-07 11:10:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:16:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 11:10:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:16:23
+current_balance = 10.260835912576116
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003369, amount=2968.2398337785694, ts:2021-03-07 11:16:23
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:16:23
+=========================================
+time_stamp_start = 2021-03-07 11:16:22   time_stamp_end = 2021-03-07 11:16:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:21:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:2968.2398337785694, sell_cur_price:0.00337
+sell_cur_price * last_amount = 10.002968239833779
+current_balance = 10.263804152409895  sell_ts:2021-03-07 11:21:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 21:55:16
+earning_ratio = 2.6380415240989485%
+***** update stop_actual_invest  *****
+last_sell_cash=10.002968239833779
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:21:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:21:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:21:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:21:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:21:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:21:23
+count_A_earn = 91 , count_B_earn = 427 , threshold_value=0.0
+last_open=50599.25, last_close=50549.08, invest_direction=planB, last_ts=2021-03-07 11:15:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:21:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 11:15:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:21:23
+current_balance = 10.263804152409895
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:277.1, amount=0.03608805485384337, ts:2021-03-07 11:21:24
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:21:24
+=========================================
+time_stamp_start = 2021-03-07 11:21:22   time_stamp_end = 2021-03-07 11:21:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:26:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.03608805485384337, sell_cur_price:279.9481
+sell_cur_price * last_amount = 10.10278238902923
+current_balance = 10.366586541439125  sell_ts:2021-03-07 11:26:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:00:16
+earning_ratio = 3.665865414391245%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3lusdt, actual_last_currency:btc3l, actual_last_amount:0.03608805485384337, actual_sell_cur_price:279.9481
+actual_sell_cur_price * actual_last_amount = 10.10278238902923
+actual_balance=9.969205636166675, ts_actual_sell=2021-03-07 11:26:22
+***** update stop_actual_invest  *****
+last_sell_cash=10.10278238902923
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:26:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:26:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:26:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:26:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:26:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:26:23
+count_A_earn = 90 , count_B_earn = 428 , threshold_value=0.0
+last_open=50549.07, last_close=50702.02, invest_direction=planB, last_ts=2021-03-07 11:20:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:26:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 11:20:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:26:23
+current_balance = 10.366586541439125
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003321, amount=3011.141222523336, ts:2021-03-07 11:26:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:26:23
+=========================================
+time_stamp_start = 2021-03-07 11:26:22   time_stamp_end = 2021-03-07 11:26:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:31:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:3011.141222523336, sell_cur_price:0.003348
+sell_cur_price * last_amount = 10.081300813008129
+current_balance = 10.447887354447253  sell_ts:2021-03-07 11:31:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:05:16
+earning_ratio = 4.478873544472535%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3susdt, actual_last_currency:btc3s, actual_last_amount:3011.141222523336, actual_sell_cur_price:0.003348
+actual_sell_cur_price * actual_last_amount = 10.081300813008129
+actual_balance=10.050506449174804, ts_actual_sell=2021-03-07 11:31:23
+***** update stop_actual_invest  *****
+last_sell_cash=10.081300813008129
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:31:23
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:31:23
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:31:23
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:31:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:31:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:31:23
+count_A_earn = 89 , count_B_earn = 429 , threshold_value=0.0
+last_open=50702.02, last_close=50635.98, invest_direction=planB, last_ts=2021-03-07 11:25:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:31:24
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 11:25:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:31:24
+current_balance = 10.447887354447253
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:278.5248, amount=0.035903445581865596, ts:2021-03-07 11:31:24
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:31:24
+=========================================
+time_stamp_start = 2021-03-07 11:31:22   time_stamp_end = 2021-03-07 11:31:24 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:36:22
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.035903445581865596, sell_cur_price:280.6335
+sell_cur_price * last_amount = 10.07570959569848
+current_balance = 10.523596950145734  sell_ts:2021-03-07 11:36:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:10:16
+earning_ratio = 5.23596950145734%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3lusdt, actual_last_currency:btc3l, actual_last_amount:0.035903445581865596, actual_sell_cur_price:280.6335
+actual_sell_cur_price * actual_last_amount = 10.07570959569848
+actual_balance=10.126216044873285, ts_actual_sell=2021-03-07 11:36:22
+***** update stop_actual_invest  *****
+last_sell_cash=10.07570959569848
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:36:22
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:36:22
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:36:22
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:36:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:36:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:36:23
+count_A_earn = 88 , count_B_earn = 430 , threshold_value=0.0
+last_open=50635.98, last_close=50799.3, invest_direction=planB, last_ts=2021-03-07 11:30:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:36:23
+invest_direction=planB, last_trend=1, last_ts=2021-03-07 11:30:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:36:23
+current_balance = 10.523596950145734
+BUY NEW COINS
+symbol:btc3susdt, currency:btc3s, cur_price:0.003305, amount=3025.71860816944, ts:2021-03-07 11:36:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:36:23
+=========================================
+time_stamp_start = 2021-03-07 11:36:22   time_stamp_end = 2021-03-07 11:36:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:41:22
+SELL LAST COIN
+last_symbol:btc3susdt, last_currency:btc3s, last_amount:3025.71860816944, sell_cur_price:0.003325
+sell_cur_price * last_amount = 10.060514372163388
+current_balance = 10.584111322309122  sell_ts:2021-03-07 11:41:22  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:15:16
+earning_ratio = 5.841113223091217%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3susdt, actual_last_currency:btc3s, actual_last_amount:3025.71860816944, actual_sell_cur_price:0.003325
+actual_sell_cur_price * actual_last_amount = 10.060514372163388
+actual_balance=10.186730417036673, ts_actual_sell=2021-03-07 11:41:23
+***** update stop_actual_invest  *****
+last_sell_cash=10.060514372163388
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:41:23
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:41:23
+btc  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:41:23
+btcusdt  1000
+btc3lusdt  1000
+btc3susdt  1000
+btc  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:41:23
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:41:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:41:23
+count_A_earn = 87 , count_B_earn = 431 , threshold_value=0.0
+last_open=50799.31, last_close=50776.29, invest_direction=planB, last_ts=2021-03-07 11:35:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:41:23
+invest_direction=planB, last_trend=-1, last_ts=2021-03-07 11:35:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:41:23
+current_balance = 10.584111322309122
+BUY NEW COINS
+symbol:btc3lusdt, currency:btc3l, cur_price:279.784, amount=0.03574185800474652, ts:2021-03-07 11:41:23
+ACTUAL - BUY NEW COINS
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:41:23
+=========================================
+time_stamp_start = 2021-03-07 11:41:22   time_stamp_end = 2021-03-07 11:41:23 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:46:23
+SELL LAST COIN
+last_symbol:btc3lusdt, last_currency:btc3l, last_amount:0.03574185800474652, sell_cur_price:278.8243
+sell_cur_price * last_amount = 9.965698538872845
+current_balance = 10.549809861181966  sell_ts:2021-03-07 11:46:23  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:20:17
+earning_ratio = 5.498098611819664%
+***** ACTUAL SELL LAST COIN *****
+actual_last_symbol:btc3lusdt, actual_last_currency:btc3l, actual_last_amount:0.03574185800474652, actual_sell_cur_price:278.8243
+actual_sell_cur_price * actual_last_amount = 9.965698538872845
+actual_balance=10.152428955909517, ts_actual_sell=2021-03-07 11:46:23
+***** update stop_actual_invest  *****
+last_sell_cash=9.965698538872845
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:46:23
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:46:23
+do_action -judge_invest_direction StartTime= 2021-03-07 11:21:25
+count_A_earn = 388 , count_B_earn = 116 , threshold_value=0.0
+last_open=1669.03, last_close=1669.03, invest_direction=planA, last_ts=2021-03-07 11:15:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:21:25
+invest_direction=planA, last_trend=0, last_ts=2021-03-07 11:15:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:21:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:21:25
+=========================================
+time_stamp_start = 2021-03-07 11:21:24   time_stamp_end = 2021-03-07 11:21:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:26:24
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:26:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:26:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:26:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:26:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:26:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:26:25
+count_A_earn = 388 , count_B_earn = 114 , threshold_value=0.0
+last_open=1669.03, last_close=1671.21, invest_direction=planA, last_ts=2021-03-07 11:20:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:26:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:20:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:26:25
+current_balance = 9.762600196360774
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:40.8517, amount=0.24478785460580588, ts:2021-03-07 11:26:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:26:25
+=========================================
+time_stamp_start = 2021-03-07 11:26:24   time_stamp_end = 2021-03-07 11:26:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:31:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.24478785460580588, sell_cur_price:40.95
+sell_cur_price * last_amount = 10.024062646107751
+current_balance = 9.786662842468525  sell_ts:2021-03-07 11:31:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:05:18
+earning_ratio = -2.133371575314751%
+***** update stop_actual_invest  *****
+last_sell_cash=10.024062646107751
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:31:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:31:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:31:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:31:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:31:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:31:25
+count_A_earn = 388 , count_B_earn = 116 , threshold_value=0.0
+last_open=1671.21, last_close=1673.0, invest_direction=planA, last_ts=2021-03-07 11:25:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:31:26
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:25:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:31:26
+current_balance = 9.786662842468525
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:40.95, amount=0.2442002442002442, ts:2021-03-07 11:31:26
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:31:26
+=========================================
+time_stamp_start = 2021-03-07 11:31:24   time_stamp_end = 2021-03-07 11:31:26 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:36:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2442002442002442, sell_cur_price:41.0716
+sell_cur_price * last_amount = 10.029694749694748
+current_balance = 9.816357592163273  sell_ts:2021-03-07 11:36:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:10:18
+earning_ratio = -1.8364240783672694%
+***** update stop_actual_invest  *****
+last_sell_cash=10.029694749694748
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:36:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:36:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:36:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:36:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:36:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:36:25
+count_A_earn = 389 , count_B_earn = 115 , threshold_value=0.0
+last_open=1673.0, last_close=1678.04, invest_direction=planA, last_ts=2021-03-07 11:30:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:36:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:30:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:36:25
+current_balance = 9.816357592163273
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:41.0716, amount=0.24347724461671813, ts:2021-03-07 11:36:25
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:36:25
+=========================================
+time_stamp_start = 2021-03-07 11:36:24   time_stamp_end = 2021-03-07 11:36:25 
+sleep 299 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:41:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.24347724461671813, sell_cur_price:41.0132
+sell_cur_price * last_amount = 9.985780928914384
+current_balance = 9.802138521077657  sell_ts:2021-03-07 11:41:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:15:18
+earning_ratio = -1.9786147892234318%
+***** update stop_actual_invest  *****
+last_sell_cash=9.985780928914384
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:41:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:41:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:41:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:41:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:41:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:41:25
+count_A_earn = 390 , count_B_earn = 112 , threshold_value=0.0
+last_open=1678.07, last_close=1678.42, invest_direction=planA, last_ts=2021-03-07 11:35:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:41:26
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:35:00
+do_action -buy_lever_coins StartTime= 2021-03-07 11:41:26
+current_balance = 9.802138521077657
+BUY NEW COINS
+symbol:eth3lusdt, currency:eth3l, cur_price:41.0132, amount=0.24382393960968665, ts:2021-03-07 11:41:26
+do_action -buy_lever_coins FinishTime= 2021-03-07 11:41:26
+=========================================
+time_stamp_start = 2021-03-07 11:41:24   time_stamp_end = 2021-03-07 11:41:26 
+sleep 298 seconds .....
+do_action -sell_last_hold_lever_coins StartTime= 2021-03-07 11:46:24
+SELL LAST COIN
+last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.24382393960968665, sell_cur_price:40.9555
+sell_cur_price * last_amount = 9.985931358684521
+current_balance = 9.788069879762178  sell_ts:2021-03-07 11:46:24  demo_action_launch_time: 2021-03-06 13:26:06
+demo_action_running_duration: 22:20:18
+earning_ratio = -2.119301202378221%
+***** update stop_actual_invest  *****
+last_sell_cash=9.985931358684521
+SEND QUEUE INFO - START
+SEND QUEUE INFO - FINISH
+do_action -sell_last_hold_lever_coins FinishTime= 2021-03-07 11:46:24
+do_action -get_ALL_symbol_trend_data StartTime= 2021-03-07 11:46:24
+eth  get_ALL_symbol_trend_data START
+StartTime= 2021-03-07 11:46:24
+ethusdt  1000
+eth3lusdt  1000
+eth3susdt  1000
+eth  get_ALL_symbol_trend_data FINISH
+FinishTime= 2021-03-07 11:46:25
+do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-07 11:46:25
+do_action -judge_invest_direction StartTime= 2021-03-07 11:46:25
+count_A_earn = 391 , count_B_earn = 112 , threshold_value=0.0
+last_open=1678.13, last_close=1680.0, invest_direction=planA, last_ts=2021-03-07 11:40:00
+do_action -judge_invest_direction FinishTime= 2021-03-07 11:46:25
+invest_direction=planA, last_trend=1, last_ts=2021-03-07 11:40:00
