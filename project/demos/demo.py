@@ -290,10 +290,12 @@ class DemoStrategy:
                 time.sleep(2)
                 continue
         return ret, balance_value
+
     # 行动
     def demon_action(self, log_folder_name="demo_action_log"):
         self.logger_init(log_folder_name=log_folder_name, log_file_template="/action_%s_%s.txt")
         self.demo_print("I'm %s in demo_action" % self.etp)
+        wait_to_X_min_begin(x=TIME_PERIOD_VALUE)
         self.demo_action_launch_time = int(time.time())
         count = 0
         Max_Count = 1000
@@ -1019,6 +1021,14 @@ def API_v2_account_repayment(access_key, secret_key,):
             "amount": "100",
         },
     )
+
+
+# 等待至下一个X分钟的开始
+def wait_to_X_min_begin(x=5):
+    time_stamp = int(time.time())
+    sleep_seconds = (60*5) - (time_stamp % (60*5))
+    time.sleep(sleep_seconds)
+    return True
 
 
 # 返回当前交易对的最新的交易价格
