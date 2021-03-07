@@ -19,7 +19,8 @@ if __name__ == '__main__':
     account_id = ACCOUNT_ID  # spot
     # hbgAnyCall = HbgAnyCall()
     try:
-        demo_06()
+        wait_to_X_min_begin()
+        #demo_06()
 
         # time_stamp = int(time.time())
         # dt_stamp = timeStamp_to_datetime(time_stamp)

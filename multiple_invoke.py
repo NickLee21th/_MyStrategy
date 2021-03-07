@@ -59,7 +59,7 @@ def collection_job(queue=None, log_folder_name=None):
             if queue.empty() is False:
                 count = 0
                 queue_item = queue.get()
-                file_name = log_folder_name + "_collextion.txt"
+                file_name = log_folder_name + "_collection.txt"
                 data = open(file_name, 'a')
                 try:
                     key = queue_item["action_index"]
@@ -124,7 +124,7 @@ def long_time_task_2(queue, log_folder_name):
     print('Run COLLECTION task  (%s)...' % os.getpid())
     start = timeStamp_to_datetime(int(time.time()))
     print('Run COLLECTION task (start= %s)...' % start)
-    collection_job(queue=queue,log_folder_name=log_folder_name)
+    collection_job(queue=queue, log_folder_name=log_folder_name)
     end = timeStamp_to_datetime(int(time.time()))
     print('Run COLLECTION task (end= %s)...' % end)
 
