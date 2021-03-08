@@ -8646,3 +8646,2171 @@
 2021-03-08 09:10:26,213 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:10:26
 2021-03-08 09:10:26,213 - eos - INFO - =========================================
 2021-03-08 09:10:26,214 - eos - INFO - sleep 298 seconds .....
+2021-03-08 09:15:24,314 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:15:24
+2021-03-08 09:15:24,464 - eos - INFO - SELL LAST COIN
+2021-03-08 09:15:24,464 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.3364473508608037, sell_cur_price:2.987
+2021-03-08 09:15:24,464 - eos - INFO - sell_cur_price * last_amount = 9.96596823702122
+2021-03-08 09:15:24,464 - eos - INFO - current_balance = 11.04037563593921  sell_ts:2021-03-08 09:15:24  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:15:24,464 - eos - INFO - demo_action_running_duration: 20:30:24
+2021-03-08 09:15:24,464 - eos - INFO - earning_ratio = 10.403756359392098%
+2021-03-08 09:15:24,464 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 09:15:24,571 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.3364473508608037, actual_sell_cur_price:2.987
+2021-03-08 09:15:24,571 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.96596823702122
+2021-03-08 09:15:24,571 - eos - INFO - actual_balance=10.51926467102037, ts_actual_sell=2021-03-08 09:15:24
+2021-03-08 09:15:24,571 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:15:24,571 - eos - INFO - last_sell_cash=9.96596823702122
+2021-03-08 09:15:24,571 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:15:24,571 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:15:24,572 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:15:24
+2021-03-08 09:15:24,572 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:15:24
+2021-03-08 09:15:24,572 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:15:24,572 - eos - INFO - StartTime= 2021-03-08 09:15:24
+2021-03-08 09:15:24,906 - eos - INFO - eosusdt  1000
+2021-03-08 09:15:25,171 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:15:25,438 - eos - INFO - eos3susdt  1000
+2021-03-08 09:15:25,439 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:15:25,439 - eos - INFO - FinishTime= 2021-03-08 09:15:25
+2021-03-08 09:15:25,439 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:15:25
+2021-03-08 09:15:25,439 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:15:25
+2021-03-08 09:15:25,656 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:15:25,656 - eos - INFO - last_open=3.7727, last_close=3.7733, invest_direction=planB, last_ts=2021-03-08 09:10:00
+2021-03-08 09:15:25,656 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:15:25
+2021-03-08 09:15:25,656 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 09:10:00
+2021-03-08 09:15:25,656 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:15:25
+2021-03-08 09:15:25,772 - eos - INFO - current_balance = 11.04037563593921
+2021-03-08 09:15:25,772 - eos - INFO - BUY NEW COINS
+2021-03-08 09:15:25,772 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.093198, amount=107.29843988068413, ts:2021-03-08 09:15:25
+2021-03-08 09:15:25,772 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:15:25
+2021-03-08 09:15:25,772 - eos - INFO - =========================================
+2021-03-08 09:15:25,773 - eos - INFO - sleep 299 seconds .....
+2021-03-08 09:20:24,788 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:20:24
+2021-03-08 09:20:24,896 - eos - INFO - SELL LAST COIN
+2021-03-08 09:20:24,896 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:107.29843988068413, sell_cur_price:0.0948
+2021-03-08 09:20:24,896 - eos - INFO - sell_cur_price * last_amount = 10.171892100688854
+2021-03-08 09:20:24,896 - eos - INFO - current_balance = 11.212267736628064  sell_ts:2021-03-08 09:20:24  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:20:24,896 - eos - INFO - demo_action_running_duration: 20:35:24
+2021-03-08 09:20:24,896 - eos - INFO - earning_ratio = 12.12267736628064%
+2021-03-08 09:20:24,896 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:20:24,896 - eos - INFO - last_sell_cash=10.171892100688854
+2021-03-08 09:20:24,896 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:20:24,897 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:20:24,897 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:20:24
+2021-03-08 09:20:24,897 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:20:24
+2021-03-08 09:20:24,897 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:20:24,897 - eos - INFO - StartTime= 2021-03-08 09:20:24
+2021-03-08 09:20:25,161 - eos - INFO - eosusdt  1000
+2021-03-08 09:20:25,365 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:20:25,641 - eos - INFO - eos3susdt  1000
+2021-03-08 09:20:25,641 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:20:25,641 - eos - INFO - FinishTime= 2021-03-08 09:20:25
+2021-03-08 09:20:25,641 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:20:25
+2021-03-08 09:20:25,641 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:20:25
+2021-03-08 09:20:25,858 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:20:25,859 - eos - INFO - last_open=3.7737, last_close=3.753, invest_direction=planB, last_ts=2021-03-08 09:15:00
+2021-03-08 09:20:25,859 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:20:25
+2021-03-08 09:20:25,859 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 09:15:00
+2021-03-08 09:20:25,859 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:20:25
+2021-03-08 09:20:26,015 - eos - INFO - current_balance = 11.212267736628064
+2021-03-08 09:20:26,015 - eos - INFO - BUY NEW COINS
+2021-03-08 09:20:26,015 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:2.9461, amount=3.394317911815621, ts:2021-03-08 09:20:25
+2021-03-08 09:20:26,015 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 09:20:26,015 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:20:26
+2021-03-08 09:20:26,015 - eos - INFO - =========================================
+2021-03-08 09:20:26,016 - eos - INFO - sleep 298 seconds .....
+2021-03-08 09:25:24,057 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:25:24
+2021-03-08 09:25:24,176 - eos - INFO - SELL LAST COIN
+2021-03-08 09:25:24,177 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.394317911815621, sell_cur_price:2.951
+2021-03-08 09:25:24,177 - eos - INFO - sell_cur_price * last_amount = 10.016632157767898
+2021-03-08 09:25:24,177 - eos - INFO - current_balance = 11.228899894395962  sell_ts:2021-03-08 09:25:24  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:25:24,177 - eos - INFO - demo_action_running_duration: 20:40:24
+2021-03-08 09:25:24,177 - eos - INFO - earning_ratio = 12.28899894395962%
+2021-03-08 09:25:24,177 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 09:25:24,309 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.394317911815621, actual_sell_cur_price:2.951
+2021-03-08 09:25:24,309 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.016632157767898
+2021-03-08 09:25:24,309 - eos - INFO - actual_balance=10.535896828788267, ts_actual_sell=2021-03-08 09:25:24
+2021-03-08 09:25:24,309 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:25:24,309 - eos - INFO - last_sell_cash=10.016632157767898
+2021-03-08 09:25:24,309 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:25:24,310 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:25:24,310 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:25:24
+2021-03-08 09:25:24,310 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:25:24
+2021-03-08 09:25:24,310 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:25:24,310 - eos - INFO - StartTime= 2021-03-08 09:25:24
+2021-03-08 09:25:24,602 - eos - INFO - eosusdt  1000
+2021-03-08 09:25:24,810 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:25:25,083 - eos - INFO - eos3susdt  1000
+2021-03-08 09:25:25,083 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:25:25,084 - eos - INFO - FinishTime= 2021-03-08 09:25:25
+2021-03-08 09:25:25,084 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:25:25
+2021-03-08 09:25:25,084 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:25:25
+2021-03-08 09:25:25,299 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:25:25,300 - eos - INFO - last_open=3.753, last_close=3.7537, invest_direction=planB, last_ts=2021-03-08 09:20:00
+2021-03-08 09:25:25,300 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:25:25
+2021-03-08 09:25:25,300 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 09:20:00
+2021-03-08 09:25:25,300 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:25:25
+2021-03-08 09:25:25,417 - eos - INFO - current_balance = 11.228899894395962
+2021-03-08 09:25:25,417 - eos - INFO - BUY NEW COINS
+2021-03-08 09:25:25,417 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.094136, amount=106.22928528936858, ts:2021-03-08 09:25:25
+2021-03-08 09:25:25,417 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 09:25:25,417 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:25:25
+2021-03-08 09:25:25,417 - eos - INFO - =========================================
+2021-03-08 09:25:25,418 - eos - INFO - sleep 299 seconds .....
+2021-03-08 09:30:24,462 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:30:24
+2021-03-08 09:30:24,579 - eos - INFO - SELL LAST COIN
+2021-03-08 09:30:24,579 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:106.22928528936858, sell_cur_price:0.09496
+2021-03-08 09:30:24,579 - eos - INFO - sell_cur_price * last_amount = 10.08753293107844
+2021-03-08 09:30:24,579 - eos - INFO - current_balance = 11.316432825474402  sell_ts:2021-03-08 09:30:24  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:30:24,579 - eos - INFO - demo_action_running_duration: 20:45:24
+2021-03-08 09:30:24,579 - eos - INFO - earning_ratio = 13.164328254744023%
+2021-03-08 09:30:24,579 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 09:30:24,688 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:106.22928528936858, actual_sell_cur_price:0.09496
+2021-03-08 09:30:24,688 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.08753293107844
+2021-03-08 09:30:24,688 - eos - INFO - actual_balance=10.623429759866708, ts_actual_sell=2021-03-08 09:30:24
+2021-03-08 09:30:24,688 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:30:24,688 - eos - INFO - last_sell_cash=10.08753293107844
+2021-03-08 09:30:24,688 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:30:24,689 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:30:24,689 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:30:24
+2021-03-08 09:30:24,689 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:30:24
+2021-03-08 09:30:24,689 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:30:24,689 - eos - INFO - StartTime= 2021-03-08 09:30:24
+2021-03-08 09:30:24,989 - eos - INFO - eosusdt  1000
+2021-03-08 09:30:25,249 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:30:25,610 - eos - INFO - eos3susdt  1000
+2021-03-08 09:30:25,610 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:30:25,610 - eos - INFO - FinishTime= 2021-03-08 09:30:25
+2021-03-08 09:30:25,610 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:30:25
+2021-03-08 09:30:25,610 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:30:25
+2021-03-08 09:30:25,826 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:30:25,826 - eos - INFO - last_open=3.7539, last_close=3.7545, invest_direction=planB, last_ts=2021-03-08 09:25:00
+2021-03-08 09:30:25,826 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:30:25
+2021-03-08 09:30:25,826 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 09:25:00
+2021-03-08 09:30:25,826 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:30:25
+2021-03-08 09:30:25,947 - eos - INFO - current_balance = 11.316432825474402
+2021-03-08 09:30:25,947 - eos - INFO - BUY NEW COINS
+2021-03-08 09:30:25,947 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.09496, amount=105.30749789385004, ts:2021-03-08 09:30:25
+2021-03-08 09:30:25,947 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 09:30:25,947 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:30:25
+2021-03-08 09:30:25,947 - eos - INFO - =========================================
+2021-03-08 09:30:25,948 - eos - INFO - sleep 299 seconds .....
+2021-03-08 09:35:25,049 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:35:25
+2021-03-08 09:35:25,168 - eos - INFO - SELL LAST COIN
+2021-03-08 09:35:25,169 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:105.30749789385004, sell_cur_price:0.095026
+2021-03-08 09:35:25,169 - eos - INFO - sell_cur_price * last_amount = 10.006950294860994
+2021-03-08 09:35:25,169 - eos - INFO - current_balance = 11.323383120335397  sell_ts:2021-03-08 09:35:25  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:35:25,169 - eos - INFO - demo_action_running_duration: 20:50:25
+2021-03-08 09:35:25,169 - eos - INFO - earning_ratio = 13.233831203353965%
+2021-03-08 09:35:25,169 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 09:35:25,278 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:105.30749789385004, actual_sell_cur_price:0.095026
+2021-03-08 09:35:25,278 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.006950294860994
+2021-03-08 09:35:25,278 - eos - INFO - actual_balance=10.630380054727702, ts_actual_sell=2021-03-08 09:35:25
+2021-03-08 09:35:25,279 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:35:25,279 - eos - INFO - last_sell_cash=10.006950294860994
+2021-03-08 09:35:25,279 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:35:25,279 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:35:25,279 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:35:25
+2021-03-08 09:35:25,279 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:35:25
+2021-03-08 09:35:25,279 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:35:25,279 - eos - INFO - StartTime= 2021-03-08 09:35:25
+2021-03-08 09:35:25,472 - eos - INFO - eosusdt  1000
+2021-03-08 09:35:25,808 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:35:26,084 - eos - INFO - eos3susdt  1000
+2021-03-08 09:35:26,084 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:35:26,084 - eos - INFO - FinishTime= 2021-03-08 09:35:26
+2021-03-08 09:35:26,084 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:35:26
+2021-03-08 09:35:26,084 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:35:26
+2021-03-08 09:35:26,300 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:35:26,300 - eos - INFO - last_open=3.7546, last_close=3.7448, invest_direction=planB, last_ts=2021-03-08 09:30:00
+2021-03-08 09:35:26,300 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:35:26
+2021-03-08 09:35:26,300 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 09:30:00
+2021-03-08 09:35:26,300 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:35:26
+2021-03-08 09:35:26,415 - eos - INFO - current_balance = 11.323383120335397
+2021-03-08 09:35:26,415 - eos - INFO - BUY NEW COINS
+2021-03-08 09:35:26,415 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:2.9186, amount=3.4263002809566228, ts:2021-03-08 09:35:26
+2021-03-08 09:35:26,415 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 09:35:26,415 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:35:26
+2021-03-08 09:35:26,415 - eos - INFO - =========================================
+2021-03-08 09:35:26,416 - eos - INFO - sleep 299 seconds .....
+2021-03-08 09:40:25,470 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:40:25
+2021-03-08 09:40:25,601 - eos - INFO - SELL LAST COIN
+2021-03-08 09:40:25,601 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.4263002809566228, sell_cur_price:2.9381
+2021-03-08 09:40:25,601 - eos - INFO - sell_cur_price * last_amount = 10.066812855478654
+2021-03-08 09:40:25,601 - eos - INFO - current_balance = 11.39019597581405  sell_ts:2021-03-08 09:40:25  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:40:25,601 - eos - INFO - demo_action_running_duration: 20:55:25
+2021-03-08 09:40:25,601 - eos - INFO - earning_ratio = 13.901959758140503%
+2021-03-08 09:40:25,601 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 09:40:25,726 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.4263002809566228, actual_sell_cur_price:2.9381
+2021-03-08 09:40:25,726 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.066812855478654
+2021-03-08 09:40:25,726 - eos - INFO - actual_balance=10.697192910206356, ts_actual_sell=2021-03-08 09:40:25
+2021-03-08 09:40:25,726 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:40:25,726 - eos - INFO - last_sell_cash=10.066812855478654
+2021-03-08 09:40:25,726 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:40:25,727 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:40:25,727 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:40:25
+2021-03-08 09:40:25,727 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:40:25
+2021-03-08 09:40:25,727 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:40:25,727 - eos - INFO - StartTime= 2021-03-08 09:40:25
+2021-03-08 09:40:25,989 - eos - INFO - eosusdt  1000
+2021-03-08 09:40:26,250 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:40:26,522 - eos - INFO - eos3susdt  1000
+2021-03-08 09:40:26,522 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:40:26,522 - eos - INFO - FinishTime= 2021-03-08 09:40:26
+2021-03-08 09:40:26,522 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:40:26
+2021-03-08 09:40:26,522 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:40:26
+2021-03-08 09:40:26,738 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:40:26,738 - eos - INFO - last_open=3.7446, last_close=3.7495, invest_direction=planB, last_ts=2021-03-08 09:35:00
+2021-03-08 09:40:26,738 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:40:26
+2021-03-08 09:40:26,738 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 09:35:00
+2021-03-08 09:40:26,738 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:40:26
+2021-03-08 09:40:26,869 - eos - INFO - current_balance = 11.39019597581405
+2021-03-08 09:40:26,869 - eos - INFO - BUY NEW COINS
+2021-03-08 09:40:26,869 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.094841, amount=105.43963053953459, ts:2021-03-08 09:40:26
+2021-03-08 09:40:26,869 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 09:40:26,869 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:40:26
+2021-03-08 09:40:26,869 - eos - INFO - =========================================
+2021-03-08 09:40:26,870 - eos - INFO - sleep 299 seconds .....
+2021-03-08 09:45:25,970 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:45:25
+2021-03-08 09:45:26,082 - eos - INFO - SELL LAST COIN
+2021-03-08 09:45:26,082 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:105.43963053953459, sell_cur_price:0.094165
+2021-03-08 09:45:26,082 - eos - INFO - sell_cur_price * last_amount = 9.928722809755275
+2021-03-08 09:45:26,082 - eos - INFO - current_balance = 11.318918785569325  sell_ts:2021-03-08 09:45:26  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:45:26,082 - eos - INFO - demo_action_running_duration: 21:00:26
+2021-03-08 09:45:26,082 - eos - INFO - earning_ratio = 13.189187855693252%
+2021-03-08 09:45:26,082 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 09:45:26,190 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:105.43963053953459, actual_sell_cur_price:0.094165
+2021-03-08 09:45:26,190 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.928722809755275
+2021-03-08 09:45:26,190 - eos - INFO - actual_balance=10.62591571996163, ts_actual_sell=2021-03-08 09:45:26
+2021-03-08 09:45:26,190 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:45:26,190 - eos - INFO - last_sell_cash=9.928722809755275
+2021-03-08 09:45:26,190 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:45:26,191 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:45:26,191 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:45:26
+2021-03-08 09:45:26,191 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:45:26
+2021-03-08 09:45:26,191 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:45:26,191 - eos - INFO - StartTime= 2021-03-08 09:45:26
+2021-03-08 09:45:26,593 - eos - INFO - eosusdt  1000
+2021-03-08 09:45:26,853 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:45:27,041 - eos - INFO - eos3susdt  1000
+2021-03-08 09:45:27,042 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:45:27,042 - eos - INFO - FinishTime= 2021-03-08 09:45:27
+2021-03-08 09:45:27,042 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:45:27
+2021-03-08 09:45:27,042 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:45:27
+2021-03-08 09:45:27,257 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:45:27,257 - eos - INFO - last_open=3.75, last_close=3.7624, invest_direction=planB, last_ts=2021-03-08 09:40:00
+2021-03-08 09:45:27,257 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:45:27
+2021-03-08 09:45:27,257 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 09:40:00
+2021-03-08 09:45:27,257 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:45:27
+2021-03-08 09:45:27,368 - eos - INFO - current_balance = 11.318918785569325
+2021-03-08 09:45:27,368 - eos - INFO - BUY NEW COINS
+2021-03-08 09:45:27,368 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.094165, amount=106.19656985079382, ts:2021-03-08 09:45:27
+2021-03-08 09:45:27,368 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:45:27
+2021-03-08 09:45:27,368 - eos - INFO - =========================================
+2021-03-08 09:45:27,369 - eos - INFO - sleep 298 seconds .....
+2021-03-08 09:50:25,370 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:50:25
+2021-03-08 09:50:25,490 - eos - INFO - SELL LAST COIN
+2021-03-08 09:50:25,490 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:106.19656985079382, sell_cur_price:0.095145
+2021-03-08 09:50:25,490 - eos - INFO - sell_cur_price * last_amount = 10.104072638453777
+2021-03-08 09:50:25,490 - eos - INFO - current_balance = 11.422991424023103  sell_ts:2021-03-08 09:50:25  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:50:25,490 - eos - INFO - demo_action_running_duration: 21:05:25
+2021-03-08 09:50:25,490 - eos - INFO - earning_ratio = 14.229914240231025%
+2021-03-08 09:50:25,490 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:50:25,490 - eos - INFO - last_sell_cash=10.104072638453777
+2021-03-08 09:50:25,490 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:50:25,491 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:50:25,491 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:50:25
+2021-03-08 09:50:25,491 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:50:25
+2021-03-08 09:50:25,491 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:50:25,491 - eos - INFO - StartTime= 2021-03-08 09:50:25
+2021-03-08 09:50:25,784 - eos - INFO - eosusdt  1000
+2021-03-08 09:50:26,053 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:50:26,410 - eos - INFO - eos3susdt  1000
+2021-03-08 09:50:26,410 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:50:26,410 - eos - INFO - FinishTime= 2021-03-08 09:50:26
+2021-03-08 09:50:26,410 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:50:26
+2021-03-08 09:50:26,410 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:50:26
+2021-03-08 09:50:26,625 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:50:26,625 - eos - INFO - last_open=3.7624, last_close=3.7483, invest_direction=planB, last_ts=2021-03-08 09:45:00
+2021-03-08 09:50:26,625 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:50:26
+2021-03-08 09:50:26,625 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 09:45:00
+2021-03-08 09:50:26,625 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:50:26
+2021-03-08 09:50:26,977 - eos - INFO - current_balance = 11.422991424023103
+2021-03-08 09:50:26,978 - eos - INFO - BUY NEW COINS
+2021-03-08 09:50:26,978 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:2.9299, amount=3.4130857708454214, ts:2021-03-08 09:50:26
+2021-03-08 09:50:26,978 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 09:50:26,978 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:50:26
+2021-03-08 09:50:26,978 - eos - INFO - =========================================
+2021-03-08 09:50:26,979 - eos - INFO - sleep 299 seconds .....
+2021-03-08 09:55:26,079 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 09:55:26
+2021-03-08 09:55:26,197 - eos - INFO - SELL LAST COIN
+2021-03-08 09:55:26,198 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.4130857708454214, sell_cur_price:2.9703
+2021-03-08 09:55:26,198 - eos - INFO - sell_cur_price * last_amount = 10.137888665142155
+2021-03-08 09:55:26,198 - eos - INFO - current_balance = 11.560880089165257  sell_ts:2021-03-08 09:55:26  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 09:55:26,198 - eos - INFO - demo_action_running_duration: 21:10:26
+2021-03-08 09:55:26,198 - eos - INFO - earning_ratio = 15.608800891652574%
+2021-03-08 09:55:26,198 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 09:55:26,320 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.4130857708454214, actual_sell_cur_price:2.9703
+2021-03-08 09:55:26,321 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.137888665142155
+2021-03-08 09:55:26,321 - eos - INFO - actual_balance=10.763804385103786, ts_actual_sell=2021-03-08 09:55:26
+2021-03-08 09:55:26,321 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 09:55:26,321 - eos - INFO - last_sell_cash=10.137888665142155
+2021-03-08 09:55:26,321 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 09:55:26,321 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 09:55:26,321 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 09:55:26
+2021-03-08 09:55:26,321 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 09:55:26
+2021-03-08 09:55:26,322 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 09:55:26,322 - eos - INFO - StartTime= 2021-03-08 09:55:26
+2021-03-08 09:55:26,608 - eos - INFO - eosusdt  1000
+2021-03-08 09:55:26,885 - eos - INFO - eos3lusdt  1000
+2021-03-08 09:55:27,157 - eos - INFO - eos3susdt  1000
+2021-03-08 09:55:27,157 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 09:55:27,158 - eos - INFO - FinishTime= 2021-03-08 09:55:27
+2021-03-08 09:55:27,158 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 09:55:27
+2021-03-08 09:55:27,158 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 09:55:27
+2021-03-08 09:55:27,379 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 09:55:27,380 - eos - INFO - last_open=3.7487, last_close=3.7653, invest_direction=planB, last_ts=2021-03-08 09:50:00
+2021-03-08 09:55:27,380 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 09:55:27
+2021-03-08 09:55:27,380 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 09:50:00
+2021-03-08 09:55:27,380 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 09:55:27
+2021-03-08 09:55:27,773 - eos - INFO - current_balance = 11.560880089165257
+2021-03-08 09:55:27,773 - eos - INFO - BUY NEW COINS
+2021-03-08 09:55:27,773 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.093331, amount=107.14553578125168, ts:2021-03-08 09:55:27
+2021-03-08 09:55:27,774 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 09:55:27,774 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 09:55:27
+2021-03-08 09:55:27,774 - eos - INFO - =========================================
+2021-03-08 09:55:27,774 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:00:26,794 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:00:26
+2021-03-08 10:00:26,905 - eos - INFO - SELL LAST COIN
+2021-03-08 10:00:26,905 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:107.14553578125168, sell_cur_price:0.093499
+2021-03-08 10:00:26,905 - eos - INFO - sell_cur_price * last_amount = 10.01800045001125
+2021-03-08 10:00:26,905 - eos - INFO - current_balance = 11.578880539176508  sell_ts:2021-03-08 10:00:26  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:00:26,905 - eos - INFO - demo_action_running_duration: 21:15:26
+2021-03-08 10:00:26,905 - eos - INFO - earning_ratio = 15.788805391765075%
+2021-03-08 10:00:26,905 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 10:00:27,034 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:107.14553578125168, actual_sell_cur_price:0.093499
+2021-03-08 10:00:27,034 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.01800045001125
+2021-03-08 10:00:27,034 - eos - INFO - actual_balance=10.781804835115036, ts_actual_sell=2021-03-08 10:00:26
+2021-03-08 10:00:27,034 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:00:27,034 - eos - INFO - last_sell_cash=10.01800045001125
+2021-03-08 10:00:27,034 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:00:27,035 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:00:27,035 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:00:27
+2021-03-08 10:00:27,035 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:00:27
+2021-03-08 10:00:27,035 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:00:27,035 - eos - INFO - StartTime= 2021-03-08 10:00:27
+2021-03-08 10:00:27,389 - eos - INFO - eosusdt  1000
+2021-03-08 10:00:27,519 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:00:27,803 - eos - INFO - eos3susdt  1000
+2021-03-08 10:00:27,804 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:00:27,804 - eos - INFO - FinishTime= 2021-03-08 10:00:27
+2021-03-08 10:00:27,804 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:00:27
+2021-03-08 10:00:27,804 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:00:27
+2021-03-08 10:00:28,019 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:00:28,019 - eos - INFO - last_open=3.7646, last_close=3.7736, invest_direction=planB, last_ts=2021-03-08 09:55:00
+2021-03-08 10:00:28,020 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:00:28
+2021-03-08 10:00:28,020 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 09:55:00
+2021-03-08 10:00:28,020 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:00:28
+2021-03-08 10:00:28,259 - eos - INFO - current_balance = 11.578880539176508
+2021-03-08 10:00:28,259 - eos - INFO - BUY NEW COINS
+2021-03-08 10:00:28,259 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.0935, amount=106.95187165775401, ts:2021-03-08 10:00:28
+2021-03-08 10:00:28,259 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 10:00:28,259 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:00:28
+2021-03-08 10:00:28,259 - eos - INFO - =========================================
+2021-03-08 10:00:28,260 - eos - INFO - sleep 298 seconds .....
+2021-03-08 10:05:26,360 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:05:26
+2021-03-08 10:05:26,469 - eos - INFO - SELL LAST COIN
+2021-03-08 10:05:26,470 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:106.95187165775401, sell_cur_price:0.091997
+2021-03-08 10:05:26,470 - eos - INFO - sell_cur_price * last_amount = 9.839251336898394
+2021-03-08 10:05:26,470 - eos - INFO - current_balance = 11.418131876074902  sell_ts:2021-03-08 10:05:26  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:05:26,470 - eos - INFO - demo_action_running_duration: 21:20:26
+2021-03-08 10:05:26,470 - eos - INFO - earning_ratio = 14.181318760749024%
+2021-03-08 10:05:26,470 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 10:05:26,579 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:106.95187165775401, actual_sell_cur_price:0.091997
+2021-03-08 10:05:26,580 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.839251336898394
+2021-03-08 10:05:26,580 - eos - INFO - actual_balance=10.62105617201343, ts_actual_sell=2021-03-08 10:05:26
+2021-03-08 10:05:26,580 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:05:26,580 - eos - INFO - last_sell_cash=9.839251336898394
+2021-03-08 10:05:26,580 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:05:26,580 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:05:26,581 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:05:26
+2021-03-08 10:05:26,581 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:05:26
+2021-03-08 10:05:26,581 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:05:26,581 - eos - INFO - StartTime= 2021-03-08 10:05:26
+2021-03-08 10:05:26,842 - eos - INFO - eosusdt  1000
+2021-03-08 10:05:27,104 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:05:27,368 - eos - INFO - eos3susdt  1000
+2021-03-08 10:05:27,368 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:05:27,368 - eos - INFO - FinishTime= 2021-03-08 10:05:27
+2021-03-08 10:05:27,368 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:05:27
+2021-03-08 10:05:27,368 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:05:27
+2021-03-08 10:05:27,583 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:05:27,583 - eos - INFO - last_open=3.7732, last_close=3.785, invest_direction=planB, last_ts=2021-03-08 10:00:00
+2021-03-08 10:05:27,584 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:05:27
+2021-03-08 10:05:27,584 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 10:00:00
+2021-03-08 10:05:27,584 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:05:27
+2021-03-08 10:05:27,691 - eos - INFO - current_balance = 11.418131876074902
+2021-03-08 10:05:27,691 - eos - INFO - BUY NEW COINS
+2021-03-08 10:05:27,691 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.091997, amount=108.6991967129363, ts:2021-03-08 10:05:27
+2021-03-08 10:05:27,691 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:05:27
+2021-03-08 10:05:27,691 - eos - INFO - =========================================
+2021-03-08 10:05:27,692 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:10:26,788 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:10:26
+2021-03-08 10:10:26,896 - eos - INFO - SELL LAST COIN
+2021-03-08 10:10:26,896 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:108.6991967129363, sell_cur_price:0.088964
+2021-03-08 10:10:26,896 - eos - INFO - sell_cur_price * last_amount = 9.670315336369665
+2021-03-08 10:10:26,896 - eos - INFO - current_balance = 11.088447212444567  sell_ts:2021-03-08 10:10:26  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:10:26,897 - eos - INFO - demo_action_running_duration: 21:25:26
+2021-03-08 10:10:26,897 - eos - INFO - earning_ratio = 10.884472124445672%
+2021-03-08 10:10:26,897 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:10:26,897 - eos - INFO - last_sell_cash=9.670315336369665
+2021-03-08 10:10:26,897 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:10:26,897 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:10:26,897 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:10:26
+2021-03-08 10:10:26,897 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:10:26
+2021-03-08 10:10:26,897 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:10:26,897 - eos - INFO - StartTime= 2021-03-08 10:10:26
+2021-03-08 10:10:27,169 - eos - INFO - eosusdt  1000
+2021-03-08 10:10:27,378 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:10:27,658 - eos - INFO - eos3susdt  1000
+2021-03-08 10:10:27,658 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:10:27,658 - eos - INFO - FinishTime= 2021-03-08 10:10:27
+2021-03-08 10:10:27,658 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:10:27
+2021-03-08 10:10:27,658 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:10:27
+2021-03-08 10:10:27,874 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:10:27,874 - eos - INFO - last_open=3.7859, last_close=3.8391, invest_direction=planB, last_ts=2021-03-08 10:05:00
+2021-03-08 10:10:27,874 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:10:27
+2021-03-08 10:10:27,874 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 10:05:00
+2021-03-08 10:10:27,874 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:10:27
+2021-03-08 10:10:27,988 - eos - INFO - current_balance = 11.088447212444567
+2021-03-08 10:10:27,989 - eos - INFO - BUY NEW COINS
+2021-03-08 10:10:27,989 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.088964, amount=112.4050177599928, ts:2021-03-08 10:10:27
+2021-03-08 10:10:27,989 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:10:27
+2021-03-08 10:10:27,989 - eos - INFO - =========================================
+2021-03-08 10:10:27,989 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:15:27,046 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:15:27
+2021-03-08 10:15:27,151 - eos - INFO - SELL LAST COIN
+2021-03-08 10:15:27,152 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:112.4050177599928, sell_cur_price:0.0885
+2021-03-08 10:15:27,152 - eos - INFO - sell_cur_price * last_amount = 9.947844071759363
+2021-03-08 10:15:27,152 - eos - INFO - current_balance = 11.03629128420393  sell_ts:2021-03-08 10:15:27  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:15:27,152 - eos - INFO - demo_action_running_duration: 21:30:27
+2021-03-08 10:15:27,152 - eos - INFO - earning_ratio = 10.3629128420393%
+2021-03-08 10:15:27,152 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:15:27,152 - eos - INFO - last_sell_cash=9.947844071759363
+2021-03-08 10:15:27,152 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:15:27,153 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:15:27,153 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:15:27
+2021-03-08 10:15:27,153 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:15:27
+2021-03-08 10:15:27,153 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:15:27,153 - eos - INFO - StartTime= 2021-03-08 10:15:27
+2021-03-08 10:15:27,429 - eos - INFO - eosusdt  1000
+2021-03-08 10:15:27,865 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:15:28,149 - eos - INFO - eos3susdt  1000
+2021-03-08 10:15:28,150 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:15:28,150 - eos - INFO - FinishTime= 2021-03-08 10:15:28
+2021-03-08 10:15:28,150 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:15:28
+2021-03-08 10:15:28,150 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:15:28
+2021-03-08 10:15:28,366 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:15:28,366 - eos - INFO - last_open=3.8391, last_close=3.8364, invest_direction=planB, last_ts=2021-03-08 10:10:00
+2021-03-08 10:15:28,366 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:15:28
+2021-03-08 10:15:28,366 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 10:10:00
+2021-03-08 10:15:28,366 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:15:28
+2021-03-08 10:15:28,478 - eos - INFO - current_balance = 11.03629128420393
+2021-03-08 10:15:28,478 - eos - INFO - BUY NEW COINS
+2021-03-08 10:15:28,478 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1373, amount=3.1874541803461574, ts:2021-03-08 10:15:28
+2021-03-08 10:15:28,478 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:15:28
+2021-03-08 10:15:28,478 - eos - INFO - =========================================
+2021-03-08 10:15:28,479 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:20:27,562 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:20:27
+2021-03-08 10:20:27,669 - eos - INFO - SELL LAST COIN
+2021-03-08 10:20:27,669 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.1874541803461574, sell_cur_price:3.1495
+2021-03-08 10:20:27,669 - eos - INFO - sell_cur_price * last_amount = 10.038886941000223
+2021-03-08 10:20:27,669 - eos - INFO - current_balance = 11.075178225204153  sell_ts:2021-03-08 10:20:27  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:20:27,669 - eos - INFO - demo_action_running_duration: 21:35:27
+2021-03-08 10:20:27,669 - eos - INFO - earning_ratio = 10.751782252041533%
+2021-03-08 10:20:27,669 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:20:27,669 - eos - INFO - last_sell_cash=10.038886941000223
+2021-03-08 10:20:27,669 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:20:27,670 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:20:27,670 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:20:27
+2021-03-08 10:20:27,670 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:20:27
+2021-03-08 10:20:27,670 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:20:27,670 - eos - INFO - StartTime= 2021-03-08 10:20:27
+2021-03-08 10:20:28,078 - eos - INFO - eosusdt  1000
+2021-03-08 10:20:28,381 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:20:28,648 - eos - INFO - eos3susdt  1000
+2021-03-08 10:20:28,648 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:20:28,648 - eos - INFO - FinishTime= 2021-03-08 10:20:28
+2021-03-08 10:20:28,648 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:20:28
+2021-03-08 10:20:28,648 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:20:28
+2021-03-08 10:20:28,869 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:20:28,870 - eos - INFO - last_open=3.8364, last_close=3.8375, invest_direction=planB, last_ts=2021-03-08 10:15:00
+2021-03-08 10:20:28,870 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:20:28
+2021-03-08 10:20:28,870 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 10:15:00
+2021-03-08 10:20:28,870 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:20:28
+2021-03-08 10:20:28,982 - eos - INFO - current_balance = 11.075178225204153
+2021-03-08 10:20:28,982 - eos - INFO - BUY NEW COINS
+2021-03-08 10:20:28,982 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.088014, amount=113.61828799963642, ts:2021-03-08 10:20:28
+2021-03-08 10:20:28,982 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 10:20:28,983 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:20:28
+2021-03-08 10:20:28,983 - eos - INFO - =========================================
+2021-03-08 10:20:28,983 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:25:28,070 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:25:28
+2021-03-08 10:25:28,193 - eos - INFO - SELL LAST COIN
+2021-03-08 10:25:28,193 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:113.61828799963642, sell_cur_price:0.087641
+2021-03-08 10:25:28,193 - eos - INFO - sell_cur_price * last_amount = 9.957620378576136
+2021-03-08 10:25:28,193 - eos - INFO - current_balance = 11.03279860378029  sell_ts:2021-03-08 10:25:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:25:28,193 - eos - INFO - demo_action_running_duration: 21:40:28
+2021-03-08 10:25:28,193 - eos - INFO - earning_ratio = 10.327986037802894%
+2021-03-08 10:25:28,193 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 10:25:28,302 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:113.61828799963642, actual_sell_cur_price:0.087641
+2021-03-08 10:25:28,302 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.957620378576136
+2021-03-08 10:25:28,302 - eos - INFO - actual_balance=10.578676550589567, ts_actual_sell=2021-03-08 10:25:28
+2021-03-08 10:25:28,302 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:25:28,302 - eos - INFO - last_sell_cash=9.957620378576136
+2021-03-08 10:25:28,302 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:25:28,303 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:25:28,303 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:25:28
+2021-03-08 10:25:28,303 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:25:28
+2021-03-08 10:25:28,303 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:25:28,303 - eos - INFO - StartTime= 2021-03-08 10:25:28
+2021-03-08 10:25:28,573 - eos - INFO - eosusdt  1000
+2021-03-08 10:25:28,841 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:25:29,116 - eos - INFO - eos3susdt  1000
+2021-03-08 10:25:29,116 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:25:29,116 - eos - INFO - FinishTime= 2021-03-08 10:25:29
+2021-03-08 10:25:29,116 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:25:29
+2021-03-08 10:25:29,116 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:25:29
+2021-03-08 10:25:29,337 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:25:29,338 - eos - INFO - last_open=3.8376, last_close=3.8428, invest_direction=planB, last_ts=2021-03-08 10:20:00
+2021-03-08 10:25:29,338 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:25:29
+2021-03-08 10:25:29,338 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 10:20:00
+2021-03-08 10:25:29,338 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:25:29
+2021-03-08 10:25:29,441 - eos - INFO - current_balance = 11.03279860378029
+2021-03-08 10:25:29,441 - eos - INFO - BUY NEW COINS
+2021-03-08 10:25:29,441 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.087641, amount=114.10184730890794, ts:2021-03-08 10:25:29
+2021-03-08 10:25:29,441 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:25:29
+2021-03-08 10:25:29,441 - eos - INFO - =========================================
+2021-03-08 10:25:29,442 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:30:28,542 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:30:28
+2021-03-08 10:30:28,652 - eos - INFO - SELL LAST COIN
+2021-03-08 10:30:28,652 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:114.10184730890794, sell_cur_price:0.08728
+2021-03-08 10:30:28,652 - eos - INFO - sell_cur_price * last_amount = 9.958809233121483
+2021-03-08 10:30:28,652 - eos - INFO - current_balance = 10.991607836901773  sell_ts:2021-03-08 10:30:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:30:28,653 - eos - INFO - demo_action_running_duration: 21:45:28
+2021-03-08 10:30:28,653 - eos - INFO - earning_ratio = 9.916078369017729%
+2021-03-08 10:30:28,653 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:30:28,653 - eos - INFO - last_sell_cash=9.958809233121483
+2021-03-08 10:30:28,653 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:30:28,653 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:30:28,653 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:30:28
+2021-03-08 10:30:28,653 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:30:28
+2021-03-08 10:30:28,653 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:30:28,653 - eos - INFO - StartTime= 2021-03-08 10:30:28
+2021-03-08 10:30:28,935 - eos - INFO - eosusdt  1000
+2021-03-08 10:30:29,202 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:30:29,472 - eos - INFO - eos3susdt  1000
+2021-03-08 10:30:29,472 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:30:29,472 - eos - INFO - FinishTime= 2021-03-08 10:30:29
+2021-03-08 10:30:29,472 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:30:29
+2021-03-08 10:30:29,472 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:30:29
+2021-03-08 10:30:29,693 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:30:29,694 - eos - INFO - last_open=3.8428, last_close=3.8585, invest_direction=planB, last_ts=2021-03-08 10:25:00
+2021-03-08 10:30:29,694 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:30:29
+2021-03-08 10:30:29,694 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 10:25:00
+2021-03-08 10:30:29,694 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:30:29
+2021-03-08 10:30:29,809 - eos - INFO - current_balance = 10.991607836901773
+2021-03-08 10:30:29,810 - eos - INFO - BUY NEW COINS
+2021-03-08 10:30:29,810 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.08728, amount=114.57378551787352, ts:2021-03-08 10:30:29
+2021-03-08 10:30:29,810 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:30:29
+2021-03-08 10:30:29,810 - eos - INFO - =========================================
+2021-03-08 10:30:29,810 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:35:28,911 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:35:28
+2021-03-08 10:35:29,019 - eos - INFO - SELL LAST COIN
+2021-03-08 10:35:29,019 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:114.57378551787352, sell_cur_price:0.087118
+2021-03-08 10:35:29,019 - eos - INFO - sell_cur_price * last_amount = 9.981439046746106
+2021-03-08 10:35:29,019 - eos - INFO - current_balance = 10.973046883647879  sell_ts:2021-03-08 10:35:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:35:29,019 - eos - INFO - demo_action_running_duration: 21:50:28
+2021-03-08 10:35:29,019 - eos - INFO - earning_ratio = 9.730468836478785%
+2021-03-08 10:35:29,019 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:35:29,019 - eos - INFO - last_sell_cash=9.981439046746106
+2021-03-08 10:35:29,019 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:35:29,020 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:35:29,020 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:35:29
+2021-03-08 10:35:29,020 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:35:29
+2021-03-08 10:35:29,020 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:35:29,020 - eos - INFO - StartTime= 2021-03-08 10:35:29
+2021-03-08 10:35:29,287 - eos - INFO - eosusdt  1000
+2021-03-08 10:35:29,576 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:35:29,879 - eos - INFO - eos3susdt  1000
+2021-03-08 10:35:29,879 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:35:29,880 - eos - INFO - FinishTime= 2021-03-08 10:35:29
+2021-03-08 10:35:29,880 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:35:29
+2021-03-08 10:35:29,880 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:35:29
+2021-03-08 10:35:30,100 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:35:30,100 - eos - INFO - last_open=3.8589, last_close=3.8559, invest_direction=planB, last_ts=2021-03-08 10:30:00
+2021-03-08 10:35:30,100 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:35:30
+2021-03-08 10:35:30,100 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 10:30:00
+2021-03-08 10:35:30,100 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:35:30
+2021-03-08 10:35:30,210 - eos - INFO - current_balance = 10.973046883647879
+2021-03-08 10:35:30,210 - eos - INFO - BUY NEW COINS
+2021-03-08 10:35:30,210 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1768, amount=3.147821707378494, ts:2021-03-08 10:35:30
+2021-03-08 10:35:30,210 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:35:30
+2021-03-08 10:35:30,210 - eos - INFO - =========================================
+2021-03-08 10:35:30,211 - eos - INFO - sleep 298 seconds .....
+2021-03-08 10:40:28,310 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:40:28
+2021-03-08 10:40:28,424 - eos - INFO - SELL LAST COIN
+2021-03-08 10:40:28,424 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.147821707378494, sell_cur_price:3.2005
+2021-03-08 10:40:28,424 - eos - INFO - sell_cur_price * last_amount = 10.07460337446487
+2021-03-08 10:40:28,424 - eos - INFO - current_balance = 11.047650258112748  sell_ts:2021-03-08 10:40:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:40:28,424 - eos - INFO - demo_action_running_duration: 21:55:28
+2021-03-08 10:40:28,424 - eos - INFO - earning_ratio = 10.47650258112748%
+2021-03-08 10:40:28,424 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:40:28,424 - eos - INFO - last_sell_cash=10.07460337446487
+2021-03-08 10:40:28,424 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:40:28,425 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:40:28,425 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:40:28
+2021-03-08 10:40:28,425 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:40:28
+2021-03-08 10:40:28,425 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:40:28,425 - eos - INFO - StartTime= 2021-03-08 10:40:28
+2021-03-08 10:40:28,739 - eos - INFO - eosusdt  1000
+2021-03-08 10:40:29,007 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:40:29,301 - eos - INFO - eos3susdt  1000
+2021-03-08 10:40:29,301 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:40:29,301 - eos - INFO - FinishTime= 2021-03-08 10:40:29
+2021-03-08 10:40:29,301 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:40:29
+2021-03-08 10:40:29,302 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:40:29
+2021-03-08 10:40:29,520 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:40:29,520 - eos - INFO - last_open=3.8566, last_close=3.8737, invest_direction=planB, last_ts=2021-03-08 10:35:00
+2021-03-08 10:40:29,520 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:40:29
+2021-03-08 10:40:29,520 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 10:35:00
+2021-03-08 10:40:29,521 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:40:29
+2021-03-08 10:40:29,643 - eos - INFO - current_balance = 11.047650258112748
+2021-03-08 10:40:29,643 - eos - INFO - BUY NEW COINS
+2021-03-08 10:40:29,643 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.086118, amount=116.11974267865023, ts:2021-03-08 10:40:29
+2021-03-08 10:40:29,643 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 10:40:29,643 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:40:29
+2021-03-08 10:40:29,643 - eos - INFO - =========================================
+2021-03-08 10:40:29,644 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:45:28,710 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:45:28
+2021-03-08 10:45:29,086 - eos - INFO - SELL LAST COIN
+2021-03-08 10:45:29,086 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:116.11974267865023, sell_cur_price:0.086399
+2021-03-08 10:45:29,086 - eos - INFO - sell_cur_price * last_amount = 10.032629647692701
+2021-03-08 10:45:29,086 - eos - INFO - current_balance = 11.08027990580545  sell_ts:2021-03-08 10:45:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:45:29,086 - eos - INFO - demo_action_running_duration: 22:00:29
+2021-03-08 10:45:29,086 - eos - INFO - earning_ratio = 10.802799058054493%
+2021-03-08 10:45:29,086 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 10:45:29,225 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:116.11974267865023, actual_sell_cur_price:0.086399
+2021-03-08 10:45:29,225 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.032629647692701
+2021-03-08 10:45:29,225 - eos - INFO - actual_balance=10.611306198282268, ts_actual_sell=2021-03-08 10:45:29
+2021-03-08 10:45:29,226 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:45:29,226 - eos - INFO - last_sell_cash=10.032629647692701
+2021-03-08 10:45:29,226 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:45:29,226 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:45:29,226 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:45:29
+2021-03-08 10:45:29,226 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:45:29
+2021-03-08 10:45:29,226 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:45:29,227 - eos - INFO - StartTime= 2021-03-08 10:45:29
+2021-03-08 10:45:29,494 - eos - INFO - eosusdt  1000
+2021-03-08 10:45:29,762 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:45:30,036 - eos - INFO - eos3susdt  1000
+2021-03-08 10:45:30,036 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:45:30,036 - eos - INFO - FinishTime= 2021-03-08 10:45:30
+2021-03-08 10:45:30,036 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:45:30
+2021-03-08 10:45:30,036 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:45:30
+2021-03-08 10:45:30,258 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:45:30,258 - eos - INFO - last_open=3.8734, last_close=3.8663, invest_direction=planB, last_ts=2021-03-08 10:40:00
+2021-03-08 10:45:30,258 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:45:30
+2021-03-08 10:45:30,258 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 10:40:00
+2021-03-08 10:45:30,258 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:45:30
+2021-03-08 10:45:30,371 - eos - INFO - current_balance = 11.08027990580545
+2021-03-08 10:45:30,371 - eos - INFO - BUY NEW COINS
+2021-03-08 10:45:30,371 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1968, amount=3.128128128128128, ts:2021-03-08 10:45:30
+2021-03-08 10:45:30,371 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 10:45:30,371 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:45:30
+2021-03-08 10:45:30,371 - eos - INFO - =========================================
+2021-03-08 10:45:30,372 - eos - INFO - sleep 298 seconds .....
+2021-03-08 10:50:28,447 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:50:28
+2021-03-08 10:50:28,559 - eos - INFO - SELL LAST COIN
+2021-03-08 10:50:28,559 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.128128128128128, sell_cur_price:3.151
+2021-03-08 10:50:28,559 - eos - INFO - sell_cur_price * last_amount = 9.856731731731731
+2021-03-08 10:50:28,559 - eos - INFO - current_balance = 10.93701163753718  sell_ts:2021-03-08 10:50:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:50:28,559 - eos - INFO - demo_action_running_duration: 22:05:28
+2021-03-08 10:50:28,559 - eos - INFO - earning_ratio = 9.370116375371804%
+2021-03-08 10:50:28,559 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 10:50:28,678 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.128128128128128, actual_sell_cur_price:3.151
+2021-03-08 10:50:28,678 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.856731731731731
+2021-03-08 10:50:28,678 - eos - INFO - actual_balance=10.468037930013999, ts_actual_sell=2021-03-08 10:50:28
+2021-03-08 10:50:28,678 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:50:28,678 - eos - INFO - last_sell_cash=9.856731731731731
+2021-03-08 10:50:28,678 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:50:28,679 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:50:28,679 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:50:28
+2021-03-08 10:50:28,679 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:50:28
+2021-03-08 10:50:28,679 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:50:28,679 - eos - INFO - StartTime= 2021-03-08 10:50:28
+2021-03-08 10:50:28,943 - eos - INFO - eosusdt  1000
+2021-03-08 10:50:29,203 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:50:29,472 - eos - INFO - eos3susdt  1000
+2021-03-08 10:50:29,472 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:50:29,472 - eos - INFO - FinishTime= 2021-03-08 10:50:29
+2021-03-08 10:50:29,472 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:50:29
+2021-03-08 10:50:29,472 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:50:29
+2021-03-08 10:50:29,692 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:50:29,693 - eos - INFO - last_open=3.8669, last_close=3.8536, invest_direction=planB, last_ts=2021-03-08 10:45:00
+2021-03-08 10:50:29,693 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:50:29
+2021-03-08 10:50:29,693 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 10:45:00
+2021-03-08 10:50:29,693 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:50:29
+2021-03-08 10:50:29,805 - eos - INFO - current_balance = 10.93701163753718
+2021-03-08 10:50:29,806 - eos - INFO - BUY NEW COINS
+2021-03-08 10:50:29,806 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.151, amount=3.1735956839098702, ts:2021-03-08 10:50:29
+2021-03-08 10:50:29,806 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:50:29
+2021-03-08 10:50:29,806 - eos - INFO - =========================================
+2021-03-08 10:50:29,807 - eos - INFO - sleep 299 seconds .....
+2021-03-08 10:55:28,907 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 10:55:28
+2021-03-08 10:55:29,033 - eos - INFO - SELL LAST COIN
+2021-03-08 10:55:29,033 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.1735956839098702, sell_cur_price:3.1161
+2021-03-08 10:55:29,034 - eos - INFO - sell_cur_price * last_amount = 9.889241510631546
+2021-03-08 10:55:29,034 - eos - INFO - current_balance = 10.826253148168727  sell_ts:2021-03-08 10:55:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 10:55:29,034 - eos - INFO - demo_action_running_duration: 22:10:28
+2021-03-08 10:55:29,034 - eos - INFO - earning_ratio = 8.262531481687265%
+2021-03-08 10:55:29,034 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 10:55:29,034 - eos - INFO - last_sell_cash=9.889241510631546
+2021-03-08 10:55:29,034 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 10:55:29,034 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 10:55:29,034 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 10:55:29
+2021-03-08 10:55:29,034 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 10:55:29
+2021-03-08 10:55:29,034 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 10:55:29,035 - eos - INFO - StartTime= 2021-03-08 10:55:29
+2021-03-08 10:55:29,312 - eos - INFO - eosusdt  1000
+2021-03-08 10:55:29,582 - eos - INFO - eos3lusdt  1000
+2021-03-08 10:55:29,837 - eos - INFO - eos3susdt  1000
+2021-03-08 10:55:29,837 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 10:55:29,838 - eos - INFO - FinishTime= 2021-03-08 10:55:29
+2021-03-08 10:55:29,838 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 10:55:29
+2021-03-08 10:55:29,838 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 10:55:29
+2021-03-08 10:55:30,058 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 10:55:30,059 - eos - INFO - last_open=3.8536, last_close=3.8328, invest_direction=planB, last_ts=2021-03-08 10:50:00
+2021-03-08 10:55:30,059 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 10:55:30
+2021-03-08 10:55:30,059 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 10:50:00
+2021-03-08 10:55:30,059 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 10:55:30
+2021-03-08 10:55:30,172 - eos - INFO - current_balance = 10.826253148168727
+2021-03-08 10:55:30,172 - eos - INFO - BUY NEW COINS
+2021-03-08 10:55:30,172 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1168, amount=3.208418891170431, ts:2021-03-08 10:55:30
+2021-03-08 10:55:30,172 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 10:55:30
+2021-03-08 10:55:30,173 - eos - INFO - =========================================
+2021-03-08 10:55:30,173 - eos - INFO - sleep 298 seconds .....
+2021-03-08 11:00:28,228 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:00:28
+2021-03-08 11:00:28,352 - eos - INFO - SELL LAST COIN
+2021-03-08 11:00:28,352 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.208418891170431, sell_cur_price:3.1084
+2021-03-08 11:00:28,352 - eos - INFO - sell_cur_price * last_amount = 9.973049281314168
+2021-03-08 11:00:28,352 - eos - INFO - current_balance = 10.799302429482895  sell_ts:2021-03-08 11:00:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:00:28,352 - eos - INFO - demo_action_running_duration: 22:15:28
+2021-03-08 11:00:28,352 - eos - INFO - earning_ratio = 7.993024294828946%
+2021-03-08 11:00:28,352 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:00:28,352 - eos - INFO - last_sell_cash=9.973049281314168
+2021-03-08 11:00:28,352 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:00:28,353 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:00:28,353 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:00:28
+2021-03-08 11:00:28,353 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:00:28
+2021-03-08 11:00:28,353 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:00:28,353 - eos - INFO - StartTime= 2021-03-08 11:00:28
+2021-03-08 11:00:28,616 - eos - INFO - eosusdt  1000
+2021-03-08 11:00:28,890 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:00:29,144 - eos - INFO - eos3susdt  1000
+2021-03-08 11:00:29,144 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:00:29,144 - eos - INFO - FinishTime= 2021-03-08 11:00:29
+2021-03-08 11:00:29,144 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:00:29
+2021-03-08 11:00:29,144 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:00:29
+2021-03-08 11:00:29,361 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:00:29,362 - eos - INFO - last_open=3.8345, last_close=3.8327, invest_direction=planB, last_ts=2021-03-08 10:55:00
+2021-03-08 11:00:29,362 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:00:29
+2021-03-08 11:00:29,362 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 10:55:00
+2021-03-08 11:00:29,362 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:00:29
+2021-03-08 11:00:29,466 - eos - INFO - current_balance = 10.799302429482895
+2021-03-08 11:00:29,466 - eos - INFO - BUY NEW COINS
+2021-03-08 11:00:29,466 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1064, amount=3.2191604429564773, ts:2021-03-08 11:00:29
+2021-03-08 11:00:29,466 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:00:29
+2021-03-08 11:00:29,466 - eos - INFO - =========================================
+2021-03-08 11:00:29,467 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:05:28,478 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:05:28
+2021-03-08 11:05:28,586 - eos - INFO - SELL LAST COIN
+2021-03-08 11:05:28,586 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.2191604429564773, sell_cur_price:3.1041
+2021-03-08 11:05:28,586 - eos - INFO - sell_cur_price * last_amount = 9.992595930981201
+2021-03-08 11:05:28,586 - eos - INFO - current_balance = 10.791898360464096  sell_ts:2021-03-08 11:05:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:05:28,586 - eos - INFO - demo_action_running_duration: 22:20:28
+2021-03-08 11:05:28,586 - eos - INFO - earning_ratio = 7.918983604640957%
+2021-03-08 11:05:28,586 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:05:28,586 - eos - INFO - last_sell_cash=9.992595930981201
+2021-03-08 11:05:28,586 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:05:28,587 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:05:28,587 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:05:28
+2021-03-08 11:05:28,587 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:05:28
+2021-03-08 11:05:28,587 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:05:28,587 - eos - INFO - StartTime= 2021-03-08 11:05:28
+2021-03-08 11:05:28,793 - eos - INFO - eosusdt  1000
+2021-03-08 11:05:29,048 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:05:29,357 - eos - INFO - eos3susdt  1000
+2021-03-08 11:05:29,358 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:05:29,358 - eos - INFO - FinishTime= 2021-03-08 11:05:29
+2021-03-08 11:05:29,358 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:05:29
+2021-03-08 11:05:29,358 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:05:29
+2021-03-08 11:05:29,575 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:05:29,575 - eos - INFO - last_open=3.8323, last_close=3.8272, invest_direction=planB, last_ts=2021-03-08 11:00:00
+2021-03-08 11:05:29,575 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:05:29
+2021-03-08 11:05:29,575 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 11:00:00
+2021-03-08 11:05:29,575 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:05:29
+2021-03-08 11:05:29,688 - eos - INFO - current_balance = 10.791898360464096
+2021-03-08 11:05:29,688 - eos - INFO - BUY NEW COINS
+2021-03-08 11:05:29,688 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1041, amount=3.221545697625721, ts:2021-03-08 11:05:29
+2021-03-08 11:05:29,688 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:05:29
+2021-03-08 11:05:29,688 - eos - INFO - =========================================
+2021-03-08 11:05:29,689 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:10:28,788 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:10:28
+2021-03-08 11:10:28,895 - eos - INFO - SELL LAST COIN
+2021-03-08 11:10:28,895 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.221545697625721, sell_cur_price:3.0865
+2021-03-08 11:10:28,896 - eos - INFO - sell_cur_price * last_amount = 9.943300795721788
+2021-03-08 11:10:28,896 - eos - INFO - current_balance = 10.735199156185883  sell_ts:2021-03-08 11:10:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:10:28,896 - eos - INFO - demo_action_running_duration: 22:25:28
+2021-03-08 11:10:28,896 - eos - INFO - earning_ratio = 7.351991561858835%
+2021-03-08 11:10:28,896 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:10:28,896 - eos - INFO - last_sell_cash=9.943300795721788
+2021-03-08 11:10:28,896 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:10:28,896 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:10:28,896 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:10:28
+2021-03-08 11:10:28,897 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:10:28
+2021-03-08 11:10:28,897 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:10:28,897 - eos - INFO - StartTime= 2021-03-08 11:10:28
+2021-03-08 11:10:29,167 - eos - INFO - eosusdt  1000
+2021-03-08 11:10:29,425 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:10:29,686 - eos - INFO - eos3susdt  1000
+2021-03-08 11:10:29,686 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:10:29,686 - eos - INFO - FinishTime= 2021-03-08 11:10:29
+2021-03-08 11:10:29,687 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:10:29
+2021-03-08 11:10:29,687 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:10:29
+2021-03-08 11:10:29,900 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:10:29,900 - eos - INFO - last_open=3.8271, last_close=3.819, invest_direction=planB, last_ts=2021-03-08 11:05:00
+2021-03-08 11:10:29,900 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:10:29
+2021-03-08 11:10:29,900 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 11:05:00
+2021-03-08 11:10:29,900 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:10:29
+2021-03-08 11:10:30,014 - eos - INFO - current_balance = 10.735199156185883
+2021-03-08 11:10:30,015 - eos - INFO - BUY NEW COINS
+2021-03-08 11:10:30,015 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0865, amount=3.239915762190183, ts:2021-03-08 11:10:29
+2021-03-08 11:10:30,015 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:10:30
+2021-03-08 11:10:30,015 - eos - INFO - =========================================
+2021-03-08 11:10:30,016 - eos - INFO - sleep 298 seconds .....
+2021-03-08 11:15:28,116 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:15:28
+2021-03-08 11:15:28,240 - eos - INFO - SELL LAST COIN
+2021-03-08 11:15:28,240 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.239915762190183, sell_cur_price:3.0614
+2021-03-08 11:15:28,240 - eos - INFO - sell_cur_price * last_amount = 9.918678114369026
+2021-03-08 11:15:28,240 - eos - INFO - current_balance = 10.65387727055491  sell_ts:2021-03-08 11:15:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:15:28,240 - eos - INFO - demo_action_running_duration: 22:30:28
+2021-03-08 11:15:28,240 - eos - INFO - earning_ratio = 6.538772705549096%
+2021-03-08 11:15:28,240 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:15:28,240 - eos - INFO - last_sell_cash=9.918678114369026
+2021-03-08 11:15:28,240 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:15:28,241 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:15:28,241 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:15:28
+2021-03-08 11:15:28,241 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:15:28
+2021-03-08 11:15:28,241 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:15:28,241 - eos - INFO - StartTime= 2021-03-08 11:15:28
+2021-03-08 11:15:28,513 - eos - INFO - eosusdt  1000
+2021-03-08 11:15:28,699 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:15:28,965 - eos - INFO - eos3susdt  1000
+2021-03-08 11:15:28,965 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:15:28,965 - eos - INFO - FinishTime= 2021-03-08 11:15:28
+2021-03-08 11:15:28,965 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:15:28
+2021-03-08 11:15:28,965 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:15:28
+2021-03-08 11:15:29,179 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:15:29,179 - eos - INFO - last_open=3.8189, last_close=3.8072, invest_direction=planB, last_ts=2021-03-08 11:10:00
+2021-03-08 11:15:29,179 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:15:29
+2021-03-08 11:15:29,179 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 11:10:00
+2021-03-08 11:15:29,179 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:15:29
+2021-03-08 11:15:29,290 - eos - INFO - current_balance = 10.65387727055491
+2021-03-08 11:15:29,290 - eos - INFO - BUY NEW COINS
+2021-03-08 11:15:29,290 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0614, amount=3.2664793885150587, ts:2021-03-08 11:15:29
+2021-03-08 11:15:29,290 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:15:29
+2021-03-08 11:15:29,290 - eos - INFO - =========================================
+2021-03-08 11:15:29,291 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:20:28,302 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:20:28
+2021-03-08 11:20:28,444 - eos - INFO - SELL LAST COIN
+2021-03-08 11:20:28,445 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.2664793885150587, sell_cur_price:3.013
+2021-03-08 11:20:28,445 - eos - INFO - sell_cur_price * last_amount = 9.841902397595872
+2021-03-08 11:20:28,445 - eos - INFO - current_balance = 10.495779668150782  sell_ts:2021-03-08 11:20:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:20:28,445 - eos - INFO - demo_action_running_duration: 22:35:28
+2021-03-08 11:20:28,445 - eos - INFO - earning_ratio = 4.957796681507816%
+2021-03-08 11:20:28,445 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:20:28,445 - eos - INFO - last_sell_cash=9.841902397595872
+2021-03-08 11:20:28,445 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:20:28,446 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:20:28,446 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:20:28
+2021-03-08 11:20:28,446 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:20:28
+2021-03-08 11:20:28,446 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:20:28,446 - eos - INFO - StartTime= 2021-03-08 11:20:28
+2021-03-08 11:20:28,714 - eos - INFO - eosusdt  1000
+2021-03-08 11:20:28,969 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:20:29,226 - eos - INFO - eos3susdt  1000
+2021-03-08 11:20:29,226 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:20:29,227 - eos - INFO - FinishTime= 2021-03-08 11:20:29
+2021-03-08 11:20:29,227 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:20:29
+2021-03-08 11:20:29,227 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:20:29
+2021-03-08 11:20:29,441 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:20:29,442 - eos - INFO - last_open=3.8065, last_close=3.797, invest_direction=planB, last_ts=2021-03-08 11:15:00
+2021-03-08 11:20:29,442 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:20:29
+2021-03-08 11:20:29,442 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 11:15:00
+2021-03-08 11:20:29,442 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:20:29
+2021-03-08 11:20:29,556 - eos - INFO - current_balance = 10.495779668150782
+2021-03-08 11:20:29,556 - eos - INFO - BUY NEW COINS
+2021-03-08 11:20:29,556 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.013, amount=3.3189512114171924, ts:2021-03-08 11:20:29
+2021-03-08 11:20:29,557 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:20:29
+2021-03-08 11:20:29,557 - eos - INFO - =========================================
+2021-03-08 11:20:29,557 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:25:28,658 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:25:28
+2021-03-08 11:25:28,765 - eos - INFO - SELL LAST COIN
+2021-03-08 11:25:28,765 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.3189512114171924, sell_cur_price:2.9804
+2021-03-08 11:25:28,765 - eos - INFO - sell_cur_price * last_amount = 9.8918021905078
+2021-03-08 11:25:28,765 - eos - INFO - current_balance = 10.387581858658582  sell_ts:2021-03-08 11:25:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:25:28,765 - eos - INFO - demo_action_running_duration: 22:40:28
+2021-03-08 11:25:28,765 - eos - INFO - earning_ratio = 3.875818586585815%
+2021-03-08 11:25:28,765 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:25:28,765 - eos - INFO - last_sell_cash=9.8918021905078
+2021-03-08 11:25:28,765 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:25:28,766 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:25:28,766 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:25:28
+2021-03-08 11:25:28,766 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:25:28
+2021-03-08 11:25:28,766 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:25:28,766 - eos - INFO - StartTime= 2021-03-08 11:25:28
+2021-03-08 11:25:29,034 - eos - INFO - eosusdt  1000
+2021-03-08 11:25:29,226 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:25:29,496 - eos - INFO - eos3susdt  1000
+2021-03-08 11:25:29,497 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:25:29,497 - eos - INFO - FinishTime= 2021-03-08 11:25:29
+2021-03-08 11:25:29,497 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:25:29
+2021-03-08 11:25:29,497 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:25:29
+2021-03-08 11:25:29,713 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:25:29,713 - eos - INFO - last_open=3.7972, last_close=3.7693, invest_direction=planB, last_ts=2021-03-08 11:20:00
+2021-03-08 11:25:29,713 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:25:29
+2021-03-08 11:25:29,713 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 11:20:00
+2021-03-08 11:25:29,713 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:25:29
+2021-03-08 11:25:29,833 - eos - INFO - current_balance = 10.387581858658582
+2021-03-08 11:25:29,833 - eos - INFO - BUY NEW COINS
+2021-03-08 11:25:29,833 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:2.9856, amount=3.34941050375134, ts:2021-03-08 11:25:29
+2021-03-08 11:25:29,833 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:25:29
+2021-03-08 11:25:29,833 - eos - INFO - =========================================
+2021-03-08 11:25:29,834 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:30:28,886 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:30:28
+2021-03-08 11:30:28,994 - eos - INFO - SELL LAST COIN
+2021-03-08 11:30:28,994 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.34941050375134, sell_cur_price:3.0143
+2021-03-08 11:30:28,994 - eos - INFO - sell_cur_price * last_amount = 10.096128081457664
+2021-03-08 11:30:28,994 - eos - INFO - current_balance = 10.483709940116245  sell_ts:2021-03-08 11:30:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:30:28,994 - eos - INFO - demo_action_running_duration: 22:45:28
+2021-03-08 11:30:28,995 - eos - INFO - earning_ratio = 4.837099401162455%
+2021-03-08 11:30:28,995 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:30:28,995 - eos - INFO - last_sell_cash=10.096128081457664
+2021-03-08 11:30:28,995 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:30:28,995 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:30:28,995 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:30:28
+2021-03-08 11:30:28,995 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:30:28
+2021-03-08 11:30:28,995 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:30:28,995 - eos - INFO - StartTime= 2021-03-08 11:30:28
+2021-03-08 11:30:29,254 - eos - INFO - eosusdt  1000
+2021-03-08 11:30:29,518 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:30:29,789 - eos - INFO - eos3susdt  1000
+2021-03-08 11:30:29,789 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:30:29,790 - eos - INFO - FinishTime= 2021-03-08 11:30:29
+2021-03-08 11:30:29,790 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:30:29
+2021-03-08 11:30:29,790 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:30:29
+2021-03-08 11:30:30,006 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:30:30,006 - eos - INFO - last_open=3.7708, last_close=3.7836, invest_direction=planB, last_ts=2021-03-08 11:25:00
+2021-03-08 11:30:30,006 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:30:30
+2021-03-08 11:30:30,006 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 11:25:00
+2021-03-08 11:30:30,006 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:30:30
+2021-03-08 11:30:30,132 - eos - INFO - current_balance = 10.483709940116245
+2021-03-08 11:30:30,132 - eos - INFO - BUY NEW COINS
+2021-03-08 11:30:30,132 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.092569, amount=108.02752541347536, ts:2021-03-08 11:30:30
+2021-03-08 11:30:30,132 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 11:30:30,133 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:30:30
+2021-03-08 11:30:30,133 - eos - INFO - =========================================
+2021-03-08 11:30:30,133 - eos - INFO - sleep 298 seconds .....
+2021-03-08 11:35:28,234 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:35:28
+2021-03-08 11:35:28,339 - eos - INFO - SELL LAST COIN
+2021-03-08 11:35:28,340 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:108.02752541347536, sell_cur_price:0.091581
+2021-03-08 11:35:28,340 - eos - INFO - sell_cur_price * last_amount = 9.893268804891486
+2021-03-08 11:35:28,340 - eos - INFO - current_balance = 10.376978745007731  sell_ts:2021-03-08 11:35:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:35:28,340 - eos - INFO - demo_action_running_duration: 22:50:28
+2021-03-08 11:35:28,340 - eos - INFO - earning_ratio = 3.769787450077313%
+2021-03-08 11:35:28,340 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 11:35:28,461 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:108.02752541347536, actual_sell_cur_price:0.091581
+2021-03-08 11:35:28,461 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.893268804891486
+2021-03-08 11:35:28,461 - eos - INFO - actual_balance=10.361306734905485, ts_actual_sell=2021-03-08 11:35:28
+2021-03-08 11:35:28,461 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:35:28,461 - eos - INFO - last_sell_cash=9.893268804891486
+2021-03-08 11:35:28,461 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:35:28,461 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:35:28,461 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:35:28
+2021-03-08 11:35:28,462 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:35:28
+2021-03-08 11:35:28,462 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:35:28,462 - eos - INFO - StartTime= 2021-03-08 11:35:28
+2021-03-08 11:35:28,748 - eos - INFO - eosusdt  1000
+2021-03-08 11:35:28,939 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:35:29,218 - eos - INFO - eos3susdt  1000
+2021-03-08 11:35:29,218 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:35:29,218 - eos - INFO - FinishTime= 2021-03-08 11:35:29
+2021-03-08 11:35:29,218 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:35:29
+2021-03-08 11:35:29,218 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:35:29
+2021-03-08 11:35:29,433 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:35:29,433 - eos - INFO - last_open=3.7836, last_close=3.7915, invest_direction=planB, last_ts=2021-03-08 11:30:00
+2021-03-08 11:35:29,433 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:35:29
+2021-03-08 11:35:29,434 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 11:30:00
+2021-03-08 11:35:29,434 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:35:29
+2021-03-08 11:35:29,544 - eos - INFO - current_balance = 10.376978745007731
+2021-03-08 11:35:29,544 - eos - INFO - BUY NEW COINS
+2021-03-08 11:35:29,544 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.091581, amount=109.19295487055176, ts:2021-03-08 11:35:29
+2021-03-08 11:35:29,544 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:35:29
+2021-03-08 11:35:29,544 - eos - INFO - =========================================
+2021-03-08 11:35:29,545 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:40:28,546 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:40:28
+2021-03-08 11:40:28,652 - eos - INFO - SELL LAST COIN
+2021-03-08 11:40:28,652 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.19295487055176, sell_cur_price:0.091097
+2021-03-08 11:40:28,652 - eos - INFO - sell_cur_price * last_amount = 9.947150609842653
+2021-03-08 11:40:28,652 - eos - INFO - current_balance = 10.324129354850385  sell_ts:2021-03-08 11:40:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:40:28,652 - eos - INFO - demo_action_running_duration: 22:55:28
+2021-03-08 11:40:28,652 - eos - INFO - earning_ratio = 3.241293548503847%
+2021-03-08 11:40:28,652 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:40:28,652 - eos - INFO - last_sell_cash=9.947150609842653
+2021-03-08 11:40:28,653 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:40:28,653 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:40:28,653 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:40:28
+2021-03-08 11:40:28,653 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:40:28
+2021-03-08 11:40:28,653 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:40:28,653 - eos - INFO - StartTime= 2021-03-08 11:40:28
+2021-03-08 11:40:28,909 - eos - INFO - eosusdt  1000
+2021-03-08 11:40:29,165 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:40:29,428 - eos - INFO - eos3susdt  1000
+2021-03-08 11:40:29,428 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:40:29,428 - eos - INFO - FinishTime= 2021-03-08 11:40:29
+2021-03-08 11:40:29,428 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:40:29
+2021-03-08 11:40:29,428 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:40:29
+2021-03-08 11:40:29,644 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:40:29,644 - eos - INFO - last_open=3.7913, last_close=3.8028, invest_direction=planB, last_ts=2021-03-08 11:35:00
+2021-03-08 11:40:29,644 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:40:29
+2021-03-08 11:40:29,644 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 11:35:00
+2021-03-08 11:40:29,644 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:40:29
+2021-03-08 11:40:29,775 - eos - INFO - current_balance = 10.324129354850385
+2021-03-08 11:40:29,775 - eos - INFO - BUY NEW COINS
+2021-03-08 11:40:29,775 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.091097, amount=109.773099004358, ts:2021-03-08 11:40:29
+2021-03-08 11:40:29,775 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:40:29
+2021-03-08 11:40:29,775 - eos - INFO - =========================================
+2021-03-08 11:40:29,776 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:45:28,778 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:45:28
+2021-03-08 11:45:28,888 - eos - INFO - SELL LAST COIN
+2021-03-08 11:45:28,888 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.773099004358, sell_cur_price:0.092301
+2021-03-08 11:45:28,888 - eos - INFO - sell_cur_price * last_amount = 10.132166811201248
+2021-03-08 11:45:28,888 - eos - INFO - current_balance = 10.456296166051633  sell_ts:2021-03-08 11:45:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:45:28,888 - eos - INFO - demo_action_running_duration: 23:00:28
+2021-03-08 11:45:28,888 - eos - INFO - earning_ratio = 4.562961660516329%
+2021-03-08 11:45:28,888 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:45:28,888 - eos - INFO - last_sell_cash=10.132166811201248
+2021-03-08 11:45:28,888 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:45:28,889 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:45:28,889 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:45:28
+2021-03-08 11:45:28,889 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:45:28
+2021-03-08 11:45:28,889 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:45:28,889 - eos - INFO - StartTime= 2021-03-08 11:45:28
+2021-03-08 11:45:29,156 - eos - INFO - eosusdt  1000
+2021-03-08 11:45:29,432 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:45:29,693 - eos - INFO - eos3susdt  1000
+2021-03-08 11:45:29,693 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:45:29,693 - eos - INFO - FinishTime= 2021-03-08 11:45:29
+2021-03-08 11:45:29,693 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:45:29
+2021-03-08 11:45:29,693 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:45:29
+2021-03-08 11:45:29,908 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:45:29,909 - eos - INFO - last_open=3.8021, last_close=3.7875, invest_direction=planB, last_ts=2021-03-08 11:40:00
+2021-03-08 11:45:29,909 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:45:29
+2021-03-08 11:45:29,909 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 11:40:00
+2021-03-08 11:45:29,909 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:45:29
+2021-03-08 11:45:30,117 - eos - INFO - current_balance = 10.456296166051633
+2021-03-08 11:45:30,118 - eos - INFO - BUY NEW COINS
+2021-03-08 11:45:30,118 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0021, amount=3.3310016321908, ts:2021-03-08 11:45:30
+2021-03-08 11:45:30,118 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 11:45:30,118 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:45:30
+2021-03-08 11:45:30,118 - eos - INFO - =========================================
+2021-03-08 11:45:30,119 - eos - INFO - sleep 298 seconds .....
+2021-03-08 11:50:28,219 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:50:28
+2021-03-08 11:50:28,323 - eos - INFO - SELL LAST COIN
+2021-03-08 11:50:28,323 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.3310016321908, sell_cur_price:3.0529
+2021-03-08 11:50:28,323 - eos - INFO - sell_cur_price * last_amount = 10.169214882915293
+2021-03-08 11:50:28,323 - eos - INFO - current_balance = 10.625511048966926  sell_ts:2021-03-08 11:50:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:50:28,323 - eos - INFO - demo_action_running_duration: 23:05:28
+2021-03-08 11:50:28,323 - eos - INFO - earning_ratio = 6.255110489669261%
+2021-03-08 11:50:28,324 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 11:50:28,432 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.3310016321908, actual_sell_cur_price:3.0529
+2021-03-08 11:50:28,432 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.169214882915293
+2021-03-08 11:50:28,433 - eos - INFO - actual_balance=10.530521617820778, ts_actual_sell=2021-03-08 11:50:28
+2021-03-08 11:50:28,433 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:50:28,433 - eos - INFO - last_sell_cash=10.169214882915293
+2021-03-08 11:50:28,433 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:50:28,433 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:50:28,433 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:50:28
+2021-03-08 11:50:28,433 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:50:28
+2021-03-08 11:50:28,433 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:50:28,433 - eos - INFO - StartTime= 2021-03-08 11:50:28
+2021-03-08 11:50:28,812 - eos - INFO - eosusdt  1000
+2021-03-08 11:50:29,079 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:50:29,346 - eos - INFO - eos3susdt  1000
+2021-03-08 11:50:29,346 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:50:29,346 - eos - INFO - FinishTime= 2021-03-08 11:50:29
+2021-03-08 11:50:29,346 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:50:29
+2021-03-08 11:50:29,346 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:50:29
+2021-03-08 11:50:29,568 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:50:29,568 - eos - INFO - last_open=3.7875, last_close=3.8016, invest_direction=planB, last_ts=2021-03-08 11:45:00
+2021-03-08 11:50:29,568 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:50:29
+2021-03-08 11:50:29,569 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 11:45:00
+2021-03-08 11:50:29,569 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:50:29
+2021-03-08 11:50:29,675 - eos - INFO - current_balance = 10.625511048966926
+2021-03-08 11:50:29,676 - eos - INFO - BUY NEW COINS
+2021-03-08 11:50:29,676 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.091109, amount=109.75864074899297, ts:2021-03-08 11:50:29
+2021-03-08 11:50:29,676 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 11:50:29,676 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:50:29
+2021-03-08 11:50:29,676 - eos - INFO - =========================================
+2021-03-08 11:50:29,677 - eos - INFO - sleep 299 seconds .....
+2021-03-08 11:55:28,777 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 11:55:28
+2021-03-08 11:55:28,884 - eos - INFO - SELL LAST COIN
+2021-03-08 11:55:28,884 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.75864074899297, sell_cur_price:0.091154
+2021-03-08 11:55:28,884 - eos - INFO - sell_cur_price * last_amount = 10.004939138833706
+2021-03-08 11:55:28,884 - eos - INFO - current_balance = 10.630450187800632  sell_ts:2021-03-08 11:55:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 11:55:28,885 - eos - INFO - demo_action_running_duration: 23:10:28
+2021-03-08 11:55:28,885 - eos - INFO - earning_ratio = 6.304501878006316%
+2021-03-08 11:55:28,885 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 11:55:28,995 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:109.75864074899297, actual_sell_cur_price:0.091154
+2021-03-08 11:55:28,995 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.004939138833706
+2021-03-08 11:55:28,995 - eos - INFO - actual_balance=10.535460756654484, ts_actual_sell=2021-03-08 11:55:28
+2021-03-08 11:55:28,995 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 11:55:28,995 - eos - INFO - last_sell_cash=10.004939138833706
+2021-03-08 11:55:28,995 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 11:55:28,996 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 11:55:28,996 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 11:55:28
+2021-03-08 11:55:28,996 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 11:55:28
+2021-03-08 11:55:28,996 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 11:55:28,996 - eos - INFO - StartTime= 2021-03-08 11:55:28
+2021-03-08 11:55:29,260 - eos - INFO - eosusdt  1000
+2021-03-08 11:55:29,454 - eos - INFO - eos3lusdt  1000
+2021-03-08 11:55:29,725 - eos - INFO - eos3susdt  1000
+2021-03-08 11:55:29,725 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 11:55:29,725 - eos - INFO - FinishTime= 2021-03-08 11:55:29
+2021-03-08 11:55:29,725 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 11:55:29
+2021-03-08 11:55:29,725 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 11:55:29
+2021-03-08 11:55:29,941 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 11:55:29,941 - eos - INFO - last_open=3.8016, last_close=3.8025, invest_direction=planB, last_ts=2021-03-08 11:50:00
+2021-03-08 11:55:29,941 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 11:55:29
+2021-03-08 11:55:29,941 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 11:50:00
+2021-03-08 11:55:29,941 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 11:55:29
+2021-03-08 11:55:30,055 - eos - INFO - current_balance = 10.630450187800632
+2021-03-08 11:55:30,055 - eos - INFO - BUY NEW COINS
+2021-03-08 11:55:30,056 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.091154, amount=109.70445619501064, ts:2021-03-08 11:55:30
+2021-03-08 11:55:30,056 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 11:55:30,056 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 11:55:30
+2021-03-08 11:55:30,056 - eos - INFO - =========================================
+2021-03-08 11:55:30,057 - eos - INFO - sleep 298 seconds .....
+2021-03-08 12:00:28,070 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:00:28
+2021-03-08 12:00:28,189 - eos - INFO - SELL LAST COIN
+2021-03-08 12:00:28,189 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.70445619501064, sell_cur_price:0.090653
+2021-03-08 12:00:28,189 - eos - INFO - sell_cur_price * last_amount = 9.9450380674463
+2021-03-08 12:00:28,189 - eos - INFO - current_balance = 10.575488255246931  sell_ts:2021-03-08 12:00:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:00:28,190 - eos - INFO - demo_action_running_duration: 23:15:28
+2021-03-08 12:00:28,190 - eos - INFO - earning_ratio = 5.7548825524693115%
+2021-03-08 12:00:28,190 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 12:00:28,314 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:109.70445619501064, actual_sell_cur_price:0.090653
+2021-03-08 12:00:28,314 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.9450380674463
+2021-03-08 12:00:28,314 - eos - INFO - actual_balance=10.480498824100783, ts_actual_sell=2021-03-08 12:00:28
+2021-03-08 12:00:28,314 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:00:28,314 - eos - INFO - last_sell_cash=9.9450380674463
+2021-03-08 12:00:28,314 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:00:28,315 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:00:28,315 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:00:28
+2021-03-08 12:00:28,315 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:00:28
+2021-03-08 12:00:28,315 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:00:28,315 - eos - INFO - StartTime= 2021-03-08 12:00:28
+2021-03-08 12:00:28,586 - eos - INFO - eosusdt  1000
+2021-03-08 12:00:28,852 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:00:29,113 - eos - INFO - eos3susdt  1000
+2021-03-08 12:00:29,114 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:00:29,114 - eos - INFO - FinishTime= 2021-03-08 12:00:29
+2021-03-08 12:00:29,114 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:00:29
+2021-03-08 12:00:29,114 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:00:29
+2021-03-08 12:00:29,329 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:00:29,329 - eos - INFO - last_open=3.8023, last_close=3.8093, invest_direction=planB, last_ts=2021-03-08 11:55:00
+2021-03-08 12:00:29,329 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:00:29
+2021-03-08 12:00:29,329 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 11:55:00
+2021-03-08 12:00:29,330 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:00:29
+2021-03-08 12:00:29,568 - eos - INFO - current_balance = 10.575488255246931
+2021-03-08 12:00:29,568 - eos - INFO - BUY NEW COINS
+2021-03-08 12:00:29,568 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.090653, amount=110.31074536970647, ts:2021-03-08 12:00:29
+2021-03-08 12:00:29,568 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:00:29
+2021-03-08 12:00:29,568 - eos - INFO - =========================================
+2021-03-08 12:00:29,569 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:05:28,590 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:05:28
+2021-03-08 12:05:28,706 - eos - INFO - SELL LAST COIN
+2021-03-08 12:05:28,706 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:110.31074536970647, sell_cur_price:0.09117
+2021-03-08 12:05:28,706 - eos - INFO - sell_cur_price * last_amount = 10.057030655356138
+2021-03-08 12:05:28,706 - eos - INFO - current_balance = 10.63251891060307  sell_ts:2021-03-08 12:05:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:05:28,706 - eos - INFO - demo_action_running_duration: 23:20:28
+2021-03-08 12:05:28,706 - eos - INFO - earning_ratio = 6.325189106030696%
+2021-03-08 12:05:28,706 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:05:28,706 - eos - INFO - last_sell_cash=10.057030655356138
+2021-03-08 12:05:28,706 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:05:28,707 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:05:28,707 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:05:28
+2021-03-08 12:05:28,707 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:05:28
+2021-03-08 12:05:28,707 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:05:28,707 - eos - INFO - StartTime= 2021-03-08 12:05:28
+2021-03-08 12:05:28,988 - eos - INFO - eosusdt  1000
+2021-03-08 12:05:29,290 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:05:29,577 - eos - INFO - eos3susdt  1000
+2021-03-08 12:05:29,577 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:05:29,577 - eos - INFO - FinishTime= 2021-03-08 12:05:29
+2021-03-08 12:05:29,578 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:05:29
+2021-03-08 12:05:29,578 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:05:29
+2021-03-08 12:05:29,793 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:05:29,794 - eos - INFO - last_open=3.8102, last_close=3.7958, invest_direction=planB, last_ts=2021-03-08 12:00:00
+2021-03-08 12:05:29,794 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:05:29
+2021-03-08 12:05:29,794 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 12:00:00
+2021-03-08 12:05:29,794 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:05:29
+2021-03-08 12:05:29,903 - eos - INFO - current_balance = 10.63251891060307
+2021-03-08 12:05:29,903 - eos - INFO - BUY NEW COINS
+2021-03-08 12:05:29,903 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.052, amount=3.2765399737876804, ts:2021-03-08 12:05:29
+2021-03-08 12:05:29,903 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 12:05:29,903 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:05:29
+2021-03-08 12:05:29,903 - eos - INFO - =========================================
+2021-03-08 12:05:29,904 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:10:28,942 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:10:28
+2021-03-08 12:10:29,049 - eos - INFO - SELL LAST COIN
+2021-03-08 12:10:29,049 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.2765399737876804, sell_cur_price:3.0454
+2021-03-08 12:10:29,049 - eos - INFO - sell_cur_price * last_amount = 9.978374836173002
+2021-03-08 12:10:29,049 - eos - INFO - current_balance = 10.610893746776071  sell_ts:2021-03-08 12:10:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:10:29,049 - eos - INFO - demo_action_running_duration: 23:25:29
+2021-03-08 12:10:29,049 - eos - INFO - earning_ratio = 6.108937467760711%
+2021-03-08 12:10:29,049 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 12:10:29,169 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.2765399737876804, actual_sell_cur_price:3.0454
+2021-03-08 12:10:29,169 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.978374836173002
+2021-03-08 12:10:29,169 - eos - INFO - actual_balance=10.458873660273785, ts_actual_sell=2021-03-08 12:10:29
+2021-03-08 12:10:29,169 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:10:29,169 - eos - INFO - last_sell_cash=9.978374836173002
+2021-03-08 12:10:29,169 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:10:29,170 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:10:29,170 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:10:29
+2021-03-08 12:10:29,170 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:10:29
+2021-03-08 12:10:29,170 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:10:29,170 - eos - INFO - StartTime= 2021-03-08 12:10:29
+2021-03-08 12:10:29,430 - eos - INFO - eosusdt  1000
+2021-03-08 12:10:29,771 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:10:29,913 - eos - INFO - eos3susdt  1000
+2021-03-08 12:10:29,914 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:10:29,914 - eos - INFO - FinishTime= 2021-03-08 12:10:29
+2021-03-08 12:10:29,914 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:10:29
+2021-03-08 12:10:29,914 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:10:29
+2021-03-08 12:10:30,131 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:10:30,131 - eos - INFO - last_open=3.7962, last_close=3.8002, invest_direction=planB, last_ts=2021-03-08 12:05:00
+2021-03-08 12:10:30,131 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:10:30
+2021-03-08 12:10:30,131 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 12:05:00
+2021-03-08 12:10:30,131 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:10:30
+2021-03-08 12:10:30,266 - eos - INFO - current_balance = 10.610893746776071
+2021-03-08 12:10:30,266 - eos - INFO - BUY NEW COINS
+2021-03-08 12:10:30,266 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.091054, amount=109.82493904715884, ts:2021-03-08 12:10:30
+2021-03-08 12:10:30,266 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:10:30
+2021-03-08 12:10:30,266 - eos - INFO - =========================================
+2021-03-08 12:10:30,267 - eos - INFO - sleep 298 seconds .....
+2021-03-08 12:15:28,367 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:15:28
+2021-03-08 12:15:28,484 - eos - INFO - SELL LAST COIN
+2021-03-08 12:15:28,484 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.82493904715884, sell_cur_price:0.090597
+2021-03-08 12:15:28,484 - eos - INFO - sell_cur_price * last_amount = 9.949810002855449
+2021-03-08 12:15:28,484 - eos - INFO - current_balance = 10.56070374963152  sell_ts:2021-03-08 12:15:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:15:28,484 - eos - INFO - demo_action_running_duration: 23:30:28
+2021-03-08 12:15:28,484 - eos - INFO - earning_ratio = 5.607037496315197%
+2021-03-08 12:15:28,484 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:15:28,484 - eos - INFO - last_sell_cash=9.949810002855449
+2021-03-08 12:15:28,484 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:15:28,485 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:15:28,485 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:15:28
+2021-03-08 12:15:28,485 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:15:28
+2021-03-08 12:15:28,485 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:15:28,485 - eos - INFO - StartTime= 2021-03-08 12:15:28
+2021-03-08 12:15:28,681 - eos - INFO - eosusdt  1000
+2021-03-08 12:15:28,942 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:15:29,218 - eos - INFO - eos3susdt  1000
+2021-03-08 12:15:29,218 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:15:29,218 - eos - INFO - FinishTime= 2021-03-08 12:15:29
+2021-03-08 12:15:29,219 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:15:29
+2021-03-08 12:15:29,219 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:15:29
+2021-03-08 12:15:29,435 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:15:29,436 - eos - INFO - last_open=3.8001, last_close=3.8127, invest_direction=planB, last_ts=2021-03-08 12:10:00
+2021-03-08 12:15:29,436 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:15:29
+2021-03-08 12:15:29,436 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 12:10:00
+2021-03-08 12:15:29,436 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:15:29
+2021-03-08 12:15:29,561 - eos - INFO - current_balance = 10.56070374963152
+2021-03-08 12:15:29,561 - eos - INFO - BUY NEW COINS
+2021-03-08 12:15:29,561 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.090597, amount=110.3789308696756, ts:2021-03-08 12:15:29
+2021-03-08 12:15:29,561 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:15:29
+2021-03-08 12:15:29,562 - eos - INFO - =========================================
+2021-03-08 12:15:29,562 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:20:28,654 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:20:28
+2021-03-08 12:20:28,779 - eos - INFO - SELL LAST COIN
+2021-03-08 12:20:28,779 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:110.3789308696756, sell_cur_price:0.0918
+2021-03-08 12:20:28,779 - eos - INFO - sell_cur_price * last_amount = 10.132785853836221
+2021-03-08 12:20:28,779 - eos - INFO - current_balance = 10.693489603467741  sell_ts:2021-03-08 12:20:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:20:28,779 - eos - INFO - demo_action_running_duration: 23:35:28
+2021-03-08 12:20:28,780 - eos - INFO - earning_ratio = 6.934896034677411%
+2021-03-08 12:20:28,780 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:20:28,780 - eos - INFO - last_sell_cash=10.132785853836221
+2021-03-08 12:20:28,780 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:20:28,780 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:20:28,780 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:20:28
+2021-03-08 12:20:28,780 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:20:28
+2021-03-08 12:20:28,780 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:20:28,780 - eos - INFO - StartTime= 2021-03-08 12:20:28
+2021-03-08 12:20:29,121 - eos - INFO - eosusdt  1000
+2021-03-08 12:20:29,406 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:20:29,674 - eos - INFO - eos3susdt  1000
+2021-03-08 12:20:29,674 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:20:29,674 - eos - INFO - FinishTime= 2021-03-08 12:20:29
+2021-03-08 12:20:29,674 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:20:29
+2021-03-08 12:20:29,674 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:20:29
+2021-03-08 12:20:29,889 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:20:29,890 - eos - INFO - last_open=3.8127, last_close=3.7999, invest_direction=planB, last_ts=2021-03-08 12:15:00
+2021-03-08 12:20:29,890 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:20:29
+2021-03-08 12:20:29,890 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 12:15:00
+2021-03-08 12:20:29,890 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:20:29
+2021-03-08 12:20:30,003 - eos - INFO - current_balance = 10.693489603467741
+2021-03-08 12:20:30,003 - eos - INFO - BUY NEW COINS
+2021-03-08 12:20:30,003 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0545, amount=3.273858241938124, ts:2021-03-08 12:20:29
+2021-03-08 12:20:30,003 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 12:20:30,004 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:20:30
+2021-03-08 12:20:30,004 - eos - INFO - =========================================
+2021-03-08 12:20:30,004 - eos - INFO - sleep 298 seconds .....
+2021-03-08 12:25:28,102 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:25:28
+2021-03-08 12:25:28,213 - eos - INFO - SELL LAST COIN
+2021-03-08 12:25:28,213 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.273858241938124, sell_cur_price:3.0559
+2021-03-08 12:25:28,213 - eos - INFO - sell_cur_price * last_amount = 10.004583401538712
+2021-03-08 12:25:28,213 - eos - INFO - current_balance = 10.698073005006453  sell_ts:2021-03-08 12:25:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:25:28,213 - eos - INFO - demo_action_running_duration: 23:40:28
+2021-03-08 12:25:28,213 - eos - INFO - earning_ratio = 6.980730050064529%
+2021-03-08 12:25:28,213 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 12:25:28,322 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.273858241938124, actual_sell_cur_price:3.0559
+2021-03-08 12:25:28,322 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.004583401538712
+2021-03-08 12:25:28,322 - eos - INFO - actual_balance=10.463457061812496, ts_actual_sell=2021-03-08 12:25:28
+2021-03-08 12:25:28,322 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:25:28,322 - eos - INFO - last_sell_cash=10.004583401538712
+2021-03-08 12:25:28,323 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:25:28,323 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:25:28,323 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:25:28
+2021-03-08 12:25:28,323 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:25:28
+2021-03-08 12:25:28,323 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:25:28,323 - eos - INFO - StartTime= 2021-03-08 12:25:28
+2021-03-08 12:25:28,595 - eos - INFO - eosusdt  1000
+2021-03-08 12:25:28,921 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:25:29,256 - eos - INFO - eos3susdt  1000
+2021-03-08 12:25:29,256 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:25:29,256 - eos - INFO - FinishTime= 2021-03-08 12:25:29
+2021-03-08 12:25:29,256 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:25:29
+2021-03-08 12:25:29,256 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:25:29
+2021-03-08 12:25:29,476 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:25:29,476 - eos - INFO - last_open=3.7987, last_close=3.8053, invest_direction=planB, last_ts=2021-03-08 12:20:00
+2021-03-08 12:25:29,477 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:25:29
+2021-03-08 12:25:29,477 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 12:20:00
+2021-03-08 12:25:29,477 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:25:29
+2021-03-08 12:25:29,605 - eos - INFO - current_balance = 10.698073005006453
+2021-03-08 12:25:29,605 - eos - INFO - BUY NEW COINS
+2021-03-08 12:25:29,605 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.090979, amount=109.9154749997252, ts:2021-03-08 12:25:29
+2021-03-08 12:25:29,605 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 12:25:29,606 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:25:29
+2021-03-08 12:25:29,606 - eos - INFO - =========================================
+2021-03-08 12:25:29,606 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:30:28,707 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:30:28
+2021-03-08 12:30:28,820 - eos - INFO - SELL LAST COIN
+2021-03-08 12:30:28,821 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.9154749997252, sell_cur_price:0.090548
+2021-03-08 12:30:28,821 - eos - INFO - sell_cur_price * last_amount = 9.952626430275119
+2021-03-08 12:30:28,821 - eos - INFO - current_balance = 10.650699435281572  sell_ts:2021-03-08 12:30:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:30:28,821 - eos - INFO - demo_action_running_duration: 23:45:28
+2021-03-08 12:30:28,821 - eos - INFO - earning_ratio = 6.50699435281572%
+2021-03-08 12:30:28,821 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 12:30:28,934 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:109.9154749997252, actual_sell_cur_price:0.090548
+2021-03-08 12:30:28,934 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.952626430275119
+2021-03-08 12:30:28,934 - eos - INFO - actual_balance=10.416083492087616, ts_actual_sell=2021-03-08 12:30:28
+2021-03-08 12:30:28,934 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:30:28,934 - eos - INFO - last_sell_cash=9.952626430275119
+2021-03-08 12:30:28,934 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:30:28,935 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:30:28,935 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:30:28
+2021-03-08 12:30:28,935 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:30:28
+2021-03-08 12:30:28,935 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:30:28,935 - eos - INFO - StartTime= 2021-03-08 12:30:28
+2021-03-08 12:30:29,212 - eos - INFO - eosusdt  1000
+2021-03-08 12:30:29,473 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:30:29,808 - eos - INFO - eos3susdt  1000
+2021-03-08 12:30:29,808 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:30:29,808 - eos - INFO - FinishTime= 2021-03-08 12:30:29
+2021-03-08 12:30:29,808 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:30:29
+2021-03-08 12:30:29,808 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:30:29
+2021-03-08 12:30:30,031 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:30:30,031 - eos - INFO - last_open=3.8046, last_close=3.8072, invest_direction=planB, last_ts=2021-03-08 12:25:00
+2021-03-08 12:30:30,031 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:30:30
+2021-03-08 12:30:30,031 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 12:25:00
+2021-03-08 12:30:30,031 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:30:30
+2021-03-08 12:30:30,142 - eos - INFO - current_balance = 10.650699435281572
+2021-03-08 12:30:30,142 - eos - INFO - BUY NEW COINS
+2021-03-08 12:30:30,142 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.090548, amount=110.4386623669214, ts:2021-03-08 12:30:30
+2021-03-08 12:30:30,142 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:30:30
+2021-03-08 12:30:30,142 - eos - INFO - =========================================
+2021-03-08 12:30:30,142 - eos - INFO - sleep 298 seconds .....
+2021-03-08 12:35:28,186 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:35:28
+2021-03-08 12:35:28,317 - eos - INFO - SELL LAST COIN
+2021-03-08 12:35:28,317 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:110.4386623669214, sell_cur_price:0.090482
+2021-03-08 12:35:28,317 - eos - INFO - sell_cur_price * last_amount = 9.992711048283784
+2021-03-08 12:35:28,317 - eos - INFO - current_balance = 10.643410483565356  sell_ts:2021-03-08 12:35:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:35:28,317 - eos - INFO - demo_action_running_duration: 23:50:28
+2021-03-08 12:35:28,317 - eos - INFO - earning_ratio = 6.43410483565356%
+2021-03-08 12:35:28,317 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:35:28,318 - eos - INFO - last_sell_cash=9.992711048283784
+2021-03-08 12:35:28,318 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:35:28,318 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:35:28,318 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:35:28
+2021-03-08 12:35:28,318 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:35:28
+2021-03-08 12:35:28,318 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:35:28,318 - eos - INFO - StartTime= 2021-03-08 12:35:28
+2021-03-08 12:35:28,698 - eos - INFO - eosusdt  1000
+2021-03-08 12:35:28,998 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:35:29,291 - eos - INFO - eos3susdt  1000
+2021-03-08 12:35:29,291 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:35:29,291 - eos - INFO - FinishTime= 2021-03-08 12:35:29
+2021-03-08 12:35:29,291 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:35:29
+2021-03-08 12:35:29,291 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:35:29
+2021-03-08 12:35:29,507 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:35:29,507 - eos - INFO - last_open=3.808, last_close=3.8136, invest_direction=planB, last_ts=2021-03-08 12:30:00
+2021-03-08 12:35:29,508 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:35:29
+2021-03-08 12:35:29,508 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 12:30:00
+2021-03-08 12:35:29,508 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:35:29
+2021-03-08 12:35:29,639 - eos - INFO - current_balance = 10.643410483565356
+2021-03-08 12:35:29,640 - eos - INFO - BUY NEW COINS
+2021-03-08 12:35:29,640 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.090482, amount=110.51921929223491, ts:2021-03-08 12:35:29
+2021-03-08 12:35:29,640 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:35:29
+2021-03-08 12:35:29,640 - eos - INFO - =========================================
+2021-03-08 12:35:29,641 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:40:28,738 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:40:28
+2021-03-08 12:40:28,869 - eos - INFO - SELL LAST COIN
+2021-03-08 12:40:28,869 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:110.51921929223491, sell_cur_price:0.091289
+2021-03-08 12:40:28,869 - eos - INFO - sell_cur_price * last_amount = 10.089189009968832
+2021-03-08 12:40:28,869 - eos - INFO - current_balance = 10.732599493534188  sell_ts:2021-03-08 12:40:28  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:40:28,869 - eos - INFO - demo_action_running_duration: 23:55:28
+2021-03-08 12:40:28,870 - eos - INFO - earning_ratio = 7.325994935341881%
+2021-03-08 12:40:28,870 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:40:28,870 - eos - INFO - last_sell_cash=10.089189009968832
+2021-03-08 12:40:28,870 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:40:28,870 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:40:28,870 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:40:28
+2021-03-08 12:40:28,870 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:40:28
+2021-03-08 12:40:28,870 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:40:28,870 - eos - INFO - StartTime= 2021-03-08 12:40:28
+2021-03-08 12:40:29,140 - eos - INFO - eosusdt  1000
+2021-03-08 12:40:29,397 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:40:29,673 - eos - INFO - eos3susdt  1000
+2021-03-08 12:40:29,673 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:40:29,673 - eos - INFO - FinishTime= 2021-03-08 12:40:29
+2021-03-08 12:40:29,674 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:40:29
+2021-03-08 12:40:29,674 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:40:29
+2021-03-08 12:40:29,888 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:40:29,888 - eos - INFO - last_open=3.8135, last_close=3.8018, invest_direction=planB, last_ts=2021-03-08 12:35:00
+2021-03-08 12:40:29,888 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:40:29
+2021-03-08 12:40:29,888 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 12:35:00
+2021-03-08 12:40:29,888 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:40:29
+2021-03-08 12:40:29,996 - eos - INFO - current_balance = 10.732599493534188
+2021-03-08 12:40:29,996 - eos - INFO - BUY NEW COINS
+2021-03-08 12:40:29,996 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0499, amount=3.2787960260992164, ts:2021-03-08 12:40:29
+2021-03-08 12:40:29,996 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 12:40:29,996 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:40:29
+2021-03-08 12:40:29,996 - eos - INFO - =========================================
+2021-03-08 12:40:29,997 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:45:29,094 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:45:29
+2021-03-08 12:45:29,212 - eos - INFO - SELL LAST COIN
+2021-03-08 12:45:29,212 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.2787960260992164, sell_cur_price:3.0552
+2021-03-08 12:45:29,212 - eos - INFO - sell_cur_price * last_amount = 10.017377618938326
+2021-03-08 12:45:29,212 - eos - INFO - current_balance = 10.749977112472514  sell_ts:2021-03-08 12:45:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:45:29,212 - eos - INFO - demo_action_running_duration: 24:00:29
+2021-03-08 12:45:29,212 - eos - INFO - earning_ratio = 7.499771124725144%
+2021-03-08 12:45:29,212 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 12:45:29,320 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.2787960260992164, actual_sell_cur_price:3.0552
+2021-03-08 12:45:29,321 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.017377618938326
+2021-03-08 12:45:29,321 - eos - INFO - actual_balance=10.433461111025942, ts_actual_sell=2021-03-08 12:45:29
+2021-03-08 12:45:29,321 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:45:29,321 - eos - INFO - last_sell_cash=10.017377618938326
+2021-03-08 12:45:29,321 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:45:29,321 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:45:29,321 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:45:29
+2021-03-08 12:45:29,322 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:45:29
+2021-03-08 12:45:29,322 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:45:29,322 - eos - INFO - StartTime= 2021-03-08 12:45:29
+2021-03-08 12:45:29,578 - eos - INFO - eosusdt  1000
+2021-03-08 12:45:29,841 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:45:30,102 - eos - INFO - eos3susdt  1000
+2021-03-08 12:45:30,102 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:45:30,102 - eos - INFO - FinishTime= 2021-03-08 12:45:30
+2021-03-08 12:45:30,102 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:45:30
+2021-03-08 12:45:30,102 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:45:30
+2021-03-08 12:45:30,318 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:45:30,318 - eos - INFO - last_open=3.8027, last_close=3.8018, invest_direction=planB, last_ts=2021-03-08 12:40:00
+2021-03-08 12:45:30,318 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:45:30
+2021-03-08 12:45:30,318 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 12:40:00
+2021-03-08 12:45:30,318 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:45:30
+2021-03-08 12:45:30,429 - eos - INFO - current_balance = 10.749977112472514
+2021-03-08 12:45:30,429 - eos - INFO - BUY NEW COINS
+2021-03-08 12:45:30,430 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0552, amount=3.2731081434930607, ts:2021-03-08 12:45:30
+2021-03-08 12:45:30,430 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 12:45:30,430 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:45:30
+2021-03-08 12:45:30,430 - eos - INFO - =========================================
+2021-03-08 12:45:30,430 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:50:29,486 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:50:29
+2021-03-08 12:50:29,599 - eos - INFO - SELL LAST COIN
+2021-03-08 12:50:29,599 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.2731081434930607, sell_cur_price:3.0142
+2021-03-08 12:50:29,599 - eos - INFO - sell_cur_price * last_amount = 9.865802566116784
+2021-03-08 12:50:29,599 - eos - INFO - current_balance = 10.615779678589298  sell_ts:2021-03-08 12:50:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:50:29,599 - eos - INFO - demo_action_running_duration: 24:05:29
+2021-03-08 12:50:29,599 - eos - INFO - earning_ratio = 6.157796785892984%
+2021-03-08 12:50:29,599 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 12:50:29,723 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.2731081434930607, actual_sell_cur_price:3.0142
+2021-03-08 12:50:29,724 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.865802566116784
+2021-03-08 12:50:29,724 - eos - INFO - actual_balance=10.299263677142726, ts_actual_sell=2021-03-08 12:50:29
+2021-03-08 12:50:29,724 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:50:29,724 - eos - INFO - last_sell_cash=9.865802566116784
+2021-03-08 12:50:29,724 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:50:29,724 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:50:29,724 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:50:29
+2021-03-08 12:50:29,724 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:50:29
+2021-03-08 12:50:29,724 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:50:29,725 - eos - INFO - StartTime= 2021-03-08 12:50:29
+2021-03-08 12:50:30,006 - eos - INFO - eosusdt  1000
+2021-03-08 12:50:30,197 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:50:30,470 - eos - INFO - eos3susdt  1000
+2021-03-08 12:50:30,470 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:50:30,470 - eos - INFO - FinishTime= 2021-03-08 12:50:30
+2021-03-08 12:50:30,471 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:50:30
+2021-03-08 12:50:30,471 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:50:30
+2021-03-08 12:50:30,690 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:50:30,691 - eos - INFO - last_open=3.8017, last_close=3.7824, invest_direction=planB, last_ts=2021-03-08 12:45:00
+2021-03-08 12:50:30,691 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:50:30
+2021-03-08 12:50:30,691 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 12:45:00
+2021-03-08 12:50:30,691 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:50:30
+2021-03-08 12:50:30,800 - eos - INFO - current_balance = 10.615779678589298
+2021-03-08 12:50:30,800 - eos - INFO - BUY NEW COINS
+2021-03-08 12:50:30,800 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0142, amount=3.317629885210006, ts:2021-03-08 12:50:30
+2021-03-08 12:50:30,800 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:50:30
+2021-03-08 12:50:30,800 - eos - INFO - =========================================
+2021-03-08 12:50:30,801 - eos - INFO - sleep 299 seconds .....
+2021-03-08 12:55:29,819 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 12:55:29
+2021-03-08 12:55:29,933 - eos - INFO - SELL LAST COIN
+2021-03-08 12:55:29,933 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.317629885210006, sell_cur_price:3.0246
+2021-03-08 12:55:29,933 - eos - INFO - sell_cur_price * last_amount = 10.034503350806183
+2021-03-08 12:55:29,933 - eos - INFO - current_balance = 10.650283029395482  sell_ts:2021-03-08 12:55:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 12:55:29,934 - eos - INFO - demo_action_running_duration: 24:10:29
+2021-03-08 12:55:29,934 - eos - INFO - earning_ratio = 6.5028302939548155%
+2021-03-08 12:55:29,934 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 12:55:29,934 - eos - INFO - last_sell_cash=10.034503350806183
+2021-03-08 12:55:29,934 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 12:55:29,934 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 12:55:29,934 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 12:55:29
+2021-03-08 12:55:29,934 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 12:55:29
+2021-03-08 12:55:29,934 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 12:55:29,934 - eos - INFO - StartTime= 2021-03-08 12:55:29
+2021-03-08 12:55:30,219 - eos - INFO - eosusdt  1000
+2021-03-08 12:55:30,427 - eos - INFO - eos3lusdt  1000
+2021-03-08 12:55:30,706 - eos - INFO - eos3susdt  1000
+2021-03-08 12:55:30,706 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 12:55:30,706 - eos - INFO - FinishTime= 2021-03-08 12:55:30
+2021-03-08 12:55:30,706 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 12:55:30
+2021-03-08 12:55:30,706 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 12:55:30
+2021-03-08 12:55:30,928 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 12:55:30,928 - eos - INFO - last_open=3.7851, last_close=3.791, invest_direction=planB, last_ts=2021-03-08 12:50:00
+2021-03-08 12:55:30,928 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 12:55:30
+2021-03-08 12:55:30,928 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 12:50:00
+2021-03-08 12:55:30,928 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 12:55:30
+2021-03-08 12:55:31,050 - eos - INFO - current_balance = 10.650283029395482
+2021-03-08 12:55:31,050 - eos - INFO - BUY NEW COINS
+2021-03-08 12:55:31,051 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.092, amount=108.69565217391305, ts:2021-03-08 12:55:31
+2021-03-08 12:55:31,051 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 12:55:31,051 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 12:55:31
+2021-03-08 12:55:31,051 - eos - INFO - =========================================
+2021-03-08 12:55:31,051 - eos - INFO - sleep 298 seconds .....
+2021-03-08 13:00:29,150 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:00:29
+2021-03-08 13:00:29,268 - eos - INFO - SELL LAST COIN
+2021-03-08 13:00:29,268 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:108.69565217391305, sell_cur_price:0.091232
+2021-03-08 13:00:29,268 - eos - INFO - sell_cur_price * last_amount = 9.916521739130435
+2021-03-08 13:00:29,268 - eos - INFO - current_balance = 10.566804768525916  sell_ts:2021-03-08 13:00:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:00:29,268 - eos - INFO - demo_action_running_duration: 24:15:29
+2021-03-08 13:00:29,268 - eos - INFO - earning_ratio = 5.668047685259161%
+2021-03-08 13:00:29,268 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 13:00:29,392 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:108.69565217391305, actual_sell_cur_price:0.091232
+2021-03-08 13:00:29,392 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.916521739130435
+2021-03-08 13:00:29,392 - eos - INFO - actual_balance=10.21578541627316, ts_actual_sell=2021-03-08 13:00:29
+2021-03-08 13:00:29,392 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:00:29,392 - eos - INFO - last_sell_cash=9.916521739130435
+2021-03-08 13:00:29,392 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:00:29,393 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:00:29,393 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:00:29
+2021-03-08 13:00:29,393 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:00:29
+2021-03-08 13:00:29,393 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:00:29,393 - eos - INFO - StartTime= 2021-03-08 13:00:29
+2021-03-08 13:00:29,680 - eos - INFO - eosusdt  1000
+2021-03-08 13:00:29,962 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:00:30,306 - eos - INFO - eos3susdt  1000
+2021-03-08 13:00:30,306 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:00:30,306 - eos - INFO - FinishTime= 2021-03-08 13:00:30
+2021-03-08 13:00:30,306 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:00:30
+2021-03-08 13:00:30,306 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:00:30
+2021-03-08 13:00:30,528 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:00:30,528 - eos - INFO - last_open=3.791, last_close=3.7969, invest_direction=planB, last_ts=2021-03-08 12:55:00
+2021-03-08 13:00:30,528 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:00:30
+2021-03-08 13:00:30,528 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 12:55:00
+2021-03-08 13:00:30,528 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:00:30
+2021-03-08 13:00:30,659 - eos - INFO - current_balance = 10.566804768525916
+2021-03-08 13:00:30,659 - eos - INFO - BUY NEW COINS
+2021-03-08 13:00:30,659 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.091232, amount=109.61066292528938, ts:2021-03-08 13:00:30
+2021-03-08 13:00:30,660 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:00:30
+2021-03-08 13:00:30,660 - eos - INFO - =========================================
+2021-03-08 13:00:30,660 - eos - INFO - sleep 299 seconds .....
+2021-03-08 13:05:29,698 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:05:29
+2021-03-08 13:05:29,813 - eos - INFO - SELL LAST COIN
+2021-03-08 13:05:29,813 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.61066292528938, sell_cur_price:0.090911
+2021-03-08 13:05:29,813 - eos - INFO - sell_cur_price * last_amount = 9.964814977200984
+2021-03-08 13:05:29,813 - eos - INFO - current_balance = 10.5316197457269  sell_ts:2021-03-08 13:05:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:05:29,813 - eos - INFO - demo_action_running_duration: 24:20:29
+2021-03-08 13:05:29,813 - eos - INFO - earning_ratio = 5.3161974572689985%
+2021-03-08 13:05:29,813 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:05:29,813 - eos - INFO - last_sell_cash=9.964814977200984
+2021-03-08 13:05:29,813 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:05:29,814 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:05:29,814 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:05:29
+2021-03-08 13:05:29,814 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:05:29
+2021-03-08 13:05:29,814 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:05:29,814 - eos - INFO - StartTime= 2021-03-08 13:05:29
+2021-03-08 13:05:30,156 - eos - INFO - eosusdt  1000
+2021-03-08 13:05:30,429 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:05:30,708 - eos - INFO - eos3susdt  1000
+2021-03-08 13:05:30,708 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:05:30,708 - eos - INFO - FinishTime= 2021-03-08 13:05:30
+2021-03-08 13:05:30,708 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:05:30
+2021-03-08 13:05:30,708 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:05:30
+2021-03-08 13:05:30,923 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:05:30,923 - eos - INFO - last_open=3.7963, last_close=3.8032, invest_direction=planB, last_ts=2021-03-08 13:00:00
+2021-03-08 13:05:30,924 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:05:30
+2021-03-08 13:05:30,924 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:00:00
+2021-03-08 13:05:30,924 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:05:30
+2021-03-08 13:05:31,054 - eos - INFO - current_balance = 10.5316197457269
+2021-03-08 13:05:31,055 - eos - INFO - BUY NEW COINS
+2021-03-08 13:05:31,055 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.090911, amount=109.99769004850897, ts:2021-03-08 13:05:31
+2021-03-08 13:05:31,055 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:05:31
+2021-03-08 13:05:31,055 - eos - INFO - =========================================
+2021-03-08 13:05:31,055 - eos - INFO - sleep 298 seconds .....
+2021-03-08 13:10:29,110 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:10:29
+2021-03-08 13:10:29,216 - eos - INFO - SELL LAST COIN
+2021-03-08 13:10:29,216 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:109.99769004850897, sell_cur_price:0.0903
+2021-03-08 13:10:29,216 - eos - INFO - sell_cur_price * last_amount = 9.93279141138036
+2021-03-08 13:10:29,216 - eos - INFO - current_balance = 10.46441115710726  sell_ts:2021-03-08 13:10:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:10:29,216 - eos - INFO - demo_action_running_duration: 24:25:29
+2021-03-08 13:10:29,216 - eos - INFO - earning_ratio = 4.644111571072607%
+2021-03-08 13:10:29,216 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:10:29,216 - eos - INFO - last_sell_cash=9.93279141138036
+2021-03-08 13:10:29,216 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:10:29,217 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:10:29,217 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:10:29
+2021-03-08 13:10:29,217 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:10:29
+2021-03-08 13:10:29,217 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:10:29,217 - eos - INFO - StartTime= 2021-03-08 13:10:29
+2021-03-08 13:10:29,501 - eos - INFO - eosusdt  1000
+2021-03-08 13:10:29,780 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:10:30,045 - eos - INFO - eos3susdt  1000
+2021-03-08 13:10:30,045 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:10:30,045 - eos - INFO - FinishTime= 2021-03-08 13:10:30
+2021-03-08 13:10:30,045 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:10:30
+2021-03-08 13:10:30,045 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:10:30
+2021-03-08 13:10:30,266 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:10:30,266 - eos - INFO - last_open=3.8016, last_close=3.8086, invest_direction=planB, last_ts=2021-03-08 13:05:00
+2021-03-08 13:10:30,266 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:10:30
+2021-03-08 13:10:30,266 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:05:00
+2021-03-08 13:10:30,266 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:10:30
+2021-03-08 13:10:30,378 - eos - INFO - current_balance = 10.46441115710726
+2021-03-08 13:10:30,378 - eos - INFO - BUY NEW COINS
+2021-03-08 13:10:30,378 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.0903, amount=110.74197120708747, ts:2021-03-08 13:10:30
+2021-03-08 13:10:30,378 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:10:30
+2021-03-08 13:10:30,378 - eos - INFO - =========================================
+2021-03-08 13:10:30,379 - eos - INFO - sleep 299 seconds .....
+2021-03-08 13:15:29,386 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:15:29
+2021-03-08 13:15:29,507 - eos - INFO - SELL LAST COIN
+2021-03-08 13:15:29,507 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:110.74197120708747, sell_cur_price:0.090856
+2021-03-08 13:15:29,508 - eos - INFO - sell_cur_price * last_amount = 10.06157253599114
+2021-03-08 13:15:29,508 - eos - INFO - current_balance = 10.5259836930984  sell_ts:2021-03-08 13:15:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:15:29,508 - eos - INFO - demo_action_running_duration: 24:30:29
+2021-03-08 13:15:29,508 - eos - INFO - earning_ratio = 5.259836930984001%
+2021-03-08 13:15:29,508 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:15:29,508 - eos - INFO - last_sell_cash=10.06157253599114
+2021-03-08 13:15:29,508 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:15:29,508 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:15:29,508 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:15:29
+2021-03-08 13:15:29,508 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:15:29
+2021-03-08 13:15:29,508 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:15:29,509 - eos - INFO - StartTime= 2021-03-08 13:15:29
+2021-03-08 13:15:29,709 - eos - INFO - eosusdt  1000
+2021-03-08 13:15:29,848 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:15:30,115 - eos - INFO - eos3susdt  1000
+2021-03-08 13:15:30,115 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:15:30,115 - eos - INFO - FinishTime= 2021-03-08 13:15:30
+2021-03-08 13:15:30,115 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:15:30
+2021-03-08 13:15:30,115 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:15:30
+2021-03-08 13:15:30,332 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:15:30,332 - eos - INFO - last_open=3.8074, last_close=3.807, invest_direction=planB, last_ts=2021-03-08 13:10:00
+2021-03-08 13:15:30,332 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:15:30
+2021-03-08 13:15:30,332 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 13:10:00
+2021-03-08 13:15:30,332 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:15:30
+2021-03-08 13:15:30,452 - eos - INFO - current_balance = 10.5259836930984
+2021-03-08 13:15:30,452 - eos - INFO - BUY NEW COINS
+2021-03-08 13:15:30,452 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.0615, amount=3.2663726931242856, ts:2021-03-08 13:15:30
+2021-03-08 13:15:30,452 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 13:15:30,452 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:15:30
+2021-03-08 13:15:30,452 - eos - INFO - =========================================
+2021-03-08 13:15:30,453 - eos - INFO - sleep 299 seconds .....
+2021-03-08 13:20:29,553 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:20:29
+2021-03-08 13:20:29,672 - eos - INFO - SELL LAST COIN
+2021-03-08 13:20:29,672 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.2663726931242856, sell_cur_price:3.0878
+2021-03-08 13:20:29,672 - eos - INFO - sell_cur_price * last_amount = 10.08590560182917
+2021-03-08 13:20:29,672 - eos - INFO - current_balance = 10.61188929492757  sell_ts:2021-03-08 13:20:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:20:29,672 - eos - INFO - demo_action_running_duration: 24:35:29
+2021-03-08 13:20:29,672 - eos - INFO - earning_ratio = 6.1188929492757005%
+2021-03-08 13:20:29,672 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 13:20:29,787 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.2663726931242856, actual_sell_cur_price:3.0878
+2021-03-08 13:20:29,787 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.08590560182917
+2021-03-08 13:20:29,787 - eos - INFO - actual_balance=10.30169101810233, ts_actual_sell=2021-03-08 13:20:29
+2021-03-08 13:20:29,787 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:20:29,787 - eos - INFO - last_sell_cash=10.08590560182917
+2021-03-08 13:20:29,787 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:20:29,788 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:20:29,788 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:20:29
+2021-03-08 13:20:29,788 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:20:29
+2021-03-08 13:20:29,788 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:20:29,788 - eos - INFO - StartTime= 2021-03-08 13:20:29
+2021-03-08 13:20:30,103 - eos - INFO - eosusdt  1000
+2021-03-08 13:20:30,396 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:20:30,809 - eos - INFO - eos3susdt  1000
+2021-03-08 13:20:30,809 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:20:30,809 - eos - INFO - FinishTime= 2021-03-08 13:20:30
+2021-03-08 13:20:30,809 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:20:30
+2021-03-08 13:20:30,809 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:20:30
+2021-03-08 13:20:31,028 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:20:31,029 - eos - INFO - last_open=3.807, last_close=3.8195, invest_direction=planB, last_ts=2021-03-08 13:15:00
+2021-03-08 13:20:31,029 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:20:31
+2021-03-08 13:20:31,029 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:15:00
+2021-03-08 13:20:31,029 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:20:31
+2021-03-08 13:20:31,157 - eos - INFO - current_balance = 10.61188929492757
+2021-03-08 13:20:31,157 - eos - INFO - BUY NEW COINS
+2021-03-08 13:20:31,157 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.09, amount=111.11111111111111, ts:2021-03-08 13:20:31
+2021-03-08 13:20:31,157 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 13:20:31,157 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:20:31
+2021-03-08 13:20:31,157 - eos - INFO - =========================================
+2021-03-08 13:20:31,158 - eos - INFO - sleep 298 seconds .....
+2021-03-08 13:25:29,230 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:25:29
+2021-03-08 13:25:29,362 - eos - INFO - SELL LAST COIN
+2021-03-08 13:25:29,362 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:111.11111111111111, sell_cur_price:0.0891
+2021-03-08 13:25:29,362 - eos - INFO - sell_cur_price * last_amount = 9.9
+2021-03-08 13:25:29,362 - eos - INFO - current_balance = 10.51188929492757  sell_ts:2021-03-08 13:25:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:25:29,362 - eos - INFO - demo_action_running_duration: 24:40:29
+2021-03-08 13:25:29,362 - eos - INFO - earning_ratio = 5.118892949275704%
+2021-03-08 13:25:29,363 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 13:25:29,488 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:111.11111111111111, actual_sell_cur_price:0.0891
+2021-03-08 13:25:29,488 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.9
+2021-03-08 13:25:29,488 - eos - INFO - actual_balance=10.20169101810233, ts_actual_sell=2021-03-08 13:25:29
+2021-03-08 13:25:29,488 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:25:29,488 - eos - INFO - last_sell_cash=9.9
+2021-03-08 13:25:29,488 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:25:29,488 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:25:29,489 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:25:29
+2021-03-08 13:25:29,489 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:25:29
+2021-03-08 13:25:29,489 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:25:29,489 - eos - INFO - StartTime= 2021-03-08 13:25:29
+2021-03-08 13:25:30,062 - eos - INFO - eosusdt  1000
+2021-03-08 13:25:30,341 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:25:30,697 - eos - INFO - eos3susdt  1000
+2021-03-08 13:25:30,697 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:25:30,698 - eos - INFO - FinishTime= 2021-03-08 13:25:30
+2021-03-08 13:25:30,698 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:25:30
+2021-03-08 13:25:30,698 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:25:30
+2021-03-08 13:25:30,914 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:25:30,914 - eos - INFO - last_open=3.8201, last_close=3.8358, invest_direction=planB, last_ts=2021-03-08 13:20:00
+2021-03-08 13:25:30,914 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:25:30
+2021-03-08 13:25:30,914 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:20:00
+2021-03-08 13:25:30,914 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:25:30
+2021-03-08 13:25:31,036 - eos - INFO - current_balance = 10.51188929492757
+2021-03-08 13:25:31,036 - eos - INFO - BUY NEW COINS
+2021-03-08 13:25:31,037 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.0891, amount=112.2334455667789, ts:2021-03-08 13:25:30
+2021-03-08 13:25:31,037 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:25:31
+2021-03-08 13:25:31,037 - eos - INFO - =========================================
+2021-03-08 13:25:31,037 - eos - INFO - sleep 298 seconds .....
+2021-03-08 13:30:29,138 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:30:29
+2021-03-08 13:30:29,269 - eos - INFO - SELL LAST COIN
+2021-03-08 13:30:29,269 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:112.2334455667789, sell_cur_price:0.088286
+2021-03-08 13:30:29,269 - eos - INFO - sell_cur_price * last_amount = 9.908641975308642
+2021-03-08 13:30:29,270 - eos - INFO - current_balance = 10.420531270236213  sell_ts:2021-03-08 13:30:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:30:29,270 - eos - INFO - demo_action_running_duration: 24:45:29
+2021-03-08 13:30:29,270 - eos - INFO - earning_ratio = 4.205312702362125%
+2021-03-08 13:30:29,270 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:30:29,270 - eos - INFO - last_sell_cash=9.908641975308642
+2021-03-08 13:30:29,270 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:30:29,270 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:30:29,270 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:30:29
+2021-03-08 13:30:29,270 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:30:29
+2021-03-08 13:30:29,270 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:30:29,270 - eos - INFO - StartTime= 2021-03-08 13:30:29
+2021-03-08 13:30:29,501 - eos - INFO - eosusdt  1000
+2021-03-08 13:30:29,769 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:30:30,129 - eos - INFO - eos3susdt  1000
+2021-03-08 13:30:30,129 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:30:30,129 - eos - INFO - FinishTime= 2021-03-08 13:30:30
+2021-03-08 13:30:30,129 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:30:30
+2021-03-08 13:30:30,129 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:30:30
+2021-03-08 13:30:30,351 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:30:30,351 - eos - INFO - last_open=3.8367, last_close=3.8419, invest_direction=planB, last_ts=2021-03-08 13:25:00
+2021-03-08 13:30:30,351 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:30:30
+2021-03-08 13:30:30,352 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:25:00
+2021-03-08 13:30:30,352 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:30:30
+2021-03-08 13:30:30,464 - eos - INFO - current_balance = 10.420531270236213
+2021-03-08 13:30:30,464 - eos - INFO - BUY NEW COINS
+2021-03-08 13:30:30,464 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.088286, amount=113.26824185035, ts:2021-03-08 13:30:30
+2021-03-08 13:30:30,464 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:30:30
+2021-03-08 13:30:30,464 - eos - INFO - =========================================
+2021-03-08 13:30:30,465 - eos - INFO - sleep 299 seconds .....
+2021-03-08 13:35:29,511 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:35:29
+2021-03-08 13:35:29,619 - eos - INFO - SELL LAST COIN
+2021-03-08 13:35:29,619 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:113.26824185035, sell_cur_price:0.088395
+2021-03-08 13:35:29,619 - eos - INFO - sell_cur_price * last_amount = 10.012346238361689
+2021-03-08 13:35:29,620 - eos - INFO - current_balance = 10.432877508597901  sell_ts:2021-03-08 13:35:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:35:29,620 - eos - INFO - demo_action_running_duration: 24:50:29
+2021-03-08 13:35:29,620 - eos - INFO - earning_ratio = 4.328775085979011%
+2021-03-08 13:35:29,620 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:35:29,620 - eos - INFO - last_sell_cash=10.012346238361689
+2021-03-08 13:35:29,620 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:35:29,621 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:35:29,621 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:35:29
+2021-03-08 13:35:29,621 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:35:29
+2021-03-08 13:35:29,621 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:35:29,621 - eos - INFO - StartTime= 2021-03-08 13:35:29
+2021-03-08 13:35:29,916 - eos - INFO - eosusdt  1000
+2021-03-08 13:35:30,257 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:35:30,555 - eos - INFO - eos3susdt  1000
+2021-03-08 13:35:30,556 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:35:30,556 - eos - INFO - FinishTime= 2021-03-08 13:35:30
+2021-03-08 13:35:30,556 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:35:30
+2021-03-08 13:35:30,556 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:35:30
+2021-03-08 13:35:30,778 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:35:30,778 - eos - INFO - last_open=3.842, last_close=3.8423, invest_direction=planB, last_ts=2021-03-08 13:30:00
+2021-03-08 13:35:30,778 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:35:30
+2021-03-08 13:35:30,778 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:30:00
+2021-03-08 13:35:30,778 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:35:30
+2021-03-08 13:35:30,894 - eos - INFO - current_balance = 10.432877508597901
+2021-03-08 13:35:30,894 - eos - INFO - BUY NEW COINS
+2021-03-08 13:35:30,894 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.088395, amount=113.1285706205102, ts:2021-03-08 13:35:30
+2021-03-08 13:35:30,894 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 13:35:30,894 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:35:30
+2021-03-08 13:35:30,894 - eos - INFO - =========================================
+2021-03-08 13:35:30,895 - eos - INFO - sleep 299 seconds .....
+2021-03-08 13:40:29,970 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:40:29
+2021-03-08 13:40:30,081 - eos - INFO - SELL LAST COIN
+2021-03-08 13:40:30,081 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:113.1285706205102, sell_cur_price:0.089199
+2021-03-08 13:40:30,081 - eos - INFO - sell_cur_price * last_amount = 10.09095537077889
+2021-03-08 13:40:30,081 - eos - INFO - current_balance = 10.52383287937679  sell_ts:2021-03-08 13:40:30  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:40:30,081 - eos - INFO - demo_action_running_duration: 24:55:30
+2021-03-08 13:40:30,081 - eos - INFO - earning_ratio = 5.238328793767906%
+2021-03-08 13:40:30,081 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 13:40:30,196 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:113.1285706205102, actual_sell_cur_price:0.089199
+2021-03-08 13:40:30,196 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.09095537077889
+2021-03-08 13:40:30,196 - eos - INFO - actual_balance=10.29264638888122, ts_actual_sell=2021-03-08 13:40:30
+2021-03-08 13:40:30,196 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:40:30,196 - eos - INFO - last_sell_cash=10.09095537077889
+2021-03-08 13:40:30,196 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:40:30,197 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:40:30,197 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:40:30
+2021-03-08 13:40:30,197 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:40:30
+2021-03-08 13:40:30,197 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:40:30,197 - eos - INFO - StartTime= 2021-03-08 13:40:30
+2021-03-08 13:40:30,460 - eos - INFO - eosusdt  1000
+2021-03-08 13:40:30,787 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:40:31,084 - eos - INFO - eos3susdt  1000
+2021-03-08 13:40:31,085 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:40:31,085 - eos - INFO - FinishTime= 2021-03-08 13:40:31
+2021-03-08 13:40:31,085 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:40:31
+2021-03-08 13:40:31,085 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:40:31
+2021-03-08 13:40:31,301 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:40:31,302 - eos - INFO - last_open=3.8408, last_close=3.8273, invest_direction=planB, last_ts=2021-03-08 13:35:00
+2021-03-08 13:40:31,302 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:40:31
+2021-03-08 13:40:31,302 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 13:35:00
+2021-03-08 13:40:31,302 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:40:31
+2021-03-08 13:40:31,421 - eos - INFO - current_balance = 10.52383287937679
+2021-03-08 13:40:31,421 - eos - INFO - BUY NEW COINS
+2021-03-08 13:40:31,421 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1072, amount=3.218331616889804, ts:2021-03-08 13:40:31
+2021-03-08 13:40:31,421 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 13:40:31,421 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:40:31
+2021-03-08 13:40:31,421 - eos - INFO - =========================================
+2021-03-08 13:40:31,422 - eos - INFO - sleep 298 seconds .....
+2021-03-08 13:45:29,474 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:45:29
+2021-03-08 13:45:29,616 - eos - INFO - SELL LAST COIN
+2021-03-08 13:45:29,616 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.218331616889804, sell_cur_price:3.1136
+2021-03-08 13:45:29,616 - eos - INFO - sell_cur_price * last_amount = 10.020597322348094
+2021-03-08 13:45:29,616 - eos - INFO - current_balance = 10.544430201724884  sell_ts:2021-03-08 13:45:29  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:45:29,616 - eos - INFO - demo_action_running_duration: 25:00:29
+2021-03-08 13:45:29,616 - eos - INFO - earning_ratio = 5.444302017248841%
+2021-03-08 13:45:29,616 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 13:45:29,725 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.218331616889804, actual_sell_cur_price:3.1136
+2021-03-08 13:45:29,725 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.020597322348094
+2021-03-08 13:45:29,725 - eos - INFO - actual_balance=10.313243711229314, ts_actual_sell=2021-03-08 13:45:29
+2021-03-08 13:45:29,725 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:45:29,726 - eos - INFO - last_sell_cash=10.020597322348094
+2021-03-08 13:45:29,726 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:45:29,726 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:45:29,726 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:45:29
+2021-03-08 13:45:29,726 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:45:29
+2021-03-08 13:45:29,726 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:45:29,726 - eos - INFO - StartTime= 2021-03-08 13:45:29
+2021-03-08 13:45:29,996 - eos - INFO - eosusdt  1000
+2021-03-08 13:45:30,270 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:45:30,543 - eos - INFO - eos3susdt  1000
+2021-03-08 13:45:30,543 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:45:30,543 - eos - INFO - FinishTime= 2021-03-08 13:45:30
+2021-03-08 13:45:30,544 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:45:30
+2021-03-08 13:45:30,544 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:45:30
+2021-03-08 13:45:30,762 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:45:30,762 - eos - INFO - last_open=3.8268, last_close=3.8322, invest_direction=planB, last_ts=2021-03-08 13:40:00
+2021-03-08 13:45:30,762 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:45:30
+2021-03-08 13:45:30,763 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:40:00
+2021-03-08 13:45:30,763 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:45:30
+2021-03-08 13:45:30,946 - eos - INFO - current_balance = 10.544430201724884
+2021-03-08 13:45:30,946 - eos - INFO - BUY NEW COINS
+2021-03-08 13:45:30,946 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.088989, amount=112.37343941386014, ts:2021-03-08 13:45:30
+2021-03-08 13:45:30,946 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 13:45:30,946 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:45:30
+2021-03-08 13:45:30,947 - eos - INFO - =========================================
+2021-03-08 13:45:30,947 - eos - INFO - sleep 299 seconds .....
+2021-03-08 13:50:30,046 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:50:30
+2021-03-08 13:50:30,154 - eos - INFO - SELL LAST COIN
+2021-03-08 13:50:30,154 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:112.37343941386014, sell_cur_price:0.08911
+2021-03-08 13:50:30,155 - eos - INFO - sell_cur_price * last_amount = 10.013597186169077
+2021-03-08 13:50:30,155 - eos - INFO - current_balance = 10.558027387893961  sell_ts:2021-03-08 13:50:30  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:50:30,155 - eos - INFO - demo_action_running_duration: 25:05:30
+2021-03-08 13:50:30,155 - eos - INFO - earning_ratio = 5.5802738789396145%
+2021-03-08 13:50:30,155 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 13:50:30,270 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:112.37343941386014, actual_sell_cur_price:0.08911
+2021-03-08 13:50:30,270 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.013597186169077
+2021-03-08 13:50:30,270 - eos - INFO - actual_balance=10.326840897398391, ts_actual_sell=2021-03-08 13:50:30
+2021-03-08 13:50:30,270 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:50:30,270 - eos - INFO - last_sell_cash=10.013597186169077
+2021-03-08 13:50:30,270 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:50:30,270 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:50:30,271 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:50:30
+2021-03-08 13:50:30,271 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:50:30
+2021-03-08 13:50:30,271 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:50:30,271 - eos - INFO - StartTime= 2021-03-08 13:50:30
+2021-03-08 13:50:30,539 - eos - INFO - eosusdt  1000
+2021-03-08 13:50:30,882 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:50:31,147 - eos - INFO - eos3susdt  1000
+2021-03-08 13:50:31,147 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:50:31,147 - eos - INFO - FinishTime= 2021-03-08 13:50:31
+2021-03-08 13:50:31,147 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:50:31
+2021-03-08 13:50:31,147 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:50:31
+2021-03-08 13:50:31,367 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:50:31,367 - eos - INFO - last_open=3.8322, last_close=3.8315, invest_direction=planB, last_ts=2021-03-08 13:45:00
+2021-03-08 13:50:31,367 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:50:31
+2021-03-08 13:50:31,367 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 13:45:00
+2021-03-08 13:50:31,367 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:50:31
+2021-03-08 13:50:31,484 - eos - INFO - current_balance = 10.558027387893961
+2021-03-08 13:50:31,484 - eos - INFO - BUY NEW COINS
+2021-03-08 13:50:31,484 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1166, amount=3.208624783417827, ts:2021-03-08 13:50:31
+2021-03-08 13:50:31,484 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 13:50:31,484 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:50:31
+2021-03-08 13:50:31,485 - eos - INFO - =========================================
+2021-03-08 13:50:31,485 - eos - INFO - sleep 299 seconds .....
+2021-03-08 13:55:30,574 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 13:55:30
+2021-03-08 13:55:30,882 - eos - INFO - SELL LAST COIN
+2021-03-08 13:55:30,882 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.208624783417827, sell_cur_price:3.1575
+2021-03-08 13:55:30,882 - eos - INFO - sell_cur_price * last_amount = 10.13123275364179
+2021-03-08 13:55:30,882 - eos - INFO - current_balance = 10.689260141535751  sell_ts:2021-03-08 13:55:30  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 13:55:30,882 - eos - INFO - demo_action_running_duration: 25:10:30
+2021-03-08 13:55:30,882 - eos - INFO - earning_ratio = 6.89260141535751%
+2021-03-08 13:55:30,883 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 13:55:30,995 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.208624783417827, actual_sell_cur_price:3.1575
+2021-03-08 13:55:30,995 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.13123275364179
+2021-03-08 13:55:30,995 - eos - INFO - actual_balance=10.45807365104018, ts_actual_sell=2021-03-08 13:55:30
+2021-03-08 13:55:30,995 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 13:55:30,995 - eos - INFO - last_sell_cash=10.13123275364179
+2021-03-08 13:55:30,995 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 13:55:30,995 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 13:55:30,996 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 13:55:30
+2021-03-08 13:55:30,996 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 13:55:30
+2021-03-08 13:55:30,996 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 13:55:30,996 - eos - INFO - StartTime= 2021-03-08 13:55:30
+2021-03-08 13:55:31,351 - eos - INFO - eosusdt  1000
+2021-03-08 13:55:31,673 - eos - INFO - eos3lusdt  1000
+2021-03-08 13:55:32,026 - eos - INFO - eos3susdt  1000
+2021-03-08 13:55:32,026 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 13:55:32,026 - eos - INFO - FinishTime= 2021-03-08 13:55:32
+2021-03-08 13:55:32,026 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 13:55:32
+2021-03-08 13:55:32,027 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 13:55:32
+2021-03-08 13:55:32,244 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 13:55:32,244 - eos - INFO - last_open=3.8321, last_close=3.8475, invest_direction=planB, last_ts=2021-03-08 13:50:00
+2021-03-08 13:55:32,244 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 13:55:32
+2021-03-08 13:55:32,244 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 13:50:00
+2021-03-08 13:55:32,244 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 13:55:32
+2021-03-08 13:55:32,383 - eos - INFO - current_balance = 10.689260141535751
+2021-03-08 13:55:32,383 - eos - INFO - BUY NEW COINS
+2021-03-08 13:55:32,383 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.087975, amount=113.66865586814436, ts:2021-03-08 13:55:32
+2021-03-08 13:55:32,383 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 13:55:32,384 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 13:55:32
+2021-03-08 13:55:32,384 - eos - INFO - =========================================
+2021-03-08 13:55:32,384 - eos - INFO - sleep 298 seconds .....
+2021-03-08 14:00:30,402 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 14:00:30
+2021-03-08 14:00:30,520 - eos - INFO - SELL LAST COIN
+2021-03-08 14:00:30,520 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:113.66865586814436, sell_cur_price:0.088191
+2021-03-08 14:00:30,520 - eos - INFO - sell_cur_price * last_amount = 10.02455242966752
+2021-03-08 14:00:30,520 - eos - INFO - current_balance = 10.71381257120327  sell_ts:2021-03-08 14:00:30  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 14:00:30,520 - eos - INFO - demo_action_running_duration: 25:15:30
+2021-03-08 14:00:30,520 - eos - INFO - earning_ratio = 7.138125712032703%
+2021-03-08 14:00:30,520 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 14:00:30,648 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:113.66865586814436, actual_sell_cur_price:0.088191
+2021-03-08 14:00:30,648 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.02455242966752
+2021-03-08 14:00:30,648 - eos - INFO - actual_balance=10.4826260807077, ts_actual_sell=2021-03-08 14:00:30
+2021-03-08 14:00:30,648 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 14:00:30,648 - eos - INFO - last_sell_cash=10.02455242966752
+2021-03-08 14:00:30,648 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 14:00:30,649 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 14:00:30,649 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 14:00:30
+2021-03-08 14:00:30,649 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 14:00:30
+2021-03-08 14:00:30,649 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 14:00:30,649 - eos - INFO - StartTime= 2021-03-08 14:00:30
+2021-03-08 14:00:31,065 - eos - INFO - eosusdt  1000
+2021-03-08 14:00:31,339 - eos - INFO - eos3lusdt  1000
+2021-03-08 14:00:31,659 - eos - INFO - eos3susdt  1000
+2021-03-08 14:00:31,659 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 14:00:31,659 - eos - INFO - FinishTime= 2021-03-08 14:00:31
+2021-03-08 14:00:31,659 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 14:00:31
+2021-03-08 14:00:31,660 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 14:00:31
+2021-03-08 14:00:31,881 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 14:00:31,881 - eos - INFO - last_open=3.8479, last_close=3.8472, invest_direction=planB, last_ts=2021-03-08 13:55:00
+2021-03-08 14:00:31,881 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 14:00:31
+2021-03-08 14:00:31,881 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 13:55:00
+2021-03-08 14:00:31,881 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 14:00:31
+2021-03-08 14:00:31,988 - eos - INFO - current_balance = 10.71381257120327
+2021-03-08 14:00:31,988 - eos - INFO - BUY NEW COINS
+2021-03-08 14:00:31,988 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1421, amount=3.182584895452086, ts:2021-03-08 14:00:31
+2021-03-08 14:00:31,989 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 14:00:31,989 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 14:00:31
+2021-03-08 14:00:31,989 - eos - INFO - =========================================
+2021-03-08 14:00:31,989 - eos - INFO - sleep 299 seconds .....
+2021-03-08 14:05:31,090 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 14:05:31
+2021-03-08 14:05:31,253 - eos - INFO - SELL LAST COIN
+2021-03-08 14:05:31,253 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.182584895452086, sell_cur_price:3.1386
+2021-03-08 14:05:31,253 - eos - INFO - sell_cur_price * last_amount = 9.988860952865917
+2021-03-08 14:05:31,254 - eos - INFO - current_balance = 10.702673524069187  sell_ts:2021-03-08 14:05:31  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 14:05:31,254 - eos - INFO - demo_action_running_duration: 25:20:31
+2021-03-08 14:05:31,254 - eos - INFO - earning_ratio = 7.0267352406918695%
+2021-03-08 14:05:31,254 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 14:05:31,373 - eos - INFO - actual_last_symbol:eos3lusdt, actual_last_currency:eos3l, actual_last_amount:3.182584895452086, actual_sell_cur_price:3.1386
+2021-03-08 14:05:31,373 - eos - INFO - actual_sell_cur_price * actual_last_amount = 9.988860952865917
+2021-03-08 14:05:31,373 - eos - INFO - actual_balance=10.471487033573617, ts_actual_sell=2021-03-08 14:05:31
+2021-03-08 14:05:31,373 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 14:05:31,373 - eos - INFO - last_sell_cash=9.988860952865917
+2021-03-08 14:05:31,373 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 14:05:31,374 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 14:05:31,374 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 14:05:31
+2021-03-08 14:05:31,374 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 14:05:31
+2021-03-08 14:05:31,374 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 14:05:31,374 - eos - INFO - StartTime= 2021-03-08 14:05:31
+2021-03-08 14:05:31,569 - eos - INFO - eosusdt  1000
+2021-03-08 14:05:31,835 - eos - INFO - eos3lusdt  1000
+2021-03-08 14:05:32,160 - eos - INFO - eos3susdt  1000
+2021-03-08 14:05:32,160 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 14:05:32,160 - eos - INFO - FinishTime= 2021-03-08 14:05:32
+2021-03-08 14:05:32,160 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 14:05:32
+2021-03-08 14:05:32,160 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 14:05:32
+2021-03-08 14:05:32,381 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 14:05:32,381 - eos - INFO - last_open=3.847, last_close=3.8393, invest_direction=planB, last_ts=2021-03-08 14:00:00
+2021-03-08 14:05:32,382 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 14:05:32
+2021-03-08 14:05:32,382 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 14:00:00
+2021-03-08 14:05:32,382 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 14:05:32
+2021-03-08 14:05:32,497 - eos - INFO - current_balance = 10.702673524069187
+2021-03-08 14:05:32,497 - eos - INFO - BUY NEW COINS
+2021-03-08 14:05:32,497 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1386, amount=3.186133945071051, ts:2021-03-08 14:05:32
+2021-03-08 14:05:32,497 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 14:05:32
+2021-03-08 14:05:32,498 - eos - INFO - =========================================
+2021-03-08 14:05:32,498 - eos - INFO - sleep 299 seconds .....
+2021-03-08 14:10:31,502 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 14:10:31
+2021-03-08 14:10:31,614 - eos - INFO - SELL LAST COIN
+2021-03-08 14:10:31,614 - eos - INFO - last_symbol:eos3lusdt, last_currency:eos3l, last_amount:3.186133945071051, sell_cur_price:3.1419
+2021-03-08 14:10:31,614 - eos - INFO - sell_cur_price * last_amount = 10.010514242018736
+2021-03-08 14:10:31,614 - eos - INFO - current_balance = 10.713187766087923  sell_ts:2021-03-08 14:10:31  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 14:10:31,614 - eos - INFO - demo_action_running_duration: 25:25:31
+2021-03-08 14:10:31,614 - eos - INFO - earning_ratio = 7.131877660879233%
+2021-03-08 14:10:31,614 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 14:10:31,614 - eos - INFO - last_sell_cash=10.010514242018736
+2021-03-08 14:10:31,614 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 14:10:31,615 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 14:10:31,615 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 14:10:31
+2021-03-08 14:10:31,615 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 14:10:31
+2021-03-08 14:10:31,615 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 14:10:31,615 - eos - INFO - StartTime= 2021-03-08 14:10:31
+2021-03-08 14:10:31,872 - eos - INFO - eosusdt  1000
+2021-03-08 14:10:32,264 - eos - INFO - eos3lusdt  1000
+2021-03-08 14:10:32,528 - eos - INFO - eos3susdt  1000
+2021-03-08 14:10:32,528 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 14:10:32,528 - eos - INFO - FinishTime= 2021-03-08 14:10:32
+2021-03-08 14:10:32,529 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 14:10:32
+2021-03-08 14:10:32,529 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 14:10:32
+2021-03-08 14:10:32,744 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 14:10:32,744 - eos - INFO - last_open=3.8399, last_close=3.8416, invest_direction=planB, last_ts=2021-03-08 14:05:00
+2021-03-08 14:10:32,744 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 14:10:32
+2021-03-08 14:10:32,744 - eos - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-08 14:05:00
+2021-03-08 14:10:32,744 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 14:10:32
+2021-03-08 14:10:32,895 - eos - INFO - current_balance = 10.713187766087923
+2021-03-08 14:10:32,895 - eos - INFO - BUY NEW COINS
+2021-03-08 14:10:32,895 - eos - INFO - symbol:eos3susdt, currency:eos3s, cur_price:0.0881, amount=113.50737797956867, ts:2021-03-08 14:10:32
+2021-03-08 14:10:32,895 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 14:10:32,895 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 14:10:32
+2021-03-08 14:10:32,895 - eos - INFO - =========================================
+2021-03-08 14:10:32,896 - eos - INFO - sleep 299 seconds .....
+2021-03-08 14:15:31,920 - eos - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-08 14:15:31
+2021-03-08 14:15:32,067 - eos - INFO - SELL LAST COIN
+2021-03-08 14:15:32,067 - eos - INFO - last_symbol:eos3susdt, last_currency:eos3s, last_amount:113.50737797956867, sell_cur_price:0.08838
+2021-03-08 14:15:32,067 - eos - INFO - sell_cur_price * last_amount = 10.03178206583428
+2021-03-08 14:15:32,067 - eos - INFO - current_balance = 10.744969831922203  sell_ts:2021-03-08 14:15:32  demo_action_launch_time: 2021-03-07 12:45:00
+2021-03-08 14:15:32,067 - eos - INFO - demo_action_running_duration: 25:30:32
+2021-03-08 14:15:32,067 - eos - INFO - earning_ratio = 7.449698319222034%
+2021-03-08 14:15:32,067 - eos - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-08 14:15:32,194 - eos - INFO - actual_last_symbol:eos3susdt, actual_last_currency:eos3s, actual_last_amount:113.50737797956867, actual_sell_cur_price:0.08838
+2021-03-08 14:15:32,195 - eos - INFO - actual_sell_cur_price * actual_last_amount = 10.03178206583428
+2021-03-08 14:15:32,195 - eos - INFO - actual_balance=10.503269099407897, ts_actual_sell=2021-03-08 14:15:32
+2021-03-08 14:15:32,195 - eos - INFO - ***** update stop_actual_invest  *****
+2021-03-08 14:15:32,195 - eos - INFO - last_sell_cash=10.03178206583428
+2021-03-08 14:15:32,195 - eos - INFO - SEND QUEUE INFO - START
+2021-03-08 14:15:32,195 - eos - INFO - SEND QUEUE INFO - FINISH
+2021-03-08 14:15:32,196 - eos - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-08 14:15:32
+2021-03-08 14:15:32,196 - eos - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-08 14:15:32
+2021-03-08 14:15:32,196 - eos - INFO - eos  get_ALL_symbol_trend_data START
+2021-03-08 14:15:32,196 - eos - INFO - StartTime= 2021-03-08 14:15:32
+2021-03-08 14:15:32,474 - eos - INFO - eosusdt  1000
+2021-03-08 14:15:32,752 - eos - INFO - eos3lusdt  1000
+2021-03-08 14:15:33,035 - eos - INFO - eos3susdt  1000
+2021-03-08 14:15:33,036 - eos - INFO - eos  get_ALL_symbol_trend_data FINISH
+2021-03-08 14:15:33,036 - eos - INFO - FinishTime= 2021-03-08 14:15:33
+2021-03-08 14:15:33,036 - eos - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-08 14:15:33
+2021-03-08 14:15:33,036 - eos - INFO - do_action -judge_invest_direction StartTime= 2021-03-08 14:15:33
+2021-03-08 14:15:33,252 - eos - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=400.0
+2021-03-08 14:15:33,252 - eos - INFO - last_open=3.8414, last_close=3.836, invest_direction=planB, last_ts=2021-03-08 14:10:00
+2021-03-08 14:15:33,252 - eos - INFO - do_action -judge_invest_direction FinishTime= 2021-03-08 14:15:33
+2021-03-08 14:15:33,252 - eos - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-08 14:10:00
+2021-03-08 14:15:33,252 - eos - INFO - do_action -buy_lever_coins StartTime= 2021-03-08 14:15:33
+2021-03-08 14:15:33,371 - eos - INFO - current_balance = 10.744969831922203
+2021-03-08 14:15:33,371 - eos - INFO - BUY NEW COINS
+2021-03-08 14:15:33,371 - eos - INFO - symbol:eos3lusdt, currency:eos3l, cur_price:3.1392, amount=3.1855249745158, ts:2021-03-08 14:15:33
+2021-03-08 14:15:33,371 - eos - INFO - ACTUAL - BUY NEW COINS
+2021-03-08 14:15:33,371 - eos - INFO - do_action -buy_lever_coins FinishTime= 2021-03-08 14:15:33
+2021-03-08 14:15:33,371 - eos - INFO - =========================================
+2021-03-08 14:15:33,372 - eos - INFO - sleep 298 seconds .....
