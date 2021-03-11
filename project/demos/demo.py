@@ -298,7 +298,7 @@ class DemoStrategy:
         wait_to_X_min_begin(x=TIME_PERIOD_VALUE)
         self.demo_action_launch_time = int(time.time())
         count = 0
-        Max_Count = 1000
+        Max_Count = 1000*5
         while count < Max_Count:
             time_stamp_start = int(time.time())
             self.data_dict = {}
@@ -1030,6 +1030,36 @@ def wait_to_X_min_begin(x=5):
     time.sleep(sleep_seconds)
     return True
 
+# 获取MA5
+def get_MA5_MA10(symbol="ethusdt"):
+    ma5 = 0.0
+    ma10 = 0.0
+    print("Time = %s" % timeStamp_to_datetime(int(time.time())))
+    wait_to_X_min_begin(x=5)
+    ret = Get_kline_data(
+        symbol=symbol,
+        period="5min",
+        size=11
+    )
+    assert ret["status"] == "ok"
+    ret_data = ret["data"]
+    count = 0
+    close_price = 0.0
+    for item in ret_data:
+        if count == 0:
+            count += 1
+            continue
+        else:
+            close_price += item["close"]
+            if count == 5:
+                ma5 = close_price / count
+                ma5 = round(ma5, 2)
+            count += 1
+    ma10 = close_price / (count-1)
+    ma10 = round(ma10, 2)
+    print("ma5=%s" % ma5)
+    print("ma10=%s" % ma10)
+    return ma5, ma10
 
 # 返回当前交易对的最新的交易价格
 def get_current_price(symbol="btcusdt"):
