@@ -1,3 +1,5 @@
+from decimal import *
+import math
 import datetime
 from project.demos._hbg_anyCall import HbgAnyCall
 from project.demos.config import *
@@ -8,7 +10,7 @@ from multiprocessing import Pool, Manager
 
 TIME_PERIOD = "5min"  # 1min, 5min, 15min, 30min
 TIME_PERIOD_VALUE = 5
-STOP_LOST_RATE = 0.0  # 止损
+STOP_LOST_RATE = -0.5  # 止损
 
 class DemoStrategy:
     BASE_INVEST = 20
@@ -18,7 +20,7 @@ class DemoStrategy:
     last_currency = "Nothing"
     last_amount = 0.0
     earning_ratio = 0.0
-    stop_actual_invest = True
+    stop_actual_invest = False
     actual_balance = current_balance
     actual_last_symbol = "Nothing"
     actual_last_currency = "Nothing"
@@ -196,6 +198,14 @@ class DemoStrategy:
     def sell_market(self, symbol="", amount=0):
         if symbol == "" or amount <= 0:
             return False, None
+        self.demo_print("###  in sell_market deal amount, old amount=%s" % amount)
+        n_bits = Get_orderamount_precision(symbol)
+        amount = decimals_accuracy_n(
+            inputDecimals=amount,
+            n_bits=n_bits,
+            accuracy_type='trunc'
+        )
+        self.demo_print("###  in sell_market deal amount, new amount=%s" % amount)
         ret = False
         retry_count = 0
         response = None
@@ -315,6 +325,10 @@ class DemoStrategy:
                 print("time_stamp_start = %s   time_stamp_end = %s " %
                       (timeStamp_to_datetime(time_stamp_start), timeStamp_to_datetime(time_stamp_end)))
             count += 1
+            if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
+                self.demo_print("***** ACCESS STOP_LOST_RATE and STOP to RUN!! *****")
+                self.demo_print("***** earning_ratio = %s *****" % self.earning_ratio)
+                break
 
     def get_duration(self, seconds, format="%d:%02d:%02d"):
         m, s = divmod(seconds, 60)
@@ -345,31 +359,46 @@ class DemoStrategy:
             # Actual sell
             if self.actual_last_symbol != "Nothing":
                 self.demo_print("***** ACTUAL SELL LAST COIN *****")
-                # self.actual_sell_market_level_coins(
-                #     symbol=self.actual_last_symbol,
-                #     amount=self.actual_last_amount
-                # )
-                ts_actual_sell, actual_sell_cur_price = get_current_price(symbol=self.actual_last_symbol, )
-                ts_actual_sell = int(ts_actual_sell / 1000)
-                self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_cur_price:%s" %
-                                (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_cur_price))
-                self.demo_print("actual_sell_cur_price * actual_last_amount = %s" % (actual_sell_cur_price * self.actual_last_amount))
-                self.actual_balance += actual_sell_cur_price * self.actual_last_amount
-                self.demo_print("actual_balance=%s, ts_actual_sell=%s"
-                                % (self.actual_balance, timeStamp_to_datetime(ts_actual_sell)))
-                self.actual_last_symbol = "Nothing"
-                self.actual_last_currency = "Nothing"
-                self.actual_last_amount = 0.0
-            # update stop_actual_invest
-            self.demo_print("***** update stop_actual_invest  *****")
-            self.demo_print("last_sell_cash=%s" % last_sell_cash)
+                # fake call
+                # ts_actual_sell, actual_sell_cur_price = get_current_price(symbol=self.actual_last_symbol, )
+                # ts_actual_sell = int(ts_actual_sell / 1000)
+                # self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_cur_price:%s" %
+                #                 (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_cur_price))
+                # self.demo_print("actual_sell_cur_price * actual_last_amount = %s" % (actual_sell_cur_price * self.actual_last_amount))
+                # self.actual_balance += actual_sell_cur_price * self.actual_last_amount
+                # self.demo_print("actual_balance=%s, ts_actual_sell=%s"
+                #                 % (self.actual_balance, timeStamp_to_datetime(ts_actual_sell)))
+                # self.actual_last_symbol = "Nothing"
+                # self.actual_last_currency = "Nothing"
+                # self.actual_last_amount = 0.0
+
+                # real call
+                ret, actual_sell_market_cash = self.actual_sell_market_level_coins(
+                    symbol=self.actual_last_symbol,
+                    amount=self.actual_last_amount
+                )
+                if ret is True:
+                    self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_market_cash:%s" %
+                                    (self.actual_last_symbol, self.actual_last_currency, self.actual_last_amount, actual_sell_market_cash))
+                    self.demo_print("actual_balance=%s, ts_actual_sell=%s"
+                                    % (self.actual_balance, timeStamp_to_datetime(int(time.time()))))
+            self.demo_print("***** KEEP  stop_actual_invest = False  *****")
+            self.stop_actual_invest = False
             if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
+                self.demo_print("***** SET  stop_actual_invest = True  *****")
+                self.demo_print("***** earning_ratio = %s *****" % self.earning_ratio)
                 self.stop_actual_invest = True
-            else:
-                if last_sell_cash < self.once_invest:  # 触发止损
-                    self.stop_actual_invest = True
-                else:
-                    self.stop_actual_invest = False
+            # update stop_actual_invest
+            # self.demo_print("***** update stop_actual_invest  *****")
+            # self.demo_print("last_sell_cash=%s" % last_sell_cash)
+            # if self.earning_ratio < STOP_LOST_RATE:  # 触发止损
+            #     self.stop_actual_invest = True
+            # else:
+            #     if last_sell_cash < self.once_invest:  # 触发止损
+            #         self.stop_actual_invest = True
+            #     else:
+            #         self.stop_actual_invest = False
+
             # queue_info
             queue_info = {
                 'action_index': self.get_duration(action_index * TIME_PERIOD_VALUE*60),
@@ -417,11 +446,15 @@ class DemoStrategy:
         self.current_balance -= self.once_invest
         if self.stop_actual_invest is False:
             self.demo_print("ACTUAL - BUY NEW COINS")
-            # self.actual_buy_market_level_coins(symbol, currency)
-            self.actual_balance -= self.once_invest
-            self.actual_last_symbol = symbol
-            self.actual_last_currency = currency
-            self.actual_last_amount = self.once_invest / cur_price
+            # fake CALL
+            # self.actual_balance -= self.once_invest
+            # self.actual_last_symbol = symbol
+            # self.actual_last_currency = currency
+            # self.actual_last_amount = self.once_invest / cur_price
+
+            # real Call
+            self.actual_buy_market_level_coins(symbol, currency)
+
         self.last_symbol = symbol
         self.last_currency = currency
         self.last_amount = self.once_invest / cur_price
@@ -452,11 +485,12 @@ class DemoStrategy:
                         else:
                             ret = True
                             field_amount = float(data["field-amount"])
-                            field_fees = float(data["field-fees"])
-                            actual_buy_market_amount = field_amount - field_fees
+                            # field_fees = float(data["field-fees"])
+                            price = float(data["price"])
+                            actual_buy_market_amount = field_amount  # - field_fees
                             self.demo_print("IN get_actual_buy_market_amount")
-                            self.demo_print("order_id=%s, field_amount=%s, field_fees=%s, actual_buy_market_amount=%s"
-                                            % (order_id, field_amount, field_fees, actual_buy_market_amount))
+                            self.demo_print("order_id=%s, field_amount=%s, price=%s, actual_buy_market_amount=%s"
+                                            % (order_id, field_amount, price, actual_buy_market_amount))
                             break
                     else:
                         ret = False
@@ -478,6 +512,7 @@ class DemoStrategy:
         return ret, actual_buy_market_amount
 
     def actual_buy_market_level_coins(self, symbol, currency):
+        self.demo_print("**** DO BUY actual_buy_market_level_coins  ******** ")
         amount = self.once_invest
         ret, response = self.buy_market(symbol, amount)
         if ret is True:
@@ -492,6 +527,8 @@ class DemoStrategy:
                 self.actual_last_symbol = symbol
                 self.actual_last_currency = currency
                 self.actual_last_amount = float(actual_buy_market_amount)
+                self.demo_print("actual_last_symbol=%s actual_last_amount=%s"
+                                % (self.actual_last_symbol, self.actual_last_amount))
         else:
             self.demo_print("FAILED to BUY NEW COINS indeed!")
             self.demo_print("symbol=%s, ts=%s" % (symbol, timeStamp_to_datetime(int(time.time()))))
@@ -525,11 +562,12 @@ class DemoStrategy:
                         else:
                             ret = True
                             field_cash_amount = float(data["field-cash-amount"])
-                            field_fees = float(data["field-fees"])
-                            actual_sell_market_cash = field_cash_amount - field_fees
+                            # field_fees = float(data["field-fees"])
+                            price = float(data["price"])
+                            actual_sell_market_cash = field_cash_amount  # - field_fees
                             self.demo_print("IN get_actual_sell_market_cash")
-                            self.demo_print("order_id=%s, field_cash_amount=%s, field_fees=%s, actual_buy_market_amount=%s"
-                                            % (order_id, field_cash_amount, field_fees, actual_sell_market_cash))
+                            self.demo_print("order_id=%s, field_cash_amount=%s, price=%s, actual_sell_market_cash=%s"
+                                            % (order_id, field_cash_amount, price, actual_sell_market_cash))
                             break
                     else:
                         ret = False
@@ -551,7 +589,9 @@ class DemoStrategy:
         return ret, actual_sell_market_cash
 
     def actual_sell_market_level_coins(self, symbol, amount):
+        self.demo_print("**** DO SELL actual_sell_market_level_coins  ******** ")
         ret, response = self.sell_market(symbol, amount)
+        actual_sell_market_cash = 0.0
         if ret is True:
             actual_sell_market_cash = 0.0
             try:
@@ -559,6 +599,7 @@ class DemoStrategy:
                 ret, actual_sell_market_cash = self.get_actual_sell_market_cash(order_id)
             except Exception as ex:
                 self.demo_print("Exception in get actual sell market amount! ")
+                self.demo_print("symbol=%s  amount=%s  ex=%s" % (symbol, amount, ex))
                 ret = False
             if ret is True:
                 self.actual_balance += actual_sell_market_cash
@@ -570,7 +611,7 @@ class DemoStrategy:
             self.demo_print("symbol=%s, ts=%s" % (symbol, timeStamp_to_datetime(int(time.time()))))
             if response is not None:
                 self.demo_print("response = %s" % response)
-        return ret
+        return ret, actual_sell_market_cash
 
     # 行动器
     def do_action(self, action_index):
@@ -633,27 +674,19 @@ class DemoStrategy:
             if invest_direction == "planA":  # 顺势
                 if last_trend == 1:  # 涨
                     ts_l, cur_price_l = get_current_price(symbol=symbol_l)
-                    # 卖出上一次持有的代币
-                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
                 elif last_trend == -1:  # 跌
                     ts_s, cur_price_s = get_current_price(symbol=symbol_s)
-                    # 卖出上一次持有的代币
-                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
             elif invest_direction == "planB":  # 逆势
                 if last_trend == 1:  # 涨
                     ts_s, cur_price_s = get_current_price(symbol=symbol_s)
-                    # 卖出上一次持有的代币
-                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_s, currency=currency_s, cur_price=cur_price_s, ts=ts_s)
                 elif last_trend == -1:  # 跌
                     ts_l, cur_price_l = get_current_price(symbol=symbol_l)
-                    # 卖出上一次持有的代币
-                    # self.sell_last_hold_lever_coins(action_index)
                     # 市价买入新的杠杆代币
                     self.buy_lever_coins(symbol=symbol_l, currency=currency_l, cur_price=cur_price_l, ts=ts_l)
             else:  # invest_direction == "no_plan"
@@ -997,6 +1030,45 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
+
+# 获取指定交易对的下单精度
+def Get_orderamount_precision(symbol="btc3lusdt"):
+    orderamount_precision = 4
+    # if symbol in (
+    #         "btc3lusdt", "btc3susdt",
+    # ):
+    #     orderamount_precision = 4
+    # elif symbol in ():
+    #     orderamount_precision = 8
+    return orderamount_precision
+
+
+# 基于精度和截断方式做数据截断
+def decimals_accuracy_n(inputDecimals, n_bits=4, accuracy_type='trunc'):
+    outDecimals = inputDecimals
+    try:
+        if n_bits < 1:
+            n_bits = 1
+        if n_bits > 20:
+            n_bits = 20
+        s_bits = '1'
+        for i in range(0, n_bits):
+            s_bits += '0'
+        outDecimals = Decimal(str(inputDecimals)) * Decimal(s_bits)
+        if accuracy_type == 'round':
+            outDecimals = round(outDecimals)
+        elif accuracy_type == 'floor':
+            outDecimals = math.floor(outDecimals)
+        elif accuracy_type == 'ceil':
+            outDecimals = math.ceil(outDecimals)
+        else:
+            outDecimals = math.trunc(outDecimals)
+        outDecimals = Decimal(outDecimals) / Decimal(s_bits)
+        outDecimals = float(outDecimals)
+    except Exception as ex:
+        print("Exception in decimals_accuracy_n")
+        print("ex= %s" % ex)
+    return outDecimals
 
 def demo_print(log, ignore=False, end=None):
     if ignore:

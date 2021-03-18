@@ -19,7 +19,8 @@ if __name__ == '__main__':
     account_id = ACCOUNT_ID  # spot
     # hbgAnyCall = HbgAnyCall()
     try:
-        wait_to_X_min_begin()
+        decimals_accuracy_n(inputDecimals=3057.598039215686)
+        #get_MA5_MA10()
         #demo_06()
 
         # time_stamp = int(time.time())
