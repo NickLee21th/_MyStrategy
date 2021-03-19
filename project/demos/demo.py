@@ -952,6 +952,7 @@ class DemoStrategy:
         elif count_A_earn > 0 and count_A_earn > count_B_earn \
                 and count_A_earn > (step_range * self.threshold_value_adjust_rate):
             invest_direction = "planA"
+        invest_direction = "planA"
         self.demo_print("count_A_earn = %s , count_B_earn = %s , threshold_value=%s"
                         % (count_A_earn, count_B_earn, step_range*self.threshold_value_adjust_rate))
         self.demo_print("last_open=%s, last_close=%s, invest_direction=%s, last_ts=%s"
