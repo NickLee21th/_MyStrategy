@@ -1,0 +1,209 @@
+2021-03-18 14:53:26,180 - btc - INFO - I'm btc in demo_action
+2021-03-18 14:55:00,202 - btc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,202 - btc - INFO - SEND QUEUE INFO - START
+2021-03-18 14:55:00,204 - btc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 14:55:00,204 - btc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,204 - btc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,204 - btc - INFO - btc  get_ALL_symbol_trend_data START
+2021-03-18 14:55:00,204 - btc - INFO - StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,589 - btc - INFO - btcusdt  1000
+2021-03-18 14:55:00,878 - btc - INFO - btc3lusdt  1000
+2021-03-18 14:55:01,213 - btc - INFO - btc3susdt  1000
+2021-03-18 14:55:01,213 - btc - INFO - btc  get_ALL_symbol_trend_data FINISH
+2021-03-18 14:55:01,213 - btc - INFO - FinishTime= 2021-03-18 14:55:01
+2021-03-18 14:55:01,213 - btc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 14:55:01
+2021-03-18 14:55:01,213 - btc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 14:55:01
+2021-03-18 14:55:02,208 - btc - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-18 14:55:02,208 - btc - INFO - last_open=57799.59, last_close=57799.96, invest_direction=planB, last_ts=2021-03-18 14:50:00
+2021-03-18 14:55:02,208 - btc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,208 - btc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 14:50:00
+2021-03-18 14:55:02,208 - btc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,371 - btc - INFO - current_balance = 10.0
+2021-03-18 14:55:02,371 - btc - INFO - BUY NEW COINS
+2021-03-18 14:55:02,371 - btc - INFO - symbol:btc3susdt, currency:btc3s, cur_price:0.00204, amount=4901.9607843137255, ts:2021-03-18 14:55:02
+2021-03-18 14:55:02,371 - btc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 14:55:02,371 - btc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 14:55:02,678 - btc - INFO - IN get_actual_buy_market_amount
+2021-03-18 14:55:02,678 - btc - INFO - order_id=235194829407562, field_amount=4897.159647404505, price=0.0, actual_buy_market_amount=4897.159647404505
+2021-03-18 14:55:02,678 - btc - INFO - actual_last_symbol=btc3susdt actual_last_amount=4897.159647404505
+2021-03-18 14:55:02,678 - btc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,678 - btc - INFO - =========================================
+2021-03-18 14:55:02,679 - btc - INFO - sleep 298 seconds .....
+2021-03-18 15:00:00,776 - btc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:00:00
+2021-03-18 15:00:00,902 - btc - INFO - SELL LAST COIN
+2021-03-18 15:00:00,902 - btc - INFO - last_symbol:btc3susdt, last_currency:btc3s, last_amount:4901.9607843137255, sell_cur_price:0.002038
+2021-03-18 15:00:00,902 - btc - INFO - sell_cur_price * last_amount = 9.990196078431373
+2021-03-18 15:00:00,902 - btc - INFO - current_balance = 9.990196078431373  sell_ts:2021-03-18 15:00:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:00:00,902 - btc - INFO - demo_action_running_duration: 0:05:00
+2021-03-18 15:00:00,902 - btc - INFO - earning_ratio = -0.09803921568627416%
+2021-03-18 15:00:00,902 - btc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:00:00,903 - btc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:00:00,903 - btc - INFO - ###  in sell_market deal amount, old amount=4897.159647404505
+2021-03-18 15:00:00,903 - btc - INFO - ###  in sell_market deal amount, new amount=4897.1596
+2021-03-18 15:00:01,212 - btc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:00:01,213 - btc - INFO - order_id=235194845760987, field_cash_amount=9.9755141052, price=0.0, actual_sell_market_cash=9.9755141052
+2021-03-18 15:00:01,213 - btc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.9755141052
+2021-03-18 15:00:01,213 - btc - INFO - actual_balance=9.9755141052, ts_actual_sell=2021-03-18 15:00:01
+2021-03-18 15:00:01,213 - btc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:00:01,213 - btc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:00:01,213 - btc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:00:01,213 - btc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,213 - btc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,214 - btc - INFO - btc  get_ALL_symbol_trend_data START
+2021-03-18 15:00:01,214 - btc - INFO - StartTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,619 - btc - INFO - btcusdt  1000
+2021-03-18 15:00:02,311 - btc - INFO - btc3lusdt  1000
+2021-03-18 15:00:02,645 - btc - INFO - btc3susdt  1000
+2021-03-18 15:00:02,645 - btc - INFO - btc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:00:02,645 - btc - INFO - FinishTime= 2021-03-18 15:00:02
+2021-03-18 15:00:02,645 - btc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:00:02
+2021-03-18 15:00:02,645 - btc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:00:02
+2021-03-18 15:00:03,669 - btc - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-18 15:00:03,669 - btc - INFO - last_open=57798.7, last_close=57864.1, invest_direction=planB, last_ts=2021-03-18 14:55:00
+2021-03-18 15:00:03,669 - btc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:00:03
+2021-03-18 15:00:03,669 - btc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 14:55:00
+2021-03-18 15:00:03,669 - btc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:00:03
+2021-03-18 15:00:03,821 - btc - INFO - current_balance = 9.990196078431373
+2021-03-18 15:00:03,821 - btc - INFO - BUY NEW COINS
+2021-03-18 15:00:03,821 - btc - INFO - symbol:btc3susdt, currency:btc3s, cur_price:0.002041, amount=4899.559039686428, ts:2021-03-18 15:00:03
+2021-03-18 15:00:03,821 - btc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:00:03,821 - btc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:00:04,061 - btc - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:00:04,061 - btc - INFO - order_id=235194828854020, field_amount=4899.559039686428, price=0.0, actual_buy_market_amount=4899.559039686428
+2021-03-18 15:00:04,062 - btc - INFO - actual_last_symbol=btc3susdt actual_last_amount=4899.559039686428
+2021-03-18 15:00:04,062 - btc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:00:04
+2021-03-18 15:00:04,062 - btc - INFO - =========================================
+2021-03-18 15:00:04,062 - btc - INFO - sleep 296 seconds .....
+2021-03-18 15:05:00,078 - btc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,216 - btc - INFO - SELL LAST COIN
+2021-03-18 15:05:00,216 - btc - INFO - last_symbol:btc3susdt, last_currency:btc3s, last_amount:4899.559039686428, sell_cur_price:0.002027
+2021-03-18 15:05:00,216 - btc - INFO - sell_cur_price * last_amount = 9.93140617344439
+2021-03-18 15:05:00,216 - btc - INFO - current_balance = 9.921602251875763  sell_ts:2021-03-18 15:05:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:05:00,216 - btc - INFO - demo_action_running_duration: 0:10:00
+2021-03-18 15:05:00,216 - btc - INFO - earning_ratio = -0.7839774812423705%
+2021-03-18 15:05:00,216 - btc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:05:00,216 - btc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:05:00,216 - btc - INFO - ###  in sell_market deal amount, old amount=4899.559039686428
+2021-03-18 15:05:00,216 - btc - INFO - ###  in sell_market deal amount, new amount=4899.559
+2021-03-18 15:05:00,488 - btc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:05:00,488 - btc - INFO - order_id=235194862182782, field_cash_amount=9.926506534, price=0.0, actual_sell_market_cash=9.926506534
+2021-03-18 15:05:00,488 - btc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.926506534
+2021-03-18 15:05:00,488 - btc - INFO - actual_balance=9.9020206392, ts_actual_sell=2021-03-18 15:05:00
+2021-03-18 15:05:00,488 - btc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:05:00,489 - btc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:05:00,489 - btc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:05:00,489 - btc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,489 - btc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,489 - btc - INFO - btc  get_ALL_symbol_trend_data START
+2021-03-18 15:05:00,489 - btc - INFO - StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,752 - btc - INFO - btcusdt  1000
+2021-03-18 15:05:01,031 - btc - INFO - btc3lusdt  1000
+2021-03-18 15:05:01,377 - btc - INFO - btc3susdt  1000
+2021-03-18 15:05:01,377 - btc - INFO - btc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:05:01,377 - btc - INFO - FinishTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,377 - btc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,377 - btc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,906 - btc - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-18 15:05:01,906 - btc - INFO - last_open=57864.09, last_close=57955.16, invest_direction=planB, last_ts=2021-03-18 15:00:00
+2021-03-18 15:05:01,906 - btc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,906 - btc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 15:00:00
+2021-03-18 15:05:01,906 - btc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:05:01
+2021-03-18 15:05:02,030 - btc - INFO - current_balance = 9.921602251875763
+2021-03-18 15:05:02,031 - btc - INFO - BUY NEW COINS
+2021-03-18 15:05:02,031 - btc - INFO - symbol:btc3susdt, currency:btc3s, cur_price:0.002026, amount=4935.834155972359, ts:2021-03-18 15:05:01
+2021-03-18 15:05:02,031 - btc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:05:02,031 - btc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:05:02,344 - btc - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:05:02,344 - btc - INFO - order_id=235194836725236, field_amount=4933.39911198816, price=0.0, actual_buy_market_amount=4933.39911198816
+2021-03-18 15:05:02,344 - btc - INFO - actual_last_symbol=btc3susdt actual_last_amount=4933.39911198816
+2021-03-18 15:05:02,344 - btc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:05:02
+2021-03-18 15:05:02,344 - btc - INFO - =========================================
+2021-03-18 15:05:02,345 - btc - INFO - sleep 298 seconds .....
+2021-03-18 15:10:00,358 - btc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:10:00
+2021-03-18 15:10:00,508 - btc - INFO - SELL LAST COIN
+2021-03-18 15:10:00,508 - btc - INFO - last_symbol:btc3susdt, last_currency:btc3s, last_amount:4935.834155972359, sell_cur_price:0.002022
+2021-03-18 15:10:00,508 - btc - INFO - sell_cur_price * last_amount = 9.98025666337611
+2021-03-18 15:10:00,508 - btc - INFO - current_balance = 9.901858915251873  sell_ts:2021-03-18 15:10:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:10:00,508 - btc - INFO - demo_action_running_duration: 0:15:00
+2021-03-18 15:10:00,508 - btc - INFO - earning_ratio = -0.9814108474812677%
+2021-03-18 15:10:00,508 - btc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:10:00,508 - btc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:10:00,509 - btc - INFO - ###  in sell_market deal amount, old amount=4933.39911198816
+2021-03-18 15:10:00,509 - btc - INFO - ###  in sell_market deal amount, new amount=4933.3991
+2021-03-18 15:10:01,127 - btc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:10:01,128 - btc - INFO - order_id=235194921394522, field_cash_amount=9.9753329802, price=0.0, actual_sell_market_cash=9.9753329802
+2021-03-18 15:10:01,128 - btc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.9753329802
+2021-03-18 15:10:01,128 - btc - INFO - actual_balance=9.8773536194, ts_actual_sell=2021-03-18 15:10:01
+2021-03-18 15:10:01,128 - btc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:10:01,128 - btc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:10:01,128 - btc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:10:01,128 - btc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:10:01
+2021-03-18 15:10:01,129 - btc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:10:01
+2021-03-18 15:10:01,129 - btc - INFO - btc  get_ALL_symbol_trend_data START
+2021-03-18 15:10:01,129 - btc - INFO - StartTime= 2021-03-18 15:10:01
+2021-03-18 15:10:01,920 - btc - INFO - btcusdt  1000
+2021-03-18 15:10:02,754 - btc - INFO - btc3lusdt  1000
+2021-03-18 15:10:04,526 - btc - INFO - btc3susdt  1000
+2021-03-18 15:10:04,527 - btc - INFO - btc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:10:04,527 - btc - INFO - FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,527 - btc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,527 - btc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,898 - btc - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-18 15:10:04,898 - btc - INFO - last_open=57955.16, last_close=57973.54, invest_direction=planB, last_ts=2021-03-18 15:05:00
+2021-03-18 15:10:04,898 - btc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,898 - btc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 15:05:00
+2021-03-18 15:10:04,898 - btc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:10:04
+2021-03-18 15:10:05,032 - btc - INFO - current_balance = 9.901858915251873
+2021-03-18 15:10:05,032 - btc - INFO - BUY NEW COINS
+2021-03-18 15:10:05,032 - btc - INFO - symbol:btc3susdt, currency:btc3s, cur_price:0.002023, amount=4943.153732081068, ts:2021-03-18 15:10:04
+2021-03-18 15:10:05,032 - btc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:10:05,032 - btc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:10:05,307 - btc - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:10:05,307 - btc - INFO - order_id=235194912747052, field_amount=4943.153732081068, price=0.0, actual_buy_market_amount=4943.153732081068
+2021-03-18 15:10:05,307 - btc - INFO - actual_last_symbol=btc3susdt actual_last_amount=4943.153732081068
+2021-03-18 15:10:05,307 - btc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:10:05
+2021-03-18 15:10:05,307 - btc - INFO - =========================================
+2021-03-18 15:10:05,308 - btc - INFO - sleep 295 seconds .....
+2021-03-18 15:15:00,366 - btc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:15:00
+2021-03-18 15:22:41,526 - btc - INFO - SELL LAST COIN
+2021-03-18 15:22:41,527 - btc - INFO - last_symbol:btc3susdt, last_currency:btc3s, last_amount:4943.153732081068, sell_cur_price:0.0
+2021-03-18 15:22:41,527 - btc - INFO - sell_cur_price * last_amount = 0.0
+2021-03-18 15:22:41,527 - btc - INFO - current_balance = -0.09814108474812677  sell_ts:1970-01-01 00:00:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:22:41,527 - btc - INFO - demo_action_running_duration: -448911:05:00
+2021-03-18 15:22:41,527 - btc - INFO - earning_ratio = -100.98141084748127%
+2021-03-18 15:22:41,527 - btc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:22:41,527 - btc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:22:41,527 - btc - INFO - ###  in sell_market deal amount, old amount=4943.153732081068
+2021-03-18 15:22:41,527 - btc - INFO - ###  in sell_market deal amount, new amount=4943.1537
+2021-03-18 15:22:41,762 - btc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:22:41,762 - btc - INFO - order_id=235198008896390, field_cash_amount=9.7132970205, price=0.0, actual_sell_market_cash=9.7132970205
+2021-03-18 15:22:41,762 - btc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.7132970205
+2021-03-18 15:22:41,762 - btc - INFO - actual_balance=9.5906506399, ts_actual_sell=2021-03-18 15:22:41
+2021-03-18 15:22:41,762 - btc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:22:41,762 - btc - INFO - ***** SET  stop_actual_invest = True  *****
+2021-03-18 15:22:41,762 - btc - INFO - ***** earning_ratio = -1.0098141084748127 *****
+2021-03-18 15:22:41,762 - btc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:22:41,763 - btc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:22:41,763 - btc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:22:41
+2021-03-18 15:22:41,763 - btc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:22:41
+2021-03-18 15:22:41,763 - btc - INFO - btc  get_ALL_symbol_trend_data START
+2021-03-18 15:22:41,763 - btc - INFO - StartTime= 2021-03-18 15:22:41
+2021-03-18 15:35:33,137 - btc - INFO - btcusdt  1000
+2021-03-18 15:35:44,733 - btc - INFO - btc3lusdt  1000
+2021-03-18 15:35:45,195 - btc - INFO - btc3susdt  1000
+2021-03-18 15:35:45,195 - btc - INFO - btc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:35:45,195 - btc - INFO - FinishTime= 2021-03-18 15:35:45
+2021-03-18 15:35:45,195 - btc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:35:45
+2021-03-18 15:35:45,195 - btc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:35:45
+2021-03-18 15:35:45,874 - btc - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-18 15:35:45,874 - btc - INFO - last_open=58367.06, last_close=58701.8, invest_direction=planB, last_ts=2021-03-18 15:30:00
+2021-03-18 15:35:45,874 - btc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:35:45
+2021-03-18 15:35:45,874 - btc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 15:30:00
+2021-03-18 15:35:45,875 - btc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:35:45
+2021-03-18 15:35:46,045 - btc - INFO - current_balance = -0.09814108474812677
+2021-03-18 15:35:46,045 - btc - INFO - BUY NEW COINS
+2021-03-18 15:35:46,045 - btc - INFO - symbol:btc3susdt, currency:btc3s, cur_price:0.001927, amount=5189.413596263623, ts:2021-03-18 15:35:45
+2021-03-18 15:35:46,045 - btc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:35:46
+2021-03-18 15:35:46,045 - btc - INFO - =========================================
+2021-03-18 15:35:46,046 - btc - INFO - ***** ACCESS STOP_LOST_RATE and STOP to RUN!! *****
+2021-03-18 15:35:46,046 - btc - INFO - ***** earning_ratio = -1.0098141084748127 *****

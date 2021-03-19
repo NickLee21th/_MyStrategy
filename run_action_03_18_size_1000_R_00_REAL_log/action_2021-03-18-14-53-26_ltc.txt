@@ -1,0 +1,209 @@
+2021-03-18 14:53:26,188 - ltc - INFO - I'm ltc in demo_action
+2021-03-18 14:55:00,281 - ltc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,282 - ltc - INFO - SEND QUEUE INFO - START
+2021-03-18 14:55:00,283 - ltc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 14:55:00,283 - ltc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,283 - ltc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,283 - ltc - INFO - ltc  get_ALL_symbol_trend_data START
+2021-03-18 14:55:00,284 - ltc - INFO - StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,650 - ltc - INFO - ltcusdt  1000
+2021-03-18 14:55:00,933 - ltc - INFO - ltc3lusdt  1000
+2021-03-18 14:55:01,459 - ltc - INFO - ltc3susdt  1000
+2021-03-18 14:55:01,460 - ltc - INFO - ltc  get_ALL_symbol_trend_data FINISH
+2021-03-18 14:55:01,460 - ltc - INFO - FinishTime= 2021-03-18 14:55:01
+2021-03-18 14:55:01,460 - ltc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 14:55:01
+2021-03-18 14:55:01,460 - ltc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 14:55:01
+2021-03-18 14:55:02,424 - ltc - INFO - count_A_earn = 18 , count_B_earn = 477 , threshold_value=0.0
+2021-03-18 14:55:02,424 - ltc - INFO - last_open=201.28, last_close=201.54, invest_direction=planB, last_ts=2021-03-18 14:50:00
+2021-03-18 14:55:02,424 - ltc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,424 - ltc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 14:50:00
+2021-03-18 14:55:02,424 - ltc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,537 - ltc - INFO - current_balance = 10.0
+2021-03-18 14:55:02,537 - ltc - INFO - BUY NEW COINS
+2021-03-18 14:55:02,537 - ltc - INFO - symbol:ltc3susdt, currency:ltc3s, cur_price:0.001228, amount=8143.322475570033, ts:2021-03-18 14:55:02
+2021-03-18 14:55:02,537 - ltc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 14:55:02,537 - ltc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 14:55:02,825 - ltc - INFO - IN get_actual_buy_market_amount
+2021-03-18 14:55:02,826 - ltc - INFO - order_id=235194778423392, field_amount=8130.081300813008, price=0.0, actual_buy_market_amount=8130.081300813008
+2021-03-18 14:55:02,826 - ltc - INFO - actual_last_symbol=ltc3susdt actual_last_amount=8130.081300813008
+2021-03-18 14:55:02,826 - ltc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,826 - ltc - INFO - =========================================
+2021-03-18 14:55:02,826 - ltc - INFO - sleep 298 seconds .....
+2021-03-18 15:00:00,860 - ltc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:00:00
+2021-03-18 15:00:01,018 - ltc - INFO - SELL LAST COIN
+2021-03-18 15:00:01,018 - ltc - INFO - last_symbol:ltc3susdt, last_currency:ltc3s, last_amount:8143.322475570033, sell_cur_price:0.001225
+2021-03-18 15:00:01,018 - ltc - INFO - sell_cur_price * last_amount = 9.975570032573291
+2021-03-18 15:00:01,018 - ltc - INFO - current_balance = 9.975570032573291  sell_ts:2021-03-18 15:00:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:00:01,019 - ltc - INFO - demo_action_running_duration: 0:05:00
+2021-03-18 15:00:01,019 - ltc - INFO - earning_ratio = -0.24429967426708998%
+2021-03-18 15:00:01,019 - ltc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:00:01,019 - ltc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:00:01,019 - ltc - INFO - ###  in sell_market deal amount, old amount=8130.081300813008
+2021-03-18 15:00:01,019 - ltc - INFO - ###  in sell_market deal amount, new amount=8130.0813
+2021-03-18 15:00:01,351 - ltc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:00:01,351 - ltc - INFO - order_id=235194820234308, field_cash_amount=9.9430894299, price=0.0, actual_sell_market_cash=9.9430894299
+2021-03-18 15:00:01,352 - ltc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.9430894299
+2021-03-18 15:00:01,352 - ltc - INFO - actual_balance=9.9430894299, ts_actual_sell=2021-03-18 15:00:01
+2021-03-18 15:00:01,352 - ltc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:00:01,352 - ltc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:00:01,355 - ltc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:00:01,355 - ltc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,355 - ltc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,355 - ltc - INFO - ltc  get_ALL_symbol_trend_data START
+2021-03-18 15:00:01,355 - ltc - INFO - StartTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,961 - ltc - INFO - ltcusdt  1000
+2021-03-18 15:00:02,396 - ltc - INFO - ltc3lusdt  1000
+2021-03-18 15:00:02,678 - ltc - INFO - ltc3susdt  1000
+2021-03-18 15:00:02,678 - ltc - INFO - ltc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:00:02,678 - ltc - INFO - FinishTime= 2021-03-18 15:00:02
+2021-03-18 15:00:02,678 - ltc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:00:02
+2021-03-18 15:00:02,678 - ltc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:00:02
+2021-03-18 15:00:03,755 - ltc - INFO - count_A_earn = 18 , count_B_earn = 477 , threshold_value=0.0
+2021-03-18 15:00:03,755 - ltc - INFO - last_open=201.55, last_close=201.83, invest_direction=planB, last_ts=2021-03-18 14:55:00
+2021-03-18 15:00:03,755 - ltc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:00:03
+2021-03-18 15:00:03,755 - ltc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 14:55:00
+2021-03-18 15:00:03,755 - ltc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:00:03
+2021-03-18 15:00:03,893 - ltc - INFO - current_balance = 9.975570032573291
+2021-03-18 15:00:03,893 - ltc - INFO - BUY NEW COINS
+2021-03-18 15:00:03,893 - ltc - INFO - symbol:ltc3susdt, currency:ltc3s, cur_price:0.001223, amount=8176.6148814390845, ts:2021-03-18 15:00:03
+2021-03-18 15:00:03,893 - ltc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:00:03,893 - ltc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:00:04,152 - ltc - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:00:04,153 - ltc - INFO - order_id=235194930168482, field_amount=8149.959250203749, price=0.0, actual_buy_market_amount=8149.959250203749
+2021-03-18 15:00:04,153 - ltc - INFO - actual_last_symbol=ltc3susdt actual_last_amount=8149.959250203749
+2021-03-18 15:00:04,153 - ltc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:00:04
+2021-03-18 15:00:04,153 - ltc - INFO - =========================================
+2021-03-18 15:00:04,153 - ltc - INFO - sleep 296 seconds .....
+2021-03-18 15:05:00,254 - ltc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,376 - ltc - INFO - SELL LAST COIN
+2021-03-18 15:05:00,376 - ltc - INFO - last_symbol:ltc3susdt, last_currency:ltc3s, last_amount:8176.6148814390845, sell_cur_price:0.001221
+2021-03-18 15:05:00,376 - ltc - INFO - sell_cur_price * last_amount = 9.983646770237122
+2021-03-18 15:05:00,376 - ltc - INFO - current_balance = 9.959216802810413  sell_ts:2021-03-18 15:05:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:05:00,376 - ltc - INFO - demo_action_running_duration: 0:10:00
+2021-03-18 15:05:00,376 - ltc - INFO - earning_ratio = -0.40783197189586673%
+2021-03-18 15:05:00,377 - ltc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:05:00,377 - ltc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:05:00,377 - ltc - INFO - ###  in sell_market deal amount, old amount=8149.959250203749
+2021-03-18 15:05:00,377 - ltc - INFO - ###  in sell_market deal amount, new amount=8149.9592
+2021-03-18 15:05:00,626 - ltc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:05:00,626 - ltc - INFO - order_id=235194879549241, field_cash_amount=9.9348002648, price=0.0, actual_sell_market_cash=9.9348002648
+2021-03-18 15:05:00,626 - ltc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.9348002648
+2021-03-18 15:05:00,626 - ltc - INFO - actual_balance=9.8778896947, ts_actual_sell=2021-03-18 15:05:00
+2021-03-18 15:05:00,626 - ltc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:05:00,626 - ltc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:05:00,627 - ltc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:05:00,627 - ltc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,627 - ltc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,627 - ltc - INFO - ltc  get_ALL_symbol_trend_data START
+2021-03-18 15:05:00,627 - ltc - INFO - StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,999 - ltc - INFO - ltcusdt  1000
+2021-03-18 15:05:01,205 - ltc - INFO - ltc3lusdt  1000
+2021-03-18 15:05:01,534 - ltc - INFO - ltc3susdt  1000
+2021-03-18 15:05:01,534 - ltc - INFO - ltc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:05:01,534 - ltc - INFO - FinishTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,534 - ltc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,534 - ltc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:05:01
+2021-03-18 15:05:02,225 - ltc - INFO - count_A_earn = 18 , count_B_earn = 477 , threshold_value=0.0
+2021-03-18 15:05:02,225 - ltc - INFO - last_open=201.79, last_close=202.01, invest_direction=planB, last_ts=2021-03-18 15:00:00
+2021-03-18 15:05:02,225 - ltc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:05:02
+2021-03-18 15:05:02,225 - ltc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 15:00:00
+2021-03-18 15:05:02,225 - ltc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:05:02
+2021-03-18 15:05:02,349 - ltc - INFO - current_balance = 9.959216802810413
+2021-03-18 15:05:02,349 - ltc - INFO - BUY NEW COINS
+2021-03-18 15:05:02,349 - ltc - INFO - symbol:ltc3susdt, currency:ltc3s, cur_price:0.001219, amount=8203.445447087777, ts:2021-03-18 15:05:02
+2021-03-18 15:05:02,349 - ltc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:05:02,349 - ltc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:05:02,644 - ltc - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:05:02,644 - ltc - INFO - order_id=235194972115693, field_amount=8183.306055646482, price=0.0, actual_buy_market_amount=8183.306055646482
+2021-03-18 15:05:02,644 - ltc - INFO - actual_last_symbol=ltc3susdt actual_last_amount=8183.306055646482
+2021-03-18 15:05:02,644 - ltc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:05:02
+2021-03-18 15:05:02,644 - ltc - INFO - =========================================
+2021-03-18 15:05:02,645 - ltc - INFO - sleep 298 seconds .....
+2021-03-18 15:10:00,706 - ltc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:10:00
+2021-03-18 15:10:00,954 - ltc - INFO - SELL LAST COIN
+2021-03-18 15:10:00,954 - ltc - INFO - last_symbol:ltc3susdt, last_currency:ltc3s, last_amount:8203.445447087777, sell_cur_price:0.00122
+2021-03-18 15:10:00,954 - ltc - INFO - sell_cur_price * last_amount = 10.008203445447087
+2021-03-18 15:10:00,954 - ltc - INFO - current_balance = 9.9674202482575  sell_ts:2021-03-18 15:10:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:10:00,954 - ltc - INFO - demo_action_running_duration: 0:15:00
+2021-03-18 15:10:00,954 - ltc - INFO - earning_ratio = -0.32579751742499496%
+2021-03-18 15:10:00,954 - ltc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:10:00,954 - ltc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:10:00,954 - ltc - INFO - ###  in sell_market deal amount, old amount=8183.306055646482
+2021-03-18 15:10:00,954 - ltc - INFO - ###  in sell_market deal amount, new amount=8183.306
+2021-03-18 15:10:01,196 - ltc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:10:01,196 - ltc - INFO - order_id=235194904061603, field_cash_amount=9.975450014, price=0.0, actual_sell_market_cash=9.975450014
+2021-03-18 15:10:01,196 - ltc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.975450014
+2021-03-18 15:10:01,196 - ltc - INFO - actual_balance=9.8533397087, ts_actual_sell=2021-03-18 15:10:01
+2021-03-18 15:10:01,196 - ltc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:10:01,197 - ltc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:10:01,197 - ltc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:10:01,197 - ltc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:10:01
+2021-03-18 15:10:01,197 - ltc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:10:01
+2021-03-18 15:10:01,197 - ltc - INFO - ltc  get_ALL_symbol_trend_data START
+2021-03-18 15:10:01,197 - ltc - INFO - StartTime= 2021-03-18 15:10:01
+2021-03-18 15:10:02,032 - ltc - INFO - ltcusdt  1000
+2021-03-18 15:10:03,374 - ltc - INFO - ltc3lusdt  1000
+2021-03-18 15:10:04,175 - ltc - INFO - ltc3susdt  1000
+2021-03-18 15:10:04,175 - ltc - INFO - ltc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:10:04,175 - ltc - INFO - FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,175 - ltc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,175 - ltc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,695 - ltc - INFO - count_A_earn = 18 , count_B_earn = 477 , threshold_value=0.0
+2021-03-18 15:10:04,695 - ltc - INFO - last_open=201.96, last_close=201.91, invest_direction=planB, last_ts=2021-03-18 15:05:00
+2021-03-18 15:10:04,695 - ltc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,696 - ltc - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-18 15:05:00
+2021-03-18 15:10:04,696 - ltc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,903 - ltc - INFO - current_balance = 9.9674202482575
+2021-03-18 15:10:04,903 - ltc - INFO - BUY NEW COINS
+2021-03-18 15:10:04,903 - ltc - INFO - symbol:ltc3lusdt, currency:ltc3l, cur_price:39.1124, amount=0.25567339258138083, ts:2021-03-18 15:10:04
+2021-03-18 15:10:04,903 - ltc - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:10:04,903 - ltc - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:10:05,513 - ltc - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:10:05,514 - ltc - INFO - order_id=235194955243967, field_amount=0.254958951608791, price=0.0, actual_buy_market_amount=0.254958951608791
+2021-03-18 15:10:05,514 - ltc - INFO - actual_last_symbol=ltc3lusdt actual_last_amount=0.254958951608791
+2021-03-18 15:10:05,514 - ltc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:10:05
+2021-03-18 15:10:05,514 - ltc - INFO - =========================================
+2021-03-18 15:10:05,514 - ltc - INFO - sleep 295 seconds .....
+2021-03-18 15:15:00,590 - ltc - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:15:00
+2021-03-18 15:22:41,755 - ltc - INFO - SELL LAST COIN
+2021-03-18 15:22:41,755 - ltc - INFO - last_symbol:ltc3lusdt, last_currency:ltc3l, last_amount:0.25567339258138083, sell_cur_price:0.0
+2021-03-18 15:22:41,755 - ltc - INFO - sell_cur_price * last_amount = 0.0
+2021-03-18 15:22:41,756 - ltc - INFO - current_balance = -0.032579751742499496  sell_ts:1970-01-01 00:00:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:22:41,756 - ltc - INFO - demo_action_running_duration: -448911:05:00
+2021-03-18 15:22:41,756 - ltc - INFO - earning_ratio = -100.32579751742499%
+2021-03-18 15:22:41,756 - ltc - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:22:41,756 - ltc - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:22:41,756 - ltc - INFO - ###  in sell_market deal amount, old amount=0.254958951608791
+2021-03-18 15:22:41,756 - ltc - INFO - ###  in sell_market deal amount, new amount=0.2549
+2021-03-18 15:22:42,031 - ltc - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:22:42,031 - ltc - INFO - order_id=235194980380018, field_cash_amount=10.07836365, price=0.0, actual_sell_market_cash=10.07836365
+2021-03-18 15:22:42,031 - ltc - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.07836365
+2021-03-18 15:22:42,031 - ltc - INFO - actual_balance=9.9317033587, ts_actual_sell=2021-03-18 15:22:42
+2021-03-18 15:22:42,031 - ltc - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:22:42,031 - ltc - INFO - ***** SET  stop_actual_invest = True  *****
+2021-03-18 15:22:42,031 - ltc - INFO - ***** earning_ratio = -1.0032579751742499 *****
+2021-03-18 15:22:42,031 - ltc - INFO - SEND QUEUE INFO - START
+2021-03-18 15:22:42,032 - ltc - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:22:42,032 - ltc - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:22:42
+2021-03-18 15:22:42,032 - ltc - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:22:42
+2021-03-18 15:22:42,032 - ltc - INFO - ltc  get_ALL_symbol_trend_data START
+2021-03-18 15:22:42,032 - ltc - INFO - StartTime= 2021-03-18 15:22:42
+2021-03-18 15:35:33,698 - ltc - INFO - ltcusdt  1000
+2021-03-18 15:35:45,330 - ltc - INFO - ltc3lusdt  1000
+2021-03-18 15:35:45,693 - ltc - INFO - ltc3susdt  1000
+2021-03-18 15:35:45,693 - ltc - INFO - ltc  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:35:45,693 - ltc - INFO - FinishTime= 2021-03-18 15:35:45
+2021-03-18 15:35:45,705 - ltc - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:35:45
+2021-03-18 15:35:45,705 - ltc - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:35:45
+2021-03-18 15:35:46,599 - ltc - INFO - count_A_earn = 18 , count_B_earn = 477 , threshold_value=0.0
+2021-03-18 15:35:46,599 - ltc - INFO - last_open=203.1, last_close=203.76, invest_direction=planB, last_ts=2021-03-18 15:30:00
+2021-03-18 15:35:46,599 - ltc - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:35:46
+2021-03-18 15:35:46,599 - ltc - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-18 15:30:00
+2021-03-18 15:35:46,600 - ltc - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:35:46
+2021-03-18 15:35:46,724 - ltc - INFO - current_balance = -0.032579751742499496
+2021-03-18 15:35:46,725 - ltc - INFO - BUY NEW COINS
+2021-03-18 15:35:46,725 - ltc - INFO - symbol:ltc3susdt, currency:ltc3s, cur_price:0.001188, amount=8417.508417508418, ts:2021-03-18 15:35:46
+2021-03-18 15:35:46,725 - ltc - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:35:46
+2021-03-18 15:35:46,725 - ltc - INFO - =========================================
+2021-03-18 15:35:46,725 - ltc - INFO - ***** ACCESS STOP_LOST_RATE and STOP to RUN!! *****
+2021-03-18 15:35:46,725 - ltc - INFO - ***** earning_ratio = -1.0032579751742499 *****

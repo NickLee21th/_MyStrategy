@@ -1,0 +1,209 @@
+2021-03-18 14:53:26,192 - fil - INFO - I'm fil in demo_action
+2021-03-18 14:55:00,285 - fil - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,286 - fil - INFO - SEND QUEUE INFO - START
+2021-03-18 14:55:00,290 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 14:55:00,290 - fil - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,291 - fil - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,291 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-18 14:55:00,291 - fil - INFO - StartTime= 2021-03-18 14:55:00
+2021-03-18 14:55:00,570 - fil - INFO - filusdt  1000
+2021-03-18 14:55:00,886 - fil - INFO - fil3lusdt  1000
+2021-03-18 14:55:01,210 - fil - INFO - fil3susdt  1000
+2021-03-18 14:55:01,210 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-18 14:55:01,210 - fil - INFO - FinishTime= 2021-03-18 14:55:01
+2021-03-18 14:55:01,210 - fil - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 14:55:01
+2021-03-18 14:55:01,211 - fil - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 14:55:01
+2021-03-18 14:55:02,312 - fil - INFO - count_A_earn = 410 , count_B_earn = 8 , threshold_value=0.0
+2021-03-18 14:55:02,312 - fil - INFO - last_open=81.0305, last_close=80.2943, invest_direction=planA, last_ts=2021-03-18 14:50:00
+2021-03-18 14:55:02,312 - fil - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,312 - fil - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-18 14:50:00
+2021-03-18 14:55:02,312 - fil - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,455 - fil - INFO - current_balance = 10.0
+2021-03-18 14:55:02,455 - fil - INFO - BUY NEW COINS
+2021-03-18 14:55:02,455 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.015515, amount=644.5375443119563, ts:2021-03-18 14:55:02
+2021-03-18 14:55:02,455 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 14:55:02,455 - fil - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 14:55:02,736 - fil - INFO - IN get_actual_buy_market_amount
+2021-03-18 14:55:02,736 - fil - INFO - order_id=235194795657603, field_amount=641.025641025641, price=0.0, actual_buy_market_amount=641.025641025641
+2021-03-18 14:55:02,737 - fil - INFO - actual_last_symbol=fil3susdt actual_last_amount=641.025641025641
+2021-03-18 14:55:02,737 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 14:55:02
+2021-03-18 14:55:02,737 - fil - INFO - =========================================
+2021-03-18 14:55:02,737 - fil - INFO - sleep 298 seconds .....
+2021-03-18 15:00:00,778 - fil - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:00:00
+2021-03-18 15:00:00,929 - fil - INFO - SELL LAST COIN
+2021-03-18 15:00:00,929 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:644.5375443119563, sell_cur_price:0.0153
+2021-03-18 15:00:00,930 - fil - INFO - sell_cur_price * last_amount = 9.86142442797293
+2021-03-18 15:00:00,930 - fil - INFO - current_balance = 9.86142442797293  sell_ts:2021-03-18 15:00:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:00:00,930 - fil - INFO - demo_action_running_duration: 0:05:00
+2021-03-18 15:00:00,930 - fil - INFO - earning_ratio = -1.385755720270705%
+2021-03-18 15:00:00,930 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:00:00,930 - fil - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:00:00,930 - fil - INFO - ###  in sell_market deal amount, old amount=641.025641025641
+2021-03-18 15:00:00,930 - fil - INFO - ###  in sell_market deal amount, new amount=641.0256
+2021-03-18 15:00:01,209 - fil - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:00:01,209 - fil - INFO - order_id=235194845826216, field_cash_amount=9.8121788592, price=0.0, actual_sell_market_cash=9.8121788592
+2021-03-18 15:00:01,209 - fil - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.8121788592
+2021-03-18 15:00:01,209 - fil - INFO - actual_balance=9.8121788592, ts_actual_sell=2021-03-18 15:00:01
+2021-03-18 15:00:01,209 - fil - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:00:01,209 - fil - INFO - SEND QUEUE INFO - START
+2021-03-18 15:00:01,209 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:00:01,210 - fil - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,210 - fil - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,210 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-18 15:00:01,210 - fil - INFO - StartTime= 2021-03-18 15:00:01
+2021-03-18 15:00:01,625 - fil - INFO - filusdt  1000
+2021-03-18 15:00:02,187 - fil - INFO - fil3lusdt  1000
+2021-03-18 15:00:02,649 - fil - INFO - fil3susdt  1000
+2021-03-18 15:00:02,649 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:00:02,665 - fil - INFO - FinishTime= 2021-03-18 15:00:02
+2021-03-18 15:00:02,666 - fil - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:00:02
+2021-03-18 15:00:02,666 - fil - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:00:02
+2021-03-18 15:00:03,715 - fil - INFO - count_A_earn = 410 , count_B_earn = 7 , threshold_value=0.0
+2021-03-18 15:00:03,715 - fil - INFO - last_open=80.4165, last_close=80.8576, invest_direction=planA, last_ts=2021-03-18 14:55:00
+2021-03-18 15:00:03,715 - fil - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:00:03
+2021-03-18 15:00:03,715 - fil - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-18 14:55:00
+2021-03-18 15:00:03,715 - fil - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:00:03
+2021-03-18 15:00:03,852 - fil - INFO - current_balance = 9.86142442797293
+2021-03-18 15:00:03,852 - fil - INFO - BUY NEW COINS
+2021-03-18 15:00:03,852 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:36.6221, amount=0.2730591637290051, ts:2021-03-18 15:00:03
+2021-03-18 15:00:03,852 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:00:03,852 - fil - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:00:04,118 - fil - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:00:04,118 - fil - INFO - order_id=235194794777862, field_amount=0.27187876382163667, price=0.0, actual_buy_market_amount=0.27187876382163667
+2021-03-18 15:00:04,118 - fil - INFO - actual_last_symbol=fil3lusdt actual_last_amount=0.27187876382163667
+2021-03-18 15:00:04,118 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:00:04
+2021-03-18 15:00:04,118 - fil - INFO - =========================================
+2021-03-18 15:00:04,119 - fil - INFO - sleep 296 seconds .....
+2021-03-18 15:05:00,219 - fil - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,345 - fil - INFO - SELL LAST COIN
+2021-03-18 15:05:00,345 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:0.2730591637290051, sell_cur_price:38.05
+2021-03-18 15:05:00,345 - fil - INFO - sell_cur_price * last_amount = 10.389901179888644
+2021-03-18 15:05:00,345 - fil - INFO - current_balance = 10.251325607861574  sell_ts:2021-03-18 15:05:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:05:00,345 - fil - INFO - demo_action_running_duration: 0:10:00
+2021-03-18 15:05:00,345 - fil - INFO - earning_ratio = 2.51325607861574%
+2021-03-18 15:05:00,345 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:05:00,345 - fil - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:05:00,345 - fil - INFO - ###  in sell_market deal amount, old amount=0.27187876382163667
+2021-03-18 15:05:00,346 - fil - INFO - ###  in sell_market deal amount, new amount=0.2718
+2021-03-18 15:05:00,614 - fil - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:05:00,614 - fil - INFO - order_id=235194879483559, field_cash_amount=10.34199, price=0.0, actual_sell_market_cash=10.34199
+2021-03-18 15:05:00,614 - fil - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.34199
+2021-03-18 15:05:00,615 - fil - INFO - actual_balance=10.154168859199999, ts_actual_sell=2021-03-18 15:05:00
+2021-03-18 15:05:00,615 - fil - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:05:00,615 - fil - INFO - SEND QUEUE INFO - START
+2021-03-18 15:05:00,615 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:05:00,615 - fil - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,615 - fil - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:00,615 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-18 15:05:00,615 - fil - INFO - StartTime= 2021-03-18 15:05:00
+2021-03-18 15:05:01,040 - fil - INFO - filusdt  1000
+2021-03-18 15:05:01,380 - fil - INFO - fil3lusdt  1000
+2021-03-18 15:05:01,666 - fil - INFO - fil3susdt  1000
+2021-03-18 15:05:01,666 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:05:01,666 - fil - INFO - FinishTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,666 - fil - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:05:01
+2021-03-18 15:05:01,666 - fil - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:05:01
+2021-03-18 15:05:02,223 - fil - INFO - count_A_earn = 410 , count_B_earn = 6 , threshold_value=0.0
+2021-03-18 15:05:02,223 - fil - INFO - last_open=80.8856, last_close=81.6749, invest_direction=planA, last_ts=2021-03-18 15:00:00
+2021-03-18 15:05:02,223 - fil - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:05:02
+2021-03-18 15:05:02,223 - fil - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-18 15:00:00
+2021-03-18 15:05:02,223 - fil - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:05:02
+2021-03-18 15:05:02,352 - fil - INFO - current_balance = 10.251325607861574
+2021-03-18 15:05:02,352 - fil - INFO - BUY NEW COINS
+2021-03-18 15:05:02,352 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:38.0, amount=0.2631578947368421, ts:2021-03-18 15:05:02
+2021-03-18 15:05:02,352 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:05:02,352 - fil - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:05:02,605 - fil - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:05:02,605 - fil - INFO - order_id=235194887742737, field_amount=0.2628141614782771, price=0.0, actual_buy_market_amount=0.2628141614782771
+2021-03-18 15:05:02,605 - fil - INFO - actual_last_symbol=fil3lusdt actual_last_amount=0.2628141614782771
+2021-03-18 15:05:02,605 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:05:02
+2021-03-18 15:05:02,605 - fil - INFO - =========================================
+2021-03-18 15:05:02,606 - fil - INFO - sleep 298 seconds .....
+2021-03-18 15:10:00,706 - fil - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:10:00
+2021-03-18 15:10:00,851 - fil - INFO - SELL LAST COIN
+2021-03-18 15:10:00,851 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:0.2631578947368421, sell_cur_price:38.098
+2021-03-18 15:10:00,852 - fil - INFO - sell_cur_price * last_amount = 10.02578947368421
+2021-03-18 15:10:00,852 - fil - INFO - current_balance = 10.277115081545784  sell_ts:2021-03-18 15:10:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:10:00,852 - fil - INFO - demo_action_running_duration: 0:15:00
+2021-03-18 15:10:00,852 - fil - INFO - earning_ratio = 2.771150815457837%
+2021-03-18 15:10:00,852 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:10:00,852 - fil - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:10:00,852 - fil - INFO - ###  in sell_market deal amount, old amount=0.2628141614782771
+2021-03-18 15:10:00,852 - fil - INFO - ###  in sell_market deal amount, new amount=0.2628
+2021-03-18 15:10:01,156 - fil - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:10:01,156 - fil - INFO - order_id=235194929717934, field_cash_amount=10.00692468, price=0.0, actual_sell_market_cash=10.00692468
+2021-03-18 15:10:01,156 - fil - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.00692468
+2021-03-18 15:10:01,156 - fil - INFO - actual_balance=10.161093539199998, ts_actual_sell=2021-03-18 15:10:01
+2021-03-18 15:10:01,156 - fil - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:10:01,156 - fil - INFO - SEND QUEUE INFO - START
+2021-03-18 15:10:01,157 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:10:01,157 - fil - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:10:01
+2021-03-18 15:10:01,157 - fil - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:10:01
+2021-03-18 15:10:01,157 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-18 15:10:01,157 - fil - INFO - StartTime= 2021-03-18 15:10:01
+2021-03-18 15:10:02,860 - fil - INFO - filusdt  1000
+2021-03-18 15:10:04,023 - fil - INFO - fil3lusdt  1000
+2021-03-18 15:10:04,668 - fil - INFO - fil3susdt  1000
+2021-03-18 15:10:04,668 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:10:04,668 - fil - INFO - FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,668 - fil - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,668 - fil - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,911 - fil - INFO - count_A_earn = 410 , count_B_earn = 5 , threshold_value=0.0
+2021-03-18 15:10:04,911 - fil - INFO - last_open=81.6749, last_close=81.9997, invest_direction=planA, last_ts=2021-03-18 15:05:00
+2021-03-18 15:10:04,911 - fil - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:10:04
+2021-03-18 15:10:04,911 - fil - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-18 15:05:00
+2021-03-18 15:10:04,912 - fil - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:10:04
+2021-03-18 15:10:05,087 - fil - INFO - current_balance = 10.277115081545784
+2021-03-18 15:10:05,087 - fil - INFO - BUY NEW COINS
+2021-03-18 15:10:05,087 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:38.0781, amount=0.262618145338134, ts:2021-03-18 15:10:05
+2021-03-18 15:10:05,087 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-18 15:10:05,087 - fil - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-18 15:10:05,394 - fil - INFO - IN get_actual_buy_market_amount
+2021-03-18 15:10:05,394 - fil - INFO - order_id=235194955308989, field_amount=0.26272370923841654, price=0.0, actual_buy_market_amount=0.26272370923841654
+2021-03-18 15:10:05,394 - fil - INFO - actual_last_symbol=fil3lusdt actual_last_amount=0.26272370923841654
+2021-03-18 15:10:05,394 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:10:05
+2021-03-18 15:10:05,394 - fil - INFO - =========================================
+2021-03-18 15:10:05,395 - fil - INFO - sleep 295 seconds .....
+2021-03-18 15:15:00,482 - fil - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-18 15:15:00
+2021-03-18 15:22:41,716 - fil - INFO - SELL LAST COIN
+2021-03-18 15:22:41,716 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:0.262618145338134, sell_cur_price:0.0
+2021-03-18 15:22:41,716 - fil - INFO - sell_cur_price * last_amount = 0.0
+2021-03-18 15:22:41,717 - fil - INFO - current_balance = 0.2771150815457837  sell_ts:1970-01-01 00:00:00  demo_action_launch_time: 2021-03-18 14:55:00
+2021-03-18 15:22:41,717 - fil - INFO - demo_action_running_duration: -448911:05:00
+2021-03-18 15:22:41,717 - fil - INFO - earning_ratio = -97.22884918454217%
+2021-03-18 15:22:41,717 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-18 15:22:41,717 - fil - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-18 15:22:41,717 - fil - INFO - ###  in sell_market deal amount, old amount=0.26272370923841654
+2021-03-18 15:22:41,717 - fil - INFO - ###  in sell_market deal amount, new amount=0.2627
+2021-03-18 15:22:41,958 - fil - INFO - IN get_actual_sell_market_cash
+2021-03-18 15:22:41,958 - fil - INFO - order_id=235194912260502, field_cash_amount=9.67395377, price=0.0, actual_sell_market_cash=9.67395377
+2021-03-18 15:22:41,958 - fil - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.67395377
+2021-03-18 15:22:41,958 - fil - INFO - actual_balance=9.835047309199998, ts_actual_sell=2021-03-18 15:22:41
+2021-03-18 15:22:41,959 - fil - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-18 15:22:41,959 - fil - INFO - ***** SET  stop_actual_invest = True  *****
+2021-03-18 15:22:41,959 - fil - INFO - ***** earning_ratio = -0.9722884918454217 *****
+2021-03-18 15:22:41,959 - fil - INFO - SEND QUEUE INFO - START
+2021-03-18 15:22:41,959 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-18 15:22:41,959 - fil - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-18 15:22:41
+2021-03-18 15:22:41,959 - fil - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-18 15:22:41
+2021-03-18 15:22:41,959 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-18 15:22:41,959 - fil - INFO - StartTime= 2021-03-18 15:22:41
+2021-03-18 15:35:46,823 - fil - INFO - filusdt  1000
+2021-03-18 15:35:47,461 - fil - INFO - fil3lusdt  1000
+2021-03-18 15:35:47,754 - fil - INFO - fil3susdt  1000
+2021-03-18 15:35:47,755 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-18 15:35:47,755 - fil - INFO - FinishTime= 2021-03-18 15:35:47
+2021-03-18 15:35:47,755 - fil - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-18 15:35:47
+2021-03-18 15:35:47,755 - fil - INFO - do_action -judge_invest_direction StartTime= 2021-03-18 15:35:47
+2021-03-18 15:35:48,123 - fil - INFO - count_A_earn = 410 , count_B_earn = 4 , threshold_value=0.0
+2021-03-18 15:35:48,123 - fil - INFO - last_open=82.1, last_close=81.8998, invest_direction=planA, last_ts=2021-03-18 15:30:00
+2021-03-18 15:35:48,123 - fil - INFO - do_action -judge_invest_direction FinishTime= 2021-03-18 15:35:48
+2021-03-18 15:35:48,123 - fil - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-18 15:30:00
+2021-03-18 15:35:48,123 - fil - INFO - do_action -buy_lever_coins StartTime= 2021-03-18 15:35:48
+2021-03-18 15:35:48,238 - fil - INFO - current_balance = 0.2771150815457837
+2021-03-18 15:35:48,238 - fil - INFO - BUY NEW COINS
+2021-03-18 15:35:48,238 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.015, amount=666.6666666666667, ts:2021-03-18 15:35:48
+2021-03-18 15:35:48,238 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-18 15:35:48
+2021-03-18 15:35:48,238 - fil - INFO - =========================================
+2021-03-18 15:35:48,239 - fil - INFO - ***** ACCESS STOP_LOST_RATE and STOP to RUN!! *****
+2021-03-18 15:35:48,239 - fil - INFO - ***** earning_ratio = -0.9722884918454217 *****
