@@ -2099,3 +2099,48 @@
 2021-03-19 05:55:05,493 - bch - INFO - do_action -buy_lever_coins FinishTime= 2021-03-19 05:55:05
 2021-03-19 05:55:05,493 - bch - INFO - =========================================
 2021-03-19 05:55:05,494 - bch - INFO - sleep 298 seconds .....
+2021-03-19 06:00:03,591 - bch - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-19 06:00:03
+2021-03-19 06:00:03,700 - bch - INFO - SELL LAST COIN
+2021-03-19 06:00:03,701 - bch - INFO - last_symbol:bch3susdt, last_currency:bch3s, last_amount:856.0178051703475, sell_cur_price:0.0116
+2021-03-19 06:00:03,701 - bch - INFO - sell_cur_price * last_amount = 9.929806539976031
+2021-03-19 06:00:03,701 - bch - INFO - current_balance = 10.964673658565347  sell_ts:2021-03-19 06:00:03  demo_action_launch_time: 2021-03-19 02:05:00
+2021-03-19 06:00:03,701 - bch - INFO - demo_action_running_duration: 3:55:03
+2021-03-19 06:00:03,701 - bch - INFO - earning_ratio = 9.646736585653475%
+2021-03-19 06:00:03,701 - bch - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-19 06:00:03,701 - bch - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-19 06:00:03,701 - bch - INFO - ###  in sell_market deal amount, old amount=856.898029134533
+2021-03-19 06:00:03,701 - bch - INFO - ###  in sell_market deal amount, new amount=856.898
+2021-03-19 06:00:03,984 - bch - INFO - IN get_actual_sell_market_cash
+2021-03-19 06:00:03,984 - bch - INFO - order_id=235202479337383, field_cash_amount=9.921165044, price=0.0, actual_sell_market_cash=9.921165044
+2021-03-19 06:00:03,984 - bch - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.921165044
+2021-03-19 06:00:03,984 - bch - INFO - actual_balance=9.3058686896, ts_actual_sell=2021-03-19 06:00:03
+2021-03-19 06:00:03,984 - bch - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-19 06:00:03,984 - bch - INFO - SEND QUEUE INFO - START
+2021-03-19 06:00:03,985 - bch - INFO - SEND QUEUE INFO - FINISH
+2021-03-19 06:00:03,985 - bch - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-19 06:00:03
+2021-03-19 06:00:03,985 - bch - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-19 06:00:03
+2021-03-19 06:00:03,985 - bch - INFO - bch  get_ALL_symbol_trend_data START
+2021-03-19 06:00:03,985 - bch - INFO - StartTime= 2021-03-19 06:00:03
+2021-03-19 06:00:04,306 - bch - INFO - bchusdt  1000
+2021-03-19 06:00:04,509 - bch - INFO - bch3lusdt  1000
+2021-03-19 06:00:04,804 - bch - INFO - bch3susdt  1000
+2021-03-19 06:00:04,804 - bch - INFO - bch  get_ALL_symbol_trend_data FINISH
+2021-03-19 06:00:04,804 - bch - INFO - FinishTime= 2021-03-19 06:00:04
+2021-03-19 06:00:04,804 - bch - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-19 06:00:04
+2021-03-19 06:00:04,804 - bch - INFO - do_action -judge_invest_direction StartTime= 2021-03-19 06:00:04
+2021-03-19 06:00:05,034 - bch - INFO - count_A_earn = 45 , count_B_earn = 500 , threshold_value=0.0
+2021-03-19 06:00:05,034 - bch - INFO - last_open=536.79, last_close=537.45, invest_direction=planB, last_ts=2021-03-19 05:55:00
+2021-03-19 06:00:05,034 - bch - INFO - do_action -judge_invest_direction FinishTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,034 - bch - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-19 05:55:00
+2021-03-19 06:00:05,034 - bch - INFO - do_action -buy_lever_coins StartTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,149 - bch - INFO - current_balance = 10.964673658565347
+2021-03-19 06:00:05,150 - bch - INFO - BUY NEW COINS
+2021-03-19 06:00:05,150 - bch - INFO - symbol:bch3susdt, currency:bch3s, cur_price:0.011598, amount=862.217623728229, ts:2021-03-19 06:00:05
+2021-03-19 06:00:05,150 - bch - INFO - ACTUAL - BUY NEW COINS
+2021-03-19 06:00:05,150 - bch - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-19 06:00:05,391 - bch - INFO - IN get_actual_buy_market_amount
+2021-03-19 06:00:05,391 - bch - INFO - order_id=235202462299303, field_amount=862.217623728229, price=0.0, actual_buy_market_amount=862.217623728229
+2021-03-19 06:00:05,391 - bch - INFO - actual_last_symbol=bch3susdt actual_last_amount=862.217623728229
+2021-03-19 06:00:05,391 - bch - INFO - do_action -buy_lever_coins FinishTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,391 - bch - INFO - =========================================
+2021-03-19 06:00:05,392 - bch - INFO - sleep 298 seconds .....

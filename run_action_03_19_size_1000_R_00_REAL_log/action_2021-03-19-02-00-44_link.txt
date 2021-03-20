@@ -2099,3 +2099,48 @@
 2021-03-19 05:55:06,242 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-19 05:55:06
 2021-03-19 05:55:06,242 - link - INFO - =========================================
 2021-03-19 05:55:06,243 - link - INFO - sleep 298 seconds .....
+2021-03-19 06:00:04,252 - link - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-19 06:00:04
+2021-03-19 06:00:04,372 - link - INFO - SELL LAST COIN
+2021-03-19 06:00:04,372 - link - INFO - last_symbol:link3susdt, last_currency:link3s, last_amount:13736.263736263736, sell_cur_price:0.000727
+2021-03-19 06:00:04,372 - link - INFO - sell_cur_price * last_amount = 9.986263736263735
+2021-03-19 06:00:04,372 - link - INFO - current_balance = 9.955849685291305  sell_ts:2021-03-19 06:00:04  demo_action_launch_time: 2021-03-19 02:05:00
+2021-03-19 06:00:04,372 - link - INFO - demo_action_running_duration: 3:55:04
+2021-03-19 06:00:04,373 - link - INFO - earning_ratio = -0.44150314708694793%
+2021-03-19 06:00:04,373 - link - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-19 06:00:04,373 - link - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-19 06:00:04,373 - link - INFO - ###  in sell_market deal amount, old amount=13717.421124828532
+2021-03-19 06:00:04,373 - link - INFO - ###  in sell_market deal amount, new amount=13717.4211
+2021-03-19 06:00:04,635 - link - INFO - IN get_actual_sell_market_cash
+2021-03-19 06:00:04,635 - link - INFO - order_id=235202487922861, field_cash_amount=9.9588477186, price=0.0, actual_sell_market_cash=9.9588477186
+2021-03-19 06:00:04,635 - link - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.9588477186
+2021-03-19 06:00:04,635 - link - INFO - actual_balance=8.830910352099997, ts_actual_sell=2021-03-19 06:00:04
+2021-03-19 06:00:04,635 - link - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-19 06:00:04,635 - link - INFO - SEND QUEUE INFO - START
+2021-03-19 06:00:04,636 - link - INFO - SEND QUEUE INFO - FINISH
+2021-03-19 06:00:04,636 - link - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-19 06:00:04
+2021-03-19 06:00:04,636 - link - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-19 06:00:04
+2021-03-19 06:00:04,636 - link - INFO - link  get_ALL_symbol_trend_data START
+2021-03-19 06:00:04,636 - link - INFO - StartTime= 2021-03-19 06:00:04
+2021-03-19 06:00:05,086 - link - INFO - linkusdt  1000
+2021-03-19 06:00:05,304 - link - INFO - link3lusdt  1000
+2021-03-19 06:00:05,523 - link - INFO - link3susdt  1000
+2021-03-19 06:00:05,524 - link - INFO - link  get_ALL_symbol_trend_data FINISH
+2021-03-19 06:00:05,524 - link - INFO - FinishTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,524 - link - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,524 - link - INFO - do_action -judge_invest_direction StartTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,747 - link - INFO - count_A_earn = 2 , count_B_earn = 500 , threshold_value=0.0
+2021-03-19 06:00:05,747 - link - INFO - last_open=29.9561, last_close=29.9697, invest_direction=planB, last_ts=2021-03-19 05:55:00
+2021-03-19 06:00:05,747 - link - INFO - do_action -judge_invest_direction FinishTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,747 - link - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-19 05:55:00
+2021-03-19 06:00:05,747 - link - INFO - do_action -buy_lever_coins StartTime= 2021-03-19 06:00:05
+2021-03-19 06:00:05,861 - link - INFO - current_balance = 9.955849685291305
+2021-03-19 06:00:05,862 - link - INFO - BUY NEW COINS
+2021-03-19 06:00:05,862 - link - INFO - symbol:link3susdt, currency:link3s, cur_price:0.000726, amount=13774.104683195594, ts:2021-03-19 06:00:05
+2021-03-19 06:00:05,862 - link - INFO - ACTUAL - BUY NEW COINS
+2021-03-19 06:00:05,862 - link - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-19 06:00:06,119 - link - INFO - IN get_actual_buy_market_amount
+2021-03-19 06:00:06,119 - link - INFO - order_id=235202487759065, field_amount=13736.263736263736, price=0.0, actual_buy_market_amount=13736.263736263736
+2021-03-19 06:00:06,119 - link - INFO - actual_last_symbol=link3susdt actual_last_amount=13736.263736263736
+2021-03-19 06:00:06,120 - link - INFO - do_action -buy_lever_coins FinishTime= 2021-03-19 06:00:06
+2021-03-19 06:00:06,120 - link - INFO - =========================================
+2021-03-19 06:00:06,120 - link - INFO - sleep 298 seconds .....
