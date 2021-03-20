@@ -194,18 +194,72 @@ class DemoStrategy:
                 continue
         return ret, response
 
-    # 市价卖出指定币种
-    def sell_market(self, symbol="", amount=0):
-        if symbol == "" or amount <= 0:
+    # 限价卖出指定币种
+    def sell_limit_price(self, symbol="", amount=0.0, limit_price=0.0):
+        if symbol == "" or amount <= 0.0 or limit_price <=0.0:
             return False, None
-        self.demo_print("###  in sell_market deal amount, old amount=%s" % amount)
         n_bits = Get_orderamount_precision(symbol)
         amount = decimals_accuracy_n(
             inputDecimals=amount,
             n_bits=n_bits,
             accuracy_type='trunc'
         )
-        self.demo_print("###  in sell_market deal amount, new amount=%s" % amount)
+        self.demo_print("### in sell_limit_price, symbol: %s, amount: %s, limit_price: %s"
+                        % (symbol, amount, limit_price))
+        ret = False
+        retry_count = 0
+        response = None
+        while ret is False and retry_count < 30:
+            try:
+                response = Post_order_place(
+                    access_key=self.s_access_key,
+                    secret_key=self.s_secret_key,
+                    account_id=self.account_id,
+                    symbol=symbol,
+                    type_value="sell-limit",
+                    amount=amount,
+                    price=limit_price,
+                )
+                if response is not None:
+                    status = response["status"]
+                    if status == "ok":
+                        ret = True
+                        break
+                    else:
+                        ret = False
+                        retry_count += 1
+                        time.sleep(2)
+                        continue
+                else:
+                    ret = False
+                    retry_count += 1
+                    time.sleep(2)
+                    continue
+            except Exception as ex:
+                self.demo_print("Exception in sell_limit_price")
+                self.demo_print("SELL symbol = %s, amount = %s, ex = %s"
+                                % (symbol, amount, ex))
+                ret = False
+                retry_count += 1
+                time.sleep(2)
+                continue
+        return ret, response
+
+    # 数量值截断
+    def truncate_amount(self, symbol, amount):
+        n_bits = Get_orderamount_precision(symbol)
+        amount = decimals_accuracy_n(
+            inputDecimals=amount,
+            n_bits=n_bits,
+            accuracy_type='trunc'
+        )
+        return amount
+
+    # 市价卖出指定币种
+    def sell_market(self, symbol="", amount=0):
+        if symbol == "" or amount <= 0:
+            return False, None
+        amount = self.truncate_amount(symbol, amount)
         ret = False
         retry_count = 0
         response = None
@@ -335,7 +389,7 @@ class DemoStrategy:
         h, m = divmod(m, 60)
         return "%d:%02d:%02d" % (h, m, s)
 
-    # 市价卖出上一次持有的杠杆代币
+    # 卖出上一次持有的杠杆代币
     def sell_last_hold_lever_coins(self, action_index):
         if self.last_symbol != "Nothing":
             ts_sell, sell_cur_price = get_current_price(symbol=self.last_symbol, )
@@ -344,7 +398,8 @@ class DemoStrategy:
             running_duration = self.get_duration(ts_sell - self.demo_action_launch_time)
             self.demo_print("last_symbol:%s, last_currency:%s, last_amount:%s, sell_cur_price:%s" %
                             (self.last_symbol, self.last_currency, self.last_amount, sell_cur_price))
-            last_sell_cash = sell_cur_price * self.last_amount
+            amount = self.truncate_amount(self.last_symbol, self.last_amount)
+            last_sell_cash = sell_cur_price * amount
             self.demo_print("sell_cur_price * last_amount = %s" % last_sell_cash)
             self.current_balance += last_sell_cash
             self.demo_print("current_balance = %s  sell_ts:%s  demo_action_launch_time: %s"
@@ -373,9 +428,14 @@ class DemoStrategy:
                 # self.actual_last_amount = 0.0
 
                 # real call
-                ret, actual_sell_market_cash = self.actual_sell_market_level_coins(
+                # ret, actual_sell_market_cash = self.actual_sell_market_level_coins(
+                #     symbol=self.actual_last_symbol,
+                #     amount=self.actual_last_amount
+                # )
+                ret, actual_sell_market_cash = self.actual_sell_limit_price_level_coins(
                     symbol=self.actual_last_symbol,
-                    amount=self.actual_last_amount
+                    amount=self.actual_last_amount,
+                    limit_price=sell_cur_price
                 )
                 if ret is True:
                     self.demo_print("actual_last_symbol:%s, actual_last_currency:%s, actual_last_amount:%s, actual_sell_market_cash:%s" %
@@ -586,6 +646,23 @@ class DemoStrategy:
                 retry_count += 1
                 time.sleep(2)
                 continue
+        return ret, actual_sell_market_cash
+
+    def actual_sell_limit_price_level_coins(self, symbol, amount, limit_price):
+        self.demo_print("**** DO SELL actual_sell_limit_price_level_coins  ******** ")
+        ret, response = self.sell_limit_price(symbol, amount, limit_price)
+        actual_sell_market_cash = 0.0
+        if ret is True:
+            actual_sell_market_cash = limit_price * amount
+            self.actual_balance += actual_sell_market_cash
+            self.actual_last_symbol = "Nothing"
+            self.actual_last_currency = "Nothing"
+            self.actual_last_amount = 0.0
+        else:
+            self.demo_print("FAILED in  actual_sell_limit_price_level_coins!")
+            self.demo_print("symbol=%s, ts=%s" % (symbol, timeStamp_to_datetime(int(time.time()))))
+            if response is not None:
+                self.demo_print("response = %s" % response)
         return ret, actual_sell_market_cash
 
     def actual_sell_market_level_coins(self, symbol, amount):
@@ -952,7 +1029,6 @@ class DemoStrategy:
         elif count_A_earn > 0 and count_A_earn > count_B_earn \
                 and count_A_earn > (step_range * self.threshold_value_adjust_rate):
             invest_direction = "planA"
-        invest_direction = "planA"
         self.demo_print("count_A_earn = %s , count_B_earn = %s , threshold_value=%s"
                         % (count_A_earn, count_B_earn, step_range*self.threshold_value_adjust_rate))
         self.demo_print("last_open=%s, last_close=%s, invest_direction=%s, last_ts=%s"
@@ -1019,6 +1095,92 @@ class DemoStrategy:
             self.demo_print("Exception in calculate_trend_data")
             self.demo_print(ex)
             return False
+
+    # 输出 MD5 和 MD10
+    def output_MA5_MA10(self, symbol="ethusdt", base="eth"):
+        logger = logging.getLogger("Ma5Ma10")
+        logger.setLevel(level=logging.INFO)
+        time_stamp = int(time.time())
+        dt_stamp = timeStamp_to_datetime(time_stamp)
+        dt_value = dt_stamp
+        log_file_name = "Ma5Ma10_%s_%s.log" % (dt_value, symbol)
+        handler = logging.FileHandler(log_file_name)
+        handler.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+        self.demo_logger = logger
+        # to_buy_3l = False
+        # to_sell_3l = False
+        # to_buy_3s = False
+        # to_sell_3s = False
+        last_delta = None
+        up_trend = False
+        down_trend = False
+        symbol_3l = base + "3lusdt"
+        symbol_3s = base + "3susdt"
+        up_cross_3l_price = 0.0
+        down_cross_3s_price = 0.0
+        count = 0
+        while count < (1000*5):
+            self.demo_print("================================================")
+            count += 1
+            try:
+                ma5, ma10 = get_MA5_MA10(symbol)
+                self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
+                self.demo_print(" MA5 = %s" % ma5)
+                self.demo_print("MA10 = %s" % ma10)
+                if ma5 > ma10 and last_delta is not None:
+                    if last_delta <= 0.0:
+                        self.demo_print("CATCH Up cross")
+                        last_delta = ma5 - ma10
+                        self.demo_print("last_delta = %s" % last_delta)
+                        # 出现上涨信号，开始获取 3L 的价格
+                        up_trend = True
+                        down_trend = False
+                        _, up_cross_3l_price = get_current_price(symbol_3l)
+                        self.demo_print("Up Cross: %s = %s" % (symbol_3l, up_cross_3l_price))
+                    else:
+                        last_delta = ma5 - ma10
+                        if up_trend:
+                            self.demo_print("IN Up Trend")
+                            self.demo_print("last_delta = %s" % last_delta)
+                            _, cur_3l_price = get_current_price(symbol_3l)
+                            self.demo_print("%s = %s" % (symbol_3l, cur_3l_price))
+                            self.demo_print("up_cross %s = %s" % (symbol_3l, up_cross_3l_price))
+                            assert up_cross_3l_price > 0.0
+                            up_rate = (cur_3l_price - up_cross_3l_price) / up_cross_3l_price
+                            self.demo_print("up_rate = %s" % up_rate)
+                elif ma5 < ma10 and last_delta is not None:
+                    if last_delta >= 0.0:
+                        self.demo_print("CATCH Down cross")
+                        last_delta = ma5 - ma10
+                        self.demo_print("last_delta = %s" % last_delta)
+                        # 出现下跌信号，开始获取 3S 的价格
+                        up_trend = False
+                        down_trend = True
+                        ts, down_cross_3s_price = get_current_price(symbol_3s)
+                        self.demo_print("Down Cross: %s = %s" % (symbol_3s, down_cross_3s_price))
+                    else:
+                        last_delta = ma5 - ma10
+                        if down_trend:
+                            self.demo_print("IN Down Trend")
+                            self.demo_print("last_delta = %s" % last_delta)
+                            ts, cur_3s_price = get_current_price(symbol_3s)
+                            self.demo_print("%s = %s" % (symbol_3s, cur_3s_price))
+                            self.demo_print("down_cross %s = %s" % (symbol_3s, down_cross_3s_price))
+                            assert down_cross_3s_price > 0.0
+                            down_rate = (cur_3s_price - down_cross_3s_price) / down_cross_3s_price
+                            self.demo_print("down_rate = %s" % down_rate)
+                elif last_delta is None:
+                    last_delta = ma5 - ma10
+                else:
+                    assert False
+            except Exception as ex:
+                self.demo_print("Exception in output_MA5_MA10!")
+                self.demo_print("EX: %s" % ex)
+
+
 
 
 hbgAnyCall = HbgAnyCall()
@@ -1107,7 +1269,7 @@ def wait_to_X_min_begin(x=5):
 def get_MA5_MA10(symbol="ethusdt"):
     ma5 = 0.0
     ma10 = 0.0
-    print("Time = %s" % timeStamp_to_datetime(int(time.time())))
+    # print("Time = %s" % timeStamp_to_datetime(int(time.time())))
     wait_to_X_min_begin(x=5)
     ret = Get_kline_data(
         symbol=symbol,
@@ -1130,8 +1292,8 @@ def get_MA5_MA10(symbol="ethusdt"):
             count += 1
     ma10 = close_price / (count-1)
     ma10 = round(ma10, 2)
-    print("ma5=%s" % ma5)
-    print("ma10=%s" % ma10)
+    # print("ma5=%s" % ma5)
+    # print("ma10=%s" % ma10)
     return ma5, ma10
 
 # 返回当前交易对的最新的交易价格

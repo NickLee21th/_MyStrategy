@@ -13,16 +13,18 @@ from project.demos.demo import *
 current_path = os.path.dirname(os.path.abspath(__file__))
 
 ETP_LIST = (
+            # "bch",
+            # "bsv",
             "btc",
+            # "dot",  # 2l&2s
+            # "eos",
             "eth",
-            "link",
-            "eos",
-            "bch",
-            "ltc",
-            "zec",
-            "xrp",
-            "bsv",
-            "fil",
+            # "fil",
+            # "link",
+            # "ltc",
+            # "uni",  # 2l&2s
+            # "xrp",
+            # "zec",
     )
 LENGTH_ETP_LIST = len(ETP_LIST)
 
