@@ -1103,7 +1103,7 @@ class DemoStrategy:
         time_stamp = int(time.time())
         dt_stamp = timeStamp_to_datetime(time_stamp)
         dt_value = dt_stamp
-        log_file_name = "Ma5Ma10_%s_%s.log" % (dt_value, symbol)
+        log_file_name = "Ma5Ma10_%s_%s.txt" % (dt_value, symbol)
         handler = logging.FileHandler(log_file_name)
         handler.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -1138,8 +1138,16 @@ class DemoStrategy:
                         # 出现上涨信号，开始获取 3L 的价格
                         up_trend = True
                         down_trend = False
+                        # 输出 3L 的价格
                         _, up_cross_3l_price = get_current_price(symbol_3l)
                         self.demo_print("Up Cross: %s = %s" % (symbol_3l, up_cross_3l_price))
+                        # 输出 3S 的价格
+                        _, cur_3s_price = get_current_price(symbol_3s)
+                        self.demo_print("%s = %s" % (symbol_3s, cur_3s_price))
+                        # 输出 down_rate
+                        if down_cross_3s_price > 0.0:
+                            down_rate = (cur_3s_price - down_cross_3s_price) / down_cross_3s_price
+                            self.demo_print("down_rate = %s" % down_rate)
                     else:
                         last_delta = ma5 - ma10
                         if up_trend:
@@ -1159,16 +1167,26 @@ class DemoStrategy:
                         # 出现下跌信号，开始获取 3S 的价格
                         up_trend = False
                         down_trend = True
-                        ts, down_cross_3s_price = get_current_price(symbol_3s)
+                        # 输出 3S 的价格
+                        _, down_cross_3s_price = get_current_price(symbol_3s)
                         self.demo_print("Down Cross: %s = %s" % (symbol_3s, down_cross_3s_price))
+                        # 输出 3L 的价格
+                        _, cur_3l_price = get_current_price(symbol_3l)
+                        self.demo_print("%s = %s" % (symbol_3l, cur_3l_price))
+                        # 输出 up_rate
+                        if up_cross_3l_price > 0.0:
+                            up_rate = (cur_3l_price - up_cross_3l_price) / up_cross_3l_price
+                            self.demo_print("up_rate = %s" % up_rate)
                     else:
                         last_delta = ma5 - ma10
                         if down_trend:
                             self.demo_print("IN Down Trend")
                             self.demo_print("last_delta = %s" % last_delta)
-                            ts, cur_3s_price = get_current_price(symbol_3s)
+                            # 输出 3S 的价格
+                            _, cur_3s_price = get_current_price(symbol_3s)
                             self.demo_print("%s = %s" % (symbol_3s, cur_3s_price))
                             self.demo_print("down_cross %s = %s" % (symbol_3s, down_cross_3s_price))
+                            # 输出 down_rate
                             assert down_cross_3s_price > 0.0
                             down_rate = (cur_3s_price - down_cross_3s_price) / down_cross_3s_price
                             self.demo_print("down_rate = %s" % down_rate)
