@@ -5834,3 +5834,93 @@
 2021-03-20 01:35:15,002 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:35:15
 2021-03-20 01:35:15,002 - fil - INFO - =========================================
 2021-03-20 01:35:15,003 - fil - INFO - sleep 298 seconds .....
+2021-03-20 01:40:13,078 - fil - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,192 - fil - INFO - SELL LAST COIN
+2021-03-20 01:40:13,192 - fil - INFO - last_symbol:fil3susdt, last_currency:fil3s, last_amount:797.8299026647519, sell_cur_price:0.012399
+2021-03-20 01:40:13,192 - fil - INFO - sell_cur_price * last_amount = 9.892292963140259
+2021-03-20 01:40:13,192 - fil - INFO - current_balance = 8.165648806591454  sell_ts:2021-03-20 01:40:13  demo_action_launch_time: 2021-03-19 14:50:00
+2021-03-20 01:40:13,192 - fil - INFO - demo_action_running_duration: 10:50:13
+2021-03-20 01:40:13,192 - fil - INFO - earning_ratio = -18.34351193408546%
+2021-03-20 01:40:13,192 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 01:40:13,193 - fil - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-20 01:40:13,193 - fil - INFO - ###  in sell_market deal amount, old amount=793.7137868084768
+2021-03-20 01:40:13,193 - fil - INFO - ###  in sell_market deal amount, new amount=793.7137
+2021-03-20 01:40:13,442 - fil - INFO - IN get_actual_sell_market_cash
+2021-03-20 01:40:13,442 - fil - INFO - order_id=236882124326276, field_cash_amount=9.8047453361, price=0.0, actual_sell_market_cash=9.8047453361
+2021-03-20 01:40:13,443 - fil - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.8047453361
+2021-03-20 01:40:13,443 - fil - INFO - actual_balance=3.637270501600007, ts_actual_sell=2021-03-20 01:40:13
+2021-03-20 01:40:13,443 - fil - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 01:40:13,443 - fil - INFO - SEND QUEUE INFO - START
+2021-03-20 01:40:13,443 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 01:40:13,443 - fil - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,443 - fil - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,443 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-20 01:40:13,444 - fil - INFO - StartTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,600 - fil - INFO - filusdt  1000
+2021-03-20 01:40:13,886 - fil - INFO - fil3lusdt  1000
+2021-03-20 01:40:14,068 - fil - INFO - fil3susdt  1000
+2021-03-20 01:40:14,068 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-20 01:40:14,069 - fil - INFO - FinishTime= 2021-03-20 01:40:14
+2021-03-20 01:40:14,069 - fil - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 01:40:14
+2021-03-20 01:40:14,069 - fil - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 01:40:14
+2021-03-20 01:40:14,293 - fil - INFO - count_A_earn = 177 , count_B_earn = 109 , threshold_value=0.0
+2021-03-20 01:40:14,293 - fil - INFO - last_open=83.1263, last_close=83.5317, invest_direction=planA, last_ts=2021-03-20 01:35:00
+2021-03-20 01:40:14,293 - fil - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 01:40:14
+2021-03-20 01:40:14,293 - fil - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 01:35:00
+2021-03-20 01:40:14,293 - fil - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 01:40:14
+2021-03-20 01:40:14,413 - fil - INFO - current_balance = 8.165648806591454
+2021-03-20 01:40:14,413 - fil - INFO - BUY NEW COINS
+2021-03-20 01:40:14,413 - fil - INFO - symbol:fil3lusdt, currency:fil3l, cur_price:40.1951, amount=0.24878654363342798, ts:2021-03-20 01:40:14
+2021-03-20 01:40:14,414 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 01:40:14,414 - fil - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 01:40:14,636 - fil - INFO - IN get_actual_buy_market_amount
+2021-03-20 01:40:14,636 - fil - INFO - order_id=236882166923048, field_amount=0.2487203338821762, price=0.0, actual_buy_market_amount=0.2487203338821762
+2021-03-20 01:40:14,636 - fil - INFO - actual_last_symbol=fil3lusdt actual_last_amount=0.2487203338821762
+2021-03-20 01:40:14,637 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:40:14
+2021-03-20 01:40:14,637 - fil - INFO - =========================================
+2021-03-20 01:40:14,637 - fil - INFO - sleep 299 seconds .....
+2021-03-20 01:45:13,679 - fil - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 01:45:13
+2021-03-20 01:45:13,797 - fil - INFO - SELL LAST COIN
+2021-03-20 01:45:13,797 - fil - INFO - last_symbol:fil3lusdt, last_currency:fil3l, last_amount:0.24878654363342798, sell_cur_price:39.7989
+2021-03-20 01:45:13,797 - fil - INFO - sell_cur_price * last_amount = 9.901430771412437
+2021-03-20 01:45:13,797 - fil - INFO - current_balance = 8.067079578003892  sell_ts:2021-03-20 01:45:13  demo_action_launch_time: 2021-03-19 14:50:00
+2021-03-20 01:45:13,798 - fil - INFO - demo_action_running_duration: 10:55:13
+2021-03-20 01:45:13,798 - fil - INFO - earning_ratio = -19.329204219961085%
+2021-03-20 01:45:13,798 - fil - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 01:45:13,798 - fil - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-20 01:45:13,798 - fil - INFO - ###  in sell_market deal amount, old amount=0.2487203338821762
+2021-03-20 01:45:13,798 - fil - INFO - ###  in sell_market deal amount, new amount=0.2487
+2021-03-20 01:45:14,028 - fil - INFO - IN get_actual_sell_market_cash
+2021-03-20 01:45:14,029 - fil - INFO - order_id=236882157653225, field_cash_amount=9.890799, price=0.0, actual_sell_market_cash=9.890799
+2021-03-20 01:45:14,029 - fil - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.890799
+2021-03-20 01:45:14,029 - fil - INFO - actual_balance=3.5280695016000063, ts_actual_sell=2021-03-20 01:45:14
+2021-03-20 01:45:14,029 - fil - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 01:45:14,029 - fil - INFO - SEND QUEUE INFO - START
+2021-03-20 01:45:14,029 - fil - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 01:45:14,029 - fil - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,029 - fil - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,029 - fil - INFO - fil  get_ALL_symbol_trend_data START
+2021-03-20 01:45:14,030 - fil - INFO - StartTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,182 - fil - INFO - filusdt  1000
+2021-03-20 01:45:14,322 - fil - INFO - fil3lusdt  1000
+2021-03-20 01:45:14,453 - fil - INFO - fil3susdt  1000
+2021-03-20 01:45:14,453 - fil - INFO - fil  get_ALL_symbol_trend_data FINISH
+2021-03-20 01:45:14,453 - fil - INFO - FinishTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,454 - fil - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,454 - fil - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,673 - fil - INFO - count_A_earn = 176 , count_B_earn = 110 , threshold_value=0.0
+2021-03-20 01:45:14,673 - fil - INFO - last_open=83.5319, last_close=83.1884, invest_direction=planA, last_ts=2021-03-20 01:40:00
+2021-03-20 01:45:14,673 - fil - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,673 - fil - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-20 01:40:00
+2021-03-20 01:45:14,674 - fil - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 01:45:14
+2021-03-20 01:45:14,783 - fil - INFO - current_balance = 8.067079578003892
+2021-03-20 01:45:14,783 - fil - INFO - BUY NEW COINS
+2021-03-20 01:45:14,783 - fil - INFO - symbol:fil3susdt, currency:fil3s, cur_price:0.0125, amount=800.0, ts:2021-03-20 01:45:14
+2021-03-20 01:45:14,783 - fil - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 01:45:14,783 - fil - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 01:45:15,028 - fil - INFO - IN get_actual_buy_market_amount
+2021-03-20 01:45:15,028 - fil - INFO - order_id=236882191796879, field_amount=796.6223213574444, price=0.0, actual_buy_market_amount=796.6223213574444
+2021-03-20 01:45:15,028 - fil - INFO - actual_last_symbol=fil3susdt actual_last_amount=796.6223213574444
+2021-03-20 01:45:15,028 - fil - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:45:15
+2021-03-20 01:45:15,028 - fil - INFO - =========================================
+2021-03-20 01:45:15,029 - fil - INFO - sleep 298 seconds .....

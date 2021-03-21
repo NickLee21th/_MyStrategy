@@ -5788,3 +5788,93 @@
 2021-03-20 01:35:13,647 - zec - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:35:13
 2021-03-20 01:35:13,647 - zec - INFO - =========================================
 2021-03-20 01:35:13,647 - zec - INFO - sleep 299 seconds .....
+2021-03-20 01:40:12,748 - zec - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 01:40:12
+2021-03-20 01:40:12,854 - zec - INFO - SELL LAST COIN
+2021-03-20 01:40:12,854 - zec - INFO - last_symbol:zec3susdt, last_currency:zec3s, last_amount:417.5539688504739, sell_cur_price:0.023759
+2021-03-20 01:40:12,854 - zec - INFO - sell_cur_price * last_amount = 9.920664745918408
+2021-03-20 01:40:12,854 - zec - INFO - current_balance = 12.715530537604865  sell_ts:2021-03-20 01:40:12  demo_action_launch_time: 2021-03-19 14:50:00
+2021-03-20 01:40:12,854 - zec - INFO - demo_action_running_duration: 10:50:12
+2021-03-20 01:40:12,854 - zec - INFO - earning_ratio = 27.15530537604865%
+2021-03-20 01:40:12,854 - zec - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 01:40:12,854 - zec - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-20 01:40:12,855 - zec - INFO - ###  in sell_market deal amount, old amount=417.57140471020546
+2021-03-20 01:40:12,855 - zec - INFO - ###  in sell_market deal amount, new amount=417.5714
+2021-03-20 01:40:13,085 - zec - INFO - IN get_actual_sell_market_cash
+2021-03-20 01:40:13,085 - zec - INFO - order_id=236882149851859, field_cash_amount=9.9102220362, price=0.0, actual_sell_market_cash=9.9102220362
+2021-03-20 01:40:13,085 - zec - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.9102220362
+2021-03-20 01:40:13,086 - zec - INFO - actual_balance=8.086066791299999, ts_actual_sell=2021-03-20 01:40:13
+2021-03-20 01:40:13,086 - zec - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 01:40:13,086 - zec - INFO - SEND QUEUE INFO - START
+2021-03-20 01:40:13,086 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 01:40:13,086 - zec - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,086 - zec - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,086 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-20 01:40:13,086 - zec - INFO - StartTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,229 - zec - INFO - zecusdt  1000
+2021-03-20 01:40:13,513 - zec - INFO - zec3lusdt  1000
+2021-03-20 01:40:13,662 - zec - INFO - zec3susdt  1000
+2021-03-20 01:40:13,662 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-20 01:40:13,662 - zec - INFO - FinishTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,662 - zec - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,663 - zec - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,875 - zec - INFO - count_A_earn = 310 , count_B_earn = 211 , threshold_value=0.0
+2021-03-20 01:40:13,875 - zec - INFO - last_open=151.33, last_close=151.65, invest_direction=planA, last_ts=2021-03-20 01:35:00
+2021-03-20 01:40:13,875 - zec - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 01:40:13
+2021-03-20 01:40:13,875 - zec - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 01:35:00
+2021-03-20 01:40:13,875 - zec - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 01:40:13
+2021-03-20 01:40:14,008 - zec - INFO - current_balance = 12.715530537604865
+2021-03-20 01:40:14,008 - zec - INFO - BUY NEW COINS
+2021-03-20 01:40:14,008 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:2.3954, amount=4.174668113884946, ts:2021-03-20 01:40:13
+2021-03-20 01:40:14,008 - zec - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 01:40:14,008 - zec - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 01:40:14,250 - zec - INFO - IN get_actual_buy_market_amount
+2021-03-20 01:40:14,250 - zec - INFO - order_id=236882149983272, field_amount=4.168924834285238, price=0.0, actual_buy_market_amount=4.168924834285238
+2021-03-20 01:40:14,251 - zec - INFO - actual_last_symbol=zec3lusdt actual_last_amount=4.168924834285238
+2021-03-20 01:40:14,251 - zec - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:40:14
+2021-03-20 01:40:14,251 - zec - INFO - =========================================
+2021-03-20 01:40:14,251 - zec - INFO - sleep 298 seconds .....
+2021-03-20 01:45:12,352 - zec - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 01:45:12
+2021-03-20 01:45:12,456 - zec - INFO - SELL LAST COIN
+2021-03-20 01:45:12,456 - zec - INFO - last_symbol:zec3lusdt, last_currency:zec3l, last_amount:4.174668113884946, sell_cur_price:2.4351
+2021-03-20 01:45:12,456 - zec - INFO - sell_cur_price * last_amount = 10.165734324121232
+2021-03-20 01:45:12,456 - zec - INFO - current_balance = 12.881264861726097  sell_ts:2021-03-20 01:45:12  demo_action_launch_time: 2021-03-19 14:50:00
+2021-03-20 01:45:12,456 - zec - INFO - demo_action_running_duration: 10:55:12
+2021-03-20 01:45:12,456 - zec - INFO - earning_ratio = 28.812648617260965%
+2021-03-20 01:45:12,456 - zec - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 01:45:12,456 - zec - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-20 01:45:12,456 - zec - INFO - ###  in sell_market deal amount, old amount=4.168924834285238
+2021-03-20 01:45:12,456 - zec - INFO - ###  in sell_market deal amount, new amount=4.1689
+2021-03-20 01:45:12,680 - zec - INFO - IN get_actual_sell_market_cash
+2021-03-20 01:45:12,680 - zec - INFO - order_id=236882234229052, field_cash_amount=10.16085997, price=0.0, actual_sell_market_cash=10.16085997
+2021-03-20 01:45:12,680 - zec - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.16085997
+2021-03-20 01:45:12,680 - zec - INFO - actual_balance=8.2469267613, ts_actual_sell=2021-03-20 01:45:12
+2021-03-20 01:45:12,680 - zec - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 01:45:12,680 - zec - INFO - SEND QUEUE INFO - START
+2021-03-20 01:45:12,681 - zec - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 01:45:12,681 - zec - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 01:45:12
+2021-03-20 01:45:12,681 - zec - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 01:45:12
+2021-03-20 01:45:12,681 - zec - INFO - zec  get_ALL_symbol_trend_data START
+2021-03-20 01:45:12,681 - zec - INFO - StartTime= 2021-03-20 01:45:12
+2021-03-20 01:45:12,812 - zec - INFO - zecusdt  1000
+2021-03-20 01:45:12,939 - zec - INFO - zec3lusdt  1000
+2021-03-20 01:45:13,063 - zec - INFO - zec3susdt  1000
+2021-03-20 01:45:13,063 - zec - INFO - zec  get_ALL_symbol_trend_data FINISH
+2021-03-20 01:45:13,063 - zec - INFO - FinishTime= 2021-03-20 01:45:13
+2021-03-20 01:45:13,063 - zec - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 01:45:13
+2021-03-20 01:45:13,063 - zec - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 01:45:13
+2021-03-20 01:45:13,277 - zec - INFO - count_A_earn = 310 , count_B_earn = 210 , threshold_value=0.0
+2021-03-20 01:45:13,277 - zec - INFO - last_open=151.62, last_close=152.44, invest_direction=planA, last_ts=2021-03-20 01:40:00
+2021-03-20 01:45:13,277 - zec - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 01:45:13
+2021-03-20 01:45:13,277 - zec - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 01:40:00
+2021-03-20 01:45:13,277 - zec - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 01:45:13
+2021-03-20 01:45:13,383 - zec - INFO - current_balance = 12.881264861726097
+2021-03-20 01:45:13,383 - zec - INFO - BUY NEW COINS
+2021-03-20 01:45:13,383 - zec - INFO - symbol:zec3lusdt, currency:zec3l, cur_price:2.4373, amount=4.1029007508308375, ts:2021-03-20 01:45:13
+2021-03-20 01:45:13,383 - zec - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 01:45:13,383 - zec - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 01:45:13,604 - zec - INFO - IN get_actual_buy_market_amount
+2021-03-20 01:45:13,605 - zec - INFO - order_id=236882191796343, field_amount=4.095004095004095, price=0.0, actual_buy_market_amount=4.095004095004095
+2021-03-20 01:45:13,605 - zec - INFO - actual_last_symbol=zec3lusdt actual_last_amount=4.095004095004095
+2021-03-20 01:45:13,605 - zec - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:45:13
+2021-03-20 01:45:13,605 - zec - INFO - =========================================
+2021-03-20 01:45:13,605 - zec - INFO - sleep 299 seconds .....

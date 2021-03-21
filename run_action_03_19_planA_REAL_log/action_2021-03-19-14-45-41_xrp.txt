@@ -5811,3 +5811,93 @@
 2021-03-20 01:35:08,343 - xrp - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:35:08
 2021-03-20 01:35:08,343 - xrp - INFO - =========================================
 2021-03-20 01:35:08,344 - xrp - INFO - sleep 298 seconds .....
+2021-03-20 01:40:06,374 - xrp - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 01:40:06
+2021-03-20 01:40:06,484 - xrp - INFO - SELL LAST COIN
+2021-03-20 01:40:06,484 - xrp - INFO - last_symbol:xrp3lusdt, last_currency:xrp3l, last_amount:15.703517587939698, sell_cur_price:0.6328
+2021-03-20 01:40:06,484 - xrp - INFO - sell_cur_price * last_amount = 9.937185929648242
+2021-03-20 01:40:06,484 - xrp - INFO - current_balance = 10.88719319516518  sell_ts:2021-03-20 01:40:06  demo_action_launch_time: 2021-03-19 14:50:00
+2021-03-20 01:40:06,484 - xrp - INFO - demo_action_running_duration: 10:50:06
+2021-03-20 01:40:06,485 - xrp - INFO - earning_ratio = 8.8719319516518%
+2021-03-20 01:40:06,485 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 01:40:06,485 - xrp - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-20 01:40:06,485 - xrp - INFO - ###  in sell_market deal amount, old amount=15.703517587939698
+2021-03-20 01:40:06,485 - xrp - INFO - ###  in sell_market deal amount, new amount=15.7035
+2021-03-20 01:40:06,714 - xrp - INFO - IN get_actual_sell_market_cash
+2021-03-20 01:40:06,714 - xrp - INFO - order_id=236882115770320, field_cash_amount=9.9151899, price=0.0, actual_sell_market_cash=9.9151899
+2021-03-20 01:40:06,714 - xrp - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.9151899
+2021-03-20 01:40:06,714 - xrp - INFO - actual_balance=7.518453907849903, ts_actual_sell=2021-03-20 01:40:06
+2021-03-20 01:40:06,714 - xrp - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 01:40:06,714 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-20 01:40:06,715 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 01:40:06,715 - xrp - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 01:40:06
+2021-03-20 01:40:06,715 - xrp - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 01:40:06
+2021-03-20 01:40:06,715 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-20 01:40:06,715 - xrp - INFO - StartTime= 2021-03-20 01:40:06
+2021-03-20 01:40:06,867 - xrp - INFO - xrpusdt  1000
+2021-03-20 01:40:06,995 - xrp - INFO - xrp3lusdt  1000
+2021-03-20 01:40:07,142 - xrp - INFO - xrp3susdt  1000
+2021-03-20 01:40:07,142 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-20 01:40:07,142 - xrp - INFO - FinishTime= 2021-03-20 01:40:07
+2021-03-20 01:40:07,143 - xrp - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 01:40:07
+2021-03-20 01:40:07,143 - xrp - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 01:40:07
+2021-03-20 01:40:07,359 - xrp - INFO - count_A_earn = 191 , count_B_earn = 151 , threshold_value=0.0
+2021-03-20 01:40:07,359 - xrp - INFO - last_open=0.46986, last_close=0.46883, invest_direction=planA, last_ts=2021-03-20 01:35:00
+2021-03-20 01:40:07,359 - xrp - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 01:40:07
+2021-03-20 01:40:07,359 - xrp - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-20 01:35:00
+2021-03-20 01:40:07,359 - xrp - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 01:40:07
+2021-03-20 01:40:07,486 - xrp - INFO - current_balance = 10.88719319516518
+2021-03-20 01:40:07,486 - xrp - INFO - BUY NEW COINS
+2021-03-20 01:40:07,486 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:8.9101e-06, amount=1122321.8594628568, ts:2021-03-20 01:40:07
+2021-03-20 01:40:07,486 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 01:40:07,486 - xrp - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 01:40:07,716 - xrp - INFO - IN get_actual_buy_market_amount
+2021-03-20 01:40:07,716 - xrp - INFO - order_id=236882175439075, field_amount=1118806.010225887, price=0.0, actual_buy_market_amount=1118806.010225887
+2021-03-20 01:40:07,716 - xrp - INFO - actual_last_symbol=xrp3susdt actual_last_amount=1118806.010225887
+2021-03-20 01:40:07,717 - xrp - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:40:07
+2021-03-20 01:40:07,717 - xrp - INFO - =========================================
+2021-03-20 01:40:07,717 - xrp - INFO - sleep 299 seconds .....
+2021-03-20 01:45:06,719 - xrp - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 01:45:06
+2021-03-20 01:45:06,835 - xrp - INFO - SELL LAST COIN
+2021-03-20 01:45:06,835 - xrp - INFO - last_symbol:xrp3susdt, last_currency:xrp3s, last_amount:1122321.8594628568, sell_cur_price:8.9322e-06
+2021-03-20 01:45:06,835 - xrp - INFO - sell_cur_price * last_amount = 10.02480331309413
+2021-03-20 01:45:06,835 - xrp - INFO - current_balance = 10.91199650825931  sell_ts:2021-03-20 01:45:06  demo_action_launch_time: 2021-03-19 14:50:00
+2021-03-20 01:45:06,835 - xrp - INFO - demo_action_running_duration: 10:55:06
+2021-03-20 01:45:06,835 - xrp - INFO - earning_ratio = 9.119965082593104%
+2021-03-20 01:45:06,835 - xrp - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 01:45:06,835 - xrp - INFO - **** DO SELL actual_sell_market_level_coins  ******** 
+2021-03-20 01:45:06,836 - xrp - INFO - ###  in sell_market deal amount, old amount=1118806.010225887
+2021-03-20 01:45:06,836 - xrp - INFO - ###  in sell_market deal amount, new amount=1118806.0102
+2021-03-20 01:45:07,076 - xrp - INFO - IN get_actual_sell_market_cash
+2021-03-20 01:45:07,076 - xrp - INFO - order_id=236882191761718, field_cash_amount=9.98914758146968, price=0.0, actual_sell_market_cash=9.98914758146968
+2021-03-20 01:45:07,076 - xrp - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.98914758146968
+2021-03-20 01:45:07,076 - xrp - INFO - actual_balance=7.507601489319583, ts_actual_sell=2021-03-20 01:45:07
+2021-03-20 01:45:07,077 - xrp - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 01:45:07,077 - xrp - INFO - SEND QUEUE INFO - START
+2021-03-20 01:45:07,077 - xrp - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 01:45:07,077 - xrp - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,077 - xrp - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,077 - xrp - INFO - xrp  get_ALL_symbol_trend_data START
+2021-03-20 01:45:07,077 - xrp - INFO - StartTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,212 - xrp - INFO - xrpusdt  1000
+2021-03-20 01:45:07,350 - xrp - INFO - xrp3lusdt  1000
+2021-03-20 01:45:07,626 - xrp - INFO - xrp3susdt  1000
+2021-03-20 01:45:07,627 - xrp - INFO - xrp  get_ALL_symbol_trend_data FINISH
+2021-03-20 01:45:07,627 - xrp - INFO - FinishTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,627 - xrp - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,627 - xrp - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,843 - xrp - INFO - count_A_earn = 192 , count_B_earn = 150 , threshold_value=0.0
+2021-03-20 01:45:07,843 - xrp - INFO - last_open=0.46879, last_close=0.46832, invest_direction=planA, last_ts=2021-03-20 01:40:00
+2021-03-20 01:45:07,844 - xrp - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,844 - xrp - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-20 01:40:00
+2021-03-20 01:45:07,844 - xrp - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 01:45:07
+2021-03-20 01:45:07,948 - xrp - INFO - current_balance = 10.91199650825931
+2021-03-20 01:45:07,949 - xrp - INFO - BUY NEW COINS
+2021-03-20 01:45:07,949 - xrp - INFO - symbol:xrp3susdt, currency:xrp3s, cur_price:8.9284e-06, amount=1120021.5044128846, ts:2021-03-20 01:45:07
+2021-03-20 01:45:07,949 - xrp - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 01:45:07,949 - xrp - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 01:45:08,176 - xrp - INFO - IN get_actual_buy_market_amount
+2021-03-20 01:45:08,176 - xrp - INFO - order_id=236882191828091, field_amount=1117330.9198985463, price=0.0, actual_buy_market_amount=1117330.9198985463
+2021-03-20 01:45:08,177 - xrp - INFO - actual_last_symbol=xrp3susdt actual_last_amount=1117330.9198985463
+2021-03-20 01:45:08,177 - xrp - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 01:45:08
+2021-03-20 01:45:08,177 - xrp - INFO - =========================================
+2021-03-20 01:45:08,177 - xrp - INFO - sleep 298 seconds .....
