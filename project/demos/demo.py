@@ -1122,7 +1122,10 @@ class DemoStrategy:
         up_cross_3l_price = 0.0
         down_cross_3s_price = 0.0
         count = 0
-        while count < (1000*5):
+        total_up_rate = 0.0
+        total_down_rate = 0.0
+        total_rate = 0.0
+        while count < (1000*50):
             self.demo_print("================================================")
             count += 1
             try:
@@ -1148,6 +1151,10 @@ class DemoStrategy:
                         if down_cross_3s_price > 0.0:
                             down_rate = (cur_3s_price - down_cross_3s_price) / down_cross_3s_price
                             self.demo_print("down_rate = %s" % down_rate)
+                            total_down_rate += down_rate
+                            self.demo_print("total_down_rate = %s" % total_down_rate)
+                            total_rate += total_down_rate
+                            self.demo_print("total_rate = %s" % total_rate)
                     else:
                         last_delta = ma5 - ma10
                         if up_trend:
@@ -1177,6 +1184,10 @@ class DemoStrategy:
                         if up_cross_3l_price > 0.0:
                             up_rate = (cur_3l_price - up_cross_3l_price) / up_cross_3l_price
                             self.demo_print("up_rate = %s" % up_rate)
+                            total_up_rate += up_rate
+                            self.demo_print("total_up_rate = %s" % total_up_rate)
+                            total_rate += total_up_rate
+                            self.demo_print("total_rate = %s" % total_rate)
                     else:
                         last_delta = ma5 - ma10
                         if down_trend:
