@@ -1125,6 +1125,8 @@ class DemoStrategy:
         total_up_rate = 0.0
         total_down_rate = 0.0
         total_rate = 0.0
+        lanuch_time = int(time.time())
+        self.demo_print("Launch Time = %s" % timeStamp_to_datetime(lanuch_time))
         while count < (1000*50):
             self.demo_print("================================================")
             count += 1
@@ -1153,7 +1155,7 @@ class DemoStrategy:
                             self.demo_print("down_rate = %s" % down_rate)
                             total_down_rate += down_rate
                             self.demo_print("total_down_rate = %s" % total_down_rate)
-                            total_rate += total_down_rate
+                            total_rate = total_down_rate + total_up_rate
                             self.demo_print("total_rate = %s" % total_rate)
                     else:
                         last_delta = ma5 - ma10
@@ -1186,7 +1188,7 @@ class DemoStrategy:
                             self.demo_print("up_rate = %s" % up_rate)
                             total_up_rate += up_rate
                             self.demo_print("total_up_rate = %s" % total_up_rate)
-                            total_rate += total_up_rate
+                            total_rate = total_up_rate + total_down_rate
                             self.demo_print("total_rate = %s" % total_rate)
                     else:
                         last_delta = ma5 - ma10
