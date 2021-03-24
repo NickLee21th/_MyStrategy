@@ -5,6 +5,7 @@ from multiprocessing import Pool, Manager
 from project.demos._hbg_anyCall import HbgAnyCall
 from project.demos.config import *
 from project.demos.demo import *
+import sys
 
 
 # UNIX时间戳 转换为 datetime  显示
@@ -20,7 +21,13 @@ if __name__ == '__main__':
     # hbgAnyCall = HbgAnyCall()
     try:
         demo = DemoStrategy()
-        demo.output_MA5_MA10()
+        argvs = sys.argv
+        if len(argvs) > 1:
+            symbol = argvs[1]
+        if len(argvs) > 2:
+            base = argvs[2]
+        demo.output_MA5_MA10(symbol=symbol, base=base)
+
         #demo_06()
 
         # time_stamp = int(time.time())

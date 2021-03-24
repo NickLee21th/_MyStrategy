@@ -1126,6 +1126,7 @@ class DemoStrategy:
         total_down_rate = 0.0
         total_rate = 0.0
         lanuch_time = int(time.time())
+        self.demo_print("symbol = %s, base = %s " % (symbol, base))
         self.demo_print("Launch Time = %s" % timeStamp_to_datetime(lanuch_time))
         while count < (1000*50):
             self.demo_print("================================================")
