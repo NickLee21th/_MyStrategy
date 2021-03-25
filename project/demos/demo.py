@@ -1404,10 +1404,10 @@ def get_MA5_MA10(symbol="ethusdt"):
             close_price += item["close"]
             if count == 5:
                 ma5 = close_price / count
-                ma5 = round(ma5, 2)
+                ma5 = round(ma5, 6)
             count += 1
     ma10 = close_price / (count-1)
-    ma10 = round(ma10, 2)
+    ma10 = round(ma10, 6)
     # print("ma5=%s" % ma5)
     # print("ma10=%s" % ma10)
     return ma5, ma10
