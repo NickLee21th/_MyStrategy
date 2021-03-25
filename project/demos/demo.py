@@ -1213,7 +1213,91 @@ class DemoStrategy:
                 self.demo_print("EX: %s" % ex)
 
 
-
+    # 输出 MD5 和 MD10, 做本币
+    def output_MA5_MA10_base(self, symbol="ethusdt"):
+        logger = logging.getLogger("Ma5Ma10")
+        logger.setLevel(level=logging.INFO)
+        time_stamp = int(time.time())
+        dt_stamp = timeStamp_to_datetime(time_stamp)
+        dt_value = dt_stamp
+        log_file_name = "Ma5Ma10_base_%s_%s.txt" % (dt_value, symbol)
+        handler = logging.FileHandler(log_file_name)
+        handler.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+        self.demo_logger = logger
+        # to_buy_3l = False
+        # to_sell_3l = False
+        # to_buy_3s = False
+        # to_sell_3s = False
+        last_delta = None
+        up_trend = False
+        down_trend = False
+        up_cross_price = 0.0
+        count = 0
+        total_up_rate = 0.0
+        total_down_rate = 0.0
+        total_rate = 0.0
+        lanuch_time = int(time.time())
+        self.demo_print("symbol = %s" % symbol)
+        self.demo_print("Launch Time = %s" % timeStamp_to_datetime(lanuch_time))
+        while count < (1000*50):
+            self.demo_print("================================================")
+            count += 1
+            try:
+                ma5, ma10 = get_MA5_MA10(symbol)
+                self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
+                self.demo_print(" MA5 = %s" % ma5)
+                self.demo_print("MA10 = %s" % ma10)
+                if ma5 > ma10 and last_delta is not None:
+                    if last_delta <= 0.0:
+                        self.demo_print("CATCH Up cross")
+                        last_delta = ma5 - ma10
+                        self.demo_print("last_delta = %s" % last_delta)
+                        # 出现上涨信号，开始获取 base 价格
+                        up_trend = True
+                        down_trend = False
+                        # 输出 base 的价格
+                        _, up_cross_price = get_current_price(symbol)
+                        self.demo_print("Up Cross: %s = %s" % (symbol, up_cross_price))
+                    else:
+                        last_delta = ma5 - ma10
+                        if up_trend:
+                            self.demo_print("IN Up Trend")
+                            self.demo_print("last_delta = %s" % last_delta)
+                            _, cur_price = get_current_price(symbol)
+                            self.demo_print("%s = %s" % (symbol, cur_price))
+                            self.demo_print("up_cross %s = %s" % (symbol, up_cross_price))
+                            assert up_cross_price > 0.0
+                            up_rate = (cur_price - up_cross_price) / up_cross_price
+                            self.demo_print("up_rate = %s" % up_rate)
+                elif ma5 < ma10 and last_delta is not None:
+                    if last_delta >= 0.0:
+                        self.demo_print("CATCH Down cross")
+                        last_delta = ma5 - ma10
+                        self.demo_print("last_delta = %s" % last_delta)
+                        # 出现下跌信号，开始获取 base 的价格
+                        up_trend = False
+                        down_trend = True
+                        # 输出 base 的价格
+                        _, down_cross_price = get_current_price(symbol)
+                        self.demo_print("Down Cross: %s = %s" % (symbol, down_cross_price))
+                        # 输出 up_rate
+                        if up_cross_price > 0.0:
+                            up_rate = (cur_price - up_cross_price) / up_cross_price
+                            self.demo_print("up_rate = %s" % up_rate)
+                            total_up_rate += up_rate
+                            self.demo_print("total_up_rate = %s" % total_up_rate)
+                    else:
+                        last_delta = ma5 - ma10
+                elif last_delta is None:
+                    last_delta = ma5 - ma10
+                else:
+                    assert False
+            except Exception as ex:
+                self.demo_print("Exception in output_MA5_MA10_base!")
+                self.demo_print("EX: %s" % ex)
 
 hbgAnyCall = HbgAnyCall()
 

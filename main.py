@@ -26,7 +26,8 @@ if __name__ == '__main__':
             symbol = argvs[1]
         if len(argvs) > 2:
             base = argvs[2]
-        demo.output_MA5_MA10(symbol=symbol, base=base)
+        # demo.output_MA5_MA10(symbol=symbol, base=base)
+        demo.output_MA5_MA10_base(symbol=symbol)
 
         #demo_06()
 
