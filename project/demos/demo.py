@@ -1293,6 +1293,8 @@ class DemoStrategy:
                         last_delta = ma5 - ma10
                 elif last_delta is None:
                     last_delta = ma5 - ma10
+                elif ma5 == ma10:
+                    continue
                 else:
                     assert False
             except Exception as ex:
