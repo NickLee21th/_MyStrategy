@@ -1281,8 +1281,8 @@ class DemoStrategy:
                         up_trend = False
                         down_trend = True
                         # 输出 base 的价格
-                        _, down_cross_price = get_current_price(symbol)
-                        self.demo_print("Down Cross: %s = %s" % (symbol, down_cross_price))
+                        _, cross_price = get_current_price(symbol)
+                        self.demo_print("Down Cross: %s = %s" % (symbol, cross_price))
                         # 输出 up_rate
                         if up_cross_price > 0.0:
                             up_rate = (cur_price - up_cross_price) / up_cross_price
