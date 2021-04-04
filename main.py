@@ -20,14 +20,22 @@ if __name__ == '__main__':
     account_id = ACCOUNT_ID  # spot
     # hbgAnyCall = HbgAnyCall()
     try:
-        demo = DemoStrategy()
-        argvs = sys.argv
-        if len(argvs) > 1:
-            symbol = argvs[1]
-        if len(argvs) > 2:
-            base = argvs[2]
-        # demo.output_MA5_MA10(symbol=symbol, base=base)
-        demo.output_MA5_MA10_base(symbol=symbol)
+        # demo = DemoStrategy()
+        # argvs = sys.argv
+        # if len(argvs) > 1:
+        #     symbol = argvs[1]
+        # if len(argvs) > 2:
+        #     base = argvs[2]
+        # # demo.output_MA5_MA10(symbol=symbol, base=base)
+        # demo.output_MA5_MA10_base(symbol=symbol)
+
+        demoStrategy = DemoStrategy()
+        first_buy_price, first_buy_size \
+            = demoStrategy.get_symbol_first_buy_price(symbol="link3lusdt")
+        print("first_buy_price=%s  first_buy_size=%s" % (first_buy_price, first_buy_size))
+        first_sell_price, first_sell_size \
+            = demoStrategy.get_symbol_first_sell_price(symbol="link3lusdt")
+        print("first_sell_price=%s  first_sell_size=%s" % (first_sell_price, first_sell_size))
 
         #demo_06()
 

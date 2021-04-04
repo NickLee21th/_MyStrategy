@@ -1227,18 +1227,14 @@ class DemoStrategy:
         handler.setFormatter(formatter)
         logger.addHandler(handler)
         self.demo_logger = logger
-        # to_buy_3l = False
-        # to_sell_3l = False
-        # to_buy_3s = False
-        # to_sell_3s = False
         last_delta = None
         up_trend = False
-        down_trend = False
         up_cross_price = 0.0
+        up_cross_first_sell_price = 0.0
+        down_cross_first_buy_price = 0.0
         count = 0
         total_up_rate = 0.0
-        total_down_rate = 0.0
-        total_rate = 0.0
+        total_up_rate_2 = 0.0
         lanuch_time = int(time.time())
         self.demo_print("symbol = %s" % symbol)
         self.demo_print("Launch Time = %s" % timeStamp_to_datetime(lanuch_time))
@@ -1257,38 +1253,57 @@ class DemoStrategy:
                         self.demo_print("last_delta = %s" % last_delta)
                         # 出现上涨信号，开始获取 base 价格
                         up_trend = True
-                        down_trend = False
-                        # 输出 base 的价格
+                        # 输出 base 的最新成交价格
                         _, up_cross_price = get_current_price(symbol)
-                        self.demo_print("Up Cross: %s = %s" % (symbol, up_cross_price))
+                        self.demo_print("[Up Cross] Last deal price: %s = %s" % (symbol, up_cross_price))
+                        # 输出 base 的卖一价
+                        up_cross_first_sell_price, _ = self.get_symbol_first_sell_price(symbol)
+                        self.demo_print("[Up Cross] First SELL price: %s = %s" %
+                                        (symbol, up_cross_first_sell_price))
                     else:
                         last_delta = ma5 - ma10
                         if up_trend:
                             self.demo_print("IN Up Trend")
                             self.demo_print("last_delta = %s" % last_delta)
+                            # 输出 up_rate
                             _, cur_price = get_current_price(symbol)
-                            self.demo_print("%s = %s" % (symbol, cur_price))
+                            self.demo_print("cur_price %s = %s" % (symbol, cur_price))
                             self.demo_print("up_cross %s = %s" % (symbol, up_cross_price))
                             assert up_cross_price > 0.0
                             up_rate = (cur_price - up_cross_price) / up_cross_price
                             self.demo_print("up_rate = %s" % up_rate)
+                            # 输出 up_rate_2
+                            cur_first_buy_price, _ = self.get_symbol_first_buy_price(symbol)
+                            self.demo_print("cur_first_buy_price %s = %s" % (symbol, cur_first_buy_price))
+                            self.demo_print("up_cross_first_sell_price  %s = %s" % (symbol, up_cross_first_sell_price))
+                            assert up_cross_first_sell_price > 0.0
+                            up_rate_2 = (cur_first_buy_price - up_cross_first_sell_price) / up_cross_first_sell_price
+                            self.demo_print("up_rate_2 = %s" % up_rate_2)
                 elif ma5 < ma10 and last_delta is not None:
                     if last_delta >= 0.0:
                         self.demo_print("CATCH Down cross")
                         last_delta = ma5 - ma10
                         self.demo_print("last_delta = %s" % last_delta)
-                        # 出现下跌信号，开始获取 base 的价格
+                        # 出现下跌信号
                         up_trend = False
-                        down_trend = True
-                        # 输出 base 的价格
-                        _, cross_price = get_current_price(symbol)
-                        self.demo_print("Down Cross: %s = %s" % (symbol, cross_price))
                         # 输出 up_rate
                         if up_cross_price > 0.0:
+                            _, cur_price = get_current_price(symbol)
+                            self.demo_print("[Down Cross] cur_price: %s = %s" % (symbol, cur_price))
                             up_rate = (cur_price - up_cross_price) / up_cross_price
                             self.demo_print("up_rate = %s" % up_rate)
                             total_up_rate += up_rate
                             self.demo_print("total_up_rate = %s" % total_up_rate)
+                        # 输出 up_rate_2
+                        if up_cross_first_sell_price > 0.0:
+                            down_cross_first_buy_price, _ = self.get_symbol_first_buy_price(symbol)
+                            self.demo_print("[Down Cross] down_cross_first_buy_price: %s = %s"
+                                            % (symbol, down_cross_first_buy_price))
+                            up_rate_2 \
+                                = (down_cross_first_buy_price - up_cross_first_sell_price) / up_cross_first_sell_price
+                            self.demo_print("up_rate_2 = %s" % up_rate_2)
+                            total_up_rate_2 += up_rate_2
+                            self.demo_print("total_up_rate_2 = %s" % total_up_rate_2)
                     else:
                         last_delta = ma5 - ma10
                 elif last_delta is None:
@@ -1300,6 +1315,37 @@ class DemoStrategy:
             except Exception as ex:
                 self.demo_print("Exception in output_MA5_MA10_base!")
                 self.demo_print("EX: %s" % ex)
+
+    # 获取指定交易对的买一价
+    def get_symbol_first_buy_price(self, symbol="link3lusdt"):
+        first_buy_price = 0.0
+        first_buy_size = 0.0
+        try:
+            res = Get_market_detail_merged(symbol)
+            if res["status"] == "ok":
+                res_tick = res["tick"]
+                first_buy_price = res_tick["bid"][0]
+                first_buy_size = res_tick["bid"][1]
+        except Exception as ex:
+            self.demo_print("Exception in get_symbol_first_sell_price! symbol=%s" % symbol)
+            self.demo_print("EX: %s" % ex)
+        return first_buy_price, first_buy_size
+
+    # 获取指定交易对的卖一价
+    def get_symbol_first_sell_price(self, symbol="link3lusdt"):
+        first_sell_price = 0.0
+        first_sell_size = 0.0
+        try:
+            res = Get_market_detail_merged(symbol)
+            if res["status"] == "ok":
+                res_tick = res["tick"]
+                first_sell_price = res_tick["ask"][0]
+                first_sell_size = res_tick["ask"][1]
+        except Exception as ex:
+            self.demo_print("Exception in get_symbol_first_sell_price! symbol=%s" % symbol)
+            self.demo_print("EX: %s" % ex)
+        return first_sell_price, first_sell_size
+
 
 hbgAnyCall = HbgAnyCall()
 
@@ -1463,6 +1509,21 @@ def Get_market_trade(symbol="btcusdt"):
         headers=None,
         params=params
     )
+
+
+# 获取ticker信息同时提供最近24小时的交易聚合信息
+def Get_market_detail_merged(symbol="link3lusdt"):
+    params = {
+        "symbol": symbol,
+    }
+    return HbgAnyCall().callWebMethod(
+        host_path="https://api.huobi.pro",
+        interface_path="/market/detail/merged",
+        method_type="GET",
+        headers=None,
+        params=params
+    )
+
 
 # 返回历史K线数据。K线周期以新加坡时间为基准开始计算，例如日K线的起始周期为新加坡时间0时至新加坡时间次日0时。
 # 当前 REST API 不支持自定义时间区间，如需要历史固定时间范围的数据，请参考 Websocket API 中的 K 线接口。
