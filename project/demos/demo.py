@@ -38,6 +38,12 @@ class DemoStrategy:
     data_dict = {}
     queue = None
     demo_action_launch_time = int(time.time())
+    # New Idea
+    total_earn_rate_instant = 0.0  # 累计的 以瞬时价格计算的盈利率
+    total_earn_rate_first_BuyAndSell = 0.0  # 累计的 以买一价 和 卖一价 计算的盈利率
+    Holding_Coins = False
+    holding_coins_instant_price = 0.0  # 币种买入时的瞬时价格
+    holding_coins_first_sell_price = 0.0  # 币种买入时的卖一价
 
     def get_from_data_dict(self, index_i):
         OK = False
@@ -1246,7 +1252,7 @@ class DemoStrategy:
                 self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
                 self.demo_print(" MA5 = %s" % ma5)
                 self.demo_print("MA10 = %s" % ma10)
-                if ma5 > ma10 and last_delta is not None:
+                if (ma5 - ma10) > 0.0 and last_delta is not None:
                     if last_delta <= 0.0:
                         self.demo_print("CATCH Up cross")
                         last_delta = ma5 - ma10
@@ -1279,7 +1285,7 @@ class DemoStrategy:
                             assert up_cross_first_sell_price > 0.0
                             up_rate_2 = (cur_first_buy_price - up_cross_first_sell_price) / up_cross_first_sell_price
                             self.demo_print("up_rate_2 = %s" % up_rate_2)
-                elif ma5 < ma10 and last_delta is not None:
+                elif (ma5 - ma10) < 0.0and last_delta is not None:
                     if last_delta >= 0.0:
                         self.demo_print("CATCH Down cross")
                         last_delta = ma5 - ma10
@@ -1316,6 +1322,100 @@ class DemoStrategy:
                 self.demo_print("Exception in output_MA5_MA10_base!")
                 self.demo_print("EX: %s" % ex)
 
+    # 输出 MD5 和 MD10, 新思路——01
+    def output_MA5_MA10_NewIdea_01(self, symbol="ethusdt"):
+        logger = logging.getLogger("Ma5Ma10")
+        logger.setLevel(level=logging.INFO)
+        time_stamp = int(time.time())
+        dt_stamp = timeStamp_to_datetime(time_stamp)
+        dt_value = dt_stamp
+        log_file_name = "Ma5Ma10_base_%s_%s.txt" % (dt_value, symbol)
+        handler = logging.FileHandler(log_file_name)
+        handler.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+        self.demo_logger = logger
+        last_delta = None
+        cur_delta = None
+        up_trend = False
+        up_cross_price = 0.0
+        up_cross_first_sell_price = 0.0
+        down_cross_first_buy_price = 0.0
+        count = 0
+        UP_MARGIN_VALUE, DOWN_MARGIN_VALUE = self.get_margin_values(symbol=symbol)
+        self.total_earn_rate_instant = 0.0  # 累计的 以瞬时价格计算的盈利率
+        self.total_earn_rate_first_BuyAndSell = 0.0  # 累计的 以买一价 和 卖一价 计算的盈利率
+        self.Holding_Coins = False
+        self.holding_coins_instant_price = 0.0  # 币种买入时的瞬时价格
+        self.holding_coins_first_sell_price = 0.0  # 币种买入时的卖一价
+        lanuch_time = int(time.time())
+        self.demo_print("symbol = %s" % symbol)
+        self.demo_print("Launch Time = %s" % timeStamp_to_datetime(lanuch_time))
+        while count < (1000*50):
+            self.demo_print("================================================")
+            count += 1
+            try:
+                ma5, ma10 = get_MA5_MA10(symbol)
+                self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
+                self.demo_print(" MA5 = %s" % ma5)
+                self.demo_print("MA10 = %s" % ma10)
+                cur_delta = ma5 - ma10
+                if cur_delta < DOWN_MARGIN_VALUE:
+                    self.demo_print("ma5 在下边缘之下")
+                    if last_delta is None:
+                        last_delta = cur_delta
+                    elif last_delta >= DOWN_MARGIN_VALUE:
+                        self.demo_print("从上到下穿过下边缘")
+                        if self.Holding_Coins is True:
+                            self.demo_print("已经买入, 则卖出。（可能亏损)")
+                            self.do_sell_coins(symbol=symbol)
+                        else:
+                            self.demo_print("没有买入，则无动作。")
+                        last_delta = cur_delta
+                    else:  # last_delta < DOWN_MARGIN_VALUE
+                        self.demo_print("一直在下边缘之下，无动作。")
+                        last_delta = cur_delta
+                elif DOWN_MARGIN_VALUE <= cur_delta and cur_delta <= UP_MARGIN_VALUE:
+                    self.demo_print("ma5 在 上下边缘 之间")
+                    if last_delta is None:
+                        last_delta = cur_delta
+                    elif last_delta >= UP_MARGIN_VALUE:
+                        self.demo_print("从 上边缘之上 向下 进入 上下边缘 之间.")
+                        if self.Holding_Coins is True:
+                            self.demo_print("已经买入, 则卖出。（可能盈利)")
+                            self.do_sell_coins(symbol=symbol)
+                        else:
+                            self.demo_print("没有买入，则无动作。")
+                        last_delta = cur_delta
+                    elif UP_MARGIN_VALUE < last_delta and last_delta > DOWN_MARGIN_VALUE:
+                        self.demo_print("一直在 上下边缘 之间，无动作。")
+                        last_delta = cur_delta
+                    else:  # last_delta <= DOWN_MARGIN_VALUE
+                        self.demo_print("从下边缘之下 向上 进入 上下边缘 之间")
+                        if self.Holding_Coins is False:
+                            self.demo_print("没有买入，则买入")
+                            self.do_buy_coins(symbol=symbol)
+                        else:
+                            self.demo_print("已经买入，则无动作.")
+                        last_delta = cur_delta
+                else:  # cur_delta > UP_MARGIN_VALUE
+                    self.demo_print("ma5 在上边缘之上")
+                    if last_delta is None:
+                        last_delta = cur_delta
+                    elif last_delta >= UP_MARGIN_VALUE:
+                        self.demo_print("一直在 上边缘 之上")
+                        self.demo_print("达到止盈点时，可以止盈。")
+                    elif UP_MARGIN_VALUE < last_delta and last_delta >= DOWN_MARGIN_VALUE:
+                        self.demo_print("从上下边缘 之间 向上 穿过上边缘")
+                        self.demo_print("达到止盈点时，可以止盈。")
+                    else:  # last_delta < DOWN_MARGIN_VALUE
+                        self.demo_print("从下边缘之下 向上 穿过上边缘")
+                        self.demo_print("达到止盈点时，可以止盈。")
+            except Exception as ex:
+                self.demo_print("Exception in output_MA5_MA10_NewIdea_01!")
+                self.demo_print("EX: %s" % ex)
+
     # 获取指定交易对的买一价
     def get_symbol_first_buy_price(self, symbol="link3lusdt"):
         first_buy_price = 0.0
@@ -1345,6 +1445,123 @@ class DemoStrategy:
             self.demo_print("Exception in get_symbol_first_sell_price! symbol=%s" % symbol)
             self.demo_print("EX: %s" % ex)
         return first_sell_price, first_sell_size
+
+    # 卖出持有的base币
+    def do_sell_coins(self, symbol):
+        try:
+            if self.Holding_Coins is True:
+                # 瞬时价格
+                self.demo_print("币种买入时的瞬时价格， %s: %s" % (symbol, self.holding_coins_instant_price))
+                self.demo_print("以当前币种的 瞬时价格 卖出")
+                _, cur_coins_instant_price = get_current_price(symbol)
+                self.demo_print("卖出时的瞬时价， %s: %s" % (symbol, cur_coins_instant_price))
+                earn_rate_instant \
+                    = (cur_coins_instant_price - self.holding_coins_instant_price) \
+                      / self.holding_coins_instant_price
+                self.demo_print("以瞬时价格计算的盈利率  earn_rate_instant = %s" % earn_rate_instant)
+                self.total_earn_rate_instant += earn_rate_instant
+                self.demo_print("累计的 以瞬时价格计算的盈利率 \n total_earn_rate_instant = %s"
+                                % self.total_earn_rate_instant)
+                # 买一价 和 卖一价
+                self.demo_print("----------------------------------")
+                self.demo_print("币种买入时的卖一价， %s: %s" % (symbol, self.holding_coins_first_sell_price))
+                self.demo_print("以当前币种的 买一价 卖出")
+                cur_first_buy_price, _ = self.get_symbol_first_buy_price(symbol)
+                self.demo_print("卖出时的买一价， %s: %s" % (symbol, cur_first_buy_price))
+                earn_rate_first_BuyAndSell \
+                    = (cur_first_buy_price - self.holding_coins_first_sell_price) \
+                      / self.holding_coins_first_sell_price
+                self.demo_print("以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = %s"
+                                % earn_rate_first_BuyAndSell)
+                self.total_earn_rate_first_BuyAndSell += earn_rate_instant
+                self.demo_print("累计的 以买一价 和 卖一价计算的盈利率 \n total_earn_rate_first_BuyAndSell = %s"
+                                % self.total_earn_rate_first_BuyAndSell)
+                self.Holding_Coins = False
+        except Exception as ex:
+            self.demo_print("Exception in do_sell_coins")
+            self.demo_print("ex: %s" % ex)
+
+    # 买入base币
+    def do_buy_coins(self, symbol):
+        try:
+            if self.Holding_Coins is False:
+                # 瞬时价格
+                _, self.holding_coins_instant_price = get_current_price(symbol)
+                self.demo_print("币种买入时的瞬时价格， %s: %s" % (symbol, self.holding_coins_instant_price))
+                # 卖一价
+                self.demo_print("----------------------------------")
+                self.holding_coins_first_sell_price, _ = self.get_symbol_first_sell_price(symbol)
+                self.demo_print("币种买入时的卖一价， %s: %s" % (symbol, self.holding_coins_first_sell_price))
+                self.Holding_Coins = True
+        except Exception as ex:
+            self.demo_print("Exception in do_buy_coins")
+            self.demo_print("ex: %s" % ex)
+
+    # 获取边缘值
+    def get_margin_values(self, symbol):
+        up_margin_value = 0.0
+        down_margin_value = 0.0
+        if symbol == "bch3lusdt":  # 12.3479
+            up_margin_value = 0.1
+            down_margin_value = -0.1
+        elif symbol == "bch3susdt":  # 0.005315
+            up_margin_value = 0.00001
+            down_margin_value = -0.00001
+        elif symbol == "bsv3lusdt":  # 1.0251
+            up_margin_value = 0.01
+            down_margin_value = -0.01
+        elif symbol == "bsv3susdt":  # 0.014364
+            up_margin_value = 0.0001
+            down_margin_value = -0.0001
+        elif symbol == "btc3lusdt":  # 367.6774
+            up_margin_value = 1.0
+            down_margin_value = -1.0
+        elif symbol == "btc3susdt":  # 0.001677
+            up_margin_value = 0.00001
+            down_margin_value = -0.00001
+        elif symbol == "eos3lusdt":  # 7.7677
+            up_margin_value = 0.001
+            down_margin_value = -0.001
+        elif symbol == "eos3susdt":  # 0.001677
+            up_margin_value = 0.00001
+            down_margin_value = -0.00001
+        elif symbol == "eth3lusdt":  # 66.6768
+            up_margin_value = 0.1
+            down_margin_value = -0.1
+        elif symbol == "eth3susdt":  # 0.001739
+            up_margin_value = 0.00001
+            down_margin_value = -0.00001
+        elif symbol == "fil3lusdt":  # 182.2924
+            up_margin_value = 1.0
+            down_margin_value = -1.0
+        elif symbol == "fil3susdt":  # 0.00019258
+            up_margin_value = 0.000001
+            down_margin_value = -0.000001
+        elif symbol == "link3lusdt":  # 5.3142
+            up_margin_value = 0.01
+            down_margin_value = -0.001
+        elif symbol == "link3susdt":  # 0.00045101
+            up_margin_value = 0.000001
+            down_margin_value = -0.000001
+        elif symbol == "ltc3lusdt":  # 45.7671
+            up_margin_value = 0.1
+            down_margin_value = -0.1
+        elif symbol == "ltc3susdt":  # 0.000618
+            up_margin_value = 0.000001
+            down_margin_value = -0.000001
+        elif symbol == "xrp3lusdt":  # 3.7871
+            up_margin_value = 0.01
+            down_margin_value = -0.01
+        elif symbol == "xrp3susdt":  # 0.0000002226
+            up_margin_value = 0.000000001
+            down_margin_value = -0.000000001
+        elif symbol == "zec3lusdt":  # 3.2651
+            up_margin_value = 0.01
+            down_margin_value = -0.01
+        elif symbol == "zec3susdt":  # 0.005252
+            up_margin_value = 0.00001
+            down_margin_value = -0.00001
+        return up_margin_value, down_margin_value
 
 
 hbgAnyCall = HbgAnyCall()
@@ -1444,6 +1661,7 @@ def get_MA5_MA10(symbol="ethusdt"):
     ret_data = ret["data"]
     count = 0
     close_price = 0.0
+    n_bit = get_nbit_by_symbol(symbol=symbol)
     for item in ret_data:
         if count == 0:
             count += 1
@@ -1452,13 +1670,33 @@ def get_MA5_MA10(symbol="ethusdt"):
             close_price += item["close"]
             if count == 5:
                 ma5 = close_price / count
-                ma5 = round(ma5, 6)
+                ma5 = round(ma5, n_bit)
             count += 1
     ma10 = close_price / (count-1)
-    ma10 = round(ma10, 6)
+    ma10 = round(ma10, n_bit)
     # print("ma5=%s" % ma5)
     # print("ma10=%s" % ma10)
     return ma5, ma10
+
+# 根据币种获取小数位精度
+def get_nbit_by_symbol(symbol="ethusdt"):
+    n_bit = 6
+    if symbol in (
+            "bch3lusdt", "bch3susdt","bsv3lusdt", "bsv3susdt","btc3lusdt", "btc3susdt",
+            "eos3lusdt", "eos3susdt", "eth3lusdt", "eth3susdt", "fil3lusdt",
+            "link3lusdt", "ltc3lusdt", "ltc3susdt", "zec3lusdt", "zec3susdt",
+            "xrp3lusdt"
+    ):
+        n_bit = 6
+    elif symbol in (
+            "fil3susdt",
+            "link3susdt",
+    ):
+        n_bit = 8
+    elif symbol in ("xrp3susdt"):
+        n_bit = 10
+    return n_bit
+
 
 # 返回当前交易对的最新的交易价格
 def get_current_price(symbol="btcusdt"):
