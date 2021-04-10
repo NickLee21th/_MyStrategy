@@ -1,0 +1,409 @@
+2021-03-20 16:17:06,168 - bsv - INFO - I'm bsv in demo_action
+2021-03-20 16:20:00,174 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:20:00
+2021-03-20 16:20:00,174 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:20:00,176 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:20:00,176 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:20:00
+2021-03-20 16:20:00,176 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:20:00
+2021-03-20 16:20:00,176 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:20:00,177 - bsv - INFO - StartTime= 2021-03-20 16:20:00
+2021-03-20 16:20:00,614 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:20:01,048 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:20:01,495 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:20:01,495 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:20:01,496 - bsv - INFO - FinishTime= 2021-03-20 16:20:01
+2021-03-20 16:20:01,496 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:20:01
+2021-03-20 16:20:01,496 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:20:01
+2021-03-20 16:20:01,842 - bsv - INFO - count_A_earn = 466 , count_B_earn = 32 , threshold_value=0.0
+2021-03-20 16:20:01,842 - bsv - INFO - last_open=216.3599, last_close=216.1717, invest_direction=planA, last_ts=2021-03-20 16:15:00
+2021-03-20 16:20:01,842 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:20:01
+2021-03-20 16:20:01,842 - bsv - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-20 16:15:00
+2021-03-20 16:20:01,842 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:20:01
+2021-03-20 16:20:03,221 - bsv - INFO - current_balance = 10.0
+2021-03-20 16:20:03,221 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:20:03,221 - bsv - INFO - symbol:bsv3susdt, currency:bsv3s, cur_price:0.039035, amount=256.1803509670808, ts:2021-03-20 16:20:04
+2021-03-20 16:20:03,221 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:20:03,221 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:20:08,987 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:20:08,988 - bsv - INFO - order_id=236885505344015, field_amount=255.40827011978647, price=0.0, actual_buy_market_amount=255.40827011978647
+2021-03-20 16:20:08,988 - bsv - INFO - actual_last_symbol=bsv3susdt actual_last_amount=255.40827011978647
+2021-03-20 16:20:08,988 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:20:08
+2021-03-20 16:20:08,988 - bsv - INFO - =========================================
+2021-03-20 16:20:08,989 - bsv - INFO - sleep 292 seconds .....
+2021-03-20 16:25:00,997 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:25:00
+2021-03-20 16:25:01,272 - bsv - INFO - SELL LAST COIN
+2021-03-20 16:25:01,272 - bsv - INFO - last_symbol:bsv3susdt, last_currency:bsv3s, last_amount:256.1803509670808, sell_cur_price:0.039101
+2021-03-20 16:25:01,272 - bsv - INFO - sell_cur_price * last_amount = 10.016905910299998
+2021-03-20 16:25:01,272 - bsv - INFO - current_balance = 10.016905910299998  sell_ts:2021-03-20 16:25:02  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 16:25:01,272 - bsv - INFO - demo_action_running_duration: 0:05:02
+2021-03-20 16:25:01,272 - bsv - INFO - earning_ratio = 0.1690591029999844%
+2021-03-20 16:25:01,272 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:25:01,272 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:25:01,273 - bsv - INFO - ### in sell_limit_price, symbol: bsv3susdt, amount: 255.4082, limit_price: 0.039101
+2021-03-20 16:25:03,672 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.98671876995377
+2021-03-20 16:25:03,672 - bsv - INFO - actual_balance=9.98671876995377, ts_actual_sell=2021-03-20 16:25:03
+2021-03-20 16:25:03,672 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:25:03,672 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:25:03,672 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:25:03,673 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:25:03
+2021-03-20 16:25:03,673 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:25:03
+2021-03-20 16:25:03,673 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:25:03,673 - bsv - INFO - StartTime= 2021-03-20 16:25:03
+2021-03-20 16:25:05,117 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:25:05,515 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:25:08,025 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:25:08,025 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:25:08,025 - bsv - INFO - FinishTime= 2021-03-20 16:25:08
+2021-03-20 16:25:08,025 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:25:08
+2021-03-20 16:25:08,025 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:25:08
+2021-03-20 16:25:08,276 - bsv - INFO - count_A_earn = 467 , count_B_earn = 31 , threshold_value=0.0
+2021-03-20 16:25:08,276 - bsv - INFO - last_open=216.1382, last_close=216.027, invest_direction=planA, last_ts=2021-03-20 16:20:00
+2021-03-20 16:25:08,276 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:25:08
+2021-03-20 16:25:08,276 - bsv - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-20 16:20:00
+2021-03-20 16:25:08,276 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:25:08
+2021-03-20 16:25:09,664 - bsv - INFO - current_balance = 10.016905910299998
+2021-03-20 16:25:09,664 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:25:09,664 - bsv - INFO - symbol:bsv3susdt, currency:bsv3s, cur_price:0.039101, amount=255.74793483542624, ts:2021-03-20 16:25:10
+2021-03-20 16:25:09,664 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:25:09,664 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:25:12,354 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:25:12,356 - bsv - INFO - order_id=236885504758486, field_amount=255.74718060120446, price=0.0, actual_buy_market_amount=255.74718060120446
+2021-03-20 16:25:12,356 - bsv - INFO - actual_last_symbol=bsv3susdt actual_last_amount=255.74718060120446
+2021-03-20 16:25:12,356 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:25:12
+2021-03-20 16:25:12,356 - bsv - INFO - =========================================
+2021-03-20 16:25:12,357 - bsv - INFO - sleep 288 seconds .....
+2021-03-20 16:30:00,369 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:30:00
+2021-03-20 16:30:00,700 - bsv - INFO - SELL LAST COIN
+2021-03-20 16:30:00,701 - bsv - INFO - last_symbol:bsv3susdt, last_currency:bsv3s, last_amount:255.74793483542624, sell_cur_price:0.039075
+2021-03-20 16:30:00,701 - bsv - INFO - sell_cur_price * last_amount = 9.993349192499998
+2021-03-20 16:30:00,701 - bsv - INFO - current_balance = 10.010255102799997  sell_ts:2021-03-20 16:30:01  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 16:30:00,701 - bsv - INFO - demo_action_running_duration: 0:10:01
+2021-03-20 16:30:00,701 - bsv - INFO - earning_ratio = 0.10255102799996862%
+2021-03-20 16:30:00,701 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:30:00,701 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:30:00,702 - bsv - INFO - ### in sell_limit_price, symbol: bsv3susdt, amount: 255.7471, limit_price: 0.039075
+2021-03-20 16:30:00,992 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.993321081992065
+2021-03-20 16:30:00,992 - bsv - INFO - actual_balance=9.980039851945834, ts_actual_sell=2021-03-20 16:30:00
+2021-03-20 16:30:00,993 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:30:00,993 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:30:00,993 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:30:00,993 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:30:00
+2021-03-20 16:30:00,994 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:30:00
+2021-03-20 16:30:00,994 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:30:00,994 - bsv - INFO - StartTime= 2021-03-20 16:30:00
+2021-03-20 16:30:03,408 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:30:03,745 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:30:07,416 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:30:07,420 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:30:07,421 - bsv - INFO - FinishTime= 2021-03-20 16:30:07
+2021-03-20 16:30:07,421 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:30:07
+2021-03-20 16:30:07,421 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:30:07
+2021-03-20 16:30:08,152 - bsv - INFO - count_A_earn = 465 , count_B_earn = 30 , threshold_value=0.0
+2021-03-20 16:30:08,153 - bsv - INFO - last_open=216.0331, last_close=216.1459, invest_direction=planA, last_ts=2021-03-20 16:25:00
+2021-03-20 16:30:08,153 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:30:08
+2021-03-20 16:30:08,153 - bsv - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 16:25:00
+2021-03-20 16:30:08,153 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:30:08
+2021-03-20 16:30:09,477 - bsv - INFO - current_balance = 10.010255102799997
+2021-03-20 16:30:09,477 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:30:09,477 - bsv - INFO - symbol:bsv3lusdt, currency:bsv3l, cur_price:0.9914, amount=10.086746015735324, ts:2021-03-20 16:30:10
+2021-03-20 16:30:09,477 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:30:09,477 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:30:12,125 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:30:12,126 - bsv - INFO - order_id=236885538324505, field_amount=10.07658202337767, price=0.0, actual_buy_market_amount=10.07658202337767
+2021-03-20 16:30:12,126 - bsv - INFO - actual_last_symbol=bsv3lusdt actual_last_amount=10.07658202337767
+2021-03-20 16:30:12,126 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:30:12
+2021-03-20 16:30:12,126 - bsv - INFO - =========================================
+2021-03-20 16:30:12,126 - bsv - INFO - sleep 288 seconds .....
+2021-03-20 16:35:00,135 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:35:00
+2021-03-20 16:35:00,488 - bsv - INFO - SELL LAST COIN
+2021-03-20 16:35:00,489 - bsv - INFO - last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:10.086746015735324, sell_cur_price:0.9914
+2021-03-20 16:35:00,489 - bsv - INFO - sell_cur_price * last_amount = 9.99995438
+2021-03-20 16:35:00,489 - bsv - INFO - current_balance = 10.010209482799997  sell_ts:2021-03-20 16:35:01  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 16:35:00,489 - bsv - INFO - demo_action_running_duration: 0:15:01
+2021-03-20 16:35:00,489 - bsv - INFO - earning_ratio = 0.10209482799997005%
+2021-03-20 16:35:00,489 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:35:00,489 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:35:00,489 - bsv - INFO - ### in sell_limit_price, symbol: bsv3lusdt, amount: 10.0765, limit_price: 0.9914
+2021-03-20 16:35:00,846 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.989923417976621
+2021-03-20 16:35:00,847 - bsv - INFO - actual_balance=9.969963269922456, ts_actual_sell=2021-03-20 16:35:00
+2021-03-20 16:35:00,847 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:35:00,847 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:35:00,850 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:35:00,850 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:35:00
+2021-03-20 16:35:00,850 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:35:00
+2021-03-20 16:35:00,851 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:35:00,851 - bsv - INFO - StartTime= 2021-03-20 16:35:00
+2021-03-20 16:35:01,275 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:35:01,649 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:35:04,168 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:35:04,168 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:35:04,168 - bsv - INFO - FinishTime= 2021-03-20 16:35:04
+2021-03-20 16:35:04,168 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:35:04
+2021-03-20 16:35:04,168 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:35:04
+2021-03-20 16:35:04,511 - bsv - INFO - count_A_earn = 469 , count_B_earn = 29 , threshold_value=0.0
+2021-03-20 16:35:04,511 - bsv - INFO - last_open=216.0812, last_close=215.9904, invest_direction=planA, last_ts=2021-03-20 16:30:00
+2021-03-20 16:35:04,511 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:35:04
+2021-03-20 16:35:04,512 - bsv - INFO - invest_direction=planA, last_trend=-1, last_ts=2021-03-20 16:30:00
+2021-03-20 16:35:04,512 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:35:04
+2021-03-20 16:35:04,777 - bsv - INFO - current_balance = 10.010209482799997
+2021-03-20 16:35:04,777 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:35:04,777 - bsv - INFO - symbol:bsv3susdt, currency:bsv3s, cur_price:0.039074, amount=255.924655781338, ts:2021-03-20 16:35:05
+2021-03-20 16:35:04,777 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:35:04,777 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:35:11,783 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:35:11,785 - bsv - INFO - order_id=236885622661715, field_amount=254.71217524197655, price=0.0, actual_buy_market_amount=254.71217524197655
+2021-03-20 16:35:11,786 - bsv - INFO - actual_last_symbol=bsv3susdt actual_last_amount=254.71217524197655
+2021-03-20 16:35:11,786 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:35:11
+2021-03-20 16:35:11,786 - bsv - INFO - =========================================
+2021-03-20 16:35:11,789 - bsv - INFO - sleep 289 seconds .....
+2021-03-20 16:40:00,797 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:40:00
+2021-03-20 16:40:01,041 - bsv - INFO - SELL LAST COIN
+2021-03-20 16:40:01,041 - bsv - INFO - last_symbol:bsv3susdt, last_currency:bsv3s, last_amount:255.924655781338, sell_cur_price:0.039204
+2021-03-20 16:40:01,041 - bsv - INFO - sell_cur_price * last_amount = 10.033268018400001
+2021-03-20 16:40:01,041 - bsv - INFO - current_balance = 10.043477501199998  sell_ts:2021-03-20 16:40:02  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 16:40:01,041 - bsv - INFO - demo_action_running_duration: 0:20:02
+2021-03-20 16:40:01,042 - bsv - INFO - earning_ratio = 0.4347750119999816%
+2021-03-20 16:40:01,042 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:40:01,042 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:40:01,042 - bsv - INFO - ### in sell_limit_price, symbol: bsv3susdt, amount: 254.7121, limit_price: 0.039204
+2021-03-20 16:40:01,366 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.98573611818645
+2021-03-20 16:40:01,366 - bsv - INFO - actual_balance=9.955699388108906, ts_actual_sell=2021-03-20 16:40:01
+2021-03-20 16:40:01,366 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:40:01,366 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:40:01,367 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:40:01,367 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:40:01
+2021-03-20 16:40:01,367 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:40:01
+2021-03-20 16:40:01,367 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:40:01,367 - bsv - INFO - StartTime= 2021-03-20 16:40:01
+2021-03-20 16:40:02,812 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:40:03,253 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:40:03,566 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:40:03,566 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:40:03,566 - bsv - INFO - FinishTime= 2021-03-20 16:40:03
+2021-03-20 16:40:03,567 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:40:03
+2021-03-20 16:40:03,567 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:40:03
+2021-03-20 16:40:03,827 - bsv - INFO - count_A_earn = 467 , count_B_earn = 28 , threshold_value=0.0
+2021-03-20 16:40:03,827 - bsv - INFO - last_open=215.9511, last_close=215.9668, invest_direction=planA, last_ts=2021-03-20 16:35:00
+2021-03-20 16:40:03,827 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:40:03
+2021-03-20 16:40:03,827 - bsv - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 16:35:00
+2021-03-20 16:40:03,827 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:40:03
+2021-03-20 16:40:04,139 - bsv - INFO - current_balance = 10.043477501199998
+2021-03-20 16:40:04,139 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:40:04,139 - bsv - INFO - symbol:bsv3lusdt, currency:bsv3l, cur_price:0.9879, amount=10.122482032594393, ts:2021-03-20 16:40:05
+2021-03-20 16:40:04,139 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:40:04,140 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:40:07,946 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:40:07,946 - bsv - INFO - order_id=236885638949113, field_amount=10.110201193003741, price=0.0, actual_buy_market_amount=10.110201193003741
+2021-03-20 16:40:07,946 - bsv - INFO - actual_last_symbol=bsv3lusdt actual_last_amount=10.110201193003741
+2021-03-20 16:40:07,947 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:40:07
+2021-03-20 16:40:07,947 - bsv - INFO - =========================================
+2021-03-20 16:40:07,947 - bsv - INFO - sleep 293 seconds .....
+2021-03-20 16:45:00,957 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:45:00
+2021-03-20 16:45:02,311 - bsv - INFO - SELL LAST COIN
+2021-03-20 16:45:02,312 - bsv - INFO - last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:10.122482032594393, sell_cur_price:0.9901
+2021-03-20 16:45:02,312 - bsv - INFO - sell_cur_price * last_amount = 10.02218824
+2021-03-20 16:45:02,313 - bsv - INFO - current_balance = 10.065665741199998  sell_ts:2021-03-20 16:45:03  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 16:45:02,313 - bsv - INFO - demo_action_running_duration: 0:25:03
+2021-03-20 16:45:02,313 - bsv - INFO - earning_ratio = 0.6566574119999835%
+2021-03-20 16:45:02,313 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:45:02,314 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:45:02,314 - bsv - INFO - ### in sell_limit_price, symbol: bsv3lusdt, amount: 10.1102, limit_price: 0.9901
+2021-03-20 16:45:02,609 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.010110201193005
+2021-03-20 16:45:02,609 - bsv - INFO - actual_balance=9.96580958930191, ts_actual_sell=2021-03-20 16:45:02
+2021-03-20 16:45:02,609 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:45:02,610 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:45:02,610 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:45:02,610 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:45:02
+2021-03-20 16:45:02,610 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:45:02
+2021-03-20 16:45:02,611 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:45:02,611 - bsv - INFO - StartTime= 2021-03-20 16:45:02
+2021-03-20 16:45:05,245 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:45:05,673 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:45:08,233 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:45:08,234 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:45:08,234 - bsv - INFO - FinishTime= 2021-03-20 16:45:08
+2021-03-20 16:45:08,234 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:45:08
+2021-03-20 16:45:08,234 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:45:08
+2021-03-20 16:45:08,515 - bsv - INFO - count_A_earn = 471 , count_B_earn = 27 , threshold_value=0.0
+2021-03-20 16:45:08,516 - bsv - INFO - last_open=216.0075, last_close=216.0274, invest_direction=planA, last_ts=2021-03-20 16:40:00
+2021-03-20 16:45:08,516 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:45:08
+2021-03-20 16:45:08,516 - bsv - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 16:40:00
+2021-03-20 16:45:08,516 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:45:08
+2021-03-20 16:45:08,835 - bsv - INFO - current_balance = 10.065665741199998
+2021-03-20 16:45:08,835 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:45:08,835 - bsv - INFO - symbol:bsv3lusdt, currency:bsv3l, cur_price:0.9901, amount=10.099989900010101, ts:2021-03-20 16:45:09
+2021-03-20 16:45:08,835 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:45:08,836 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:45:09,457 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:45:09,458 - bsv - INFO - order_id=236885698204626, field_amount=10.083694665725522, price=0.0, actual_buy_market_amount=10.083694665725522
+2021-03-20 16:45:09,458 - bsv - INFO - actual_last_symbol=bsv3lusdt actual_last_amount=10.083694665725522
+2021-03-20 16:45:09,458 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:45:09
+2021-03-20 16:45:09,458 - bsv - INFO - =========================================
+2021-03-20 16:45:09,459 - bsv - INFO - sleep 291 seconds .....
+2021-03-20 16:50:00,468 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:50:00
+2021-03-20 16:50:01,830 - bsv - INFO - SELL LAST COIN
+2021-03-20 16:50:01,830 - bsv - INFO - last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:10.099989900010101, sell_cur_price:0.992
+2021-03-20 16:50:01,831 - bsv - INFO - sell_cur_price * last_amount = 10.0191008
+2021-03-20 16:50:01,831 - bsv - INFO - current_balance = 10.084766541199999  sell_ts:2021-03-20 16:50:02  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 16:50:01,831 - bsv - INFO - demo_action_running_duration: 0:30:02
+2021-03-20 16:50:01,831 - bsv - INFO - earning_ratio = 0.8476654119999871%
+2021-03-20 16:50:01,831 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:50:01,831 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:50:01,831 - bsv - INFO - ### in sell_limit_price, symbol: bsv3lusdt, amount: 10.0836, limit_price: 0.992
+2021-03-20 16:50:02,134 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.003025108399719
+2021-03-20 16:50:02,134 - bsv - INFO - actual_balance=9.968834697701629, ts_actual_sell=2021-03-20 16:50:02
+2021-03-20 16:50:02,134 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:50:02,134 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:50:02,135 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:50:02,135 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:50:02
+2021-03-20 16:50:02,135 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:50:02
+2021-03-20 16:50:02,135 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:50:02,135 - bsv - INFO - StartTime= 2021-03-20 16:50:02
+2021-03-20 16:50:03,577 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:50:15,950 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:50:16,359 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:50:16,359 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:50:16,359 - bsv - INFO - FinishTime= 2021-03-20 16:50:16
+2021-03-20 16:50:16,359 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:50:16
+2021-03-20 16:50:16,360 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:50:16
+2021-03-20 16:50:16,670 - bsv - INFO - count_A_earn = 469 , count_B_earn = 26 , threshold_value=0.0
+2021-03-20 16:50:16,670 - bsv - INFO - last_open=216.054, last_close=216.0654, invest_direction=planA, last_ts=2021-03-20 16:45:00
+2021-03-20 16:50:16,670 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:50:16
+2021-03-20 16:50:16,670 - bsv - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 16:45:00
+2021-03-20 16:50:16,671 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:50:16
+2021-03-20 16:50:16,949 - bsv - INFO - current_balance = 10.084766541199999
+2021-03-20 16:50:16,949 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:50:16,949 - bsv - INFO - symbol:bsv3lusdt, currency:bsv3l, cur_price:0.992, amount=10.080645161290322, ts:2021-03-20 16:50:17
+2021-03-20 16:50:16,949 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:50:16,950 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:50:18,641 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:50:18,641 - bsv - INFO - order_id=236885740204453, field_amount=10.075566750629722, price=0.0, actual_buy_market_amount=10.075566750629722
+2021-03-20 16:50:18,642 - bsv - INFO - actual_last_symbol=bsv3lusdt actual_last_amount=10.075566750629722
+2021-03-20 16:50:18,642 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:50:18
+2021-03-20 16:50:18,642 - bsv - INFO - =========================================
+2021-03-20 16:50:18,643 - bsv - INFO - sleep 282 seconds .....
+2021-03-20 16:55:00,651 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:55:00
+2021-03-20 16:55:00,970 - bsv - INFO - SELL LAST COIN
+2021-03-20 16:55:00,970 - bsv - INFO - last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:10.080645161290322, sell_cur_price:1.003
+2021-03-20 16:55:00,971 - bsv - INFO - sell_cur_price * last_amount = 10.1108418
+2021-03-20 16:55:00,974 - bsv - INFO - current_balance = 10.195608341199998  sell_ts:2021-03-20 16:55:01  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 16:55:00,974 - bsv - INFO - demo_action_running_duration: 0:35:01
+2021-03-20 16:55:00,974 - bsv - INFO - earning_ratio = 1.9560834119999804%
+2021-03-20 16:55:00,974 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:55:00,974 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:55:00,974 - bsv - INFO - ### in sell_limit_price, symbol: bsv3lusdt, amount: 10.0755, limit_price: 1.003
+2021-03-20 16:55:03,447 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.10579345088161
+2021-03-20 16:55:03,447 - bsv - INFO - actual_balance=10.074628148583239, ts_actual_sell=2021-03-20 16:55:03
+2021-03-20 16:55:03,447 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:55:03,447 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 16:55:03,448 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:55:03,448 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:55:03
+2021-03-20 16:55:03,448 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:55:03
+2021-03-20 16:55:03,448 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 16:55:03,449 - bsv - INFO - StartTime= 2021-03-20 16:55:03
+2021-03-20 16:55:04,870 - bsv - INFO - bsvusdt  1000
+2021-03-20 16:55:07,342 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 16:55:09,756 - bsv - INFO - bsv3susdt  1000
+2021-03-20 16:55:09,756 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:55:09,756 - bsv - INFO - FinishTime= 2021-03-20 16:55:09
+2021-03-20 16:55:09,756 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:55:09
+2021-03-20 16:55:09,756 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:55:09
+2021-03-20 16:55:09,953 - bsv - INFO - count_A_earn = 473 , count_B_earn = 25 , threshold_value=0.0
+2021-03-20 16:55:09,953 - bsv - INFO - last_open=216.1349, last_close=216.8764, invest_direction=planA, last_ts=2021-03-20 16:50:00
+2021-03-20 16:55:09,954 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:55:09
+2021-03-20 16:55:09,954 - bsv - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 16:50:00
+2021-03-20 16:55:09,954 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:55:09
+2021-03-20 16:55:12,322 - bsv - INFO - current_balance = 10.195608341199998
+2021-03-20 16:55:12,322 - bsv - INFO - BUY NEW COINS
+2021-03-20 16:55:12,322 - bsv - INFO - symbol:bsv3lusdt, currency:bsv3l, cur_price:1.003, amount=9.970089730807578, ts:2021-03-20 16:55:13
+2021-03-20 16:55:12,322 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:55:12,322 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:55:13,869 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:55:13,869 - bsv - INFO - order_id=236885773528812, field_amount=9.970089730807578, price=0.0, actual_buy_market_amount=9.970089730807578
+2021-03-20 16:55:13,869 - bsv - INFO - actual_last_symbol=bsv3lusdt actual_last_amount=9.970089730807578
+2021-03-20 16:55:13,869 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:55:13
+2021-03-20 16:55:13,869 - bsv - INFO - =========================================
+2021-03-20 16:55:13,870 - bsv - INFO - sleep 287 seconds .....
+2021-03-20 17:00:00,882 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 17:00:00
+2021-03-20 17:00:01,175 - bsv - INFO - SELL LAST COIN
+2021-03-20 17:00:01,175 - bsv - INFO - last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:9.970089730807578, sell_cur_price:1.0072
+2021-03-20 17:00:01,176 - bsv - INFO - sell_cur_price * last_amount = 10.041784000000002
+2021-03-20 17:00:01,176 - bsv - INFO - current_balance = 10.2373923412  sell_ts:2021-03-20 17:00:02  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 17:00:01,176 - bsv - INFO - demo_action_running_duration: 0:40:02
+2021-03-20 17:00:01,176 - bsv - INFO - earning_ratio = 2.3739234119999963%
+2021-03-20 17:00:01,177 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 17:00:01,177 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 17:00:01,177 - bsv - INFO - ### in sell_limit_price, symbol: bsv3lusdt, amount: 9.97, limit_price: 1.0072
+2021-03-20 17:00:01,467 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.041874376869393
+2021-03-20 17:00:01,467 - bsv - INFO - actual_balance=10.116502525452631, ts_actual_sell=2021-03-20 17:00:01
+2021-03-20 17:00:01,467 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 17:00:01,468 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 17:00:01,468 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 17:00:01,468 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 17:00:01
+2021-03-20 17:00:01,468 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 17:00:01
+2021-03-20 17:00:01,468 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 17:00:01,468 - bsv - INFO - StartTime= 2021-03-20 17:00:01
+2021-03-20 17:00:01,894 - bsv - INFO - bsvusdt  1000
+2021-03-20 17:00:02,343 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 17:00:02,696 - bsv - INFO - bsv3susdt  1000
+2021-03-20 17:00:02,696 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 17:00:02,696 - bsv - INFO - FinishTime= 2021-03-20 17:00:02
+2021-03-20 17:00:02,696 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 17:00:02
+2021-03-20 17:00:02,696 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 17:00:02
+2021-03-20 17:00:02,975 - bsv - INFO - count_A_earn = 474 , count_B_earn = 24 , threshold_value=0.0
+2021-03-20 17:00:02,975 - bsv - INFO - last_open=216.8745, last_close=217.2403, invest_direction=planA, last_ts=2021-03-20 16:55:00
+2021-03-20 17:00:02,975 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 17:00:02
+2021-03-20 17:00:02,975 - bsv - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 16:55:00
+2021-03-20 17:00:02,976 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 17:00:02
+2021-03-20 17:00:03,315 - bsv - INFO - current_balance = 10.2373923412
+2021-03-20 17:00:03,315 - bsv - INFO - BUY NEW COINS
+2021-03-20 17:00:03,315 - bsv - INFO - symbol:bsv3lusdt, currency:bsv3l, cur_price:1.0072, amount=9.928514694201747, ts:2021-03-20 17:00:04
+2021-03-20 17:00:03,315 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 17:00:03,316 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 17:00:04,953 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 17:00:04,953 - bsv - INFO - order_id=236885789915251, field_amount=9.928514694201747, price=0.0, actual_buy_market_amount=9.928514694201747
+2021-03-20 17:00:04,953 - bsv - INFO - actual_last_symbol=bsv3lusdt actual_last_amount=9.928514694201747
+2021-03-20 17:00:04,953 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 17:00:04
+2021-03-20 17:00:04,954 - bsv - INFO - =========================================
+2021-03-20 17:00:04,954 - bsv - INFO - sleep 296 seconds .....
+2021-03-20 17:05:00,970 - bsv - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 17:05:00
+2021-03-20 17:05:01,340 - bsv - INFO - SELL LAST COIN
+2021-03-20 17:05:01,340 - bsv - INFO - last_symbol:bsv3lusdt, last_currency:bsv3l, last_amount:9.928514694201747, sell_cur_price:1.0066
+2021-03-20 17:05:01,341 - bsv - INFO - sell_cur_price * last_amount = 9.9940281
+2021-03-20 17:05:01,341 - bsv - INFO - current_balance = 10.2314204412  sell_ts:2021-03-20 17:05:02  demo_action_launch_time: 2021-03-20 16:20:00
+2021-03-20 17:05:01,341 - bsv - INFO - demo_action_running_duration: 0:45:02
+2021-03-20 17:05:01,341 - bsv - INFO - earning_ratio = 2.3142044119999916%
+2021-03-20 17:05:01,341 - bsv - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 17:05:01,341 - bsv - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 17:05:01,341 - bsv - INFO - ### in sell_limit_price, symbol: bsv3lusdt, amount: 9.9285, limit_price: 1.0066
+2021-03-20 17:05:01,739 - bsv - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.994042891183478
+2021-03-20 17:05:01,740 - bsv - INFO - actual_balance=10.110545416636109, ts_actual_sell=2021-03-20 17:05:01
+2021-03-20 17:05:01,740 - bsv - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 17:05:01,740 - bsv - INFO - SEND QUEUE INFO - START
+2021-03-20 17:05:01,741 - bsv - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 17:05:01,742 - bsv - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 17:05:01
+2021-03-20 17:05:01,742 - bsv - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 17:05:01
+2021-03-20 17:05:01,755 - bsv - INFO - bsv  get_ALL_symbol_trend_data START
+2021-03-20 17:05:01,756 - bsv - INFO - StartTime= 2021-03-20 17:05:01
+2021-03-20 17:05:02,222 - bsv - INFO - bsvusdt  1000
+2021-03-20 17:05:03,798 - bsv - INFO - bsv3lusdt  1000
+2021-03-20 17:05:04,253 - bsv - INFO - bsv3susdt  1000
+2021-03-20 17:05:04,253 - bsv - INFO - bsv  get_ALL_symbol_trend_data FINISH
+2021-03-20 17:05:04,253 - bsv - INFO - FinishTime= 2021-03-20 17:05:04
+2021-03-20 17:05:04,254 - bsv - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 17:05:04
+2021-03-20 17:05:04,254 - bsv - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 17:05:04
+2021-03-20 17:05:04,943 - bsv - INFO - count_A_earn = 472 , count_B_earn = 23 , threshold_value=0.0
+2021-03-20 17:05:04,943 - bsv - INFO - last_open=217.2403, last_close=217.2928, invest_direction=planA, last_ts=2021-03-20 17:00:00
+2021-03-20 17:05:04,943 - bsv - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 17:05:04
+2021-03-20 17:05:04,944 - bsv - INFO - invest_direction=planA, last_trend=1, last_ts=2021-03-20 17:00:00
+2021-03-20 17:05:04,944 - bsv - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 17:05:04
+2021-03-20 17:05:05,219 - bsv - INFO - current_balance = 10.2314204412
+2021-03-20 17:05:05,219 - bsv - INFO - BUY NEW COINS
+2021-03-20 17:05:05,219 - bsv - INFO - symbol:bsv3lusdt, currency:bsv3l, cur_price:1.0066, amount=9.934432743890325, ts:2021-03-20 17:05:06
+2021-03-20 17:05:05,219 - bsv - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 17:05:05,219 - bsv - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 17:05:05,815 - bsv - INFO - IN get_actual_buy_market_amount
+2021-03-20 17:05:05,815 - bsv - INFO - order_id=236885874315144, field_amount=9.934424503968254, price=0.0, actual_buy_market_amount=9.934424503968254
+2021-03-20 17:05:05,815 - bsv - INFO - actual_last_symbol=bsv3lusdt actual_last_amount=9.934424503968254
+2021-03-20 17:05:05,817 - bsv - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 17:05:05
+2021-03-20 17:05:05,817 - bsv - INFO - =========================================
+2021-03-20 17:05:05,818 - bsv - INFO - sleep 295 seconds .....

@@ -1473,7 +1473,7 @@ class DemoStrategy:
                       / self.holding_coins_first_sell_price
                 self.demo_print("以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = %s"
                                 % earn_rate_first_BuyAndSell)
-                self.total_earn_rate_first_BuyAndSell += earn_rate_instant
+                self.total_earn_rate_first_BuyAndSell += earn_rate_first_BuyAndSell
                 self.demo_print("累计的 以买一价 和 卖一价计算的盈利率 \n total_earn_rate_first_BuyAndSell = %s"
                                 % self.total_earn_rate_first_BuyAndSell)
                 self.Holding_Coins = False

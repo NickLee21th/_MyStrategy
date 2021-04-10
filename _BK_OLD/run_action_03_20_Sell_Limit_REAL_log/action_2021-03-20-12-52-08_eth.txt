@@ -1,0 +1,1607 @@
+2021-03-20 12:52:10,393 - eth - INFO - I'm eth in demo_action
+2021-03-20 12:55:00,401 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 12:55:00
+2021-03-20 12:55:00,401 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 12:55:00,403 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 12:55:00,403 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 12:55:00
+2021-03-20 12:55:00,403 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 12:55:00
+2021-03-20 12:55:00,403 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 12:55:00,403 - eth - INFO - StartTime= 2021-03-20 12:55:00
+2021-03-20 12:55:07,611 - eth - INFO - ethusdt  1000
+2021-03-20 12:55:08,127 - eth - INFO - eth3lusdt  1000
+2021-03-20 12:55:11,584 - eth - INFO - eth3susdt  1000
+2021-03-20 12:55:11,585 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 12:55:11,585 - eth - INFO - FinishTime= 2021-03-20 12:55:11
+2021-03-20 12:55:11,587 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 12:55:11
+2021-03-20 12:55:11,587 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 12:55:11
+2021-03-20 12:55:14,348 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 12:55:14,414 - eth - INFO - last_open=1829.72, last_close=1830.43, invest_direction=planB, last_ts=2021-03-20 12:50:00
+2021-03-20 12:55:14,415 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 12:55:14
+2021-03-20 12:55:14,415 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 12:50:00
+2021-03-20 12:55:14,415 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 12:55:14
+2021-03-20 12:55:15,765 - eth - INFO - current_balance = 10.0
+2021-03-20 12:55:19,446 - eth - INFO - BUY NEW COINS
+2021-03-20 12:55:19,446 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003061, amount=3266.906239790918, ts:2021-03-20 12:55:16
+2021-03-20 12:55:19,447 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 12:55:19,447 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 12:55:24,453 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 12:55:24,455 - eth - INFO - order_id=236883777270118, field_amount=3258.3903551645485, price=0.0, actual_buy_market_amount=3258.3903551645485
+2021-03-20 12:55:24,455 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3258.3903551645485
+2021-03-20 12:55:24,456 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 12:55:24
+2021-03-20 12:55:24,456 - eth - INFO - =========================================
+2021-03-20 12:55:24,457 - eth - INFO - sleep 276 seconds .....
+2021-03-20 13:00:00,467 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:00:00
+2021-03-20 13:00:05,658 - eth - INFO - SELL LAST COIN
+2021-03-20 13:00:05,658 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3266.906239790918, sell_cur_price:0.00309
+2021-03-20 13:00:05,658 - eth - INFO - sell_cur_price * last_amount = 10.094740280953935
+2021-03-20 13:00:05,659 - eth - INFO - current_balance = 10.094740280953935  sell_ts:2021-03-20 13:00:06  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:00:05,659 - eth - INFO - demo_action_running_duration: 0:05:06
+2021-03-20 13:00:05,659 - eth - INFO - earning_ratio = 0.947402809539355%
+2021-03-20 13:00:05,659 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:00:05,659 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:00:05,690 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3258.3903, limit_price: 0.00309
+2021-03-20 13:00:06,013 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.068426197458454
+2021-03-20 13:00:06,014 - eth - INFO - actual_balance=10.068426197458454, ts_actual_sell=2021-03-20 13:00:06
+2021-03-20 13:00:06,014 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:00:06,014 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:00:06,023 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:00:06,024 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:00:06
+2021-03-20 13:00:06,024 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:00:06
+2021-03-20 13:00:06,024 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:00:06,024 - eth - INFO - StartTime= 2021-03-20 13:00:06
+2021-03-20 13:00:06,409 - eth - INFO - ethusdt  1000
+2021-03-20 13:00:06,840 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:00:09,284 - eth - INFO - eth3susdt  1000
+2021-03-20 13:00:09,284 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:00:09,285 - eth - INFO - FinishTime= 2021-03-20 13:00:09
+2021-03-20 13:00:09,285 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:00:09
+2021-03-20 13:00:09,285 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:00:09
+2021-03-20 13:00:09,688 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:00:09,688 - eth - INFO - last_open=1830.43, last_close=1827.84, invest_direction=planB, last_ts=2021-03-20 12:55:00
+2021-03-20 13:00:09,688 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:00:09
+2021-03-20 13:00:09,688 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 12:55:00
+2021-03-20 13:00:09,688 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:00:09
+2021-03-20 13:00:11,027 - eth - INFO - current_balance = 10.094740280953935
+2021-03-20 13:00:11,027 - eth - INFO - BUY NEW COINS
+2021-03-20 13:00:11,027 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:50.2966, amount=0.19882059622320397, ts:2021-03-20 13:00:12
+2021-03-20 13:00:11,028 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:00:11,028 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:00:13,616 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:00:13,616 - eth - INFO - order_id=236883793652361, field_amount=0.19936720848028358, price=0.0, actual_buy_market_amount=0.19936720848028358
+2021-03-20 13:00:13,616 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.19936720848028358
+2021-03-20 13:00:13,617 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:00:13
+2021-03-20 13:00:13,617 - eth - INFO - =========================================
+2021-03-20 13:00:13,617 - eth - INFO - sleep 287 seconds .....
+2021-03-20 13:05:00,627 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:05:00
+2021-03-20 13:05:00,985 - eth - INFO - SELL LAST COIN
+2021-03-20 13:05:00,985 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.19882059622320397, sell_cur_price:50.2165
+2021-03-20 13:05:00,985 - eth - INFO - sell_cur_price * last_amount = 9.984074470242524
+2021-03-20 13:05:00,986 - eth - INFO - current_balance = 10.07881475119646  sell_ts:2021-03-20 13:05:02  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:05:00,986 - eth - INFO - demo_action_running_duration: 0:10:02
+2021-03-20 13:05:00,986 - eth - INFO - earning_ratio = 0.7881475119645921%
+2021-03-20 13:05:00,986 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:05:00,986 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:05:00,986 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.1993, limit_price: 50.2165
+2021-03-20 13:05:02,327 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.01152342465016
+2021-03-20 13:05:02,327 - eth - INFO - actual_balance=10.079949622108614, ts_actual_sell=2021-03-20 13:05:02
+2021-03-20 13:05:02,328 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:05:02,328 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:05:02,328 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:05:02,328 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:05:02
+2021-03-20 13:05:02,328 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:05:02
+2021-03-20 13:05:02,329 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:05:02,329 - eth - INFO - StartTime= 2021-03-20 13:05:02
+2021-03-20 13:05:05,880 - eth - INFO - ethusdt  1000
+2021-03-20 13:05:06,336 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:05:06,667 - eth - INFO - eth3susdt  1000
+2021-03-20 13:05:06,667 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:05:06,667 - eth - INFO - FinishTime= 2021-03-20 13:05:06
+2021-03-20 13:05:06,668 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:05:06
+2021-03-20 13:05:06,668 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:05:06
+2021-03-20 13:05:07,022 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:05:07,023 - eth - INFO - last_open=1827.83, last_close=1827.22, invest_direction=planB, last_ts=2021-03-20 13:00:00
+2021-03-20 13:05:07,023 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:05:07
+2021-03-20 13:05:07,023 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 13:00:00
+2021-03-20 13:05:07,023 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:05:07
+2021-03-20 13:05:09,650 - eth - INFO - current_balance = 10.07881475119646
+2021-03-20 13:05:09,652 - eth - INFO - BUY NEW COINS
+2021-03-20 13:05:09,652 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:50.2936, amount=0.19883245581942832, ts:2021-03-20 13:05:10
+2021-03-20 13:05:09,653 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:05:09,653 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:05:12,359 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:05:12,359 - eth - INFO - order_id=236883801678281, field_amount=0.19858764467109913, price=0.0, actual_buy_market_amount=0.19858764467109913
+2021-03-20 13:05:12,360 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.19858764467109913
+2021-03-20 13:05:12,360 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:05:12
+2021-03-20 13:05:12,360 - eth - INFO - =========================================
+2021-03-20 13:05:12,360 - eth - INFO - sleep 288 seconds .....
+2021-03-20 13:10:00,378 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:10:00
+2021-03-20 13:10:00,804 - eth - INFO - SELL LAST COIN
+2021-03-20 13:10:00,805 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.19883245581942832, sell_cur_price:50.2005
+2021-03-20 13:10:00,805 - eth - INFO - sell_cur_price * last_amount = 9.981488698363211
+2021-03-20 13:10:00,805 - eth - INFO - current_balance = 10.06030344955967  sell_ts:2021-03-20 13:10:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:10:00,805 - eth - INFO - demo_action_running_duration: 0:15:01
+2021-03-20 13:10:00,805 - eth - INFO - earning_ratio = 0.603034495596706%
+2021-03-20 13:10:00,805 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:10:00,805 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:10:00,805 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.1985, limit_price: 50.2005
+2021-03-20 13:10:05,324 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.969199056311512
+2021-03-20 13:10:05,324 - eth - INFO - actual_balance=10.049148678420126, ts_actual_sell=2021-03-20 13:10:05
+2021-03-20 13:10:05,324 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:10:05,325 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:10:05,325 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:10:05,325 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:10:05
+2021-03-20 13:10:05,325 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:10:05
+2021-03-20 13:10:05,325 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:10:05,325 - eth - INFO - StartTime= 2021-03-20 13:10:05
+2021-03-20 13:10:05,659 - eth - INFO - ethusdt  1000
+2021-03-20 13:10:07,100 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:10:08,478 - eth - INFO - eth3susdt  1000
+2021-03-20 13:10:08,478 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:10:08,478 - eth - INFO - FinishTime= 2021-03-20 13:10:08
+2021-03-20 13:10:08,478 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:10:08
+2021-03-20 13:10:08,478 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:10:08
+2021-03-20 13:10:08,816 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:10:08,816 - eth - INFO - last_open=1827.11, last_close=1827.11, invest_direction=planB, last_ts=2021-03-20 13:05:00
+2021-03-20 13:10:08,816 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:10:08
+2021-03-20 13:10:08,816 - eth - INFO - invest_direction=planB, last_trend=0, last_ts=2021-03-20 13:05:00
+2021-03-20 13:10:08,817 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:10:08
+2021-03-20 13:10:08,817 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:10:08
+2021-03-20 13:10:08,817 - eth - INFO - =========================================
+2021-03-20 13:10:08,818 - eth - INFO - sleep 292 seconds .....
+2021-03-20 13:15:00,831 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:15:00
+2021-03-20 13:15:00,832 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:15:00,833 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:15:00,834 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:15:00
+2021-03-20 13:15:00,834 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:15:00
+2021-03-20 13:15:00,834 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:15:00,834 - eth - INFO - StartTime= 2021-03-20 13:15:00
+2021-03-20 13:15:01,183 - eth - INFO - ethusdt  1000
+2021-03-20 13:15:02,623 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:15:05,326 - eth - INFO - eth3susdt  1000
+2021-03-20 13:15:05,326 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:15:05,326 - eth - INFO - FinishTime= 2021-03-20 13:15:05
+2021-03-20 13:15:05,326 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:15:05
+2021-03-20 13:15:05,326 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:15:05
+2021-03-20 13:15:05,594 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:15:05,594 - eth - INFO - last_open=1827.11, last_close=1827.76, invest_direction=planB, last_ts=2021-03-20 13:10:00
+2021-03-20 13:15:05,594 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:15:05
+2021-03-20 13:15:05,594 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 13:10:00
+2021-03-20 13:15:05,594 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:15:05
+2021-03-20 13:15:05,886 - eth - INFO - current_balance = 10.06030344955967
+2021-03-20 13:15:05,886 - eth - INFO - BUY NEW COINS
+2021-03-20 13:15:05,887 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003086, amount=3240.440699935191, ts:2021-03-20 13:15:07
+2021-03-20 13:15:05,887 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:15:05,887 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:15:07,531 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:15:07,532 - eth - INFO - order_id=236883936184368, field_amount=3236.2459546925566, price=0.0, actual_buy_market_amount=3236.2459546925566
+2021-03-20 13:15:07,532 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3236.2459546925566
+2021-03-20 13:15:07,532 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:15:07
+2021-03-20 13:15:07,532 - eth - INFO - =========================================
+2021-03-20 13:15:07,533 - eth - INFO - sleep 293 seconds .....
+2021-03-20 13:20:00,548 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:20:00
+2021-03-20 13:20:01,889 - eth - INFO - SELL LAST COIN
+2021-03-20 13:20:01,889 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3240.440699935191, sell_cur_price:0.003097
+2021-03-20 13:20:01,889 - eth - INFO - sell_cur_price * last_amount = 10.035644847699286
+2021-03-20 13:20:01,889 - eth - INFO - current_balance = 10.095948297258957  sell_ts:2021-03-20 13:20:03  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:20:01,889 - eth - INFO - demo_action_running_duration: 0:25:03
+2021-03-20 13:20:01,889 - eth - INFO - earning_ratio = 0.9594829725895694%
+2021-03-20 13:20:01,889 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:20:01,890 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:20:01,890 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3236.2459, limit_price: 0.003097
+2021-03-20 13:20:02,118 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.022653721682847
+2021-03-20 13:20:02,118 - eth - INFO - actual_balance=10.071802400102973, ts_actual_sell=2021-03-20 13:20:02
+2021-03-20 13:20:02,118 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:20:02,118 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:20:02,119 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:20:02,119 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:20:02
+2021-03-20 13:20:02,119 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:20:02
+2021-03-20 13:20:02,119 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:20:02,119 - eth - INFO - StartTime= 2021-03-20 13:20:02
+2021-03-20 13:20:05,641 - eth - INFO - ethusdt  1000
+2021-03-20 13:20:07,017 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:20:07,387 - eth - INFO - eth3susdt  1000
+2021-03-20 13:20:07,388 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:20:07,388 - eth - INFO - FinishTime= 2021-03-20 13:20:07
+2021-03-20 13:20:07,388 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:20:07
+2021-03-20 13:20:07,388 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:20:07
+2021-03-20 13:20:07,656 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:20:07,657 - eth - INFO - last_open=1827.75, last_close=1825.98, invest_direction=planB, last_ts=2021-03-20 13:15:00
+2021-03-20 13:20:07,657 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:20:07
+2021-03-20 13:20:07,657 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 13:15:00
+2021-03-20 13:20:07,657 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:20:07
+2021-03-20 13:20:07,932 - eth - INFO - current_balance = 10.095948297258957
+2021-03-20 13:20:07,932 - eth - INFO - BUY NEW COINS
+2021-03-20 13:20:07,933 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:50.0895, amount=0.19964263967498178, ts:2021-03-20 13:20:09
+2021-03-20 13:20:07,933 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:20:07,933 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:20:09,491 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:20:09,492 - eth - INFO - order_id=236886848085470, field_amount=0.19954702824588186, price=0.0, actual_buy_market_amount=0.19954702824588186
+2021-03-20 13:20:09,492 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.19954702824588186
+2021-03-20 13:20:09,492 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:20:09
+2021-03-20 13:20:09,493 - eth - INFO - =========================================
+2021-03-20 13:20:09,494 - eth - INFO - sleep 291 seconds .....
+2021-03-20 13:25:00,507 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:25:00
+2021-03-20 13:25:00,784 - eth - INFO - SELL LAST COIN
+2021-03-20 13:25:00,784 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.19964263967498178, sell_cur_price:50.2778
+2021-03-20 13:25:00,784 - eth - INFO - sell_cur_price * last_amount = 10.037592709050799
+2021-03-20 13:25:00,784 - eth - INFO - current_balance = 10.133541006309756  sell_ts:2021-03-20 13:25:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:25:00,784 - eth - INFO - demo_action_running_duration: 0:30:01
+2021-03-20 13:25:00,784 - eth - INFO - earning_ratio = 1.3354100630975552%
+2021-03-20 13:25:00,784 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:25:00,784 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:25:00,784 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.1995, limit_price: 50.2778
+2021-03-20 13:25:01,041 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.032785576740798
+2021-03-20 13:25:01,041 - eth - INFO - actual_balance=10.10458797684377, ts_actual_sell=2021-03-20 13:25:01
+2021-03-20 13:25:01,041 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:25:01,041 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:25:01,044 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:25:01,044 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:25:01
+2021-03-20 13:25:01,044 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:25:01
+2021-03-20 13:25:01,045 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:25:01,045 - eth - INFO - StartTime= 2021-03-20 13:25:01
+2021-03-20 13:25:01,419 - eth - INFO - ethusdt  1000
+2021-03-20 13:25:02,811 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:25:05,271 - eth - INFO - eth3susdt  1000
+2021-03-20 13:25:05,271 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:25:05,272 - eth - INFO - FinishTime= 2021-03-20 13:25:05
+2021-03-20 13:25:05,272 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:25:05
+2021-03-20 13:25:05,272 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:25:05
+2021-03-20 13:25:05,635 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:25:05,635 - eth - INFO - last_open=1825.99, last_close=1827.67, invest_direction=planB, last_ts=2021-03-20 13:20:00
+2021-03-20 13:25:05,635 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:25:05
+2021-03-20 13:25:05,635 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 13:20:00
+2021-03-20 13:25:05,636 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:25:05
+2021-03-20 13:25:06,973 - eth - INFO - current_balance = 10.133541006309756
+2021-03-20 13:25:06,973 - eth - INFO - BUY NEW COINS
+2021-03-20 13:25:06,973 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003084, amount=3242.54215304799, ts:2021-03-20 13:25:08
+2021-03-20 13:25:06,973 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:25:06,973 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:25:07,586 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:25:07,586 - eth - INFO - order_id=236884011878864, field_amount=3241.4910858995136, price=0.0, actual_buy_market_amount=3241.4910858995136
+2021-03-20 13:25:07,586 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3241.4910858995136
+2021-03-20 13:25:07,586 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:25:07
+2021-03-20 13:25:07,587 - eth - INFO - =========================================
+2021-03-20 13:25:07,587 - eth - INFO - sleep 293 seconds .....
+2021-03-20 13:30:00,604 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:30:00
+2021-03-20 13:30:00,925 - eth - INFO - SELL LAST COIN
+2021-03-20 13:30:00,926 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3242.54215304799, sell_cur_price:0.003108
+2021-03-20 13:30:00,926 - eth - INFO - sell_cur_price * last_amount = 10.077821011673153
+2021-03-20 13:30:00,926 - eth - INFO - current_balance = 10.211362017982909  sell_ts:2021-03-20 13:30:02  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:30:00,926 - eth - INFO - demo_action_running_duration: 0:35:02
+2021-03-20 13:30:00,926 - eth - INFO - earning_ratio = 2.1136201798290877%
+2021-03-20 13:30:00,926 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:30:00,927 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:30:00,927 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3241.491, limit_price: 0.003108
+2021-03-20 13:30:01,155 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.07455429497569
+2021-03-20 13:30:01,155 - eth - INFO - actual_balance=10.17914227181946, ts_actual_sell=2021-03-20 13:30:01
+2021-03-20 13:30:01,155 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:30:01,155 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:30:01,158 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:30:01,158 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:30:01
+2021-03-20 13:30:01,158 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:30:01
+2021-03-20 13:30:01,158 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:30:01,158 - eth - INFO - StartTime= 2021-03-20 13:30:01
+2021-03-20 13:30:01,566 - eth - INFO - ethusdt  1000
+2021-03-20 13:30:02,977 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:30:06,445 - eth - INFO - eth3susdt  1000
+2021-03-20 13:30:06,445 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:30:06,445 - eth - INFO - FinishTime= 2021-03-20 13:30:06
+2021-03-20 13:30:06,445 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:30:06
+2021-03-20 13:30:06,445 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:30:06
+2021-03-20 13:30:06,840 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:30:06,840 - eth - INFO - last_open=1827.66, last_close=1822.58, invest_direction=planB, last_ts=2021-03-20 13:25:00
+2021-03-20 13:30:06,840 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:30:06
+2021-03-20 13:30:06,841 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 13:25:00
+2021-03-20 13:30:06,841 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:30:06
+2021-03-20 13:30:07,064 - eth - INFO - current_balance = 10.211362017982909
+2021-03-20 13:30:07,064 - eth - INFO - BUY NEW COINS
+2021-03-20 13:30:07,064 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.78, amount=0.2008838891120932, ts:2021-03-20 13:30:08
+2021-03-20 13:30:07,064 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:30:07,065 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:30:07,735 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:30:07,735 - eth - INFO - order_id=236884045402350, field_amount=0.20098280592095347, price=0.0, actual_buy_market_amount=0.20098280592095347
+2021-03-20 13:30:07,736 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20098280592095347
+2021-03-20 13:30:07,736 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:30:07
+2021-03-20 13:30:07,736 - eth - INFO - =========================================
+2021-03-20 13:30:07,737 - eth - INFO - sleep 293 seconds .....
+2021-03-20 13:35:00,751 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:35:00
+2021-03-20 13:35:02,102 - eth - INFO - SELL LAST COIN
+2021-03-20 13:35:02,102 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2008838891120932, sell_cur_price:50.0999
+2021-03-20 13:35:02,102 - eth - INFO - sell_cur_price * last_amount = 10.064262756126958
+2021-03-20 13:35:02,102 - eth - INFO - current_balance = 10.275624774109867  sell_ts:2021-03-20 13:35:03  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:35:02,103 - eth - INFO - demo_action_running_duration: 0:40:03
+2021-03-20 13:35:02,103 - eth - INFO - earning_ratio = 2.756247741098665%
+2021-03-20 13:35:02,103 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:35:02,103 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:35:02,103 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2009, limit_price: 50.0999
+2021-03-20 13:35:02,372 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.069218478359176
+2021-03-20 13:35:02,372 - eth - INFO - actual_balance=10.248360750178636, ts_actual_sell=2021-03-20 13:35:02
+2021-03-20 13:35:02,372 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:35:02,372 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:35:02,373 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:35:02,373 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:35:02
+2021-03-20 13:35:02,373 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:35:02
+2021-03-20 13:35:02,374 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:35:02,374 - eth - INFO - StartTime= 2021-03-20 13:35:02
+2021-03-20 13:35:03,841 - eth - INFO - ethusdt  1000
+2021-03-20 13:35:05,301 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:35:06,732 - eth - INFO - eth3susdt  1000
+2021-03-20 13:35:06,732 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:35:06,732 - eth - INFO - FinishTime= 2021-03-20 13:35:06
+2021-03-20 13:35:06,733 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:35:06
+2021-03-20 13:35:06,733 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:35:06
+2021-03-20 13:35:06,995 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:35:06,995 - eth - INFO - last_open=1822.58, last_close=1826.26, invest_direction=planB, last_ts=2021-03-20 13:30:00
+2021-03-20 13:35:06,996 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:35:06
+2021-03-20 13:35:06,996 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 13:30:00
+2021-03-20 13:35:06,996 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:35:06
+2021-03-20 13:35:07,312 - eth - INFO - current_balance = 10.275624774109867
+2021-03-20 13:35:07,313 - eth - INFO - BUY NEW COINS
+2021-03-20 13:35:07,313 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003093, amount=3233.1070158422244, ts:2021-03-20 13:35:08
+2021-03-20 13:35:07,313 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:35:07,315 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:35:10,084 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:35:10,085 - eth - INFO - order_id=236884104255561, field_amount=3225.8064516129034, price=0.0, actual_buy_market_amount=3225.8064516129034
+2021-03-20 13:35:10,085 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3225.8064516129034
+2021-03-20 13:35:10,085 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:35:10
+2021-03-20 13:35:10,085 - eth - INFO - =========================================
+2021-03-20 13:35:10,086 - eth - INFO - sleep 290 seconds .....
+2021-03-20 13:40:00,100 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:40:00
+2021-03-20 13:40:01,469 - eth - INFO - SELL LAST COIN
+2021-03-20 13:40:01,469 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3233.1070158422244, sell_cur_price:0.003096
+2021-03-20 13:40:01,469 - eth - INFO - sell_cur_price * last_amount = 10.009699321047526
+2021-03-20 13:40:01,469 - eth - INFO - current_balance = 10.285324095157392  sell_ts:2021-03-20 13:40:02  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:40:01,469 - eth - INFO - demo_action_running_duration: 0:45:02
+2021-03-20 13:40:01,469 - eth - INFO - earning_ratio = 2.853240951573923%
+2021-03-20 13:40:01,470 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:40:01,470 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:40:01,470 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3225.8064, limit_price: 0.003096
+2021-03-20 13:40:01,790 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.987096774193548
+2021-03-20 13:40:01,790 - eth - INFO - actual_balance=10.235457524372183, ts_actual_sell=2021-03-20 13:40:01
+2021-03-20 13:40:01,827 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:40:01,828 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:40:01,829 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:40:01,829 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:40:01
+2021-03-20 13:40:01,829 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:40:01
+2021-03-20 13:40:01,829 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:40:01,829 - eth - INFO - StartTime= 2021-03-20 13:40:01
+2021-03-20 13:40:05,411 - eth - INFO - ethusdt  1000
+2021-03-20 13:40:05,834 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:40:07,270 - eth - INFO - eth3susdt  1000
+2021-03-20 13:40:07,270 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:40:07,270 - eth - INFO - FinishTime= 2021-03-20 13:40:07
+2021-03-20 13:40:07,270 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:40:07
+2021-03-20 13:40:07,270 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:40:07
+2021-03-20 13:40:07,536 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:40:07,536 - eth - INFO - last_open=1826.26, last_close=1823.95, invest_direction=planB, last_ts=2021-03-20 13:35:00
+2021-03-20 13:40:07,536 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:40:07
+2021-03-20 13:40:07,536 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 13:35:00
+2021-03-20 13:40:07,536 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:40:07
+2021-03-20 13:40:08,837 - eth - INFO - current_balance = 10.285324095157392
+2021-03-20 13:40:08,837 - eth - INFO - BUY NEW COINS
+2021-03-20 13:40:08,837 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.964, amount=0.2001441037547034, ts:2021-03-20 13:40:10
+2021-03-20 13:40:08,837 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:40:08,837 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:40:10,472 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:40:10,473 - eth - INFO - order_id=236884154847275, field_amount=0.20016453524797384, price=0.0, actual_buy_market_amount=0.20016453524797384
+2021-03-20 13:40:10,473 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20016453524797384
+2021-03-20 13:40:10,473 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:40:10
+2021-03-20 13:40:10,473 - eth - INFO - =========================================
+2021-03-20 13:40:10,474 - eth - INFO - sleep 290 seconds .....
+2021-03-20 13:45:00,488 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:45:00
+2021-03-20 13:45:05,052 - eth - INFO - SELL LAST COIN
+2021-03-20 13:45:05,053 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2001441037547034, sell_cur_price:49.7527
+2021-03-20 13:45:05,053 - eth - INFO - sell_cur_price * last_amount = 9.957709550876631
+2021-03-20 13:45:05,053 - eth - INFO - current_balance = 10.243033646034023  sell_ts:2021-03-20 13:45:06  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:45:05,053 - eth - INFO - demo_action_running_duration: 0:50:06
+2021-03-20 13:45:05,053 - eth - INFO - earning_ratio = 2.430336460340232%
+2021-03-20 13:45:05,053 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:45:05,053 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:45:05,053 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2001, limit_price: 49.7527
+2021-03-20 13:45:22,634 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.958726072831867
+2021-03-20 13:45:22,635 - eth - INFO - actual_balance=10.19418359720405, ts_actual_sell=2021-03-20 13:45:22
+2021-03-20 13:45:22,635 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:45:22,635 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:45:22,636 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:45:22,637 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:45:22
+2021-03-20 13:45:22,637 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:45:22
+2021-03-20 13:45:22,637 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:45:22,637 - eth - INFO - StartTime= 2021-03-20 13:45:22
+2021-03-20 13:45:22,959 - eth - INFO - ethusdt  1000
+2021-03-20 13:45:24,369 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:45:26,851 - eth - INFO - eth3susdt  1000
+2021-03-20 13:45:26,851 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:45:26,851 - eth - INFO - FinishTime= 2021-03-20 13:45:26
+2021-03-20 13:45:26,851 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:45:26
+2021-03-20 13:45:26,851 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:45:26
+2021-03-20 13:45:27,076 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:45:27,076 - eth - INFO - last_open=1823.95, last_close=1822.07, invest_direction=planB, last_ts=2021-03-20 13:40:00
+2021-03-20 13:45:27,076 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:45:27
+2021-03-20 13:45:27,076 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 13:40:00
+2021-03-20 13:45:27,077 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:45:27
+2021-03-20 13:45:30,449 - eth - INFO - current_balance = 10.243033646034023
+2021-03-20 13:45:30,449 - eth - INFO - BUY NEW COINS
+2021-03-20 13:45:30,449 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.7241, amount=0.20110972345401928, ts:2021-03-20 13:45:31
+2021-03-20 13:45:30,450 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:45:30,450 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:45:34,165 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:45:34,166 - eth - INFO - order_id=236884145605512, field_amount=0.20128216740637864, price=0.0, actual_buy_market_amount=0.20128216740637864
+2021-03-20 13:45:34,166 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20128216740637864
+2021-03-20 13:45:34,166 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:45:34
+2021-03-20 13:45:34,166 - eth - INFO - =========================================
+2021-03-20 13:45:34,167 - eth - INFO - sleep 266 seconds .....
+2021-03-20 13:50:00,184 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:50:00
+2021-03-20 13:50:04,111 - eth - INFO - SELL LAST COIN
+2021-03-20 13:50:04,111 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20110972345401928, sell_cur_price:49.9096
+2021-03-20 13:50:04,111 - eth - INFO - sell_cur_price * last_amount = 10.03730585370072
+2021-03-20 13:50:04,112 - eth - INFO - current_balance = 10.280339499734744  sell_ts:2021-03-20 13:50:05  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:50:04,112 - eth - INFO - demo_action_running_duration: 0:55:05
+2021-03-20 13:50:04,112 - eth - INFO - earning_ratio = 2.8033949973474392%
+2021-03-20 13:50:04,112 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:50:04,112 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:50:04,113 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2012, limit_price: 49.9096
+2021-03-20 13:50:05,469 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.045912462385395
+2021-03-20 13:50:05,469 - eth - INFO - actual_balance=10.240096059589446, ts_actual_sell=2021-03-20 13:50:05
+2021-03-20 13:50:05,469 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:50:05,469 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:50:05,470 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:50:05,470 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:50:05
+2021-03-20 13:50:05,470 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:50:05
+2021-03-20 13:50:05,470 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:50:05,470 - eth - INFO - StartTime= 2021-03-20 13:50:05
+2021-03-20 13:50:06,912 - eth - INFO - ethusdt  1000
+2021-03-20 13:50:07,312 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:50:07,739 - eth - INFO - eth3susdt  1000
+2021-03-20 13:50:07,739 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:50:07,739 - eth - INFO - FinishTime= 2021-03-20 13:50:07
+2021-03-20 13:50:07,739 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:50:07
+2021-03-20 13:50:07,739 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:50:07
+2021-03-20 13:50:08,082 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:50:08,082 - eth - INFO - last_open=1822.07, last_close=1822.9, invest_direction=planB, last_ts=2021-03-20 13:45:00
+2021-03-20 13:50:08,082 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:50:08
+2021-03-20 13:50:08,082 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 13:45:00
+2021-03-20 13:50:08,082 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:50:08
+2021-03-20 13:50:09,433 - eth - INFO - current_balance = 10.280339499734744
+2021-03-20 13:50:09,434 - eth - INFO - BUY NEW COINS
+2021-03-20 13:50:09,434 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.00311, amount=3215.434083601286, ts:2021-03-20 13:50:10
+2021-03-20 13:50:09,434 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:50:09,434 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:50:09,982 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:50:09,982 - eth - INFO - order_id=236884221610117, field_amount=3218.53878339234, price=0.0, actual_buy_market_amount=3218.53878339234
+2021-03-20 13:50:09,982 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3218.53878339234
+2021-03-20 13:50:09,982 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:50:09
+2021-03-20 13:50:09,982 - eth - INFO - =========================================
+2021-03-20 13:50:09,983 - eth - INFO - sleep 291 seconds .....
+2021-03-20 13:55:00,998 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 13:55:00
+2021-03-20 13:55:01,318 - eth - INFO - SELL LAST COIN
+2021-03-20 13:55:01,319 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3215.434083601286, sell_cur_price:0.003095
+2021-03-20 13:55:01,319 - eth - INFO - sell_cur_price * last_amount = 9.95176848874598
+2021-03-20 13:55:01,319 - eth - INFO - current_balance = 10.232107988480724  sell_ts:2021-03-20 13:55:02  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 13:55:01,319 - eth - INFO - demo_action_running_duration: 1:00:02
+2021-03-20 13:55:01,319 - eth - INFO - earning_ratio = 2.32107988480724%
+2021-03-20 13:55:01,319 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 13:55:01,319 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 13:55:01,319 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3218.5387, limit_price: 0.003095
+2021-03-20 13:55:01,667 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.961377534599293
+2021-03-20 13:55:01,667 - eth - INFO - actual_balance=10.20147359418874, ts_actual_sell=2021-03-20 13:55:01
+2021-03-20 13:55:01,667 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 13:55:01,667 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 13:55:01,667 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 13:55:01,667 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 13:55:01
+2021-03-20 13:55:01,668 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 13:55:01
+2021-03-20 13:55:01,668 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 13:55:01,668 - eth - INFO - StartTime= 2021-03-20 13:55:01
+2021-03-20 13:55:02,096 - eth - INFO - ethusdt  1000
+2021-03-20 13:55:02,486 - eth - INFO - eth3lusdt  1000
+2021-03-20 13:55:04,886 - eth - INFO - eth3susdt  1000
+2021-03-20 13:55:04,886 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 13:55:04,886 - eth - INFO - FinishTime= 2021-03-20 13:55:04
+2021-03-20 13:55:04,886 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 13:55:04
+2021-03-20 13:55:04,886 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 13:55:04
+2021-03-20 13:55:05,136 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 13:55:05,136 - eth - INFO - last_open=1822.9, last_close=1825.05, invest_direction=planB, last_ts=2021-03-20 13:50:00
+2021-03-20 13:55:05,136 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 13:55:05
+2021-03-20 13:55:05,136 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 13:50:00
+2021-03-20 13:55:05,137 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 13:55:05
+2021-03-20 13:55:05,396 - eth - INFO - current_balance = 10.232107988480724
+2021-03-20 13:55:05,397 - eth - INFO - BUY NEW COINS
+2021-03-20 13:55:05,397 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003095, amount=3231.017770597738, ts:2021-03-20 13:55:06
+2021-03-20 13:55:05,397 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 13:55:05,397 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 13:55:10,213 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 13:55:10,213 - eth - INFO - order_id=236884297626643, field_amount=3231.0137398901807, price=0.0, actual_buy_market_amount=3231.0137398901807
+2021-03-20 13:55:10,213 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3231.0137398901807
+2021-03-20 13:55:10,213 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 13:55:10
+2021-03-20 13:55:10,213 - eth - INFO - =========================================
+2021-03-20 13:55:10,214 - eth - INFO - sleep 290 seconds .....
+2021-03-20 14:00:00,222 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:00:00
+2021-03-20 14:00:06,035 - eth - INFO - SELL LAST COIN
+2021-03-20 14:00:06,036 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3231.017770597738, sell_cur_price:0.003118
+2021-03-20 14:00:06,036 - eth - INFO - sell_cur_price * last_amount = 10.074313408723748
+2021-03-20 14:00:06,036 - eth - INFO - current_balance = 10.306421397204472  sell_ts:2021-03-20 14:00:07  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:00:06,037 - eth - INFO - demo_action_running_duration: 1:05:07
+2021-03-20 14:00:06,037 - eth - INFO - earning_ratio = 3.0642139720447226%
+2021-03-20 14:00:06,037 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:00:06,037 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:00:06,037 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3231.0137, limit_price: 0.003118
+2021-03-20 14:00:07,369 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.074300840977584
+2021-03-20 14:00:07,369 - eth - INFO - actual_balance=10.275774435166323, ts_actual_sell=2021-03-20 14:00:07
+2021-03-20 14:00:07,369 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:00:07,369 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:00:07,370 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:00:07,370 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:00:07
+2021-03-20 14:00:07,370 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:00:07
+2021-03-20 14:00:07,370 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:00:07,370 - eth - INFO - StartTime= 2021-03-20 14:00:07
+2021-03-20 14:00:07,769 - eth - INFO - ethusdt  1000
+2021-03-20 14:00:08,125 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:00:08,496 - eth - INFO - eth3susdt  1000
+2021-03-20 14:00:08,496 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:00:08,496 - eth - INFO - FinishTime= 2021-03-20 14:00:08
+2021-03-20 14:00:08,496 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:00:08
+2021-03-20 14:00:08,496 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:00:08
+2021-03-20 14:00:09,117 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:00:09,117 - eth - INFO - last_open=1825.04, last_close=1821.47, invest_direction=planB, last_ts=2021-03-20 13:55:00
+2021-03-20 14:00:09,117 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:00:09
+2021-03-20 14:00:09,117 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 13:55:00
+2021-03-20 14:00:09,117 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:00:09
+2021-03-20 14:00:11,525 - eth - INFO - current_balance = 10.306421397204472
+2021-03-20 14:00:11,525 - eth - INFO - BUY NEW COINS
+2021-03-20 14:00:11,525 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.7223, amount=0.20111700383932363, ts:2021-03-20 14:00:12
+2021-03-20 14:00:11,525 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:00:11,525 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:00:12,134 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:00:12,135 - eth - INFO - order_id=236884398550528, field_amount=0.2009294998663819, price=0.0, actual_buy_market_amount=0.2009294998663819
+2021-03-20 14:00:12,135 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.2009294998663819
+2021-03-20 14:00:12,135 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:00:12
+2021-03-20 14:00:12,135 - eth - INFO - =========================================
+2021-03-20 14:00:12,136 - eth - INFO - sleep 288 seconds .....
+2021-03-20 14:05:00,150 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:05:00
+2021-03-20 14:05:00,556 - eth - INFO - SELL LAST COIN
+2021-03-20 14:05:00,556 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20111700383932363, sell_cur_price:49.9175
+2021-03-20 14:05:00,556 - eth - INFO - sell_cur_price * last_amount = 10.039258039149436
+2021-03-20 14:05:00,556 - eth - INFO - current_balance = 10.345679436353908  sell_ts:2021-03-20 14:05:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:05:00,556 - eth - INFO - demo_action_running_duration: 1:10:01
+2021-03-20 14:05:00,556 - eth - INFO - earning_ratio = 3.456794363539082%
+2021-03-20 14:05:00,557 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:05:00,557 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:05:00,557 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2009, limit_price: 49.9175
+2021-03-20 14:05:00,872 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.029898309580117
+2021-03-20 14:05:00,872 - eth - INFO - actual_balance=10.30567274474644, ts_actual_sell=2021-03-20 14:05:00
+2021-03-20 14:05:00,872 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:05:00,873 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:05:00,874 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:05:00,875 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:05:00
+2021-03-20 14:05:00,875 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:05:00
+2021-03-20 14:05:00,875 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:05:00,875 - eth - INFO - StartTime= 2021-03-20 14:05:00
+2021-03-20 14:05:02,318 - eth - INFO - ethusdt  1000
+2021-03-20 14:05:02,665 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:05:03,107 - eth - INFO - eth3susdt  1000
+2021-03-20 14:05:03,108 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:05:03,108 - eth - INFO - FinishTime= 2021-03-20 14:05:03
+2021-03-20 14:05:03,108 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:05:03
+2021-03-20 14:05:03,108 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:05:03
+2021-03-20 14:05:03,393 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:05:03,393 - eth - INFO - last_open=1821.47, last_close=1823.52, invest_direction=planB, last_ts=2021-03-20 14:00:00
+2021-03-20 14:05:03,393 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:05:03
+2021-03-20 14:05:03,393 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 14:00:00
+2021-03-20 14:05:03,393 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:05:03
+2021-03-20 14:05:07,838 - eth - INFO - current_balance = 10.345679436353908
+2021-03-20 14:05:07,839 - eth - INFO - BUY NEW COINS
+2021-03-20 14:05:07,839 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.0031, amount=3225.8064516129034, ts:2021-03-20 14:05:08
+2021-03-20 14:05:07,839 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:05:07,839 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:05:08,436 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:05:08,436 - eth - INFO - order_id=236884415299923, field_amount=3221.6494845360826, price=0.0, actual_buy_market_amount=3221.6494845360826
+2021-03-20 14:05:08,436 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3221.6494845360826
+2021-03-20 14:05:08,437 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:05:08
+2021-03-20 14:05:08,437 - eth - INFO - =========================================
+2021-03-20 14:05:08,437 - eth - INFO - sleep 292 seconds .....
+2021-03-20 14:10:00,453 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:10:00
+2021-03-20 14:10:01,771 - eth - INFO - SELL LAST COIN
+2021-03-20 14:10:01,772 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3225.8064516129034, sell_cur_price:0.003099
+2021-03-20 14:10:01,772 - eth - INFO - sell_cur_price * last_amount = 9.996774193548388
+2021-03-20 14:10:01,772 - eth - INFO - current_balance = 10.342453629902296  sell_ts:2021-03-20 14:10:02  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:10:01,772 - eth - INFO - demo_action_running_duration: 1:15:02
+2021-03-20 14:10:01,772 - eth - INFO - earning_ratio = 3.4245362990229644%
+2021-03-20 14:10:01,772 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:10:01,772 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:10:01,772 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3221.6494, limit_price: 0.003099
+2021-03-20 14:10:02,078 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.983891752577321
+2021-03-20 14:10:02,078 - eth - INFO - actual_balance=10.289564497323761, ts_actual_sell=2021-03-20 14:10:02
+2021-03-20 14:10:02,078 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:10:02,078 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:10:02,079 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:10:02,079 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:10:02
+2021-03-20 14:10:02,079 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:10:02
+2021-03-20 14:10:02,079 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:10:02,079 - eth - INFO - StartTime= 2021-03-20 14:10:02
+2021-03-20 14:10:02,472 - eth - INFO - ethusdt  1000
+2021-03-20 14:10:02,891 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:10:04,287 - eth - INFO - eth3susdt  1000
+2021-03-20 14:10:04,287 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:10:04,288 - eth - INFO - FinishTime= 2021-03-20 14:10:04
+2021-03-20 14:10:04,288 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:10:04
+2021-03-20 14:10:04,288 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:10:04
+2021-03-20 14:10:04,696 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:10:04,696 - eth - INFO - last_open=1823.51, last_close=1823.18, invest_direction=planB, last_ts=2021-03-20 14:05:00
+2021-03-20 14:10:04,696 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:10:04
+2021-03-20 14:10:04,696 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 14:05:00
+2021-03-20 14:10:04,696 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:10:04
+2021-03-20 14:10:04,958 - eth - INFO - current_balance = 10.342453629902296
+2021-03-20 14:10:04,958 - eth - INFO - BUY NEW COINS
+2021-03-20 14:10:04,958 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.9322, amount=0.2002715682465423, ts:2021-03-20 14:10:06
+2021-03-20 14:10:04,959 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:10:04,959 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:10:05,586 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:10:05,586 - eth - INFO - order_id=236884346948274, field_amount=0.20005561546109818, price=0.0, actual_buy_market_amount=0.20005561546109818
+2021-03-20 14:10:05,586 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20005561546109818
+2021-03-20 14:10:05,586 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:10:05
+2021-03-20 14:10:05,586 - eth - INFO - =========================================
+2021-03-20 14:10:05,587 - eth - INFO - sleep 295 seconds .....
+2021-03-20 14:15:00,605 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:15:00
+2021-03-20 14:15:04,915 - eth - INFO - SELL LAST COIN
+2021-03-20 14:15:04,915 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.2002715682465423, sell_cur_price:49.7
+2021-03-20 14:15:04,915 - eth - INFO - sell_cur_price * last_amount = 9.953496941853153
+2021-03-20 14:15:04,916 - eth - INFO - current_balance = 10.29595057175545  sell_ts:2021-03-20 14:15:06  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:15:04,916 - eth - INFO - demo_action_running_duration: 1:20:06
+2021-03-20 14:15:04,916 - eth - INFO - earning_ratio = 2.959505717554496%
+2021-03-20 14:15:04,916 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:15:04,916 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:15:04,916 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2, limit_price: 49.7
+2021-03-20 14:15:05,202 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.94276408841658
+2021-03-20 14:15:05,202 - eth - INFO - actual_balance=10.23232858574034, ts_actual_sell=2021-03-20 14:15:05
+2021-03-20 14:15:05,202 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:15:05,202 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:15:05,203 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:15:05,203 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:15:05
+2021-03-20 14:15:05,203 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:15:05
+2021-03-20 14:15:05,203 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:15:05,203 - eth - INFO - StartTime= 2021-03-20 14:15:05
+2021-03-20 14:15:05,608 - eth - INFO - ethusdt  1000
+2021-03-20 14:15:05,982 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:15:10,488 - eth - INFO - eth3susdt  1000
+2021-03-20 14:15:10,488 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:15:10,488 - eth - INFO - FinishTime= 2021-03-20 14:15:10
+2021-03-20 14:15:10,488 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:15:10
+2021-03-20 14:15:10,488 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:15:10
+2021-03-20 14:15:10,770 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:15:10,771 - eth - INFO - last_open=1823.17, last_close=1820.72, invest_direction=planB, last_ts=2021-03-20 14:10:00
+2021-03-20 14:15:10,771 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:15:10
+2021-03-20 14:15:10,771 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 14:10:00
+2021-03-20 14:15:10,771 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:15:10
+2021-03-20 14:15:12,103 - eth - INFO - current_balance = 10.29595057175545
+2021-03-20 14:15:12,103 - eth - INFO - BUY NEW COINS
+2021-03-20 14:15:12,104 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.7, amount=0.20120724346076457, ts:2021-03-20 14:15:13
+2021-03-20 14:15:12,104 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:15:12,104 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:15:13,748 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:15:13,749 - eth - INFO - order_id=236884448289151, field_amount=0.20088308202859773, price=0.0, actual_buy_market_amount=0.20088308202859773
+2021-03-20 14:15:13,749 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20088308202859773
+2021-03-20 14:15:13,749 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:15:13
+2021-03-20 14:15:13,749 - eth - INFO - =========================================
+2021-03-20 14:15:13,750 - eth - INFO - sleep 287 seconds .....
+2021-03-20 14:20:00,758 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:20:00
+2021-03-20 14:20:03,424 - eth - INFO - SELL LAST COIN
+2021-03-20 14:20:03,425 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20120724346076457, sell_cur_price:50.0155
+2021-03-20 14:20:03,425 - eth - INFO - sell_cur_price * last_amount = 10.06348088531187
+2021-03-20 14:20:03,425 - eth - INFO - current_balance = 10.35943145706732  sell_ts:2021-03-20 14:20:04  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:20:03,425 - eth - INFO - demo_action_running_duration: 1:25:04
+2021-03-20 14:20:03,425 - eth - INFO - earning_ratio = 3.5943145706731983%
+2021-03-20 14:20:03,426 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:20:03,426 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:20:03,426 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2008, limit_price: 50.0155
+2021-03-20 14:20:03,703 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.04726778920133
+2021-03-20 14:20:03,704 - eth - INFO - actual_balance=10.27959637494167, ts_actual_sell=2021-03-20 14:20:03
+2021-03-20 14:20:03,704 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:20:03,704 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:20:03,704 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:20:03,704 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:20:03
+2021-03-20 14:20:03,704 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:20:03
+2021-03-20 14:20:03,705 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:20:03,705 - eth - INFO - StartTime= 2021-03-20 14:20:03
+2021-03-20 14:20:04,105 - eth - INFO - ethusdt  1000
+2021-03-20 14:20:05,508 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:20:05,952 - eth - INFO - eth3susdt  1000
+2021-03-20 14:20:05,953 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:20:05,953 - eth - INFO - FinishTime= 2021-03-20 14:20:05
+2021-03-20 14:20:05,953 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:20:05
+2021-03-20 14:20:05,953 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:20:05
+2021-03-20 14:20:06,263 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:20:06,263 - eth - INFO - last_open=1820.71, last_close=1823.62, invest_direction=planB, last_ts=2021-03-20 14:15:00
+2021-03-20 14:20:06,263 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:20:06
+2021-03-20 14:20:06,264 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 14:15:00
+2021-03-20 14:20:06,264 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:20:06
+2021-03-20 14:20:06,528 - eth - INFO - current_balance = 10.35943145706732
+2021-03-20 14:20:06,528 - eth - INFO - BUY NEW COINS
+2021-03-20 14:20:06,528 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003095, amount=3231.017770597738, ts:2021-03-20 14:20:07
+2021-03-20 14:20:06,528 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:20:06,528 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:20:08,285 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:20:08,285 - eth - INFO - order_id=236884515787326, field_amount=3228.9312237649337, price=0.0, actual_buy_market_amount=3228.9312237649337
+2021-03-20 14:20:08,285 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3228.9312237649337
+2021-03-20 14:20:08,285 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:20:08
+2021-03-20 14:20:08,286 - eth - INFO - =========================================
+2021-03-20 14:20:08,286 - eth - INFO - sleep 292 seconds .....
+2021-03-20 14:25:00,303 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:25:00
+2021-03-20 14:25:04,777 - eth - INFO - SELL LAST COIN
+2021-03-20 14:25:04,777 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3231.017770597738, sell_cur_price:0.003099
+2021-03-20 14:25:04,777 - eth - INFO - sell_cur_price * last_amount = 10.012924071082391
+2021-03-20 14:25:04,778 - eth - INFO - current_balance = 10.372355528149711  sell_ts:2021-03-20 14:25:05  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:25:04,778 - eth - INFO - demo_action_running_duration: 1:30:05
+2021-03-20 14:25:04,778 - eth - INFO - earning_ratio = 3.723555281497113%
+2021-03-20 14:25:04,778 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:25:04,778 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:25:04,778 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3228.9312, limit_price: 0.003099
+2021-03-20 14:25:08,194 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.00645786244753
+2021-03-20 14:25:08,195 - eth - INFO - actual_balance=10.2860542373892, ts_actual_sell=2021-03-20 14:25:08
+2021-03-20 14:25:08,195 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:25:08,195 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:25:08,197 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:25:08,197 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:25:08
+2021-03-20 14:25:08,197 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:25:08
+2021-03-20 14:25:08,197 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:25:08,198 - eth - INFO - StartTime= 2021-03-20 14:25:08
+2021-03-20 14:25:08,610 - eth - INFO - ethusdt  1000
+2021-03-20 14:25:10,007 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:25:10,469 - eth - INFO - eth3susdt  1000
+2021-03-20 14:25:10,469 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:25:10,470 - eth - INFO - FinishTime= 2021-03-20 14:25:10
+2021-03-20 14:25:10,470 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:25:10
+2021-03-20 14:25:10,470 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:25:10
+2021-03-20 14:25:10,796 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:25:10,797 - eth - INFO - last_open=1823.63, last_close=1823.7, invest_direction=planB, last_ts=2021-03-20 14:20:00
+2021-03-20 14:25:10,797 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:25:10
+2021-03-20 14:25:10,797 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 14:20:00
+2021-03-20 14:25:10,797 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:25:10
+2021-03-20 14:25:11,139 - eth - INFO - current_balance = 10.372355528149711
+2021-03-20 14:25:11,139 - eth - INFO - BUY NEW COINS
+2021-03-20 14:25:11,139 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003099, amount=3226.847370119393, ts:2021-03-20 14:25:12
+2021-03-20 14:25:11,139 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:25:11,139 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:25:11,700 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:25:11,700 - eth - INFO - order_id=236884557738906, field_amount=3225.8064516129034, price=0.0, actual_buy_market_amount=3225.8064516129034
+2021-03-20 14:25:11,701 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3225.8064516129034
+2021-03-20 14:25:11,701 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:25:11
+2021-03-20 14:25:11,701 - eth - INFO - =========================================
+2021-03-20 14:25:11,702 - eth - INFO - sleep 289 seconds .....
+2021-03-20 14:30:00,712 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:30:00
+2021-03-20 14:30:02,089 - eth - INFO - SELL LAST COIN
+2021-03-20 14:30:02,089 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3226.847370119393, sell_cur_price:0.0031
+2021-03-20 14:30:02,089 - eth - INFO - sell_cur_price * last_amount = 10.003226847370119
+2021-03-20 14:30:02,090 - eth - INFO - current_balance = 10.37558237551983  sell_ts:2021-03-20 14:30:03  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:30:02,090 - eth - INFO - demo_action_running_duration: 1:35:03
+2021-03-20 14:30:02,090 - eth - INFO - earning_ratio = 3.7558237551982994%
+2021-03-20 14:30:02,090 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:30:02,090 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:30:02,090 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3225.8064, limit_price: 0.0031
+2021-03-20 14:30:04,469 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.0
+2021-03-20 14:30:04,470 - eth - INFO - actual_balance=10.2860542373892, ts_actual_sell=2021-03-20 14:30:04
+2021-03-20 14:30:04,470 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:30:04,470 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:30:04,470 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:30:04,470 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:30:04
+2021-03-20 14:30:04,471 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:30:04
+2021-03-20 14:30:04,471 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:30:04,471 - eth - INFO - StartTime= 2021-03-20 14:30:04
+2021-03-20 14:30:05,851 - eth - INFO - ethusdt  1000
+2021-03-20 14:30:06,218 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:30:07,628 - eth - INFO - eth3susdt  1000
+2021-03-20 14:30:07,628 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:30:07,628 - eth - INFO - FinishTime= 2021-03-20 14:30:07
+2021-03-20 14:30:07,628 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:30:07
+2021-03-20 14:30:07,628 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:30:07
+2021-03-20 14:30:07,921 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:30:07,921 - eth - INFO - last_open=1823.69, last_close=1822.1, invest_direction=planB, last_ts=2021-03-20 14:25:00
+2021-03-20 14:30:07,921 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:30:07
+2021-03-20 14:30:07,921 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 14:25:00
+2021-03-20 14:30:07,921 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:30:07
+2021-03-20 14:30:15,455 - eth - INFO - current_balance = 10.37558237551983
+2021-03-20 14:30:15,455 - eth - INFO - BUY NEW COINS
+2021-03-20 14:30:15,455 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:50.0284, amount=0.19988646448817074, ts:2021-03-20 14:30:16
+2021-03-20 14:30:15,455 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:30:15,455 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:30:18,138 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:30:18,138 - eth - INFO - order_id=236884531511339, field_amount=0.1996677528592422, price=0.0, actual_buy_market_amount=0.1996677528592422
+2021-03-20 14:30:18,138 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.1996677528592422
+2021-03-20 14:30:18,138 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:30:18
+2021-03-20 14:30:18,138 - eth - INFO - =========================================
+2021-03-20 14:30:18,139 - eth - INFO - sleep 282 seconds .....
+2021-03-20 14:35:00,153 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:35:00
+2021-03-20 14:35:02,553 - eth - INFO - SELL LAST COIN
+2021-03-20 14:35:02,554 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.19988646448817074, sell_cur_price:49.9348
+2021-03-20 14:35:02,554 - eth - INFO - sell_cur_price * last_amount = 9.98129062692391
+2021-03-20 14:35:02,554 - eth - INFO - current_balance = 10.35687300244374  sell_ts:2021-03-20 14:35:03  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:35:02,554 - eth - INFO - demo_action_running_duration: 1:40:03
+2021-03-20 14:35:02,554 - eth - INFO - earning_ratio = 3.5687300244373965%
+2021-03-20 14:35:02,555 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:35:02,555 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:35:02,555 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.1996, limit_price: 49.9348
+2021-03-20 14:35:02,831 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.970369305475689
+2021-03-20 14:35:02,831 - eth - INFO - actual_balance=10.256423542864889, ts_actual_sell=2021-03-20 14:35:02
+2021-03-20 14:35:02,831 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:35:02,831 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:35:02,840 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:35:02,840 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:35:02
+2021-03-20 14:35:02,841 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:35:02
+2021-03-20 14:35:02,841 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:35:02,841 - eth - INFO - StartTime= 2021-03-20 14:35:02
+2021-03-20 14:35:03,285 - eth - INFO - ethusdt  1000
+2021-03-20 14:35:04,694 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:35:05,133 - eth - INFO - eth3susdt  1000
+2021-03-20 14:35:05,134 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:35:05,134 - eth - INFO - FinishTime= 2021-03-20 14:35:05
+2021-03-20 14:35:05,134 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:35:05
+2021-03-20 14:35:05,134 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:35:05
+2021-03-20 14:35:05,475 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:35:05,475 - eth - INFO - last_open=1822.1, last_close=1822.79, invest_direction=planB, last_ts=2021-03-20 14:30:00
+2021-03-20 14:35:05,475 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:35:05
+2021-03-20 14:35:05,475 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 14:30:00
+2021-03-20 14:35:05,475 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:35:05
+2021-03-20 14:35:07,909 - eth - INFO - current_balance = 10.35687300244374
+2021-03-20 14:35:07,909 - eth - INFO - BUY NEW COINS
+2021-03-20 14:35:07,910 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003097, amount=3228.9312237649337, ts:2021-03-20 14:35:09
+2021-03-20 14:35:07,910 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:35:07,910 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:35:08,464 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:35:08,464 - eth - INFO - order_id=236884582021661, field_amount=3228.9312237649337, price=0.0, actual_buy_market_amount=3228.9312237649337
+2021-03-20 14:35:08,464 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3228.9312237649337
+2021-03-20 14:35:08,464 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:35:08
+2021-03-20 14:35:08,464 - eth - INFO - =========================================
+2021-03-20 14:35:08,465 - eth - INFO - sleep 292 seconds .....
+2021-03-20 14:40:00,478 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:40:00
+2021-03-20 14:40:00,795 - eth - INFO - SELL LAST COIN
+2021-03-20 14:40:00,795 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3228.9312237649337, sell_cur_price:0.003105
+2021-03-20 14:40:00,795 - eth - INFO - sell_cur_price * last_amount = 10.02583144979012
+2021-03-20 14:40:00,795 - eth - INFO - current_balance = 10.38270445223386  sell_ts:2021-03-20 14:40:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:40:00,795 - eth - INFO - demo_action_running_duration: 1:45:01
+2021-03-20 14:40:00,795 - eth - INFO - earning_ratio = 3.8270445223385963%
+2021-03-20 14:40:00,796 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:40:00,796 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:40:00,796 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3228.9312, limit_price: 0.003105
+2021-03-20 14:40:02,162 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.02583144979012
+2021-03-20 14:40:02,162 - eth - INFO - actual_balance=10.282254992655009, ts_actual_sell=2021-03-20 14:40:02
+2021-03-20 14:40:02,162 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:40:02,163 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:40:02,163 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:40:02,163 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:40:02
+2021-03-20 14:40:02,163 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:40:02
+2021-03-20 14:40:02,163 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:40:02,164 - eth - INFO - StartTime= 2021-03-20 14:40:02
+2021-03-20 14:40:02,529 - eth - INFO - ethusdt  1000
+2021-03-20 14:40:02,895 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:40:13,276 - eth - INFO - eth3susdt  1000
+2021-03-20 14:40:13,277 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:40:13,277 - eth - INFO - FinishTime= 2021-03-20 14:40:13
+2021-03-20 14:40:13,277 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:40:13
+2021-03-20 14:40:13,277 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:40:13
+2021-03-20 14:40:13,505 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:40:13,505 - eth - INFO - last_open=1822.78, last_close=1821.67, invest_direction=planB, last_ts=2021-03-20 14:35:00
+2021-03-20 14:40:13,506 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:40:13
+2021-03-20 14:40:13,506 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 14:35:00
+2021-03-20 14:40:13,506 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:40:13
+2021-03-20 14:40:23,768 - eth - INFO - current_balance = 10.38270445223386
+2021-03-20 14:40:23,768 - eth - INFO - BUY NEW COINS
+2021-03-20 14:40:23,769 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.9, amount=0.20040080160320642, ts:2021-03-20 14:40:24
+2021-03-20 14:40:23,769 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:40:23,769 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:40:24,411 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:40:24,411 - eth - INFO - order_id=236884649413539, field_amount=0.20013368930445538, price=0.0, actual_buy_market_amount=0.20013368930445538
+2021-03-20 14:40:24,411 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20013368930445538
+2021-03-20 14:40:24,411 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:40:24
+2021-03-20 14:40:24,411 - eth - INFO - =========================================
+2021-03-20 14:40:24,412 - eth - INFO - sleep 276 seconds .....
+2021-03-20 14:45:00,423 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:45:00
+2021-03-20 14:45:00,701 - eth - INFO - SELL LAST COIN
+2021-03-20 14:45:00,701 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20040080160320642, sell_cur_price:49.9343
+2021-03-20 14:45:00,702 - eth - INFO - sell_cur_price * last_amount = 10.006873747494991
+2021-03-20 14:45:00,702 - eth - INFO - current_balance = 10.38957819972885  sell_ts:2021-03-20 14:45:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:45:00,702 - eth - INFO - demo_action_running_duration: 1:50:01
+2021-03-20 14:45:00,702 - eth - INFO - earning_ratio = 3.8957819972885055%
+2021-03-20 14:45:00,703 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:45:00,703 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:45:00,703 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2001, limit_price: 49.9343
+2021-03-20 14:45:03,044 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.993535681835466
+2021-03-20 14:45:03,044 - eth - INFO - actual_balance=10.275790674490475, ts_actual_sell=2021-03-20 14:45:03
+2021-03-20 14:45:03,044 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:45:03,044 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:45:03,046 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:45:03,047 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:45:03
+2021-03-20 14:45:03,047 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:45:03
+2021-03-20 14:45:03,047 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:45:03,047 - eth - INFO - StartTime= 2021-03-20 14:45:03
+2021-03-20 14:45:03,493 - eth - INFO - ethusdt  1000
+2021-03-20 14:45:03,847 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:45:04,220 - eth - INFO - eth3susdt  1000
+2021-03-20 14:45:04,220 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:45:04,220 - eth - INFO - FinishTime= 2021-03-20 14:45:04
+2021-03-20 14:45:04,220 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:45:04
+2021-03-20 14:45:04,221 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:45:04
+2021-03-20 14:45:04,443 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:45:04,443 - eth - INFO - last_open=1821.77, last_close=1822.17, invest_direction=planB, last_ts=2021-03-20 14:40:00
+2021-03-20 14:45:04,443 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:45:04
+2021-03-20 14:45:04,443 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 14:40:00
+2021-03-20 14:45:04,443 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:45:04
+2021-03-20 14:45:06,805 - eth - INFO - current_balance = 10.38957819972885
+2021-03-20 14:45:06,805 - eth - INFO - BUY NEW COINS
+2021-03-20 14:45:06,805 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003099, amount=3226.847370119393, ts:2021-03-20 14:45:07
+2021-03-20 14:45:06,805 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:45:06,806 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:45:11,616 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:45:11,616 - eth - INFO - order_id=236884691206933, field_amount=3220.6119162640903, price=0.0, actual_buy_market_amount=3220.6119162640903
+2021-03-20 14:45:11,616 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3220.6119162640903
+2021-03-20 14:45:11,616 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:45:11
+2021-03-20 14:45:11,616 - eth - INFO - =========================================
+2021-03-20 14:45:11,617 - eth - INFO - sleep 289 seconds .....
+2021-03-20 14:50:00,629 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:50:00
+2021-03-20 14:50:05,145 - eth - INFO - SELL LAST COIN
+2021-03-20 14:50:05,146 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3226.847370119393, sell_cur_price:0.003111
+2021-03-20 14:50:05,146 - eth - INFO - sell_cur_price * last_amount = 10.038722168441431
+2021-03-20 14:50:05,146 - eth - INFO - current_balance = 10.428300368170282  sell_ts:2021-03-20 14:50:06  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:50:05,146 - eth - INFO - demo_action_running_duration: 1:55:06
+2021-03-20 14:50:05,146 - eth - INFO - earning_ratio = 4.283003681702819%
+2021-03-20 14:50:05,146 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:50:05,146 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:50:05,146 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3220.6119, limit_price: 0.003111
+2021-03-20 14:50:05,481 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.019323671497585
+2021-03-20 14:50:05,481 - eth - INFO - actual_balance=10.29511434598806, ts_actual_sell=2021-03-20 14:50:05
+2021-03-20 14:50:05,481 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:50:05,481 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:50:05,482 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:50:05,482 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:50:05
+2021-03-20 14:50:05,482 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:50:05
+2021-03-20 14:50:05,482 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:50:05,482 - eth - INFO - StartTime= 2021-03-20 14:50:05
+2021-03-20 14:50:09,147 - eth - INFO - ethusdt  1000
+2021-03-20 14:50:11,621 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:50:13,027 - eth - INFO - eth3susdt  1000
+2021-03-20 14:50:13,027 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:50:13,027 - eth - INFO - FinishTime= 2021-03-20 14:50:13
+2021-03-20 14:50:13,028 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:50:13
+2021-03-20 14:50:13,028 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:50:13
+2021-03-20 14:50:13,534 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:50:13,534 - eth - INFO - last_open=1822.18, last_close=1820.54, invest_direction=planB, last_ts=2021-03-20 14:45:00
+2021-03-20 14:50:13,535 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:50:13
+2021-03-20 14:50:13,535 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 14:45:00
+2021-03-20 14:50:13,535 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:50:13
+2021-03-20 14:50:14,845 - eth - INFO - current_balance = 10.428300368170282
+2021-03-20 14:50:14,846 - eth - INFO - BUY NEW COINS
+2021-03-20 14:50:14,846 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.8125, amount=0.20075282308657466, ts:2021-03-20 14:50:15
+2021-03-20 14:50:14,847 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:50:14,847 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:50:15,443 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:50:15,443 - eth - INFO - order_id=236884707783502, field_amount=0.20054105977928452, price=0.0, actual_buy_market_amount=0.20054105977928452
+2021-03-20 14:50:15,443 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20054105977928452
+2021-03-20 14:50:15,443 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:50:15
+2021-03-20 14:50:15,443 - eth - INFO - =========================================
+2021-03-20 14:50:15,444 - eth - INFO - sleep 285 seconds .....
+2021-03-20 14:55:00,456 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 14:55:00
+2021-03-20 14:55:03,891 - eth - INFO - SELL LAST COIN
+2021-03-20 14:55:03,892 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20075282308657466, sell_cur_price:49.7429
+2021-03-20 14:55:03,893 - eth - INFO - sell_cur_price * last_amount = 9.986027603513174
+2021-03-20 14:55:03,893 - eth - INFO - current_balance = 10.414327971683456  sell_ts:2021-03-20 14:55:05  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 14:55:03,893 - eth - INFO - demo_action_running_duration: 2:00:05
+2021-03-20 14:55:03,893 - eth - INFO - earning_ratio = 4.143279716834556%
+2021-03-20 14:55:03,893 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 14:55:03,894 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 14:55:03,894 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2005, limit_price: 49.7429
+2021-03-20 14:55:04,181 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.975493882494971
+2021-03-20 14:55:04,182 - eth - INFO - actual_balance=10.270608228483031, ts_actual_sell=2021-03-20 14:55:04
+2021-03-20 14:55:04,182 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 14:55:04,182 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 14:55:04,182 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 14:55:04,182 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 14:55:04
+2021-03-20 14:55:04,182 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 14:55:04
+2021-03-20 14:55:04,183 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 14:55:04,183 - eth - INFO - StartTime= 2021-03-20 14:55:04
+2021-03-20 14:55:04,553 - eth - INFO - ethusdt  1000
+2021-03-20 14:55:06,965 - eth - INFO - eth3lusdt  1000
+2021-03-20 14:55:07,354 - eth - INFO - eth3susdt  1000
+2021-03-20 14:55:07,355 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 14:55:07,355 - eth - INFO - FinishTime= 2021-03-20 14:55:07
+2021-03-20 14:55:07,355 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 14:55:07
+2021-03-20 14:55:07,355 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 14:55:07
+2021-03-20 14:55:07,609 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 14:55:07,609 - eth - INFO - last_open=1820.54, last_close=1820.11, invest_direction=planB, last_ts=2021-03-20 14:50:00
+2021-03-20 14:55:07,610 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 14:55:07
+2021-03-20 14:55:07,610 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 14:50:00
+2021-03-20 14:55:07,610 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 14:55:07
+2021-03-20 14:55:07,915 - eth - INFO - current_balance = 10.414327971683456
+2021-03-20 14:55:07,915 - eth - INFO - BUY NEW COINS
+2021-03-20 14:55:07,915 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.7404, amount=0.20104381951090058, ts:2021-03-20 14:55:09
+2021-03-20 14:55:07,915 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 14:55:07,915 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 14:55:10,559 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 14:55:10,560 - eth - INFO - order_id=236884732846543, field_amount=0.20102805748598332, price=0.0, actual_buy_market_amount=0.20102805748598332
+2021-03-20 14:55:10,560 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20102805748598332
+2021-03-20 14:55:10,560 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 14:55:10
+2021-03-20 14:55:10,560 - eth - INFO - =========================================
+2021-03-20 14:55:10,561 - eth - INFO - sleep 290 seconds .....
+2021-03-20 15:00:00,572 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:00:00
+2021-03-20 15:00:01,889 - eth - INFO - SELL LAST COIN
+2021-03-20 15:00:01,890 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20104381951090058, sell_cur_price:49.8346
+2021-03-20 15:00:01,890 - eth - INFO - sell_cur_price * last_amount = 10.018938327797926
+2021-03-20 15:00:01,890 - eth - INFO - current_balance = 10.433266299481382  sell_ts:2021-03-20 15:00:03  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:00:01,890 - eth - INFO - demo_action_running_duration: 2:05:03
+2021-03-20 15:00:01,891 - eth - INFO - earning_ratio = 4.332662994813816%
+2021-03-20 15:00:01,891 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:00:01,891 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:00:01,891 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.201, limit_price: 49.8346
+2021-03-20 15:00:02,295 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.018152833590985
+2021-03-20 15:00:02,296 - eth - INFO - actual_balance=10.288761062074016, ts_actual_sell=2021-03-20 15:00:02
+2021-03-20 15:00:02,297 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:00:02,297 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:00:02,301 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:00:02,302 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:00:02
+2021-03-20 15:00:02,302 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:00:02
+2021-03-20 15:00:02,302 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:00:02,302 - eth - INFO - StartTime= 2021-03-20 15:00:02
+2021-03-20 15:00:02,697 - eth - INFO - ethusdt  1000
+2021-03-20 15:00:03,137 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:00:04,535 - eth - INFO - eth3susdt  1000
+2021-03-20 15:00:04,535 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:00:04,535 - eth - INFO - FinishTime= 2021-03-20 15:00:04
+2021-03-20 15:00:04,536 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:00:04
+2021-03-20 15:00:04,536 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:00:04
+2021-03-20 15:00:04,768 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:00:04,769 - eth - INFO - last_open=1820.11, last_close=1821.89, invest_direction=planB, last_ts=2021-03-20 14:55:00
+2021-03-20 15:00:04,769 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:00:04
+2021-03-20 15:00:04,769 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 14:55:00
+2021-03-20 15:00:04,769 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:00:04
+2021-03-20 15:00:05,055 - eth - INFO - current_balance = 10.433266299481382
+2021-03-20 15:00:05,055 - eth - INFO - BUY NEW COINS
+2021-03-20 15:00:05,055 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003105, amount=3220.6119162640903, ts:2021-03-20 15:00:06
+2021-03-20 15:00:05,055 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:00:05,055 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:00:05,573 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:00:05,573 - eth - INFO - order_id=236884816992727, field_amount=3219.575016097875, price=0.0, actual_buy_market_amount=3219.575016097875
+2021-03-20 15:00:05,573 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3219.575016097875
+2021-03-20 15:00:05,573 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:00:05
+2021-03-20 15:00:05,573 - eth - INFO - =========================================
+2021-03-20 15:00:05,574 - eth - INFO - sleep 295 seconds .....
+2021-03-20 15:05:00,583 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:05:00
+2021-03-20 15:05:01,955 - eth - INFO - SELL LAST COIN
+2021-03-20 15:05:01,955 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3220.6119162640903, sell_cur_price:0.003101
+2021-03-20 15:05:01,956 - eth - INFO - sell_cur_price * last_amount = 9.987117552334944
+2021-03-20 15:05:01,956 - eth - INFO - current_balance = 10.420383851816325  sell_ts:2021-03-20 15:05:03  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:05:01,956 - eth - INFO - demo_action_running_duration: 2:10:03
+2021-03-20 15:05:01,956 - eth - INFO - earning_ratio = 4.203838518163252%
+2021-03-20 15:05:01,956 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:05:01,956 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:05:01,956 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3219.575, limit_price: 0.003101
+2021-03-20 15:05:02,274 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.98390212491951
+2021-03-20 15:05:02,275 - eth - INFO - actual_balance=10.272663186993526, ts_actual_sell=2021-03-20 15:05:02
+2021-03-20 15:05:02,275 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:05:02,275 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:05:02,279 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:05:02,279 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:05:02
+2021-03-20 15:05:02,279 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:05:02
+2021-03-20 15:05:02,280 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:05:02,280 - eth - INFO - StartTime= 2021-03-20 15:05:02
+2021-03-20 15:05:02,722 - eth - INFO - ethusdt  1000
+2021-03-20 15:05:05,219 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:05:05,522 - eth - INFO - eth3susdt  1000
+2021-03-20 15:05:05,523 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:05:05,523 - eth - INFO - FinishTime= 2021-03-20 15:05:05
+2021-03-20 15:05:05,523 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:05:05
+2021-03-20 15:05:05,523 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:05:05
+2021-03-20 15:05:06,454 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:05:06,455 - eth - INFO - last_open=1821.9, last_close=1822.57, invest_direction=planB, last_ts=2021-03-20 15:00:00
+2021-03-20 15:05:06,455 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:05:06
+2021-03-20 15:05:06,455 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 15:00:00
+2021-03-20 15:05:06,455 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:05:06
+2021-03-20 15:05:07,819 - eth - INFO - current_balance = 10.420383851816325
+2021-03-20 15:05:07,822 - eth - INFO - BUY NEW COINS
+2021-03-20 15:05:07,823 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003102, amount=3223.726627981947, ts:2021-03-20 15:05:08
+2021-03-20 15:05:07,823 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:05:07,823 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:05:11,950 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:05:11,951 - eth - INFO - order_id=236884884822606, field_amount=3221.6494845360826, price=0.0, actual_buy_market_amount=3221.6494845360826
+2021-03-20 15:05:11,952 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3221.6494845360826
+2021-03-20 15:05:11,952 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:05:11
+2021-03-20 15:05:11,952 - eth - INFO - =========================================
+2021-03-20 15:05:11,953 - eth - INFO - sleep 289 seconds .....
+2021-03-20 15:10:00,963 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:10:00
+2021-03-20 15:10:03,843 - eth - INFO - SELL LAST COIN
+2021-03-20 15:10:03,844 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3223.726627981947, sell_cur_price:0.003128
+2021-03-20 15:10:03,844 - eth - INFO - sell_cur_price * last_amount = 10.08381689232753
+2021-03-20 15:10:03,844 - eth - INFO - current_balance = 10.504200744143855  sell_ts:2021-03-20 15:10:04  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:10:03,844 - eth - INFO - demo_action_running_duration: 2:15:04
+2021-03-20 15:10:03,844 - eth - INFO - earning_ratio = 5.04200744143855%
+2021-03-20 15:10:03,844 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:10:03,844 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:10:03,845 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3221.6494, limit_price: 0.003128
+2021-03-20 15:10:05,206 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.077319587628867
+2021-03-20 15:10:05,206 - eth - INFO - actual_balance=10.349982774622394, ts_actual_sell=2021-03-20 15:10:05
+2021-03-20 15:10:05,206 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:10:05,206 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:10:05,207 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:10:05,207 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:10:05
+2021-03-20 15:10:05,207 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:10:05
+2021-03-20 15:10:05,207 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:10:05,207 - eth - INFO - StartTime= 2021-03-20 15:10:05
+2021-03-20 15:10:06,694 - eth - INFO - ethusdt  1000
+2021-03-20 15:10:09,205 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:10:11,587 - eth - INFO - eth3susdt  1000
+2021-03-20 15:10:11,587 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:10:11,587 - eth - INFO - FinishTime= 2021-03-20 15:10:11
+2021-03-20 15:10:11,587 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:10:11
+2021-03-20 15:10:11,587 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:10:11
+2021-03-20 15:10:11,889 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:10:11,889 - eth - INFO - last_open=1822.57, last_close=1817.47, invest_direction=planB, last_ts=2021-03-20 15:05:00
+2021-03-20 15:10:11,889 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:10:11
+2021-03-20 15:10:11,889 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 15:05:00
+2021-03-20 15:10:11,890 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:10:11
+2021-03-20 15:10:13,226 - eth - INFO - current_balance = 10.504200744143855
+2021-03-20 15:10:13,226 - eth - INFO - BUY NEW COINS
+2021-03-20 15:10:13,226 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.5807, amount=0.20169138394576921, ts:2021-03-20 15:10:14
+2021-03-20 15:10:13,226 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:10:13,227 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:10:13,853 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:10:13,853 - eth - INFO - order_id=236884900887379, field_amount=0.20170928447665518, price=0.0, actual_buy_market_amount=0.20170928447665518
+2021-03-20 15:10:13,853 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20170928447665518
+2021-03-20 15:10:13,853 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:10:13
+2021-03-20 15:10:13,853 - eth - INFO - =========================================
+2021-03-20 15:10:13,854 - eth - INFO - sleep 287 seconds .....
+2021-03-20 15:15:00,862 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:15:00
+2021-03-20 15:15:07,467 - eth - INFO - SELL LAST COIN
+2021-03-20 15:15:07,467 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20169138394576921, sell_cur_price:49.6904
+2021-03-20 15:15:07,467 - eth - INFO - sell_cur_price * last_amount = 10.02212554481885
+2021-03-20 15:15:07,467 - eth - INFO - current_balance = 10.526326288962705  sell_ts:2021-03-20 15:15:08  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:15:07,467 - eth - INFO - demo_action_running_duration: 2:20:08
+2021-03-20 15:15:07,467 - eth - INFO - earning_ratio = 5.263262889627054%
+2021-03-20 15:15:07,467 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:15:07,467 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:15:07,468 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2017, limit_price: 49.6904
+2021-03-20 15:15:07,820 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.023015029358787
+2021-03-20 15:15:07,820 - eth - INFO - actual_balance=10.37299780398118, ts_actual_sell=2021-03-20 15:15:07
+2021-03-20 15:15:07,820 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:15:07,821 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:15:07,821 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:15:07,821 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:15:07
+2021-03-20 15:15:07,821 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:15:07
+2021-03-20 15:15:07,821 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:15:07,822 - eth - INFO - StartTime= 2021-03-20 15:15:07
+2021-03-20 15:15:09,298 - eth - INFO - ethusdt  1000
+2021-03-20 15:15:11,753 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:15:15,276 - eth - INFO - eth3susdt  1000
+2021-03-20 15:15:15,276 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:15:15,276 - eth - INFO - FinishTime= 2021-03-20 15:15:15
+2021-03-20 15:15:15,276 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:15:15
+2021-03-20 15:15:15,276 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:15:15
+2021-03-20 15:15:15,669 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:15:15,670 - eth - INFO - last_open=1817.47, last_close=1819.31, invest_direction=planB, last_ts=2021-03-20 15:10:00
+2021-03-20 15:15:15,671 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:15:15
+2021-03-20 15:15:15,671 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 15:10:00
+2021-03-20 15:15:15,671 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:15:15
+2021-03-20 15:15:16,075 - eth - INFO - current_balance = 10.526326288962705
+2021-03-20 15:15:16,075 - eth - INFO - BUY NEW COINS
+2021-03-20 15:15:16,075 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003119, amount=3206.155819172812, ts:2021-03-20 15:15:17
+2021-03-20 15:15:16,147 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:15:16,147 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:15:17,967 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:15:17,967 - eth - INFO - order_id=236884925924044, field_amount=3206.155819172812, price=0.0, actual_buy_market_amount=3206.155819172812
+2021-03-20 15:15:17,967 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3206.155819172812
+2021-03-20 15:15:17,967 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:15:17
+2021-03-20 15:15:17,967 - eth - INFO - =========================================
+2021-03-20 15:15:17,968 - eth - INFO - sleep 283 seconds .....
+2021-03-20 15:20:00,978 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:20:00
+2021-03-20 15:20:04,076 - eth - INFO - SELL LAST COIN
+2021-03-20 15:20:04,077 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3206.155819172812, sell_cur_price:0.003123
+2021-03-20 15:20:04,077 - eth - INFO - sell_cur_price * last_amount = 10.01282462327669
+2021-03-20 15:20:04,078 - eth - INFO - current_balance = 10.539150912239396  sell_ts:2021-03-20 15:20:05  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:20:04,078 - eth - INFO - demo_action_running_duration: 2:25:05
+2021-03-20 15:20:04,078 - eth - INFO - earning_ratio = 5.391509122393963%
+2021-03-20 15:20:04,078 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:20:04,078 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:20:04,078 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3206.1558, limit_price: 0.003123
+2021-03-20 15:20:04,333 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.01282462327669
+2021-03-20 15:20:04,333 - eth - INFO - actual_balance=10.385822427257871, ts_actual_sell=2021-03-20 15:20:04
+2021-03-20 15:20:04,333 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:20:04,333 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:20:04,334 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:20:04,334 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:20:04
+2021-03-20 15:20:04,334 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:20:04
+2021-03-20 15:20:04,334 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:20:04,334 - eth - INFO - StartTime= 2021-03-20 15:20:04
+2021-03-20 15:20:05,830 - eth - INFO - ethusdt  1000
+2021-03-20 15:20:06,256 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:20:08,743 - eth - INFO - eth3susdt  1000
+2021-03-20 15:20:08,743 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:20:08,743 - eth - INFO - FinishTime= 2021-03-20 15:20:08
+2021-03-20 15:20:08,744 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:20:08
+2021-03-20 15:20:08,744 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:20:08
+2021-03-20 15:20:08,993 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:20:08,994 - eth - INFO - last_open=1819.38, last_close=1819.01, invest_direction=planB, last_ts=2021-03-20 15:15:00
+2021-03-20 15:20:08,994 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:20:08
+2021-03-20 15:20:08,994 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 15:15:00
+2021-03-20 15:20:08,994 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:20:08
+2021-03-20 15:20:12,374 - eth - INFO - current_balance = 10.539150912239396
+2021-03-20 15:20:12,377 - eth - INFO - BUY NEW COINS
+2021-03-20 15:20:12,377 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.63, amount=0.20149103364900262, ts:2021-03-20 15:20:13
+2021-03-20 15:20:12,377 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:20:12,378 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:20:16,061 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:20:16,061 - eth - INFO - order_id=236884976533575, field_amount=0.201405001288992, price=0.0, actual_buy_market_amount=0.201405001288992
+2021-03-20 15:20:16,061 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.201405001288992
+2021-03-20 15:20:16,061 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:20:16
+2021-03-20 15:20:16,061 - eth - INFO - =========================================
+2021-03-20 15:20:16,062 - eth - INFO - sleep 284 seconds .....
+2021-03-20 15:25:00,071 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:25:00
+2021-03-20 15:25:00,369 - eth - INFO - SELL LAST COIN
+2021-03-20 15:25:00,369 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20149103364900262, sell_cur_price:49.6955
+2021-03-20 15:25:00,369 - eth - INFO - sell_cur_price * last_amount = 10.01319766270401
+2021-03-20 15:25:00,369 - eth - INFO - current_balance = 10.552348574943407  sell_ts:2021-03-20 15:25:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:25:00,369 - eth - INFO - demo_action_running_duration: 2:30:01
+2021-03-20 15:25:00,370 - eth - INFO - earning_ratio = 5.5234857494340694%
+2021-03-20 15:25:00,370 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:25:00,370 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:25:00,370 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2014, limit_price: 49.6955
+2021-03-20 15:25:00,642 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.008922241557102
+2021-03-20 15:25:00,642 - eth - INFO - actual_balance=10.394744668814972, ts_actual_sell=2021-03-20 15:25:00
+2021-03-20 15:25:00,643 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:25:00,643 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:25:00,643 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:25:00,644 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:25:00
+2021-03-20 15:25:00,644 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:25:00
+2021-03-20 15:25:00,644 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:25:00,644 - eth - INFO - StartTime= 2021-03-20 15:25:00
+2021-03-20 15:25:02,126 - eth - INFO - ethusdt  1000
+2021-03-20 15:25:02,508 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:25:04,005 - eth - INFO - eth3susdt  1000
+2021-03-20 15:25:04,005 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:25:04,005 - eth - INFO - FinishTime= 2021-03-20 15:25:04
+2021-03-20 15:25:04,005 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:25:04
+2021-03-20 15:25:04,005 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:25:04
+2021-03-20 15:25:04,238 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:25:04,238 - eth - INFO - last_open=1819.01, last_close=1819.62, invest_direction=planB, last_ts=2021-03-20 15:20:00
+2021-03-20 15:25:04,238 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:25:04
+2021-03-20 15:25:04,238 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 15:20:00
+2021-03-20 15:25:04,238 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:25:04
+2021-03-20 15:25:04,497 - eth - INFO - current_balance = 10.552348574943407
+2021-03-20 15:25:04,497 - eth - INFO - BUY NEW COINS
+2021-03-20 15:25:04,498 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003122, amount=3203.0749519538754, ts:2021-03-20 15:25:05
+2021-03-20 15:25:04,498 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:25:04,498 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:25:10,280 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:25:10,280 - eth - INFO - order_id=236884992889534, field_amount=3198.976327575176, price=0.0, actual_buy_market_amount=3198.976327575176
+2021-03-20 15:25:10,280 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3198.976327575176
+2021-03-20 15:25:10,280 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:25:10
+2021-03-20 15:25:10,280 - eth - INFO - =========================================
+2021-03-20 15:25:10,281 - eth - INFO - sleep 290 seconds .....
+2021-03-20 15:30:00,293 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:30:00
+2021-03-20 15:30:03,763 - eth - INFO - SELL LAST COIN
+2021-03-20 15:30:03,765 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3203.0749519538754, sell_cur_price:0.003111
+2021-03-20 15:30:03,765 - eth - INFO - sell_cur_price * last_amount = 9.964766175528506
+2021-03-20 15:30:03,766 - eth - INFO - current_balance = 10.517114750471913  sell_ts:2021-03-20 15:30:04  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:30:03,767 - eth - INFO - demo_action_running_duration: 2:35:04
+2021-03-20 15:30:03,767 - eth - INFO - earning_ratio = 5.1711475047191335%
+2021-03-20 15:30:03,767 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:30:03,767 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:30:03,767 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3198.9763, limit_price: 0.003111
+2021-03-20 15:30:04,094 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.952015355086374
+2021-03-20 15:30:04,094 - eth - INFO - actual_balance=10.346760023901346, ts_actual_sell=2021-03-20 15:30:04
+2021-03-20 15:30:04,094 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:30:04,094 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:30:04,095 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:30:04,095 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:30:04
+2021-03-20 15:30:04,095 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:30:04
+2021-03-20 15:30:04,096 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:30:04,096 - eth - INFO - StartTime= 2021-03-20 15:30:04
+2021-03-20 15:30:08,658 - eth - INFO - ethusdt  1000
+2021-03-20 15:30:09,097 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:30:09,541 - eth - INFO - eth3susdt  1000
+2021-03-20 15:30:09,543 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:30:09,544 - eth - INFO - FinishTime= 2021-03-20 15:30:09
+2021-03-20 15:30:09,545 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:30:09
+2021-03-20 15:30:09,545 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:30:09
+2021-03-20 15:30:10,502 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:30:10,502 - eth - INFO - last_open=1819.62, last_close=1821.2, invest_direction=planB, last_ts=2021-03-20 15:25:00
+2021-03-20 15:30:10,503 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:30:10
+2021-03-20 15:30:10,503 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 15:25:00
+2021-03-20 15:30:10,503 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:30:10
+2021-03-20 15:30:12,878 - eth - INFO - current_balance = 10.517114750471913
+2021-03-20 15:30:12,878 - eth - INFO - BUY NEW COINS
+2021-03-20 15:30:12,878 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003111, amount=3214.400514304082, ts:2021-03-20 15:30:13
+2021-03-20 15:30:12,878 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:30:12,878 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:30:15,682 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:30:15,682 - eth - INFO - order_id=236885068988949, field_amount=3212.3353678123995, price=0.0, actual_buy_market_amount=3212.3353678123995
+2021-03-20 15:30:15,682 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3212.3353678123995
+2021-03-20 15:30:15,682 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:30:15
+2021-03-20 15:30:15,682 - eth - INFO - =========================================
+2021-03-20 15:30:15,683 - eth - INFO - sleep 285 seconds .....
+2021-03-20 15:35:00,694 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:35:00
+2021-03-20 15:35:05,299 - eth - INFO - SELL LAST COIN
+2021-03-20 15:35:05,299 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3214.400514304082, sell_cur_price:0.003095
+2021-03-20 15:35:05,299 - eth - INFO - sell_cur_price * last_amount = 9.948569591771134
+2021-03-20 15:35:05,299 - eth - INFO - current_balance = 10.465684342243048  sell_ts:2021-03-20 15:35:06  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:35:05,299 - eth - INFO - demo_action_running_duration: 2:40:06
+2021-03-20 15:35:05,299 - eth - INFO - earning_ratio = 4.656843422430477%
+2021-03-20 15:35:05,299 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:35:05,299 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:35:05,300 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3212.3353, limit_price: 0.003095
+2021-03-20 15:35:07,692 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.942177963379377
+2021-03-20 15:35:07,693 - eth - INFO - actual_balance=10.288937987280724, ts_actual_sell=2021-03-20 15:35:07
+2021-03-20 15:35:07,693 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:35:07,693 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:35:07,694 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:35:07,694 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:35:07
+2021-03-20 15:35:07,694 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:35:07
+2021-03-20 15:35:07,694 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:35:07,694 - eth - INFO - StartTime= 2021-03-20 15:35:07
+2021-03-20 15:35:08,153 - eth - INFO - ethusdt  1000
+2021-03-20 15:35:08,625 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:35:13,272 - eth - INFO - eth3susdt  1000
+2021-03-20 15:35:13,272 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:35:13,272 - eth - INFO - FinishTime= 2021-03-20 15:35:13
+2021-03-20 15:35:13,273 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:35:13
+2021-03-20 15:35:13,273 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:35:13
+2021-03-20 15:35:13,543 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:35:13,543 - eth - INFO - last_open=1821.2, last_close=1824.66, invest_direction=planB, last_ts=2021-03-20 15:30:00
+2021-03-20 15:35:13,543 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:35:13
+2021-03-20 15:35:13,543 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 15:30:00
+2021-03-20 15:35:13,544 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:35:13
+2021-03-20 15:35:14,890 - eth - INFO - current_balance = 10.465684342243048
+2021-03-20 15:35:14,890 - eth - INFO - BUY NEW COINS
+2021-03-20 15:35:14,891 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003099, amount=3226.847370119393, ts:2021-03-20 15:35:15
+2021-03-20 15:35:14,891 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:35:14,891 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:35:16,561 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:35:16,561 - eth - INFO - order_id=236887980558850, field_amount=3221.6494845360826, price=0.0, actual_buy_market_amount=3221.6494845360826
+2021-03-20 15:35:16,561 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3221.6494845360826
+2021-03-20 15:35:16,562 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:35:16
+2021-03-20 15:35:16,562 - eth - INFO - =========================================
+2021-03-20 15:35:16,563 - eth - INFO - sleep 284 seconds .....
+2021-03-20 15:40:00,575 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:40:00
+2021-03-20 15:40:03,909 - eth - INFO - SELL LAST COIN
+2021-03-20 15:40:03,909 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3226.847370119393, sell_cur_price:0.003096
+2021-03-20 15:40:03,909 - eth - INFO - sell_cur_price * last_amount = 9.99031945788964
+2021-03-20 15:40:03,916 - eth - INFO - current_balance = 10.456003800132688  sell_ts:2021-03-20 15:40:04  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:40:03,916 - eth - INFO - demo_action_running_duration: 2:45:04
+2021-03-20 15:40:03,916 - eth - INFO - earning_ratio = 4.56003800132688%
+2021-03-20 15:40:03,926 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:40:03,926 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:40:03,926 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3221.6494, limit_price: 0.003096
+2021-03-20 15:40:06,292 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.974226804123711
+2021-03-20 15:40:06,293 - eth - INFO - actual_balance=10.263164791404435, ts_actual_sell=2021-03-20 15:40:06
+2021-03-20 15:40:06,293 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:40:06,293 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:40:06,293 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:40:06,294 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:40:06
+2021-03-20 15:40:06,294 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:40:06
+2021-03-20 15:40:06,294 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:40:06,294 - eth - INFO - StartTime= 2021-03-20 15:40:06
+2021-03-20 15:40:06,700 - eth - INFO - ethusdt  1000
+2021-03-20 15:40:08,222 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:40:08,517 - eth - INFO - eth3susdt  1000
+2021-03-20 15:40:08,517 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:40:08,517 - eth - INFO - FinishTime= 2021-03-20 15:40:08
+2021-03-20 15:40:08,517 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:40:08
+2021-03-20 15:40:08,518 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:40:08
+2021-03-20 15:40:08,792 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:40:08,793 - eth - INFO - last_open=1824.66, last_close=1823.36, invest_direction=planB, last_ts=2021-03-20 15:35:00
+2021-03-20 15:40:08,793 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:40:08
+2021-03-20 15:40:08,793 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 15:35:00
+2021-03-20 15:40:08,793 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:40:08
+2021-03-20 15:40:09,087 - eth - INFO - current_balance = 10.456003800132688
+2021-03-20 15:40:09,087 - eth - INFO - BUY NEW COINS
+2021-03-20 15:40:09,088 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:50.1191, amount=0.19952473208816598, ts:2021-03-20 15:40:10
+2021-03-20 15:40:09,088 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:40:09,088 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:40:09,625 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:40:09,625 - eth - INFO - order_id=236885152768513, field_amount=0.19935647729130368, price=0.0, actual_buy_market_amount=0.19935647729130368
+2021-03-20 15:40:09,625 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.19935647729130368
+2021-03-20 15:40:09,626 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:40:09
+2021-03-20 15:40:09,629 - eth - INFO - =========================================
+2021-03-20 15:40:09,631 - eth - INFO - sleep 291 seconds .....
+2021-03-20 15:45:00,643 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:45:00
+2021-03-20 15:45:00,896 - eth - INFO - SELL LAST COIN
+2021-03-20 15:45:00,896 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.19952473208816598, sell_cur_price:49.995
+2021-03-20 15:45:00,896 - eth - INFO - sell_cur_price * last_amount = 9.975238980747857
+2021-03-20 15:45:00,896 - eth - INFO - current_balance = 10.431242780880545  sell_ts:2021-03-20 15:45:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:45:00,896 - eth - INFO - demo_action_running_duration: 2:50:01
+2021-03-20 15:45:00,896 - eth - INFO - earning_ratio = 4.312427808805452%
+2021-03-20 15:45:00,896 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:45:00,897 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:45:00,897 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.1993, limit_price: 49.995
+2021-03-20 15:45:01,143 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.966827082178726
+2021-03-20 15:45:01,143 - eth - INFO - actual_balance=10.229991873583161, ts_actual_sell=2021-03-20 15:45:01
+2021-03-20 15:45:01,143 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:45:01,143 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:45:01,144 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:45:01,144 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:45:01
+2021-03-20 15:45:01,144 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:45:01
+2021-03-20 15:45:01,144 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:45:01,144 - eth - INFO - StartTime= 2021-03-20 15:45:01
+2021-03-20 15:45:01,533 - eth - INFO - ethusdt  1000
+2021-03-20 15:45:04,037 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:45:06,528 - eth - INFO - eth3susdt  1000
+2021-03-20 15:45:06,529 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:45:06,529 - eth - INFO - FinishTime= 2021-03-20 15:45:06
+2021-03-20 15:45:06,529 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:45:06
+2021-03-20 15:45:06,529 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:45:06
+2021-03-20 15:45:06,812 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:45:06,813 - eth - INFO - last_open=1823.36, last_close=1822.63, invest_direction=planB, last_ts=2021-03-20 15:40:00
+2021-03-20 15:45:06,813 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:45:06
+2021-03-20 15:45:06,813 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 15:40:00
+2021-03-20 15:45:06,813 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:45:06
+2021-03-20 15:45:07,117 - eth - INFO - current_balance = 10.431242780880545
+2021-03-20 15:45:07,118 - eth - INFO - BUY NEW COINS
+2021-03-20 15:45:07,118 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:49.995, amount=0.20002000200020004, ts:2021-03-20 15:45:08
+2021-03-20 15:45:07,118 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:45:07,118 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:45:08,763 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:45:08,763 - eth - INFO - order_id=236885203402158, field_amount=0.20002040208101227, price=0.0, actual_buy_market_amount=0.20002040208101227
+2021-03-20 15:45:08,763 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20002040208101227
+2021-03-20 15:45:08,764 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:45:08
+2021-03-20 15:45:08,764 - eth - INFO - =========================================
+2021-03-20 15:45:08,765 - eth - INFO - sleep 292 seconds .....
+2021-03-20 15:50:00,775 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:50:00
+2021-03-20 15:50:02,060 - eth - INFO - SELL LAST COIN
+2021-03-20 15:50:02,060 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.20002000200020004, sell_cur_price:50.017
+2021-03-20 15:50:02,060 - eth - INFO - sell_cur_price * last_amount = 10.004400440044005
+2021-03-20 15:50:02,061 - eth - INFO - current_balance = 10.43564322092455  sell_ts:2021-03-20 15:50:03  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:50:02,061 - eth - INFO - demo_action_running_duration: 2:55:03
+2021-03-20 15:50:02,061 - eth - INFO - earning_ratio = 4.356432209245504%
+2021-03-20 15:50:02,061 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:50:02,061 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:50:02,061 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2, limit_price: 50.017
+2021-03-20 15:50:02,348 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.004420450885991
+2021-03-20 15:50:02,348 - eth - INFO - actual_balance=10.234412324469153, ts_actual_sell=2021-03-20 15:50:02
+2021-03-20 15:50:02,348 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:50:02,349 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:50:02,354 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:50:02,355 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:50:02
+2021-03-20 15:50:02,355 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:50:02
+2021-03-20 15:50:02,355 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:50:02,355 - eth - INFO - StartTime= 2021-03-20 15:50:02
+2021-03-20 15:50:02,770 - eth - INFO - ethusdt  1000
+2021-03-20 15:50:03,129 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:50:03,488 - eth - INFO - eth3susdt  1000
+2021-03-20 15:50:03,489 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:50:03,489 - eth - INFO - FinishTime= 2021-03-20 15:50:03
+2021-03-20 15:50:03,489 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:50:03
+2021-03-20 15:50:03,490 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:50:03
+2021-03-20 15:50:03,829 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:50:03,829 - eth - INFO - last_open=1822.64, last_close=1821.96, invest_direction=planB, last_ts=2021-03-20 15:45:00
+2021-03-20 15:50:03,830 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:50:03
+2021-03-20 15:50:03,830 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 15:45:00
+2021-03-20 15:50:03,830 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:50:03
+2021-03-20 15:50:05,157 - eth - INFO - current_balance = 10.43564322092455
+2021-03-20 15:50:05,157 - eth - INFO - BUY NEW COINS
+2021-03-20 15:50:05,158 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:50.017, amount=0.19993202311214187, ts:2021-03-20 15:50:06
+2021-03-20 15:50:05,158 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:50:05,158 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:50:07,773 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:50:07,775 - eth - INFO - order_id=236885245374467, field_amount=0.20005241373239788, price=0.0, actual_buy_market_amount=0.20005241373239788
+2021-03-20 15:50:07,775 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.20005241373239788
+2021-03-20 15:50:07,775 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:50:07
+2021-03-20 15:50:07,776 - eth - INFO - =========================================
+2021-03-20 15:50:07,777 - eth - INFO - sleep 293 seconds .....
+2021-03-20 15:55:00,785 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 15:55:00
+2021-03-20 15:55:04,197 - eth - INFO - SELL LAST COIN
+2021-03-20 15:55:04,197 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.19993202311214187, sell_cur_price:50.0524
+2021-03-20 15:55:04,197 - eth - INFO - sell_cur_price * last_amount = 10.007077593618169
+2021-03-20 15:55:04,197 - eth - INFO - current_balance = 10.442720814542719  sell_ts:2021-03-20 15:55:05  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 15:55:04,197 - eth - INFO - demo_action_running_duration: 3:00:05
+2021-03-20 15:55:04,198 - eth - INFO - earning_ratio = 4.4272081454271905%
+2021-03-20 15:55:04,198 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 15:55:04,198 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 15:55:04,198 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.2, limit_price: 50.0524
+2021-03-20 15:55:04,525 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.013103433099472
+2021-03-20 15:55:04,525 - eth - INFO - actual_balance=10.247515757568625, ts_actual_sell=2021-03-20 15:55:04
+2021-03-20 15:55:04,525 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 15:55:04,525 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 15:55:04,526 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 15:55:04,526 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 15:55:04
+2021-03-20 15:55:04,526 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 15:55:04
+2021-03-20 15:55:04,526 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 15:55:04,526 - eth - INFO - StartTime= 2021-03-20 15:55:04
+2021-03-20 15:55:04,925 - eth - INFO - ethusdt  1000
+2021-03-20 15:55:05,313 - eth - INFO - eth3lusdt  1000
+2021-03-20 15:55:05,682 - eth - INFO - eth3susdt  1000
+2021-03-20 15:55:05,682 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 15:55:05,682 - eth - INFO - FinishTime= 2021-03-20 15:55:05
+2021-03-20 15:55:05,683 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 15:55:05
+2021-03-20 15:55:05,683 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 15:55:05
+2021-03-20 15:55:06,518 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 15:55:06,519 - eth - INFO - last_open=1821.95, last_close=1823.48, invest_direction=planB, last_ts=2021-03-20 15:50:00
+2021-03-20 15:55:06,519 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 15:55:06
+2021-03-20 15:55:06,519 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 15:50:00
+2021-03-20 15:55:06,519 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 15:55:06
+2021-03-20 15:55:06,827 - eth - INFO - current_balance = 10.442720814542719
+2021-03-20 15:55:06,827 - eth - INFO - BUY NEW COINS
+2021-03-20 15:55:06,827 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.0031, amount=3225.8064516129034, ts:2021-03-20 15:55:07
+2021-03-20 15:55:06,827 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 15:55:06,828 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 15:55:11,564 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 15:55:11,564 - eth - INFO - order_id=236885312739385, field_amount=3222.687721559781, price=0.0, actual_buy_market_amount=3222.687721559781
+2021-03-20 15:55:11,564 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3222.687721559781
+2021-03-20 15:55:11,564 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 15:55:11
+2021-03-20 15:55:11,564 - eth - INFO - =========================================
+2021-03-20 15:55:11,565 - eth - INFO - sleep 289 seconds .....
+2021-03-20 16:00:00,576 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:00:00
+2021-03-20 16:00:00,866 - eth - INFO - SELL LAST COIN
+2021-03-20 16:00:00,866 - eth - INFO - last_symbol:eth3susdt, last_currency:eth3s, last_amount:3225.8064516129034, sell_cur_price:0.0031
+2021-03-20 16:00:00,866 - eth - INFO - sell_cur_price * last_amount = 10.0
+2021-03-20 16:00:00,866 - eth - INFO - current_balance = 10.442720814542719  sell_ts:2021-03-20 16:00:01  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 16:00:00,867 - eth - INFO - demo_action_running_duration: 3:05:01
+2021-03-20 16:00:00,867 - eth - INFO - earning_ratio = 4.4272081454271905%
+2021-03-20 16:00:00,867 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:00:00,867 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:00:00,867 - eth - INFO - ### in sell_limit_price, symbol: eth3susdt, amount: 3222.6877, limit_price: 0.0031
+2021-03-20 16:00:01,176 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:9.990331936835322
+2021-03-20 16:00:01,177 - eth - INFO - actual_balance=10.237847694403946, ts_actual_sell=2021-03-20 16:00:01
+2021-03-20 16:00:01,177 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:00:01,177 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 16:00:01,178 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:00:01,178 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:00:01
+2021-03-20 16:00:01,178 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:00:01
+2021-03-20 16:00:01,178 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 16:00:01,178 - eth - INFO - StartTime= 2021-03-20 16:00:01
+2021-03-20 16:00:02,618 - eth - INFO - ethusdt  1000
+2021-03-20 16:00:03,097 - eth - INFO - eth3lusdt  1000
+2021-03-20 16:00:04,473 - eth - INFO - eth3susdt  1000
+2021-03-20 16:00:04,473 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:00:04,473 - eth - INFO - FinishTime= 2021-03-20 16:00:04
+2021-03-20 16:00:04,474 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:00:04
+2021-03-20 16:00:04,474 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:00:04
+2021-03-20 16:00:04,808 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 16:00:04,808 - eth - INFO - last_open=1823.56, last_close=1822.0, invest_direction=planB, last_ts=2021-03-20 15:55:00
+2021-03-20 16:00:04,808 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:00:04
+2021-03-20 16:00:04,808 - eth - INFO - invest_direction=planB, last_trend=-1, last_ts=2021-03-20 15:55:00
+2021-03-20 16:00:04,808 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:00:04
+2021-03-20 16:00:07,124 - eth - INFO - current_balance = 10.442720814542719
+2021-03-20 16:00:07,124 - eth - INFO - BUY NEW COINS
+2021-03-20 16:00:07,124 - eth - INFO - symbol:eth3lusdt, currency:eth3l, cur_price:50.1018, amount=0.19959362737466518, ts:2021-03-20 16:00:08
+2021-03-20 16:00:07,124 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:00:07,124 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:00:09,793 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:00:09,793 - eth - INFO - order_id=236885354720988, field_amount=0.19960796994702404, price=0.0, actual_buy_market_amount=0.19960796994702404
+2021-03-20 16:00:09,793 - eth - INFO - actual_last_symbol=eth3lusdt actual_last_amount=0.19960796994702404
+2021-03-20 16:00:09,793 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:00:09
+2021-03-20 16:00:09,794 - eth - INFO - =========================================
+2021-03-20 16:00:09,795 - eth - INFO - sleep 291 seconds .....
+2021-03-20 16:05:00,807 - eth - INFO - do_action -sell_last_hold_lever_coins StartTime= 2021-03-20 16:05:00
+2021-03-20 16:05:06,323 - eth - INFO - SELL LAST COIN
+2021-03-20 16:05:06,323 - eth - INFO - last_symbol:eth3lusdt, last_currency:eth3l, last_amount:0.19959362737466518, sell_cur_price:50.2922
+2021-03-20 16:05:06,323 - eth - INFO - sell_cur_price * last_amount = 10.038002626652137
+2021-03-20 16:05:06,323 - eth - INFO - current_balance = 10.480723441194856  sell_ts:2021-03-20 16:05:07  demo_action_launch_time: 2021-03-20 12:55:00
+2021-03-20 16:05:06,323 - eth - INFO - demo_action_running_duration: 3:10:07
+2021-03-20 16:05:06,323 - eth - INFO - earning_ratio = 4.80723441194856%
+2021-03-20 16:05:06,323 - eth - INFO - ***** ACTUAL SELL LAST COIN *****
+2021-03-20 16:05:06,324 - eth - INFO - **** DO SELL actual_sell_limit_price_level_coins  ******** 
+2021-03-20 16:05:06,324 - eth - INFO - ### in sell_limit_price, symbol: eth3lusdt, amount: 0.1996, limit_price: 50.2922
+2021-03-20 16:05:06,723 - eth - INFO - actual_last_symbol:Nothing, actual_last_currency:Nothing, actual_last_amount:0.0, actual_sell_market_cash:10.038723946169723
+2021-03-20 16:05:06,724 - eth - INFO - actual_balance=10.27657164057367, ts_actual_sell=2021-03-20 16:05:06
+2021-03-20 16:05:06,724 - eth - INFO - ***** KEEP  stop_actual_invest = False  *****
+2021-03-20 16:05:06,724 - eth - INFO - SEND QUEUE INFO - START
+2021-03-20 16:05:06,724 - eth - INFO - SEND QUEUE INFO - FINISH
+2021-03-20 16:05:06,724 - eth - INFO - do_action -sell_last_hold_lever_coins FinishTime= 2021-03-20 16:05:06
+2021-03-20 16:05:06,724 - eth - INFO - do_action -get_ALL_symbol_trend_data StartTime= 2021-03-20 16:05:06
+2021-03-20 16:05:06,725 - eth - INFO - eth  get_ALL_symbol_trend_data START
+2021-03-20 16:05:06,725 - eth - INFO - StartTime= 2021-03-20 16:05:06
+2021-03-20 16:05:07,131 - eth - INFO - ethusdt  1000
+2021-03-20 16:05:10,616 - eth - INFO - eth3lusdt  1000
+2021-03-20 16:05:12,015 - eth - INFO - eth3susdt  1000
+2021-03-20 16:05:12,016 - eth - INFO - eth  get_ALL_symbol_trend_data FINISH
+2021-03-20 16:05:12,016 - eth - INFO - FinishTime= 2021-03-20 16:05:12
+2021-03-20 16:05:12,016 - eth - INFO - do_action -get_ALL_symbol_trend_data FinishTime= 2021-03-20 16:05:12
+2021-03-20 16:05:12,016 - eth - INFO - do_action -judge_invest_direction StartTime= 2021-03-20 16:05:12
+2021-03-20 16:05:12,301 - eth - INFO - count_A_earn = 0 , count_B_earn = 500 , threshold_value=0.0
+2021-03-20 16:05:12,301 - eth - INFO - last_open=1821.93, last_close=1825.49, invest_direction=planB, last_ts=2021-03-20 16:00:00
+2021-03-20 16:05:12,302 - eth - INFO - do_action -judge_invest_direction FinishTime= 2021-03-20 16:05:12
+2021-03-20 16:05:12,302 - eth - INFO - invest_direction=planB, last_trend=1, last_ts=2021-03-20 16:00:00
+2021-03-20 16:05:12,302 - eth - INFO - do_action -buy_lever_coins StartTime= 2021-03-20 16:05:12
+2021-03-20 16:05:13,621 - eth - INFO - current_balance = 10.480723441194856
+2021-03-20 16:05:13,621 - eth - INFO - BUY NEW COINS
+2021-03-20 16:05:13,621 - eth - INFO - symbol:eth3susdt, currency:eth3s, cur_price:0.003083, amount=3243.5939020434644, ts:2021-03-20 16:05:14
+2021-03-20 16:05:13,622 - eth - INFO - ACTUAL - BUY NEW COINS
+2021-03-20 16:05:13,622 - eth - INFO - **** DO BUY actual_buy_market_level_coins  ******** 
+2021-03-20 16:05:16,229 - eth - INFO - IN get_actual_buy_market_amount
+2021-03-20 16:05:16,230 - eth - INFO - order_id=236885387906191, field_amount=3243.5939020434644, price=0.0, actual_buy_market_amount=3243.5939020434644
+2021-03-20 16:05:16,230 - eth - INFO - actual_last_symbol=eth3susdt actual_last_amount=3243.5939020434644
+2021-03-20 16:05:16,230 - eth - INFO - do_action -buy_lever_coins FinishTime= 2021-03-20 16:05:16
+2021-03-20 16:05:16,230 - eth - INFO - =========================================
+2021-03-20 16:05:16,231 - eth - INFO - sleep 284 seconds .....
