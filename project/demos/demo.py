@@ -1627,6 +1627,36 @@ class DemoStrategy:
         elif symbol == "zec3susdt":  # 0.005252
             up_margin_value = 0.00001
             down_margin_value = -0.00001
+        elif symbol == "bchusdt":  # 668.98
+            up_margin_value = 1.0
+            down_margin_value = -1.0
+        elif symbol == "bsvusdt":  # 277.4688
+            up_margin_value = 1.0
+            down_margin_value = -1.0
+        elif symbol == "btcusdt":  # 60392.95
+            up_margin_value = 100.0
+            down_margin_value = -100.0
+        elif symbol == "eosusdt":  # 6.4296
+            up_margin_value = 0.01
+            down_margin_value = -0.01
+        elif symbol == "ethusdt":  # 2157.91
+            up_margin_value = 10.0
+            down_margin_value = -10.0
+        elif symbol == "filusdt":  # 177.3889
+            up_margin_value = 1.0
+            down_margin_value = -1.0
+        elif symbol == "linkusdt":  # 32.0618
+            up_margin_value = 0.1
+            down_margin_value = -0.1
+        elif symbol == "ltcusdt":  # 233.15
+            up_margin_value = 1.0
+            down_margin_value = -1.0
+        elif symbol == "xrpusdt":  # 1.25031
+            up_margin_value = 0.01
+            down_margin_value = -0.01
+        elif symbol == "zecusdt":  # 200.77
+            up_margin_value = 1.0
+            down_margin_value = -1.0
         return up_margin_value, down_margin_value
 
 
