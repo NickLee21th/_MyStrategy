@@ -45,7 +45,7 @@ class DemoStrategy:
     holding_coins_instant_price = 0.0  # 币种买入时的瞬时价格
     holding_coins_first_sell_price = 0.0  # 币种买入时的卖一价
     # 止盈止损
-    STOP_PROFIT_RATE = 0.05
+    STOP_PROFIT_RATE = 0.03
     STOP_LOSS_RATE = -0.005
     delta_delta = None
 
@@ -1629,7 +1629,11 @@ class DemoStrategy:
         try:
             self.demo_print("进行 止盈操作")
             self.demo_print("delta_delta =  %s" % self.delta_delta)
-            ret = self.do_sell_coins(symbol=symbol)
+            if self.delta_delta <= 0.0:
+                self.demo_print("delta_delta 小于等于0 表示收益开始下降，可以止盈了")
+                ret = self.do_sell_coins(symbol=symbol)
+            else:
+                self.demo_print("delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。")
         except Exception as ex:
             self.demo_print("Exception in stop_profit")
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
@@ -1724,8 +1728,8 @@ class DemoStrategy:
             up_margin_value = 0.01
             down_margin_value = -0.01
         elif symbol == "ethusdt":  # 2157.91
-            up_margin_value = 10.0
-            down_margin_value = -10.0
+            up_margin_value = 2.0
+            down_margin_value = -2.0
         elif symbol == "filusdt":  # 177.3889
             up_margin_value = 1.0
             down_margin_value = -1.0
