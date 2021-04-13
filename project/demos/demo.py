@@ -44,6 +44,10 @@ class DemoStrategy:
     Holding_Coins = False
     holding_coins_instant_price = 0.0  # 币种买入时的瞬时价格
     holding_coins_first_sell_price = 0.0  # 币种买入时的卖一价
+    # 止盈止损
+    STOP_PROFIT_RATE = 0.05
+    STOP_LOSS_RATE = -0.005
+    delta_delta = None
 
     def get_from_data_dict(self, index_i):
         OK = False
@@ -1369,10 +1373,14 @@ class DemoStrategy:
                         self.demo_print("last_delta is None")
                         self.demo_print("cur_delta = %s" % cur_delta)
                         last_delta = cur_delta
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                     elif last_delta >= DOWN_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从上到下穿过下边缘")
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入, 则卖出。（可能亏损)")
                             self.do_sell_coins(symbol=symbol)
@@ -1381,6 +1389,8 @@ class DemoStrategy:
                     else:  # last_delta < DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                         self.demo_print("一直在下边缘之下，一定是未买入，所以无动作。")
                         assert self.Holding_Coins is False
                     last_delta = cur_delta
@@ -1390,10 +1400,14 @@ class DemoStrategy:
                         self.demo_print("last_delta is None")
                         self.demo_print("cur_delta = %s" % cur_delta)
                         last_delta = cur_delta
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                     elif last_delta >= UP_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从 上边缘之上 向下 进入 上下边缘 之间.")
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入, 则卖出。（可能盈利)")
                             self.do_sell_coins(symbol=symbol)
@@ -1403,15 +1417,24 @@ class DemoStrategy:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("一直在 上下边缘 之间。")
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
                             self.detect_earn_state(symbol=symbol)
                         else:
-                            self.demo_print("未买入，无动作。")
+                            self.demo_print("未买入，则探测是否出现 UP Cross")
+                            if cur_delta > 0.0 and last_delta < 0.0:
+                                self.demo_print("cur_delta > 0.0 and last_delta < 0.0, 出现 Up Cross, 可以买入")
+                                self.do_buy_coins(symbol=symbol)
+                            else:
+                                self.demo_print("没有出现 Up Cross, 暂时无动作。")
                     else:  # last_delta <= DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从下边缘之下 向上 进入 上下边缘 之间")
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is False:
                             self.demo_print("没有买入，则买入")
                             self.do_buy_coins(symbol=symbol)
@@ -1425,10 +1448,14 @@ class DemoStrategy:
                         self.demo_print("last_delta is None")
                         self.demo_print("cur_delta = %s" % cur_delta)
                         last_delta = cur_delta
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                     elif last_delta >= UP_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("一直在 上边缘 之上")
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
@@ -1439,6 +1466,8 @@ class DemoStrategy:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从上下边缘 之间 向上 穿过上边缘")
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
@@ -1449,7 +1478,9 @@ class DemoStrategy:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从下边缘之下 向上 穿过上边缘")
-                        self.demo_print("达到止盈点时，可以止盈。")
+                        self.delta_delta = cur_delta - last_delta
+                        self.demo_print("delta_delta = %s" % self.delta_delta)
+                        self.demo_print("此时一定没有买入动作。")
                         assert self.Holding_Coins is False
             except Exception as ex:
                 self.demo_print("Exception in output_MA5_MA10_NewIdea_01!")
@@ -1508,6 +1539,12 @@ class DemoStrategy:
                   / self.holding_coins_first_sell_price
             self.demo_print("以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = %s"
                             % earn_rate_first_BuyAndSell)
+            # 处理止盈止损的情况
+            self.demo_print("处理止盈止损的情况")
+            self.detect_profit_or_loss(
+                symbol=symbol,
+                earn_rate=earn_rate_first_BuyAndSell
+            )
         except Exception as ex:
             self.demo_print("Exception in detect_earn_state")
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
@@ -1546,6 +1583,8 @@ class DemoStrategy:
         except Exception as ex:
             self.demo_print("Exception in do_sell_coins")
             self.demo_print("symbol: %s, ex: %s" % (symbol,ex))
+            return False
+        return True
 
     # 买入base币
     def do_buy_coins(self, symbol):
@@ -1562,6 +1601,51 @@ class DemoStrategy:
         except Exception as ex:
             self.demo_print("Exception in do_buy_coins")
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
+            return False
+        return True
+
+
+    # 处理止盈止损
+    def detect_profit_or_loss(self, symbol, earn_rate):
+        try:
+            self.demo_print("处理止盈止损")
+            self.demo_print("symbol: %s, earn_rate: %s" % (symbol, earn_rate))
+            if earn_rate > self.STOP_PROFIT_RATE:
+                # 触发止盈操作
+                self.demo_print("STOP_PROFIT_RATE: %s" % self.STOP_PROFIT_RATE)
+                self.stop_profit(symbol)
+            elif earn_rate < self.STOP_LOSS_RATE:
+                # 触发止损操作
+                self.demo_print("STOP_LOSS_RATE: %s" % self.STOP_LOSS_RATE)
+                self.stop_loss(symbol)
+        except Exception as ex:
+            self.demo_print("Exception in detect_profit_or_loss")
+            self.demo_print("symbol: %s, earn_rate: %s,  ex: %s" % (symbol, earn_rate, ex))
+            return False
+        return True
+
+    # 止盈操作
+    def stop_profit(self, symbol):
+        try:
+            self.demo_print("进行 止盈操作")
+            self.demo_print("delta_delta =  %s" % self.delta_delta)
+            ret = self.do_sell_coins(symbol=symbol)
+        except Exception as ex:
+            self.demo_print("Exception in stop_profit")
+            self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
+            return False
+        return ret
+
+    # 止损操作
+    def stop_loss(self, symbol):
+        try:
+            self.demo_print("进行 止损操作")
+            ret = self.do_sell_coins(symbol=symbol)
+        except Exception as ex:
+            self.demo_print("Exception in stop_loss")
+            self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
+            return False
+        return ret
 
     # 获取边缘值
     def get_margin_values(self, symbol):
