@@ -369,7 +369,7 @@ class DemoStrategy:
     def demon_action(self, log_folder_name="demo_action_log"):
         self.logger_init(log_folder_name=log_folder_name, log_file_template="/action_%s_%s.txt")
         self.demo_print("I'm %s in demo_action" % self.etp)
-        wait_to_X_min_begin(x=TIME_PERIOD_VALUE)
+        self.wait_to_X_min_begin(x=TIME_PERIOD_VALUE)
         self.demo_action_launch_time = int(time.time())
         count = 0
         Max_Count = 1000*5
@@ -1360,7 +1360,7 @@ class DemoStrategy:
             self.demo_print("================================================")
             count += 1
             try:
-                ma5, ma10 = get_MA5_MA10(symbol)
+                ma5, ma10 = self.get_MA5_MA10(symbol)
                 self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
                 self.demo_print(" MA5 = %s" % ma5)
                 self.demo_print("MA10 = %s" % ma10)
@@ -1381,6 +1381,7 @@ class DemoStrategy:
                         self.demo_print("从上到下穿过下边缘")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入, 则卖出。（可能亏损)")
                             self.do_sell_coins(symbol=symbol)
@@ -1391,6 +1392,7 @@ class DemoStrategy:
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         self.demo_print("一直在下边缘之下，一定是未买入，所以无动作。")
                         assert self.Holding_Coins is False
                     last_delta = cur_delta
@@ -1408,6 +1410,7 @@ class DemoStrategy:
                         self.demo_print("从 上边缘之上 向下 进入 上下边缘 之间.")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入, 则卖出。（可能盈利)")
                             self.do_sell_coins(symbol=symbol)
@@ -1419,6 +1422,7 @@ class DemoStrategy:
                         self.demo_print("一直在 上下边缘 之间。")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
                             self.detect_earn_state(symbol=symbol)
@@ -1435,13 +1439,13 @@ class DemoStrategy:
                         self.demo_print("从下边缘之下 向上 进入 上下边缘 之间")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         if self.Holding_Coins is False:
                             self.demo_print("没有买入，则买入")
                             self.do_buy_coins(symbol=symbol)
                         else:
                             self.demo_print("已经买入，侦测盈利情况")
                             self.detect_earn_state(symbol=symbol)
-                    last_delta = cur_delta
                 else:  # cur_delta > UP_MARGIN_VALUE
                     self.demo_print("ma5 在上边缘之上")
                     if last_delta is None:
@@ -1456,6 +1460,7 @@ class DemoStrategy:
                         self.demo_print("一直在 上边缘 之上")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
@@ -1468,6 +1473,7 @@ class DemoStrategy:
                         self.demo_print("从上下边缘 之间 向上 穿过上边缘")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
@@ -1480,6 +1486,7 @@ class DemoStrategy:
                         self.demo_print("从下边缘之下 向上 穿过上边缘")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
+                        last_delta = cur_delta
                         self.demo_print("此时一定没有买入动作。")
                         assert self.Holding_Coins is False
             except Exception as ex:
@@ -1626,6 +1633,7 @@ class DemoStrategy:
 
     # 止盈操作
     def stop_profit(self, symbol):
+        ret = True
         try:
             self.demo_print("进行 止盈操作")
             self.demo_print("delta_delta =  %s" % self.delta_delta)
@@ -1642,6 +1650,7 @@ class DemoStrategy:
 
     # 止损操作
     def stop_loss(self, symbol):
+        ret = True
         try:
             self.demo_print("进行 止损操作")
             ret = self.do_sell_coins(symbol=symbol)
@@ -1650,6 +1659,63 @@ class DemoStrategy:
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
             return False
         return ret
+
+    # 等待至下一个X分钟的开始
+    def wait_to_X_min_begin(self, x=5, symbol="ethusdt"):
+        ret = True
+        try:
+            self.demo_print("等待至下一个X分钟的开始")
+            time_stamp = int(time.time())
+            self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
+            sleep_seconds = (60 * x) - (time_stamp % (60 * x))
+            self.demo_print("sleep_seconds = %s" % sleep_seconds)
+            while sleep_seconds > 60:
+                self.demo_print("***********及时监控盈利****************")
+                self.demo_print("每 30 秒侦测一次 盈利情况")
+                time.sleep(30)
+                self.detect_earn_state(symbol=symbol)
+                time_stamp = int(time.time())
+                self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
+                sleep_seconds = (60 * x) - (time_stamp % (60 * x))
+                self.demo_print("sleep_seconds = %s" % sleep_seconds)
+            time.sleep(sleep_seconds)
+        except Exception as ex:
+            self.demo_print("Exception in wait_to_X_min_begin")
+            self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
+            return False
+        return ret
+
+    # 获取MA5
+    def get_MA5_MA10(self, symbol="ethusdt"):
+        ma5 = 0.0
+        ma10 = 0.0
+        # print("Time = %s" % timeStamp_to_datetime(int(time.time())))
+        self.wait_to_X_min_begin(x=5, symbol=symbol)
+        ret = Get_kline_data(
+            symbol=symbol,
+            period="5min",
+            size=11
+        )
+        assert ret["status"] == "ok"
+        ret_data = ret["data"]
+        count = 0
+        close_price = 0.0
+        n_bit = get_nbit_by_symbol(symbol=symbol)
+        for item in ret_data:
+            if count == 0:
+                count += 1
+                continue
+            else:
+                close_price += item["close"]
+                if count == 5:
+                    ma5 = close_price / count
+                    ma5 = round(ma5, n_bit)
+                count += 1
+        ma10 = close_price / (count - 1)
+        ma10 = round(ma10, n_bit)
+        # print("ma5=%s" % ma5)
+        # print("ma10=%s" % ma10)
+        return ma5, ma10
 
     # 获取边缘值
     def get_margin_values(self, symbol):
@@ -1822,45 +1888,6 @@ def API_v2_account_repayment(access_key, secret_key,):
         },
     )
 
-
-# 等待至下一个X分钟的开始
-def wait_to_X_min_begin(x=5):
-    time_stamp = int(time.time())
-    sleep_seconds = (60*5) - (time_stamp % (60*5))
-    time.sleep(sleep_seconds)
-    return True
-
-# 获取MA5
-def get_MA5_MA10(symbol="ethusdt"):
-    ma5 = 0.0
-    ma10 = 0.0
-    # print("Time = %s" % timeStamp_to_datetime(int(time.time())))
-    wait_to_X_min_begin(x=5)
-    ret = Get_kline_data(
-        symbol=symbol,
-        period="5min",
-        size=11
-    )
-    assert ret["status"] == "ok"
-    ret_data = ret["data"]
-    count = 0
-    close_price = 0.0
-    n_bit = get_nbit_by_symbol(symbol=symbol)
-    for item in ret_data:
-        if count == 0:
-            count += 1
-            continue
-        else:
-            close_price += item["close"]
-            if count == 5:
-                ma5 = close_price / count
-                ma5 = round(ma5, n_bit)
-            count += 1
-    ma10 = close_price / (count-1)
-    ma10 = round(ma10, n_bit)
-    # print("ma5=%s" % ma5)
-    # print("ma10=%s" % ma10)
-    return ma5, ma10
 
 # 根据币种获取小数位精度
 def get_nbit_by_symbol(symbol="ethusdt"):
