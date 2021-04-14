@@ -1750,3 +1750,208 @@ last_delta = 0.0917699999999968
 cur_delta = 0.578710000000001
 从上下边缘 之间 向上 穿过上边缘
 delta_delta = 0.48694000000000415
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， ltc3lusdt: 71.8887
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， ltc3lusdt: 72.9284
+以瞬时价格计算的盈利率  earn_rate_instant = 0.014462634600430893
+----------------------------------
+币种买入时的卖一价， ltc3lusdt: 71.8874
+以当前币种的 买一价 卖出
+卖出时的买一价， ltc3lusdt: 72.8328
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.013151122449831354
+处理止盈止损的情况
+处理止盈止损
+symbol: ltc3lusdt, earn_rate: 0.013151122449831354
+================================================
+Time = 2021-04-14 00:35:00
+ MA5 = 72.68296
+MA10 = 72.13216
+UP_MARGIN_VALUE = 0.1
+DOWN_MARGIN_VALUE = -0.1
+ma5 在上边缘之上
+last_delta = 0.0917699999999968
+cur_delta = 0.5507999999999953
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.4590299999999985
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， ltc3lusdt: 71.8887
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， ltc3lusdt: 72.7351
+以瞬时价格计算的盈利率  earn_rate_instant = 0.011773755819760305
+----------------------------------
+币种买入时的卖一价， ltc3lusdt: 71.8874
+以当前币种的 买一价 卖出
+卖出时的买一价， ltc3lusdt: 72.6149
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.010119993211606015
+处理止盈止损的情况
+处理止盈止损
+symbol: ltc3lusdt, earn_rate: 0.010119993211606015
+================================================
+Time = 2021-04-14 00:40:01
+ MA5 = 73.30514
+MA10 = 72.59652
+UP_MARGIN_VALUE = 0.1
+DOWN_MARGIN_VALUE = -0.1
+ma5 在上边缘之上
+last_delta = 0.0917699999999968
+cur_delta = 0.7086199999999963
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.6168499999999995
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， ltc3lusdt: 71.8887
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， ltc3lusdt: 75.1568
+以瞬时价格计算的盈利率  earn_rate_instant = 0.04546055221474312
+----------------------------------
+币种买入时的卖一价， ltc3lusdt: 71.8874
+以当前币种的 买一价 卖出
+卖出时的买一价， ltc3lusdt: 75.1408
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0452568878551735
+处理止盈止损的情况
+处理止盈止损
+symbol: ltc3lusdt, earn_rate: 0.0452568878551735
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.6168499999999995
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: ltc3lusdt, earn_rate: 0.0452568878551735,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 00:45:00
+ MA5 = 73.8442
+MA10 = 73.00589
+UP_MARGIN_VALUE = 0.1
+DOWN_MARGIN_VALUE = -0.1
+ma5 在上边缘之上
+last_delta = 0.0917699999999968
+cur_delta = 0.838310000000007
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.7465400000000102
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， ltc3lusdt: 71.8887
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， ltc3lusdt: 75.1869
+以瞬时价格计算的盈利率  earn_rate_instant = 0.04587925501504401
+----------------------------------
+币种买入时的卖一价， ltc3lusdt: 71.8874
+以当前币种的 买一价 卖出
+卖出时的买一价， ltc3lusdt: 75.0458
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.04393537671413906
+处理止盈止损的情况
+处理止盈止损
+symbol: ltc3lusdt, earn_rate: 0.04393537671413906
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.7465400000000102
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: ltc3lusdt, earn_rate: 0.04393537671413906,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 00:50:00
+ MA5 = 74.15994
+MA10 = 73.29717
+UP_MARGIN_VALUE = 0.1
+DOWN_MARGIN_VALUE = -0.1
+ma5 在上边缘之上
+last_delta = 0.0917699999999968
+cur_delta = 0.8627700000000118
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.771000000000015
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， ltc3lusdt: 71.8887
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， ltc3lusdt: 74.6519
+以瞬时价格计算的盈利率  earn_rate_instant = 0.038437195275474415
+----------------------------------
+币种买入时的卖一价， ltc3lusdt: 71.8874
+以当前币种的 买一价 卖出
+卖出时的买一价， ltc3lusdt: 74.6559
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.03851161677846192
+处理止盈止损的情况
+处理止盈止损
+symbol: ltc3lusdt, earn_rate: 0.03851161677846192
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.771000000000015
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: ltc3lusdt, earn_rate: 0.03851161677846192,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 00:55:00
+ MA5 = 74.7689
+MA10 = 73.64671
+UP_MARGIN_VALUE = 0.1
+DOWN_MARGIN_VALUE = -0.1
+ma5 在上边缘之上
+last_delta = 0.0917699999999968
+cur_delta = 1.1221900000000034
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 1.0304200000000066
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， ltc3lusdt: 71.8887
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， ltc3lusdt: 75.9732
+以瞬时价格计算的盈利率  earn_rate_instant = 0.05681699627340605
+----------------------------------
+币种买入时的卖一价， ltc3lusdt: 71.8874
+以当前币种的 买一价 卖出
+卖出时的买一价， ltc3lusdt: 75.9744
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.05685280035166112
+处理止盈止损的情况
+处理止盈止损
+symbol: ltc3lusdt, earn_rate: 0.05685280035166112
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  1.0304200000000066
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: ltc3lusdt, earn_rate: 0.05685280035166112,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 01:00:00
+ MA5 = 75.43366
+MA10 = 74.05831
+UP_MARGIN_VALUE = 0.1
+DOWN_MARGIN_VALUE = -0.1
+ma5 在上边缘之上
+last_delta = 0.0917699999999968
+cur_delta = 1.3753499999999974
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 1.2835800000000006
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， ltc3lusdt: 71.8887
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， ltc3lusdt: 76.0589
+以瞬时价格计算的盈利率  earn_rate_instant = 0.058009116870940694
+----------------------------------
+币种买入时的卖一价， ltc3lusdt: 71.8874
+以当前币种的 买一价 卖出
+卖出时的买一价， ltc3lusdt: 75.9344
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.05629637460806758
+处理止盈止损的情况
+处理止盈止损
+symbol: ltc3lusdt, earn_rate: 0.05629637460806758
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  1.2835800000000006
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: ltc3lusdt, earn_rate: 0.05629637460806758,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 01:05:01
+ MA5 = 75.4986
+MA10 = 74.40187
+UP_MARGIN_VALUE = 0.1
+DOWN_MARGIN_VALUE = -0.1
+ma5 在上边缘之上
+last_delta = 0.0917699999999968
+cur_delta = 1.0967299999999938
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 1.004959999999997

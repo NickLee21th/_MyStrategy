@@ -2296,3 +2296,207 @@ delta_delta = 0.12929000000000013
 以当前币种的 瞬时价格 卖出
 当前币种的 瞬时价格， eosusdt: 7.8285
 以瞬时价格计算的盈利率  earn_rate_instant = 0.045542570951586
+----------------------------------
+币种买入时的卖一价， eosusdt: 7.4877
+以当前币种的 买一价 卖出
+卖出时的买一价， eosusdt: 7.8233
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.04482017174833386
+处理止盈止损的情况
+处理止盈止损
+symbol: eosusdt, earn_rate: 0.04482017174833386
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.12929000000000013
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: eosusdt, earn_rate: 0.04482017174833386,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 00:40:00
+ MA5 = 7.74244
+MA10 = 7.61358
+UP_MARGIN_VALUE = 0.01
+DOWN_MARGIN_VALUE = -0.01
+ma5 在上边缘之上
+last_delta = 0.009549999999999947
+cur_delta = 0.12886000000000042
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.11931000000000047
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， eosusdt: 7.4875
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， eosusdt: 7.8003
+以瞬时价格计算的盈利率  earn_rate_instant = 0.04177629382303842
+----------------------------------
+币种买入时的卖一价， eosusdt: 7.4877
+以当前币种的 买一价 卖出
+卖出时的买一价， eosusdt: 7.8005
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.041775177958518664
+处理止盈止损的情况
+处理止盈止损
+symbol: eosusdt, earn_rate: 0.041775177958518664
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.11931000000000047
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: eosusdt, earn_rate: 0.041775177958518664,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 00:45:01
+ MA5 = 7.78406
+MA10 = 7.66114
+UP_MARGIN_VALUE = 0.01
+DOWN_MARGIN_VALUE = -0.01
+ma5 在上边缘之上
+last_delta = 0.009549999999999947
+cur_delta = 0.12292000000000058
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.11337000000000064
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， eosusdt: 7.4875
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， eosusdt: 7.8712
+以瞬时价格计算的盈利率  earn_rate_instant = 0.05124540901502506
+----------------------------------
+币种买入时的卖一价， eosusdt: 7.4877
+以当前币种的 买一价 卖出
+卖出时的买一价， eosusdt: 7.876
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.051858381078301756
+处理止盈止损的情况
+处理止盈止损
+symbol: eosusdt, earn_rate: 0.051858381078301756
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.11337000000000064
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: eosusdt, earn_rate: 0.051858381078301756,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 00:50:00
+ MA5 = 7.81306
+MA10 = 7.70382
+UP_MARGIN_VALUE = 0.01
+DOWN_MARGIN_VALUE = -0.01
+ma5 在上边缘之上
+last_delta = 0.009549999999999947
+cur_delta = 0.10923999999999978
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.09968999999999983
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， eosusdt: 7.4875
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， eosusdt: 7.8116
+以瞬时价格计算的盈利率  earn_rate_instant = 0.04328547579298838
+----------------------------------
+币种买入时的卖一价， eosusdt: 7.4877
+以当前币种的 买一价 卖出
+卖出时的买一价， eosusdt: 7.8071
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.04265662352925463
+处理止盈止损的情况
+处理止盈止损
+symbol: eosusdt, earn_rate: 0.04265662352925463
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.09968999999999983
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: eosusdt, earn_rate: 0.04265662352925463,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 00:55:01
+ MA5 = 7.81884
+MA10 = 7.7333
+UP_MARGIN_VALUE = 0.01
+DOWN_MARGIN_VALUE = -0.01
+ma5 在上边缘之上
+last_delta = 0.009549999999999947
+cur_delta = 0.08553999999999995
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.07599
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， eosusdt: 7.4875
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， eosusdt: 7.786
+以瞬时价格计算的盈利率  earn_rate_instant = 0.03986644407345573
+----------------------------------
+币种买入时的卖一价， eosusdt: 7.4877
+以当前币种的 买一价 卖出
+卖出时的买一价， eosusdt: 7.7855
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.039771892570482206
+处理止盈止损的情况
+处理止盈止损
+symbol: eosusdt, earn_rate: 0.039771892570482206
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.07599
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: eosusdt, earn_rate: 0.039771892570482206,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 01:00:00
+ MA5 = 7.83268
+MA10 = 7.7716
+UP_MARGIN_VALUE = 0.01
+DOWN_MARGIN_VALUE = -0.01
+ma5 在上边缘之上
+last_delta = 0.009549999999999947
+cur_delta = 0.06107999999999958
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.05152999999999963
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， eosusdt: 7.4875
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， eosusdt: 7.8958
+以瞬时价格计算的盈利率  earn_rate_instant = 0.05453088480801343
+----------------------------------
+币种买入时的卖一价， eosusdt: 7.4877
+以当前币种的 买一价 卖出
+卖出时的买一价， eosusdt: 7.8928
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.054102060712902494
+处理止盈止损的情况
+处理止盈止损
+symbol: eosusdt, earn_rate: 0.054102060712902494
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.05152999999999963
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: eosusdt, earn_rate: 0.054102060712902494,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 01:05:00
+ MA5 = 7.8333
+MA10 = 7.78787
+UP_MARGIN_VALUE = 0.01
+DOWN_MARGIN_VALUE = -0.01
+ma5 在上边缘之上
+last_delta = 0.009549999999999947
+cur_delta = 0.045430000000000526
+从上下边缘 之间 向上 穿过上边缘
+delta_delta = 0.03588000000000058
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， eosusdt: 7.4875
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， eosusdt: 7.8059
+以瞬时价格计算的盈利率  earn_rate_instant = 0.04252420701168621
+----------------------------------
+币种买入时的卖一价， eosusdt: 7.4877
+以当前币种的 买一价 卖出
+卖出时的买一价， eosusdt: 7.8087
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.042870307303978485
+处理止盈止损的情况
+处理止盈止损
+symbol: eosusdt, earn_rate: 0.042870307303978485
+STOP_PROFIT_RATE: 0.03
+进行 止盈操作
+delta_delta =  0.03588000000000058
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+Exception in detect_profit_or_loss
+symbol: eosusdt, earn_rate: 0.042870307303978485,  ex: local variable 'ret' referenced before assignment
+================================================
+Time = 2021-04-14 01:10:00
+ MA5 = 7.80986
+MA10 = 7.79696
