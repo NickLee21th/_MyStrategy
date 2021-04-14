@@ -1524,34 +1524,35 @@ class DemoStrategy:
         return first_sell_price, first_sell_size
 
     # 侦测盈利情况
-    def detect_earn_state(self,symbol):
+    def detect_earn_state(self, symbol):
         try:
-            # 瞬时价格
-            self.demo_print("币种买入时的瞬时价格， %s: %s" % (symbol, self.holding_coins_instant_price))
-            self.demo_print("以当前币种的 瞬时价格 卖出")
-            _, cur_coins_instant_price = get_current_price(symbol)
-            self.demo_print("当前币种的 瞬时价格， %s: %s" % (symbol, cur_coins_instant_price))
-            earn_rate_instant \
-                = (cur_coins_instant_price - self.holding_coins_instant_price) \
-                  / self.holding_coins_instant_price
-            self.demo_print("以瞬时价格计算的盈利率  earn_rate_instant = %s" % earn_rate_instant)
-            # 买一价 和 卖一价
-            self.demo_print("----------------------------------")
-            self.demo_print("币种买入时的卖一价， %s: %s" % (symbol, self.holding_coins_first_sell_price))
-            self.demo_print("以当前币种的 买一价 卖出")
-            cur_first_buy_price, _ = self.get_symbol_first_buy_price(symbol)
-            self.demo_print("卖出时的买一价， %s: %s" % (symbol, cur_first_buy_price))
-            earn_rate_first_BuyAndSell \
-                = (cur_first_buy_price - self.holding_coins_first_sell_price) \
-                  / self.holding_coins_first_sell_price
-            self.demo_print("以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = %s"
-                            % earn_rate_first_BuyAndSell)
-            # 处理止盈止损的情况
-            self.demo_print("处理止盈止损的情况")
-            self.detect_profit_or_loss(
-                symbol=symbol,
-                earn_rate=earn_rate_first_BuyAndSell
-            )
+            if self.Holding_Coins is True:
+                # 瞬时价格
+                self.demo_print("币种买入时的瞬时价格， %s: %s" % (symbol, self.holding_coins_instant_price))
+                self.demo_print("以当前币种的 瞬时价格 卖出")
+                _, cur_coins_instant_price = get_current_price(symbol)
+                self.demo_print("当前币种的 瞬时价格， %s: %s" % (symbol, cur_coins_instant_price))
+                earn_rate_instant \
+                    = (cur_coins_instant_price - self.holding_coins_instant_price) \
+                      / self.holding_coins_instant_price
+                self.demo_print("以瞬时价格计算的盈利率  earn_rate_instant = %s" % earn_rate_instant)
+                # 买一价 和 卖一价
+                self.demo_print("----------------------------------")
+                self.demo_print("币种买入时的卖一价， %s: %s" % (symbol, self.holding_coins_first_sell_price))
+                self.demo_print("以当前币种的 买一价 卖出")
+                cur_first_buy_price, _ = self.get_symbol_first_buy_price(symbol)
+                self.demo_print("卖出时的买一价， %s: %s" % (symbol, cur_first_buy_price))
+                earn_rate_first_BuyAndSell \
+                    = (cur_first_buy_price - self.holding_coins_first_sell_price) \
+                      / self.holding_coins_first_sell_price
+                self.demo_print("以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = %s"
+                                % earn_rate_first_BuyAndSell)
+                # 处理止盈止损的情况
+                self.demo_print("处理止盈止损的情况")
+                self.detect_profit_or_loss(
+                    symbol=symbol,
+                    earn_rate=earn_rate_first_BuyAndSell
+                )
         except Exception as ex:
             self.demo_print("Exception in detect_earn_state")
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
