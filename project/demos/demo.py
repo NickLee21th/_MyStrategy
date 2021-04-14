@@ -1357,10 +1357,10 @@ class DemoStrategy:
         self.demo_print("symbol = %s" % symbol)
         self.demo_print("Launch Time = %s" % timeStamp_to_datetime(lanuch_time))
         while count < (1000*50):
-            self.demo_print("================================================")
             count += 1
             try:
                 ma5, ma10 = self.get_MA5_MA10(symbol)
+                self.demo_print("================================================")
                 self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
                 self.demo_print(" MA5 = %s" % ma5)
                 self.demo_print("MA10 = %s" % ma10)
@@ -1425,7 +1425,11 @@ class DemoStrategy:
                         last_delta = cur_delta
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
-                            self.detect_earn_state(symbol=symbol)
+                            self.detect_earn_state(
+                                symbol=symbol,
+                                cur_delta=cur_delta,
+                                last_delta=last_delta
+                            )
                         else:
                             self.demo_print("未买入，则探测是否出现 UP Cross")
                             if cur_delta > 0.0 and last_delta < 0.0:
@@ -1445,7 +1449,11 @@ class DemoStrategy:
                             self.do_buy_coins(symbol=symbol)
                         else:
                             self.demo_print("已经买入，侦测盈利情况")
-                            self.detect_earn_state(symbol=symbol)
+                            self.detect_earn_state(
+                                symbol=symbol,
+                                cur_delta=cur_delta,
+                                last_delta=last_delta
+                            )
                 else:  # cur_delta > UP_MARGIN_VALUE
                     self.demo_print("ma5 在上边缘之上")
                     if last_delta is None:
@@ -1464,7 +1472,11 @@ class DemoStrategy:
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
-                            self.detect_earn_state(symbol=symbol)
+                            self.detect_earn_state(
+                                symbol=symbol,
+                                cur_delta=cur_delta,
+                                last_delta=last_delta
+                            )
                         else:
                             self.demo_print("未买入，无动作。")
                     elif last_delta < UP_MARGIN_VALUE and last_delta >= DOWN_MARGIN_VALUE:
@@ -1477,7 +1489,11 @@ class DemoStrategy:
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
-                            self.detect_earn_state(symbol=symbol)
+                            self.detect_earn_state(
+                                symbol=symbol,
+                                cur_delta=cur_delta,
+                                last_delta=last_delta
+                            )
                         else:
                             self.demo_print("未买入，无动作。")
                     else:  # last_delta < DOWN_MARGIN_VALUE
@@ -1524,7 +1540,10 @@ class DemoStrategy:
         return first_sell_price, first_sell_size
 
     # 侦测盈利情况
-    def detect_earn_state(self, symbol):
+    def detect_earn_state(
+            self, symbol,
+            cur_delta, last_delta
+    ):
         try:
             if self.Holding_Coins is True:
                 # 瞬时价格
@@ -1548,10 +1567,13 @@ class DemoStrategy:
                 self.demo_print("以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = %s"
                                 % earn_rate_first_BuyAndSell)
                 # 处理止盈止损的情况
+                earn_rate = (earn_rate_instant + earn_rate_first_BuyAndSell) / 2.0
                 self.demo_print("处理止盈止损的情况")
                 self.detect_profit_or_loss(
                     symbol=symbol,
-                    earn_rate=earn_rate_first_BuyAndSell
+                    earn_rate=earn_rate,
+                    cur_delta=cur_delta,
+                    last_delta=last_delta
                 )
         except Exception as ex:
             self.demo_print("Exception in detect_earn_state")
@@ -1614,18 +1636,26 @@ class DemoStrategy:
 
 
     # 处理止盈止损
-    def detect_profit_or_loss(self, symbol, earn_rate):
+    def detect_profit_or_loss(self, symbol, earn_rate, cur_delta, last_delta):
         try:
             self.demo_print("处理止盈止损")
             self.demo_print("symbol: %s, earn_rate: %s" % (symbol, earn_rate))
             if earn_rate > self.STOP_PROFIT_RATE:
                 # 触发止盈操作
                 self.demo_print("STOP_PROFIT_RATE: %s" % self.STOP_PROFIT_RATE)
-                self.stop_profit(symbol)
+                self.stop_profit(
+                    symbol=symbol,
+                    cur_delta=cur_delta,
+                    last_delta=last_delta
+                )
             elif earn_rate < self.STOP_LOSS_RATE:
                 # 触发止损操作
                 self.demo_print("STOP_LOSS_RATE: %s" % self.STOP_LOSS_RATE)
-                self.stop_loss(symbol)
+                self.stop_loss(
+                    symbol=symbol,
+                    cur_delta=cur_delta,
+                    last_delta=last_delta
+                )
         except Exception as ex:
             self.demo_print("Exception in detect_profit_or_loss")
             self.demo_print("symbol: %s, earn_rate: %s,  ex: %s" % (symbol, earn_rate, ex))
@@ -1633,10 +1663,10 @@ class DemoStrategy:
         return True
 
     # 止盈操作
-    def stop_profit(self, symbol):
+    def stop_profit(self, symbol, cur_delta, last_delta):
         ret = True
         try:
-            self.demo_print("进行 止盈操作")
+            self.demo_print("判定是否 止盈")
             self.demo_print("delta_delta =  %s" % self.delta_delta)
             if self.delta_delta <= 0.0:
                 self.demo_print("delta_delta 小于等于0 表示收益开始下降，可以止盈了")
@@ -1650,11 +1680,15 @@ class DemoStrategy:
         return ret
 
     # 止损操作
-    def stop_loss(self, symbol):
+    def stop_loss(self, symbol, cur_delta, last_delta):
         ret = True
         try:
-            self.demo_print("进行 止损操作")
-            ret = self.do_sell_coins(symbol=symbol)
+            self.demo_print("判定是否 止损")
+            if cur_delta > 0.0:
+                self.demo_print("cur_delta = %s 大于0 暂时不止损。" % cur_delta)
+            else:
+                self.demo_print("cur_delta = %s 小于等于0 可以止损。" % cur_delta)
+                ret = self.do_sell_coins(symbol=symbol)
         except Exception as ex:
             self.demo_print("Exception in stop_loss")
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
@@ -1670,15 +1704,16 @@ class DemoStrategy:
             self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
             sleep_seconds = (60 * x) - (time_stamp % (60 * x))
             self.demo_print("sleep_seconds = %s" % sleep_seconds)
-            while sleep_seconds > 60:
-                self.demo_print("***********及时监控盈利****************")
-                self.demo_print("每 30 秒侦测一次 盈利情况")
-                time.sleep(30)
-                self.detect_earn_state(symbol=symbol)
-                time_stamp = int(time.time())
-                self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
-                sleep_seconds = (60 * x) - (time_stamp % (60 * x))
-                self.demo_print("sleep_seconds = %s" % sleep_seconds)
+            # if self.Holding_Coins is True:
+            #     while sleep_seconds > 60:
+            #         self.demo_print("***********及时监控盈利****************")
+            #         self.demo_print("每 30 秒侦测一次 盈利情况")
+            #         time.sleep(30)
+            #         self.detect_earn_state(symbol=symbol)
+            #         time_stamp = int(time.time())
+            #         self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
+            #         sleep_seconds = (60 * x) - (time_stamp % (60 * x))
+            #         self.demo_print("sleep_seconds = %s" % sleep_seconds)
             time.sleep(sleep_seconds)
         except Exception as ex:
             self.demo_print("Exception in wait_to_X_min_begin")
