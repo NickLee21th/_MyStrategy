@@ -46,7 +46,7 @@ class DemoStrategy:
     holding_coins_first_sell_price = 0.0  # 币种买入时的卖一价
     # 止盈止损
     STOP_PROFIT_RATE = 0.03
-    STOP_LOSS_RATE = -0.005
+    STOP_LOSS_RATE = -0.001
     delta_delta = None
 
     def get_from_data_dict(self, index_i):
@@ -1412,8 +1412,13 @@ class DemoStrategy:
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         last_delta = cur_delta
                         if self.Holding_Coins is True:
-                            self.demo_print("已经买入, 则卖出。（可能盈利)")
-                            self.do_sell_coins(symbol=symbol)
+                            self.demo_print("已经买入")
+                            if cur_delta < 0.0:
+                                self.demo_print("cur_delta = %s, 如果 cur_delta < 0, 出现 Down Cross 则卖出。（可能盈利)"
+                                                % cur_delta)
+                                self.do_sell_coins(symbol=symbol)
+                            else:
+                                self.demo_print("cur_delta = %s, 如果 cur_delta >= 0, 则暂时不卖出。" % cur_delta)
                         else:
                             self.demo_print("没有买入，则无动作。")
                     elif last_delta < UP_MARGIN_VALUE and last_delta > DOWN_MARGIN_VALUE:
@@ -1668,7 +1673,11 @@ class DemoStrategy:
         try:
             self.demo_print("判定是否 止盈")
             self.demo_print("delta_delta =  %s" % self.delta_delta)
-            if self.delta_delta <= 0.0:
+            if cur_delta < 0.0:
+                self.demo_print("cur_delta = %s, 如果 cur_delta < 0, 出现 Down Cross 则止盈。（可能盈利)"
+                                % cur_delta)
+                self.do_sell_coins(symbol=symbol)
+            elif self.delta_delta <= 0.0:
                 self.demo_print("delta_delta 小于等于0 表示收益开始下降，可以止盈了")
                 ret = self.do_sell_coins(symbol=symbol)
             else:
@@ -1696,7 +1705,10 @@ class DemoStrategy:
         return ret
 
     # 等待至下一个X分钟的开始
-    def wait_to_X_min_begin(self, x=5, symbol="ethusdt"):
+    def wait_to_X_min_begin(
+            self, x=5, symbol="ethusdt",
+            # cur_delta, last_delta
+    ):
         ret = True
         try:
             self.demo_print("等待至下一个X分钟的开始")
@@ -1709,7 +1721,11 @@ class DemoStrategy:
             #         self.demo_print("***********及时监控盈利****************")
             #         self.demo_print("每 30 秒侦测一次 盈利情况")
             #         time.sleep(30)
-            #         self.detect_earn_state(symbol=symbol)
+            #         self.detect_earn_state(
+            #             symbol=symbol,
+            #             cur_delta=cur_delta,
+            #             last_delta=last_delta
+            #         )
             #         time_stamp = int(time.time())
             #         self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
             #         sleep_seconds = (60 * x) - (time_stamp % (60 * x))
