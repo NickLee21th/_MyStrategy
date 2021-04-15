@@ -1381,12 +1381,12 @@ class DemoStrategy:
                         self.demo_print("从上到下穿过下边缘")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
-                        last_delta = cur_delta
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入, 则卖出。（可能亏损)")
                             self.do_sell_coins(symbol=symbol)
                         else:
                             self.demo_print("没有买入，则无动作。")
+                        last_delta = cur_delta
                     else:  # last_delta < DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
@@ -1395,7 +1395,6 @@ class DemoStrategy:
                         last_delta = cur_delta
                         self.demo_print("一直在下边缘之下，一定是未买入，所以无动作。")
                         assert self.Holding_Coins is False
-                    last_delta = cur_delta
                 elif cur_delta >= DOWN_MARGIN_VALUE and cur_delta <= UP_MARGIN_VALUE:
                     self.demo_print("ma5 在 上下边缘 之间")
                     if last_delta is None:
@@ -1410,7 +1409,6 @@ class DemoStrategy:
                         self.demo_print("从 上边缘之上 向下 进入 上下边缘 之间.")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
-                        last_delta = cur_delta
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入")
                             if cur_delta < 0.0:
@@ -1421,13 +1419,13 @@ class DemoStrategy:
                                 self.demo_print("cur_delta = %s, 如果 cur_delta >= 0, 则暂时不卖出。" % cur_delta)
                         else:
                             self.demo_print("没有买入，则无动作。")
+                        last_delta = cur_delta
                     elif last_delta < UP_MARGIN_VALUE and last_delta > DOWN_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("一直在 上下边缘 之间。")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
-                        last_delta = cur_delta
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
                             self.detect_earn_state(
@@ -1442,13 +1440,13 @@ class DemoStrategy:
                                 self.do_buy_coins(symbol=symbol)
                             else:
                                 self.demo_print("没有出现 Up Cross, 暂时无动作。")
+                        last_delta = cur_delta
                     else:  # last_delta <= DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从下边缘之下 向上 进入 上下边缘 之间")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
-                        last_delta = cur_delta
                         if self.Holding_Coins is False:
                             self.demo_print("没有买入，则买入")
                             self.do_buy_coins(symbol=symbol)
@@ -1459,6 +1457,7 @@ class DemoStrategy:
                                 cur_delta=cur_delta,
                                 last_delta=last_delta
                             )
+                        last_delta = cur_delta
                 else:  # cur_delta > UP_MARGIN_VALUE
                     self.demo_print("ma5 在上边缘之上")
                     if last_delta is None:
@@ -1473,7 +1472,6 @@ class DemoStrategy:
                         self.demo_print("一直在 上边缘 之上")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
-                        last_delta = cur_delta
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
@@ -1484,13 +1482,13 @@ class DemoStrategy:
                             )
                         else:
                             self.demo_print("未买入，无动作。")
+                        last_delta = cur_delta
                     elif last_delta < UP_MARGIN_VALUE and last_delta >= DOWN_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从上下边缘 之间 向上 穿过上边缘")
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
-                        last_delta = cur_delta
                         self.demo_print("达到止盈点时，可以止盈。")
                         if self.Holding_Coins is True:
                             self.demo_print("已经买入，侦测盈利情况")
@@ -1501,6 +1499,7 @@ class DemoStrategy:
                             )
                         else:
                             self.demo_print("未买入，无动作。")
+                        last_delta = cur_delta
                     else:  # last_delta < DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
