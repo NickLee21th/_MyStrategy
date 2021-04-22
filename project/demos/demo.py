@@ -1695,8 +1695,14 @@ class DemoStrategy:
             if cur_delta > 0.0:
                 self.demo_print("cur_delta = %s 大于0 暂时不止损。" % cur_delta)
             else:
-                self.demo_print("cur_delta = %s 小于等于0 可以止损。" % cur_delta)
-                ret = self.do_sell_coins(symbol=symbol)
+                self.demo_print("cur_delta = %s 小于等于0 " % cur_delta)
+                if self.delta_delta > 0.0:
+                    self.demo_print("并且 delta_delta = %s 大于0， 说明 Ma5 在 Ma10 下方， "
+                                    "且 Ma5 向 Ma10 靠近，是一个增长的趋势，可以暂时不止损。 " % cur_delta)
+                else:
+                    self.demo_print("并且 delta_delta = %s 小于等于0， 说明 Ma5 在 Ma10 下方， "
+                                    "且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 " % cur_delta)
+                    ret = self.do_sell_coins(symbol=symbol)
         except Exception as ex:
             self.demo_print("Exception in stop_loss")
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
