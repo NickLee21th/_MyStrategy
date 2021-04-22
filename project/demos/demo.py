@@ -1772,96 +1772,97 @@ class DemoStrategy:
     def get_margin_values(self, symbol):
         up_margin_value = 0.0
         down_margin_value = 0.0
+        CONST_NUM = 2.0
         if symbol == "bch3lusdt":  # 12.3479
-            up_margin_value = 0.1
-            down_margin_value = -0.1
-        elif symbol == "bch3susdt":  # 0.005315
-            up_margin_value = 0.00001
-            down_margin_value = -0.00001
+            up_margin_value = 0.1 * CONST_NUM
+            down_margin_value = -0.1 * CONST_NUM
+        elif symbol == "bch3susdt":  # 0.00063598
+            up_margin_value = 0.000001 * CONST_NUM
+            down_margin_value = -0.000001 * CONST_NUM
         elif symbol == "bsv3lusdt":  # 1.0251
-            up_margin_value = 0.01
-            down_margin_value = -0.01
-        elif symbol == "bsv3susdt":  # 0.014364
-            up_margin_value = 0.0001
-            down_margin_value = -0.0001
+            up_margin_value = 0.01 * CONST_NUM
+            down_margin_value = -0.01 * CONST_NUM
+        elif symbol == "bsv3susdt":  # 0.00192604
+            up_margin_value = 0.00001 * CONST_NUM
+            down_margin_value = -0.00001 * CONST_NUM
         elif symbol == "btc3lusdt":  # 367.6774
-            up_margin_value = 1.0
-            down_margin_value = -1.0
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         elif symbol == "btc3susdt":  # 0.001677
-            up_margin_value = 0.00001
-            down_margin_value = -0.00001
+            up_margin_value = 0.00001 * CONST_NUM
+            down_margin_value = -0.00001 * CONST_NUM
         elif symbol == "eos3lusdt":  # 7.7677
-            up_margin_value = 0.001
-            down_margin_value = -0.001
+            up_margin_value = 0.001 * CONST_NUM
+            down_margin_value = -0.001 * CONST_NUM
         elif symbol == "eos3susdt":  # 0.001677
-            up_margin_value = 0.00001
-            down_margin_value = -0.00001
-        elif symbol == "eth3lusdt":  # 66.6768
-            up_margin_value = 0.1
-            down_margin_value = -0.1
-        elif symbol == "eth3susdt":  # 0.001739
-            up_margin_value = 0.00001
-            down_margin_value = -0.00001
+            up_margin_value = 0.00001 * CONST_NUM
+            down_margin_value = -0.00001 * CONST_NUM
+        elif symbol == "eth3lusdt":  # 109.6629
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.1 * CONST_NUM
+        elif symbol == "eth3susdt":  # 0.00070181
+            up_margin_value = 0.000001 * CONST_NUM
+            down_margin_value = -0.000001 * CONST_NUM
         elif symbol == "fil3lusdt":  # 182.2924
-            up_margin_value = 1.0
-            down_margin_value = -1.0
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         elif symbol == "fil3susdt":  # 0.00019258
-            up_margin_value = 0.000001
-            down_margin_value = -0.000001
+            up_margin_value = 0.000001 * CONST_NUM
+            down_margin_value = -0.000001 * CONST_NUM
         elif symbol == "link3lusdt":  # 5.3142
-            up_margin_value = 0.01
-            down_margin_value = -0.001
+            up_margin_value = 0.01 * CONST_NUM
+            down_margin_value = -0.001 * CONST_NUM
         elif symbol == "link3susdt":  # 0.00045101
-            up_margin_value = 0.000001
-            down_margin_value = -0.000001
+            up_margin_value = 0.000001 * CONST_NUM
+            down_margin_value = -0.000001 * CONST_NUM
         elif symbol == "ltc3lusdt":  # 45.7671
-            up_margin_value = 0.1
-            down_margin_value = -0.1
-        elif symbol == "ltc3susdt":  # 0.000618
-            up_margin_value = 0.000001
-            down_margin_value = -0.000001
+            up_margin_value = 0.1 * CONST_NUM
+            down_margin_value = -0.1 * CONST_NUM
+        elif symbol == "ltc3susdt":  # 0.00017702
+            up_margin_value = 0.000001 * CONST_NUM
+            down_margin_value = -0.000001 * CONST_NUM
         elif symbol == "xrp3lusdt":  # 3.7871
-            up_margin_value = 0.01
-            down_margin_value = -0.01
-        elif symbol == "xrp3susdt":  # 0.0000002226
-            up_margin_value = 0.000000001
-            down_margin_value = -0.000000001
+            up_margin_value = 0.01 * CONST_NUM
+            down_margin_value = -0.01 * CONST_NUM
+        elif symbol == "xrp3susdt":  # 0.0000002226   0.0000000355
+            up_margin_value = 0.0000000001 * CONST_NUM
+            down_margin_value = -0.0000000001 * CONST_NUM
         elif symbol == "zec3lusdt":  # 3.2651
-            up_margin_value = 0.01
-            down_margin_value = -0.01
-        elif symbol == "zec3susdt":  # 0.005252
-            up_margin_value = 0.00001
-            down_margin_value = -0.00001
+            up_margin_value = 0.01 * CONST_NUM
+            down_margin_value = -0.01 * CONST_NUM
+        elif symbol == "zec3susdt":  # 0.00142599
+            up_margin_value = 0.00001 * CONST_NUM
+            down_margin_value = -0.00001 * CONST_NUM
         elif symbol == "bchusdt":  # 668.98
-            up_margin_value = 1.0
-            down_margin_value = -1.0
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         elif symbol == "bsvusdt":  # 277.4688
-            up_margin_value = 1.0
-            down_margin_value = -1.0
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         elif symbol == "btcusdt":  # 60392.95
-            up_margin_value = 100.0
-            down_margin_value = -100.0
+            up_margin_value = 100.0 * CONST_NUM
+            down_margin_value = -100.0 * CONST_NUM
         elif symbol == "eosusdt":  # 6.4296
-            up_margin_value = 0.01
-            down_margin_value = -0.01
+            up_margin_value = 0.01 * CONST_NUM
+            down_margin_value = -0.01 * CONST_NUM
         elif symbol == "ethusdt":  # 2157.91
-            up_margin_value = 2.0
-            down_margin_value = -2.0
+            up_margin_value = 10.0 * CONST_NUM
+            down_margin_value = -10.0 * CONST_NUM
         elif symbol == "filusdt":  # 177.3889
-            up_margin_value = 1.0
-            down_margin_value = -1.0
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         elif symbol == "linkusdt":  # 32.0618
-            up_margin_value = 0.1
-            down_margin_value = -0.1
+            up_margin_value = 0.1 * CONST_NUM
+            down_margin_value = -0.1 * CONST_NUM
         elif symbol == "ltcusdt":  # 233.15
-            up_margin_value = 1.0
-            down_margin_value = -1.0
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         elif symbol == "xrpusdt":  # 1.25031
-            up_margin_value = 0.01
-            down_margin_value = -0.01
+            up_margin_value = 0.01 * CONST_NUM
+            down_margin_value = -0.01 * CONST_NUM
         elif symbol == "zecusdt":  # 200.77
-            up_margin_value = 1.0
-            down_margin_value = -1.0
+            up_margin_value = 1.0 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         return up_margin_value, down_margin_value
 
 
