@@ -1644,6 +1644,7 @@ class DemoStrategy:
         try:
             self.demo_print("处理止盈止损")
             self.demo_print("symbol: %s, earn_rate: %s" % (symbol, earn_rate))
+            self.demo_print("self.delta_delta: %s" % self.delta_delta)
             if earn_rate > self.STOP_PROFIT_RATE:
                 # 触发止盈操作
                 self.demo_print("STOP_PROFIT_RATE: %s" % self.STOP_PROFIT_RATE)
@@ -1656,6 +1657,15 @@ class DemoStrategy:
                 # 触发止损操作
                 self.demo_print("STOP_LOSS_RATE: %s" % self.STOP_LOSS_RATE)
                 self.stop_loss(
+                    symbol=symbol,
+                    cur_delta=cur_delta,
+                    last_delta=last_delta
+                )
+            elif earn_rate > 0.0 and self.delta_delta < 0.0:
+                # 触发止盈
+                self.demo_print("earn_rate: %s, 大于0.0 且 delta_delta: %s 小于0.0, 触发止盈"
+                                % (earn_rate, self.delta_delta))
+                self.stop_profit(
                     symbol=symbol,
                     cur_delta=cur_delta,
                     last_delta=last_delta
@@ -1805,7 +1815,7 @@ class DemoStrategy:
             down_margin_value = -0.00001 * CONST_NUM
         elif symbol == "eth3lusdt":  # 109.6629
             up_margin_value = 1.0 * CONST_NUM
-            down_margin_value = -1.1 * CONST_NUM
+            down_margin_value = -1.0 * CONST_NUM
         elif symbol == "eth3susdt":  # 0.00070181
             up_margin_value = 0.000001 * CONST_NUM
             down_margin_value = -0.000001 * CONST_NUM
@@ -1949,22 +1959,23 @@ def API_v2_account_repayment(access_key, secret_key,):
 
 # 根据币种获取小数位精度
 def get_nbit_by_symbol(symbol="ethusdt"):
-    n_bit = 6
-    if symbol in (
-            "bch3lusdt", "bch3susdt","bsv3lusdt", "bsv3susdt","btc3lusdt", "btc3susdt",
-            "eos3lusdt", "eos3susdt", "eth3lusdt", "eth3susdt", "fil3lusdt",
-            "link3lusdt", "ltc3lusdt", "ltc3susdt", "zec3lusdt", "zec3susdt",
-            "xrp3lusdt"
-    ):
-        n_bit = 6
-    elif symbol in (
-            "fil3susdt",
-            "link3susdt",
-    ):
-        n_bit = 8
-    elif symbol in ("xrp3susdt"):
-        n_bit = 10
-    return n_bit
+    return 10
+    # n_bit = 6
+    # if symbol in (
+    #         "bch3lusdt", "bch3susdt","bsv3lusdt", "bsv3susdt","btc3lusdt", "btc3susdt",
+    #         "eos3lusdt", "eos3susdt", "eth3lusdt", "eth3susdt", "fil3lusdt",
+    #         "link3lusdt", "ltc3lusdt", "ltc3susdt", "zec3lusdt", "zec3susdt",
+    #         "xrp3lusdt"
+    # ):
+    #     n_bit = 6
+    # elif symbol in (
+    #         "fil3susdt",
+    #         "link3susdt",
+    # ):
+    #     n_bit = 8
+    # elif symbol in ("xrp3susdt"):
+    #     n_bit = 10
+    # return n_bit
 
 
 # 返回当前交易对的最新的交易价格
