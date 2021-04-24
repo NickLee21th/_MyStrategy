@@ -1436,10 +1436,15 @@ class DemoStrategy:
                         else:
                             self.demo_print("未买入，则探测是否出现 UP Cross")
                             if cur_delta > 0.0 and last_delta < 0.0:
-                                self.demo_print("cur_delta > 0.0 and last_delta < 0.0, 出现 Up Cross, 可以买入")
+                                self.demo_print("【买入】cur_delta > 0.0 and last_delta < 0.0, 出现 Up Cross, 可以买入")
                                 self.do_buy_coins(symbol=symbol)
                             else:
-                                self.demo_print("没有出现 Up Cross, 暂时无动作。")
+                                self.demo_print("没有出现 Up Cross, 则判定 MD5 是否在 MD10 之上，且 MD5 是否在远离 MD10。")
+                                if cur_delta > 0.0 and self.delta_delta > 0.0:
+                                    self.demo_print("cur_delta:%s 大于 0.0  且 self.delta_delta:%s 大于 0.0"
+                                                    % (cur_delta, self.delta_delta))
+                                    self.demo_print("【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。")
+                                    self.do_buy_coins(symbol=symbol)
                         last_delta = cur_delta
                     else:  # last_delta <= DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
@@ -1448,7 +1453,7 @@ class DemoStrategy:
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is False:
-                            self.demo_print("没有买入，则买入")
+                            self.demo_print("【买入】没有买入，则买入")
                             self.do_buy_coins(symbol=symbol)
                         else:
                             self.demo_print("已经买入，侦测盈利情况")
