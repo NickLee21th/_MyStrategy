@@ -48,6 +48,7 @@ class DemoStrategy:
     STOP_PROFIT_RATE = 0.03
     STOP_LOSS_RATE = -0.001
     delta_delta = None
+    last_delta_delta = None
 
     def get_from_data_dict(self, index_i):
         OK = False
@@ -1373,12 +1374,16 @@ class DemoStrategy:
                         self.demo_print("last_delta is None")
                         self.demo_print("cur_delta = %s" % cur_delta)
                         last_delta = cur_delta
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                     elif last_delta >= DOWN_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从上到下穿过下边缘")
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is True:
@@ -1390,23 +1395,46 @@ class DemoStrategy:
                     else:  # last_delta < DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         last_delta = cur_delta
-                        self.demo_print("一直在下边缘之下，一定是未买入，所以无动作。")
-                        assert self.Holding_Coins is False
+                        self.demo_print("一直在下边缘之下。")
+
+                        if self.Holding_Coins is True:
+                            self.demo_print("已经买入，侦测盈利情况")
+                            self.detect_earn_state(
+                                symbol=symbol,
+                                cur_delta=cur_delta,
+                                last_delta=last_delta
+                            )
+                        else:
+                            self.demo_print("没有买入")
+                            if self.last_delta_delta < 0.0 and self.delta_delta > 0.0:
+                                self.demo_print("last_delta_delta:%s 小于 0.0 且 delta_delta:%s 大于 0.0。"
+                                                % (self.last_delta_delta, self.delta_delta))
+                                self.demo_print("【买入】Ma5出现向上的拐点，可以买入")
+                                self.do_buy_coins(symbol=symbol)
+                            else:
+                                self.demo_print("没有出现 Ma5向上的拐点 暂无动作。")
+                                # assert self.Holding_Coins is False
                 elif cur_delta >= DOWN_MARGIN_VALUE and cur_delta <= UP_MARGIN_VALUE:
                     self.demo_print("ma5 在 上下边缘 之间")
                     if last_delta is None:
                         self.demo_print("last_delta is None")
                         self.demo_print("cur_delta = %s" % cur_delta)
                         last_delta = cur_delta
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                     elif last_delta >= UP_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从 上边缘之上 向下 进入 上下边缘 之间.")
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is True:
@@ -1416,7 +1444,12 @@ class DemoStrategy:
                                                 % cur_delta)
                                 self.do_sell_coins(symbol=symbol)
                             else:
-                                self.demo_print("cur_delta = %s, 如果 cur_delta >= 0, 则暂时不卖出。" % cur_delta)
+                                self.demo_print("cur_delta = %s, 如果 cur_delta >= 0, 侦测盈利情况。" % cur_delta)
+                                self.detect_earn_state(
+                                    symbol=symbol,
+                                    cur_delta=cur_delta,
+                                    last_delta=last_delta
+                                )
                         else:
                             self.demo_print("没有买入，则无动作。")
                         last_delta = cur_delta
@@ -1424,6 +1457,8 @@ class DemoStrategy:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("一直在 上下边缘 之间。")
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is True:
@@ -1439,17 +1474,26 @@ class DemoStrategy:
                                 self.demo_print("【买入】cur_delta > 0.0 and last_delta < 0.0, 出现 Up Cross, 可以买入")
                                 self.do_buy_coins(symbol=symbol)
                             else:
-                                self.demo_print("没有出现 Up Cross, 则判定 MD5 是否在 MD10 之上，且 MD5 是否在远离 MD10。")
+                                self.demo_print("没有出现 Up Cross")
                                 if cur_delta > 0.0 and self.delta_delta > 0.0:
                                     self.demo_print("cur_delta:%s 大于 0.0  且 self.delta_delta:%s 大于 0.0"
                                                     % (cur_delta, self.delta_delta))
                                     self.demo_print("【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。")
                                     self.do_buy_coins(symbol=symbol)
+                                elif cur_delta <= 0.0 and self.last_delta_delta < 0.0 and self.delta_delta > 0.0:
+                                    self.demo_print("cur_delta:%s 小于等于 0.0  last_delta_delta:%s 小于 0.0 且 delta_delta:%s 大于 0.0。"
+                                                    % (cur_delta, self.last_delta_delta, self.delta_delta))
+                                    self.demo_print("【买入】MD5 在 MD10 之下，且 Ma5出现向上的拐点，可以买入")
+                                    self.do_buy_coins(symbol=symbol)
+                                else:
+                                    self.demo_print("未达到买入条件，暂时 无动作。")
                         last_delta = cur_delta
                     else:  # last_delta <= DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从下边缘之下 向上 进入 上下边缘 之间")
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         if self.Holding_Coins is False:
@@ -1469,12 +1513,16 @@ class DemoStrategy:
                         self.demo_print("last_delta is None")
                         self.demo_print("cur_delta = %s" % cur_delta)
                         last_delta = cur_delta
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                     elif last_delta >= UP_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("一直在 上边缘 之上")
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         self.demo_print("达到止盈点时，可以止盈。")
@@ -1486,12 +1534,21 @@ class DemoStrategy:
                                 last_delta=last_delta
                             )
                         else:
-                            self.demo_print("未买入，无动作。")
+                            self.demo_print("未买入")
+                            if cur_delta > 0.0 and self.delta_delta > 0.0:
+                                self.demo_print("cur_delta:%s 大于 0.0  且 self.delta_delta:%s 大于 0.0"
+                                                % (cur_delta, self.delta_delta))
+                                self.demo_print("【买入】MD5 在 MD10 之上 且 一直在上边缘之上，且 MD5 在远离 MD10, 可以买入。")
+                                self.do_buy_coins(symbol=symbol)
+                            else:
+                                self.demo_print("未达到买入条件，暂时 无动作。")
                         last_delta = cur_delta
                     elif last_delta < UP_MARGIN_VALUE and last_delta >= DOWN_MARGIN_VALUE:
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从上下边缘 之间 向上 穿过上边缘")
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         self.demo_print("达到止盈点时，可以止盈。")
@@ -1503,12 +1560,21 @@ class DemoStrategy:
                                 last_delta=last_delta
                             )
                         else:
-                            self.demo_print("未买入，无动作。")
+                            self.demo_print("未买入")
+                            if cur_delta > 0.0 and self.delta_delta > 0.0:
+                                self.demo_print("cur_delta:%s 大于 0.0  且 self.delta_delta:%s 大于 0.0"
+                                                % (cur_delta, self.delta_delta))
+                                self.demo_print("【买入】MD5 在 MD10 之上 且 从上下边缘 之间 向上 穿过上边缘，且 MD5 在远离 MD10, 可以买入。")
+                                self.do_buy_coins(symbol=symbol)
+                            else:
+                                self.demo_print("未达到买入条件，暂时 无动作。")
                         last_delta = cur_delta
                     else:  # last_delta < DOWN_MARGIN_VALUE
                         self.demo_print("last_delta = %s" % last_delta)
                         self.demo_print("cur_delta = %s" % cur_delta)
                         self.demo_print("从下边缘之下 向上 穿过上边缘")
+                        self.last_delta_delta = self.delta_delta
+                        self.demo_print("last_delta_delta = %s" % self.last_delta_delta)
                         self.delta_delta = cur_delta - last_delta
                         self.demo_print("delta_delta = %s" % self.delta_delta)
                         last_delta = cur_delta
@@ -1592,6 +1658,7 @@ class DemoStrategy:
     def do_sell_coins(self, symbol):
         try:
             if self.Holding_Coins is True:
+                self.demo_print("*****【卖出】*****")
                 # 瞬时价格
                 self.demo_print("币种买入时的瞬时价格， %s: %s" % (symbol, self.holding_coins_instant_price))
                 self.demo_print("以当前币种的 瞬时价格 卖出")
@@ -1692,8 +1759,12 @@ class DemoStrategy:
                                 % cur_delta)
                 self.do_sell_coins(symbol=symbol)
             elif self.delta_delta <= 0.0:
-                self.demo_print("delta_delta 小于等于0 表示收益开始下降，可以止盈了")
-                ret = self.do_sell_coins(symbol=symbol)
+                if self.last_delta_delta <= 0.0:
+                    self.demo_print("cur_delta = %s 大于等于 0.0" % cur_delta)
+                    self.demo_print("并且 delta_delta = %s 小于等于0.0" % self.delta_delta)
+                    self.demo_print("并且 last_delta_delta = %s 小于等于0.0" % self.last_delta_delta)
+                    self.demo_print("出现盈利下跌趋势， 可以止盈了。")
+                    ret = self.do_sell_coins(symbol=symbol)
             else:
                 self.demo_print("delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。")
         except Exception as ex:
@@ -1708,15 +1779,22 @@ class DemoStrategy:
         try:
             self.demo_print("判定是否 止损")
             if cur_delta > 0.0:
-                self.demo_print("cur_delta = %s 大于0 暂时不止损。" % cur_delta)
+                self.demo_print("cur_delta = %s 大于0 。" % cur_delta)
+                if self.delta_delta > 0.0:
+                    self.demo_print("并且 delta_delta = %s 大于0， 说明 Ma5 在 Ma10 上方， "
+                                    "且 Ma5 远离 Ma10 ，是一个增长的趋势，可以暂时不止损。 " % self.delta_delta)
+                else:
+                    self.demo_print("并且 delta_delta = %s 小于等于0， 说明 Ma5 在 Ma10 下方， "
+                                    "且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 " % self.delta_delta)
+                    ret = self.do_sell_coins(symbol=symbol)
             else:
                 self.demo_print("cur_delta = %s 小于等于0 " % cur_delta)
                 if self.delta_delta > 0.0:
                     self.demo_print("并且 delta_delta = %s 大于0， 说明 Ma5 在 Ma10 下方， "
-                                    "且 Ma5 向 Ma10 靠近，是一个增长的趋势，可以暂时不止损。 " % cur_delta)
+                                    "且 Ma5 向 Ma10 靠近，是一个增长的趋势，可以暂时不止损。 " % self.delta_delta)
                 else:
                     self.demo_print("并且 delta_delta = %s 小于等于0， 说明 Ma5 在 Ma10 下方， "
-                                    "且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 " % cur_delta)
+                                    "且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 " % self.delta_delta)
                     ret = self.do_sell_coins(symbol=symbol)
         except Exception as ex:
             self.demo_print("Exception in stop_loss")
@@ -1781,10 +1859,12 @@ class DemoStrategy:
                 close_price += item["close"]
                 if count == 5:
                     ma5 = close_price / count
-                    ma5 = round(ma5, n_bit)
+                    self.demo_print("[IN get_MA5_MA10] original ma5 = %s" % ma5)
+                    ma5 = trunc_nbit(ma5, n_bit)
                 count += 1
         ma10 = close_price / (count - 1)
-        ma10 = round(ma10, n_bit)
+        self.demo_print("[IN get_MA5_MA10] original ma10 = %s" % ma10)
+        ma10 = trunc_nbit(ma10, n_bit)
         # print("ma5=%s" % ma5)
         # print("ma10=%s" % ma10)
         return ma5, ma10
@@ -1961,26 +2041,81 @@ def API_v2_account_repayment(access_key, secret_key,):
         },
     )
 
+# 对 input_num 进行 trunc 截断。
+def trunc_nbit(input_num, nbit):
+    output_num = input_num
+    if nbit > 0.0:
+        output_num = math.trunc(input_num*nbit)/nbit
+    elif nbit < 0.0:
+        output_num = math.trunc(input_num/abs(nbit))*abs(nbit)
+    else:
+        output_num = math.trunc(input_num)
+    return output_num
 
 # 根据币种获取小数位精度
 def get_nbit_by_symbol(symbol="ethusdt"):
-    return 10
-    # n_bit = 6
-    # if symbol in (
-    #         "bch3lusdt", "bch3susdt","bsv3lusdt", "bsv3susdt","btc3lusdt", "btc3susdt",
-    #         "eos3lusdt", "eos3susdt", "eth3lusdt", "eth3susdt", "fil3lusdt",
-    #         "link3lusdt", "ltc3lusdt", "ltc3susdt", "zec3lusdt", "zec3susdt",
-    #         "xrp3lusdt"
-    # ):
-    #     n_bit = 6
-    # elif symbol in (
-    #         "fil3susdt",
-    #         "link3susdt",
-    # ):
-    #     n_bit = 8
-    # elif symbol in ("xrp3susdt"):
-    #     n_bit = 10
-    # return n_bit
+    n_bit = 6.0
+    if symbol == "bch3lusdt":  # 12.3479
+        n_bit = 1.0
+    elif symbol == "bch3susdt":  # 0.00063598
+        n_bit = 6.0
+    elif symbol == "bsv3lusdt":  # 0.3320
+        n_bit = 3.0
+    elif symbol == "bsv3susdt":  # 0.00192604
+        n_bit = 5.0
+    elif symbol == "btc3lusdt":  # 367.6774
+        n_bit = 0.0
+    elif symbol == "btc3susdt":  # 0.001677
+        n_bit = 5.0
+    elif symbol == "eos3lusdt":  # 7.7677
+        n_bit = 2.0
+    elif symbol == "eos3susdt":  # 0.001677
+        n_bit = 6.0
+    elif symbol == "eth3lusdt":  # 94.7005
+        n_bit = 1.0
+    elif symbol == "eth3susdt":  # 0.00070181
+        n_bit = 6.0
+    elif symbol == "fil3lusdt":  # 182.2924
+        n_bit = 0.0
+    elif symbol == "fil3susdt":  # 0.00019258
+        n_bit = 6.0
+    elif symbol == "link3lusdt":  # 5.3142
+        n_bit = 2.0
+    elif symbol == "link3susdt":  # 0.00045101
+        n_bit = 6.0
+    elif symbol == "ltc3lusdt":  # 45.7671
+        n_bit = 1.0
+    elif symbol == "ltc3susdt":  # 0.00017702
+        n_bit = 6.0
+    elif symbol == "xrp3lusdt":  # 3.7871
+        n_bit = 2.0
+    elif symbol == "xrp3susdt":  # 0.0000002226   0.0000000355
+        n_bit = 10.0
+    elif symbol == "zec3lusdt":  # 1.4675
+        n_bit = 2.0
+    elif symbol == "zec3susdt":  # 0.00142599
+        n_bit = 5.0
+    elif symbol == "bchusdt":  # 668.98
+        n_bit = 0.0
+    elif symbol == "bsvusdt":  # 277.4688
+        n_bit = 0.0
+    elif symbol == "btcusdt":  # 60392.95
+        n_bit = -100.0
+    elif symbol == "eosusdt":  # 6.4296
+        n_bit = 2.0
+    elif symbol == "ethusdt":  # 2157.91
+        n_bit = -10.0
+    elif symbol == "filusdt":  # 177.3889
+        n_bit = 0.0
+    elif symbol == "linkusdt":  # 32.0618
+        n_bit = 1.0
+    elif symbol == "ltcusdt":  # 233.15
+        n_bit = 0.0
+    elif symbol == "xrpusdt":  # 1.25031
+        n_bit = 2.0
+    elif symbol == "zecusdt":  # 200.77
+        n_bit = 0.0
+    return n_bit
 
 
 # 返回当前交易对的最新的交易价格
