@@ -1263,3 +1263,251 @@ MA10 = 152
 UP_MARGIN_VALUE = 2.0
 DOWN_MARGIN_VALUE = -2.0
 ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， filusdt: 153.1806
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， filusdt: 152.9419
+以瞬时价格计算的盈利率  earn_rate_instant = -0.00155829132409714
+----------------------------------
+币种买入时的卖一价， filusdt: 153.1807
+以当前币种的 买一价 卖出
+卖出时的买一价， filusdt: 152.9307
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.001632059391294073
+处理止盈止损的情况
+处理止盈止损
+symbol: filusdt, earn_rate: -0.0015951753576956065
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 1 大于0 。
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， filusdt: 153.1806
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， filusdt: 152.9419
+以瞬时价格计算的盈利率  earn_rate_instant = -0.00155829132409714
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = 0.0004513562330933779
+----------------------------------
+币种买入时的卖一价， filusdt: 153.1807
+以当前币种的 买一价 卖出
+卖出时的买一价， filusdt: 152.9307
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.001632059391294073
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = 0.00021334690963987655
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 05:50:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 153.20984
+[IN get_MA5_MA10] original ma10 = 152.99255
+================================================
+Time = 2021-04-27 05:55:00
+ MA5 = 153
+MA10 = 152
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 05:55:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 153.2395
+[IN get_MA5_MA10] original ma10 = 152.99634999999998
+================================================
+Time = 2021-04-27 06:00:00
+ MA5 = 153
+MA10 = 152
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:00:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 153.14544
+[IN get_MA5_MA10] original ma10 = 153.05734999999999
+================================================
+Time = 2021-04-27 06:05:01
+ MA5 = 153
+MA10 = 153
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:05:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 153.20934000000003
+[IN get_MA5_MA10] original ma10 = 153.12123000000003
+================================================
+Time = 2021-04-27 06:10:00
+ MA5 = 153
+MA10 = 153
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:10:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 153.29735999999997
+[IN get_MA5_MA10] original ma10 = 153.21111
+================================================
+Time = 2021-04-27 06:15:00
+ MA5 = 153
+MA10 = 153
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:15:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 153.56814000000003
+[IN get_MA5_MA10] original ma10 = 153.38899
+================================================
+Time = 2021-04-27 06:20:00
+ MA5 = 153
+MA10 = 153
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:20:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 153.91108
+[IN get_MA5_MA10] original ma10 = 153.57529
+================================================
+Time = 2021-04-27 06:25:01
+ MA5 = 153
+MA10 = 153
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 154.14918
+[IN get_MA5_MA10] original ma10 = 153.64731
+================================================
+Time = 2021-04-27 06:30:00
+ MA5 = 154
+MA10 = 153
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:1 大于 0.0  且 self.delta_delta:1 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+币种买入时的瞬时价格， filusdt: 154.5001
+----------------------------------
+币种买入时的卖一价， filusdt: 154.5059
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 154.20288
+[IN get_MA5_MA10] original ma10 = 153.70611
+================================================
+Time = 2021-04-27 06:35:00
+ MA5 = 154
+MA10 = 153
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， filusdt: 154.5001
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， filusdt: 153.7744
+以瞬时价格计算的盈利率  earn_rate_instant = -0.004697084338456669
+----------------------------------
+币种买入时的卖一价， filusdt: 154.5059
+以当前币种的 买一价 卖出
+卖出时的买一价， filusdt: 153.6777
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.005360313101312051
+处理止盈止损的情况
+处理止盈止损
+symbol: filusdt, earn_rate: -0.00502869871988436
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 1 大于0 。
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， filusdt: 154.5001
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， filusdt: 153.7744
+以瞬时价格计算的盈利率  earn_rate_instant = -0.004697084338456669
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.004245728105363291
+----------------------------------
+币种买入时的卖一价， filusdt: 154.5059
+以当前币种的 买一价 卖出
+卖出时的买一价， filusdt: 153.683
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.005326010204141099

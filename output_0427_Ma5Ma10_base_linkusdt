@@ -1412,3 +1412,223 @@ Time = 2021-04-27 06:15:00
 MA10 = 35.6
 UP_MARGIN_VALUE = 0.2
 DOWN_MARGIN_VALUE = -0.2
+ma5 在 上下边缘 之间
+last_delta = 0.10000000000000142
+cur_delta = 0.10000000000000142
+一直在 上下边缘 之间。
+last_delta_delta = 0.0
+delta_delta = 0.0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， linkusdt: 35.5878
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， linkusdt: 35.7777
+以瞬时价格计算的盈利率  earn_rate_instant = 0.005336098325830804
+----------------------------------
+币种买入时的卖一价， linkusdt: 35.5529
+以当前币种的 买一价 卖出
+卖出时的买一价， linkusdt: 35.7716
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.006151396932458346
+处理止盈止损的情况
+处理止盈止损
+symbol: linkusdt, earn_rate: 0.005743747629144575
+self.delta_delta: 0.0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:15:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 35.82094
+[IN get_MA5_MA10] original ma10 = 35.69565000000001
+================================================
+Time = 2021-04-27 06:20:00
+ MA5 = 35.8
+MA10 = 35.6
+UP_MARGIN_VALUE = 0.2
+DOWN_MARGIN_VALUE = -0.2
+ma5 在 上下边缘 之间
+last_delta = 0.10000000000000142
+cur_delta = 0.19999999999999574
+一直在 上下边缘 之间。
+last_delta_delta = 0.0
+delta_delta = 0.09999999999999432
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， linkusdt: 35.5878
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， linkusdt: 35.889
+以瞬时价格计算的盈利率  earn_rate_instant = 0.008463574595788486
+----------------------------------
+币种买入时的卖一价， linkusdt: 35.5529
+以当前币种的 买一价 卖出
+卖出时的买一价， linkusdt: 35.8841
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.009315695766027398
+处理止盈止损的情况
+处理止盈止损
+symbol: linkusdt, earn_rate: 0.008889635180907941
+self.delta_delta: 0.09999999999999432
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 35.8968
+[IN get_MA5_MA10] original ma10 = 35.76135000000001
+================================================
+Time = 2021-04-27 06:25:00
+ MA5 = 35.8
+MA10 = 35.7
+UP_MARGIN_VALUE = 0.2
+DOWN_MARGIN_VALUE = -0.2
+ma5 在 上下边缘 之间
+last_delta = 0.19999999999999574
+cur_delta = 0.09999999999999432
+一直在 上下边缘 之间。
+last_delta_delta = 0.09999999999999432
+delta_delta = -0.10000000000000142
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， linkusdt: 35.5878
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， linkusdt: 36.0751
+以瞬时价格计算的盈利率  earn_rate_instant = 0.013692894756068023
+----------------------------------
+币种买入时的卖一价， linkusdt: 35.5529
+以当前币种的 买一价 卖出
+卖出时的买一价， linkusdt: 36.0741
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.014659844907166512
+处理止盈止损的情况
+处理止盈止损
+symbol: linkusdt, earn_rate: 0.014176369831617268
+self.delta_delta: -0.10000000000000142
+earn_rate: 0.014176369831617268, 大于0.0 且 delta_delta: -0.10000000000000142 小于0.0, 触发止盈
+判定是否 止盈
+delta_delta =  -0.10000000000000142
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 35.95554
+[IN get_MA5_MA10] original ma10 = 35.818
+================================================
+Time = 2021-04-27 06:30:00
+ MA5 = 35.9
+MA10 = 35.8
+UP_MARGIN_VALUE = 0.2
+DOWN_MARGIN_VALUE = -0.2
+ma5 在 上下边缘 之间
+last_delta = 0.09999999999999432
+cur_delta = 0.10000000000000142
+一直在 上下边缘 之间。
+last_delta_delta = -0.10000000000000142
+delta_delta = 7.105427357601002e-15
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， linkusdt: 35.5878
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， linkusdt: 36.1025
+以瞬时价格计算的盈利率  earn_rate_instant = 0.014462821528726072
+----------------------------------
+币种买入时的卖一价， linkusdt: 35.5529
+以当前币种的 买一价 卖出
+卖出时的买一价， linkusdt: 36.0867
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.015014246376526229
+处理止盈止损的情况
+处理止盈止损
+symbol: linkusdt, earn_rate: 0.01473853395262615
+self.delta_delta: 7.105427357601002e-15
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:30:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 35.9972
+[IN get_MA5_MA10] original ma10 = 35.8654
+================================================
+Time = 2021-04-27 06:35:00
+ MA5 = 35.9
+MA10 = 35.8
+UP_MARGIN_VALUE = 0.2
+DOWN_MARGIN_VALUE = -0.2
+ma5 在 上下边缘 之间
+last_delta = 0.10000000000000142
+cur_delta = 0.10000000000000142
+一直在 上下边缘 之间。
+last_delta_delta = 7.105427357601002e-15
+delta_delta = 0.0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， linkusdt: 35.5878
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， linkusdt: 36.1341
+以瞬时价格计算的盈利率  earn_rate_instant = 0.015350766273835277
+----------------------------------
+币种买入时的卖一价， linkusdt: 35.5529
+以当前币种的 买一价 卖出
+卖出时的买一价， linkusdt: 36.1329
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.016313718430845257
+处理止盈止损的情况
+处理止盈止损
+symbol: linkusdt, earn_rate: 0.015832242352340268
+self.delta_delta: 0.0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 36.0752
+[IN get_MA5_MA10] original ma10 = 35.92659
+================================================
+Time = 2021-04-27 06:40:00
+ MA5 = 36.0
+MA10 = 35.9
+UP_MARGIN_VALUE = 0.2
+DOWN_MARGIN_VALUE = -0.2
+ma5 在 上下边缘 之间
+last_delta = 0.10000000000000142
+cur_delta = 0.10000000000000142
+一直在 上下边缘 之间。
+last_delta_delta = 0.0
+delta_delta = 0.0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， linkusdt: 35.5878
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， linkusdt: 36.141
+以瞬时价格计算的盈利率  earn_rate_instant = 0.015544652942862352
+----------------------------------
+币种买入时的卖一价， linkusdt: 35.5529
+以当前币种的 买一价 卖出
+卖出时的买一价， linkusdt: 36.1541
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.016910012966593405
+处理止盈止损的情况
+处理止盈止损
+symbol: linkusdt, earn_rate: 0.016227332954727877
+self.delta_delta: 0.0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:40:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 36.166579999999996
+[IN get_MA5_MA10] original ma10 = 35.99376
+================================================
+Time = 2021-04-27 06:45:00
+ MA5 = 36.1
+MA10 = 35.9
+UP_MARGIN_VALUE = 0.2
+DOWN_MARGIN_VALUE = -0.2
+ma5 在上边缘之上
+last_delta = 0.10000000000000142
+cur_delta = 0.20000000000000284
+从上下边缘 之间 向上 穿过上边缘
+last_delta_delta = 0.0
+delta_delta = 0.10000000000000142
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， linkusdt: 35.5878
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， linkusdt: 36.3381
+以瞬时价格计算的盈利率  earn_rate_instant = 0.021083067792895198
+----------------------------------
+币种买入时的卖一价， linkusdt: 35.5529
+以当前币种的 买一价 卖出
+卖出时的买一价， linkusdt: 36.3353
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.02200664362119533
+处理止盈止损的情况
+处理止盈止损
+symbol: linkusdt, earn_rate: 0.021544855707045264
+self.delta_delta: 0.10000000000000142
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 36.17264
+[IN get_MA5_MA10] original ma10 = 36.03472000000001
+================================================
+Time = 2021-04-27 06:50:00
+ MA5 = 36.1
+MA10 = 36.0
+UP_MARGIN_VALUE = 0.2

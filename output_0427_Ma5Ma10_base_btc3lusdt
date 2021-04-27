@@ -1464,3 +1464,238 @@ delta_delta = 1
 以当前币种的 瞬时价格 卖出
 当前币种的 瞬时价格， btc3lusdt: 249.3842
 以瞬时价格计算的盈利率  earn_rate_instant = 0.03476602598945909
+----------------------------------
+币种买入时的卖一价， btc3lusdt: 241.0633
+以当前币种的 买一价 卖出
+卖出时的买一价， btc3lusdt: 249.2994
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.034165714980256195
+处理止盈止损的情况
+处理止盈止损
+symbol: btc3lusdt, earn_rate: 0.03446587048485764
+self.delta_delta: 1
+STOP_PROFIT_RATE: 0.03
+判定是否 止盈
+delta_delta =  1
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:15:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 244.72815999999997
+[IN get_MA5_MA10] original ma10 = 241.66020000000003
+================================================
+Time = 2021-04-27 06:20:00
+ MA5 = 244
+MA10 = 241
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 2
+cur_delta = 3
+一直在 上边缘 之上
+last_delta_delta = 1
+delta_delta = 1
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， btc3lusdt: 241.0054
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， btc3lusdt: 248.0
+以瞬时价格计算的盈利率  earn_rate_instant = 0.029022586215910477
+----------------------------------
+币种买入时的卖一价， btc3lusdt: 241.0633
+以当前币种的 买一价 卖出
+卖出时的买一价， btc3lusdt: 247.9262
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.028469285868068663
+处理止盈止损的情况
+处理止盈止损
+symbol: btc3lusdt, earn_rate: 0.02874593604198957
+self.delta_delta: 1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 246.69994000000003
+[IN get_MA5_MA10] original ma10 = 242.67616000000004
+================================================
+Time = 2021-04-27 06:25:00
+ MA5 = 246
+MA10 = 242
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 3
+cur_delta = 4
+一直在 上边缘 之上
+last_delta_delta = 1
+delta_delta = 1
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， btc3lusdt: 241.0054
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， btc3lusdt: 249.4063
+以瞬时价格计算的盈利率  earn_rate_instant = 0.034857725179601694
+----------------------------------
+币种买入时的卖一价， btc3lusdt: 241.0633
+以当前币种的 买一价 卖出
+卖出时的买一价， btc3lusdt: 248.8024
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.032104015833185756
+处理止盈止损的情况
+处理止盈止损
+symbol: btc3lusdt, earn_rate: 0.03348087050639373
+self.delta_delta: 1
+STOP_PROFIT_RATE: 0.03
+判定是否 止盈
+delta_delta =  1
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 248.49886
+[IN get_MA5_MA10] original ma10 = 243.75946000000005
+================================================
+Time = 2021-04-27 06:30:00
+ MA5 = 248
+MA10 = 243
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 4
+cur_delta = 5
+一直在 上边缘 之上
+last_delta_delta = 1
+delta_delta = 1
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， btc3lusdt: 241.0054
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， btc3lusdt: 250.0453
+以瞬时价格计算的盈利率  earn_rate_instant = 0.03750911805295644
+----------------------------------
+币种买入时的卖一价， btc3lusdt: 241.0633
+以当前币种的 买一价 卖出
+卖出时的买一价， btc3lusdt: 249.9023
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0366667178288856
+处理止盈止损的情况
+处理止盈止损
+symbol: btc3lusdt, earn_rate: 0.03708791794092102
+self.delta_delta: 1
+STOP_PROFIT_RATE: 0.03
+判定是否 止盈
+delta_delta =  1
+delta_delta 大于0 表示收益可能继续上涨，暂时不止盈。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 248.95950000000002
+[IN get_MA5_MA10] original ma10 = 244.80900000000003
+================================================
+Time = 2021-04-27 06:35:01
+ MA5 = 248
+MA10 = 244
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 5
+cur_delta = 4
+一直在 上边缘 之上
+last_delta_delta = 1
+delta_delta = -1
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， btc3lusdt: 241.0054
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， btc3lusdt: 248.5072
+以瞬时价格计算的盈利率  earn_rate_instant = 0.031127103376106937
+----------------------------------
+币种买入时的卖一价， btc3lusdt: 241.0633
+以当前币种的 买一价 卖出
+卖出时的买一价， btc3lusdt: 248.1759
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.02950511338723072
+处理止盈止损的情况
+处理止盈止损
+symbol: btc3lusdt, earn_rate: 0.03031610838166883
+self.delta_delta: -1
+STOP_PROFIT_RATE: 0.03
+判定是否 止盈
+delta_delta =  -1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:35:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 248.86280000000002
+[IN get_MA5_MA10] original ma10 = 245.89548
+================================================
+Time = 2021-04-27 06:40:00
+ MA5 = 248
+MA10 = 245
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 4
+cur_delta = 3
+一直在 上边缘 之上
+last_delta_delta = -1
+delta_delta = -1
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， btc3lusdt: 241.0054
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， btc3lusdt: 248.593
+以瞬时价格计算的盈利率  earn_rate_instant = 0.031483111996660575
+----------------------------------
+币种买入时的卖一价， btc3lusdt: 241.0633
+以当前币种的 买一价 卖出
+卖出时的买一价， btc3lusdt: 248.5708
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.031143272327226888
+处理止盈止损的情况
+处理止盈止损
+symbol: btc3lusdt, earn_rate: 0.03131319216194373
+self.delta_delta: -1
+STOP_PROFIT_RATE: 0.03
+判定是否 止盈
+delta_delta =  -1
+cur_delta = 3 大于等于 0.0
+并且 delta_delta = -1 小于等于0.0
+并且 last_delta_delta = -1 小于等于0.0
+出现盈利下跌趋势， 可以止盈了。
+*****【卖出】*****
+币种买入时的瞬时价格， btc3lusdt: 241.0054
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， btc3lusdt: 248.593
+以瞬时价格计算的盈利率  earn_rate_instant = 0.031483111996660575
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = 0.025989506290046323
+----------------------------------
+币种买入时的卖一价， btc3lusdt: 241.0633
+以当前币种的 买一价 卖出
+卖出时的买一价， btc3lusdt: 248.6949
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.03165807487079116
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = 0.023733861518493136
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:40:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 249.1628
+[IN get_MA5_MA10] original ma10 = 246.94548
+================================================
+Time = 2021-04-27 06:45:00
+ MA5 = 249
+MA10 = 246
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 3
+cur_delta = 3
+一直在 上边缘 之上
+last_delta_delta = -1
+delta_delta = 0
+达到止盈点时，可以止盈。
+未买入
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 06:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 249.05734
+[IN get_MA5_MA10] original ma10 = 247.87864
+================================================
+Time = 2021-04-27 06:50:00
+ MA5 = 249
+MA10 = 247
+UP_MARGIN_VALUE = 2.0
