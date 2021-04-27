@@ -3734,3 +3734,232 @@ symbol: bchusdt, earn_rate: 0.00077749844066018
 self.delta_delta: 2
 等待至下一个X分钟的开始
 time_stamp = 2021-04-27 00:55:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 837.1579999999998
+[IN get_MA5_MA10] original ma10 = 837.5429999999999
+================================================
+Time = 2021-04-27 01:00:00
+ MA5 = 837
+MA10 = 837
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 2
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bchusdt: 836.01
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bchusdt: 836.7
+以瞬时价格计算的盈利率  earn_rate_instant = 0.0008253489790792629
+----------------------------------
+币种买入时的卖一价， bchusdt: 836.02
+以当前币种的 买一价 卖出
+卖出时的买一价， bchusdt: 836.62
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0007176861797564924
+处理止盈止损的情况
+处理止盈止损
+symbol: bchusdt, earn_rate: 0.0007715175794178776
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 01:00:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 836.7060000000001
+[IN get_MA5_MA10] original ma10 = 837.1870000000001
+================================================
+Time = 2021-04-27 01:05:00
+ MA5 = 836
+MA10 = 837
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bchusdt: 836.01
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bchusdt: 838.03
+以瞬时价格计算的盈利率  earn_rate_instant = 0.002416239040202847
+----------------------------------
+币种买入时的卖一价， bchusdt: 836.02
+以当前币种的 买一价 卖出
+卖出时的买一价， bchusdt: 837.9
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0022487500299035856
+处理止盈止损的情况
+处理止盈止损
+symbol: bchusdt, earn_rate: 0.002332494535053216
+self.delta_delta: -1
+earn_rate: 0.002332494535053216, 大于0.0 且 delta_delta: -1 小于0.0, 触发止盈
+判定是否 止盈
+delta_delta =  -1
+cur_delta = -1, 如果 cur_delta < 0, 出现 Down Cross 则止盈。（可能盈利)
+*****【卖出】*****
+币种买入时的瞬时价格， bchusdt: 836.01
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， bchusdt: 838.03
+以瞬时价格计算的盈利率  earn_rate_instant = 0.002416239040202847
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = 0.007796426234394668
+----------------------------------
+币种买入时的卖一价， bchusdt: 836.02
+以当前币种的 买一价 卖出
+卖出时的买一价， bchusdt: 838.06
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.002440133011171938
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = 0.007849437430396865
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 01:05:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 837.682
+[IN get_MA5_MA10] original ma10 = 837.3310000000001
+================================================
+Time = 2021-04-27 01:10:00
+ MA5 = 837
+MA10 = 837
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:0 小于等于 0.0  last_delta_delta:-1 小于 0.0 且 delta_delta:1 大于 0.0。
+【买入】MD5 在 MD10 之下，且 Ma5出现向上的拐点，可以买入
+币种买入时的瞬时价格， bchusdt: 841.47
+----------------------------------
+币种买入时的卖一价， bchusdt: 840.89
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 01:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 838.8620000000001
+[IN get_MA5_MA10] original ma10 = 838.1690000000001
+================================================
+Time = 2021-04-27 01:15:00
+ MA5 = 838
+MA10 = 838
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bchusdt: 841.47
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bchusdt: 841.99
+以瞬时价格计算的盈利率  earn_rate_instant = 0.000617966178235685
+----------------------------------
+币种买入时的卖一价， bchusdt: 840.89
+以当前币种的 买一价 卖出
+卖出时的买一价， bchusdt: 841.97
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.001284353482619654
+处理止盈止损的情况
+处理止盈止损
+symbol: bchusdt, earn_rate: 0.0009511598304276696
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 01:15:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 840.2
+[IN get_MA5_MA10] original ma10 = 839.1380000000001
+================================================
+Time = 2021-04-27 01:20:00
+ MA5 = 840
+MA10 = 839
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bchusdt: 841.47
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bchusdt: 843.36
+以瞬时价格计算的盈利率  earn_rate_instant = 0.0022460693785874555
+----------------------------------
+币种买入时的卖一价， bchusdt: 840.89
+以当前币种的 买一价 卖出
+卖出时的买一价， bchusdt: 843.41
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0029968247927790576
+处理止盈止损的情况
+处理止盈止损
+symbol: bchusdt, earn_rate: 0.0026214470856832563
+self.delta_delta: 1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 01:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 842.064
+[IN get_MA5_MA10] original ma10 = 839.6110000000001
+================================================
+Time = 2021-04-27 01:25:00
+ MA5 = 842
+MA10 = 839
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 1
+cur_delta = 3
+从上下边缘 之间 向上 穿过上边缘
+last_delta_delta = 1
+delta_delta = 2
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bchusdt: 841.47
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bchusdt: 845.95
+以瞬时价格计算的盈利率  earn_rate_instant = 0.005324016304799955
+----------------------------------
+币种买入时的卖一价， bchusdt: 840.89
+以当前币种的 买一价 卖出
+卖出时的买一价， bchusdt: 845.8
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.005839051481168724
+处理止盈止损的情况
+处理止盈止损
+symbol: bchusdt, earn_rate: 0.00558153389298434
+self.delta_delta: 2
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 01:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 844.858
+[IN get_MA5_MA10] original ma10 = 840.7819999999999
+================================================
+Time = 2021-04-27 01:30:00
+ MA5 = 844
+MA10 = 840
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在上边缘之上
+last_delta = 3
+cur_delta = 4
+一直在 上边缘 之上
+last_delta_delta = 2
+delta_delta = 1
+达到止盈点时，可以止盈。
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bchusdt: 841.47
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bchusdt: 851.96
+以瞬时价格计算的盈利率  earn_rate_instant = 0.012466279249408784
+----------------------------------
+币种买入时的卖一价， bchusdt: 840.89
+以当前币种的 买一价 卖出
+卖出时的买一价， bchusdt: 852.35
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.01362841751001919
+处理止盈止损的情况
+处理止盈止损
+symbol: bchusdt, earn_rate: 0.013047348379713986
+self.delta_delta: 1
+等待至下一个X分钟的开始
