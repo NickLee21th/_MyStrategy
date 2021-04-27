@@ -1696,6 +1696,7 @@ class DemoStrategy:
     def do_buy_coins(self, symbol):
         try:
             if self.Holding_Coins is False:
+                self.demo_print("*****【买入】*****")
                 # 瞬时价格
                 _, self.holding_coins_instant_price = get_current_price(symbol)
                 self.demo_print("币种买入时的瞬时价格， %s: %s" % (symbol, self.holding_coins_instant_price))
@@ -1859,12 +1860,13 @@ class DemoStrategy:
                 close_price += item["close"]
                 if count == 5:
                     ma5 = close_price / count
-                    self.demo_print("[IN get_MA5_MA10] original ma5 = %s" % ma5)
-                    ma5 = trunc_nbit(ma5, n_bit)
+                    # self.demo_print("================================================")
+                    # self.demo_print("[IN get_MA5_MA10] original ma5 = %s" % ma5)
+                    # ma5 = trunc_nbit(ma5, n_bit)
                 count += 1
         ma10 = close_price / (count - 1)
-        self.demo_print("[IN get_MA5_MA10] original ma10 = %s" % ma10)
-        ma10 = trunc_nbit(ma10, n_bit)
+        # self.demo_print("[IN get_MA5_MA10] original ma10 = %s" % ma10)
+        # ma10 = trunc_nbit(ma10, n_bit)
         # print("ma5=%s" % ma5)
         # print("ma10=%s" % ma10)
         return ma5, ma10
@@ -2101,11 +2103,11 @@ def get_nbit_by_symbol(symbol="ethusdt"):
     elif symbol == "bsvusdt":  # 277.4688
         n_bit = 0.0
     elif symbol == "btcusdt":  # 60392.95
-        n_bit = -100.0
+        n_bit = -2.0
     elif symbol == "eosusdt":  # 6.4296
         n_bit = 2.0
     elif symbol == "ethusdt":  # 2157.91
-        n_bit = -10.0
+        n_bit = -1.0
     elif symbol == "filusdt":  # 177.3889
         n_bit = 0.0
     elif symbol == "linkusdt":  # 32.0618
@@ -2534,7 +2536,9 @@ def demo_Api(access_key, secret_key):
     hbgAnyCall = HbgAnyCall()
     hbgAnyCall.print_json(response)
 
-
+# if __name__ == '__main__':
+#     out = trunc_nbit(51234.98, -1.0)
+#     print(out)
 # def demo_02():
 #     etp = "btc"
 #     # etp = "bch"
