@@ -1,0 +1,3164 @@
+nohup: ignoring input
+symbol = zecusdt
+Launch Time = 2021-04-26 13:15:21
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:15:21
+sleep_seconds = 279
+[IN get_MA5_MA10] original ma5 = 220.07
+[IN get_MA5_MA10] original ma10 = 221.46999999999997
+================================================
+Time = 2021-04-26 13:20:01
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta is None
+cur_delta = -1
+last_delta_delta = None
+delta_delta = 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 220.23000000000002
+[IN get_MA5_MA10] original ma10 = 221.21300000000002
+================================================
+Time = 2021-04-26 13:25:00
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.51800000000003
+[IN get_MA5_MA10] original ma10 = 220.997
+================================================
+Time = 2021-04-26 13:30:01
+ MA5 = 220
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:30:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.09
+[IN get_MA5_MA10] original ma10 = 220.95
+================================================
+Time = 2021-04-26 13:35:00
+ MA5 = 221
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:1 大于 0.0  且 self.delta_delta:1 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+币种买入时的瞬时价格， zecusdt: 222.77
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.87
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:35:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.55
+[IN get_MA5_MA10] original ma10 = 220.89700000000002
+================================================
+Time = 2021-04-26 13:40:01
+ MA5 = 221
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 222.77
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 221.24
+以瞬时价格计算的盈利率  earn_rate_instant = -0.006868070206939898
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.87
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 221.25
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.007268811414726094
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.007068440810832996
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 1 大于0 。
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 222.77
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 221.24
+以瞬时价格计算的盈利率  earn_rate_instant = -0.006868070206939898
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.006868070206939898
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.87
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 221.16
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.00767263427109978
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.00767263427109978
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:40:02
+sleep_seconds = 298
+[IN get_MA5_MA10] original ma5 = 221.86999999999998
+[IN get_MA5_MA10] original ma10 = 220.97000000000003
+================================================
+Time = 2021-04-26 13:45:00
+ MA5 = 221
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 222.01
+[IN get_MA5_MA10] original ma10 = 221.12000000000003
+================================================
+Time = 2021-04-26 13:50:01
+ MA5 = 222
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:50:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.81199999999998
+[IN get_MA5_MA10] original ma10 = 221.16500000000002
+================================================
+Time = 2021-04-26 13:55:00
+ MA5 = 221
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 13:55:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 221.362
+[IN get_MA5_MA10] original ma10 = 221.22599999999997
+================================================
+Time = 2021-04-26 14:00:01
+ MA5 = 221
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:00:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.156
+[IN get_MA5_MA10] original ma10 = 221.35299999999998
+================================================
+Time = 2021-04-26 14:05:00
+ MA5 = 221
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.658
+[IN get_MA5_MA10] original ma10 = 221.26399999999998
+================================================
+Time = 2021-04-26 14:10:01
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 220.346
+[IN get_MA5_MA10] original ma10 = 221.17799999999997
+================================================
+Time = 2021-04-26 14:15:00
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:15:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.032
+[IN get_MA5_MA10] original ma10 = 220.92200000000003
+================================================
+Time = 2021-04-26 14:20:01
+ MA5 = 220
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.754
+[IN get_MA5_MA10] original ma10 = 220.558
+================================================
+Time = 2021-04-26 14:25:00
+ MA5 = 219
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.62600000000003
+[IN get_MA5_MA10] original ma10 = 220.39100000000002
+================================================
+Time = 2021-04-26 14:30:00
+ MA5 = 219
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.314
+[IN get_MA5_MA10] original ma10 = 219.98600000000002
+================================================
+Time = 2021-04-26 14:35:01
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:35:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.14600000000002
+[IN get_MA5_MA10] original ma10 = 219.746
+================================================
+Time = 2021-04-26 14:40:00
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:40:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.142
+[IN get_MA5_MA10] original ma10 = 219.58700000000005
+================================================
+Time = 2021-04-26 14:45:01
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:45:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.156
+[IN get_MA5_MA10] original ma10 = 219.45499999999998
+================================================
+Time = 2021-04-26 14:50:00
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:50:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.18199999999996
+[IN get_MA5_MA10] original ma10 = 219.404
+================================================
+Time = 2021-04-26 14:55:01
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 14:55:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.262
+[IN get_MA5_MA10] original ma10 = 219.288
+================================================
+Time = 2021-04-26 15:00:00
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:00:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.28000000000003
+[IN get_MA5_MA10] original ma10 = 219.21300000000002
+================================================
+Time = 2021-04-26 15:05:01
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:05:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.15
+[IN get_MA5_MA10] original ma10 = 219.14600000000002
+================================================
+Time = 2021-04-26 15:10:00
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:10:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 218.82600000000002
+[IN get_MA5_MA10] original ma10 = 218.99100000000004
+================================================
+Time = 2021-04-26 15:15:01
+ MA5 = 218
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:15:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 218.738
+[IN get_MA5_MA10] original ma10 = 218.95999999999998
+================================================
+Time = 2021-04-26 15:20:00
+ MA5 = 218
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:20:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 218.696
+[IN get_MA5_MA10] original ma10 = 218.97899999999998
+================================================
+Time = 2021-04-26 15:25:00
+ MA5 = 218
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 218.63199999999998
+[IN get_MA5_MA10] original ma10 = 218.956
+================================================
+Time = 2021-04-26 15:30:01
+ MA5 = 218
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:30:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 218.844
+[IN get_MA5_MA10] original ma10 = 218.997
+================================================
+Time = 2021-04-26 15:35:00
+ MA5 = 218
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.29799999999994
+[IN get_MA5_MA10] original ma10 = 219.06199999999995
+================================================
+Time = 2021-04-26 15:40:01
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:40:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.48599999999996
+[IN get_MA5_MA10] original ma10 = 219.112
+================================================
+Time = 2021-04-26 15:45:00
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.96200000000005
+[IN get_MA5_MA10] original ma10 = 219.329
+================================================
+Time = 2021-04-26 15:50:01
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:50:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.96200000000005
+[IN get_MA5_MA10] original ma10 = 219.31333333333336
+================================================
+Time = 2021-04-26 15:55:00
+ MA5 = 219
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 15:55:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.85999999999999
+[IN get_MA5_MA10] original ma10 = 219.852
+================================================
+Time = 2021-04-26 16:00:00
+ MA5 = 220
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:1 大于 0.0  且 self.delta_delta:1 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+币种买入时的瞬时价格， zecusdt: 222.32
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.53
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:00:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 222.06199999999998
+[IN get_MA5_MA10] original ma10 = 220.68
+================================================
+Time = 2021-04-26 16:05:00
+ MA5 = 222
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 2
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 222.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 225.97
+以瞬时价格计算的盈利率  earn_rate_instant = 0.016417776178481495
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 225.71
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.01429020806183439
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.015353992120157943
+self.delta_delta: 1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 222.58800000000002
+[IN get_MA5_MA10] original ma10 = 221.03699999999998
+================================================
+Time = 2021-04-26 16:10:01
+ MA5 = 222
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 1
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 1
+delta_delta = -1
+已经买入
+cur_delta = 1, 如果 cur_delta >= 0, 侦测盈利情况。
+币种买入时的瞬时价格， zecusdt: 222.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 223.26
+以瞬时价格计算的盈利率  earn_rate_instant = 0.00422813961856782
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 223.14
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0027412034332448894
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.003484671525906355
+self.delta_delta: -1
+earn_rate: 0.003484671525906355, 大于0.0 且 delta_delta: -1 小于0.0, 触发止盈
+判定是否 止盈
+delta_delta =  -1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.01800000000003
+[IN get_MA5_MA10] original ma10 = 221.49
+================================================
+Time = 2021-04-26 16:15:01
+ MA5 = 223
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 2
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 222.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 223.19
+以瞬时价格计算的盈利率  earn_rate_instant = 0.003913278157610672
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 223.18
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0029209544780479293
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.0034171163178293006
+self.delta_delta: 1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:15:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.504
+[IN get_MA5_MA10] original ma10 = 221.90699999999998
+================================================
+Time = 2021-04-26 16:20:00
+ MA5 = 223
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 2
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 1
+delta_delta = 0
+已经买入
+cur_delta = 2, 如果 cur_delta >= 0, 侦测盈利情况。
+币种买入时的瞬时价格， zecusdt: 222.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 223.37
+以瞬时价格计算的盈利率  earn_rate_instant = 0.004722921914357734
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 223.23
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0031456432840515375
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.003934282599204636
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.18200000000002
+[IN get_MA5_MA10] original ma10 = 222.02100000000002
+================================================
+Time = 2021-04-26 16:25:00
+ MA5 = 223
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 1
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 0
+delta_delta = -1
+已经买入
+cur_delta = 1, 如果 cur_delta >= 0, 侦测盈利情况。
+币种买入时的瞬时价格， zecusdt: 222.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 220.8
+以瞬时价格计算的盈利率  earn_rate_instant = -0.006836991723641516
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 220.64
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.008493236866939355
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.007665114295290435
+self.delta_delta: -1
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 1 大于0 。
+并且 delta_delta = -1 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 222.32
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 220.65
+以瞬时价格计算的盈利率  earn_rate_instant = -0.007511694854264068
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.014379765061203965
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 220.65
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.008448299105738532
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.01612093337683831
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 222.00799999999998
+[IN get_MA5_MA10] original ma10 = 222.01999999999998
+================================================
+Time = 2021-04-26 16:30:00
+ MA5 = 222
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 221.62000000000003
+[IN get_MA5_MA10] original ma10 = 222.10399999999998
+================================================
+Time = 2021-04-26 16:35:01
+ MA5 = 221
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:35:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.16199999999998
+[IN get_MA5_MA10] original ma10 = 222.10500000000002
+================================================
+Time = 2021-04-26 16:40:00
+ MA5 = 221
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:40:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.474
+[IN get_MA5_MA10] original ma10 = 221.98899999999998
+================================================
+Time = 2021-04-26 16:45:01
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:45:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 220.51799999999997
+[IN get_MA5_MA10] original ma10 = 221.865
+================================================
+Time = 2021-04-26 16:50:00
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:50:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.898
+[IN get_MA5_MA10] original ma10 = 221.45299999999997
+================================================
+Time = 2021-04-26 16:55:01
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 16:55:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.092
+[IN get_MA5_MA10] original ma10 = 221.356
+================================================
+Time = 2021-04-26 17:00:00
+ MA5 = 221
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:00:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 221.842
+[IN get_MA5_MA10] original ma10 = 221.502
+================================================
+Time = 2021-04-26 17:05:00
+ MA5 = 221
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 222.62400000000002
+[IN get_MA5_MA10] original ma10 = 221.54899999999998
+================================================
+Time = 2021-04-26 17:10:01
+ MA5 = 222
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:1 大于 0.0  且 self.delta_delta:1 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+币种买入时的瞬时价格， zecusdt: 223.74
+----------------------------------
+币种买入时的卖一价， zecusdt: 223.94
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 222.998
+[IN get_MA5_MA10] original ma10 = 221.75800000000004
+================================================
+Time = 2021-04-26 17:15:01
+ MA5 = 222
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 223.74
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 222.8
+以瞬时价格计算的盈利率  earn_rate_instant = -0.004201305086260828
+----------------------------------
+币种买入时的卖一价， zecusdt: 223.94
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 222.72
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.005447887827096539
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.004824596456678683
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 1 大于0 。
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 223.74
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 222.8
+以瞬时价格计算的盈利率  earn_rate_instant = -0.004201305086260828
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.018581070147464792
+----------------------------------
+币种买入时的卖一价， zecusdt: 223.94
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 222.74
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.005358578190586713
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.021479511567425023
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:15:02
+sleep_seconds = 298
+[IN get_MA5_MA10] original ma5 = 223.62600000000003
+[IN get_MA5_MA10] original ma10 = 222.26200000000003
+================================================
+Time = 2021-04-26 17:20:00
+ MA5 = 223
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:20:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 223.62600000000003
+[IN get_MA5_MA10] original ma10 = 222.39777777777783
+================================================
+Time = 2021-04-26 17:25:00
+ MA5 = 223
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.56599999999997
+[IN get_MA5_MA10] original ma10 = 223.204
+================================================
+Time = 2021-04-26 17:30:00
+ MA5 = 224
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.76800000000003
+[IN get_MA5_MA10] original ma10 = 223.696
+================================================
+Time = 2021-04-26 17:35:00
+ MA5 = 224
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.26800000000003
+[IN get_MA5_MA10] original ma10 = 224.13299999999998
+================================================
+Time = 2021-04-26 17:40:01
+ MA5 = 225
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:40:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.402
+[IN get_MA5_MA10] original ma10 = 224.51399999999998
+================================================
+Time = 2021-04-26 17:45:00
+ MA5 = 225
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.41600000000003
+[IN get_MA5_MA10] original ma10 = 224.86399999999998
+================================================
+Time = 2021-04-26 17:50:00
+ MA5 = 225
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:50:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.10999999999999
+[IN get_MA5_MA10] original ma10 = 224.83800000000002
+================================================
+Time = 2021-04-26 17:55:01
+ MA5 = 225
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 17:55:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.28199999999998
+[IN get_MA5_MA10] original ma10 = 225.025
+================================================
+Time = 2021-04-26 18:00:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:00:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.12999999999997
+[IN get_MA5_MA10] original ma10 = 225.19899999999998
+================================================
+Time = 2021-04-26 18:05:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.916
+[IN get_MA5_MA10] original ma10 = 225.15899999999996
+================================================
+Time = 2021-04-26 18:10:01
+ MA5 = 224
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 224.958
+[IN get_MA5_MA10] original ma10 = 225.18699999999998
+================================================
+Time = 2021-04-26 18:15:00
+ MA5 = 224
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:15:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.148
+[IN get_MA5_MA10] original ma10 = 225.129
+================================================
+Time = 2021-04-26 18:20:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:20:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.006
+[IN get_MA5_MA10] original ma10 = 225.144
+================================================
+Time = 2021-04-26 18:25:01
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.148
+[IN get_MA5_MA10] original ma10 = 225.13899999999998
+================================================
+Time = 2021-04-26 18:30:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.454
+[IN get_MA5_MA10] original ma10 = 225.18500000000003
+================================================
+Time = 2021-04-26 18:35:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.452
+[IN get_MA5_MA10] original ma10 = 225.205
+================================================
+Time = 2021-04-26 18:40:01
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:40:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.494
+[IN get_MA5_MA10] original ma10 = 225.321
+================================================
+Time = 2021-04-26 18:45:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.554
+[IN get_MA5_MA10] original ma10 = 225.28000000000003
+================================================
+Time = 2021-04-26 18:50:01
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:50:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.632
+[IN get_MA5_MA10] original ma10 = 225.39000000000001
+================================================
+Time = 2021-04-26 18:55:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 18:55:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.71599999999998
+[IN get_MA5_MA10] original ma10 = 225.58499999999998
+================================================
+Time = 2021-04-26 19:00:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:00:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.59
+[IN get_MA5_MA10] original ma10 = 225.52100000000002
+================================================
+Time = 2021-04-26 19:05:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.3
+[IN get_MA5_MA10] original ma10 = 225.397
+================================================
+Time = 2021-04-26 19:10:01
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.01999999999998
+[IN get_MA5_MA10] original ma10 = 225.28699999999998
+================================================
+Time = 2021-04-26 19:15:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:15:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.60999999999999
+[IN get_MA5_MA10] original ma10 = 225.121
+================================================
+Time = 2021-04-26 19:20:00
+ MA5 = 224
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:20:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.048
+[IN get_MA5_MA10] original ma10 = 224.88199999999998
+================================================
+Time = 2021-04-26 19:25:01
+ MA5 = 224
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:0 小于等于 0.0  last_delta_delta:-1 小于 0.0 且 delta_delta:1 大于 0.0。
+【买入】MD5 在 MD10 之下，且 Ma5出现向上的拐点，可以买入
+币种买入时的瞬时价格， zecusdt: 223.62
+----------------------------------
+币种买入时的卖一价， zecusdt: 223.64
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.592
+[IN get_MA5_MA10] original ma10 = 224.59100000000004
+================================================
+Time = 2021-04-26 19:30:00
+ MA5 = 223
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = -1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 223.62
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 222.8
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0036669349789821715
+----------------------------------
+币种买入时的卖一价， zecusdt: 223.64
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 222.78
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.0038454659273832285
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.0037562004531827
+self.delta_delta: -1
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = -1 小于等于0 
+并且 delta_delta = -1 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 223.62
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 222.8
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0036669349789821715
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.022248005126446965
+----------------------------------
+币种买入时的卖一价， zecusdt: 223.64
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 222.71
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.004158468967984164
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.025637980535409187
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:30:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.536
+[IN get_MA5_MA10] original ma10 = 224.41799999999998
+================================================
+Time = 2021-04-26 19:35:00
+ MA5 = 223
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 223.47200000000004
+[IN get_MA5_MA10] original ma10 = 224.246
+================================================
+Time = 2021-04-26 19:40:00
+ MA5 = 223
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:40:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 223.488
+[IN get_MA5_MA10] original ma10 = 224.04899999999998
+================================================
+Time = 2021-04-26 19:45:01
+ MA5 = 223
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:45:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.488
+[IN get_MA5_MA10] original ma10 = 223.7844444444444
+================================================
+Time = 2021-04-26 19:50:00
+ MA5 = 223
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:50:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 223.344
+[IN get_MA5_MA10] original ma10 = 223.468
+================================================
+Time = 2021-04-26 19:55:00
+ MA5 = 223
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 19:55:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 223.28000000000003
+[IN get_MA5_MA10] original ma10 = 223.408
+================================================
+Time = 2021-04-26 20:00:01
+ MA5 = 223
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:00:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.05599999999998
+[IN get_MA5_MA10] original ma10 = 223.26399999999998
+================================================
+Time = 2021-04-26 20:05:00
+ MA5 = 223
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 222.752
+[IN get_MA5_MA10] original ma10 = 223.11999999999998
+================================================
+Time = 2021-04-26 20:10:00
+ MA5 = 222
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:10:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 222.62599999999998
+[IN get_MA5_MA10] original ma10 = 222.93200000000002
+================================================
+Time = 2021-04-26 20:15:01
+ MA5 = 222
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:0 小于等于 0.0  last_delta_delta:-1 小于 0.0 且 delta_delta:1 大于 0.0。
+【买入】MD5 在 MD10 之下，且 Ma5出现向上的拐点，可以买入
+币种买入时的瞬时价格， zecusdt: 221.74
+----------------------------------
+币种买入时的卖一价， zecusdt: 221.74
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:15:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 222.2
+[IN get_MA5_MA10] original ma10 = 222.772
+================================================
+Time = 2021-04-26 20:20:01
+ MA5 = 222
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 221.74
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 221.01
+以瞬时价格计算的盈利率  earn_rate_instant = -0.003292143952376739
+----------------------------------
+币种买入时的卖一价， zecusdt: 221.74
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 221
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.003337241814738022
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.0033146928835573806
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 0 小于等于0 
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 221.74
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 220.94
+以瞬时价格计算的盈利率  earn_rate_instant = -0.003607828988905977
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.025855834115352944
+----------------------------------
+币种买入时的卖一价， zecusdt: 221.74
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 221.1
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.0028862631911248074
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.028524243726533994
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.61399999999998
+[IN get_MA5_MA10] original ma10 = 222.44700000000003
+================================================
+Time = 2021-04-26 20:25:01
+ MA5 = 221
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.06600000000003
+[IN get_MA5_MA10] original ma10 = 222.061
+================================================
+Time = 2021-04-26 20:30:01
+ MA5 = 221
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:30:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 220.942
+[IN get_MA5_MA10] original ma10 = 221.84700000000004
+================================================
+Time = 2021-04-26 20:35:00
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.88000000000002
+[IN get_MA5_MA10] original ma10 = 221.75300000000001
+================================================
+Time = 2021-04-26 20:40:00
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:40:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.814
+[IN get_MA5_MA10] original ma10 = 221.507
+================================================
+Time = 2021-04-26 20:45:01
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:45:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 220.734
+[IN get_MA5_MA10] original ma10 = 221.17400000000004
+================================================
+Time = 2021-04-26 20:50:00
+ MA5 = 220
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:50:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 220.5
+[IN get_MA5_MA10] original ma10 = 220.783
+================================================
+Time = 2021-04-26 20:55:00
+ MA5 = 220
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 20:55:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.91199999999998
+[IN get_MA5_MA10] original ma10 = 220.427
+================================================
+Time = 2021-04-26 21:00:01
+ MA5 = 219
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:00:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 219.152
+[IN get_MA5_MA10] original ma10 = 220.016
+================================================
+Time = 2021-04-26 21:05:00
+ MA5 = 219
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 218.532
+[IN get_MA5_MA10] original ma10 = 219.67300000000006
+================================================
+Time = 2021-04-26 21:10:00
+ MA5 = 218
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:10:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 218.092
+[IN get_MA5_MA10] original ma10 = 219.413
+================================================
+Time = 2021-04-26 21:15:00
+ MA5 = 218
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:15:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 217.954
+[IN get_MA5_MA10] original ma10 = 219.227
+================================================
+Time = 2021-04-26 21:20:01
+ MA5 = 217
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -2
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 217.954
+[IN get_MA5_MA10] original ma10 = 218.9711111111111
+================================================
+Time = 2021-04-26 21:25:00
+ MA5 = 217
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -2
+cur_delta = -1
+从下边缘之下 向上 进入 上下边缘 之间
+last_delta_delta = -1
+delta_delta = 1
+【买入】没有买入，则买入
+币种买入时的瞬时价格， zecusdt: 217.35
+----------------------------------
+币种买入时的卖一价， zecusdt: 217.24
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 217.57
+[IN get_MA5_MA10] original ma10 = 218.36100000000002
+================================================
+Time = 2021-04-26 21:30:00
+ MA5 = 217
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 217.35
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 216.95
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0018403496664366492
+----------------------------------
+币种买入时的卖一价， zecusdt: 217.24
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 217
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.0011047689191677826
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.0014725592928022159
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = -1 小于等于0 
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 217.35
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 216.95
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0018403496664366492
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.027696183781789594
+----------------------------------
+币种买入时的卖一价， zecusdt: 217.24
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 217
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.0011047689191677826
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.029629012645701776
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:30:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 217.914
+[IN get_MA5_MA10] original ma10 = 218.22299999999996
+================================================
+Time = 2021-04-26 21:35:00
+ MA5 = 217
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = -1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 218.352
+[IN get_MA5_MA10] original ma10 = 218.22200000000004
+================================================
+Time = 2021-04-26 21:40:00
+ MA5 = 218
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:40:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 219.206
+[IN get_MA5_MA10] original ma10 = 218.58
+================================================
+Time = 2021-04-26 21:45:01
+ MA5 = 219
+MA10 = 218
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:1 大于 0.0  且 self.delta_delta:1 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+币种买入时的瞬时价格， zecusdt: 222.08
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.09
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:45:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 220.54000000000002
+[IN get_MA5_MA10] original ma10 = 219.123
+================================================
+Time = 2021-04-26 21:50:01
+ MA5 = 220
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 222.08
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 224.01
+以瞬时价格计算的盈利率  earn_rate_instant = 0.008690561959654081
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.09
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 223.9
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.008149849160250359
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.00842020555995222
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:50:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 221.752
+[IN get_MA5_MA10] original ma10 = 219.661
+================================================
+Time = 2021-04-26 21:55:01
+ MA5 = 221
+MA10 = 219
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 2
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 222.08
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 223.01
+以瞬时价格计算的盈利率  earn_rate_instant = 0.004187680115273678
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.09
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 222.86
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0034670629024269903
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.003827371508850334
+self.delta_delta: 1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 21:55:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 222.61800000000002
+[IN get_MA5_MA10] original ma10 = 220.266
+================================================
+Time = 2021-04-26 22:00:01
+ MA5 = 222
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 2
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 1
+delta_delta = 0
+已经买入
+cur_delta = 2, 如果 cur_delta >= 0, 侦测盈利情况。
+币种买入时的瞬时价格， zecusdt: 222.08
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 223.82
+以瞬时价格计算的盈利率  earn_rate_instant = 0.007835014409221814
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.09
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 223.75
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.007474447296141188
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.007654730852681501
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:00:02
+sleep_seconds = 298
+[IN get_MA5_MA10] original ma5 = 222.898
+[IN get_MA5_MA10] original ma10 = 220.625
+================================================
+Time = 2021-04-26 22:05:00
+ MA5 = 222
+MA10 = 220
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 2
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 0
+delta_delta = 0
+已经买入
+cur_delta = 2, 如果 cur_delta >= 0, 侦测盈利情况。
+币种买入时的瞬时价格， zecusdt: 222.08
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 221.56
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0023414985590778556
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.09
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 221.52
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.00256652708361472
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.002454012821346288
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 2 大于0 。
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 222.08
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 221.65
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0019362391930836042
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.029632422974873198
+----------------------------------
+币种买入时的卖一价， zecusdt: 222.09
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 221.52
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.00256652708361472
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.0321955397293165
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:05:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.08800000000002
+[IN get_MA5_MA10] original ma10 = 221.14700000000002
+================================================
+Time = 2021-04-26 22:10:00
+ MA5 = 223
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 2
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 0
+delta_delta = 0
+没有买入，则无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:10:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 223.288
+[IN get_MA5_MA10] original ma10 = 221.914
+================================================
+Time = 2021-04-26 22:15:01
+ MA5 = 223
+MA10 = 221
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 2
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 0
+delta_delta = 0
+没有买入，则无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:15:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 223.86999999999998
+[IN get_MA5_MA10] original ma10 = 222.81099999999998
+================================================
+Time = 2021-04-26 22:20:00
+ MA5 = 223
+MA10 = 222
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 2
+cur_delta = 1
+从 上边缘之上 向下 进入 上下边缘 之间.
+last_delta_delta = 0
+delta_delta = -1
+没有买入，则无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:20:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.154
+[IN get_MA5_MA10] original ma10 = 223.38599999999997
+================================================
+Time = 2021-04-26 22:25:00
+ MA5 = 224
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:25:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.63000000000002
+[IN get_MA5_MA10] original ma10 = 223.76399999999998
+================================================
+Time = 2021-04-26 22:30:00
+ MA5 = 224
+MA10 = 223
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.06
+[IN get_MA5_MA10] original ma10 = 224.07399999999998
+================================================
+Time = 2021-04-26 22:35:00
+ MA5 = 225
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:35:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.052
+[IN get_MA5_MA10] original ma10 = 224.17
+================================================
+Time = 2021-04-26 22:40:01
+ MA5 = 225
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:40:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 224.76600000000002
+[IN get_MA5_MA10] original ma10 = 224.31800000000004
+================================================
+Time = 2021-04-26 22:45:00
+ MA5 = 224
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 224.756
+[IN get_MA5_MA10] original ma10 = 224.455
+================================================
+Time = 2021-04-26 22:50:00
+ MA5 = 224
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:50:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.032
+[IN get_MA5_MA10] original ma10 = 224.83100000000005
+================================================
+Time = 2021-04-26 22:55:01
+ MA5 = 225
+MA10 = 224
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:1 大于 0.0  且 self.delta_delta:1 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+币种买入时的瞬时价格， zecusdt: 225.32
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 22:55:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.04000000000002
+[IN get_MA5_MA10] original ma10 = 225.05000000000004
+================================================
+Time = 2021-04-26 23:00:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = -1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 225.22
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0004438132433871575
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 225.21
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.0014188799716223703
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.0009313466075047639
+self.delta_delta: -1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:00:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.23200000000003
+[IN get_MA5_MA10] original ma10 = 225.142
+================================================
+Time = 2021-04-26 23:05:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 225.94
+以瞬时价格计算的盈利率  earn_rate_instant = 0.002751642109000553
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 225.93
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0017735999645280259
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.0022626210367642893
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:05:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.552
+[IN get_MA5_MA10] original ma10 = 225.15900000000002
+================================================
+Time = 2021-04-26 23:10:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 226.09
+以瞬时价格计算的盈利率  earn_rate_instant = 0.0034173619740813523
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.08
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0024386999512260514
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.002928030962653702
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 225.766
+[IN get_MA5_MA10] original ma10 = 225.26100000000002
+================================================
+Time = 2021-04-26 23:15:00
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 226.26
+以瞬时价格计算的盈利率  earn_rate_instant = 0.004171844487839508
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.33
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0035471999290560517
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.0038595222084477796
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:15:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 225.99
+[IN get_MA5_MA10] original ma10 = 225.51100000000002
+================================================
+Time = 2021-04-26 23:20:01
+ MA5 = 225
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 226.44
+以瞬时价格计算的盈利率  earn_rate_instant = 0.004970708325936466
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.28
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0033254999334900014
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.004148104129713234
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:20:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 226.48000000000002
+[IN get_MA5_MA10] original ma10 = 225.76
+================================================
+Time = 2021-04-26 23:25:01
+ MA5 = 226
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 227.82
+以瞬时价格计算的盈利率  earn_rate_instant = 0.011095331084679567
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 227.67
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.009488759810224743
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.010292045447452155
+self.delta_delta: 1
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 226.612
+[IN get_MA5_MA10] original ma10 = 225.92200000000003
+================================================
+Time = 2021-04-26 23:30:01
+ MA5 = 226
+MA10 = 225
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 226.91
+以瞬时价格计算的盈利率  earn_rate_instant = 0.00705663056985622
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.85
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.005852879882942372
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.006454755226399296
+self.delta_delta: 0
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:30:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 226.69
+[IN get_MA5_MA10] original ma10 = 226.121
+================================================
+Time = 2021-04-26 23:35:01
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 226.48
+以瞬时价格计算的盈利率  earn_rate_instant = 0.005148233623291304
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.4
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.0038575799228484217
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: 0.0045029067730698626
+self.delta_delta: -1
+earn_rate: 0.0045029067730698626, 大于0.0 且 delta_delta: -1 小于0.0, 触发止盈
+判定是否 止盈
+delta_delta =  -1
+cur_delta = 0 大于等于 0.0
+并且 delta_delta = -1 小于等于0.0
+并且 last_delta_delta = 0 小于等于0.0
+出现盈利下跌趋势， 可以止盈了。
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 225.32
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 226.48
+以瞬时价格计算的盈利率  earn_rate_instant = 0.005148233623291304
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.024484189351581892
+----------------------------------
+币种买入时的卖一价， zecusdt: 225.53
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.39
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.003813239923735136
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.028382299805581362
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:35:02
+sleep_seconds = 298
+[IN get_MA5_MA10] original ma5 = 226.74200000000002
+[IN get_MA5_MA10] original ma10 = 226.254
+================================================
+Time = 2021-04-26 23:40:00
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:40:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 226.68
+[IN get_MA5_MA10] original ma10 = 226.33499999999998
+================================================
+Time = 2021-04-26 23:45:00
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:45:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 226.474
+[IN get_MA5_MA10] original ma10 = 226.477
+================================================
+Time = 2021-04-26 23:50:00
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:50:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 226.53199999999998
+[IN get_MA5_MA10] original ma10 = 226.57199999999997
+================================================
+Time = 2021-04-26 23:55:00
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-26 23:55:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 226.654
+[IN get_MA5_MA10] original ma10 = 226.67200000000003
+================================================
+Time = 2021-04-27 00:00:01
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 00:00:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 226.654
+[IN get_MA5_MA10] original ma10 = 226.71777777777777
+================================================
+Time = 2021-04-27 00:05:00
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 00:05:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 227.03400000000002
+[IN get_MA5_MA10] original ma10 = 226.85700000000003
+================================================
+Time = 2021-04-27 00:10:00
+ MA5 = 227
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:1 大于 0.0  且 self.delta_delta:1 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+币种买入时的瞬时价格， zecusdt: 227.43
+----------------------------------
+币种买入时的卖一价， zecusdt: 227.46
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 00:10:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 227.11400000000003
+[IN get_MA5_MA10] original ma10 = 226.794
+================================================
+Time = 2021-04-27 00:15:00
+ MA5 = 227
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 1
+delta_delta = 0
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 227.43
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 227.09
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0014949654838851663
+----------------------------------
+币种买入时的卖一价， zecusdt: 227.46
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.88
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.002549898883320199
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.0020224321836026828
+self.delta_delta: 0
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 1 大于0 。
+并且 delta_delta = 0 小于等于0， 说明 Ma5 在 Ma10 下方， 且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 
+*****【卖出】*****
+币种买入时的瞬时价格， zecusdt: 227.43
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， zecusdt: 227.14
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0012751176186080132
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = -0.025759306970189907
+----------------------------------
+币种买入时的卖一价， zecusdt: 227.46
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 226.91
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.0024180075617691523
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = -0.030800307367350514
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 00:15:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 227.06599999999997
+[IN get_MA5_MA10] original ma10 = 226.79899999999998
+================================================
+Time = 2021-04-27 00:20:00
+ MA5 = 227
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 1
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 00:20:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 226.658
+[IN get_MA5_MA10] original ma10 = 226.656
+================================================
+Time = 2021-04-27 00:25:01
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = 0
+delta_delta = -1
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 00:25:01
+sleep_seconds = 299
+[IN get_MA5_MA10] original ma5 = 226.11999999999998
+[IN get_MA5_MA10] original ma10 = 226.44699999999997
+================================================
+Time = 2021-04-27 00:30:00
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0
+cur_delta = 0
+一直在 上下边缘 之间。
+last_delta_delta = -1
+delta_delta = 0
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-04-27 00:30:00
+sleep_seconds = 300
+[IN get_MA5_MA10] original ma5 = 226.09
+[IN get_MA5_MA10] original ma10 = 226.56199999999998
+================================================
+Time = 2021-04-27 00:35:00
+ MA5 = 226
+MA10 = 226
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
