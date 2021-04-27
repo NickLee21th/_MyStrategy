@@ -2044,10 +2044,11 @@ def API_v2_account_repayment(access_key, secret_key,):
 # 对 input_num 进行 trunc 截断。
 def trunc_nbit(input_num, nbit):
     output_num = input_num
+    power_num = math.pow(10, abs(nbit))
     if nbit > 0.0:
-        output_num = math.trunc(input_num*nbit)/nbit
+        output_num = math.trunc(input_num*power_num)/power_num
     elif nbit < 0.0:
-        output_num = math.trunc(input_num/abs(nbit))*abs(nbit)
+        output_num = math.trunc(input_num/power_num)*power_num
     else:
         output_num = math.trunc(input_num)
     return output_num
