@@ -1732,7 +1732,8 @@ class DemoStrategy:
                 self.stop_loss(
                     symbol=symbol,
                     cur_delta=cur_delta,
-                    last_delta=last_delta
+                    last_delta=last_delta,
+                    earn_rate=earn_rate
                 )
             elif earn_rate > 0.0 and self.delta_delta < 0.0:
                 # 触发止盈
@@ -1775,7 +1776,7 @@ class DemoStrategy:
         return ret
 
     # 止损操作
-    def stop_loss(self, symbol, cur_delta, last_delta):
+    def stop_loss(self, symbol, cur_delta, last_delta, earn_rate):
         ret = True
         try:
             self.demo_print("判定是否 止损")
@@ -1783,20 +1784,27 @@ class DemoStrategy:
                 self.demo_print("cur_delta = %s 大于0 。" % cur_delta)
                 if self.delta_delta > 0.0:
                     self.demo_print("并且 delta_delta = %s 大于0， 说明 Ma5 在 Ma10 上方， "
-                                    "且 Ma5 远离 Ma10 ，是一个增长的趋势，可以暂时不止损。 " % self.delta_delta)
+                                    "且 Ma5 向上远离 Ma10 ，是一个增长的趋势，可以暂时不止损。 " % self.delta_delta)
                 else:
                     self.demo_print("并且 delta_delta = %s 小于等于0， 说明 Ma5 在 Ma10 下方， "
-                                    "且 Ma5 靠近 Ma10 ，是一个下跌的趋势，可以止损。 " % self.delta_delta)
+                                    "且 Ma5 向下远离 Ma10 ，是一个下跌的趋势，可以止损。 " % self.delta_delta)
                     ret = self.do_sell_coins(symbol=symbol)
             else:
                 self.demo_print("cur_delta = %s 小于等于0 " % cur_delta)
                 if self.delta_delta > 0.0:
-                    self.demo_print("并且 delta_delta = %s 大于0， 说明 Ma5 在 Ma10 下方， "
-                                    "且 Ma5 向 Ma10 靠近，是一个增长的趋势，可以暂时不止损。 " % self.delta_delta)
+                    if earn_rate <= (self.STOP_LOSS_RATE*10.0):
+                        self.demo_print("但是亏损率  earn_rate=%s 已经超过 预期止损率 %s 的10倍了，强制止损"
+                                        % (self.earn_rate, self.STOP_LOSS_RATE))
+                        ret = self.do_sell_coins(symbol=symbol)
+                    else:
+                        self.demo_print("并且 delta_delta = %s 大于0， 说明 Ma5 在 Ma10 下方， "
+                                        "且 Ma5 向 Ma10 靠近，是一个增长的趋势，可以暂时不止损。 " % self.delta_delta)
                 else:
-                    self.demo_print("并且 delta_delta = %s 小于等于0， 说明 Ma5 在 Ma10 下方， "
-                                    "且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 " % self.delta_delta)
-                    ret = self.do_sell_coins(symbol=symbol)
+                    if self.last_delta_delta <= 0.0:
+                        self.demo_print("且 last_delta_delta=%s 小于等于0.0 并且 delta_delta = %s 小于等于0， "
+                                        "说明 Ma5 在 Ma10 下方，且 Ma5 远离 Ma10 ，是一个下跌的趋势，可以止损。 "
+                                        % (self.last_delta_delta, self.delta_delta))
+                        ret = self.do_sell_coins(symbol=symbol)
         except Exception as ex:
             self.demo_print("Exception in stop_loss")
             self.demo_print("symbol: %s, ex: %s" % (symbol, ex))
