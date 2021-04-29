@@ -1735,10 +1735,11 @@ class DemoStrategy:
                     last_delta=last_delta,
                     earn_rate=earn_rate
                 )
-            elif earn_rate > 0.0 and self.delta_delta < 0.0:
+            elif earn_rate > 0.0 and self.delta_delta <= 0.0 and self.last_delta_delta <= 0.0:
                 # 触发止盈
-                self.demo_print("earn_rate: %s, 大于0.0 且 delta_delta: %s 小于0.0, 触发止盈"
-                                % (earn_rate, self.delta_delta))
+                self.demo_print("earn_rate: %s, 大于0.0 且 delta_delta: %s 小于等于0.0, "
+                                "且 last_delta_delta: %s 小于等于0.0, 出现盈利下跌趋势, 触发止盈"
+                                % (earn_rate, self.delta_delta, self.last_delta_delta))
                 self.stop_profit(
                     symbol=symbol,
                     cur_delta=cur_delta,
@@ -1786,9 +1787,16 @@ class DemoStrategy:
                     self.demo_print("并且 delta_delta = %s 大于0， 说明 Ma5 在 Ma10 上方， "
                                     "且 Ma5 向上远离 Ma10 ，是一个增长的趋势，可以暂时不止损。 " % self.delta_delta)
                 else:
-                    self.demo_print("并且 delta_delta = %s 小于等于0， 说明 Ma5 在 Ma10 下方， "
-                                    "且 Ma5 向下远离 Ma10 ，是一个下跌的趋势，可以止损。 " % self.delta_delta)
-                    ret = self.do_sell_coins(symbol=symbol)
+                    self.demo_print("并且 delta_delta = %s 小于等于0" % self.delta_delta)
+                    if self.last_delta_delta <= 0.0:
+                        self.demo_print("并且 last_delta_delta=%s 小于等于 0，"
+                                        "说明 Ma5 在 Ma10 上方， 且下跌趋势已形成，立即止损。"
+                                        % self.last_delta_delta)
+                        ret = self.do_sell_coins(symbol=symbol)
+                    else:  #  self.last_delta_delta > 0.0
+                        self.demo_print("但是 last_delta_delta=%s 大于 0， "
+                                        "说明 Ma5 在 Ma10 上方， 但是 下跌趋势还没形成，可以暂时不止损"
+                                        % self.last_delta_delta)
             else:
                 self.demo_print("cur_delta = %s 小于等于0 " % cur_delta)
                 if self.delta_delta > 0.0:
