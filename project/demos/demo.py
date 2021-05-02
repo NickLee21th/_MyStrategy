@@ -1781,10 +1781,10 @@ class DemoStrategy:
         try:
             self.demo_print("判定是否 止损")
             # 如果 亏损率 已经超过 预期止损率的10倍了，强制止损
-            MAX_MULTI = 5.0  # 10.0
+            MAX_MULTI = 2.0  # 10.0
             if earn_rate <= (self.STOP_LOSS_RATE * MAX_MULTI):
                 self.demo_print("亏损率  earn_rate=%s 已经超过 预期止损率 %s 的%s倍了，强制止损"
-                                % (MAX_MULTI, earn_rate, self.STOP_LOSS_RATE))
+                                % (earn_rate, self.STOP_LOSS_RATE, MAX_MULTI))
                 ret = self.do_sell_coins(symbol=symbol)
             else:
                 # 其他情况
