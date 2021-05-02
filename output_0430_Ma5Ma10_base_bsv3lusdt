@@ -17040,3 +17040,866 @@ delta_delta = 0.0013200000000000989
 以当前币种的 买一价 卖出
 卖出时的买一价， bsv3lusdt: 0.6055
 以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.03367379508458348
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.033043188457188746
+self.delta_delta: 0.0013200000000000989
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 09:50:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 09:55:01
+ MA5 = 0.60202
+MA10 = 0.6024499999999999
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.0021700000000000053
+cur_delta = -0.00042999999999993044
+一直在 上下边缘 之间。
+last_delta_delta = 0.0013200000000000989
+delta_delta = 0.0017400000000000748
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6104
+以瞬时价格计算的盈利率  earn_rate_instant = -0.025387194635158733
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6102
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.026172997127354103
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.025780095881256418
+self.delta_delta: 0.0017400000000000748
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 09:55:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:00:00
+ MA5 = 0.6056000000000001
+MA10 = 0.60245
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.00042999999999993044
+cur_delta = 0.003150000000000097
+一直在 上下边缘 之间。
+last_delta_delta = 0.0017400000000000748
+delta_delta = 0.0035800000000000276
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.61
+以瞬时价格计算的盈利率  earn_rate_instant = -0.02602586619830749
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6097
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.026970954356846513
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.026498410277577003
+self.delta_delta: 0.0035800000000000276
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:00:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:05:01
+ MA5 = 0.6073000000000001
+MA10 = 0.6024400000000002
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.003150000000000097
+cur_delta = 0.004859999999999864
+一直在 上下边缘 之间。
+last_delta_delta = 0.0035800000000000276
+delta_delta = 0.0017099999999997673
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6102
+以瞬时价格计算的盈利率  earn_rate_instant = -0.025706530416733202
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6095
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.027290137248643476
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.02649833383268834
+self.delta_delta: 0.0017099999999997673
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:05:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:10:00
+ MA5 = 0.61076
+MA10 = 0.6042
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.004859999999999864
+cur_delta = 0.00656000000000001
+一直在 上下边缘 之间。
+last_delta_delta = 0.0017099999999997673
+delta_delta = 0.0017000000000001458
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.618
+以瞬时价格计算的盈利率  earn_rate_instant = -0.013252434935334463
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6175
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.014522821576763479
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.013887628256048971
+self.delta_delta: 0.0017000000000001458
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:10:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:15:00
+ MA5 = 0.61488
+MA10 = 0.60697
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.00656000000000001
+cur_delta = 0.007909999999999973
+一直在 上下边缘 之间。
+last_delta_delta = 0.0017000000000001458
+delta_delta = 0.0013499999999999623
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6259
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0006386715631485804
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6259
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.001117140121289553
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.0008779058422190667
+self.delta_delta: 0.0013499999999999623
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:15:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:20:00
+ MA5 = 0.6182
+MA10 = 0.6101099999999999
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.007909999999999973
+cur_delta = 0.008090000000000042
+一直在 上下边缘 之间。
+last_delta_delta = 0.0013499999999999623
+delta_delta = 0.000180000000000069
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.627
+以瞬时价格计算的盈利率  earn_rate_instant = 0.0011176752355101932
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6267
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.00015959144589848225
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: 0.0006386333407043378
+self.delta_delta: 0.000180000000000069
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:20:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:25:00
+ MA5 = 0.61964
+MA10 = 0.6126199999999999
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.008090000000000042
+cur_delta = 0.007020000000000026
+一直在 上下边缘 之间。
+last_delta_delta = 0.000180000000000069
+delta_delta = -0.0010700000000000154
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6172
+以瞬时价格计算的盈利率  earn_rate_instant = -0.014529778061631802
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6172
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.015001595914459103
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.014765686988045453
+self.delta_delta: -0.0010700000000000154
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:25:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:30:00
+ MA5 = 0.62192
+MA10 = 0.61461
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.007020000000000026
+cur_delta = 0.007310000000000039
+一直在 上下边缘 之间。
+last_delta_delta = -0.0010700000000000154
+delta_delta = 0.00029000000000001247
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6208
+以瞬时价格计算的盈利率  earn_rate_instant = -0.008781733993293869
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6204
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.00989466964570714
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.009338201819500505
+self.delta_delta: 0.00029000000000001247
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:30:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:35:00
+ MA5 = 0.62232
+MA10 = 0.6165400000000001
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.007310000000000039
+cur_delta = 0.005779999999999896
+一直在 上下边缘 之间。
+last_delta_delta = 0.00029000000000001247
+delta_delta = -0.0015300000000001424
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.62
+以瞬时价格计算的盈利率  earn_rate_instant = -0.010059077119591206
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6198
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.010852218321098034
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.01045564772034462
+self.delta_delta: -0.0015300000000001424
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:35:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:40:00
+ MA5 = 0.6209199999999999
+MA10 = 0.6179
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.005779999999999896
+cur_delta = 0.0030199999999999116
+一直在 上下边缘 之间。
+last_delta_delta = -0.0015300000000001424
+delta_delta = -0.0027599999999999847
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6196
+以瞬时价格计算的盈利率  earn_rate_instant = -0.010697748682739787
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6193
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.011650175550590622
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.011173962116665204
+self.delta_delta: -0.0027599999999999847
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:40:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:45:00
+ MA5 = 0.62072
+MA10 = 0.61946
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0030199999999999116
+cur_delta = 0.0012600000000000389
+一直在 上下边缘 之间。
+last_delta_delta = -0.0027599999999999847
+delta_delta = -0.0017599999999998728
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.626
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0004790036723614354
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6259
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.001117140121289553
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.0007980718968254942
+self.delta_delta: -0.0017599999999998728
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:45:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:50:00
+ MA5 = 0.62212
+MA10 = 0.62088
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0012600000000000389
+cur_delta = 0.0012400000000000189
+一直在 上下边缘 之间。
+last_delta_delta = -0.0017599999999998728
+delta_delta = -2.0000000000020002e-05
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6242
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0033530257065304023
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6236
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.004787743376954999
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.004070384541742701
+self.delta_delta: -2.0000000000020002e-05
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 0.0012400000000000189 大于0 。
+并且 delta_delta = -2.0000000000020002e-05 小于等于0
+并且 last_delta_delta=-0.0017599999999998728 小于等于 0，说明 Ma5 在 Ma10 上方， 且下跌趋势已形成，立即止损。
+*****【卖出】*****
+币种买入时的瞬时价格， bsv3lusdt: 0.6263
+以当前币种的 瞬时价格 卖出
+卖出时的瞬时价， bsv3lusdt: 0.6242
+以瞬时价格计算的盈利率  earn_rate_instant = -0.0033530257065304023
+累计的 以瞬时价格计算的盈利率 
+ total_earn_rate_instant = 0.21137810314738348
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.6266
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6236
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.004787743376954999
+累计的 以买一价 和 卖一价计算的盈利率 
+ total_earn_rate_first_BuyAndSell = 0.1749074040067902
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:50:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:55:00
+ MA5 = 0.62316
+MA10 = 0.62254
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0012400000000000189
+cur_delta = 0.0006200000000000649
+一直在 上下边缘 之间。
+last_delta_delta = -2.0000000000020002e-05
+delta_delta = -0.0006199999999999539
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+未达到买入条件，暂时 无动作。
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:55:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:00:01
+ MA5 = 0.6251
+MA10 = 0.6237100000000001
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0006200000000000649
+cur_delta = 0.0013899999999998913
+一直在 上下边缘 之间。
+last_delta_delta = -0.0006199999999999539
+delta_delta = 0.0007699999999998264
+未买入，则探测是否出现 UP Cross
+没有出现 Up Cross
+cur_delta:0.0013899999999998913 大于 0.0  且 self.delta_delta:0.0007699999999998264 大于 0.0
+【买入】MD5 在 MD10 之上，且 MD5 在远离 MD10, 可以买入。
+*****【买入】*****
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:00:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:05:00
+ MA5 = 0.62662
+MA10 = 0.6237699999999999
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0013899999999998913
+cur_delta = 0.002850000000000019
+一直在 上下边缘 之间。
+last_delta_delta = 0.0007699999999998264
+delta_delta = 0.0014600000000001279
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6272
+以瞬时价格计算的盈利率  earn_rate_instant = -0.004286394665820028
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6271
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.004603174603174625
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.0044447846344973264
+self.delta_delta: 0.0014600000000001279
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+cur_delta = 0.002850000000000019 大于0 。
+并且 delta_delta = 0.0014600000000001279 大于0， 说明 Ma5 在 Ma10 上方， 且 Ma5 向上远离 Ma10 ，是一个增长的趋势，可以暂时不止损。 
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:05:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:10:00
+ MA5 = 0.6259
+MA10 = 0.62331
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.002850000000000019
+cur_delta = 0.002589999999999981
+一直在 上下边缘 之间。
+last_delta_delta = 0.0014600000000001279
+delta_delta = -0.000260000000000038
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6224
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01190665184950002
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6224
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.012063492063492144
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.011985071956496082
+self.delta_delta: -0.000260000000000038
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:10:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:15:00
+ MA5 = 0.62576
+MA10 = 0.62394
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.002589999999999981
+cur_delta = 0.0018199999999999328
+一直在 上下边缘 之间。
+last_delta_delta = -0.000260000000000038
+delta_delta = -0.0007700000000000484
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6235
+以瞬时价格计算的盈利率  earn_rate_instant = -0.010160342911573203
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6234
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.010476190476190556
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.010318266693881879
+self.delta_delta: -0.0007700000000000484
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:15:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:20:00
+ MA5 = 0.62488
+MA10 = 0.62402
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0018199999999999328
+cur_delta = 0.0008599999999999719
+一直在 上下边缘 之间。
+last_delta_delta = -0.0007700000000000484
+delta_delta = -0.0009599999999999609
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6216
+以瞬时价格计算的盈利率  earn_rate_instant = -0.013176694713446537
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6217
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.013174603174603134
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.013175648944024836
+self.delta_delta: -0.0009599999999999609
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:20:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:25:00
+ MA5 = 0.6220399999999999
+MA10 = 0.6235700000000001
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0008599999999999719
+cur_delta = -0.0015300000000001424
+一直在 上下边缘 之间。
+last_delta_delta = -0.0009599999999999609
+delta_delta = -0.0023900000000001143
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.615
+以瞬时价格计算的盈利率  earn_rate_instant = -0.023654548341006547
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6151
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.02365079365079369
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.02365267099590012
+self.delta_delta: -0.0023900000000001143
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:25:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:30:00
+ MA5 = 0.6201399999999999
+MA10 = 0.62338
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.0015300000000001424
+cur_delta = -0.0032400000000001317
+一直在 上下边缘 之间。
+last_delta_delta = -0.0023900000000001143
+delta_delta = -0.0017099999999999893
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6174
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01984441974916664
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6176
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.019682539682539628
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.019763479715853134
+self.delta_delta: -0.0017099999999999893
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:30:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:35:00
+ MA5 = 0.6183
+MA10 = 0.6221
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.0032400000000001317
+cur_delta = -0.0038000000000000256
+一直在 上下边缘 之间。
+last_delta_delta = -0.0017099999999999893
+delta_delta = -0.0005599999999998939
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6132
+以瞬时价格计算的盈利率  earn_rate_instant = -0.026512144784886567
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6132
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.026666666666666724
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.026589405725776644
+self.delta_delta: -0.0005599999999998939
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:35:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:40:00
+ MA5 = 0.61708
+MA10 = 0.62142
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.0038000000000000256
+cur_delta = -0.0043400000000000105
+一直在 上下边缘 之间。
+last_delta_delta = -0.0005599999999998939
+delta_delta = -0.0005399999999999849
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6176
+以瞬时价格计算的盈利率  earn_rate_instant = -0.019526909033179832
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6174
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.020000000000000087
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.019763454516589958
+self.delta_delta: -0.0005399999999999849
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:40:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:45:01
+ MA5 = 0.61586
+MA10 = 0.62037
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.0043400000000000105
+cur_delta = -0.004510000000000014
+一直在 上下边缘 之间。
+last_delta_delta = -0.0005399999999999849
+delta_delta = -0.00017000000000000348
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6155
+以瞬时价格计算的盈利率  earn_rate_instant = -0.022860771551039796
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6151
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.02365079365079369
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.023255782600916743
+self.delta_delta: -0.00017000000000000348
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:45:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:50:00
+ MA5 = 0.6175200000000001
+MA10 = 0.61978
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.004510000000000014
+cur_delta = -0.0022599999999999287
+一直在 上下边缘 之间。
+last_delta_delta = -0.00017000000000000348
+delta_delta = 0.0022500000000000853
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6238
+以瞬时价格计算的盈利率  earn_rate_instant = -0.00968407683759326
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6235
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01031746031746024
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.010000768577526749
+self.delta_delta: 0.0022500000000000853
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:50:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:55:01
+ MA5 = 0.61896
+MA10 = 0.61955
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.0022599999999999287
+cur_delta = -0.0005900000000000905
+一直在 上下边缘 之间。
+last_delta_delta = 0.0022500000000000853
+delta_delta = 0.0016699999999998383
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6249
+以瞬时价格计算的盈利率  earn_rate_instant = -0.00793776789966662
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6245
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.00873015873015865
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: -0.008333963314912636
+self.delta_delta: 0.0016699999999998383
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: bsv3lusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:55:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 12:00:00
+ MA5 = 0.62312
+MA10 = 0.62071
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = -0.0005900000000000905
+cur_delta = 0.0024100000000000232
+一直在 上下边缘 之间。
+last_delta_delta = 0.0016699999999998383
+delta_delta = 0.0030000000000001137
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.634
+以瞬时价格计算的盈利率  earn_rate_instant = 0.006508969677726612
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出
+卖出时的买一价， bsv3lusdt: 0.6339
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = 0.006190476190476213
+处理止盈止损的情况
+处理止盈止损
+symbol: bsv3lusdt, earn_rate: 0.006349722934101413
+self.delta_delta: 0.0030000000000001137
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 12:00:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 12:05:01
+ MA5 = 0.62632
+MA10 = 0.6216999999999999
+UP_MARGIN_VALUE = 0.02
+DOWN_MARGIN_VALUE = -0.02
+ma5 在 上下边缘 之间
+last_delta = 0.0024100000000000232
+cur_delta = 0.0046200000000000685
+一直在 上下边缘 之间。
+last_delta_delta = 0.0030000000000001137
+delta_delta = 0.0022100000000000453
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， bsv3lusdt: 0.6299
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， bsv3lusdt: 0.6334
+以瞬时价格计算的盈利率  earn_rate_instant = 0.005556437529766547
+----------------------------------
+币种买入时的卖一价， bsv3lusdt: 0.63
+以当前币种的 买一价 卖出

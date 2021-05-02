@@ -16060,3 +16060,886 @@ delta_delta = 0.5130000000000337
 以瞬时价格计算的盈利率  earn_rate_instant = -0.01758391412320751
 ----------------------------------
 币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.3
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.017424394151812513
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.01750415413751001
+self.delta_delta: 0.5130000000000337
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:00:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:05:01
+ MA5 = 244.82800000000003
+MA10 = 243.76900000000006
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.8739999999999952
+cur_delta = 1.058999999999969
+一直在 上下边缘 之间。
+last_delta_delta = 0.5130000000000337
+delta_delta = 0.18499999999997385
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.16
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01802451333813987
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.2
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.017824954936911743
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.017924734137525808
+self.delta_delta: 0.18499999999997385
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:05:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:10:00
+ MA5 = 245.144
+MA10 = 244.02800000000002
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1.058999999999969
+cur_delta = 1.1159999999999854
+一直在 上下边缘 之间。
+last_delta_delta = 0.18499999999997385
+delta_delta = 0.05700000000001637
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.87
+以瞬时价格计算的盈利率  earn_rate_instant = -0.015180645678122214
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.91
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.014980973362707827
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.01508080952041502
+self.delta_delta: 0.05700000000001637
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:10:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:15:01
+ MA5 = 245.52599999999998
+MA10 = 244.41200000000003
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1.1159999999999854
+cur_delta = 1.1139999999999475
+一直在 上下边缘 之间。
+last_delta_delta = 0.05700000000001637
+delta_delta = -0.0020000000000379714
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.38
+以瞬时价格计算的盈利率  earn_rate_instant = -0.013137867499799732
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.33
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01329861806529138
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.013218242782545556
+self.delta_delta: -0.0020000000000379714
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:15:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:20:00
+ MA5 = 245.82800000000003
+MA10 = 244.825
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1.1139999999999475
+cur_delta = 1.0030000000000427
+一直在 上下边缘 之间。
+last_delta_delta = -0.0020000000000379714
+delta_delta = -0.11099999999990473
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.45
+以瞬时价格计算的盈利率  earn_rate_instant = -0.012857486181206473
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.47
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.012737832966152642
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.012797659573679558
+self.delta_delta: -0.11099999999990473
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:20:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:25:01
+ MA5 = 246.042
+MA10 = 245.25900000000001
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 1.0030000000000427
+cur_delta = 0.782999999999987
+一直在 上下边缘 之间。
+last_delta_delta = -0.11099999999990473
+delta_delta = -0.2200000000000557
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.34
+以瞬时价格计算的盈利率  earn_rate_instant = -0.013298085396138722
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.24
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01365912277188062
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.01347860408400967
+self.delta_delta: -0.2200000000000557
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:25:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:30:00
+ MA5 = 246.27399999999997
+MA10 = 245.551
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.782999999999987
+cur_delta = 0.7229999999999848
+一直在 上下边缘 之间。
+last_delta_delta = -0.2200000000000557
+delta_delta = -0.060000000000002274
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.32
+以瞬时价格计算的盈利率  earn_rate_instant = -0.013378194344308272
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.24
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01365912277188062
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.013518658558094445
+self.delta_delta: -0.060000000000002274
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:30:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:35:00
+ MA5 = 246.35199999999995
+MA10 = 245.74799999999996
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.7229999999999848
+cur_delta = 0.603999999999985
+一直在 上下边缘 之间。
+last_delta_delta = -0.060000000000002274
+delta_delta = -0.11899999999999977
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.26
+以瞬时价格计算的盈利率  earn_rate_instant = -0.013618521188816814
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.24
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01365912277188062
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.013638821980348718
+self.delta_delta: -0.11899999999999977
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:35:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:40:00
+ MA5 = 246.27999999999997
+MA10 = 245.90300000000002
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.603999999999985
+cur_delta = 0.3769999999999527
+一直在 上下边缘 之间。
+last_delta_delta = -0.11899999999999977
+delta_delta = -0.2270000000000323
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.03
+以瞬时价格计算的盈利率  earn_rate_instant = -0.014539774092766144
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.91
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.014980973362707827
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.014760373727736985
+self.delta_delta: -0.2270000000000323
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:40:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:45:00
+ MA5 = 246.19799999999995
+MA10 = 246.01299999999998
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.3769999999999527
+cur_delta = 0.18499999999997385
+一直在 上下边缘 之间。
+last_delta_delta = -0.2270000000000323
+delta_delta = -0.19199999999997885
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.04
+以瞬时价格计算的盈利率  earn_rate_instant = -0.014499719618681425
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.98
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.014700580813138457
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.014600150215909942
+self.delta_delta: -0.19199999999997885
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:45:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 10:50:00
+ MA5 = 246.118
+MA10 = 246.07999999999998
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.18499999999997385
+cur_delta = 0.038000000000010914
+一直在 上下边缘 之间。
+last_delta_delta = -0.19199999999997885
+delta_delta = -0.14699999999996294
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.94
+以瞬时价格计算的盈利率  earn_rate_instant = -0.014900264359528955
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.81
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.015381534147806943
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.015140899253667949
+self.delta_delta: -0.14699999999996294
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:50:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 10:55:00
+ MA5 = 246.07799999999997
+MA10 = 246.176
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.038000000000010914
+cur_delta = -0.09800000000001319
+一直在 上下边缘 之间。
+last_delta_delta = -0.14699999999996294
+delta_delta = -0.1360000000000241
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.12
+以瞬时价格计算的盈利率  earn_rate_instant = -0.014179283826003333
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.14
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01405968355697985
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.014119483691491592
+self.delta_delta: -0.1360000000000241
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 10:55:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:00:01
+ MA5 = 246.18199999999996
+MA10 = 246.26699999999997
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.09800000000001319
+cur_delta = -0.08500000000000796
+一直在 上下边缘 之间。
+last_delta_delta = -0.1360000000000241
+delta_delta = 0.01300000000000523
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.8
+以瞬时价格计算的盈利率  earn_rate_instant = -0.011455579588239947
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.67
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.011936711395954409
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.011696145492097177
+self.delta_delta: 0.01300000000000523
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:00:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:05:00
+ MA5 = 246.272
+MA10 = 246.27599999999998
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.08500000000000796
+cur_delta = -0.003999999999990678
+一直在 上下边缘 之间。
+last_delta_delta = 0.01300000000000523
+delta_delta = 0.08100000000001728
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.48
+以瞬时价格计算的盈利率  earn_rate_instant = -0.012737322758952202
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.4
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01301822551572201
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.012877774137337105
+self.delta_delta: 0.08100000000001728
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:05:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:10:00
+ MA5 = 246.356
+MA10 = 246.277
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.003999999999990678
+cur_delta = 0.07900000000000773
+一直在 上下边缘 之间。
+last_delta_delta = 0.08100000000001728
+delta_delta = 0.08299999999999841
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.46
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01281743170712164
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.31
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01337873022231125
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.013098080964716444
+self.delta_delta: 0.08299999999999841
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:10:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:15:00
+ MA5 = 246.37399999999997
+MA10 = 246.246
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.07900000000000773
+cur_delta = 0.12799999999995748
+一直在 上下边缘 之间。
+last_delta_delta = 0.08299999999999841
+delta_delta = 0.04899999999994975
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.03
+以瞬时价格计算的盈利率  earn_rate_instant = -0.014539774092766144
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.13
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.014099739635489727
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.014319756864127935
+self.delta_delta: 0.04899999999994975
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:15:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:20:00
+ MA5 = 246.31600000000003
+MA10 = 246.19700000000003
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.12799999999995748
+cur_delta = 0.11899999999999977
+一直在 上下边缘 之间。
+last_delta_delta = 0.04899999999994975
+delta_delta = -0.008999999999957708
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.83
+以瞬时价格计算的盈利率  earn_rate_instant = -0.015340863574461204
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.76
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.015581814540356557
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.01546133905740888
+self.delta_delta: -0.008999999999957708
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:20:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:25:00
+ MA5 = 246.10399999999998
+MA10 = 246.14300000000003
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.11899999999999977
+cur_delta = -0.03900000000004411
+一直在 上下边缘 之间。
+last_delta_delta = -0.008999999999957708
+delta_delta = -0.15800000000004388
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.72
+以瞬时价格计算的盈利率  earn_rate_instant = -0.015781462789393567
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.63
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01610254356098542
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.015942003175189495
+self.delta_delta: -0.15800000000004388
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:25:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:30:00
+ MA5 = 245.93200000000002
+MA10 = 246.102
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.03900000000004411
+cur_delta = -0.1699999999999875
+一直在 上下边缘 之间。
+last_delta_delta = -0.15800000000004388
+delta_delta = -0.13099999999994338
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.62
+以瞬时价格计算的盈利率  earn_rate_instant = -0.016182007530241096
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.51
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.016583216503104403
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.01638261201667275
+self.delta_delta: -0.13099999999994338
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:30:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:35:00
+ MA5 = 245.776
+MA10 = 246.06600000000003
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.1699999999999875
+cur_delta = -0.29000000000002046
+一直在 上下边缘 之间。
+last_delta_delta = -0.13099999999994338
+delta_delta = -0.12000000000003297
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.68
+以瞬时价格计算的盈利率  earn_rate_instant = -0.015941680685732557
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.51
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.016583216503104403
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.01626244859441848
+self.delta_delta: -0.12000000000003297
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:35:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:40:00
+ MA5 = 245.708
+MA10 = 246.041
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.29000000000002046
+cur_delta = -0.3329999999999984
+一直在 上下边缘 之间。
+last_delta_delta = -0.12000000000003297
+delta_delta = -0.042999999999977945
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 245.69
+以瞬时价格计算的盈利率  earn_rate_instant = -0.015901626211647837
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 245.64
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.016062487482475542
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.01598205684706169
+self.delta_delta: -0.042999999999977945
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:40:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:45:01
+ MA5 = 245.748
+MA10 = 246.032
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.3329999999999984
+cur_delta = -0.28400000000002024
+一直在 上下边缘 之间。
+last_delta_delta = -0.042999999999977945
+delta_delta = 0.04899999999997817
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.03
+以瞬时价格计算的盈利率  earn_rate_instant = -0.014539774092766144
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.03
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.014500300420588842
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.014520037256677493
+self.delta_delta: 0.04899999999997817
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:45:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 11:50:00
+ MA5 = 245.92
+MA10 = 246.012
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.28400000000002024
+cur_delta = -0.09200000000001296
+一直在 上下边缘 之间。
+last_delta_delta = 0.04899999999997817
+delta_delta = 0.19200000000000728
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.58
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01233677801810456
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.62
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.01213699178850391
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.012236884903304233
+self.delta_delta: 0.19200000000000728
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:50:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 11:55:00
+ MA5 = 246.13400000000001
+MA10 = 246.033
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = -0.09200000000001296
+cur_delta = 0.10100000000002751
+一直在 上下边缘 之间。
+last_delta_delta = 0.19200000000000728
+delta_delta = 0.19300000000004047
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.69
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01189617880317231
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.68
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.011896655317444417
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.011896417060308364
+self.delta_delta: 0.19300000000004047
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 11:55:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 12:00:00
+ MA5 = 246.49200000000002
+MA10 = 246.13400000000007
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.10100000000002751
+cur_delta = 0.35799999999994725
+一直在 上下边缘 之间。
+last_delta_delta = 0.19300000000004047
+delta_delta = 0.25699999999991974
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 247.46
+以瞬时价格计算的盈利率  earn_rate_instant = -0.008811984298646113
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 247.43
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.008892449429200876
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.008852216863923495
+self.delta_delta: 0.25699999999991974
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 12:00:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 12:05:00
+ MA5 = 246.77400000000003
+MA10 = 246.24099999999999
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.35799999999994725
+cur_delta = 0.5330000000000439
+一直在 上下边缘 之间。
+last_delta_delta = 0.25699999999991974
+delta_delta = 0.17500000000009663
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 247.01
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01061443563246017
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 247.01
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.010574804726617324
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.010594620179538747
+self.delta_delta: 0.17500000000009663
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 12:05:01
+sleep_seconds = 299
+================================================
+Time = 2021-05-02 12:10:00
+ MA5 = 246.77400000000003
+MA10 = 246.28666666666666
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.5330000000000439
+cur_delta = 0.4873333333333676
+一直在 上下边缘 之间。
+last_delta_delta = 0.17500000000009663
+delta_delta = -0.04566666666667629
+已经买入，侦测盈利情况
+币种买入时的瞬时价格， zecusdt: 249.66
+以当前币种的 瞬时价格 卖出
+当前币种的 瞬时价格， zecusdt: 246.57
+以瞬时价格计算的盈利率  earn_rate_instant = -0.01237683249218939
+----------------------------------
+币种买入时的卖一价， zecusdt: 249.65
+以当前币种的 买一价 卖出
+卖出时的买一价， zecusdt: 246.43
+以买一价 和 卖一价计算的盈利率  earn_rate_first_BuyAndSell = -0.012898057280192264
+处理止盈止损的情况
+处理止盈止损
+symbol: zecusdt, earn_rate: -0.012637444886190827
+self.delta_delta: -0.04566666666667629
+STOP_LOSS_RATE: -0.001
+判定是否 止损
+Exception in stop_loss
+symbol: zecusdt, ex: 'DemoStrategy' object has no attribute 'earn_rate'
+等待至下一个X分钟的开始
+time_stamp = 2021-05-02 12:10:00
+sleep_seconds = 300
+================================================
+Time = 2021-05-02 12:15:00
+ MA5 = 246.766
+MA10 = 246.343
+UP_MARGIN_VALUE = 2.0
+DOWN_MARGIN_VALUE = -2.0
+ma5 在 上下边缘 之间
+last_delta = 0.4873333333333676
+cur_delta = 0.4230000000000018
+一直在 上下边缘 之间。
+last_delta_delta = -0.04566666666667629
