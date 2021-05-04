@@ -1143,7 +1143,7 @@ class DemoStrategy:
             self.demo_print("================================================")
             count += 1
             try:
-                ma5, ma10 = get_MA5_MA10(symbol)
+                ma5, ma10 = self.get_MA5_MA10(symbol)
                 self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
                 self.demo_print(" MA5 = %s" % ma5)
                 self.demo_print("MA10 = %s" % ma10)
@@ -1253,7 +1253,7 @@ class DemoStrategy:
             self.demo_print("================================================")
             count += 1
             try:
-                ma5, ma10 = get_MA5_MA10(symbol)
+                ma5, ma10 = self.get_MA5_MA10(symbol)
                 self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
                 self.demo_print(" MA5 = %s" % ma5)
                 self.demo_print("MA10 = %s" % ma10)
@@ -1360,7 +1360,11 @@ class DemoStrategy:
         while count < (1000*50):
             count += 1
             try:
-                ma5, ma10 = self.get_MA5_MA10(symbol)
+                ma5, ma10 = self.get_MA5_MA10(
+                    symbol=symbol,
+                    cur_delta=cur_delta,
+                    last_delta=last_delta
+                )
                 self.demo_print("================================================")
                 self.demo_print("Time = %s" % timeStamp_to_datetime(int(time.time())))
                 self.demo_print(" MA5 = %s" % ma5)
@@ -1824,7 +1828,8 @@ class DemoStrategy:
     # 等待至下一个X分钟的开始
     def wait_to_X_min_begin(
             self, x=5, symbol="ethusdt",
-            # cur_delta, last_delta
+            cur_delta=0.0,
+            last_delta=0.0
     ):
         ret = True
         try:
@@ -1833,20 +1838,21 @@ class DemoStrategy:
             self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
             sleep_seconds = (60 * x) - (time_stamp % (60 * x))
             self.demo_print("sleep_seconds = %s" % sleep_seconds)
-            # if self.Holding_Coins is True:
-            #     while sleep_seconds > 60:
-            #         self.demo_print("***********及时监控盈利****************")
-            #         self.demo_print("每 30 秒侦测一次 盈利情况")
-            #         time.sleep(30)
-            #         self.detect_earn_state(
-            #             symbol=symbol,
-            #             cur_delta=cur_delta,
-            #             last_delta=last_delta
-            #         )
-            #         time_stamp = int(time.time())
-            #         self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
-            #         sleep_seconds = (60 * x) - (time_stamp % (60 * x))
-            #         self.demo_print("sleep_seconds = %s" % sleep_seconds)
+            if self.Holding_Coins is True:
+                while sleep_seconds > 30:
+                    self.demo_print("\n***********及时监控盈利 开始****************")
+                    self.demo_print("每 10 秒侦测一次 盈利情况")
+                    time.sleep(10)
+                    self.detect_earn_state(
+                        symbol=symbol,
+                        cur_delta=cur_delta,
+                        last_delta=last_delta
+                    )
+                    time_stamp = int(time.time())
+                    self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
+                    sleep_seconds = (60 * x) - (time_stamp % (60 * x))
+                    self.demo_print("sleep_seconds = %s" % sleep_seconds)
+                    self.demo_print("***********及时监控盈利 结束****************")
             time.sleep(sleep_seconds)
         except Exception as ex:
             self.demo_print("Exception in wait_to_X_min_begin")
@@ -1855,11 +1861,21 @@ class DemoStrategy:
         return ret
 
     # 获取MA5
-    def get_MA5_MA10(self, symbol="ethusdt"):
+    def get_MA5_MA10(
+            self,
+            symbol="ethusdt",
+            cur_delta=0.0,
+            last_delta=0.0
+    ):
         ma5 = 0.0
         ma10 = 0.0
         # print("Time = %s" % timeStamp_to_datetime(int(time.time())))
-        self.wait_to_X_min_begin(x=5, symbol=symbol)
+        self.wait_to_X_min_begin(
+            x=5,
+            symbol=symbol,
+            cur_delta=cur_delta,
+            last_delta=last_delta
+        )
         ret = Get_kline_data(
             symbol=symbol,
             period="5min",
