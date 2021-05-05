@@ -1838,21 +1838,21 @@ class DemoStrategy:
             self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
             sleep_seconds = (60 * x) - (time_stamp % (60 * x))
             self.demo_print("sleep_seconds = %s" % sleep_seconds)
-            if self.Holding_Coins is True:
-                while sleep_seconds > 30:
-                    self.demo_print("\n***********及时监控盈利 开始****************")
-                    self.demo_print("每 10 秒侦测一次 盈利情况")
-                    time.sleep(10)
-                    self.detect_earn_state(
-                        symbol=symbol,
-                        cur_delta=cur_delta,
-                        last_delta=last_delta
-                    )
-                    time_stamp = int(time.time())
-                    self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
-                    sleep_seconds = (60 * x) - (time_stamp % (60 * x))
-                    self.demo_print("sleep_seconds = %s" % sleep_seconds)
-                    self.demo_print("***********及时监控盈利 结束****************")
+            # if self.Holding_Coins is True:
+            #     while self.Holding_Coins is True and sleep_seconds > 30:
+            #         self.demo_print("\n***********及时监控盈利 开始****************")
+            #         self.demo_print("每 10 秒侦测一次 盈利情况")
+            #         time.sleep(10)
+            #         self.detect_earn_state(
+            #             symbol=symbol,
+            #             cur_delta=cur_delta,
+            #             last_delta=last_delta
+            #         )
+            #         time_stamp = int(time.time())
+            #         self.demo_print("time_stamp = %s" % timeStamp_to_datetime(time_stamp))
+            #         sleep_seconds = (60 * x) - (time_stamp % (60 * x))
+            #         self.demo_print("sleep_seconds = %s" % sleep_seconds)
+            #         self.demo_print("***********及时监控盈利 结束****************")
             time.sleep(sleep_seconds)
         except Exception as ex:
             self.demo_print("Exception in wait_to_X_min_begin")
