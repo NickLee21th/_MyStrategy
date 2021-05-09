@@ -1587,6 +1587,10 @@ class DemoStrategy:
                 self.demo_print("Exception in output_MA5_MA10_NewIdea_01!")
                 self.demo_print("EX: %s" % ex)
 
+    # 基于 MD5 进行投资
+    def invest_On_MA5_01(self, symbol="btcusdt"):
+        return True
+
     # 获取指定交易对的买一价
     def get_symbol_first_buy_price(self, symbol="link3lusdt"):
         first_buy_price = 0.0
