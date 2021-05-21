@@ -138,7 +138,7 @@ def multi_process(dt_stamp, log_folder_name, history_size, threshold_value_adjus
     for etp in ETP_LIST:
         p.apply_async(long_time_task,
                       args=(etp, dt_stamp, queue, log_folder_name,
-                            history_size,threshold_value_adjust_rate))
+                            history_size, threshold_value_adjust_rate))
     p.apply_async(long_time_task_2, args=(queue, log_folder_name))
     print('Waiting for all subprocesses done...')
     p.close()

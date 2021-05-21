@@ -1589,7 +1589,68 @@ class DemoStrategy:
 
     # 基于 MD5 进行投资
     def invest_On_MA5_01(self, symbol="btcusdt"):
+        logger = logging.getLogger("Ma5_01")
+        logger.setLevel(level=logging.INFO)
+        time_stamp = int(time.time())
+        dt_stamp = timeStamp_to_datetime(time_stamp)
+        dt_value = dt_stamp
+        log_file_name = "Ma5_01_base_%s_%s.txt" % (dt_value, symbol)
+        handler = logging.FileHandler(log_file_name)
+        handler.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+        self.demo_logger = logger
+        count = 0
+        self.total_earn_rate_instant = 0.0  # 累计的 以瞬时价格计算的盈利率
+        self.total_earn_rate_first_BuyAndSell = 0.0  # 累计的 以买一价 和 卖一价 计算的盈利率
+        self.Holding_Coins = False
+        self.holding_coins_instant_price = 0.0  # 币种买入时的瞬时价格
+        self.holding_coins_first_sell_price = 0.0  # 币种买入时的卖一价
+        lanuch_time = int(time.time())
+        self.demo_print("symbol = %s" % symbol)
+        self.demo_print("Launch Time = %s" % timeStamp_to_datetime(lanuch_time))
+        while count < (1000*50):
+            count += 1
+            try:
+                ma5 = 0
+            except Exception as ex:
+                self.demo_print("Exception in invest_On_MA5_01!")
+                self.demo_print("EX: %s" % ex)
         return True
+
+    # 获取上一个MA5的值，并监控下一个MA5
+    def get_pre_ma5_check_current_ma5(self, symbol):
+        pre_ma5 = 0.0
+        ret = Get_kline_data(
+            symbol=symbol,
+            period="5min",
+            size=11
+        )
+        assert ret["status"] == "ok"
+        ret_data = ret["data"]
+        count = 0
+        close_price = 0.0
+        n_bit = get_nbit_by_symbol(symbol=symbol)
+        for item in ret_data:
+            if count == 0:
+                count += 1
+                continue
+            else:
+                close_price += item["close"]
+                if count == 5:
+                    ma5 = close_price / count
+                    # self.demo_print("================================================")
+                    # self.demo_print("[IN get_MA5_MA10] original ma5 = %s" % ma5)
+                    # ma5 = trunc_nbit(ma5, n_bit)
+                count += 1
+        ma10 = close_price / (count - 1)
+        # self.demo_print("[IN get_MA5_MA10] original ma10 = %s" % ma10)
+        # ma10 = trunc_nbit(ma10, n_bit)
+        # print("ma5=%s" % ma5)
+        # print("ma10=%s" % ma10)
+        return ma5, ma10
+        return pre_ma5
 
     # 获取指定交易对的买一价
     def get_symbol_first_buy_price(self, symbol="link3lusdt"):
