@@ -6,6 +6,7 @@ from project.demos.Base_Api import *
 class Strategy_Base:
     demo_logger = None
     symbol = "ethusdt"
+    buy_min_quoter_amount = 5  # 买入时最小的 quoter 下单数量
     bPrintLog = True
 
     # 等待至下一个X分钟的开始
