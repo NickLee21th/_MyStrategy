@@ -7,17 +7,22 @@ import logging
 import time
 import multiprocessing
 from multiprocessing import Pool, Manager
+from project.demos.config import *
 from project.demos.Strategy_Base import *
 
 
 class Strategy_01(Strategy_Base):
     holding_base_amount = 0.0  # 当前持有的 Base 的数量
     cur_buy_base_amount = 0.0  # 最近一次购入的 Base 的数量
+    cur_buy_base_price = 0.0  # 最近一次购入的 Base 的价格
     quoter_total_cost = 0.0  # 投入的总成本(quoter)
     holding_quoter_amount = 5000.0  # 当前持有的 quoter 的数量
     quoter_accumulated_income = 0.0  # 当前累计的 quoter 收益
     increasing_price_rate = 0.01  # 下限价卖单时的价格增加率
     sell_limit_order_list = []  # 当前未成交的限价卖单列表
+    access_key = ACCESS_KEY
+    secret_key = SECRET_KEY
+    account_id = ACCOUNT_ID  # spot
 
     test_k_line_data_list = []
     test_k_line_data_index = 999  # 1999
@@ -25,6 +30,7 @@ class Strategy_01(Strategy_Base):
     def init_all(self):
         self.holding_base_amount = 0.0  # 当前持有的 Base 的数量
         self.cur_buy_base_amount = 0.0  # 最近一次购入的 Base 的数量
+        self.cur_buy_base_price = 0.0  # 最近一次购入的 Base 的价格
         self.quoter_total_cost = 0.0  # 投入的总成本(quoter)
         self.holding_quoter_amount = 5000.0  # 当前持有的 quoter 的数量
         self.quoter_accumulated_income = 0.0  # 当前累计的 quoter 收益
@@ -54,11 +60,60 @@ class Strategy_01(Strategy_Base):
             self.test_k_line_data_list.append(k_line_data)
         return True
 
-    # 买入Base
-    def buy_base(self, k_line_data):
+    # 模拟买入Base
+    def simulate_buy_base(self, k_line_data):
         try:
             cur_open = k_line_data["open_price"]
             self.cur_buy_base_amount = self.buy_min_quoter_amount / float(cur_open)
+            # 当前持有的 Base 的数量 增加
+            self.holding_base_amount += self.cur_buy_base_amount
+            # 投入的总成本(quoter) 增加
+            self.quoter_total_cost += self.buy_min_quoter_amount
+            # 当前持有的 quoter 的数量 减少
+            self.holding_quoter_amount -= self.buy_min_quoter_amount
+            return True
+        except Exception as ex:
+            self.log_print("Exception in simulate_buy_base!")
+            self.log_print("ex: %s" % ex)
+            return False
+
+    # 模拟下限价卖单
+    def simulate_place_sell_limit(self, k_line_data):
+        try:
+            cur_open = k_line_data["open_price"]
+            price_in_sell_limit = float(cur_open) * (1.0 + self.increasing_price_rate)
+            sell_limit_order = {
+                "price": price_in_sell_limit,
+                "amount": self.cur_buy_base_amount,
+                "finish": False
+            }
+            self.sell_limit_order_list.append(sell_limit_order)
+            return True
+        except Exception as ex:
+            self.log_print("Exception in simulate_place_sell_limit!")
+            self.log_print("ex: %s" % ex)
+            return False
+
+    # 买入Base
+    def buy_base(self, k_line_data):
+        try:
+            first_buy_price, first_sell_price = self.get_first_buy_and_sell_price()
+            self.cur_buy_base_price = (float(first_buy_price) + float(first_sell_price)) / 2.0
+            self.cur_buy_base_amount = self.buy_min_quoter_amount / float(self.cur_buy_base_price)
+            self.cur_buy_base_price = round(self.cur_buy_base_price, get_price_precision(self.symbol))
+            self.cur_buy_base_amount = round(self.cur_buy_base_amount, get_amount_precision(self.symbol))
+
+            ret = Post_order_place(
+                access_key=self.access_key,
+                secret_key=self.secret_key,
+                account_id=self.account_id,
+                symbol=self.symbol,
+                type_value="buy-limit",
+                amount=self.cur_buy_base_amount,
+                price=self.cur_buy_base_price
+            )
+            assert ret["status"] == "ok"
+
             # 当前持有的 Base 的数量 增加
             self.holding_base_amount += self.cur_buy_base_amount
             # 投入的总成本(quoter) 增加
@@ -72,13 +127,24 @@ class Strategy_01(Strategy_Base):
             return False
 
     # 下限价卖单
-    def place_sell_limit(self, k_line_data):
+    def place_sell_limit(self):
         try:
-            cur_open = k_line_data["open_price"]
-            price_in_sell_limit = float(cur_open) * (1.0 + self.increasing_price_rate)
+            price_in_sell_limit = float(self.cur_buy_base_price) * (1.0 + self.increasing_price_rate)
+            amount = round(self.cur_buy_base_amount, get_amount_precision(self.symbol))
+            price_in_sell_limit = round(price_in_sell_limit, get_price_precision(self.symbol))
+            ret = Post_order_place(
+                access_key=self.access_key,
+                secret_key=self.secret_key,
+                account_id=self.account_id,
+                symbol=self.symbol,
+                type_value="sell-limit",
+                amount=amount,
+                price=price_in_sell_limit
+            )
+            assert ret["status"] == "ok"
             sell_limit_order = {
                 "price": price_in_sell_limit,
-                "amount": self.cur_buy_base_amount,
+                "amount": amount,
                 "finish": False
             }
             self.sell_limit_order_list.append(sell_limit_order)
@@ -140,7 +206,7 @@ class Strategy_01(Strategy_Base):
             k_line_data_list.append(self.test_k_line_data_list[2])
         return k_line_data_list
 
-    def do_strategy_execute(self, symbol, period, buy_min_quoter_amount, dt_stamp):
+    def simulate_do_strategy_execute(self, symbol, period, buy_min_quoter_amount, dt_stamp):
         try:
             self.symbol = symbol
             self.buy_min_quoter_amount = buy_min_quoter_amount
@@ -163,18 +229,63 @@ class Strategy_01(Strategy_Base):
                     bInvestCoin = True
                 if bInvestCoin:
                     cur_k_line_data = k_line_data_list[0]
-                    # 买入Base
-                    self.buy_base(k_line_data=cur_k_line_data)
-                    # 下限价卖单
-                    self.place_sell_limit(k_line_data=cur_k_line_data)
+                    # 模拟买入Base
+                    self.simulate_buy_base(k_line_data=cur_k_line_data)
+                    # 模拟下限价卖单
+                    self.simulate_place_sell_limit(k_line_data=cur_k_line_data)
         except Exception as ex:
             self.log_print("Exception in do_strategy_execute")
             self.log_print("ex: %s" % ex)
+
+    def do_strategy_execute(self, symbol, period, buy_min_quoter_amount, dt_stamp):
+        try:
+            self.symbol = symbol
+            self.buy_min_quoter_amount = buy_min_quoter_amount
+            self.logger_init(
+                log_folder_name="Strategy_01_log",
+                log_file_template="/Strategy_01_%s_%s.log",
+                dt_stamp=dt_stamp
+            )
+            count = 0
+            while count < 1000:
+                k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
+                # 处理成交的限价卖单
+                self.dispose_sell_limit_orders(pre_1_k_line_data=k_line_data_list[1])
+                # 根据K线价格来投资
+                pre_2_change = k_line_data_list[2]["change"]
+                pre_1_change = k_line_data_list[1]["change"]
+                bInvestCoin = False
+                if pre_2_change == "down" and pre_1_change == "up":
+                    bInvestCoin = True
+                elif pre_2_change == "up" and pre_1_change == "up":
+                    bInvestCoin = True
+                if bInvestCoin:
+                    cur_k_line_data = k_line_data_list[0]
+                    # 买入Base
+                    OK = self.buy_base(k_line_data=cur_k_line_data)
+                    if not OK:
+                        continue
+                    # 下限价卖单
+                    self.place_sell_limit()
+        except Exception as ex:
+            self.log_print("Exception in do_strategy_execute")
+            self.log_print("ex: %s" % ex)
+
 
 def get_period_int(period):
     period_int = 5
     if period == "5min":
         period_int = 5
+    elif period == "15min":
+        period_int = 15
+    elif period == "30min":
+        period_int = 30
+    elif period == "60min":
+        period_int = 60
+    elif period == "4hour":
+        period_int = 4*60
+    elif period == "1day":
+        period_int = 24*60
     return period_int
 
 def earn_method(symbol, period, size, buy_min_quoter_amount, increasing_price_rate):
@@ -188,7 +299,7 @@ def earn_method(symbol, period, size, buy_min_quoter_amount, increasing_price_ra
         symbol=symbol,
         period=period
     )
-    my_strategy.do_strategy_execute(
+    my_strategy.simulate_do_strategy_execute(
         symbol=symbol,
         period=period,
         buy_min_quoter_amount=buy_min_quoter_amount,
@@ -223,34 +334,38 @@ def earn_method(symbol, period, size, buy_min_quoter_amount, increasing_price_ra
     )
 
 
-if __name__ == '__main__':
+def bench_earn_money():
     symbol_list = [
-        "ethusdt",
-        "btcusdt",
-        "dotusdt",
-        "linkusdt",
-        "ltcusdt",
+        {"symbol": "btcusdt", "increasing_price_rate": 0.01},
+        {"symbol": "ethusdt", "increasing_price_rate": 0.01},
+        {"symbol": "dotusdt", "increasing_price_rate": 0.01},
+        {"symbol": "linkusdt", "increasing_price_rate": 0.01},
+        {"symbol": "ltcusdt", "increasing_price_rate": 0.01},
     ]
     total_quoter_total_cost = 0.0
     total_quoter_accumulated_income = 0.0
     total_income_rate = 0.0
     total_income_rate_by_day = 0.0
     period = "5min"
-    size = 2000
-    buy_min_quoter_amount = 5.0
-    increasing_price_rate = 0.01  # 下限价卖单时的价格增加率
-    for symbol in symbol_list:
+    # period = "15min"
+    # period = "30min"
+    # period = "60min"
+    # period = "4hour"
+    size = 100
+    buy_min_quoter_amount = 500.0
+    # buy_min_quoter_amount = 4*60.0
+    for symbol_item in symbol_list:
         (
             quoter_total_cost,
             quoter_accumulated_income,
             income_rate,
             income_rate_by_day
         ) = earn_method(
-            symbol=symbol,
+            symbol=symbol_item["symbol"],
             period=period,
             size=size,
             buy_min_quoter_amount=buy_min_quoter_amount,
-            increasing_price_rate=increasing_price_rate
+            increasing_price_rate=symbol_item["increasing_price_rate"],  # 下限价卖单时的价格增加率
         )
         print("==============================")
         total_quoter_total_cost += quoter_total_cost
@@ -276,3 +391,116 @@ if __name__ == '__main__':
     print("合计——当前的收益率: %s%%" % (avg_income_rate * 100.0))
     avg_income_rate_by_day = float(total_income_rate_by_day) / float(len(symbol_list))
     print("合计——日均收益率: %s%%" % (avg_income_rate_by_day * 100.0))
+
+
+def try_buy_coins():
+    try:
+        bSuccessToBuy = False
+        symbol = "ethusdt"
+        buy_min_quoter_amount = 6.0
+        # 询价
+        ret = Get_market_depth(
+            symbol=symbol
+        )
+        first_buy_price = ret["tick"]["bids"][0][0]
+        print("first_buy_price: %s" % first_buy_price)
+        first_sell_price = ret["tick"]["asks"][0][0]
+        print("first_sell_price: %s" % first_sell_price)
+        cur_buy_base_price = (float(first_buy_price) + float(first_sell_price)) / 2.0
+        cur_buy_base_amount = buy_min_quoter_amount / float(cur_buy_base_price)
+        cur_buy_base_price = round(cur_buy_base_price, get_price_precision(symbol))
+        cur_buy_base_amount = round(cur_buy_base_amount, get_amount_precision(symbol))
+        print("cur_buy_base_price: %s" % cur_buy_base_price)
+        print("cur_buy_base_amount: %s" % cur_buy_base_amount)
+        # 下限价买单
+        ret = Post_order_place(
+            access_key=ACCESS_KEY,
+            secret_key=SECRET_KEY,
+            account_id=ACCOUNT_ID,
+            symbol=symbol,
+            type_value="buy-limit",
+            amount=cur_buy_base_amount,
+            price=cur_buy_base_price
+        )
+        assert ret["status"] == "ok"
+        # 查询订单状态
+        order_id = ret["data"]
+        print("order_id: %s" % order_id)
+        ret = Get_v1_order_orders_orderId(
+            access_key=ACCESS_KEY,
+            secret_key=SECRET_KEY,
+            order_id=order_id,
+        )
+        assert ret["status"] == "ok"
+        order_state = ret["data"]["state"]
+        print("order_state:%s " % order_state)
+        if order_state == "filled":
+            bSuccessToBuy = True
+        else:
+            count = 0
+            while order_state != "filled" and count < 5:
+                print("order_state: %s " % order_state)
+                print("cancel order: count= %s " % count)
+                count += 1
+                time.sleep(2)
+                ret = Get_v1_order_orders_orderId(
+                    access_key=ACCESS_KEY,
+                    secret_key=SECRET_KEY,
+                    order_id=order_id,
+                )
+                assert ret["status"] == "ok"
+                order_state = ret["data"]["state"]
+            if order_state != "filled":
+                # 撤单
+                ret = Post_v1_order_orders_orderId_submitcancel(
+                    access_key=ACCESS_KEY,
+                    secret_key=SECRET_KEY,
+                    order_id=order_id,
+                )
+                assert ret["status"] == "ok"
+                assert ret["data"] == str(order_id)
+            else:
+                bSuccessToBuy = True
+    except Exception as ex:
+        print("Ex IN try_buy_coins: %s" % ex)
+        bSuccessToBuy = False
+    return bSuccessToBuy
+
+if __name__ == '__main__':
+    # ret = Get_market_depth(
+    #     symbol="ethusdt"
+    # )
+    # first_buy_price = ret["tick"]["bids"][0][0]
+    # print(first_buy_price)
+    # first_sell_price = ret["tick"]["asks"][0][0]
+    # print(first_sell_price)
+
+    bench_earn_money()
+    # bSuccessToBuy = False
+    # count = 0
+    # while not bSuccessToBuy and count < 5:
+    #     count += 1
+    #     bSuccessToBuy = try_buy_coins()
+    #     if bSuccessToBuy:
+    #         print("Success to BUY !")
+    #         break
+    #     else:
+    #         time.sleep(1)
+    #         print("Fail to BUY ! retry %s" % count)
+
+    # time_stamp = int(time.time())
+    # dt_stamp = TimeStamp_to_datetime(time_stamp)
+    # my_strategy = Strategy_01()
+    # my_strategy.init_all()
+    # my_strategy.test_k_line_data_index = size - 1
+    # my_strategy.increasing_price_rate = increasing_price_rate
+    # my_strategy.init_test_k_line_data_list(
+    #     symbol=symbol,
+    #     period=period
+    # )
+    # my_strategy.do_strategy_execute(
+    #     symbol=symbol,
+    #     period=period,
+    #     buy_min_quoter_amount=buy_min_quoter_amount,
+    #     dt_stamp=dt_stamp
+    # )

@@ -42,6 +42,15 @@ class Strategy_Base:
             self.log_print("ex: %s" % ex)
             return False
 
+    # 获取第一个买入卖出价格
+    def get_first_price(self):
+        ret = Get_market_depth(
+            symbol=self.symbol
+        )
+        assert ret["status"] == "ok"
+        first_buy_price = ret["tick"]["bids"][0][0]
+        first_sell_price = ret["tick"]["asks"][0][0]
+        return first_buy_price, first_sell_price
 
     def logger_init(self,
                     log_folder_name="",

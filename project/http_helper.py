@@ -35,7 +35,7 @@ class HTTPHelper:
 
     def http_get(self, url=None, params=None, headers=None, keys=None, values=None):
         c = 0
-        while c <= 3:
+        while c <= 10:
             try:
                 # if keys is not None and values is not None:
                 #     params = self.build_params(keys, values)
@@ -64,11 +64,11 @@ class HTTPHelper:
             except Exception as e:
                 self.log_print(str(e), log_level='error')
                 c = c + 1
-                time.sleep(1)
+                time.sleep(2)
 
     def http_post(self, url=None, jsons=None, headers=None, files=None, data=None, keys=None, values=None):
         c = 0
-        while c <= 3:
+        while c <= 10:
             try:
                 if keys is not None and values is not None:
                     jsons = self.build_params(keys, values)
@@ -95,7 +95,7 @@ class HTTPHelper:
             except Exception as e:
                 self.log_print(str(e), log_level='error')
                 c = c + 1
-                time.sleep(1)
+                time.sleep(2)
 
     @staticmethod
     def build_params(keys, values):
