@@ -389,7 +389,7 @@ class Strategy_01(Strategy_Base):
             self.buy_min_quoter_amount = buy_min_quoter_amount
             self.logger_init(
                 log_folder_name="Strategy_01_log",
-                log_file_template="/Strategy_01_%s_%s.log",
+                log_file_template="/Strategy_01_%s_%s.txt",
                 dt_stamp=dt_stamp
             )
             count = 0
