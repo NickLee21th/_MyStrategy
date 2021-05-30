@@ -20540,3 +20540,577 @@ IN try_buy_coins, cancel order: count= 2
 }
 IN try_buy_coins, order_state: submitted 
 IN try_buy_coins, cancel order: count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622370600933,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850182293813,
+        "price": "2419.180000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622370600933,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850182293813,
+        "price": "2419.180000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+{
+    "data": "286850182293813",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 286850199628593
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622370614086,
+        "field-amount": "0.002500000000000000",
+        "field-cash-amount": "6.052525000000000000",
+        "field-fees": "0.000005000000000000",
+        "finished-at": 1622370614100,
+        "id": 286850199628593,
+        "price": "2421.070000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2445.28 , 数量：0.0025 
+限价卖单成交后，可以获取 6.113200000000001  USDT 收入。
+买入BASE时，花费的成本是 6.052525 USDT 
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 286850073377858
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622371200924,
+        "field-amount": "0.002500000000000000",
+        "field-cash-amount": "6.035050000000000000",
+        "field-fees": "0.000005000000000000",
+        "finished-at": 1622371200938,
+        "id": 286850073377858,
+        "price": "2414.640000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2438.79 , 数量：0.0025 
+限价卖单成交后，可以获取 6.0969750000000005  USDT 收入。
+买入BASE时，花费的成本是 6.03505 USDT 
+No Income ......
+IN try_buy_coins, order_id: 286850392691669
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622371500589,
+        "field-amount": "0.002500000000000000",
+        "field-cash-amount": "6.058925000000000000",
+        "field-fees": "0.000005000000000000",
+        "finished-at": 1622371500601,
+        "id": 286850392691669,
+        "price": "2423.570000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2447.81 , 数量：0.0025 
+限价卖单成交后，可以获取 6.119525  USDT 收入。
+买入BASE时，花费的成本是 6.058925 USDT 
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 286850476586935
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372100410,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850476586935,
+        "price": "2405.140000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372100410,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850476586935,
+        "price": "2405.140000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372100410,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850476586935,
+        "price": "2405.140000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372100410,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850476586935,
+        "price": "2405.140000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372100410,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850476586935,
+        "price": "2405.140000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372100410,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850476586935,
+        "price": "2405.140000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+{
+    "data": "286850476586935",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 286850375963640
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372113502,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850375963640,
+        "price": "2408.640000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372113502,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850375963640,
+        "price": "2408.640000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372113502,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850375963640,
+        "price": "2408.640000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372113502,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850375963640,
+        "price": "2408.640000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372113502,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850375963640,
+        "price": "2408.640000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372113502,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850375963640,
+        "price": "2408.640000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+{
+    "data": "286850375963640",
+    "status": "ok"
+}
+Fail to BUY ! try 2 times
+IN try_buy_coins, order_id: 286850215484896
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372126648,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850215484896,
+        "price": "2410.480000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372126648,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850215484896,
+        "price": "2410.480000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372126648,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 286850215484896,
+        "price": "2410.480000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, cancel order: count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372126648,
+        "field-amount": "0.002500000000000000",
+        "field-cash-amount": "6.026200000000000000",
+        "field-fees": "0.000005000000000000",
+        "finished-at": 1622372131291,
+        "id": 286850215484896,
+        "price": "2410.480000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 2434.58 , 数量：0.0025 
+限价卖单成交后，可以获取 6.08645  USDT 收入。
+买入BASE时，花费的成本是 6.0262 USDT 
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 286850442771376
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622372700916,
+        "field-amount": "0.002500000000000000",
+        "field-cash-amount": "6.020175000000000000",
+        "field-fees": "0.000005000000000000",
+        "finished-at": 1622372700930,
+        "id": 286850442771376,
+        "price": "2408.070000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2432.15 , 数量：0.0025 
+限价卖单成交后，可以获取 6.080375  USDT 收入。
+买入BASE时，花费的成本是 6.020175 USDT 
+No Income ......
+IN try_buy_coins, order_id: 286850509622728
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622373000626,
+        "field-amount": "0.002500000000000000",
+        "field-cash-amount": "6.037775000000000000",
+        "field-fees": "0.000005000000000000",
+        "finished-at": 1622373000638,
+        "id": 286850509622728,
+        "price": "2415.110000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2439.26 , 数量：0.0025 
+限价卖单成交后，可以获取 6.09815  USDT 收入。
+买入BASE时，花费的成本是 6.037775 USDT 
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 286850400290739
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002500000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622373600434,
+        "field-amount": "0.002500000000000000",
+        "field-cash-amount": "6.046550000000000000",
+        "field-fees": "0.000005000000000000",
+        "finished-at": 1622373600450,
+        "id": 286850400290739,
+        "price": "2418.660000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
