@@ -338,7 +338,7 @@ class Strategy_01(Strategy_Base):
                 already_run_days = delta_time / (24*60*60)
                 income_rate_by_day = income_rate / already_run_days
                 self.log_print("日均收益率: %s%%" % (income_rate_by_day * 100.0))
-        self.log_print("################## %s ##################\n" % cur_status)
+        self.log_print("\n################## %s ##################\n" % cur_status)
         return True
 
     # 获取近3次的K线数据

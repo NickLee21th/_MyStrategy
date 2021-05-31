@@ -1,15 +1,16 @@
 import datetime
+import math
 from project.demos._hbg_anyCall import HbgAnyCall
 
 # 时间差转化为可读字符串
 def Show_delta_time(delta_time):
     s_delta_time = ""
-    if delta_time > 24*60*60:
-        days = round(delta_time/(24*60*60))
+    if delta_time >= 24*60*60:
+        days = math.trunc(delta_time/(24*60*60))
         left_delta_time = delta_time-days*24*60*60
-        hours = round(left_delta_time/(60*60))
+        hours = math.trunc(left_delta_time/(60*60))
         left_delta_time = left_delta_time - hours*60*60
-        minutes = round(left_delta_time/60)
+        minutes = math.trunc(left_delta_time/60)
         seconds = left_delta_time - minutes*60
         if days == 1:
             s_delta_time = "%s day" % days
@@ -28,10 +29,10 @@ def Show_delta_time(delta_time):
         else:
             s_delta_time += " %s seconds" % seconds
     else:
-        if delta_time > 60*60:
-            hours = round(delta_time/(60*60))
+        if delta_time >= 60*60:
+            hours = math.trunc(delta_time/(60*60))
             left_delta_time = delta_time - hours*60*60
-            minutes = round(left_delta_time/60)
+            minutes = math.trunc(left_delta_time/60)
             seconds = left_delta_time - minutes*60
             if hours == 1:
                 s_delta_time += " %s hour" % hours
@@ -46,8 +47,8 @@ def Show_delta_time(delta_time):
             else:
                 s_delta_time += " %s seconds" % seconds
         else:
-            if delta_time > 60:
-                minutes = round(delta_time / 60)
+            if delta_time >= 60:
+                minutes = math.trunc(delta_time / 60)
                 seconds = delta_time - minutes * 60
                 if minutes == 1:
                     s_delta_time += " %s minute" % minutes
