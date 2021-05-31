@@ -257,3 +257,1355 @@ IN try_buy_coins, order_id: 289711951220383
     },
     "status": "ok"
 }
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622456101142,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289711951220383,
+        "price": "2537.150000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622456101142,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289711951220383,
+        "price": "2537.150000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622456101142,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289711951220383,
+        "price": "2537.150000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622456101142,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289711951220383,
+        "price": "2537.150000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622456101142,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289711951220383,
+        "price": "2537.150000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 289711951220383 
+{
+    "data": "289711951220383",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 289712120168579
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622456114470,
+        "field-amount": "0.002400000000000000",
+        "field-cash-amount": "6.099408000000000000",
+        "field-fees": "0.000004800000000000",
+        "finished-at": 1622456114487,
+        "id": 289712120168579,
+        "price": "2542.880000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2568.31 , 数量：0.0024 
+限价卖单成交后，可以获取 6.163943999999999  USDT 收入。
+买入BASE时，花费的成本是 6.099408 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  45 minutes 10.665985822677612 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.0072
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 18.198168000000003
+当前持有的 quoter 的数量: 4982.125592
+当前累计的 quoter 收益: 0.1064399999999992
+当前限价卖单的挂单量: 3
+已经成交的限价卖单的挂单量: 2
+当前的收益率: 0.5848940398835706%
+日均收益率: 18.642962766437396%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  49 minutes 56.79710602760315 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.0048000000000000004
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 12.198168000000003
+当前持有的 quoter 的数量: 4988.2317920000005
+当前累计的 quoter 收益: 0.11323199999999822
+当前限价卖单的挂单量: 2
+已经成交的限价卖单的挂单量: 3
+当前的收益率: 0.9282705402975119%
+日均收益率: 26.76276432608324%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  49 minutes 56.798078298568726 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.0024000000000000007
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 6.198168000000003
+当前持有的 quoter 的数量: 4994.343056000001
+当前累计的 quoter 收益: 0.1250879999999972
+当前限价卖单的挂单量: 1
+已经成交的限价卖单的挂单量: 4
+当前的收益率: 2.0181447163096764%
+日均收益率: 58.18466874756982%
+
+################## Income ##################
+
+No Income ......
+IN try_buy_coins, order_id: 289712204007044
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622456701312,
+        "field-amount": "0.002400000000000000",
+        "field-cash-amount": "6.090240000000000000",
+        "field-fees": "0.000004800000000000",
+        "finished-at": 1622456701328,
+        "id": 289712204007044,
+        "price": "2537.660000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2563.04 , 数量：0.0024 
+限价卖单成交后，可以获取 6.151295999999999  USDT 收入。
+买入BASE时，花费的成本是 6.09024 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  54 minutes 57.49950408935547 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.0048000000000000004
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 12.288408000000002
+当前持有的 quoter 的数量: 4988.343056000001
+当前累计的 quoter 收益: 0.1250879999999972
+当前限价卖单的挂单量: 2
+已经成交的限价卖单的挂单量: 4
+当前的收益率: 1.0179349513785445%
+日均收益率: 26.67159758175448%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 289712068495911
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457000937,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712068495911,
+        "price": "2541.320000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457000937,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712068495911,
+        "price": "2541.320000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457000937,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712068495911,
+        "price": "2541.320000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457000937,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712068495911,
+        "price": "2541.320000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457000937,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712068495911,
+        "price": "2541.320000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457000937,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712068495911,
+        "price": "2541.320000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 289712068495911 
+{
+    "data": "289712068495911",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 289712051265884
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457014111,
+        "field-amount": "0.002400000000000000",
+        "field-cash-amount": "6.099048000000000000",
+        "field-fees": "0.000004800000000000",
+        "finished-at": 1622457014127,
+        "id": 289712051265884,
+        "price": "2542.020000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2567.44 , 数量：0.0024 
+限价卖单成交后，可以获取 6.161855999999999  USDT 收入。
+买入BASE时，花费的成本是 6.099048 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 0 minutes 10.309041976928711 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.0072
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 18.387456
+当前持有的 quoter 的数量: 4982.343056000001
+当前累计的 quoter 收益: 0.1250879999999972
+当前限价卖单的挂单量: 3
+已经成交的限价卖单的挂单量: 4
+当前的收益率: 0.6802898671790008%
+日均收益率: 16.280336071196995%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 289715693753168
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457601045,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289715693753168,
+        "price": "2535.570000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457601045,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289715693753168,
+        "price": "2535.570000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457601045,
+        "field-amount": "0.002400000000000000",
+        "field-cash-amount": "6.085368000000000000",
+        "field-fees": "0.000004800000000000",
+        "finished-at": 1622457603843,
+        "id": 289715693753168,
+        "price": "2535.570000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 2560.93 , 数量：0.0024 
+限价卖单成交后，可以获取 6.1462319999999995  USDT 收入。
+买入BASE时，花费的成本是 6.085368 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 10 minutes 1.4563095569610596 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.0096
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 24.472824
+当前持有的 quoter 的数量: 4976.343056000001
+当前累计的 quoter 收益: 0.1250879999999972
+当前限价卖单的挂单量: 4
+已经成交的限价卖单的挂单量: 4
+当前的收益率: 0.511130223467456%
+日均收益率: 10.511034282835372%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 289712202924613
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457901035,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712202924613,
+        "price": "2555.850000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457901035,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712202924613,
+        "price": "2555.850000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457901035,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712202924613,
+        "price": "2555.850000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457901035,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712202924613,
+        "price": "2555.850000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457901035,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712202924613,
+        "price": "2555.850000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457901035,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712202924613,
+        "price": "2555.850000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 289712202924613 
+{
+    "data": "289712202924613",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 289712194126242
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622457914144,
+        "field-amount": "0.002300000000000000",
+        "field-cash-amount": "5.882227000000000000",
+        "field-fees": "0.000004600000000000",
+        "finished-at": 1622457914266,
+        "id": 289712194126242,
+        "price": "2557.490000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2583.06 , 数量：0.0023 
+限价卖单成交后，可以获取 5.941038  USDT 收入。
+买入BASE时，花费的成本是 5.882227 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 15 minutes 10.298090696334839 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.011899999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 30.355051
+当前持有的 quoter 的数量: 4970.343056000001
+当前累计的 quoter 收益: 0.1250879999999972
+当前限价卖单的挂单量: 5
+已经成交的限价卖单的挂单量: 4
+当前的收益率: 0.41208298414651723%
+日均收益率: 7.893928320104064%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 289712379649149
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002400000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622458501048,
+        "field-amount": "0.002400000000000000",
+        "field-cash-amount": "6.116880000000000000",
+        "field-fees": "0.000004800000000000",
+        "finished-at": 1622458501066,
+        "id": 289712379649149,
+        "price": "2549.180000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2574.67 , 数量：0.0024 
+限价卖单成交后，可以获取 6.179208  USDT 收入。
+买入BASE时，花费的成本是 6.11688 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 24 minutes 57.341469287872314 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.014299999999999998
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 36.471931
+当前持有的 quoter 的数量: 4964.343056000001
+当前累计的 quoter 收益: 0.1250879999999972
+当前限价卖单的挂单量: 6
+已经成交的限价卖单的挂单量: 4
+当前的收益率: 0.3429705984034605%
+日均收益率: 5.81335582099012%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 29 minutes 56.56958794593811 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.011899999999999999
+最近一次购入的 Base 的数量: 0.0024
+投入的总成本: 30.471930999999998
+当前持有的 quoter 的数量: 4970.489288000001
+当前累计的 quoter 收益: 0.15443999999999658
+当前限价卖单的挂单量: 5
+已经成交的限价卖单的挂单量: 5
+当前的收益率: 0.5068270862125429%
+日均收益率: 8.114388137711602%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 289712354040522
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622458800902,
+        "field-amount": "0.002300000000000000",
+        "field-cash-amount": "5.873924000000000000",
+        "field-fees": "0.000004600000000000",
+        "finished-at": 1622458800952,
+        "id": 289712354040522,
+        "price": "2553.880000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2579.42 , 数量：0.0023 
+限价卖单成交后，可以获取 5.932666  USDT 收入。
+买入BASE时，花费的成本是 5.873924 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 29 minutes 57.15673041343689 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.014199999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 36.345855
+当前持有的 quoter 的数量: 4964.489288000001
+当前累计的 quoter 收益: 0.15443999999999658
+当前限价卖单的挂单量: 6
+已经成交的限价卖单的挂单量: 5
+当前的收益率: 0.42491777948268533%
+日均收益率: 6.802266078437878%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 34 minutes 56.37999439239502 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.011899999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 30.345855
+当前持有的 quoter 的数量: 4970.640584000001
+当前累计的 quoter 收益: 0.4318119999999963
+当前限价卖单的挂单量: 5
+已经成交的限价卖单的挂单量: 6
+当前的收益率: 1.4229686393742944%
+日均收益率: 21.582915915540656%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 34 minutes 56.38101243972778 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.0096
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 24.345855
+当前持有的 quoter 的数量: 4976.80244
+当前累计的 quoter 收益: 0.7197439999999959
+当前限价卖单的挂单量: 4
+已经成交的限价卖单的挂单量: 7
+当前的收益率: 2.95633075938387%
+日均收益率: 44.84021996649561%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 289712344990482
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459100687,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712344990482,
+        "price": "2556.560000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459100687,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712344990482,
+        "price": "2556.560000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459100687,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712344990482,
+        "price": "2556.560000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459100687,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712344990482,
+        "price": "2556.560000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459100687,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712344990482,
+        "price": "2556.560000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459100687,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712344990482,
+        "price": "2556.560000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 289712344990482 
+{
+    "data": "289712344990482",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 289712379104697
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459113820,
+        "field-amount": "0.002300000000000000",
+        "field-cash-amount": "5.886574000000000000",
+        "field-fees": "0.000004600000000000",
+        "finished-at": 1622459113833,
+        "id": 289712379104697,
+        "price": "2559.380000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2584.97 , 数量：0.0023 
+限价卖单成交后，可以获取 5.945430999999999  USDT 收入。
+买入BASE时，花费的成本是 5.886574 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 35 minutes 10.019685745239258 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.011899999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 30.232429
+当前持有的 quoter 的数量: 4970.80244
+当前累计的 quoter 收益: 0.7197439999999959
+当前限价卖单的挂单量: 5
+已经成交的限价卖单的挂单量: 7
+当前的收益率: 2.380701861567246%
+日均收益率: 36.02310537613571%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 289712564648525
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459400539,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712564648525,
+        "price": "2560.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459400539,
+        "field-amount": "0.002300000000000000",
+        "field-cash-amount": "5.890277000000000000",
+        "field-fees": "0.000004600000000000",
+        "finished-at": 1622459401059,
+        "id": 289712564648525,
+        "price": "2560.990000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 2586.6 , 数量：0.0023 
+限价卖单成交后，可以获取 5.949179999999999  USDT 收入。
+买入BASE时，花费的成本是 5.890277 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 39 minutes 58.87164497375488 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.014199999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 36.122706
+当前持有的 quoter 的数量: 4964.80244
+当前累计的 quoter 收益: 0.7197439999999959
+当前限价卖单的挂单量: 6
+已经成交的限价卖单的挂单量: 7
+当前的收益率: 1.9924974612920636%
+日均收益率: 28.697360244384335%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 44 minutes 57.08137321472168 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.011899999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 30.122706
+当前持有的 quoter 的数量: 4970.966384
+当前累计的 quoter 收益: 0.9934109999999947
+当前限价卖单的挂单量: 5
+已经成交的限价卖单的挂单量: 8
+当前的收益率: 3.297881007104723%
+日均收益率: 45.249045093470805%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 289712615032278
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622459701373,
+        "field-amount": "0.002300000000000000",
+        "field-cash-amount": "5.905756000000000000",
+        "field-fees": "0.000004600000000000",
+        "finished-at": 1622459701388,
+        "id": 289712615032278,
+        "price": "2567.970000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2593.65 , 数量：0.0023 
+限价卖单成交后，可以获取 5.965395  USDT 收入。
+买入BASE时，花费的成本是 5.905756 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 44 minutes 57.561906814575195 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.014199999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 36.028462000000005
+当前持有的 quoter 的数量: 4964.966384
+当前累计的 quoter 收益: 0.9934109999999947
+当前限价卖单的挂单量: 6
+已经成交的限价卖单的挂单量: 8
+当前的收益率: 2.757295051895345%
+日均收益率: 37.82897191148997%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 49 minutes 56.783371686935425 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.011899999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 30.028462000000005
+当前持有的 quoter 的数量: 4971.145592
+当前累计的 quoter 收益: 1.2668629999999945
+当前限价卖单的挂单量: 5
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 4.218874080197628%
+日均收益率: 55.25582696766076%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 289712470922667
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622460001083,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 289712470922667,
+        "price": "2570.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622460001083,
+        "field-amount": "0.002300000000000000",
+        "field-cash-amount": "5.913277000000000000",
+        "field-fees": "0.000004600000000000",
+        "finished-at": 1622460001307,
+        "id": 289712470922667,
+        "price": "2570.990000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 2596.7 , 数量：0.0023 
+限价卖单成交后，可以获取 5.972409999999999  USDT 收入。
+买入BASE时，花费的成本是 5.913277 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 49 minutes 59.4471275806427 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.014199999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 35.941739000000005
+当前持有的 quoter 的数量: 4965.145592
+当前累计的 quoter 收益: 1.2668629999999945
+当前限价卖单的挂单量: 6
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 3.524768236728875%
+日均收益率: 46.14628616094681%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 54 minutes 56.655938386917114 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.011899999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 29.941739000000005
+当前持有的 quoter 的数量: 4971.078258
+当前累计的 quoter 收益: 1.2862519999999948
+当前限价卖单的挂单量: 5
+已经成交的限价卖单的挂单量: 10
+当前的收益率: 4.2958493492979635%
+日均收益率: 53.81758740688408%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 289712690547436
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.002300000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622460300954,
+        "field-amount": "0.002300000000000000",
+        "field-cash-amount": "5.925858000000000000",
+        "field-fees": "0.000004600000000000",
+        "finished-at": 1622460300969,
+        "id": 289712690547436,
+        "price": "2576.490000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "ethusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 2602.25 , 数量：0.0023 
+限价卖单成交后，可以获取 5.985175  USDT 收入。
+买入BASE时，花费的成本是 5.925858 USDT 
+
+################## place_sell_limit ##################
+币种: ethusdt
+时间间隔: 5 分钟
+计划运行时长: 2 天
+启动时间: 2021-05-31-09-30-04 
+已运行时长:  1 hour 54 minutes 57.15205955505371 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 6.0
+当前持有的 Base 的数量: 0.014199999999999999
+最近一次购入的 Base 的数量: 0.0023
+投入的总成本: 35.867597
+当前持有的 quoter 的数量: 4965.078258
+当前累计的 quoter 收益: 1.2862519999999948
