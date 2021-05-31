@@ -316,7 +316,7 @@ class Strategy_01(Strategy_Base):
         self.log_print("计划运行时长: %s 天" % self.run_days)
         self.log_print("启动时间: %s " %
                        TimeStamp_to_datetime(self.strategy_launch_time))
-        delta_time = time.time() - self.strategy_launch_time
+        delta_time = math.trunc(time.time()) - self.strategy_launch_time
         self.log_print("已运行时长: %s " % Show_delta_time(delta_time=delta_time))
         self.log_print("下限价卖单时的价格增加率: %s" % self.increasing_price_rate)
         self.log_print("每次投入 quoter 数量: %s" % self.buy_min_quoter_amount)
@@ -421,7 +421,7 @@ class Strategy_01(Strategy_Base):
                 dt_stamp=dt_stamp
             )
             count = 0
-            self.strategy_launch_time = time.time()
+            self.strategy_launch_time = math.trunc(time.time())
             while count < 576:
                 count += 1
                 k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
@@ -647,7 +647,7 @@ def try_buy_coins():
     return bSuccessToBuy
 
 if __name__ == '__main__':
-    #print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
+    print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
     # delta_time = 1*24*60*60+5*60*60+27*60+16
     # already_run_days = delta_time / (24 * 60 * 60)
     # print("已经运行 %s 天" % already_run_days)
@@ -674,20 +674,20 @@ if __name__ == '__main__':
     #         time.sleep(1)
     #         print("Fail to BUY ! retry %s" % count)
 
-    symbol = "btcusdt"
-    period = "5min"
-    run_days = 2
-    increasing_price_rate = 0.01
-    buy_min_quoter_amount = 6.0
-    time_stamp = int(time.time())
-    dt_stamp = TimeStamp_to_datetime(time_stamp)
-    my_strategy = Strategy_01()
-    my_strategy.init_all()
-    my_strategy.increasing_price_rate = increasing_price_rate
-    my_strategy.do_strategy_execute(
-        symbol=symbol,
-        period=period,
-        run_days=run_days,
-        buy_min_quoter_amount=buy_min_quoter_amount,
-        dt_stamp=dt_stamp
-    )
+    # symbol = "btcusdt"
+    # period = "5min"
+    # run_days = 2
+    # increasing_price_rate = 0.01
+    # buy_min_quoter_amount = 6.0
+    # time_stamp = int(time.time())
+    # dt_stamp = TimeStamp_to_datetime(time_stamp)
+    # my_strategy = Strategy_01()
+    # my_strategy.init_all()
+    # my_strategy.increasing_price_rate = increasing_price_rate
+    # my_strategy.do_strategy_execute(
+    #     symbol=symbol,
+    #     period=period,
+    #     run_days=run_days,
+    #     buy_min_quoter_amount=buy_min_quoter_amount,
+    #     dt_stamp=dt_stamp
+    # )
