@@ -72,15 +72,21 @@ def TimeStamp_to_datetime(timeStamp, dt_format=None):
         dt_format = "%Y-%m-%d-%H-%M-%S"
     return datetime.datetime.fromtimestamp(timeStamp).strftime(dt_format)
 
+# 限价买入/卖出时，买入量/卖出量 Base 的小数位精度。
 def get_amount_precision(symbol=""):
     amount_precision = 4
     if symbol == "ethusdt":
         amount_precision = 4
+    elif symbol == "btcusdt":
+        amount_precision = 6
     return amount_precision
 
+# 限价买入/卖出时，买入价/卖出价 Quoter 的小数位精度。
 def get_price_precision(symbol=""):
     price_precision = 2
     if symbol == "ethusdt":
+        price_precision = 2
+    elif symbol == "btcusdt":
         price_precision = 2
     return price_precision
 
