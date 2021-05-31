@@ -189,7 +189,7 @@ class Strategy_01(Strategy_Base):
                 count = 0
                 while order_state != "filled" and count < 5:
                     self.log_print("IN try_buy_coins, order_state: %s " % order_state)
-                    self.log_print("IN try_buy_coins, cancel order: count= %s " % count)
+                    self.log_print("IN try_buy_coins, retry count= %s " % count)
                     count += 1
                     time.sleep(2)
                     ret = Get_v1_order_orders_orderId(
@@ -201,6 +201,7 @@ class Strategy_01(Strategy_Base):
                     order_state = ret["data"]["state"]
                 if order_state != "filled":
                     # 撤单
+                    self.log_print("IN try_buy_coins, cancel order: %s " % order_id)
                     ret = Post_v1_order_orders_orderId_submitcancel(
                         access_key=ACCESS_KEY,
                         secret_key=SECRET_KEY,
@@ -255,6 +256,7 @@ class Strategy_01(Strategy_Base):
                 "finish": False
             }
             self.sell_limit_order_list.append(sell_limit_order)
+            self.show_current_profit_and_loss(cur_status="place_sell_limit")
             return True
         except Exception as ex:
             self.log_print("Exception in place_sell_limit!")
@@ -285,12 +287,16 @@ class Strategy_01(Strategy_Base):
         return True
 
     # 显示当前的盈亏
-    def show_current_profit_and_loss(self):
-        self.log_print("################## Income ##################")
+    def show_current_profit_and_loss(self, cur_status="Income"):
+        self.log_print("\n################## %s ##################" % cur_status)
         self.log_print("币种: %s" % self.symbol)
         period_int = get_period_int(self.period)
         self.log_print("时间间隔: %s 分钟" % period_int)
-        self.log_print("计算时长: %s 天" % self.run_days)
+        self.log_print("计划运行时长: %s 天" % self.run_days)
+        self.log_print("启动时间: %s " %
+                       TimeStamp_to_datetime(self.strategy_launch_time))
+        delta_time = time.time() - self.strategy_launch_time
+        self.log_print("已运行时长: %s " % Show_delta_time(delta_time=delta_time))
         self.log_print("下限价卖单时的价格增加率: %s" % self.increasing_price_rate)
         self.log_print("每次投入 quoter 数量: %s" % self.buy_min_quoter_amount)
         self.log_print("当前持有的 Base 的数量: %s" % self.holding_base_amount)
@@ -307,10 +313,11 @@ class Strategy_01(Strategy_Base):
         if self.quoter_total_cost != 0.0:
             income_rate = float(self.quoter_accumulated_income) / float(self.quoter_total_cost)
             self.log_print("当前的收益率: %s%%" % (income_rate * 100.0))
-            if self.run_days != 0.0:
-                income_rate_by_day = income_rate / self.run_days
+            if delta_time != 0.0:
+                already_run_days = delta_time / (24*60*60)
+                income_rate_by_day = income_rate / already_run_days
                 self.log_print("日均收益率: %s%%" % (income_rate_by_day * 100.0))
-        self.log_print("################## Income ##################\n")
+        self.log_print("################## %s ##################\n" % cur_status)
         return True
 
     # 获取近3次的K线数据
@@ -393,7 +400,7 @@ class Strategy_01(Strategy_Base):
                 dt_stamp=dt_stamp
             )
             count = 0
-            self.strategy_launch_time = TimeStamp_to_datetime(time.time())
+            self.strategy_launch_time = time.time()
             while count < 576:
                 count += 1
                 k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
@@ -619,6 +626,10 @@ def try_buy_coins():
     return bSuccessToBuy
 
 if __name__ == '__main__':
+    print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
+    # delta_time = 1*24*60*60+5*60*60+27*60+16
+    # already_run_days = delta_time / (24 * 60 * 60)
+    # print("已经运行 %s 天" % already_run_days)
     # print(TimeStamp_to_datetime(time.time()))
     # ret = Get_market_depth(
     #     symbol="ethusdt"
@@ -642,20 +653,20 @@ if __name__ == '__main__':
     #         time.sleep(1)
     #         print("Fail to BUY ! retry %s" % count)
 
-    symbol = "ethusdt"
-    period = "5min"
-    run_days = 2
-    increasing_price_rate = 0.01
-    buy_min_quoter_amount = 6.0
-    time_stamp = int(time.time())
-    dt_stamp = TimeStamp_to_datetime(time_stamp)
-    my_strategy = Strategy_01()
-    my_strategy.init_all()
-    my_strategy.increasing_price_rate = increasing_price_rate
-    my_strategy.do_strategy_execute(
-        symbol=symbol,
-        period=period,
-        run_days=run_days,
-        buy_min_quoter_amount=buy_min_quoter_amount,
-        dt_stamp=dt_stamp
-    )
+    # symbol = "ethusdt"
+    # period = "5min"
+    # run_days = 2
+    # increasing_price_rate = 0.01
+    # buy_min_quoter_amount = 6.0
+    # time_stamp = int(time.time())
+    # dt_stamp = TimeStamp_to_datetime(time_stamp)
+    # my_strategy = Strategy_01()
+    # my_strategy.init_all()
+    # my_strategy.increasing_price_rate = increasing_price_rate
+    # my_strategy.do_strategy_execute(
+    #     symbol=symbol,
+    #     period=period,
+    #     run_days=run_days,
+    #     buy_min_quoter_amount=buy_min_quoter_amount,
+    #     dt_stamp=dt_stamp
+    # )
