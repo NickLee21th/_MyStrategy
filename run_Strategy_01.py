@@ -14,6 +14,17 @@ if __name__ == '__main__':
         run_days = 2
         increasing_price_rate = 0.01
         buy_min_quoter_amount = 6.0
+        argvs = sys.argv
+        if len(argvs) > 1:
+            symbol = argvs[1]
+        if len(argvs) > 2:
+            period = argvs[2]
+        if len(argvs) > 3:
+            run_days = float(argvs[3])
+        if len(argvs) > 4:
+            increasing_price_rate = float(argvs[4])
+        if len(argvs) > 5:
+            buy_min_quoter_amount = float(argvs[5])
         time_stamp = int(time.time())
         dt_stamp = TimeStamp_to_datetime(time_stamp)
         my_strategy = Strategy_01()
