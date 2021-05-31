@@ -155,6 +155,10 @@ class Strategy_01(Strategy_Base):
             ret = Get_market_depth(
                 symbol=self.symbol
             )
+            if ret["status"] != "ok":
+                self.log_print(" ret_status: %s  \n ret: %s "
+                               % (ret["status"], ret))
+                raise Exception("Failed in Get_market_depth")
             first_buy_price = ret["tick"]["bids"][0][0]
             first_sell_price = ret["tick"]["asks"][0][0]
             cur_buy_base_price = (float(first_buy_price) + float(first_sell_price)) / 2.0
@@ -171,7 +175,10 @@ class Strategy_01(Strategy_Base):
                 amount=cur_buy_base_amount,
                 price=cur_buy_base_price
             )
-            assert ret["status"] == "ok"
+            if ret["status"] != "ok":
+                self.log_print(" ret_status: %s  \n ret: %s "
+                               % (ret["status"], ret))
+                raise Exception("Failed in Post_order_place")
             # 查询订单状态
             order_id = ret["data"]
             self.log_print("IN try_buy_coins, order_id: %s" % order_id)
@@ -180,7 +187,10 @@ class Strategy_01(Strategy_Base):
                 secret_key=SECRET_KEY,
                 order_id=order_id,
             )
-            assert ret["status"] == "ok"
+            if ret["status"] != "ok":
+                self.log_print(" ret_status: %s  \n ret: %s "
+                               % (ret["status"], ret))
+                raise Exception("Failed in Get_v1_order_orders_orderId")
             order_state = ret["data"]["state"]
             self.log_print("IN try_buy_coins, order_state:%s " % order_state)
             if order_state == "filled":
@@ -197,7 +207,10 @@ class Strategy_01(Strategy_Base):
                         secret_key=SECRET_KEY,
                         order_id=order_id,
                     )
-                    assert ret["status"] == "ok"
+                    if ret["status"] != "ok":
+                        self.log_print(" ret_status: %s  \n ret: %s "
+                                       % (ret["status"], ret))
+                        raise Exception("Failed in Get_v1_order_orders_orderId")
                     order_state = ret["data"]["state"]
                 if order_state != "filled":
                     # 撤单
@@ -207,6 +220,10 @@ class Strategy_01(Strategy_Base):
                         secret_key=SECRET_KEY,
                         order_id=order_id,
                     )
+                    if ret["status"] != "ok":
+                        self.log_print(" ret_status: %s  \n ret: %s "
+                                       % (ret["status"], ret))
+                        raise Exception("Failed in Post_v1_order_orders_orderId_submitcancel")
                     assert ret["status"] == "ok"
                     assert ret["data"] == str(order_id)
                 else:
@@ -249,6 +266,10 @@ class Strategy_01(Strategy_Base):
                 amount=amount,
                 price=price_in_sell_limit
             )
+            if ret["status"] != "ok":
+                self.log_print(" ret_status: %s  \n ret: %s "
+                               % (ret["status"], ret))
+                raise Exception("Failed tp Post_order_place in place_sell_limit")
             assert ret["status"] == "ok"
             sell_limit_order = {
                 "price": price_in_sell_limit,
@@ -626,7 +647,7 @@ def try_buy_coins():
     return bSuccessToBuy
 
 if __name__ == '__main__':
-    print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
+    #print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
     # delta_time = 1*24*60*60+5*60*60+27*60+16
     # already_run_days = delta_time / (24 * 60 * 60)
     # print("已经运行 %s 天" % already_run_days)
@@ -653,20 +674,20 @@ if __name__ == '__main__':
     #         time.sleep(1)
     #         print("Fail to BUY ! retry %s" % count)
 
-    # symbol = "ethusdt"
-    # period = "5min"
-    # run_days = 2
-    # increasing_price_rate = 0.01
-    # buy_min_quoter_amount = 6.0
-    # time_stamp = int(time.time())
-    # dt_stamp = TimeStamp_to_datetime(time_stamp)
-    # my_strategy = Strategy_01()
-    # my_strategy.init_all()
-    # my_strategy.increasing_price_rate = increasing_price_rate
-    # my_strategy.do_strategy_execute(
-    #     symbol=symbol,
-    #     period=period,
-    #     run_days=run_days,
-    #     buy_min_quoter_amount=buy_min_quoter_amount,
-    #     dt_stamp=dt_stamp
-    # )
+    symbol = "btcusdt"
+    period = "5min"
+    run_days = 2
+    increasing_price_rate = 0.01
+    buy_min_quoter_amount = 6.0
+    time_stamp = int(time.time())
+    dt_stamp = TimeStamp_to_datetime(time_stamp)
+    my_strategy = Strategy_01()
+    my_strategy.init_all()
+    my_strategy.increasing_price_rate = increasing_price_rate
+    my_strategy.do_strategy_execute(
+        symbol=symbol,
+        period=period,
+        run_days=run_days,
+        buy_min_quoter_amount=buy_min_quoter_amount,
+        dt_stamp=dt_stamp
+    )
