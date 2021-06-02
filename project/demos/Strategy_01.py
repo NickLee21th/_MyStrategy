@@ -420,32 +420,48 @@ class Strategy_01(Strategy_Base):
                 log_file_template="/Strategy_01_%s_%s.txt",
                 dt_stamp=dt_stamp
             )
-            count = 0
-            self.strategy_launch_time = math.trunc(time.time())
-            while count < 576:
-                count += 1
-                k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
-                # 处理成交的限价卖单
-                self.dispose_sell_limit_orders(pre_1_k_line_data=k_line_data_list[1])
-                # 根据K线价格来投资
-                pre_2_change = k_line_data_list[2]["change"]
-                pre_1_change = k_line_data_list[1]["change"]
-                bInvestCoin = False
-                if pre_2_change == "down" and pre_1_change == "up":
-                    bInvestCoin = True
-                elif pre_2_change == "up" and pre_1_change == "up":
-                    bInvestCoin = True
-                if bInvestCoin:
-                    cur_k_line_data = k_line_data_list[0]
-                    # 买入Base
-                    OK = self.buy_base(k_line_data=cur_k_line_data)
-                    if not OK:
-                        continue
-                    # 下限价卖单
-                    self.place_sell_limit()
+            run_time_config_data = self.get_run_time_configuration()
+            while True:
+                self.log_print(run_time_config_data)
+                if run_time_config_data["keep_run"]:
+                    self.log_print("Yes Keep Running")
+                else:
+                    self.log_print("Sleep....")
+                time.sleep(2)
+                run_time_config_data = self.get_run_time_configuration()
+            # count = 0
+            # self.strategy_launch_time = math.trunc(time.time())
+            # while count < 576:
+            #     count += 1
+            #     k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
+            #     # 处理成交的限价卖单
+            #     self.dispose_sell_limit_orders(pre_1_k_line_data=k_line_data_list[1])
+            #     # 根据K线价格来投资
+            #     pre_2_change = k_line_data_list[2]["change"]
+            #     pre_1_change = k_line_data_list[1]["change"]
+            #     bInvestCoin = False
+            #     if pre_2_change == "down" and pre_1_change == "up":
+            #         bInvestCoin = True
+            #     elif pre_2_change == "up" and pre_1_change == "up":
+            #         bInvestCoin = True
+            #     if bInvestCoin:
+            #         cur_k_line_data = k_line_data_list[0]
+            #         # 买入Base
+            #         OK = self.buy_base(k_line_data=cur_k_line_data)
+            #         if not OK:
+            #             continue
+            #         # 下限价卖单
+            #         self.place_sell_limit()
         except Exception as ex:
             self.log_print("Exception in do_strategy_execute")
             self.log_print("ex: %s" % ex)
+
+    # 获取运行时的配置信息
+    def get_run_time_configuration(self):
+        run_time_config_data = read_yaml(
+            filename="run_time_config_Strategy_01.yaml"
+        )
+        return run_time_config_data["run_time_config"]["symbol_list"][self.symbol]
 
 
 def get_period_int(period):
@@ -645,6 +661,7 @@ def try_buy_coins():
         print("Ex IN try_buy_coins: %s" % ex)
         bSuccessToBuy = False
     return bSuccessToBuy
+
 
 if __name__ == '__main__':
     print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))

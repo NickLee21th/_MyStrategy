@@ -1,6 +1,19 @@
 import datetime
 import math
+# import json
+import codecs
+# import os
+import yaml
 from project.demos._hbg_anyCall import HbgAnyCall
+
+
+# 读取 yaml 文件
+def read_yaml(filename):
+    fb = codecs.open(filename, "r", "utf-8")
+    content = yaml.safe_load(fb)
+    fb.close()
+    return content
+
 
 # 时间差转化为可读字符串
 def Show_delta_time(delta_time):
