@@ -25,7 +25,7 @@ class Strategy_01(Strategy_Base):
     access_key = ACCESS_KEY
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
-    strategy_launch_time = ""
+    strategy_launch_time = 0
 
     test_k_line_data_list = []
     test_k_line_data_index = 999  # 1999
@@ -420,6 +420,7 @@ class Strategy_01(Strategy_Base):
                 log_file_template="/Strategy_01_%s_%s.txt",
                 dt_stamp=dt_stamp
             )
+            self.strategy_launch_time = int(time.time())
             run_time_config_data = self.get_run_time_configuration()
             while not run_time_config_data["quit"]:
                 if run_time_config_data["keep_run"]:

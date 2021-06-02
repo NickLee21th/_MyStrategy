@@ -11,7 +11,7 @@ if __name__ == '__main__':
     try:
         symbol = "ethusdt"
         period = "5min"
-        run_days = 2
+        run_days = 365
         increasing_price_rate = 0.01
         buy_min_quoter_amount = 6.0
         argvs = sys.argv
