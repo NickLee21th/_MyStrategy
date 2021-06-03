@@ -422,6 +422,9 @@ class Strategy_01(Strategy_Base):
             )
             self.strategy_launch_time = int(time.time())
             run_time_config_data = self.get_run_time_configuration()
+            self.buy_min_quoter_amount = run_time_config_data["buy_min_quoter_amount"]
+            self.increasing_price_rate = run_time_config_data["increasing_price_rate"]
+            self.period = run_time_config_data["period"]
             while not run_time_config_data["quit"]:
                 if run_time_config_data["keep_run"]:
                     k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
@@ -446,6 +449,9 @@ class Strategy_01(Strategy_Base):
                 else:
                     time.sleep(2)
                 run_time_config_data = self.get_run_time_configuration()
+                self.buy_min_quoter_amount = run_time_config_data["buy_min_quoter_amount"]
+                self.increasing_price_rate = run_time_config_data["increasing_price_rate"]
+                self.period = run_time_config_data["period"]
         except Exception as ex:
             self.log_print("Exception in do_strategy_execute")
             self.log_print("ex: %s" % ex)
