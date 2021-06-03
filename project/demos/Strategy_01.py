@@ -452,6 +452,7 @@ class Strategy_01(Strategy_Base):
                 self.buy_min_quoter_amount = run_time_config_data["buy_min_quoter_amount"]
                 self.increasing_price_rate = run_time_config_data["increasing_price_rate"]
                 self.period = run_time_config_data["period"]
+            self.log_print("$$$$$$$$$$$$$$ The Strategy Quit $$$$$$$$$$$$$$$$")
         except Exception as ex:
             self.log_print("Exception in do_strategy_execute")
             self.log_print("ex: %s" % ex)
