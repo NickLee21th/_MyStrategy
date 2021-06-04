@@ -532,24 +532,24 @@ def bench_earn_money():
     symbol_list = [
         #{"symbol": "btcusdt", "increasing_price_rate": 0.01},
         {"symbol": "ethusdt", "increasing_price_rate": 0.01},
-        {"symbol": "ethusdt", "increasing_price_rate": 0.02},
-        {"symbol": "ethusdt", "increasing_price_rate": 0.04},
-        {"symbol": "ethusdt", "increasing_price_rate": 0.08},
+        #{"symbol": "ethusdt", "increasing_price_rate": 0.02},
+        #{"symbol": "ethusdt", "increasing_price_rate": 0.04},
+        #{"symbol": "ethusdt", "increasing_price_rate": 0.08},
         #{"symbol": "dotusdt", "increasing_price_rate": 0.01},
-        #{"symbol": "linkusdt", "increasing_price_rate": 0.01},
+        {"symbol": "linkusdt", "increasing_price_rate": 0.01},
         #{"symbol": "ltcusdt", "increasing_price_rate": 0.01},
     ]
     total_quoter_total_cost = 0.0
     total_quoter_accumulated_income = 0.0
     total_income_rate = 0.0
     total_income_rate_by_day = 0.0
-    # period = "5min"
+    period = "5min"
     # period = "15min"
     # period = "30min"
     # period = "60min"
-    period = "4hour"
-    size = int(6*24*60/240)
-    buy_min_quoter_amount = 6.0 * 12 * 4
+    # period = "4hour"
+    size = int(1*24*60/5)
+    buy_min_quoter_amount = 6.0  #* 12 * 4
     # buy_min_quoter_amount = 4*60.0
     for symbol_item in symbol_list:
         (
@@ -665,7 +665,7 @@ def try_buy_coins():
 
 
 if __name__ == '__main__':
-    print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
+    #print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
     # delta_time = 1*24*60*60+5*60*60+27*60+16
     # already_run_days = delta_time / (24 * 60 * 60)
     # print("已经运行 %s 天" % already_run_days)
@@ -678,7 +678,7 @@ if __name__ == '__main__':
     # first_sell_price = ret["tick"]["asks"][0][0]
     # print(first_sell_price)
 
-    # bench_earn_money()
+    bench_earn_money()
 
     # bSuccessToBuy = False
     # count = 0
