@@ -2878,3 +2878,5416 @@ IN try_buy_coins, retry count= 3
     },
     "status": "ok"
 }
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000516000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622722801041,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291195783747105,
+        "price": "38738.150000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291195783747105 
+{
+    "data": "291195783747105",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 291407764296479
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000516000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622722814216,
+        "field-amount": "0.000516000000000000",
+        "field-cash-amount": "19.988064960000000000",
+        "field-fees": "0.000001032000000000",
+        "finished-at": 1622722814231,
+        "id": 291407764296479,
+        "price": "38742.240000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39129.66 , 数量：0.000516 
+限价卖单成交后，可以获取 20.19090456  USDT 收入。
+买入BASE时，花费的成本是 19.98806496 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  3 hours 53 minutes 50 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.007691000000000001
+最近一次购入的 Base 的数量: 0.000516
+投入的总成本: 299.95203703
+当前持有的 quoter 的数量: 4701.01911379
+当前累计的 quoter 收益: 1.0576157200000118
+当前限价卖单的挂单量: 15
+已经成交的限价卖单的挂单量: 5
+当前的收益率: 0.3525949450025683%
+日均收益率: 2.1713616000158162%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291195740262559
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622723701312,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "20.015557400000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622723701329,
+        "id": 291195740262559,
+        "price": "38867.540000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39256.22 , 数量：0.000515 
+限价卖单成交后，可以获取 20.216953300000004  USDT 收入。
+买入BASE时，花费的成本是 20.0155574 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 8 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.008206000000000001
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 319.96759442999996
+当前持有的 quoter 的数量: 4681.01911379
+当前累计的 quoter 收益: 1.0576157200000118
+当前限价卖单的挂单量: 16
+已经成交的限价卖单的挂单量: 5
+当前的收益率: 0.33053838526494556%
+日均收益率: 1.914494636112576%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291195756923300
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622724001052,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291195756923300,
+        "price": "38920.560000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622724001052,
+        "field-amount": "0.000514000000000000",
+        "field-cash-amount": "20.005167840000000000",
+        "field-fees": "0.000001028000000000",
+        "finished-at": 1622724002649,
+        "id": 291195756923300,
+        "price": "38920.560000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39309.77 , 数量：0.000514 
+限价卖单成交后，可以获取 20.20522178  USDT 收入。
+买入BASE时，花费的成本是 20.00516784 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 13 minutes 39 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.008720000000000002
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 339.97276227
+当前持有的 quoter 的数量: 4661.01911379
+当前累计的 quoter 收益: 1.0576157200000118
+当前限价卖单的挂单量: 17
+已经成交的限价卖单的挂单量: 5
+当前的收益率: 0.3110883686499783%
+日均收益率: 1.7660841744765177%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291407999173576
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622724601070,
+        "field-amount": "0.000512000000000000",
+        "field-cash-amount": "19.982981119999999999",
+        "field-fees": "0.000001024000000000",
+        "finished-at": 1622724601085,
+        "id": 291407999173576,
+        "price": "39035.210000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39425.56 , 数量：0.000512 
+限价卖单成交后，可以获取 20.18588672  USDT 收入。
+买入BASE时，花费的成本是 19.98298112 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 23 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.009232000000000002
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 359.95574338999995
+当前持有的 quoter 的数量: 4641.01911379
+当前累计的 quoter 收益: 1.0576157200000118
+当前限价卖单的挂单量: 18
+已经成交的限价卖单的挂单量: 5
+当前的收益率: 0.2938182650010173%
+日均收益率: 1.6049755387297144%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291196110969647
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000513000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725201026,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196110969647,
+        "price": "39003.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000513000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725201026,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196110969647,
+        "price": "39003.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000513000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725201026,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196110969647,
+        "price": "39003.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000513000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725201026,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196110969647,
+        "price": "39003.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000513000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725201026,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196110969647,
+        "price": "39003.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000513000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725201026,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196110969647,
+        "price": "39003.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291196110969647 
+{
+    "data": "291196110969647",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 291196051698993
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725214278,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196051698993,
+        "price": "39047.790000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725214278,
+        "field-amount": "0.000512000000000000",
+        "field-cash-amount": "19.992468480000000000",
+        "field-fees": "0.000001024000000000",
+        "finished-at": 1622725216356,
+        "id": 291196051698993,
+        "price": "39047.790000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39438.27 , 数量：0.000512 
+限价卖单成交后，可以获取 20.19239424  USDT 收入。
+买入BASE时，花费的成本是 19.99246848 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 33 minutes 52 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.009744000000000003
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 379.94821186999997
+当前持有的 quoter 的数量: 4621.01911379
+当前累计的 quoter 收益: 1.0576157200000118
+当前限价卖单的挂单量: 19
+已经成交的限价卖单的挂单量: 5
+当前的收益率: 0.278357862192513%
+日均收益率: 1.4636148547610226%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 38 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.009232000000000002
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 359.94821186999997
+当前持有的 quoter 的数量: 4641.23465735
+当前累计的 quoter 收益: 1.2806908000000128
+当前限价卖单的挂单量: 18
+已经成交的限价卖单的挂单量: 6
+当前的收益率: 0.35579862818225394%
+日均收益率: 1.839016599362691%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 38 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.008720000000000002
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 339.94821186999997
+当前持有的 quoter 的数量: 4661.41720787
+当前累计的 quoter 收益: 1.4707728400000128
+当前限价卖单的挂单量: 17
+已经成交的限价卖单的挂单量: 7
+当前的收益率: 0.4326461468673508%
+日均收益率: 2.2362184188405787%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 38 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.008208000000000002
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 319.94821186999997
+当前持有的 quoter 的数量: 4681.60811243
+当前累计的 quoter 收益: 1.6692089200000133
+当前限价卖单的挂单量: 16
+已经成交的限价卖单的挂单量: 8
+当前的收益率: 0.5217122203134048%
+日均收益率: 2.6965742902056817%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 291408158672631
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000511000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725501155,
+        "field-amount": "0.000511000000000000",
+        "field-cash-amount": "20.012579160000000000",
+        "field-fees": "0.000001022000000000",
+        "finished-at": 1622725501171,
+        "id": 291408158672631,
+        "price": "39171.340000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39563.05 , 数量：0.000511 
+限价卖单成交后，可以获取 20.21671855  USDT 收入。
+买入BASE时，花费的成本是 20.01257916 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 38 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.008719000000000001
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 339.96079103
+当前持有的 quoter 的数量: 4661.60811243
+当前累计的 quoter 收益: 1.6692089200000133
+当前限价卖单的挂单量: 17
+已经成交的限价卖单的挂单量: 8
+当前的收益率: 0.49100042241421693%
+日均收益率: 2.537682388980579%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 43 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.008208000000000002
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 319.96079103
+当前持有的 quoter 的数量: 4681.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 16
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.5855664545548476%
+日均收益率: 2.9732570330006363%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 291196000156422
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000510000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622725801087,
+        "field-amount": "0.000510000000000000",
+        "field-cash-amount": "19.981325700000000000",
+        "field-fees": "0.000001020000000000",
+        "finished-at": 1622725801100,
+        "id": 291196000156422,
+        "price": "39179.070000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39570.86 , 数量：0.00051 
+限价卖单成交后，可以获取 20.1811386  USDT 收入。
+买入BASE时，花费的成本是 19.9813257 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 43 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.008718000000000002
+最近一次购入的 Base 的数量: 0.00051
+投入的总成本: 339.94211673
+当前持有的 quoter 的数量: 4661.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 17
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.5511476712631387%
+日均收益率: 2.798328659407368%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291196244312134
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726701569,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196244312134,
+        "price": "38833.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726701569,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196244312134,
+        "price": "38833.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726701569,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196244312134,
+        "price": "38833.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726701569,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196244312134,
+        "price": "38833.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726701569,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196244312134,
+        "price": "38833.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726701569,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196244312134,
+        "price": "38833.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291196244312134 
+{
+    "data": "291196244312134",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 291408284267250
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726715061,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291408284267250,
+        "price": "38856.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726715061,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291408284267250,
+        "price": "38856.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726715061,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291408284267250,
+        "price": "38856.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726715061,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291408284267250,
+        "price": "38856.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726715061,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291408284267250,
+        "price": "38856.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726715061,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291408284267250,
+        "price": "38856.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291408284267250 
+{
+    "data": "291408284267250",
+    "status": "ok"
+}
+Fail to BUY ! try 2 times
+IN try_buy_coins, order_id: 291196252426069
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622726728256,
+        "field-amount": "0.000514000000000000",
+        "field-cash-amount": "19.984098980000000000",
+        "field-fees": "0.000001028000000000",
+        "finished-at": 1622726728270,
+        "id": 291196252426069,
+        "price": "38879.570000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39268.37 , 数量：0.000514 
+限价卖单成交后，可以获取 20.183942180000003  USDT 收入。
+买入BASE时，花费的成本是 19.98409898 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  4 hours 59 minutes 4 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.009232000000000002
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 359.92621571
+当前持有的 quoter 的数量: 4641.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 18
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.5205464281906045%
+日均收益率: 2.5064206083185594%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291196260764189
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622727001023,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "20.002991400000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622727001036,
+        "id": 291196260764189,
+        "price": "38840.760000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39229.17 , 数量：0.000515 
+限价卖单成交后，可以获取 20.20302255  USDT 收入。
+买入BASE时，花费的成本是 20.0029914 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  5 hours 3 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.009747000000000002
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 379.92920711
+当前持有的 quoter 的数量: 4621.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 19
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.4931400442339674%
+日均收益率: 2.3388757655933903%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291196605964298
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000520000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622728500853,
+        "field-amount": "0.000520000000000000",
+        "field-cash-amount": "20.009059200000000000",
+        "field-fees": "0.000001040000000000",
+        "finished-at": 1622728500871,
+        "id": 291196605964298,
+        "price": "38479.370000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 38864.16 , 数量：0.00052 
+限价卖单成交后，可以获取 20.2093632  USDT 收入。
+买入BASE时，花费的成本是 20.0090592 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  5 hours 28 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.010267000000000002
+最近一次购入的 Base 的数量: 0.00052
+投入的总成本: 399.93826631
+当前持有的 quoter 的数量: 4601.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 20
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.46846806565585414%
+日均收益率: 2.0528295822217273%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291196545771066
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622729101015,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196545771066,
+        "price": "38585.790000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622729101015,
+        "field-amount": "0.000518000000000000",
+        "field-cash-amount": "19.987439220000000000",
+        "field-fees": "0.000001036000000000",
+        "finished-at": 1622729101913,
+        "id": 291196545771066,
+        "price": "38585.790000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38971.65 , 数量：0.000518 
+限价卖单成交后，可以获取 20.1873147  USDT 收入。
+买入BASE时，花费的成本是 19.98743922 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  5 hours 38 minutes 39 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.010785000000000001
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 419.92570553
+当前持有的 quoter 的数量: 4581.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 21
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.44617012850768784%
+日均收益率: 1.8971946996931062%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291196748403812
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622729701274,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196748403812,
+        "price": "38637.680000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622729701274,
+        "field-amount": "0.000518000000000000",
+        "field-cash-amount": "20.014318240000000000",
+        "field-fees": "0.000001036000000000",
+        "finished-at": 1622729702185,
+        "id": 291196748403812,
+        "price": "38637.680000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39024.06 , 数量：0.000518 
+限价卖单成交后，可以获取 20.214463079999998  USDT 收入。
+买入BASE时，花费的成本是 20.01431824 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  5 hours 48 minutes 39 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.011303
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 439.94002377000004
+当前持有的 quoter 的数量: 4561.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 22
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.4258723823180775%
+日均收益率: 1.7589451614456666%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291196688227658
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000520000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622730300815,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196688227658,
+        "price": "38472.930000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000520000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622730300815,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196688227658,
+        "price": "38472.930000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000520000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622730300815,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196688227658,
+        "price": "38472.930000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000520000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622730300815,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196688227658,
+        "price": "38472.930000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000520000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622730300815,
+        "field-amount": "0.000520000000000000",
+        "field-cash-amount": "20.005923600000000000",
+        "field-fees": "0.000001040000000000",
+        "finished-at": 1622730308945,
+        "id": 291196688227658,
+        "price": "38472.930000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38857.66 , 数量：0.00052 
+限价卖单成交后，可以获取 20.2059832  USDT 收入。
+买入BASE时，花费的成本是 20.0059236 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  5 hours 58 minutes 45 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.011823
+最近一次购入的 Base 的数量: 0.00052
+投入的总成本: 459.94594737000006
+当前持有的 quoter 的数量: 4541.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 23
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.407348530998758%
+日均收益率: 1.6350714554375232%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291196899252655
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622730900510,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196899252655,
+        "price": "38514.330000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622730900510,
+        "field-amount": "0.000519000000000000",
+        "field-cash-amount": "19.988937270000000000",
+        "field-fees": "0.000001038000000000",
+        "finished-at": 1622730900799,
+        "id": 291196899252655,
+        "price": "38514.330000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38899.47 , 数量：0.000519 
+限价卖单成交后，可以获取 20.188824930000003  USDT 收入。
+买入BASE时，花费的成本是 19.98893727 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 8 minutes 38 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.012342
+最近一次购入的 Base 的数量: 0.000519
+投入的总成本: 479.93488464000006
+当前持有的 quoter 的数量: 4521.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 24
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.39038276232105806%
+日均收益率: 1.5249602434460359%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291196873115998
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731201614,
+        "field-amount": "0.000519000000000000",
+        "field-cash-amount": "19.995346920000000000",
+        "field-fees": "0.000001038000000000",
+        "finished-at": 1622731201634,
+        "id": 291196873115998,
+        "price": "38531.900000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 38917.22 , 数量：0.000519 
+限价卖单成交后，可以获取 20.198037180000004  USDT 收入。
+买入BASE时，花费的成本是 19.99534692 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 13 minutes 38 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.012861000000000001
+最近一次购入的 Base 的数量: 0.000519
+投入的总成本: 499.93023156000004
+当前持有的 quoter 的数量: 4501.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 25
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.374768906083879%
+日均收益率: 1.4443765494534369%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291196932229904
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731500392,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196932229904,
+        "price": "38530.100000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731500392,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196932229904,
+        "price": "38530.100000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731500392,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196932229904,
+        "price": "38530.100000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731500392,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196932229904,
+        "price": "38530.100000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731500392,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196932229904,
+        "price": "38530.100000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731500392,
+        "field-amount": "0.000519000000000000",
+        "field-cash-amount": "19.997121900000000000",
+        "field-fees": "0.000001038000000000",
+        "finished-at": 1622731509918,
+        "id": 291196932229904,
+        "price": "38530.100000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38915.4 , 数量：0.000519 
+限价卖单成交后，可以获取 20.1970926  USDT 收入。
+买入BASE时，花费的成本是 19.9971219 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 18 minutes 47 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.013380000000000001
+最近一次购入的 Base 的数量: 0.000519
+投入的总成本: 519.9273534600001
+当前持有的 quoter 的数量: 4481.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 26
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.36035477793806003%
+日均收益率: 1.369941163103286%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291196965455858
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731800892,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196965455858,
+        "price": "38546.210000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731800892,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196965455858,
+        "price": "38546.210000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000519000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622731800892,
+        "field-amount": "0.000519000000000000",
+        "field-cash-amount": "20.005482990000000000",
+        "field-fees": "0.000001038000000000",
+        "finished-at": 1622731803774,
+        "id": 291196965455858,
+        "price": "38546.210000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38931.67 , 数量：0.000519 
+限价卖单成交后，可以获取 20.205536730000002  USDT 收入。
+买入BASE时，花费的成本是 20.00548299 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 23 minutes 41 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.013899000000000002
+最近一次购入的 Base 的数量: 0.000519
+投入的总成本: 539.9328364500001
+当前持有的 quoter 的数量: 4461.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 27
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.34700298509692823%
+日均收益率: 1.3023351684277227%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291196948395932
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622732100935,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196948395932,
+        "price": "38599.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622732100935,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196948395932,
+        "price": "38599.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622732100935,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291196948395932,
+        "price": "38599.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622732100935,
+        "field-amount": "0.000518000000000000",
+        "field-cash-amount": "19.994794820000000000",
+        "field-fees": "0.000001036000000000",
+        "finished-at": 1622732106541,
+        "id": 291196948395932,
+        "price": "38599.990000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38985.99 , 数量：0.000518 
+限价卖单成交后，可以获取 20.19474282  USDT 收入。
+买入BASE时，花费的成本是 19.99479482 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 28 minutes 43 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.014417000000000001
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 559.9276312700001
+当前持有的 quoter 的数量: 4441.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 28
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.3346116453925389%
+日均收益率: 1.239568072800041%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291197049773851
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622732401147,
+        "field-amount": "0.000518000000000000",
+        "field-cash-amount": "20.002606260000000000",
+        "field-fees": "0.000001036000000000",
+        "finished-at": 1622732401159,
+        "id": 291197049773851,
+        "price": "38615.070000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39001.22 , 数量：0.000518 
+限价卖单成交后，可以获取 20.20263196  USDT 收入。
+买入BASE时，花费的成本是 20.00260626 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 33 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.014935
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 579.9302375300001
+当前持有的 quoter 的数量: 4421.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 29
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.3230704210181995%
+日均收益率: 1.1819149077347857%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291197108658629
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000517000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622732701391,
+        "field-amount": "0.000517000000000000",
+        "field-cash-amount": "19.999576300000000000",
+        "field-fees": "0.000001034000000000",
+        "finished-at": 1622732701405,
+        "id": 291197108658629,
+        "price": "38683.900000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39070.74 , 数量：0.000517 
+限价卖单成交后，可以获取 20.199572579999998  USDT 收入。
+买入BASE时，花费的成本是 19.9995763 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 38 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015452
+最近一次购入的 Base 的数量: 0.000517
+投入的总成本: 599.9298138300001
+当前持有的 quoter 的数量: 4401.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.31230037527871984%
+日均收益率: 1.1281829838224442%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291197184234258
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000516000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622733301297,
+        "field-amount": "0.000516000000000000",
+        "field-cash-amount": "19.983967920000000000",
+        "field-fees": "0.000001032000000000",
+        "finished-at": 1622733301309,
+        "id": 291197184234258,
+        "price": "38728.620000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39115.91 , 数量：0.000516 
+限价卖单成交后，可以获取 20.18380956  USDT 收入。
+买入BASE时，花费的成本是 19.98396792 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 48 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015968
+最近一次购入的 Base 的数量: 0.000516
+投入的总成本: 619.9137817500001
+当前持有的 quoter 的数量: 4381.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.3022328451403259%
+日均收益率: 1.0650943353642024%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291197242171920
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622733901275,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197242171920,
+        "price": "38591.600000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622733901275,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197242171920,
+        "price": "38591.600000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622733901275,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197242171920,
+        "price": "38591.600000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622733901275,
+        "field-amount": "0.000518000000000000",
+        "field-cash-amount": "19.990448800000000000",
+        "field-fees": "0.000001036000000000",
+        "finished-at": 1622733906173,
+        "id": 291197242171920,
+        "price": "38591.600000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38977.52 , 数量：0.000518 
+限价卖单成交后，可以获取 20.190355359999998  USDT 收入。
+买入BASE时，花费的成本是 19.9904488 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  6 hours 58 minutes 44 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016486
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 639.9042305500001
+当前持有的 quoter 的数量: 4361.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.2927911663265086%
+日均收益率: 1.0068920860774695%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291409425354945
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622734500637,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291409425354945,
+        "price": "38596.080000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622734500637,
+        "field-amount": "0.000518000000000000",
+        "field-cash-amount": "19.992769440000000000",
+        "field-fees": "0.000001036000000000",
+        "finished-at": 1622734502842,
+        "id": 291409425354945,
+        "price": "38596.080000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 38982.04 , 数量：0.000518 
+限价卖单成交后，可以获取 20.19269672  USDT 收入。
+买入BASE时，花费的成本是 19.99276944 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  7 hours 8 minutes 39 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.017004000000000002
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 659.89699999
+当前持有的 quoter 的数量: 4341.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.2839205300264143%
+日均收益率: 0.9537981179004704%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291197393473320
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622734800526,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197393473320,
+        "price": "38620.400000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622734800526,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197393473320,
+        "price": "38620.400000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622734800526,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197393473320,
+        "price": "38620.400000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622734800526,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197393473320,
+        "price": "38620.400000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000518000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622734800526,
+        "field-amount": "0.000518000000000000",
+        "field-cash-amount": "20.005367200000000000",
+        "field-fees": "0.000001036000000000",
+        "finished-at": 1622734808594,
+        "id": 291197393473320,
+        "price": "38620.400000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39006.6 , 数量：0.000518 
+限价卖单成交后，可以获取 20.2054188  USDT 收入。
+买入BASE时，花费的成本是 20.0053672 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  7 hours 13 minutes 45 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.017522000000000003
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 679.9023671900001
+当前持有的 quoter 的数量: 4321.82506573
+当前累计的 quoter 收益: 1.8735830600000156
+当前限价卖单的挂单量: 34
+已经成交的限价卖单的挂单量: 9
+当前的收益率: 0.2755664857799266%
+日均收益率: 0.9148489672002174%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.64982341`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.64982341`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `11.649823413`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 8 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.017004000000000002
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 659.9023671900001
+当前持有的 quoter 的数量: 4342.034428929999
+当前累计的 quoter 收益: 2.0775790600000157
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 10
+当前的收益率: 0.31483127857940174%
+日均收益率: 0.92786950706987%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 8 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016486
+最近一次购入的 Base 的数量: 0.000518
+投入的总成本: 639.9023671900001
+当前持有的 quoter 的数量: 4362.24041213
+当前累计的 quoter 收益: 2.278195060000016
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 11
+当前的收益率: 0.35602228977589845%
+日均收益率: 1.0492674934042034%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 291197829634660
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738101153,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "19.996904100000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622738101167,
+        "id": 291197829634660,
+        "price": "38832.960000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39221.29 , 数量：0.000515 
+限价卖单成交后，可以获取 20.19896435  USDT 收入。
+买入BASE时，花费的成本是 19.9969041 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 8 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.017001000000000002
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 659.8992712900001
+当前持有的 quoter 的数量: 4342.24041213
+当前累计的 quoter 收益: 2.278195060000016
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 11
+当前的收益率: 0.3452337590169633%
+日均收益率: 1.0174368720901057%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016486
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 639.8992712900001
+当前持有的 quoter 的数量: 4362.42923706
+当前累计的 quoter 收益: 2.47011589000002
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 12
+当前的收益率: 0.3860163623909758%
+日均收益率: 1.126141737931534%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015971
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 619.8992712900001
+当前持有的 quoter 的数量: 4382.62727424
+当前累计的 quoter 收益: 2.6712489700000255
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 13
+当前的收益率: 0.4309166172176975%
+日均收益率: 1.2571311361294253%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015456
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 599.8992712900001
+当前持有的 quoter 的数量: 4402.82436684
+当前累计的 quoter 收益: 2.8714374700000285
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 14
+当前的收益率: 0.4786532685438008%
+日均收益率: 1.3963952728992568%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.014941
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 579.8992712900001
+当前持有的 quoter 的数量: 4423.02990357
+当前累计的 quoter 收益: 3.0800701000000323
+当前限价卖单的挂单量: 29
+已经成交的限价卖单的挂单量: 15
+当前的收益率: 0.5311388119437263%
+日均收益率: 1.5495135518617622%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 291197905188876
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738400872,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197905188876,
+        "price": "38907.650000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738400872,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197905188876,
+        "price": "38907.650000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738400872,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197905188876,
+        "price": "38907.650000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738400872,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197905188876,
+        "price": "38907.650000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738400872,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197905188876,
+        "price": "38907.650000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738400872,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197905188876,
+        "price": "38907.650000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291197905188876 
+{
+    "data": "291197905188876",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 291197896872156
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738414033,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291197896872156,
+        "price": "38933.830000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622738414033,
+        "field-amount": "0.000514000000000000",
+        "field-cash-amount": "20.011988620000000000",
+        "field-fees": "0.000001028000000000",
+        "finished-at": 1622738414872,
+        "id": 291197896872156,
+        "price": "38933.830000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39323.17 , 数量：0.000514 
+限价卖单成交后，可以获取 20.21210938  USDT 收入。
+买入BASE时，花费的成本是 20.01198862 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 13 minutes 52 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015455
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 599.9112599100001
+当前持有的 quoter 的数量: 4403.02990357
+当前累计的 quoter 收益: 3.0800701000000323
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 15
+当前的收益率: 0.5134209517024418%
+日均收益率: 1.497015733905608%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291197946567455
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739301212,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "20.003722700000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622739301226,
+        "id": 291197946567455,
+        "price": "38842.180000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39230.6 , 数量：0.000515 
+限价卖单成交后，可以获取 20.203759  USDT 收入。
+买入BASE时，花费的成本是 20.0037227 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 28 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.01597
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 619.9149826100002
+当前持有的 quoter 的数量: 4383.02990357
+当前累计的 quoter 收益: 3.0800701000000323
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 15
+当前的收益率: 0.4968536309659999%
+日均收益率: 1.4066963894046725%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291198030759378
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739600923,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030759378,
+        "price": "38870.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739600923,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030759378,
+        "price": "38870.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739600923,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030759378,
+        "price": "38870.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739600923,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030759378,
+        "price": "38870.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739600923,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030759378,
+        "price": "38870.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739600923,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030759378,
+        "price": "38870.900000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291198030759378 
+{
+    "data": "291198030759378",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 291198030765090
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739614049,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030765090,
+        "price": "38897.600000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739614049,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198030765090,
+        "price": "38897.600000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622739614049,
+        "field-amount": "0.000514000000000000",
+        "field-cash-amount": "19.993366400000000000",
+        "field-fees": "0.000001028000000000",
+        "finished-at": 1622739617319,
+        "id": 291198030765090,
+        "price": "38897.600000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39286.58 , 数量：0.000514 
+限价卖单成交后，可以获取 20.193302120000002  USDT 收入。
+买入BASE时，花费的成本是 19.9933664 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 33 minutes 54 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016484000000000002
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 639.9083490100002
+当前持有的 quoter 的数量: 4363.02990357
+当前累计的 quoter 收益: 3.0800701000000323
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 15
+当前的收益率: 0.48132988181279357%
+日均收益率: 1.3487352204911904%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291198258348839
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740501298,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198258348839,
+        "price": "38849.290000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740501298,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198258348839,
+        "price": "38849.290000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740501298,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198258348839,
+        "price": "38849.290000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740501298,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198258348839,
+        "price": "38849.290000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740501298,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198258348839,
+        "price": "38849.290000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740501298,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198258348839,
+        "price": "38849.290000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291198258348839 
+{
+    "data": "291198258348839",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 291198114377330
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740514485,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198114377330,
+        "price": "38872.010000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740514485,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198114377330,
+        "price": "38872.010000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740514485,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198114377330,
+        "price": "38872.010000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740514485,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198114377330,
+        "price": "38872.010000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740514485,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198114377330,
+        "price": "38872.010000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622740514485,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "20.019085150000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622740524396,
+        "id": 291198114377330,
+        "price": "38872.010000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39260.73 , 数量：0.000515 
+限价卖单成交后，可以获取 20.219275950000004  USDT 收入。
+买入BASE时，花费的成本是 20.01908515 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 49 minutes 1 second 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016999000000000004
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 659.9274341600002
+当前持有的 quoter 的数量: 4343.02990357
+当前累计的 quoter 收益: 3.0800701000000323
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 15
+当前的收益率: 0.46672860386847714%
+日均收益率: 1.270449934603082%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291198232047809
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622741100822,
+        "field-amount": "0.000514000000000000",
+        "field-cash-amount": "20.011736760000000000",
+        "field-fees": "0.000001028000000000",
+        "finished-at": 1622741100840,
+        "id": 291198232047809,
+        "price": "38941.960000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39331.38 , 数量：0.000514 
+限价卖单成交后，可以获取 20.21632932  USDT 收入。
+买入BASE时，花费的成本是 20.01173676 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  8 hours 58 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.017513000000000004
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 679.9391709200002
+当前持有的 quoter 的数量: 4323.02990357
+当前累计的 quoter 收益: 3.0800701000000323
+当前限价卖单的挂单量: 34
+已经成交的限价卖单的挂单量: 15
+当前的收益率: 0.45299200748097884%
+日均收益率: 1.2110811475804244%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 3 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016999000000000004
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 659.9391709200002
+当前持有的 quoter 的数量: 4343.21721827
+当前累计的 quoter 收益: 3.2556480400000325
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 16
+当前的收益率: 0.49332547353742273%
+日均收益率: 1.306822446456749%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 3 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016485000000000003
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 639.9391709200002
+当前持有的 quoter 的数量: 4363.41196109
+当前累计的 quoter 收益: 3.4386541000000292
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 17
+当前的收益率: 0.5373407749140426%
+日均收益率: 1.4234192712954774%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 3 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015971000000000003
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 619.9391709200002
+当前持有的 quoter 的数量: 4383.602316449999
+当前累计的 quoter 收益: 3.6172727000000258
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 18
+当前的收益率: 0.5834883275131546%
+日均收益率: 1.545664443743456%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 3 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015457000000000002
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 599.9391709200002
+当前持有的 quoter 的数量: 4403.795013169999
+当前累计的 quoter 收益: 3.798232660000025
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 19
+当前的收益率: 0.6331029617845217%
+日均收益率: 1.677093938502044%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 291198274214969
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000513000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622741400591,
+        "field-amount": "0.000513000000000000",
+        "field-cash-amount": "19.978420770000000000",
+        "field-fees": "0.000001026000000000",
+        "finished-at": 1622741400604,
+        "id": 291198274214969,
+        "price": "38948.560000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39338.05 , 数量：0.000513 
+限价卖单成交后，可以获取 20.18041965  USDT 收入。
+买入BASE时，花费的成本是 19.97842077 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 3 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.01597
+最近一次购入的 Base 的数量: 0.000513
+投入的总成本: 619.9175916900001
+当前持有的 quoter 的数量: 4383.795013169999
+当前累计的 quoter 收益: 3.798232660000025
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 19
+当前的收益率: 0.6126996089343748%
+日均收益率: 1.6230453216804628%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291410507467829
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622742300740,
+        "field-amount": "0.000514000000000000",
+        "field-cash-amount": "19.986067600000000000",
+        "field-fees": "0.000001028000000000",
+        "finished-at": 1622742300756,
+        "id": 291410507467829,
+        "price": "38883.400000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39272.23 , 数量：0.000514 
+限价卖单成交后，可以获取 20.185926220000002  USDT 收入。
+买入BASE时，花费的成本是 19.9860676 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 18 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016484000000000002
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 639.9036592900001
+当前持有的 quoter 的数量: 4363.795013169999
+当前累计的 quoter 收益: 3.798232660000025
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 19
+当前的收益率: 0.5935632035944791%
+日均收益率: 1.53008505506349%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291198585620208
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622742900552,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "19.998485150000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622742900567,
+        "id": 291198585620208,
+        "price": "38834.680000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39223.03 , 数量：0.000515 
+限价卖单成交后，可以获取 20.199860450000003  USDT 收入。
+买入BASE时，花费的成本是 19.99848515 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 28 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016999000000000004
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 659.90214444
+当前持有的 quoter 的数量: 4343.795013169999
+当前累计的 quoter 收益: 3.798232660000025
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 19
+当前的收益率: 0.5755751351926952%
+日均收益率: 1.4576647813532908%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291198644083357
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622743500431,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198644083357,
+        "price": "38867.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622743500431,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291198644083357,
+        "price": "38867.940000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622743500431,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "20.016989100000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622743504215,
+        "id": 291198644083357,
+        "price": "38867.940000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39256.62 , 数量：0.000515 
+限价卖单成交后，可以获取 20.217159300000002  USDT 收入。
+买入BASE时，花费的成本是 20.0169891 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  9 hours 38 minutes 40 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.017514000000000005
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 679.9191335400001
+当前持有的 quoter 的数量: 4323.795013169999
+当前累计的 quoter 收益: 3.798232660000025
+当前限价卖单的挂单量: 34
+已经成交的限价卖单的挂单量: 19
+当前的收益率: 0.558630059463766%
+日均收益率: 1.3901393184812612%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+No Income ......
+No Income ......
+No Income ......
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 1 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 2 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 3 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.6536865`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 4 times
+ ret_status: error  
+ ret: {'status': 'error', 'err-code': 'account-frozen-balance-insufficient-error', 'err-msg': 'trade account balance is not enough, left: `15.653686503`', 'data': None} 
+Ex IN try_buy_coins: Failed in Post_order_place
+Fail to BUY ! try 5 times
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 43 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016999000000000004
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 659.9191335400001
+当前持有的 quoter 的数量: 4344.009476249999
+当前累计的 quoter 收益: 3.995706640000023
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 20
+当前的收益率: 0.6054842838948885%
+日均收益率: 0.9867557365421452%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 43 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016484000000000002
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 639.9191335400001
+当前持有的 quoter 的数量: 4364.212108209999
+当前累计的 quoter 收益: 4.1813495000000245
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 21
+当前的收益率: 0.6534184213041125%
+日均收益率: 1.0648738418717996%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 43 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015969
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 619.9191335400001
+当前持有的 quoter 的数量: 4384.411680789999
+当前累计的 quoter 收益: 4.363932980000023
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 22
+当前的收益率: 0.7039519743615787%
+日均收益率: 1.1472282062932022%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 43 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015454
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 599.9191335400001
+当前持有的 quoter 的数量: 4404.595490349999
+当前累计的 quoter 收益: 4.530753440000023
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 23
+当前的收益率: 0.7552273609386275%
+日均收益率: 1.2307915343499587%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 43 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.014939000000000001
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 579.9191335400001
+当前持有的 quoter 的数量: 4424.800909149999
+当前累计的 quoter 收益: 4.719183140000023
+当前限价卖单的挂单量: 29
+已经成交的限价卖单的挂单量: 24
+当前的收益率: 0.8137657247472964%
+日均收益率: 1.3261913123993965%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 291201143063379
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622761800829,
+        "field-amount": "0.000512000000000000",
+        "field-cash-amount": "19.983354880000000000",
+        "field-fees": "0.000001024000000000",
+        "finished-at": 1622761800841,
+        "id": 291201143063379,
+        "price": "39029.990000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39420.29 , 数量：0.000512 
+限价卖单成交后，可以获取 20.18318848  USDT 收入。
+买入BASE时，花费的成本是 19.98335488 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 43 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015451000000000001
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 599.90248842
+当前持有的 quoter 的数量: 4404.800909149999
+当前累计的 quoter 收益: 4.719183140000023
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 24
+当前的收益率: 0.7866583705010501%
+日均收益率: 1.2819903655674734%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291413258901727
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762100493,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413258901727,
+        "price": "39073.820000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762100493,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413258901727,
+        "price": "39073.820000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762100493,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413258901727,
+        "price": "39073.820000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762100493,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413258901727,
+        "price": "39073.820000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 3 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762100493,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413258901727,
+        "price": "39073.820000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 4 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762100493,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413258901727,
+        "price": "39073.820000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, cancel order: 291413258901727 
+{
+    "data": "291413258901727",
+    "status": "ok"
+}
+Fail to BUY ! try 1 times
+IN try_buy_coins, order_id: 291201210764748
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762113531,
+        "field-amount": "0.000512000000000000",
+        "field-cash-amount": "20.010859520000000000",
+        "field-fees": "0.000001024000000000",
+        "finished-at": 1622762113543,
+        "id": 291201210764748,
+        "price": "39083.710000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39474.55 , 数量：0.000512 
+限价卖单成交后，可以获取 20.210969600000002  USDT 收入。
+买入BASE时，花费的成本是 20.01085952 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 48 minutes 49 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015963
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 619.9133479400001
+当前持有的 quoter 的数量: 4384.800909149999
+当前累计的 quoter 收益: 4.719183140000023
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 24
+当前的收益率: 0.7612649664153999%
+日均收益率: 1.2333494552361859%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291201252692253
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000511000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762401193,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291201252692253,
+        "price": "39139.290000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000511000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622762401193,
+        "field-amount": "0.000511000000000000",
+        "field-cash-amount": "20.000177190000000000",
+        "field-fees": "0.000001022000000000",
+        "finished-at": 1622762401526,
+        "id": 291201252692253,
+        "price": "39139.290000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39530.68 , 数量：0.000511 
+限价卖单成交后，可以获取 20.200177479999997  USDT 收入。
+买入BASE时，花费的成本是 20.00017719 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  14 hours 53 minutes 39 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016474000000000003
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 639.9135251300002
+当前持有的 quoter 的数量: 4364.800909149999
+当前累计的 quoter 收益: 4.719183140000023
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 24
+当前的收益率: 0.7374720106191393%
+日均收益率: 1.1883396131500708%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291201328140514
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000512000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622763001208,
+        "field-amount": "0.000512000000000000",
+        "field-cash-amount": "20.014330880000000000",
+        "field-fees": "0.000001024000000000",
+        "finished-at": 1622763001272,
+        "id": 291201328140514,
+        "price": "39090.490000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39481.39 , 数量：0.000512 
+限价卖单成交后，可以获取 20.21447168  USDT 收入。
+买入BASE时，花费的成本是 20.01433088 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 3 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016986
+最近一次购入的 Base 的数量: 0.000512
+投入的总成本: 659.9278560100001
+当前持有的 quoter 的数量: 4344.800909149999
+当前累计的 quoter 收益: 4.719183140000023
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 24
+当前的收益率: 0.7151059160516042%
+日均收益率: 1.1395900021553869%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291201276711348
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000511000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622763300941,
+        "field-amount": "0.000511000000000000",
+        "field-cash-amount": "20.004025020000000000",
+        "field-fees": "0.000001022000000000",
+        "finished-at": 1622763300956,
+        "id": 291201276711348,
+        "price": "39156.380000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39547.94 , 数量：0.000511 
+限价卖单成交后，可以获取 20.20899734  USDT 收入。
+买入BASE时，花费的成本是 20.00402502 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 8 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.017497000000000002
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 679.9318810300001
+当前持有的 quoter 的数量: 4324.800909149999
+当前累计的 quoter 收益: 4.719183140000023
+当前限价卖单的挂单量: 34
+已经成交的限价卖单的挂单量: 24
+当前的收益率: 0.6940670487242239%
+日均收益率: 1.0999760260060705%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016986
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 659.9318810300001
+当前持有的 quoter 的数量: 4345.003931699999
+当前累计的 quoter 收益: 4.918180670000023
+当前限价卖单的挂单量: 33
+已经成交的限价卖单的挂单量: 25
+当前的收益率: 0.7452558076636466%
+日均收益率: 1.1746588912386724%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016475
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 639.9318810300001
+当前持有的 quoter 的数量: 4365.202896049999
+当前累计的 quoter 收益: 5.113120000000023
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 26
+当前的收益率: 0.7990100433455852%
+日均收益率: 1.2593853572872622%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015964
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 619.9318810300001
+当前持有的 quoter 的数量: 4385.406655049999
+当前累计的 quoter 收益: 5.312853980000025
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 27
+当前的收益率: 0.8570060909229028%
+日均收益率: 1.350797691472176%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015453
+最近一次购入的 Base 的数量: 0.000511
+投入的总成本: 599.9318810300001
+当前持有的 quoter 的数量: 4405.6065155
+当前累计的 quoter 收益: 5.508689410000027
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 28
+当前的收益率: 0.9182191485710626%
+日均收益率: 1.4472806194640215%
+
+################## Income ##################
+
+IN try_buy_coins, order_id: 291201293424760
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000510000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622763600544,
+        "field-amount": "0.000510000000000000",
+        "field-cash-amount": "20.000068200000000000",
+        "field-fees": "0.000001020000000000",
+        "finished-at": 1622763600555,
+        "id": 291201293424760,
+        "price": "39215.820000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39607.98 , 数量：0.00051 
+限价卖单成交后，可以获取 20.2000698  USDT 收入。
+买入BASE时，花费的成本是 20.0000682 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 13 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015962999999999998
+最近一次购入的 Base 的数量: 0.00051
+投入的总成本: 619.9319492300001
+当前持有的 quoter 的数量: 4385.6065155
+当前累计的 quoter 收益: 5.508689410000027
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 28
+当前的收益率: 0.8885958235968019%
+日均收益率: 1.4005888638128225%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291201605112182
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000510000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622764800792,
+        "field-amount": "0.000510000000000000",
+        "field-cash-amount": "20.012614200000000000",
+        "field-fees": "0.000001020000000000",
+        "finished-at": 1622764800807,
+        "id": 291201605112182,
+        "price": "39240.420000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39632.82 , 数量：0.00051 
+限价卖单成交后，可以获取 20.2127382  USDT 收入。
+买入BASE时，花费的成本是 20.0126142 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 33 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.016472999999999998
+最近一次购入的 Base 的数量: 0.00051
+投入的总成本: 639.9445634300001
+当前持有的 quoter 的数量: 4365.6065155
+当前累计的 quoter 收益: 5.508689410000027
+当前限价卖单的挂单量: 32
+已经成交的限价卖单的挂单量: 28
+当前的收益率: 0.8608072831300162%
+日均收益率: 1.3276996137321422%
+
+################## place_sell_limit ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 38 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015962999999999998
+最近一次购入的 Base 的数量: 0.00051
+投入的总成本: 619.9445634300001
+当前持有的 quoter 的数量: 4385.790457679999
+当前累计的 quoter 收益: 5.680017390000028
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 29
+当前的收益率: 0.9162137592712959%
+日均收益率: 1.405655032336103%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 38 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015452999999999998
+最近一次购入的 Base 的数量: 0.00051
+投入的总成本: 599.9445634300001
+当前持有的 quoter 的数量: 4406.00973363
+当前累计的 quoter 收益: 5.88667914000003
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 30
+当前的收益率: 0.9812038476263102%
+日均收益率: 1.5053628175813838%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 38 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.014942999999999998
+最近一次购入的 Base 的数量: 0.00051
+投入的总成本: 579.9445634300001
+当前持有的 quoter 的数量: 4426.195659849999
+当前累计的 quoter 收益: 6.059991160000031
+当前限价卖单的挂单量: 29
+已经成交的限价卖单的挂单量: 31
+当前的收益率: 1.0449259363962429%
+日均收益率: 1.603125238025346%
+
+################## Income ##################
+
+
+################## Income ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 38 minutes 36 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.014432999999999998
+最近一次购入的 Base 的数量: 0.00051
+投入的总成本: 559.9445634300001
+当前持有的 quoter 的数量: 4446.412819149999
+当前累计的 quoter 收益: 6.264536260000032
+当前限价卖单的挂单量: 28
+已经成交的限价卖单的挂单量: 32
+当前的收益率: 1.1187779414494083%
+日均收益率: 1.7164289747359345%
+
+################## Income ##################
+
+No Income ......
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291413837751417
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622766001190,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413837751417,
+        "price": "38879.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:submitted 
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 0 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622766001190,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413837751417,
+        "price": "38879.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 1 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622766001190,
+        "field-amount": "0.0",
+        "field-cash-amount": "0.0",
+        "field-fees": "0.0",
+        "finished-at": 0,
+        "id": 291413837751417,
+        "price": "38879.990000000000000000",
+        "source": "spot-api",
+        "state": "submitted",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state: submitted 
+IN try_buy_coins, retry count= 2 
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000514000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622766001190,
+        "field-amount": "0.000514000000000000",
+        "field-cash-amount": "19.984314860000000000",
+        "field-fees": "0.000001028000000000",
+        "finished-at": 1622766005675,
+        "id": 291413837751417,
+        "price": "38879.990000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+Success to BUY !
+下限价卖单, 价格： 39268.79 , 数量：0.000514 
+限价卖单成交后，可以获取 20.18415806  USDT 收入。
+买入BASE时，花费的成本是 19.98431486 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  15 hours 53 minutes 43 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.014946999999999998
+最近一次购入的 Base 的数量: 0.000514
+投入的总成本: 579.9288782900002
+当前持有的 quoter 的数量: 4426.412819149999
+当前累计的 quoter 收益: 6.264536260000032
+当前限价卖单的挂单量: 29
+已经成交的限价卖单的挂单量: 32
+当前的收益率: 1.080224919730136%
+日均收益率: 1.6310125834836295%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291201780327249
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000516000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622766601391,
+        "field-amount": "0.000516000000000000",
+        "field-cash-amount": "20.009497860000000000",
+        "field-fees": "0.000001032000000000",
+        "finished-at": 1622766601407,
+        "id": 291201780327249,
+        "price": "38785.570000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39173.43 , 数量：0.000516 
+限价卖单成交后，可以获取 20.213489879999997  USDT 收入。
+买入BASE时，花费的成本是 20.00949786 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  16 hours 3 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015462999999999998
+最近一次购入的 Base 的数量: 0.000516
+投入的总成本: 599.9383761500002
+当前持有的 quoter 的数量: 4406.412819149999
+当前累计的 quoter 收益: 6.264536260000032
+当前限价卖单的挂单量: 30
+已经成交的限价卖单的挂单量: 32
+当前的收益率: 1.0441966223600496%
+日均收益率: 1.5604162819224154%
+
+################## place_sell_limit ##################
+
+No Income ......
+IN try_buy_coins, order_id: 291413921543465
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000515000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622766901063,
+        "field-amount": "0.000515000000000000",
+        "field-cash-amount": "19.983019700000000000",
+        "field-fees": "0.000001030000000000",
+        "finished-at": 1622766901076,
+        "id": 291413921543465,
+        "price": "38801.980000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
+IN try_buy_coins, order_state:filled 
+Success to BUY !
+下限价卖单, 价格： 39190.0 , 数量：0.000515 
+限价卖单成交后，可以获取 20.182850000000002  USDT 收入。
+买入BASE时，花费的成本是 19.9830197 USDT 
+
+################## place_sell_limit ##################
+币种: btcusdt
+时间间隔: 5 分钟
+计划运行时长: 365 天
+启动时间: 2021-06-03-08-26-24 
+已运行时长:  16 hours 8 minutes 37 seconds 
+下限价卖单时的价格增加率: 0.01
+每次投入 quoter 数量: 20.0
+当前持有的 Base 的数量: 0.015978
+最近一次购入的 Base 的数量: 0.000515
+投入的总成本: 619.9213958500002
+当前持有的 quoter 的数量: 4386.412819149999
+当前累计的 quoter 收益: 6.264536260000032
+当前限价卖单的挂单量: 31
+已经成交的限价卖单的挂单量: 32
+当前的收益率: 1.010537190995072%
+日均收益率: 1.502321408571919%
+
+################## place_sell_limit ##################
+
+No Income ......
+No Income ......
+IN try_buy_coins, order_id: 291201897764486
+{
+    "data": {
+        "account-id": 4446371,
+        "amount": "0.000516000000000000",
+        "canceled-at": 0,
+        "client-order-id": "",
+        "created-at": 1622767501011,
+        "field-amount": "0.000516000000000000",
+        "field-cash-amount": "20.009324160000000000",
+        "field-fees": "0.000001032000000000",
+        "finished-at": 1622767501025,
+        "id": 291201897764486,
+        "price": "38777.760000000000000000",
+        "source": "spot-api",
+        "state": "filled",
+        "symbol": "btcusdt",
+        "type": "buy-limit"
+    },
+    "status": "ok"
+}
