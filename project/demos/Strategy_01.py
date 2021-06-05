@@ -394,7 +394,7 @@ class Strategy_01(Strategy_Base):
             period=reference_period,
             size=1
         )
-        if not ret_data:
+        if ret_data:
             ret_item = ret_data[0]
             last_reference_price_data = {
                 "open_price": float(ret_item["open"]),
