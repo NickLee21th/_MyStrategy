@@ -277,7 +277,7 @@ def Get_v1_order_orders_orderId(
         headers=None,
         params=None
     )
-    anyCall.print_json(ret)
+    # anyCall.print_json(ret)
     return ret
 
 
@@ -327,4 +327,50 @@ def Post_v1_order_orders_orderId_submitcancel(
         params=None
     )
     anyCall.print_json(ret)
+    return ret
+
+# 账户余额
+# API Key 权限：读取
+# 限频值（NEW）：100次/2s
+# 查询指定账户的余额，支持以下账户：
+# spot：现货账户， margin：逐仓杠杆账户，otc：OTC 账户，point：点卡账户，
+# super-margin：全仓杠杆账户, investment: C2C杠杆借出账户, borrow: C2C杠杆借入账户
+#
+# HTTP 请求
+# GET /v1/account/accounts/{account-id}/balance
+# 请求参数
+# 参数名称      是否必须	类型      描述
+# account-id    true	string  account-id，填在 path 中，取值参考 GET /v1/account/accounts
+# 响应数据
+# 参数名称  是否必须	数据类型	描述	    取值范围
+# id        true	long	账户 ID
+# state     true	string	账户状态	working：正常 lock：账户被锁定
+# type      true	string	账户类型	spot：现货账户, margin：逐仓杠杆账户, otc：OTC 账户,
+#                                   point：点卡账户, super-margin：全仓杠杆账户, investment: C2C杠杆借出账户,
+#                                   borrow: C2C杠杆借入账户，矿池账户: minepool, ETF账户: etf, 抵押借贷账户: crypto-loans
+# list      false   Array
+# list字段说明
+# 参数名称	是否必须	数据类型	描述  取值范围
+# balance	true	string	余额
+# currency	true	string	币种
+# type	    true	string	类型  trade: 交易余额，frozen: 冻结余额, loan: 待还借贷本金, interest: 待还借贷利息,
+#                                lock: 锁仓, bank: 储蓄
+# 获取账户余额
+def Get_v1_account_accounts_accountId_balance(
+        access_key="",
+        secret_key="",
+        host_path="https://api.huobi.pro",
+        accountId="",
+):
+    interface_path = "/v1/account/accounts/%s/balance" % accountId
+    anyCall = HbgAnyCall()
+    ret = anyCall.callApiMethod(
+        access_key=access_key, secret_key=secret_key,
+        host_path=host_path,
+        interface_path=interface_path,
+        method_type="GET",
+        headers=None,
+        params=None
+    )
+    # anyCall.print_json(ret)
     return ret

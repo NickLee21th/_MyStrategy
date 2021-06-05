@@ -1,6 +1,7 @@
 import logging
 import time
 import json
+import os.path
 from project.demos.Base_Api import *
 
 class Strategy_Base:
@@ -10,6 +11,10 @@ class Strategy_Base:
     buy_min_quoter_amount = 6  # 买入时最小的 quoter 下单数量
     run_days = 2
     bPrintLog = True
+    log_file_path = ""
+    log_folder_name = ""
+    log_file_template = ""
+    log_dt_stamp = ""
 
     # 等待至下一个X分钟的开始
     def wait_to_next_X_min_begin(self, x=5):
@@ -63,7 +68,11 @@ class Strategy_Base:
         logger.setLevel(level=logging.INFO)
         dt_value = dt_stamp
         log_file_name = log_file_template % (dt_value, self.symbol)
-        handler = logging.FileHandler(log_folder_name+log_file_name)
+        self.log_file_path = log_folder_name+log_file_name
+        self.log_folder_name = log_folder_name
+        self.log_file_template = log_file_template
+        self.log_dt_stamp = dt_stamp
+        handler = logging.FileHandler(self.log_file_path)
         handler.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
@@ -71,6 +80,12 @@ class Strategy_Base:
         self.demo_logger = logger
 
     def log_print(self, log, ignore=False, end=None):
+        if not os.path.isfile(self.log_file_path):
+            self.logger_init(
+                log_folder_name=self.log_folder_name,
+                log_file_template=self.log_file_template,
+                dt_stamp=self.log_dt_stamp
+            )
         if not self.bPrintLog:
             return
         if ignore:

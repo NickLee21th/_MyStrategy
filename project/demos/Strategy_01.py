@@ -26,6 +26,7 @@ class Strategy_01(Strategy_Base):
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
     strategy_launch_time = 0
+    reference_period = "60min"
 
     test_k_line_data_list = []
     test_k_line_data_index = 999  # 1999
@@ -120,6 +121,13 @@ class Strategy_01(Strategy_Base):
         try_count = 0
         b_SuccessToBuy = False
         try:
+            # 如果余额不足，则直接返回
+            account_banlance = self.get_accounts_balance()
+            if account_banlance:
+                if account_banlance < self.buy_min_quoter_amount:
+                    self.log_print("当前 usdt 余额 %s 小于 最小投资额 %s , 暂停投资。"
+                                   % (account_banlance, self.buy_min_quoter_amount))
+                    return False
             while not b_SuccessToBuy and try_count < 5:
                 try_count += 1
                 b_SuccessToBuy = self.try_buy_coins()
@@ -341,6 +349,76 @@ class Strategy_01(Strategy_Base):
         self.log_print("\n################## %s ##################\n" % cur_status)
         return True
 
+    # 获取指定币种的可用余额
+    def get_accounts_balance(
+            self,
+            currency="usdt",
+            type_value="trade"
+    ):
+        try:
+            accounts_balance = 0.0
+            b_find = False
+            count = 0
+            while count < 5:
+                count += 1
+                ret = Get_v1_account_accounts_accountId_balance(
+                    access_key=self.access_key,
+                    secret_key=self.secret_key,
+                    accountId=self.account_id,
+                )
+                if ret["status"] != "ok":
+                    time.sleep(2)
+                else:
+                    assert ret["data"]["id"] == int(self.account_id)
+                    data_list = ret["data"]["list"]
+                    for item in data_list:
+                        if item["currency"] == currency and item["type"] == type_value:
+                            accounts_balance = float(item["balance"])
+                            b_find = True
+                            break
+                    break
+            if b_find:
+                ret_value = accounts_balance
+            else:
+                ret_value = False
+            return ret_value
+        except Exception as ex:
+            self.log_print("Exception in get_accounts_balance!")
+            self.log_print("ex: %s" % ex)
+            return False
+
+    # 获取最近一次参考价
+    def get_last_reference_price(self, reference_period="60min"):
+        ret_data = self.get_kline_data(
+            symbol=self.symbol,
+            period=reference_period,
+            size=1
+        )
+        if not ret_data:
+            ret_item = ret_data[0]
+            last_reference_price_data = {
+                "open_price": float(ret_item["open"]),
+                "dt": TimeStamp_to_datetime(timeStamp=ret_item["id"])
+            }
+        else:
+            self.log_print("Failed to get_last_reference_price! ")
+            last_reference_price_data = None
+        return last_reference_price_data
+
+    # 依据参考价判定是否可以进行投资
+    def is_suitable_for_investment(self, cur_price, reference_period):
+        be_suitable = False
+        last_reference_price_data \
+            = self.get_last_reference_price(reference_period=reference_period)
+        if last_reference_price_data is not None:
+            last_reference_price = last_reference_price_data["open_price"]
+            self.log_print("IN is_suitable_for_investment, cur_price: %s " % cur_price)
+            self.log_print("IN is_suitable_for_investment, last_reference_price: %s " % last_reference_price)
+            if cur_price > last_reference_price:
+                be_suitable = True
+            self.log_print("IN is_suitable_for_investment, be_suitable = %s" % be_suitable)
+        return be_suitable
+
     # 获取近3次的K线数据
     def get_3_kline_data(self, symbol, period="5min"):
         self.wait_to_next_X_min_begin(x=get_period_int(period))
@@ -430,6 +508,14 @@ class Strategy_01(Strategy_Base):
                     k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
                     # 处理成交的限价卖单
                     self.dispose_sell_limit_orders(pre_1_k_line_data=k_line_data_list[1])
+                    # 依据参考价判定是否可以进行投资
+                    be_suitable_for_investment = self.is_suitable_for_investment(
+                        cur_price=float(k_line_data_list[0]["open_price"]),
+                        reference_period=self.reference_period
+                    )
+                    if not be_suitable_for_investment:
+                        # 如果现在不宜投资，则暂时放弃。
+                        continue
                     # 根据K线价格来投资
                     pre_2_change = k_line_data_list[2]["change"]
                     pre_1_change = k_line_data_list[1]["change"]
@@ -664,33 +750,9 @@ def try_buy_coins():
     return bSuccessToBuy
 
 
+
 if __name__ == '__main__':
-    #print(Show_delta_time(delta_time=(1*24*60*60+5*60*60+27*60+16)))
-    # delta_time = 1*24*60*60+5*60*60+27*60+16
-    # already_run_days = delta_time / (24 * 60 * 60)
-    # print("已经运行 %s 天" % already_run_days)
-    # print(TimeStamp_to_datetime(time.time()))
-    # ret = Get_market_depth(
-    #     symbol="ethusdt"
-    # )
-    # first_buy_price = ret["tick"]["bids"][0][0]
-    # print(first_buy_price)
-    # first_sell_price = ret["tick"]["asks"][0][0]
-    # print(first_sell_price)
-
     bench_earn_money()
-
-    # bSuccessToBuy = False
-    # count = 0
-    # while not bSuccessToBuy and count < 5:
-    #     count += 1
-    #     bSuccessToBuy = try_buy_coins()
-    #     if bSuccessToBuy:
-    #         print("Success to BUY !")
-    #         break
-    #     else:
-    #         time.sleep(1)
-    #         print("Fail to BUY ! retry %s" % count)
 
     # symbol = "btcusdt"
     # period = "5min"
