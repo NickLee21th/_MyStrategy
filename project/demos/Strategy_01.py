@@ -412,8 +412,10 @@ class Strategy_01(Strategy_Base):
             = self.get_last_reference_price(reference_period=reference_period)
         if last_reference_price_data is not None:
             last_reference_price = last_reference_price_data["open_price"]
+            last_reference_dt = last_reference_price_data["dt"]
             self.log_print("IN is_suitable_for_investment, cur_price: %s " % cur_price)
             self.log_print("IN is_suitable_for_investment, last_reference_price: %s " % last_reference_price)
+            self.log_print("IN is_suitable_for_investment, last_reference_dt: %s " % last_reference_dt)
             if cur_price > last_reference_price:
                 be_suitable = True
             self.log_print("IN is_suitable_for_investment, be_suitable = %s" % be_suitable)
