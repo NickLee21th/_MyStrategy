@@ -26,7 +26,7 @@ class Strategy_01(Strategy_Base):
     secret_key = SECRET_KEY
     account_id = ACCOUNT_ID  # spot
     strategy_launch_time = 0
-    reference_period = "60min"
+    reference_period = "1day"  # "60min"
 
     test_k_line_data_list = []
     test_k_line_data_index = 999  # 1999
@@ -754,7 +754,23 @@ def try_buy_coins():
 
 
 if __name__ == '__main__':
-    bench_earn_money()
+    # bench_earn_money()
+
+    my_strategy = Strategy_01()
+    my_strategy.init_all()
+    last_reference_price_data = my_strategy.get_last_reference_price(
+        reference_period="1day"
+    )
+    today_price = last_reference_price_data["open_price"]
+    print("today_price: %s" % today_price)
+    current_price_data = my_strategy.get_last_reference_price(
+        reference_period="1min"
+    )
+    cur_price = current_price_data["open_price"]
+    print("cur_price: %s" % cur_price)
+    cur_rate = (cur_price-today_price) / today_price
+    cur_rate = round(cur_rate, 4)
+    print("cur_rate: %s%%" % (cur_rate*100))
 
     # symbol = "btcusdt"
     # period = "5min"
