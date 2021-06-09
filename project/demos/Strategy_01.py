@@ -511,13 +511,13 @@ class Strategy_01(Strategy_Base):
                     # 处理成交的限价卖单
                     self.dispose_sell_limit_orders(pre_1_k_line_data=k_line_data_list[1])
                     # 依据参考价判定是否可以进行投资
-                    be_suitable_for_investment = self.is_suitable_for_investment(
-                        cur_price=float(k_line_data_list[0]["open_price"]),
-                        reference_period=self.reference_period
-                    )
-                    if not be_suitable_for_investment:
-                        # 如果现在不宜投资，则暂时放弃。
-                        continue
+                    # be_suitable_for_investment = self.is_suitable_for_investment(
+                    #     cur_price=float(k_line_data_list[0]["open_price"]),
+                    #     reference_period=self.reference_period
+                    # )
+                    # if not be_suitable_for_investment:
+                    #     # 如果现在不宜投资，则暂时放弃。
+                    #     continue
                     # 根据K线价格来投资
                     pre_2_change = k_line_data_list[2]["change"]
                     pre_1_change = k_line_data_list[1]["change"]
@@ -636,7 +636,7 @@ def bench_earn_money():
     # period = "30min"
     # period = "60min"
     # period = "4hour"
-    size = int(1*24*60/5)
+    size = int(6*24*60/5)
     buy_min_quoter_amount = 6.0  #* 12 * 4
     # buy_min_quoter_amount = 4*60.0
     for symbol_item in symbol_list:
@@ -754,23 +754,23 @@ def try_buy_coins():
 
 
 if __name__ == '__main__':
-    # bench_earn_money()
+    bench_earn_money()
 
-    my_strategy = Strategy_01()
-    my_strategy.init_all()
-    last_reference_price_data = my_strategy.get_last_reference_price(
-        reference_period="1day"
-    )
-    today_price = last_reference_price_data["open_price"]
-    print("today_price: %s" % today_price)
-    current_price_data = my_strategy.get_last_reference_price(
-        reference_period="1min"
-    )
-    cur_price = current_price_data["open_price"]
-    print("cur_price: %s" % cur_price)
-    cur_rate = (cur_price-today_price) / today_price
-    cur_rate = round(cur_rate, 4)
-    print("cur_rate: %s%%" % (cur_rate*100))
+    # my_strategy = Strategy_01()
+    # my_strategy.init_all()
+    # last_reference_price_data = my_strategy.get_last_reference_price(
+    #     reference_period="1day"
+    # )
+    # today_price = last_reference_price_data["open_price"]
+    # print("today_price: %s" % today_price)
+    # current_price_data = my_strategy.get_last_reference_price(
+    #     reference_period="1min"
+    # )
+    # cur_price = current_price_data["open_price"]
+    # print("cur_price: %s" % cur_price)
+    # cur_rate = (cur_price-today_price) / today_price
+    # cur_rate = round(cur_rate, 4)
+    # print("cur_rate: %s%%" % (cur_rate*100))
 
     # symbol = "btcusdt"
     # period = "5min"
