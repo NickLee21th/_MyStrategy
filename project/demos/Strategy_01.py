@@ -302,7 +302,7 @@ class Strategy_01(Strategy_Base):
                 # 当前持有的 Base 的数量 减少
                 self.holding_base_amount -= self.cur_buy_base_amount
                 # 投入的总成本(quoter) 减少
-                self.quoter_total_cost -= self.buy_min_quoter_amount
+                self.quoter_total_cost -= self.cur_quoter_income
                 # 当前持有的 quoter 的数量 增加
                 self.holding_quoter_amount += cur_quoter_income
                 # 当前累计的 quoter 收益 增加
@@ -339,7 +339,7 @@ class Strategy_01(Strategy_Base):
                 count += 1
         self.log_print("当前限价卖单的挂单量: %s" % count)
         self.log_print("已经成交的限价卖单的挂单量: %s" % (len(self.sell_limit_order_list) - count))
-        if self.quoter_total_cost != 0.0:
+        if self.quoter_total_cost > 0.0:
             income_rate = float(self.quoter_accumulated_income) / float(self.quoter_total_cost)
             self.log_print("当前的收益率: %s%%" % (income_rate * 100.0))
             if delta_time != 0.0:
