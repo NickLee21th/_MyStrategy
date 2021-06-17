@@ -18,6 +18,7 @@ class Strategy_01(Strategy_Base):
     cur_buy_quoter_amount = 0.0  # 最近一次购入 BASE 成功后，花费的 quoter 的数量
     cur_buy_base_fees_amount = 0.0  # 最近一次购入 BASE 成功后，花费的 手续费 base 的数量
     quoter_total_cost = 0.0  # 投入的总成本(quoter)
+    max_quoter_total_cost = 0.0  # 投入的最高总成本(quoter)
     holding_quoter_amount = 5000.0  # 当前持有的 quoter 的数量
     quoter_accumulated_income = 0.0  # 当前累计的 quoter 收益
     increasing_price_rate = 0.01  # 下限价卖单时的价格增加率
@@ -36,6 +37,7 @@ class Strategy_01(Strategy_Base):
         self.cur_buy_base_amount = 0.0  # 最近一次购入的 Base 的数量
         self.cur_buy_base_price = 0.0  # 最近一次购入的 Base 的价格
         self.quoter_total_cost = 0.0  # 投入的总成本(quoter)
+        self.max_quoter_total_cost = 0.0  # 投入的最高总成本(quoter)
         self.holding_quoter_amount = 5000.0  # 当前持有的 quoter 的数量
         self.quoter_accumulated_income = 0.0  # 当前累计的 quoter 收益
         self.increasing_price_rate = 0.01  # 下限价卖单时的价格增加率
@@ -142,6 +144,8 @@ class Strategy_01(Strategy_Base):
                 self.holding_base_amount += self.cur_buy_base_amount
                 # 投入的总成本(quoter) 增加
                 self.quoter_total_cost += self.cur_buy_quoter_amount
+                if self.max_quoter_total_cost < self.quoter_total_cost:
+                    self.max_quoter_total_cost = self.quoter_total_cost
                 # 当前持有的 quoter 的数量 减少
                 self.holding_quoter_amount -= self.buy_min_quoter_amount
             return b_SuccessToBuy
@@ -331,6 +335,7 @@ class Strategy_01(Strategy_Base):
         self.log_print("当前持有的 Base 的数量: %s" % self.holding_base_amount)
         self.log_print("最近一次购入的 Base 的数量: %s" % self.cur_buy_base_amount)
         self.log_print("投入的总成本: %s" % self.quoter_total_cost)
+        self.log_print("投入的最高总成本: %s" % self.max_quoter_total_cost)
         self.log_print("当前持有的 quoter 的数量: %s" % self.holding_quoter_amount)
         self.log_print("当前累计的 quoter 收益: %s" % self.quoter_accumulated_income)
         count = 0
@@ -595,7 +600,7 @@ def earn_method(symbol, period, size, buy_min_quoter_amount, increasing_price_ra
     print("每次投入 quoter 数量: %s" % my_strategy.buy_min_quoter_amount)
     print("当前持有的 Base 的数量: %s" % my_strategy.holding_base_amount)
     print("最近一次购入的 Base 的数量: %s" % my_strategy.cur_buy_base_amount)
-    print("投入的总成本: %s" % my_strategy.quoter_total_cost)
+    print("当前投入的总成本: %s" % my_strategy.quoter_total_cost)
     print("当前持有的 quoter 的数量: %s" % my_strategy.holding_quoter_amount)
     print("当前累计的 quoter 收益: %s" % my_strategy.quoter_accumulated_income)
     count = 0
@@ -605,9 +610,11 @@ def earn_method(symbol, period, size, buy_min_quoter_amount, increasing_price_ra
     print("当前限价卖单的挂单量: %s" % count)
     print("已经成交的限价卖单的挂单量: %s" % (len(my_strategy.sell_limit_order_list) - count))
     income_rate = float(my_strategy.quoter_accumulated_income) / float(my_strategy.quoter_total_cost)
-    print("当前的收益率: %s%%" % (income_rate * 100.0))
+    print("当前的收益率: (当前累计的 quoter 收益)/(当前投入的总成本)\n%s%%" % (income_rate * 100.0))
     income_rate_by_day = income_rate / run_days
     print("日均收益率: %s%%" % (income_rate_by_day * 100.0))
+    income_by_day = my_strategy.quoter_accumulated_income / run_days
+    print("日均收益: %s" % income_by_day)
     return (
         my_strategy.quoter_total_cost,
         my_strategy.quoter_accumulated_income,
@@ -620,11 +627,11 @@ def bench_earn_money():
     symbol_list = [
         #{"symbol": "btcusdt", "increasing_price_rate": 0.01},
         {"symbol": "ethusdt", "increasing_price_rate": 0.01},
-        #{"symbol": "ethusdt", "increasing_price_rate": 0.02},
+        {"symbol": "ethusdt", "increasing_price_rate": 0.001},
         #{"symbol": "ethusdt", "increasing_price_rate": 0.04},
         #{"symbol": "ethusdt", "increasing_price_rate": 0.08},
         #{"symbol": "dotusdt", "increasing_price_rate": 0.01},
-        {"symbol": "linkusdt", "increasing_price_rate": 0.01},
+        #{"symbol": "linkusdt", "increasing_price_rate": 0.01},
         #{"symbol": "ltcusdt", "increasing_price_rate": 0.01},
     ]
     total_quoter_total_cost = 0.0
