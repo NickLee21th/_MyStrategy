@@ -75,6 +75,8 @@ class Strategy_01(Strategy_Base):
             self.holding_base_amount += self.cur_buy_base_amount
             # 投入的总成本(quoter) 增加
             self.quoter_total_cost += self.buy_min_quoter_amount
+            if self.max_quoter_total_cost < self.quoter_total_cost:
+                self.max_quoter_total_cost = self.quoter_total_cost
             # 当前持有的 quoter 的数量 减少
             self.holding_quoter_amount -= self.buy_min_quoter_amount
             return True
@@ -306,7 +308,7 @@ class Strategy_01(Strategy_Base):
                 # 当前持有的 Base 的数量 减少
                 self.holding_base_amount -= self.cur_buy_base_amount
                 # 投入的总成本(quoter) 减少
-                self.quoter_total_cost -= self.cur_quoter_income
+                self.quoter_total_cost -= cur_quoter_income
                 # 当前持有的 quoter 的数量 增加
                 self.holding_quoter_amount += cur_quoter_income
                 # 当前累计的 quoter 收益 增加
@@ -490,7 +492,7 @@ class Strategy_01(Strategy_Base):
                     # 模拟下限价卖单
                     self.simulate_place_sell_limit(k_line_data=cur_k_line_data)
         except Exception as ex:
-            self.log_print("Exception in do_strategy_execute")
+            self.log_print("Exception in simulate_do_strategy_execute")
             self.log_print("ex: %s" % ex)
 
     # 执行策略
@@ -601,6 +603,7 @@ def earn_method(symbol, period, size, buy_min_quoter_amount, increasing_price_ra
     print("当前持有的 Base 的数量: %s" % my_strategy.holding_base_amount)
     print("最近一次购入的 Base 的数量: %s" % my_strategy.cur_buy_base_amount)
     print("当前投入的总成本: %s" % my_strategy.quoter_total_cost)
+    print("投入的最高总成本: %s" % my_strategy.max_quoter_total_cost)
     print("当前持有的 quoter 的数量: %s" % my_strategy.holding_quoter_amount)
     print("当前累计的 quoter 收益: %s" % my_strategy.quoter_accumulated_income)
     count = 0
@@ -627,9 +630,9 @@ def bench_earn_money():
     symbol_list = [
         #{"symbol": "btcusdt", "increasing_price_rate": 0.01},
         {"symbol": "ethusdt", "increasing_price_rate": 0.01},
-        {"symbol": "ethusdt", "increasing_price_rate": 0.001},
-        #{"symbol": "ethusdt", "increasing_price_rate": 0.04},
-        #{"symbol": "ethusdt", "increasing_price_rate": 0.08},
+        {"symbol": "sushiusdt", "increasing_price_rate": 0.01},
+        {"symbol": "linkusdt", "increasing_price_rate": 0.01},
+        {"symbol": "uniusdt", "increasing_price_rate": 0.01},
         #{"symbol": "dotusdt", "increasing_price_rate": 0.01},
         #{"symbol": "linkusdt", "increasing_price_rate": 0.01},
         #{"symbol": "ltcusdt", "increasing_price_rate": 0.01},
