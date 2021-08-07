@@ -32,9 +32,9 @@ if __name__ == '__main__':
         my_strategy.increasing_price_rate = increasing_price_rate
         my_strategy.do_strategy_execute(
             symbol=symbol,
-            period=period,
+            #period=period,
             run_days=run_days,
-            buy_min_quoter_amount=buy_min_quoter_amount,
+            #buy_min_quoter_amount=buy_min_quoter_amount,
             dt_stamp=dt_stamp
         )
     except Exception as ex:
