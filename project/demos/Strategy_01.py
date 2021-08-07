@@ -551,9 +551,12 @@ class Strategy_01(Strategy_Base):
             self.log_print("ex: %s" % ex)
 
     # 获取运行时的配置信息
-    def get_run_time_configuration(self):
+    def get_run_time_configuration(
+            self,
+            config_file_name="run_time_config_Strategy_01.yaml"
+    ):
         run_time_config_data = read_yaml(
-            filename="run_time_config_Strategy_02.yaml"
+            filename=config_file_name
         )
         return run_time_config_data["run_time_config"]["symbol_list"][self.symbol]
 
