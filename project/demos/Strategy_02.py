@@ -10,8 +10,8 @@ from multiprocessing import Pool, Manager
 from project.demos.config import *
 from project.demos.Strategy_Base import *
 
-# 现货的策略
-class Strategy_01(Strategy_Base):
+# 合约的策略
+class Strategy_02(Strategy_Base):
     holding_base_amount = 0.0  # 当前持有的 Base 的数量
     cur_buy_base_amount = 0.0  # 最近一次购入的 Base 的数量
     cur_buy_base_price = 0.0  # 最近一次购入的 Base 的价格
@@ -85,23 +85,6 @@ class Strategy_01(Strategy_Base):
             self.log_print("ex: %s" % ex)
             return False
 
-    # 模拟下限价卖单
-    def simulate_place_sell_limit(self, k_line_data):
-        try:
-            cur_open = k_line_data["open_price"]
-            price_in_sell_limit = float(cur_open) * (1.0 + self.increasing_price_rate)
-            sell_limit_order = {
-                "price": price_in_sell_limit,
-                "amount": self.cur_buy_base_amount,
-                "finish": False
-            }
-            self.sell_limit_order_list.append(sell_limit_order)
-            return True
-        except Exception as ex:
-            self.log_print("Exception in simulate_place_sell_limit!")
-            self.log_print("ex: %s" % ex)
-            return False
-
     # 处理成交的限价卖单
     def simulate_dispose_sell_limit_orders(self, pre_1_k_line_data):
         last_high_price = pre_1_k_line_data["high_price"]
@@ -120,8 +103,8 @@ class Strategy_01(Strategy_Base):
                 sell_limit_order["finish"] = True
         return True
 
-    # 买入Base
-    def buy_base(self, k_line_data):
+    # 买入合约
+    def buy_contract(self, k_line_data, invest_direction):
         try_count = 0
         b_SuccessToBuy = False
         try:
@@ -134,7 +117,10 @@ class Strategy_01(Strategy_Base):
                     return False
             while not b_SuccessToBuy and try_count < 5:
                 try_count += 1
-                b_SuccessToBuy = self.try_buy_coins()
+                b_SuccessToBuy = self.try_buy_contract(
+                    k_line_data=k_line_data,
+                    invest_direction=invest_direction
+                )
                 if b_SuccessToBuy:
                     self.log_print("Success to BUY !")
                     break
@@ -156,8 +142,8 @@ class Strategy_01(Strategy_Base):
             self.log_print("ex: %s" % ex)
             return False
 
-    # 尝试买入 Base
-    def try_buy_coins(self):
+    # 尝试买入合约
+    def try_buy_contract(self, k_line_data, invest_direction):
         bSuccessToBuy = False
         cur_buy_base_price = 0.0
         cur_buy_base_amount = 0.0
@@ -165,94 +151,40 @@ class Strategy_01(Strategy_Base):
         cur_buy_base_fees_amount = 0.0
         try:
             buy_min_quoter_amount = self.buy_min_quoter_amount
-            # 询价
-            ret = Get_market_depth(
-                symbol=self.symbol
-            )
-            if ret["status"] != "ok":
-                self.log_print(" ret_status: %s  \n ret: %s "
-                               % (ret["status"], ret))
-                raise Exception("Failed in Get_market_depth")
-            first_buy_price = ret["tick"]["bids"][0][0]
-            first_sell_price = ret["tick"]["asks"][0][0]
-            cur_buy_base_price = (float(first_buy_price) + float(first_sell_price)) / 2.0
-            cur_buy_base_amount = buy_min_quoter_amount / float(cur_buy_base_price)
-            cur_buy_base_price = round(cur_buy_base_price, get_price_precision(self.symbol))
-            cur_buy_base_amount = round(cur_buy_base_amount, get_amount_precision(self.symbol))
-            # 下限价买单
-            ret = Post_order_place(
-                access_key=self.access_key,
-                secret_key=self.secret_key,
-                account_id=self.account_id,
-                symbol=self.symbol,
-                type_value="buy-limit",
-                amount=cur_buy_base_amount,
-                price=cur_buy_base_price
-            )
-            if ret["status"] != "ok":
-                self.log_print(" ret_status: %s  \n ret: %s "
-                               % (ret["status"], ret))
-                raise Exception("Failed in Post_order_place")
-            # 查询订单状态
-            order_id = ret["data"]
-            self.log_print("IN try_buy_coins, order_id: %s" % order_id)
-            ret = Get_v1_order_orders_orderId(
-                access_key=ACCESS_KEY,
-                secret_key=SECRET_KEY,
-                order_id=order_id,
-            )
-            if ret["status"] != "ok":
-                self.log_print(" ret_status: %s  \n ret: %s "
-                               % (ret["status"], ret))
-                raise Exception("Failed in Get_v1_order_orders_orderId")
-            order_state = ret["data"]["state"]
-            self.log_print("IN try_buy_coins, order_state:%s " % order_state)
-            if order_state == "filled":
+            status = "error"
+            retry_count = 0
+            contract_volume = 1
+            direction_value = "buy"
+            contract_price = 0.0
+            if invest_direction != "up":
+                direction_value = "sell"
+            while status != "ok" and retry_count < MAX_RETRY_COUNT:
+                retry_count += 1
+                ret = Post_LinearSwapApi_v1_SwapCross_Order(
+                    access_key=self.access_key,
+                    secret_key=self.secret_key,
+                    contract_code=self.symbol,  # 合约代码
+                    price=None,  # 价格
+                    volume=contract_volume,  # 委托数量(张)
+                    direction=direction_value,  # 仓位方向
+                    offset="open",  # 开平方向
+                    lever_rate=3,  # 杠杆倍数
+                    order_price_type="post_only",  # 订单报价类型
+                    tp_trigger_price=None,  # 止盈触发价格
+                    tp_order_price=None,  # 止盈委托价格
+                    tp_order_price_type=None,  # 止盈委托类型
+                    sl_trigger_price=None,  # 止损触发价格
+                    sl_order_price=None,  # 止损委托价格
+                    sl_order_price_type=None  # 止损委托类型
+                )
+                status = ret["status"]
+                if status != "ok":
+                    time.sleep(1)
+            if status == "ok":
                 bSuccessToBuy = True
-            else:
-                count = 0
-                while order_state != "filled" and count < 5:
-                    self.log_print("IN try_buy_coins, order_state: %s " % order_state)
-                    self.log_print("IN try_buy_coins, retry count= %s " % count)
-                    count += 1
-                    time.sleep(2)
-                    ret = Get_v1_order_orders_orderId(
-                        access_key=ACCESS_KEY,
-                        secret_key=SECRET_KEY,
-                        order_id=order_id,
-                    )
-                    if ret["status"] != "ok":
-                        self.log_print(" ret_status: %s  \n ret: %s "
-                                       % (ret["status"], ret))
-                        raise Exception("Failed in Get_v1_order_orders_orderId")
-                    order_state = ret["data"]["state"]
-                if order_state != "filled":
-                    # 撤单
-                    self.log_print("IN try_buy_coins, cancel order: %s " % order_id)
-                    ret = Post_v1_order_orders_orderId_submitcancel(
-                        access_key=ACCESS_KEY,
-                        secret_key=SECRET_KEY,
-                        order_id=order_id,
-                    )
-                    if ret["status"] != "ok":
-                        self.log_print(" ret_status: %s  \n ret: %s "
-                                       % (ret["status"], ret))
-                        raise Exception("Failed in Post_v1_order_orders_orderId_submitcancel")
-                    assert ret["status"] == "ok"
-                    assert ret["data"] == str(order_id)
-                else:
-                    bSuccessToBuy = True
-            if bSuccessToBuy:
-                # 买入成功后，记录买入 base 的价格
-                cur_buy_base_price = float(ret["data"]["price"])
-                # 买入成功后，记录买入 base 的数量
-                cur_buy_base_amount = float(ret["data"]["field-amount"])
-                # 买入成功后，记录花费的 quoter 的数量
-                cur_buy_quoter_amount = float(ret["data"]["field-cash-amount"])
-                # 买入成功后，记录花费的 手续费 base 的数量
-                cur_buy_base_fees_amount = float(ret["data"]["field-fees"])
+            ret_data = ret["data"]
         except Exception as ex:
-            self.log_print("Ex IN try_buy_coins: %s" % ex)
+            self.log_print("Ex IN try_buy_contract: %s" % ex)
             bSuccessToBuy = False
         if bSuccessToBuy:
             self.cur_buy_base_price = cur_buy_base_price
@@ -261,45 +193,9 @@ class Strategy_01(Strategy_Base):
             self.cur_buy_base_fees_amount = cur_buy_base_fees_amount
         return bSuccessToBuy
 
-    # 下限价卖单
-    def place_sell_limit(self):
-        try:
-            price_in_sell_limit = float(self.cur_buy_base_price) * (1.0 + self.increasing_price_rate)
-            amount = round(self.cur_buy_base_amount, get_amount_precision(self.symbol))
-            price_in_sell_limit = round(price_in_sell_limit, get_price_precision(self.symbol))
-            self.log_print("下限价卖单, 价格： %s , 数量：%s " % (price_in_sell_limit, amount))
-            self.log_print("限价卖单成交后，可以获取 %s  USDT 收入。" % (price_in_sell_limit * amount))
-            self.log_print("买入BASE时，花费的成本是 %s USDT " % self.cur_buy_quoter_amount)
-            assert (price_in_sell_limit * amount) > self.cur_buy_quoter_amount
-            ret = Post_order_place(
-                access_key=self.access_key,
-                secret_key=self.secret_key,
-                account_id=self.account_id,
-                symbol=self.symbol,
-                type_value="sell-limit",
-                amount=amount,
-                price=price_in_sell_limit
-            )
-            if ret["status"] != "ok":
-                self.log_print(" ret_status: %s  \n ret: %s "
-                               % (ret["status"], ret))
-                raise Exception("Failed tp Post_order_place in place_sell_limit")
-            assert ret["status"] == "ok"
-            sell_limit_order = {
-                "price": price_in_sell_limit,
-                "amount": amount,
-                "finish": False
-            }
-            self.sell_limit_order_list.append(sell_limit_order)
-            self.show_current_profit_and_loss(cur_status="place_sell_limit")
-            return True
-        except Exception as ex:
-            self.log_print("Exception in place_sell_limit!")
-            self.log_print("ex: %s" % ex)
-            return False
 
-    # 处理成交的限价卖单
-    def dispose_sell_limit_orders(self, pre_1_k_line_data):
+    # 处理已经成交的合约订单
+    def dispose_fufilled_contract_order(self, pre_1_k_line_data):
         last_high_price = pre_1_k_line_data["high_price"]
         b_show = False
         for sell_limit_order in self.sell_limit_order_list:
@@ -396,12 +292,12 @@ class Strategy_01(Strategy_Base):
 
     # 获取最近一次参考价
     def get_last_reference_price(self, reference_period="60min"):
-        ret_data = self.get_kline_data(
+        OK, ret_data = self.get_LinearSwapEx_Market_History_Kline(
             symbol=self.symbol,
             period=reference_period,
             size=1
         )
-        if ret_data:
+        if OK:
             ret_item = ret_data[0]
             last_reference_price_data = {
                 "open_price": float(ret_item["open"]),
@@ -412,9 +308,10 @@ class Strategy_01(Strategy_Base):
             last_reference_price_data = None
         return last_reference_price_data
 
-    # 依据参考价判定是否可以进行投资
-    def is_suitable_for_investment(self, cur_price, reference_period):
+    # 依据参考价判定投资与否和投资方向
+    def is_suitable_for_investment(self, cur_price, reference_period="1day"):
         be_suitable = False
+        invest_direction = ""
         last_reference_price_data \
             = self.get_last_reference_price(reference_period=reference_period)
         if last_reference_price_data is not None:
@@ -425,13 +322,21 @@ class Strategy_01(Strategy_Base):
             self.log_print("IN is_suitable_for_investment, last_reference_dt: %s " % last_reference_dt)
             if cur_price > last_reference_price:
                 be_suitable = True
-            self.log_print("IN is_suitable_for_investment, be_suitable = %s" % be_suitable)
-        return be_suitable
+                invest_direction = "up"
+            elif cur_price == last_reference_price:
+                be_suitable = False
+                invest_direction = ""
+            else:  # cur_price < last_reference_price
+                be_suitable = True
+                invest_direction = "down"
+            self.log_print("IN is_suitable_for_investment, be_suitable = %s, invest_direction = %s"
+                           % (be_suitable, invest_direction))
+        return be_suitable, invest_direction
 
-    # 获取近3次的K线数据
+    # 获取合约近3次的K线数据
     def get_3_kline_data(self, symbol, period="5min"):
         self.wait_to_next_X_min_begin(x=get_period_int(period))
-        ret_data = self.get_kline_data(
+        ret_data = self.get_LinearSwapEx_Market_History_Kline(
             symbol=symbol,
             period=period,
             size=3
@@ -451,7 +356,7 @@ class Strategy_01(Strategy_Base):
             k_line_data_list.append(k_line_data)
         return k_line_data_list
 
-    def get_3_kline_data_2(self,symbol="ethusdt", period="5min"):
+    def get_3_kline_data_2(self, symbol="ethusdt", period="5min"):
         k_line_data_list = []
         if self.test_k_line_data_index >= 2:
             k_line_data_list.append(self.test_k_line_data_list[self.test_k_line_data_index - 2])
@@ -489,20 +394,20 @@ class Strategy_01(Strategy_Base):
                     cur_k_line_data = k_line_data_list[0]
                     # 模拟买入Base
                     self.simulate_buy_base(k_line_data=cur_k_line_data)
-                    # 模拟下限价卖单
-                    self.simulate_place_sell_limit(k_line_data=cur_k_line_data)
         except Exception as ex:
             self.log_print("Exception in simulate_do_strategy_execute")
             self.log_print("ex: %s" % ex)
 
     # 执行策略
-    def do_strategy_execute(self, symbol, run_days, dt_stamp):
+    def do_strategy_execute(self, symbol, period, run_days, buy_min_quoter_amount, dt_stamp):
         try:
             self.symbol = symbol
+            self.period = period
             self.run_days = run_days
+            self.buy_min_quoter_amount = buy_min_quoter_amount
             self.logger_init(
-                log_folder_name="Strategy_02_log",
-                log_file_template="/Strategy_02_%s_%s.txt",
+                log_folder_name="Strategy_01_log",
+                log_file_template="/Strategy_01_%s_%s.txt",
                 dt_stamp=dt_stamp
             )
             self.strategy_launch_time = int(time.time())
@@ -512,11 +417,11 @@ class Strategy_01(Strategy_Base):
             self.period = run_time_config_data["period"]
             while not run_time_config_data["quit"]:
                 if run_time_config_data["keep_run"]:
-                    k_line_data_list = self.get_3_kline_data(symbol=symbol, period=self.period)
-                    # 处理成交的限价卖单
-                    self.dispose_sell_limit_orders(pre_1_k_line_data=k_line_data_list[1])
-                    # 依据参考价判定是否可以进行投资
-                    be_suitable_for_investment = self.is_suitable_for_investment(
+                    k_line_data_list = self.get_3_kline_data(symbol=symbol, period=period)
+                    # 处理已经成交的合约订单
+                    self.dispose_fufilled_contract_order(pre_1_k_line_data=k_line_data_list[1])
+                    # 依据参考价判定投资与否和投资方向
+                    be_suitable_for_investment, invest_direction = self.is_suitable_for_investment(
                         cur_price=float(k_line_data_list[0]["open_price"]),
                         reference_period=self.reference_period
                     )
@@ -527,18 +432,25 @@ class Strategy_01(Strategy_Base):
                     pre_2_change = k_line_data_list[2]["change"]
                     pre_1_change = k_line_data_list[1]["change"]
                     bInvestCoin = False
-                    if pre_2_change == "down" and pre_1_change == "up":
-                        bInvestCoin = True
-                    elif pre_2_change == "up" and pre_1_change == "up":
-                        bInvestCoin = True
+                    if invest_direction == "up":
+                        if pre_2_change == "down" and pre_1_change == "up":
+                            bInvestCoin = True
+                        elif pre_2_change == "up" and pre_1_change == "up":
+                            bInvestCoin = True
+                    else:  # invest_direction == "down"
+                        if pre_2_change == "up" and pre_1_change == "down":
+                            bInvestCoin = True
+                        elif pre_2_change == "down" and pre_1_change == "down":
+                            bInvestCoin = True
                     if bInvestCoin:
                         cur_k_line_data = k_line_data_list[0]
-                        # 买入Base
-                        OK = self.buy_base(k_line_data=cur_k_line_data)
+                        # 买入合约
+                        OK = self.buy_contract(
+                            k_line_data=cur_k_line_data,
+                            invest_direction=invest_direction
+                        )
                         if not OK:
                             continue
-                        # 下限价卖单
-                        self.place_sell_limit()
                 else:
                     time.sleep(2)
                 run_time_config_data = self.get_run_time_configuration()
@@ -553,7 +465,7 @@ class Strategy_01(Strategy_Base):
     # 获取运行时的配置信息
     def get_run_time_configuration(self):
         run_time_config_data = read_yaml(
-            filename="run_time_config_Strategy_02.yaml"
+            filename="run_time_config_Strategy_01.yaml"
         )
         return run_time_config_data["run_time_config"]["symbol_list"][self.symbol]
 
@@ -763,37 +675,3 @@ def try_buy_coins():
 
 if __name__ == '__main__':
     bench_earn_money()
-
-    # my_strategy = Strategy_01()
-    # my_strategy.init_all()
-    # last_reference_price_data = my_strategy.get_last_reference_price(
-    #     reference_period="1day"
-    # )
-    # today_price = last_reference_price_data["open_price"]
-    # print("today_price: %s" % today_price)
-    # current_price_data = my_strategy.get_last_reference_price(
-    #     reference_period="1min"
-    # )
-    # cur_price = current_price_data["open_price"]
-    # print("cur_price: %s" % cur_price)
-    # cur_rate = (cur_price-today_price) / today_price
-    # cur_rate = round(cur_rate, 4)
-    # print("cur_rate: %s%%" % (cur_rate*100))
-
-    # symbol = "btcusdt"
-    # period = "5min"
-    # run_days = 2
-    # increasing_price_rate = 0.01
-    # buy_min_quoter_amount = 6.0
-    # time_stamp = int(time.time())
-    # dt_stamp = TimeStamp_to_datetime(time_stamp)
-    # my_strategy = Strategy_01()
-    # my_strategy.init_all()
-    # my_strategy.increasing_price_rate = increasing_price_rate
-    # my_strategy.do_strategy_execute(
-    #     symbol=symbol,
-    #     period=period,
-    #     run_days=run_days,
-    #     buy_min_quoter_amount=buy_min_quoter_amount,
-    #     dt_stamp=dt_stamp
-    # )

@@ -1,11 +1,15 @@
 import datetime
 import math
-# import json
+import json
 import codecs
 # import os
 import yaml
 from project.demos._hbg_anyCall import HbgAnyCall
 
+
+def print_json(json_obj):
+    json_str = json.dumps(json_obj, indent=4, sort_keys=True, ensure_ascii=False)
+    print(json_str)
 
 # 读取 yaml 文件
 def read_yaml(filename):
@@ -182,6 +186,25 @@ def Post_order_place(
         params=params
     )
 
+# 返回指定交易对最新的一个交易记录。
+# GET /market/trade
+def Get_market_trade(
+        host_path="https://api.huobi.pro",
+        symbol="btcusdt"
+):
+    params = {
+        "symbol": symbol
+    }
+    anyCall = HbgAnyCall()
+    ret = anyCall.callWebMethod(
+        host_path=host_path,
+        interface_path="/market/trade",
+        method_type="GET",
+        headers=None,
+        params=params
+    )
+    # anyCall.print_json(ret)
+    return ret
 
 # 返回指定交易对市场深度数据
 def Get_market_depth(

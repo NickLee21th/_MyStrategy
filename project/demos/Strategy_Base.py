@@ -3,6 +3,9 @@ import time
 import json
 import os.path
 from project.demos.Base_Api import *
+from project.demos.LinearSwap_BaseApi import *
+
+MAX_RETRY_COUNT = 5
 
 class Strategy_Base:
     demo_logger = None
@@ -27,6 +30,40 @@ class Strategy_Base:
             self.log_print("Exception in wait_to_next_X_min_begin")
             self.log_print("ex: %s" % ex)
             return False
+
+    # 【通用】获取合约的K线数据，支持全仓模式和逐仓模式。
+    def get_LinearSwapEx_Market_History_Kline(
+            self,
+            symbol="ethusdt",
+            period="5min",
+            size=3
+    ):
+        ret_data = ""
+        OK = True
+        try:
+            params = {
+                "contract_code": symbol,
+                "period": period,
+                "size": size,
+            }
+            status = "error"
+            retry_count = 0
+            while status != "ok" and retry_count < MAX_RETRY_COUNT:
+                retry_count += 1
+                ret = Get_LinearSwapEx_Market_History_Kline(
+                    params=params
+                )
+                status = ret["status"]
+                if status != "ok":
+                    time.sleep(2)
+            assert status == "ok"
+            ret_data = ret["data"]
+            return OK, ret_data
+        except Exception as ex:
+            OK = False
+            self.log_print("Exception in get_LinearSwapEx_Market_History_Kline")
+            self.log_print("ex: %s" % ex)
+        return OK, ret_data
 
     # 获取K线数据
     def get_kline_data(
