@@ -501,8 +501,8 @@ class Strategy_01(Strategy_Base):
             self.symbol = symbol
             self.run_days = run_days
             self.logger_init(
-                log_folder_name="Strategy_02_log",
-                log_file_template="/Strategy_02_%s_%s.txt",
+                log_folder_name="Strategy_01_log",
+                log_file_template="/Strategy_01_%s_%s.txt",
                 dt_stamp=dt_stamp
             )
             self.strategy_launch_time = int(time.time())
