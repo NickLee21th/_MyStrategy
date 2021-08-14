@@ -97,15 +97,27 @@ def get_amount_precision(symbol=""):
         amount_precision = 4
     elif symbol == "btcusdt":
         amount_precision = 6
+    elif symbol == "htusdt":
+        amount_precision = 4
+    elif symbol == "uniusdt":
+        amount_precision = 4
+    elif symbol == "dotusdt":
+        amount_precision = 4
     return amount_precision
 
 # 限价买入/卖出时，买入价/卖出价 Quoter 的小数位精度。
 def get_price_precision(symbol=""):
-    price_precision = 2
+    price_precision = 4
     if symbol == "ethusdt":
         price_precision = 2
     elif symbol == "btcusdt":
         price_precision = 2
+    elif symbol == "htusdt":
+        price_precision = 2
+    elif symbol == "dotusdt":
+        price_precision = 4
+    elif symbol == "uniusdt":
+        price_precision = 4
     return price_precision
 
 
