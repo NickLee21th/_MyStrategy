@@ -9,7 +9,7 @@ if __name__ == '__main__':
     account_id = ACCOUNT_ID  # spot
     # hbgAnyCall = HbgAnyCall()
     try:
-        symbol = "ethusdt"
+        symbol = "htusdt"  # "ethusdt"
         period = "5min"
         run_days = 365
         increasing_price_rate = 0.01
